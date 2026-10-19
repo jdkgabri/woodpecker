@@ -320,9 +320,13 @@ cg-board {
 }
 .cg-wrap coords coord { font-weight: 600; text-shadow: none; }
 /* coordinates in the colour of the opposite square, like Lichess (a1 is dark).
-   Coords are always in DOM order 1..8 / a..h; with black at the bottom they are shown reversed. */
-.cg-wrap.orientation-white coords coord:nth-child(odd), .cg-wrap.orientation-black coords coord:nth-child(even) { color: #f0d9b5 !important; }
-.cg-wrap.orientation-white coords coord:nth-child(even), .cg-wrap.orientation-black coords coord:nth-child(odd) { color: #b58863 !important; }
+   Coords are always in DOM order 1..8 / a..h; with black at the bottom they are shown reversed.
+   Files sit on the bottom row (a1.. for white, a8.. for black); ranks on the right-hand column
+   (the h-file for white, the a-file for black). */
+.cg-wrap.orientation-white coords.files coord:nth-child(odd), .cg-wrap.orientation-black coords.files coord:nth-child(even),
+.cg-wrap.orientation-white coords.ranks coord:nth-child(even), .cg-wrap.orientation-black coords.ranks coord:nth-child(odd) { color: #f0d9b5 !important; }
+.cg-wrap.orientation-white coords.files coord:nth-child(even), .cg-wrap.orientation-black coords.files coord:nth-child(odd),
+.cg-wrap.orientation-white coords.ranks coord:nth-child(odd), .cg-wrap.orientation-black coords.ranks coord:nth-child(even) { color: #b58863 !important; }
 
 /* action buttons: wrap to a new row instead of squeezing the text */
 .actions { flex-wrap: wrap; }
@@ -349,9 +353,11 @@ cg-board {
 .cal-key.frozen { background: #2f6fb3; }
 
 /* readable board coordinates, scaled with the board and placed like Lichess:
-   rank numbers in the top-left corner and file letters in the bottom-right corner of the edge squares */
-.cg-wrap coords { font-size: clamp(11px, 2.8vmin, 15px); font-weight: 700; opacity: 1; line-height: 1; }
-.cg-wrap coords.ranks { left: 0; top: 0; height: 100%; width: auto; }
-.cg-wrap coords.ranks coord { flex: 1 1 0; padding: 3px 0 0 3px; transform: none; }
+   rank numbers in the top-right corner of the right-hand column, file letters in the
+   bottom-left corner of the bottom row */
+.board-wrap { container-type: inline-size; }
+.cg-wrap coords { font-size: clamp(8px, 1.75cqi, 13px); font-weight: 600; opacity: 1; line-height: 1; }
+.cg-wrap coords.ranks { left: auto; right: 0; top: 0; height: 100%; width: auto; align-items: flex-end; }
+.cg-wrap coords.ranks coord { flex: 1 1 0; padding: .25em .3em 0 0; transform: none; text-align: right; }
 .cg-wrap coords.files { left: 0; bottom: 0; width: 100%; height: auto; align-items: flex-end; text-transform: none; }
-.cg-wrap coords.files coord { flex: 1 1 0; text-align: right; padding: 0 3px 3px 0; }
+.cg-wrap coords.files coord { flex: 1 1 0; text-align: left; padding: 0 0 .25em .3em; }
