@@ -5,6 +5,7 @@ import { Engine } from './engine.js';
 import * as store from './store.js';
 import { askPromotion } from './puzzleboard.js';
 import { sound } from './sound.js';
+import { t } from './i18n.js';
 
 const KEY = 'wp:analysis';
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -66,26 +67,26 @@ export function viewAnalysis(app) {
 
   app.innerHTML = `
     <div class="train">
-      <header class="top"><button class="icon-btn" id="back" aria-label="Volver">‹</button>
-        <h1 class="ellipsis">Análisis · ${esc(p.title || '')}</h1>
-        <button class="icon-btn" id="flip" aria-label="Girar tablero">⇅</button></header>
+      <header class="top"><button class="icon-btn" id="back" aria-label="${t('Volver')}">‹</button>
+        <h1 class="ellipsis">${t('Análisis')} · ${esc(p.title || '')}</h1>
+        <button class="icon-btn" id="flip" aria-label="${t('Girar tablero')}">⇅</button></header>
       <div class="eval-row"><b id="evalTxt">…</b><span class="muted small" id="depth"></span>
         <label class="switch mini"><input type="checkbox" id="engOn" checked><span>Stockfish</span></label></div>
       <div class="board-wrap with-gauge"><div class="gauge"><i id="gauge"></i></div><div class="board" id="board"></div></div>
       <div class="info">
-        <div class="pv" id="pvs"><p class="muted small">Cargando motor…</p></div>
+        <div class="pv" id="pvs"><p class="muted small">${t('Cargando motor…')}</p></div>
         <div class="movelist" id="moves"></div>
         <div class="small">
-          <p><span class="muted">Solución del set:</span> <a href="#" id="loadSol" class="link">${esc(sanLine(p.fen, p.solution || []).join(' ') || '—')}</a></p>
-          ${(p.wrong || []).length ? `<p><span class="muted">Tus jugadas:</span> ${p.wrong.map((u, i) => `<a href="#" class="link" data-wrong="${i}">${esc(sanLine(p.fen, [u])[0] || u)}</a>`).join(', ')}</p>` : ''}
+          <p><span class="muted">${t('Solución del set:')}</span> <a href="#" id="loadSol" class="link">${esc(sanLine(p.fen, p.solution || []).join(' ') || '—')}</a></p>
+          ${(p.wrong || []).length ? `<p><span class="muted">${t('Tus jugadas:')}</span> ${p.wrong.map((u, i) => `<a href="#" class="link" data-wrong="${i}">${esc(sanLine(p.fen, [u])[0] || u)}</a>`).join(', ')}</p>` : ''}
         </div>
         ${p.ref ? `<div id="refBox"></div>` : ''}
       </div>
       <div class="actions">
-        <button class="btn ghost" id="first" aria-label="Inicio">⏮</button>
-        <button class="btn ghost" id="prev" aria-label="Anterior">◀</button>
-        <button class="btn ghost" id="next" aria-label="Siguiente">▶</button>
-        <button class="btn ghost" id="last" aria-label="Final">⏭</button>
+        <button class="btn ghost" id="first" aria-label="${t('Ir al inicio')}">⏮</button>
+        <button class="btn ghost" id="prev" aria-label="${t('Anterior')}">◀</button>
+        <button class="btn ghost" id="next" aria-label="${t('Siguiente')}">▶</button>
+        <button class="btn ghost" id="last" aria-label="${t('Ir al final')}">⏭</button>
         <a class="btn ghost" id="lichess" target="_blank" rel="noopener">Lichess</a>
       </div>
     </div>`;
@@ -140,11 +141,11 @@ export function viewAnalysis(app) {
     if (c.isGameOver()) {
       engine?.stop();
       if (c.isCheckmate()) $('#gauge').style.height = c.turn() === 'w' ? '100%' : '0%';
-      $('#evalTxt').textContent = c.isCheckmate() ? 'Jaque mate' : 'Tablas';
+      $('#evalTxt').textContent = c.isCheckmate() ? t('Jaque mate') : t('Tablas');
       $('#pvs').innerHTML = '';
       return;
     }
-    if (!engineOn) { engine?.stop(); $('#pvs').innerHTML = '<p class="muted small">Motor desactivado</p>'; $('#evalTxt').textContent = ''; return; }
+    if (!engineOn) { engine?.stop(); $('#pvs').innerHTML = `<p class="muted small">${t('Motor desactivado')}</p>`; $('#evalTxt').textContent = ''; return; }
     if (!engine) engine = new Engine();
     const fen = c.fen();
     engine.analyse(fen, 3, (lines, depth) => {
@@ -153,7 +154,7 @@ export function viewAnalysis(app) {
       // barra de evaluación como en Lichess (porcentaje de las blancas)
       const wc = best.mate != null ? (best.mate > 0 ? 1 : -1) : 2 / (1 + Math.exp(-0.00368208 * best.cp)) - 1;
       $('#gauge').style.height = (50 - wc * 50) + '%';
-      $('#depth').textContent = `profundidad ${depth}`;
+      $('#depth').textContent = t('profundidad {d}', { d: depth });
       $('#pvs').innerHTML = lines.map((l, i) => `
         <button class="pvline" data-pv="${i}"><b>${fmtScore(l)}</b> ${esc(sanLine(fen, l.pv.slice(0, 10)).join(' '))}</button>`).join('');
       app.querySelectorAll('[data-pv]').forEach(b => b.onclick = () => playUci(lines[+b.dataset.pv].pv[0]));
@@ -208,8 +209,8 @@ export function viewAnalysis(app) {
     const r = cycle?.results[p.ref.idx];
     if (!r) { box.innerHTML = ''; return; }
     box.innerHTML = r.ok
-      ? `<p class="small ok-text">✓ Contado como correcto en el ciclo ${cycle.n}</p>`
-      : `<button class="btn ghost full" id="markOk">✓ Mi jugada era buena: contar como correcta</button>`;
+      ? `<p class="small ok-text">✓ ${t('Contado como correcto en el ciclo {n}', { n: cycle.n })}</p>`
+      : `<button class="btn ghost full" id="markOk">✓ ${t('Mi jugada era buena: contar como correcta')}</button>`;
     const b = $('#markOk');
     if (b) b.onclick = () => { r.ok = true; store.save(); renderRef(); };
   }

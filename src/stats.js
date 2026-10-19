@@ -2,6 +2,7 @@
 import * as store from './store.js';
 import { habitOn } from './ui-habit.js';
 import { addDays, dayKey, parseDay } from './habit.js';
+import { t, locale } from './i18n.js';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const pct = x => Math.round(x * 100) + '%';
@@ -48,46 +49,46 @@ export function viewStats(app) {
   for (let i = 0; i < WEEKS * 7; i++) {
     const k = addDays(startKey, i);
     const cls = k > today ? 'future' : days.has(k) ? 'done' : frozen.has(k) ? 'frozen' : '';
-    cells.push(`<i class="hm ${cls}" title="${parseDay(k).toLocaleDateString('es-ES')}"></i>`);
+    cells.push(`<i class="hm ${cls}" title="${parseDay(k).toLocaleDateString(locale())}"></i>`);
   }
 
   const h = habitOn() ? store.habitState() : null;
   const setRows = sets.map(s => {
     const fin = s.cycles.filter(c => c.finishedAt);
     const first = fin[0], last = fin[fin.length - 1];
-    let evo = '<span class="muted">Sin ciclos terminados</span>';
+    let evo = `<span class="muted">${t('Sin ciclos terminados')}</span>`;
     if (first && last && first !== last) {
       const dt = (last.elapsedMs - first.elapsedMs) / first.elapsedMs;
       const da = store.cycleStats(last).acc - store.cycleStats(first).acc;
-      evo = `Tiempo <b class="${dt <= 0 ? 'ok-text' : 'bad-text'}">${dt <= 0 ? '−' : '+'}${Math.abs(Math.round(dt * 100))}%</b> · Acierto <b class="${da >= 0 ? 'ok-text' : 'bad-text'}">${da >= 0 ? '+' : '−'}${Math.abs(Math.round(da * 100))} pts</b> <span class="muted">(ciclo 1 → ${last.n})</span>`;
+      evo = `${t('Tiempo')} <b class="${dt <= 0 ? 'ok-text' : 'bad-text'}">${dt <= 0 ? '−' : '+'}${Math.abs(Math.round(dt * 100))}%</b> · ${t('Acierto')} <b class="${da >= 0 ? 'ok-text' : 'bad-text'}">${da >= 0 ? '+' : '−'}${Math.abs(Math.round(da * 100))} pts</b> <span class="muted">(${t('ciclo 1 → {n}', { n: last.n })})</span>`;
     } else if (last) {
-      evo = `Ciclo 1: ${fmt(last.elapsedMs)} · ${pct(store.cycleStats(last).acc)}`;
+      evo = `${t('Ciclo {n}', { n: 1 })}: ${fmt(last.elapsedMs)} · ${pct(store.cycleStats(last).acc)}`;
     }
     const cur = store.currentCycle(s);
     return `<a class="card set-card" href="#/set/${s.id}">
-      <div class="row"><strong>${esc(s.name)}</strong><span class="muted small">${fin.length}/${s.targetCycles || '–'} ciclos</span></div>
+      <div class="row"><strong>${esc(s.name)}</strong><span class="muted small">${t('{n}/{m} ciclos', { n: fin.length, m: s.targetCycles || '–' })}</span></div>
       <div class="small">${evo}</div>
-      ${cur ? `<div class="small muted">En curso: ciclo ${cur.n}, ${cur.pos}/${s.items.length}</div>` : ''}
+      ${cur ? `<div class="small muted">${t('En curso: ciclo {n}, {p}/{m}', { n: cur.n, p: cur.pos, m: s.items.length })}</div>` : ''}
     </a>`;
   }).join('');
 
   app.innerHTML = `
-    <header class="top"><a class="icon-btn" href="#/">‹</a><h1>Estadísticas</h1><span></span></header>
+    <header class="top"><a class="icon-btn" href="#/">‹</a><h1>${t('Estadísticas')}</h1><span></span></header>
     <main class="wrap">
       <section class="kpis">
-        <div class="kpi"><b>${solved}</b><span>ejercicios resueltos</span></div>
-        <div class="kpi"><b>${solved ? pct(ok / solved) : '–'}</b><span>acierto global</span></div>
-        <div class="kpi"><b>${fmtLong(time)}</b><span>entrenando</span></div>
-        <div class="kpi"><b>${cyclesDone}</b><span>ciclos completados</span></div>
-        <div class="kpi"><b>${days.size}</b><span>días entrenados</span></div>
-        ${h ? `<div class="kpi"><b>${h.streak} / ${bestStreak([...days, ...frozen])}</b><span>racha actual / mejor</span></div>` : ''}
+        <div class="kpi"><b>${solved}</b><span>${t('ejercicios resueltos')}</span></div>
+        <div class="kpi"><b>${solved ? pct(ok / solved) : '–'}</b><span>${t('acierto global')}</span></div>
+        <div class="kpi"><b>${fmtLong(time)}</b><span>${t('entrenando')}</span></div>
+        <div class="kpi"><b>${cyclesDone}</b><span>${t('ciclos completados')}</span></div>
+        <div class="kpi"><b>${days.size}</b><span>${t('días entrenados')}</span></div>
+        ${h ? `<div class="kpi"><b>${h.streak} / ${bestStreak([...days, ...frozen])}</b><span>${t('racha actual / mejor')}</span></div>` : ''}
       </section>
       <section class="card">
-        <h2>Actividad</h2>
+        <h2>${t('Actividad')}</h2>
         <div class="heatmap">${cells.join('')}</div>
-        <p class="small muted">Últimas ${WEEKS} semanas. Cuenta un día si hiciste al menos un ejercicio de un ciclo${h ? ' (❄ en azul: día cubierto con protector)' : ''}.</p>
+        <p class="small muted">${t('Últimas {n} semanas. Cuenta un día si hiciste al menos un ejercicio de un ciclo.', { n: WEEKS })}${h ? ' ' + t('En azul, días cubiertos con un protector.') : ''}</p>
       </section>
-      <h2 class="section-title">Evolución por set</h2>
-      ${sets.length ? setRows : '<p class="muted">Aún no tienes sets.</p>'}
+      <h2 class="section-title">${t('Evolución por set')}</h2>
+      ${sets.length ? setRows : `<p class="muted">${t('Aún no tienes sets.')}</p>`}
     </main>`;
 }

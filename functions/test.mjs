@@ -36,6 +36,8 @@ await user('ben', { days: ['2026-10-18', '2026-10-19'] });                      
 await user('cris', { habit: false });                                                 // modo hábito desactivado
 await user('dani', { times: ['21:00'] });                                             // aún no es su hora
 await user('eva', { times: ['20:00', '22:30'], email: false });                       // varias horas, solo push
+await user('finn', {});                                                               // en inglés
+await db.doc('reminders/finn').set({ lang: 'en' }, { merge: true });
 
 check('dueTimes: ventana de una hora', dueTimes({ times: ['20:00'], tz: 'Europe/Madrid' }, new Date('2026-10-19T18:59:00Z')).due.length === 1
   && dueTimes({ times: ['20:00'], tz: 'Europe/Madrid' }, new Date('2026-10-19T19:00:00Z')).due.length === 0);
@@ -48,6 +50,7 @@ check('ben no (ya entrenó hoy)', !s1.some(x => x.to.includes('ben')));
 check('cris no (modo hábito desactivado)', !s1.some(x => x.to.includes('cris')));
 check('dani no (su hora es las 21:00)', !s1.some(x => x.to.includes('dani')));
 check('eva recibe solo push', s1.filter(x => x.to.includes('eva')).map(x => x.kind).join() === 'push');
+check('finn lo recibe en inglés', s1.some(x => x.to.includes('finn') && /puzzles|tactics|streak|woodpecker/i.test(x.title)), JSON.stringify(s1.filter(x => x.to.includes('finn'))));
 check('suscripción caducada eliminada', !(await db.doc('reminders/ana/devices/dead').get()).exists);
 
 await runReminders(deps(new Date('2026-10-19T18:07:00Z')));

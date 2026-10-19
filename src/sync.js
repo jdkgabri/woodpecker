@@ -7,6 +7,7 @@
 import { firebaseConfig } from './firebase-config.js';
 import * as store from './store.js';
 import { VAPID_PUBLIC_KEY } from './push-config.js';
+import { t, lang } from './i18n.js';
 
 // Solo para pruebas locales con los emuladores de Firebase (VITE_EMU=1 npm run dev)
 const EMU = import.meta.env.VITE_EMU;
@@ -109,7 +110,7 @@ function subscribe(onRemoteChange) {
 function onError(e) {
   console.error(e);
   state.status = 'error';
-  state.error = e.code === 'permission-denied' ? 'Permiso denegado: revisa las reglas de Firestore.' : e.message;
+  state.error = e.code === 'permission-denied' ? t('Permiso denegado: revisa las reglas de Firestore.') : e.message;
   emit();
 }
 
@@ -218,9 +219,9 @@ export async function loadReminders() {
 }
 
 export async function saveReminders(cfg) {
-  if (!uid) throw new Error('Inicia sesión para usar los recordatorios');
+  if (!uid) throw new Error(t('Inicia sesión para usar los recordatorios'));
   const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  await fb.F.setDoc(remindersDoc(), { ...cfg, tz, updatedAt: Date.now() }, { merge: true });
+  await fb.F.setDoc(remindersDoc(), { ...cfg, tz, lang: lang(), updatedAt: Date.now() }, { merge: true });
 }
 
 const b64ToBytes = b64 => {
@@ -232,6 +233,13 @@ async function deviceId(endpoint) {
   return [...new Uint8Array(h)].slice(0, 12).map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
+// Idioma de los recordatorios (push y email)
+export async function saveLang() {
+  if (!uid) return;
+  const snap = await fb.F.getDoc(remindersDoc());
+  if (snap.exists()) await fb.F.setDoc(remindersDoc(), { lang: lang() }, { merge: true });
+}
+
 export const pushSupported = () => 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
 
 export async function pushEnabledHere() {
@@ -241,10 +249,10 @@ export async function pushEnabledHere() {
 }
 
 export async function enablePushHere() {
-  if (!uid) throw new Error('Inicia sesión para usar los recordatorios');
-  if (!pushSupported()) throw new Error('Este navegador no admite notificaciones push');
+  if (!uid) throw new Error(t('Inicia sesión para usar los recordatorios'));
+  if (!pushSupported()) throw new Error(t('Este navegador no admite notificaciones push'));
   const perm = await Notification.requestPermission();
-  if (perm !== 'granted') throw new Error('No se ha dado permiso para mostrar notificaciones');
+  if (perm !== 'granted') throw new Error(t('No se ha dado permiso para mostrar notificaciones'));
   const reg = await navigator.serviceWorker.ready;
   const sub = (await reg.pushManager.getSubscription())
     || await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64ToBytes(VAPID_PUBLIC_KEY) });
@@ -263,7 +271,7 @@ export async function disablePushHere() {
 }
 
 export async function sendTestReminder() {
-  if (!uid) throw new Error('Inicia sesión para usar los recordatorios');
+  if (!uid) throw new Error(t('Inicia sesión para usar los recordatorios'));
   const { getFunctions, httpsCallable } = await import('firebase/functions');
   const fn = httpsCallable(getFunctions(fb.auth.app, 'europe-west1'), 'testReminder');
   return (await fn()).data;

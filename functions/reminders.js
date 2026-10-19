@@ -24,13 +24,28 @@ export function dueTimes(cfg, now) {
   return { lp, due, already };
 }
 
-export function message(streak, rnd = Math.random) {
+export function message(streak, rnd = Math.random, lang = 'es') {
   const pick = a => a[Math.floor(rnd() * a.length)];
+  if (lang === 'en') {
+    const d = streak === 1 ? 'day' : 'days';
+    if (streak > 0) {
+      return pick([
+        { title: `🔥 Your ${streak}-day streak is waiting`, body: 'You have not trained today yet. A couple of puzzles and you keep it.' },
+        { title: `🔥 Don't lose ${streak} ${d} of streak!`, body: 'A few minutes of tactics is enough to keep going.' },
+        { title: '♞ The woodpecker never rests', body: `${streak} ${d} in a row. Time to keep pecking today.` },
+      ]);
+    }
+    return pick([
+      { title: '♞ A few puzzles today?', body: 'Your Woodpecker cycles are waiting. 5 minutes is enough.' },
+      { title: '♞ Time for some tactics', body: 'Start a new streak today with a couple of puzzles.' },
+    ]);
+  }
+  const d = streak === 1 ? 'día' : 'días';
   if (streak > 0) {
     return pick([
-      { title: `🔥 Tu racha de ${streak} ${streak === 1 ? 'día' : 'días'} te espera`, body: 'Aún no has entrenado hoy. Un par de ejercicios y la mantienes.' },
-      { title: `🔥 ¡No pierdas ${streak} ${streak === 1 ? 'día' : 'días'} de racha!`, body: 'Unos minutos de táctica bastan para seguir sumando.' },
-      { title: '♞ El pájaro carpintero no descansa', body: `Llevas ${streak} ${streak === 1 ? 'día' : 'días'} seguidos. Hoy toca seguir picando.` },
+      { title: `🔥 Tu racha de ${streak} ${d} te espera`, body: 'Aún no has entrenado hoy. Un par de ejercicios y la mantienes.' },
+      { title: `🔥 ¡No pierdas ${streak} ${d} de racha!`, body: 'Unos minutos de táctica bastan para seguir sumando.' },
+      { title: '♞ El pájaro carpintero no descansa', body: `Llevas ${streak} ${d} seguidos. Hoy toca seguir picando.` },
     ]);
   }
   return pick([
@@ -60,7 +75,8 @@ export async function runReminders({ db, now = new Date(), sendPush, sendEmail, 
       // "now" con la fecha y hora locales del usuario, para calcular la racha
       const localNow = new Date(lp.y, lp.m - 1, lp.d, lp.hh, lp.mm);
       const { streak } = compute({ days, frozen: meta.frozen || [], enabledAt: meta.habit.enabledAt, dismissed: meta.habit.dismissed }, localNow);
-      const msg = message(streak);
+      const msg = message(streak, Math.random, cfg.lang);
+      msg.lang = cfg.lang;
       if (cfg.push) {
         const devices = await doc.ref.collection('devices').get();
         for (const dev of devices.docs) {
@@ -90,7 +106,9 @@ export async function runReminders({ db, now = new Date(), sendPush, sendEmail, 
 export async function sendTest({ db, uid, sendPush, sendEmail, getEmail }) {
   const ref = db.doc(`reminders/${uid}`);
   const cfg = (await ref.get()).data() || {};
-  const msg = { title: '♞ Recordatorio de prueba', body: 'Así te llegarán los avisos para entrenar. ¡Todo funciona!' };
+  const msg = cfg.lang === 'en'
+    ? { title: '♞ Test reminder', body: 'This is how your training reminders will look. Everything works!', lang: 'en' }
+    : { title: '♞ Recordatorio de prueba', body: 'Así te llegarán los avisos para entrenar. ¡Todo funciona!', lang: 'es' };
   const result = { push: 0, email: false };
   if (cfg.push) {
     for (const dev of (await ref.collection('devices').get()).docs) {
@@ -106,10 +124,13 @@ export async function sendTest({ db, uid, sendPush, sendEmail, getEmail }) {
 }
 
 export function emailHtml(msg) {
+  const en = msg.lang === 'en';
   return `<div style="font-family:system-ui,sans-serif;max-width:480px;margin:auto;padding:24px;background:#161512;color:#e8e6e3;border-radius:12px">
   <h2 style="margin:0 0 8px">${msg.title}</h2>
   <p style="color:#bdb8b0">${msg.body}</p>
-  <p><a href="${APP_URL}" style="display:inline-block;background:#6fa83a;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600">Entrenar ahora</a></p>
-  <p style="color:#7d786f;font-size:12px">Recibes este email porque activaste los recordatorios en Woodpecker. Puedes desactivarlos en Ajustes → Modo hábito.</p>
+  <p><a href="${APP_URL}" style="display:inline-block;background:#6fa83a;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600">${en ? 'Train now' : 'Entrenar ahora'}</a></p>
+  <p style="color:#7d786f;font-size:12px">${en
+    ? 'You get this email because you enabled reminders in Woodpecker. You can turn them off in Settings → Habit mode.'
+    : 'Recibes este email porque activaste los recordatorios en Woodpecker. Puedes desactivarlos en Ajustes → Modo hábito.'}</p>
 </div>`;
 }

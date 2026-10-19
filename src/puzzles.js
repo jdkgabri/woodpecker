@@ -1,5 +1,6 @@
 import { Chess } from 'chess.js';
 import { authHeaders } from './lichess.js';
+import { t } from './i18n.js';
 
 // Niveles del libro "The Woodpecker Method" (Smith & Tikkanen)
 export const WP_LEVELS = [
@@ -11,16 +12,16 @@ export const WP_LEVELS = [
 export const WP_TOTAL = 1128;
 
 export function wpLevel(n) {
-  if (n <= 222) return 'Fácil';
-  if (n <= 984) return 'Intermedio';
-  return 'Avanzado';
+  if (n <= 222) return t('Fácil');
+  if (n <= 984) return t('Intermedio');
+  return t('Avanzado');
 }
 
 let wpCache = null;
 export async function loadWoodpecker() {
   if (wpCache) return wpCache;
   const res = await fetch(import.meta.env.BASE_URL + 'woodpecker.json');
-  if (!res.ok) throw new Error('No se pudo cargar la base de ejercicios');
+  if (!res.ok) throw new Error(t('No se pudo cargar la base de ejercicios'));
   const list = await res.json();
   wpCache = new Map(list.map(p => [p.n, p]));
   return wpCache;
@@ -31,9 +32,9 @@ export async function resolveItem(item) {
   if (item.wp) {
     const db = await loadWoodpecker();
     const p = db.get(item.wp);
-    return { fen: p.fen, tree: p.t, title: `Ejercicio ${p.n}`, sub: wpLevel(p.n) };
+    return { fen: p.fen, tree: p.t, title: t('Ejercicio {n}', { n: p.n }), sub: wpLevel(p.n) };
   }
-  return { fen: item.fen, tree: item.tree, title: `Puzle ${item.id}`, sub: item.rating ? `Elo ${item.rating}` : '', lichessId: item.id };
+  return { fen: item.fen, tree: item.tree, title: t('Puzle {id}', { id: item.id }), sub: item.rating ? `Elo ${item.rating}` : '', lichessId: item.id };
 }
 
 // ---- Lichess (opcional) ----
@@ -47,6 +48,8 @@ export const LICHESS_THEMES = [
 export const LICHESS_DIFFS = [
   ['easiest', 'Muy fácil'], ['easier', 'Fácil'], ['normal', 'Normal'], ['harder', 'Difícil'], ['hardest', 'Muy difícil'],
 ];
+export const themeLabel = k => t(LICHESS_THEMES.find(x => x[0] === k)?.[1] || k);
+export const diffLabel = k => t(LICHESS_DIFFS.find(x => x[0] === k)?.[1] || k);
 
 function solutionToTree(sol) {
   // sol: [hero, opp, hero, opp, ..., hero]
@@ -69,15 +72,15 @@ class RateLimited extends Error {}
 // GET con un reintento tras el límite de peticiones de Lichess (429)
 async function getJson(url, signal, onStatus, anonymous = false) {
   for (let attempt = 0; ; attempt++) {
-    if (signal?.aborted) throw new Error('Cancelado');
+    if (signal?.aborted) throw new Error(t('Cancelado'));
     const res = await fetch(url, { signal, headers: { Accept: 'application/json', ...(anonymous ? {} : authHeaders()) } });
     if (res.status === 429) {
       if (attempt >= 1) throw new RateLimited();
-      onStatus?.('Lichess pide esperar un minuto…');
+      onStatus?.(t('Lichess pide esperar un minuto…'));
       await sleep(61000);
       continue;
     }
-    if (!res.ok) throw new Error('Lichess respondió ' + res.status);
+    if (!res.ok) throw new Error(t('Lichess respondió {s}', { s: res.status }));
     return res.json();
   }
 }
@@ -142,7 +145,7 @@ export async function fetchLichessPuzzles(opts, onProgress, signal) {
       const level = levels[turn2++ % levels.length];
       const j = await getJson(`https://lichess.org/api/puzzle/next?angle=${theme}&difficulty=${level}&_=${Math.random()}`, signal, status, anonymous);
       if (!add(j)) misses++;
-      onProgress?.(out.length, `Descargando (modo lento)… ${out.length}/${count}`);
+      onProgress?.(out.length, t('Descargando (modo lento)… {n}/{m}', { n: out.length, m: count }));
       await sleep(250);
     }
   } catch (e) {
