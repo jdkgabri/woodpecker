@@ -277,9 +277,10 @@ function bindLichess() {
     btn.disabled = true;
     ctrl = new AbortController();
     try {
-      const { items, complete } = await fetchLichessPuzzles(opts, (n, msg) => status(msg || `Descargando… ${n}/${count}`), ctrl.signal);
-      if (!items.length) throw new Error('No se encontraron puzles con esos criterios. Prueba un rango más amplio.');
-      if (!complete && !confirm(`Solo se encontraron ${items.length} de ${count} puzles con esos criterios. ¿Crear el set con ${items.length}?`)) {
+      const { items, complete, rateLimited } = await fetchLichessPuzzles(opts, (n, msg) => status(msg || `Descargando… ${n}/${count}`), ctrl.signal);
+      if (!items.length) throw new Error(rateLimited ? 'Lichess está limitando las peticiones. Vuelve a intentarlo dentro de un rato.' : 'No se encontraron puzles con esos criterios. Prueba un rango más amplio.');
+      const why = rateLimited ? 'Lichess ha limitado las peticiones y solo se descargaron' : 'Solo se encontraron';
+      if (!complete && !confirm(`${why} ${items.length} de ${count} puzles. ¿Crear el set con ${items.length}?`)) {
         btn.disabled = false;
         return status('');
       }

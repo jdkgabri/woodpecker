@@ -64,18 +64,21 @@ const DIFF_OFFSET = { easiest: -600, easier: -300, normal: 0, harder: 300, harde
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-async function fetchBatch(theme, difficulty, signal, onStatus) {
-  for (;;) {
+class RateLimited extends Error {}
+
+// GET con un reintento tras el límite de peticiones de Lichess (429)
+async function getJson(url, signal, onStatus) {
+  for (let attempt = 0; ; attempt++) {
     if (signal?.aborted) throw new Error('Cancelado');
-    const url = `https://lichess.org/api/puzzle/batch/${theme}?nb=50&difficulty=${difficulty}&_=${Math.random()}`;
     const res = await fetch(url, { signal, headers: { Accept: 'application/json', ...authHeaders() } });
     if (res.status === 429) {
+      if (attempt >= 1) throw new RateLimited();
       onStatus?.('Lichess pide esperar un minuto…');
       await sleep(61000);
       continue;
     }
     if (!res.ok) throw new Error('Lichess respondió ' + res.status);
-    return (await res.json()).puzzles || [];
+    return res.json();
   }
 }
 
@@ -88,7 +91,7 @@ function toItem(j) {
 /**
  * opts: { theme, count, difficulty }            -> dificultad relativa a tu Elo
  *       { theme, count, minRating, maxRating, baseRating } -> rango absoluto
- * Devuelve { items, complete }.
+ * Devuelve { items, complete, rateLimited }.
  */
 export async function fetchLichessPuzzles(opts, onProgress, signal) {
   const { theme, count } = opts;
@@ -107,27 +110,40 @@ export async function fetchLichessPuzzles(opts, onProgress, signal) {
     const overlapping = ranked.filter(d => base + DIFF_OFFSET[d] + 300 >= opts.minRating && base + DIFF_OFFSET[d] - 300 <= opts.maxRating);
     levels = overlapping.length ? overlapping : ranked.slice(0, 1);
   }
-  const fruitless = Object.fromEntries(levels.map(l => [l, 0]));
-  const maxRequests = Math.max(10, Math.ceil(count / 50) * 6);
-  let requests = 0, turn = 0;
-
-  while (out.length < count && levels.length && requests < maxRequests) {
-    const level = levels[turn++ % levels.length];
-    const batch = await fetchBatch(theme, level, signal, onProgress && (msg => onProgress(out.length, msg)));
-    requests++;
-    let added = 0;
-    for (const j of batch) {
-      if (out.length >= count) break;
-      if (seen.has(j.puzzle.id) || !inRange(j.puzzle.rating)) continue;
-      seen.add(j.puzzle.id);
-      out.push(toItem(j));
-      added++;
+  const status = onProgress && (msg => onProgress(out.length, msg));
+  const add = j => {
+    if (out.length >= count || seen.has(j.puzzle.id) || !inRange(j.puzzle.rating)) return false;
+    seen.add(j.puzzle.id);
+    out.push(toItem(j));
+    return true;
+  };
+  let rateLimited = false;
+  try {
+    // 1) Lotes de 50 (rápido). Sin cuenta, Lichess puede devolver siempre el mismo lote:
+    //    en cuanto un nivel no aporta nada nuevo, se deja de pedir.
+    let batchLevels = [...levels], requests = 0, turn = 0;
+    while (out.length < count && batchLevels.length && requests < Math.ceil(count / 50) * 6 + 4) {
+      const level = batchLevels[turn++ % batchLevels.length];
+      const data = await getJson(`https://lichess.org/api/puzzle/batch/${theme}?nb=50&difficulty=${level}`, signal, status);
+      requests++;
+      const added = (data.puzzles || []).filter(add).length;
+      if (!added) batchLevels = batchLevels.filter(l => l !== level);
+      onProgress?.(out.length);
+      await sleep(300);
     }
-    // un nivel que no aporta nada dos veces seguidas se descarta
-    fruitless[level] = added ? 0 : fruitless[level] + 1;
-    if (fruitless[level] >= 2) levels = levels.filter(l => l !== level);
-    onProgress?.(out.length);
-    await sleep(300);
+    // 2) Si faltan, de uno en uno (más lento, pero con más variedad)
+    let misses = 0, turn2 = 0;
+    const maxMisses = Math.max(60, (count - out.length) * 3);
+    while (out.length < count && misses < maxMisses) {
+      const level = levels[turn2++ % levels.length];
+      const j = await getJson(`https://lichess.org/api/puzzle/next?angle=${theme}&difficulty=${level}&_=${Math.random()}`, signal, status);
+      if (!add(j)) misses++;
+      onProgress?.(out.length, `Descargando (modo lento)… ${out.length}/${count}`);
+      await sleep(250);
+    }
+  } catch (e) {
+    if (!(e instanceof RateLimited)) throw e;
+    rateLimited = true;
   }
-  return { items: out, complete: out.length >= count };
+  return { items: out, complete: out.length >= count, rateLimited };
 }
