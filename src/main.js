@@ -223,7 +223,7 @@ function formLichess() {
           <div><label for="minR">Elo mínimo</label><input id="minR" type="number" min="400" max="3200" step="50" value="1400" inputmode="numeric"></div>
           <div><label for="maxR">Elo máximo</label><input id="maxR" type="number" min="400" max="3200" step="50" value="1600" inputmode="numeric"></div>
         </div>
-        <p class="muted small">${a ? 'Con tu cuenta se alcanzan aproximadamente 600 puntos por encima y por debajo de tu Elo de puzles.' : 'Sin cuenta se alcanzan aproximadamente de 800 a 2300.'}</p>
+        <p class="muted small">Se puede pedir cualquier rango entre ~800 y ${a?.puzzleRating ? Math.max(2300, a.puzzleRating + 600) : 2300}.${a?.puzzleRating ? ` Cerca de tu Elo (${a.puzzleRating}) se usa tu cuenta y es más rápido; lejos de él se piden sin cuenta y sets grandes pueden tardar alrededor de un minuto.` : ''}</p>
       </div>
       <label for="n">Número de puzles</label>
       <input id="n" type="number" min="10" max="500" value="100" inputmode="numeric">
@@ -276,7 +276,7 @@ function bindLichess() {
       opts.minRating = +$('#minR').value;
       opts.maxRating = +$('#maxR').value;
       if (!(opts.minRating > 0 && opts.maxRating >= opts.minRating)) return status('El rango de Elo no es válido.');
-      opts.baseRating = lichess.getAuth()?.puzzleRating || 1500;
+      opts.userRating = lichess.getAuth()?.puzzleRating || null;
       label = `${opts.minRating}–${opts.maxRating}`;
     }
     const name = $('#name').value.trim() || `Lichess · ${tName} (${label})`;
@@ -392,6 +392,17 @@ function chart(set) {
   return `<svg viewBox="0 0 ${W} ${H}" class="chart" role="img" aria-label="Tiempo por ciclo">${bars}</svg>`;
 }
 
+// Recuadro de estado del puzle, al estilo de Lichess
+function feedbackHtml(state, hero, title, sub) {
+  const side = hero === 'w' ? 'blancas' : 'negras';
+  const icon = state === 'play'
+    ? `<div class="cg-wrap fb-piece"><piece class="king ${hero === 'w' ? 'white' : 'black'}"></piece></div>`
+    : `<div class="fb-icon ${['good', 'ok'].includes(state) ? 'good' : 'bad'}">${['good', 'ok'].includes(state) ? '✓' : '✗'}</div>`;
+  const t = title ?? { play: 'Tu turno', good: '¡Mejor jugada!', bad: '¡Esa no es la jugada!', ok: '¡Correcto!', failed: 'Ejercicio fallado' }[state];
+  const st = sub ?? { play: `Encuentra la mejor jugada para las ${side}.`, good: 'Sigue…', bad: 'Prueba otra cosa.', ok: 'Ejercicio resuelto', failed: 'Queda para el repaso de fallos' }[state];
+  return `<div class="pfb ${state}">${icon}<div class="pfb-text"><strong>${t}</strong><em>${st}</em></div></div>`;
+}
+
 // ---------- entrenamiento (ciclo cronometrado) ----------
 async function viewTrain(id) {
   const set = store.getSet(id);
@@ -490,16 +501,14 @@ async function viewTrain(id) {
     board.failed = !!cycle.curFailed;
     board.setPaused(!running);
     const white = board.hero === 'w';
-    $('#turn').innerHTML = `<span class="dot ${white ? 'w' : 'b'}"></span> <b>${esc(puzzle.title)}</b> · Juegan ${white ? 'blancas' : 'negras'} <span class="muted">${esc(puzzle.sub || '')}</span>`;
-    feedback('', '');
+    $('#turn').innerHTML = `<span class="dot ${white ? 'w' : 'b'}"></span> <b>${esc(puzzle.title)}</b> <span class="muted">${esc(puzzle.sub || '')}</span>`;
+    feedback(cycle.curFailed ? 'bad' : 'play', cycle.curFailed ? 'Sigue intentándolo' : undefined, cycle.curFailed ? 'Este ejercicio ya cuenta como fallado.' : undefined);
     renderActions();
     updHeader();
   }
 
-  function feedback(cls, html) {
-    const fb = $('#fb');
-    fb.className = 'feedback ' + cls;
-    fb.innerHTML = html;
+  function feedback(state, title, sub) {
+    $('#fb').innerHTML = state ? feedbackHtml(state, board.hero, title, sub) : '';
   }
 
   function renderActions() {
@@ -509,12 +518,12 @@ async function viewTrain(id) {
       a.innerHTML = `
         ${r && !r.ok ? `<button class="btn ghost" id="markOk">✓ Contar como correcta</button>` : ''}
         <button class="btn ghost" id="analyse">🔍 Analizar</button>
-        <button class="btn primary" id="next">Siguiente ›</button>`;
+        <button class="btn success" id="next">Siguiente ›</button>`;
       $('#next').onclick = loadCurrent;
       $('#analyse').onclick = () => openAnalysis(prevPayload);
       $('#markOk') && ($('#markOk').onclick = () => {
         r.ok = true; store.save(); updHeader();
-        feedback('ok', '✓ Marcada como correcta'); renderActions();
+        feedback('ok', 'Marcada como correcta', 'Cuenta como acierto en este ciclo'); renderActions();
       });
     } else {
       a.innerHTML = `
@@ -533,11 +542,11 @@ async function viewTrain(id) {
     if (type === 'wrong') {
       cycle.curFailed = true; store.save();
       if (!wrongMoves.includes(info.uci)) wrongMoves.push(info.uci);
-      feedback('bad', `✗ ${esc(info.san)} no es la solución. Inténtalo otra vez.`);
+      feedback('bad', undefined, `${esc(info.san)} no es la solución. Prueba otra cosa.`);
     } else if (type === 'good') {
-      feedback('ok', '✓ ¡Bien! Sigue…');
+      feedback('good');
     } else if (type === 'progress') {
-      feedback('ok', '✓ Sigue, te toca');
+      feedback('good', undefined, 'Sigue, te toca.');
     } else if (type === 'solved') {
       commit();
       const idx = cycle.order[cycle.pos];
@@ -555,7 +564,7 @@ async function viewTrain(id) {
       solved = true;
       store.save();
       updHeader();
-      feedback(ok ? 'ok' : 'bad', ok ? '✓ ¡Correcto!' : 'Ejercicio fallado — queda para repasar');
+      feedback(ok ? 'ok' : 'failed');
       renderActions();
       if (ok && settings.autoNext) advanceTimer = setTimeout(() => { if (running) loadCurrent(); }, 700);
     }
@@ -615,7 +624,7 @@ async function viewTrain(id) {
   };
 
   try { await loadCurrent(); }
-  catch (e) { feedback('bad', 'Error cargando ejercicio: ' + esc(e.message)); }
+  catch (e) { feedback('failed', 'Error cargando el ejercicio', esc(e.message)); }
   tick();
 }
 
@@ -696,16 +705,16 @@ async function viewReview(id) {
         <button class="btn ghost" id="sol">Solución</button>
         <button class="btn ghost" id="analyse" aria-label="Analizar">🔍</button>
         <button class="btn ghost" id="retry" aria-label="Reintentar">↺</button>
-        <button class="btn primary" id="next">Siguiente ›</button>
+        <button class="btn success" id="next">Siguiente ›</button>
       </div>
     </div>`;
-  const fb = (c, h) => { $('#fb').className = 'feedback ' + c; $('#fb').innerHTML = h; };
+  const fb = (state, title, sub) => { $('#fb').innerHTML = state ? feedbackHtml(state, board.hero, title, sub) : ''; };
   const board = new PuzzleBoard($('#board'), {
     coords: settings.coords,
     onEvent: (t, info) => {
-      if (t === 'wrong') { fb('bad', `✗ ${esc(info.san)} no es la solución`); if (!wrong.includes(info.uci)) wrong.push(info.uci); }
-      if (t === 'good' || t === 'progress') fb('ok', '✓ Sigue…');
-      if (t === 'solved') fb(info.ok ? 'ok' : 'bad', info.ok ? '✓ ¡Correcto!' : 'Solución mostrada');
+      if (t === 'wrong') { fb('bad', undefined, `${esc(info.san)} no es la solución. Prueba otra cosa.`); if (!wrong.includes(info.uci)) wrong.push(info.uci); }
+      if (t === 'good' || t === 'progress') fb('good');
+      if (t === 'solved') fb(info.ok ? 'ok' : 'failed', info.ok ? undefined : 'Solución mostrada', info.ok ? undefined : 'Puedes reintentarlo con ↺');
     },
   });
   async function show() {
@@ -714,8 +723,8 @@ async function viewReview(id) {
     board.load(p);
     const white = board.hero === 'w';
     $('#cnt').textContent = `${i + 1}/${list.length}`;
-    $('#turn').innerHTML = `<span class="dot ${white ? 'w' : 'b'}"></span> <b>${esc(p.title)}</b> · Juegan ${white ? 'blancas' : 'negras'}`;
-    fb('', '');
+    $('#turn').innerHTML = `<span class="dot ${white ? 'w' : 'b'}"></span> <b>${esc(p.title)}</b>`;
+    fb('play');
   }
   $('#prev').onclick = () => { i = (i - 1 + list.length) % list.length; show(); };
   $('#next').onclick = () => { i = (i + 1) % list.length; show(); };

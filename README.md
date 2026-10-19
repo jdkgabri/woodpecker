@@ -29,3 +29,9 @@ Cualquier jugada que dé mate se acepta siempre.
 La pantalla de análisis usa Stockfish 17.1 compilado a WebAssembly
 ([stockfish.js](https://github.com/nmrugg/stockfish.js), versión *lite single-thread*),
 en `public/stockfish/`. Stockfish es software libre bajo licencia GPLv3 (`public/stockfish/COPYING.txt`).
+
+## Créditos de diseño
+
+El aspecto imita el tema oscuro de [Lichess](https://lichess.org) (sin usar su logo ni su marca).
+Sonidos: set *standard* de Lichess (Enigmahack / lila, AGPLv3+), en `public/sound/`.
+Piezas *cburnett* (Colin M.L. Burnett, GPLv2+) y tablero marrón, vía [chessground](https://github.com/lichess-org/chessground).

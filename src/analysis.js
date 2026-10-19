@@ -3,6 +3,8 @@ import { Chessground } from 'chessground';
 import { Chess } from 'chess.js';
 import { Engine } from './engine.js';
 import * as store from './store.js';
+import { askPromotion } from './puzzleboard.js';
+import { sound } from './sound.js';
 
 const KEY = 'wp:analysis';
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -69,7 +71,7 @@ export function viewAnalysis(app) {
         <button class="icon-btn" id="flip" aria-label="Girar tablero">⇅</button></header>
       <div class="eval-row"><b id="evalTxt">…</b><span class="muted small" id="depth"></span>
         <label class="switch mini"><input type="checkbox" id="engOn" checked><span>Stockfish</span></label></div>
-      <div class="board-wrap"><div class="board" id="board"></div></div>
+      <div class="board-wrap with-gauge"><div class="gauge"><i id="gauge"></i></div><div class="board" id="board"></div></div>
       <div class="info">
         <div class="pv" id="pvs"><p class="muted small">Cargando motor…</p></div>
         <div class="movelist" id="moves"></div>
@@ -124,6 +126,7 @@ export function viewAnalysis(app) {
       movable: { color: toColor(c.turn()), dests },
     });
     cg.setAutoShapes([]);
+    $('#gauge').parentElement.classList.toggle('flip', orientation === 'black');
     // lista de jugadas
     const sans = sanLine(p.fen, moves);
     $('#moves').innerHTML = sans.map((s, i) => `<button class="mv ${i + 1 === ply ? 'on' : ''}" data-ply="${i + 1}">${esc(s)}</button>`).join(' ');
@@ -136,6 +139,7 @@ export function viewAnalysis(app) {
     $('#depth').textContent = '';
     if (c.isGameOver()) {
       engine?.stop();
+      if (c.isCheckmate()) $('#gauge').style.height = c.turn() === 'w' ? '100%' : '0%';
       $('#evalTxt').textContent = c.isCheckmate() ? 'Jaque mate' : 'Tablas';
       $('#pvs').innerHTML = '';
       return;
@@ -146,6 +150,9 @@ export function viewAnalysis(app) {
     engine.analyse(fen, 3, (lines, depth) => {
       const best = lines[0];
       $('#evalTxt').textContent = fmtScore(best);
+      // barra de evaluación como en Lichess (porcentaje de las blancas)
+      const wc = best.mate != null ? (best.mate > 0 ? 1 : -1) : 2 / (1 + Math.exp(-0.00368208 * best.cp)) - 1;
+      $('#gauge').style.height = (50 - wc * 50) + '%';
       $('#depth').textContent = `profundidad ${depth}`;
       $('#pvs').innerHTML = lines.map((l, i) => `
         <button class="pvline" data-pv="${i}"><b>${fmtScore(l)}</b> ${esc(sanLine(fen, l.pv.slice(0, 10)).join(' '))}</button>`).join('');
@@ -159,14 +166,19 @@ export function viewAnalysis(app) {
     if (moves[ply] === u) ply++;
     else { moves = moves.slice(0, ply).concat(u); ply++; }
     render();
+    const { last } = position();
+    if (last) sound(last.captured ? 'capture' : 'move');
   }
 
-  function userMove(orig, dest) {
+  async function userMove(orig, dest) {
     const { c } = position();
     const piece = c.get(orig);
     let promo = '';
-    if (piece?.type === 'p' && (dest[1] === '8' || dest[1] === '1')) promo = 'q';
-    playUci(orig + dest + promo);
+    if (piece?.type === 'p' && (dest[1] === '8' || dest[1] === '1')) {
+      promo = await askPromotion($('#board'), orientation, toColor(c.turn()), dest);
+      if (!promo) return render();
+    }
+    playUci(orig + dest + promo, true);
   }
 
   $('#first').onclick = () => { ply = 0; render(); };

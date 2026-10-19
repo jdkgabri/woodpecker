@@ -180,20 +180,28 @@ export class PuzzleBoard {
   }
 
   askPromotion(dest) {
-    return new Promise(resolve => {
-      const color = this.hero;
-      const wrap = document.createElement('div');
-      wrap.className = 'promo';
-      const glyph = { q: '♛', r: '♜', b: '♝', n: '♞' };
-      for (const p of ['q', 'n', 'r', 'b']) {
-        const b = document.createElement('button');
-        b.className = 'promo-btn ' + toColor(color);
-        b.textContent = glyph[p];
-        b.onclick = ev => { ev.stopPropagation(); wrap.remove(); resolve(p); };
-        wrap.appendChild(b);
-      }
-      wrap.onclick = () => { wrap.remove(); resolve(''); };
-      this.el.parentElement.appendChild(wrap);
-    });
+    return askPromotion(this.el, this.cg.state.orientation, toColor(this.hero), dest);
   }
+}
+
+
+// Selector de promoción sobre el tablero, como en Lichess. Devuelve 'q' | 'n' | 'r' | 'b' | '' (cancelado)
+export function askPromotion(el, orient, color, dest) {
+  return new Promise(resolve => {
+    const file = dest.charCodeAt(0) - 97;
+    const col = orient === 'white' ? file : 7 - file;
+    const fromTop = (dest[1] === '8') === (orient === 'white');
+    const wrap = document.createElement('div');
+    wrap.className = 'promotion';
+    ['queen', 'knight', 'rook', 'bishop'].forEach((role, k) => {
+      const sq = document.createElement('square');
+      sq.style.left = col * 12.5 + '%';
+      sq.style.top = (fromTop ? k : 7 - k) * 12.5 + '%';
+      sq.innerHTML = `<piece class="${role} ${color}"></piece>`;
+      sq.onclick = ev => { ev.stopPropagation(); wrap.remove(); resolve({ queen: 'q', knight: 'n', rook: 'r', bishop: 'b' }[role]); };
+      wrap.appendChild(sq);
+    });
+    wrap.onclick = () => { wrap.remove(); resolve(''); };
+    el.appendChild(wrap);
+  });
 }

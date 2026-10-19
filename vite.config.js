@@ -12,7 +12,7 @@ export default defineConfig({
       srcDir: 'src',
       filename: 'sw.js',
       injectManifest: {
-        globPatterns: ['**/*.{js,css,html,png,svg,json}'],
+        globPatterns: ['**/*.{js,css,html,png,svg,json,mp3}'],
         globIgnores: ['stockfish/**'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },

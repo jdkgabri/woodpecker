@@ -67,10 +67,10 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 class RateLimited extends Error {}
 
 // GET con un reintento tras el límite de peticiones de Lichess (429)
-async function getJson(url, signal, onStatus) {
+async function getJson(url, signal, onStatus, anonymous = false) {
   for (let attempt = 0; ; attempt++) {
     if (signal?.aborted) throw new Error('Cancelado');
-    const res = await fetch(url, { signal, headers: { Accept: 'application/json', ...authHeaders() } });
+    const res = await fetch(url, { signal, headers: { Accept: 'application/json', ...(anonymous ? {} : authHeaders()) } });
     if (res.status === 429) {
       if (attempt >= 1) throw new RateLimited();
       onStatus?.('Lichess pide esperar un minuto…');
@@ -90,7 +90,7 @@ function toItem(j) {
 
 /**
  * opts: { theme, count, difficulty }            -> dificultad relativa a tu Elo
- *       { theme, count, minRating, maxRating, baseRating } -> rango absoluto
+ *       { theme, count, minRating, maxRating, userRating } -> rango absoluto
  * Devuelve { items, complete, rateLimited }.
  */
 export async function fetchLichessPuzzles(opts, onProgress, signal) {
@@ -102,10 +102,14 @@ export async function fetchLichessPuzzles(opts, onProgress, signal) {
 
   // Niveles a pedir: el elegido, o los que mejor cubren el rango absoluto
   let levels;
+  let anonymous = false;
   if (!absolute) levels = [opts.difficulty];
   else {
-    const base = opts.baseRating || 1500;
+    // Con cuenta, Lichess centra los niveles en el Elo del usuario (±600 aprox.); sin cuenta, en ~1500.
+    // Se usa la cuenta solo si el rango pedido queda a su alcance; si no, se pide sin cuenta.
     const mid = (opts.minRating + opts.maxRating) / 2;
+    anonymous = !opts.userRating || Math.abs(mid - opts.userRating) > Math.abs(mid - 1500);
+    const base = anonymous ? 1500 : opts.userRating;
     const ranked = Object.keys(DIFF_OFFSET).sort((a, b) => Math.abs(base + DIFF_OFFSET[a] - mid) - Math.abs(base + DIFF_OFFSET[b] - mid));
     const overlapping = ranked.filter(d => base + DIFF_OFFSET[d] + 300 >= opts.minRating && base + DIFF_OFFSET[d] - 300 <= opts.maxRating);
     levels = overlapping.length ? overlapping : ranked.slice(0, 1);
@@ -124,7 +128,7 @@ export async function fetchLichessPuzzles(opts, onProgress, signal) {
     let batchLevels = [...levels], requests = 0, turn = 0;
     while (out.length < count && batchLevels.length && requests < Math.ceil(count / 50) * 6 + 4) {
       const level = batchLevels[turn++ % batchLevels.length];
-      const data = await getJson(`https://lichess.org/api/puzzle/batch/${theme}?nb=50&difficulty=${level}`, signal, status);
+      const data = await getJson(`https://lichess.org/api/puzzle/batch/${theme}?nb=50&difficulty=${level}`, signal, status, anonymous);
       requests++;
       const added = (data.puzzles || []).filter(add).length;
       if (!added) batchLevels = batchLevels.filter(l => l !== level);
@@ -136,7 +140,7 @@ export async function fetchLichessPuzzles(opts, onProgress, signal) {
     const maxMisses = Math.max(60, (count - out.length) * 3);
     while (out.length < count && misses < maxMisses) {
       const level = levels[turn2++ % levels.length];
-      const j = await getJson(`https://lichess.org/api/puzzle/next?angle=${theme}&difficulty=${level}&_=${Math.random()}`, signal, status);
+      const j = await getJson(`https://lichess.org/api/puzzle/next?angle=${theme}&difficulty=${level}&_=${Math.random()}`, signal, status, anonymous);
       if (!add(j)) misses++;
       onProgress?.(out.length, `Descargando (modo lento)… ${out.length}/${count}`);
       await sleep(250);

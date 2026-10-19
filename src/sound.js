@@ -1,32 +1,21 @@
+// Sonidos del set "standard" de Lichess (Enigmahack / lila, AGPLv3+): public/sound/
 import { getSettings } from './store.js';
 
-let ctx;
-const TONES = {
-  move: [[520, 0.05]],
-  capture: [[380, 0.07]],
-  check: [[660, 0.06], [760, 0.06]],
-  mate: [[660, 0.08], [880, 0.12]],
-  error: [[220, 0.15]],
-  success: [[700, 0.07], [940, 0.1]],
+const FILES = {
+  move: 'Move', capture: 'Capture', check: 'Move', mate: 'Move',
+  error: 'Error', success: 'Confirmation', notify: 'GenericNotify', select: 'Select',
 };
+const cache = {};
 
 export function sound(name) {
-  if (!getSettings().sound) return;
+  if (!getSettings().sound || !FILES[name]) return;
   try {
-    ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
-    let t = ctx.currentTime;
-    for (const [f, d] of TONES[name] || []) {
-      const o = ctx.createOscillator();
-      const g = ctx.createGain();
-      o.type = 'triangle';
-      o.frequency.value = f;
-      g.gain.setValueAtTime(0.0001, t);
-      g.gain.exponentialRampToValueAtTime(0.15, t + 0.01);
-      g.gain.exponentialRampToValueAtTime(0.0001, t + d);
-      o.connect(g).connect(ctx.destination);
-      o.start(t);
-      o.stop(t + d + 0.02);
-      t += d;
-    }
+    const src = import.meta.env.BASE_URL + 'sound/' + FILES[name] + '.mp3';
+    // un Audio por sonido, clonado para poder solaparse (capturas rápidas, etc.)
+    cache[name] = cache[name] || new Audio(src);
+    const a = cache[name].paused ? cache[name] : cache[name].cloneNode();
+    a.volume = name === 'error' ? 0.5 : 0.8;
+    a.currentTime = 0;
+    a.play().catch(() => {});
   } catch {}
 }
