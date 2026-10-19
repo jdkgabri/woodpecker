@@ -42,6 +42,7 @@ p { margin: .4rem 0; }
   width: 40px; height: 40px; border-radius: 10px; font-size: 1.2rem;
   display: inline-grid; place-items: center; cursor: pointer; flex: none;
 }
+.badge.bad, .bad-text { color: var(--bad); }
 .badge { background: var(--bg3); padding: .2rem .6rem; border-radius: 99px; font-size: .9rem; }
 
 .wrap { padding: 0 16px 32px; display: flex; flex-direction: column; gap: 12px; }

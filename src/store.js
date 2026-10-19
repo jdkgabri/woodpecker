@@ -1,4 +1,4 @@
-// Persistencia local: todo vive en el dispositivo (sin login).
+// Persistencia local (fuente de verdad de la interfaz). sync.js la replica en la nube si hay sesión.
 const KEY = 'wp:data:v1';
 const SETTINGS_KEY = 'wp:settings:v1';
 
@@ -11,18 +11,76 @@ const DEFAULT_SETTINGS = {
 };
 
 let data = load();
+const snapshots = new Map(); // id -> JSON del set sin updatedAt, para detectar cambios
+const saveListeners = new Set();
+let lockedSetId = null;      // set que se está entrenando: no se sobrescribe desde la nube
 
 function load() {
+  let d = { sets: [] };
   try {
     const raw = localStorage.getItem(KEY);
-    if (raw) return JSON.parse(raw);
+    if (raw) d = JSON.parse(raw);
   } catch (e) { console.error(e); }
-  return { sets: [] };
+  d.deleted = d.deleted || {};
+  d.days = d.days || [];
+  for (const s of d.sets) s.updatedAt = s.updatedAt || s.createdAt || Date.now();
+  return d;
 }
 
+const contentOf = set => {
+  const { updatedAt, ...rest } = set;
+  return JSON.stringify(rest);
+};
+for (const s of data.sets) snapshots.set(s.id, contentOf(s));
+
 export function save() {
+  const changed = [];
+  for (const s of data.sets) {
+    const c = contentOf(s);
+    if (snapshots.get(s.id) !== c) {
+      snapshots.set(s.id, c);
+      s.updatedAt = Date.now();
+      changed.push(s.id);
+    }
+  }
   try { localStorage.setItem(KEY, JSON.stringify(data)); }
   catch (e) { console.error(e); alert('No se pudo guardar el progreso: ' + e.message); }
+  saveListeners.forEach(f => f(changed));
+}
+
+export const onSave = f => { saveListeners.add(f); return () => saveListeners.delete(f); };
+export const setLocked = id => { lockedSetId = id; };
+export const rawData = () => data;
+
+// Aplica datos que vienen de la nube. Devuelve true si cambió algo visible.
+export function applyRemote({ sets = [], deleted = {}, days = [] }) {
+  let changed = false;
+  for (const [id, t] of Object.entries(deleted)) {
+    if (!data.deleted[id] || data.deleted[id] < t) data.deleted[id] = t;
+    const local = getSet(id);
+    if (local && local.updatedAt <= t && id !== lockedSetId) {
+      data.sets = data.sets.filter(s => s.id !== id);
+      snapshots.delete(id);
+      changed = true;
+    }
+  }
+  for (const remote of sets) {
+    if (remote.id === lockedSetId) continue;
+    if (data.deleted[remote.id] && data.deleted[remote.id] >= remote.updatedAt) continue;
+    const i = data.sets.findIndex(s => s.id === remote.id);
+    if (i === -1) data.sets.push(remote);
+    else if (remote.updatedAt > data.sets[i].updatedAt) data.sets[i] = remote;
+    else continue;
+    snapshots.set(remote.id, contentOf(remote));
+    changed = true;
+  }
+  const allDays = new Set([...data.days, ...days]);
+  if (allDays.size !== data.days.length) { data.days = [...allDays].sort(); changed = true; }
+  if (changed) {
+    data.sets.sort((a, b) => b.createdAt - a.createdAt);
+    try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { console.error(e); }
+  }
+  return changed;
 }
 
 export function getSettings() {
@@ -45,6 +103,8 @@ export function addSet(set) {
 }
 export function deleteSet(id) {
   data.sets = data.sets.filter(s => s.id !== id);
+  snapshots.delete(id);
+  data.deleted[id] = Date.now();
   save();
 }
 
@@ -91,8 +151,12 @@ export function exportData() {
 export function importData(json) {
   const obj = JSON.parse(json);
   if (!obj || !obj.data || !Array.isArray(obj.data.sets)) throw new Error('Archivo de copia no válido');
-  data = obj.data;
-  save();
+  const now = Date.now();
+  data = { deleted: {}, days: [], ...obj.data };
+  // lo importado pasa a ser lo más reciente, para que se suba a la nube
+  for (const s of data.sets) { s.updatedAt = now; snapshots.set(s.id, contentOf(s)); }
+  try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { console.error(e); }
+  saveListeners.forEach(f => f(data.sets.map(s => s.id)));
   if (obj.settings) setSettings(obj.settings);
 }
 
@@ -100,7 +164,6 @@ export function importData(json) {
 const localDay = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 export function touchActivity() {
   const day = localDay(new Date());
-  data.days = data.days || [];
   if (!data.days.includes(day)) { data.days.push(day); save(); }
 }
 export function streak() {

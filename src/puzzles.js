@@ -1,4 +1,5 @@
 import { Chess } from 'chess.js';
+import { authHeaders } from './lichess.js';
 
 // Niveles del libro "The Woodpecker Method" (Smith & Tikkanen)
 export const WP_LEVELS = [
@@ -64,7 +65,7 @@ export async function fetchLichessPuzzles({ theme, difficulty, count }, onProgre
   while (out.length < count && misses < Math.max(40, count)) {
     if (signal?.aborted) throw new Error('Cancelado');
     const url = `https://lichess.org/api/puzzle/next?angle=${theme}&difficulty=${difficulty}&_=${Math.random()}`;
-    const res = await fetch(url, { signal, headers: { Accept: 'application/json' } });
+    const res = await fetch(url, { signal, headers: { Accept: 'application/json', ...authHeaders() } });
     if (res.status === 429) { await new Promise(r => setTimeout(r, 61000)); continue; }
     if (!res.ok) throw new Error('Lichess respondió ' + res.status);
     const j = await res.json();

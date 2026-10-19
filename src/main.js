@@ -6,6 +6,8 @@ import './style.css';
 import * as store from './store.js';
 import { WP_LEVELS, WP_TOTAL, LICHESS_THEMES, LICHESS_DIFFS, resolveItem, fetchLichessPuzzles, loadWoodpecker } from './puzzles.js';
 import { PuzzleBoard } from './puzzleboard.js';
+import * as lichess from './lichess.js';
+import * as sync from './sync.js';
 
 const app = document.getElementById('app');
 let cleanup = null; // función de salida de la vista actual
@@ -52,6 +54,7 @@ function viewHome() {
       <h1><span class="logo">♞</span> Woodpecker</h1>
       <div class="top-right">
         ${streak ? `<span class="badge" title="Racha de días">🔥 ${streak}</span>` : ''}
+        ${syncBadge()}
         <a class="icon-btn" href="#/settings" aria-label="Ajustes">⚙</a>
       </div>
     </header>
@@ -76,6 +79,13 @@ function viewHome() {
     const set = createWpSet(l.from, l.to, 'seq', `Woodpecker ${l.label.toLowerCase()} (${l.from}–${l.to})`);
     go('#/set/' + set.id);
   }));
+}
+
+function syncBadge() {
+  const st = sync.state;
+  if (!st.configured || !st.user) return '';
+  const icon = { ok: '☁︎ ✓', syncing: '☁︎ …', error: '☁︎ ⚠' }[st.status] || '☁︎';
+  return `<a class="badge ${st.status === 'error' ? 'bad' : ''}" href="#/settings" title="Sincronización">${icon}</a>`;
 }
 
 function setCard(set) {
@@ -184,6 +194,7 @@ function bindWp() {
 
 function formLichess() {
   return `
+    ${lichessNotice()}
     <section class="card form">
       <label for="theme">Tema</label>
       <select id="theme">${LICHESS_THEMES.map(([k, v]) => `<option value="${k}">${v}</option>`).join('')}</select>
@@ -201,7 +212,16 @@ function formLichess() {
     <p class="muted small">Se descargan una sola vez desde la base de puzles de Lichess y quedan guardados para usarlos sin conexión.</p>`;
 }
 
+function lichessNotice() {
+  const a = lichess.getAuth();
+  return a
+    ? `<p class="small muted">Conectado a Lichess como <b>${esc(a.username || '')}</b>${a.puzzleRating ? ` (Elo de puzles ${a.puzzleRating})` : ''}: la dificultad se ajusta a tu nivel.</p>`
+    : `<section class="card"><p class="small">Sin cuenta, Lichess calcula la dificultad para un jugador de unos 1500. Conecta tu cuenta para que se ajuste a tu Elo de puzles.</p>
+       <button class="btn ghost" id="liLogin">Conectar con Lichess</button></section>`;
+}
+
 function bindLichess() {
+  $('#liLogin')?.addEventListener('click', () => lichess.login());
   let ctrl = null;
   cleanup = () => ctrl?.abort();
   $('#create').addEventListener('click', async e => {
@@ -311,6 +331,7 @@ async function viewTrain(id) {
   if (!cycle) return go('#/set/' + id);
   const settings = store.getSettings();
   store.touchActivity();
+  store.setLocked(set.id);
 
   app.innerHTML = `
     <div class="train">
@@ -364,6 +385,7 @@ async function viewTrain(id) {
     $('#overlay').classList.toggle('hide-board', settings.hidePaused);
     $('#pause').textContent = '▶';
     tick();
+    sync.flush().catch(() => {});
   }
   function resume() {
     if (running) return;
@@ -496,6 +518,8 @@ async function viewTrain(id) {
 
   cleanup = () => {
     commit();
+    store.setLocked(null);
+    sync.flush().catch(() => {});
     running = false;
     clearInterval(tickTimer);
     clearTimeout(advanceTimer);
@@ -557,6 +581,30 @@ async function viewReview(id) {
 }
 
 // ---------- ajustes ----------
+function syncCard() {
+  const st = sync.state;
+  if (!st.configured) return `<h2>Sincronización</h2><p class="small muted">No configurada: el progreso se guarda solo en este dispositivo.</p>`;
+  if (!st.user) return `<h2>Sincronización</h2>
+    <p class="small muted">Inicia sesión con Google para tener el mismo progreso en el móvil y en el PC. Solo hace falta una vez por dispositivo.</p>
+    <button class="btn primary" id="gLogin">Iniciar sesión con Google</button>
+    ${st.error ? `<p class="small bad-text">${esc(st.error)}</p>` : ''}`;
+  const status = { ok: '✓ Sincronizado', syncing: 'Sincronizando…', error: '⚠ Error' }[st.status] || '';
+  return `<h2>Sincronización</h2>
+    <p class="small">Conectado como <b>${esc(st.user.email || st.user.name || '')}</b></p>
+    <p class="small ${st.status === 'error' ? 'bad-text' : 'muted'}">${status}${st.lastSync ? ' · ' + new Date(st.lastSync).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }) : ''}${st.error ? ' · ' + esc(st.error) : ''}</p>
+    <button class="btn ghost" id="gLogout">Cerrar sesión</button>`;
+}
+
+function bindSyncCard() {
+  const card = $('#syncCard');
+  if (!card) return;
+  card.innerHTML = syncCard();
+  $('#gLogin')?.addEventListener('click', () => sync.signIn().catch(e => alert('No se pudo iniciar sesión: ' + e.message)));
+  $('#gLogout')?.addEventListener('click', async () => {
+    if (confirm('¿Cerrar sesión? Tu progreso seguirá en este dispositivo y en la nube.')) await sync.signOut();
+  });
+}
+
 function viewSettings() {
   const s = store.getSettings();
   const opts = [
@@ -572,6 +620,18 @@ function viewSettings() {
       <section class="card form">
         ${opts.map(([k, l]) => `<label class="switch"><input type="checkbox" data-k="${k}" ${s[k] ? 'checked' : ''}><span>${l}</span></label>`).join('')}
       </section>
+      <section class="card" id="syncCard">${syncCard()}</section>
+      <section class="card">
+        <h2>Lichess</h2>
+        ${(() => {
+          const a = lichess.getAuth();
+          return a
+            ? `<p class="small">Conectado como <b>${esc(a.username || '…')}</b>${a.puzzleRating ? ` · Elo de puzles ${a.puzzleRating}` : ''}</p>
+               <button class="btn ghost" id="liLogout">Desconectar</button>`
+            : `<p class="small muted">Conecta tu cuenta para que los sets de Lichess se adapten a tu Elo de puzles.</p>
+               <button class="btn ghost" id="liLogin">Conectar con Lichess</button>`;
+        })()}
+      </section>
       <section class="card">
         <h2>Tus datos</h2>
         <p class="muted small">No hay cuentas ni contraseñas: el progreso se guarda en este dispositivo y la app nunca te pedirá iniciar sesión.
@@ -586,6 +646,10 @@ function viewSettings() {
       <p class="muted small center">Ejercicios: <i>The Woodpecker Method</i> (Axel Smith y Hans Tikkanen), 1128 diagramas.</p>
     </main>`;
   app.querySelectorAll('[data-k]').forEach(c => c.addEventListener('change', () => { s[c.dataset.k] = c.checked; store.setSettings(s); }));
+  $('#liLogin')?.addEventListener('click', () => lichess.login());
+  $('#liLogout')?.addEventListener('click', async () => { await lichess.logout(); route(); });
+  bindSyncCard();
+  cleanup = sync.onChange(bindSyncCard);
   navigator.storage?.persisted?.().then(p => {
     $('#persist') && ($('#persist').textContent = p ? '✓ Almacenamiento persistente activado' : 'El navegador podría borrar los datos si falta espacio: instala la app para protegerlos y exporta copias de vez en cuando.');
   });
@@ -606,5 +670,18 @@ function viewSettings() {
   };
 }
 
-route();
+lichess.handleRedirect()
+  .catch(err => alert(err.message))
+  .finally(() => {
+    route();
+    lichess.refreshAccount().catch(() => {});
+    sync.start(onRemoteChange).catch(e => console.error(e));
+    sync.onChange(() => { if (currentView() === 'home') route(); });
+  });
+
+const currentView = () => (location.hash.slice(1) || '/').split('/')[1] || 'home';
+// Llegan datos de otro dispositivo: refrescar las vistas que solo muestran información
+function onRemoteChange() {
+  if (['home', 'set'].includes(currentView())) route();
+}
 loadWoodpecker().catch(() => {});
