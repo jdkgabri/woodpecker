@@ -3,12 +3,62 @@ import * as store from './store.js';
 import * as sync from './sync.js';
 import { MILESTONES, parseDay } from './habit.js';
 import { t, tn, locale, lang } from './i18n.js';
+import { computeXp, levelInfo, ACHIEVEMENTS, unlocked } from './progress.js';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const weekday = k => parseDay(k).toLocaleDateString(locale(), { weekday: 'narrow' }).toUpperCase();
 const longDate = k => parseDay(k).toLocaleDateString(locale(), { weekday: 'long', day: 'numeric', month: 'long' });
 
 export const habitOn = () => !!store.habitData().enabled;
+export const gamifyOn = () => habitOn() && !!store.habitData().gamify;
+
+// ---------- XP, nivel y logros (opcional dentro del modo hábito) ----------
+const progressData = () => { const d = store.rawData(); return { sets: d.sets, days: d.days, frozen: d.frozen }; };
+
+export function levelCard(full) {
+  const L = levelInfo(computeXp(progressData()));
+  const got = new Set(unlocked(progressData()));
+  const head = `
+    <div class="lvl-top">
+      <div class="lvl-icon">${L.icon}</div>
+      <div class="lvl-text"><b>${t('Nivel {n}', { n: L.level })} · ${t(L.rank)}</b>
+        <span class="small muted">${t('{xp} XP · faltan {k} para el nivel {n}', { xp: L.xp.toLocaleString(locale()), k: (L.to - L.xp).toLocaleString(locale()), n: L.level + 1 })}</span></div>
+      ${full ? '' : `<a class="small link" href="#/stats">${t('{n}/{m} logros', { n: got.size, m: ACHIEVEMENTS.length })} ›</a>`}
+    </div>
+    <div class="bar"><i style="width:${Math.round(L.progress * 100)}%"></i></div>`;
+  if (!full) return `<section class="card lvl">${head}</section>`;
+  return `<section class="card lvl">${head}
+    <h2 class="ach-title" id="logros">${t('Logros')} <span class="muted small">${got.size}/${ACHIEVEMENTS.length}</span></h2>
+    <div class="ach-grid">${ACHIEVEMENTS.map(([id, icon, name, desc]) => `
+      <div class="ach ${got.has(id) ? 'got' : ''}" title="${esc(t(desc))}"><span class="ach-i">${icon}</span><b>${esc(t(name))}</b><small>${esc(t(desc))}</small></div>`).join('')}</div>
+    <p class="small muted">${t('XP: 10 por ejercicio resuelto, 3 por fallado, 50 por ciclo completado (+25 con 90 % de acierto, +25 si es más rápido que el anterior) y un extra diario según tu racha.')}</p>
+  </section>`;
+}
+
+// Foto del progreso para detectar subidas de nivel y logros nuevos
+export const progressSnapshot = () => (gamifyOn() ? { level: levelInfo(computeXp(progressData())).level, got: new Set(unlocked(progressData())) } : null);
+
+export function notifyProgress(before) {
+  if (!before || !gamifyOn()) return;
+  const after = progressSnapshot();
+  const msgs = [];
+  if (after.level > before.level) {
+    const L = levelInfo(computeXp(progressData()));
+    msgs.push(`${L.icon} ${t('¡Nivel {n}!', { n: L.level })} · ${t(L.rank)}`);
+  }
+  for (const [id, icon, name] of ACHIEVEMENTS) if (after.got.has(id) && !before.got.has(id)) msgs.push(`${icon} ${t('Logro: {name}', { name: t(name) })}`);
+  const delay = document.querySelector('.celebrate') ? 2600 : 0;
+  msgs.forEach((m, i) => setTimeout(() => toast(m), delay + 2600 * i));
+}
+
+function toast(text) {
+  const el = document.createElement('div');
+  el.className = 'toast';
+  el.textContent = text;
+  document.body.appendChild(el);
+  setTimeout(() => el.classList.add('out'), 2300);
+  setTimeout(() => el.remove(), 2800);
+}
 
 // ---------- tarjeta de racha en el inicio ----------
 export function streakCard() {
@@ -80,6 +130,7 @@ export function habitSettings() {
     <h2>${t('Modo hábito')}</h2>
     <label class="switch"><input type="checkbox" id="habitOn" ${on ? 'checked' : ''}><span>${t('Activar racha diaria, protectores y recordatorios')}</span></label>
     <p class="small muted">${t('Opcional. Si no lo activas, la app no muestra rachas ni te envía avisos: entrenas cuando quieras, sin presión.')}</p>
+    ${on ? `<label class="switch"><input type="checkbox" id="gamifyOn" ${store.habitData().gamify ? 'checked' : ''}><span>${t('Mostrar puntos (XP), niveles y logros')}</span></label>` : ''}
     ${on ? `<div id="remBox"><p class="small muted">${t('Cargando recordatorios…')}</p></div>` : ''}`;
 }
 
@@ -91,6 +142,7 @@ export async function bindHabitSettings(root, rerender) {
     }
     rerender();
   });
+  root.querySelector('#gamifyOn')?.addEventListener('change', e => { store.setHabit({ gamify: e.target.checked }); });
   const box = root.querySelector('#remBox');
   if (!box) return;
   if (!sync.state.configured || !sync.state.user) {

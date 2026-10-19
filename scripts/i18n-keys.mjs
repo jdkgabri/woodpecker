@@ -10,8 +10,8 @@ for (const f of readdirSync(dir).filter(f => f.endsWith('.js'))) {
   for (const m of src.matchAll(/\btn\([^,]+,\s*'([^']*)',\s*'([^']*)'/g)) { keys.add(m[1]); keys.add(m[2]); }
 }
 // etiquetas que se traducen de forma dinámica, con t(variable)
-const { WP_LEVELS_LABELS, THEME_LABELS, DIFF_LABELS } = await import('./i18n-dynamic.mjs');
-[...WP_LEVELS_LABELS, ...THEME_LABELS, ...DIFF_LABELS].forEach(k => keys.add(k));
+const { WP_LEVELS_LABELS, THEME_LABELS, DIFF_LABELS, RANK_LABELS, ACHIEVEMENT_LABELS } = await import('./i18n-dynamic.mjs');
+[...WP_LEVELS_LABELS, ...THEME_LABELS, ...DIFF_LABELS, ...RANK_LABELS, ...ACHIEVEMENT_LABELS].forEach(k => keys.add(k));
 
 const { EN } = await import('../src/i18n-en.js');
 const missing = [...keys].filter(k => !(k in EN));

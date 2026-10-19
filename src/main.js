@@ -10,7 +10,7 @@ import { PuzzleBoard } from './puzzleboard.js';
 import * as lichess from './lichess.js';
 import * as sync from './sync.js';
 import { viewAnalysis, openAnalysis, mainLine } from './analysis.js';
-import { habitOn, streakCard, bindStreakCard, celebrate, habitSettings, bindHabitSettings } from './ui-habit.js';
+import { habitOn, gamifyOn, levelCard, progressSnapshot, notifyProgress, streakCard, bindStreakCard, celebrate, habitSettings, bindHabitSettings } from './ui-habit.js';
 import { viewStats } from './stats.js';
 import { t, tn, locale, LANGS, langSetting, applyDocumentLang } from './i18n.js';
 
@@ -71,6 +71,7 @@ function viewHome() {
     <main class="wrap">
       ${installEvt ? `<button class="btn ghost full" id="install">📲 ${t('Instalar la app')}</button>` : ''}
       ${streakCard()}
+      ${gamifyOn() ? levelCard(false) : ''}
       <a class="btn primary full" href="#/new">＋ ${t('Nuevo set')}</a>
       ${sets.length ? '' : `
         <section class="card">
@@ -362,13 +363,15 @@ function viewSet(id) {
   if (!set) return go('#/');
   const cur = store.currentCycle(set);
   const finished = set.cycles.filter(c => c.finishedAt);
-  const last = set.cycles[set.cycles.length - 1];
+  // último ciclo con ejercicios hechos (un ciclo recién empezado aún no tiene fallos que repasar)
+  const last = [...set.cycles].reverse().find(c => Object.keys(c.results).length) || null;
   const failedIdx = last ? Object.entries(last.results).filter(([, r]) => !r.ok).map(([k]) => +k) : [];
   const prev = finished[finished.length - 1];
   const target = prev ? prev.elapsedMs / 2 : null;
   const source = set.source === 'woodpecker'
     ? `The Woodpecker Method · ${t('nº {a}–{b}', { a: set.range[0], b: set.range[1] })}`
     : set.source === 'pgn' ? t('PGN importado')
+    : set.source === 'review' ? t('Selección de las posiciones que más fallas')
     : `Lichess · ${esc(set.lichess?.theme ? themeLabel(set.lichess.theme) : t('puzles'))}${set.lichess?.eloAvg ? ` · Elo ${set.lichess.eloMin}–${set.lichess.eloMax} (${t('media {n}', { n: set.lichess.eloAvg })})` : ''}`;
   app.innerHTML = `
     <header class="top"><a class="icon-btn" href="#/">‹</a><h1 class="ellipsis">${esc(set.name)}</h1>
@@ -432,20 +435,40 @@ function viewSet(id) {
   };
 }
 
+// Gráfico de evolución: barras = tiempo de cada ciclo, línea = acierto
 function chart(set) {
   const cs = set.cycles.filter(c => c.finishedAt);
-  if (cs.length < 1) return '';
+  if (!cs.length) return '';
+  const W = 320, H = 170, L = 34, R = 34, T = 18, B = 28;
+  const iw = W - L - R, ih = H - T - B;
   const max = Math.max(...cs.map(c => c.elapsedMs));
-  const W = 300, H = 120, bw = Math.min(40, (W - 20) / cs.length - 8);
+  const slot = iw / cs.length, bw = Math.min(36, slot * 0.6);
+  const x = i => L + slot * i + slot / 2;
+  const accs = cs.map(c => store.cycleStats(c).acc);
+  const yAcc = a => T + ih * (1 - a);
   const bars = cs.map((c, i) => {
-    const h = (c.elapsedMs / max) * (H - 30);
-    const x = 10 + i * ((W - 20) / cs.length) + 4;
-    const acc = store.cycleStats(c).acc;
-    return `<rect x="${x}" y="${H - 18 - h}" width="${bw}" height="${h}" rx="3" class="cbar"/>
-      <text x="${x + bw / 2}" y="${H - 22 - h}" class="clabel">${fmt(c.elapsedMs)}</text>
-      <text x="${x + bw / 2}" y="${H - 5}" class="clabel">C${c.n} · ${pct(acc)}</text>`;
+    const h = (c.elapsedMs / max) * ih;
+    return `<rect x="${x(i) - bw / 2}" y="${T + ih - h}" width="${bw}" height="${h}" rx="2" class="cbar"/>
+      <text x="${x(i)}" y="${H - 10}" class="clabel">C${c.n}</text>
+      <text x="${x(i)}" y="${T + ih - h - 4}" class="clabel">${fmt(c.elapsedMs)}</text>`;
   }).join('');
-  return `<svg viewBox="0 0 ${W} ${H}" class="chart" role="img" aria-label="${t('Tiempo por ciclo')}">${bars}</svg>`;
+  const pts = accs.map((a, i) => `${x(i)},${yAcc(a)}`).join(' ');
+  const dots = accs.map((a, i) => `<circle cx="${x(i)}" cy="${yAcc(a)}" r="3.5" class="cdot"/><text x="${x(i) + 6}" y="${yAcc(a) - 6}" class="clabel acc" text-anchor="start">${pct(a)}</text>`).join('');
+  const grid = [0, 0.5, 1].map(a => `<line x1="${L}" x2="${W - R}" y1="${yAcc(a)}" y2="${yAcc(a)}" class="cgrid"/><text x="${W - R + 4}" y="${yAcc(a) + 3}" class="clabel acc" text-anchor="start">${a * 100}%</text>`).join('');
+  let compare = '';
+  if (cs.length >= 2) {
+    const first = cs[0], last = cs[cs.length - 1];
+    const dt = (last.elapsedMs - first.elapsedMs) / first.elapsedMs;
+    const da = accs[accs.length - 1] - accs[0];
+    compare = `<p class="small">${t('Ciclo {n} frente al ciclo 1:', { n: last.n })}
+      ${t('tiempo')} <b class="${dt <= 0 ? 'ok-text' : 'bad-text'}">${dt <= 0 ? '−' : '+'}${Math.abs(Math.round(dt * 100))}%</b> ·
+      ${t('Acierto').toLowerCase()} <b class="${da >= 0 ? 'ok-text' : 'bad-text'}">${da >= 0 ? '+' : '−'}${Math.abs(Math.round(da * 100))} pts</b></p>`;
+  }
+  return `<svg viewBox="0 0 ${W} ${H}" class="chart" role="img" aria-label="${t('Tiempo por ciclo')}">
+      ${grid}${bars}<polyline points="${pts}" class="cline"/>${dots}
+    </svg>
+    <p class="small muted legend"><i class="lg-bar"></i> ${t('Tiempo')} &nbsp; <i class="lg-line"></i> ${t('Acierto')}</p>
+    ${compare}`;
 }
 
 // Recuadro de estado del puzle, al estilo de Lichess
@@ -608,9 +631,10 @@ async function viewTrain(id) {
       feedback('good', undefined, t('Sigue, te toca.'));
     } else if (type === 'solved') {
       commit();
+      const before = progressSnapshot();
       const idx = cycle.order[cycle.pos];
       const ok = info.ok && !cycle.curFailed;
-      cycle.results[idx] = { ok, ms: Math.round(curMs), ...(wrongMoves.length ? { w: wrongMoves.slice(0, 5) } : {}) };
+      cycle.results[idx] = { ok, ms: Math.round(curMs), t: Date.now(), ...(wrongMoves.length ? { w: wrongMoves.slice(0, 5) } : {}) };
       if (store.touchActivity()) celebrate(store.habitState().streak);
       prevPayload = {
         fen: puzzle.fen, solution: mainLine(puzzle.tree), wrong: wrongMoves, title: puzzle.title, notes: puzzle.notes,
@@ -625,6 +649,7 @@ async function viewTrain(id) {
       updHeader();
       feedback(ok ? 'ok' : 'failed');
       renderActions();
+      notifyProgress(before);
       if (ok && settings.autoNext) advanceTimer = setTimeout(() => { if (running) loadCurrent(); }, 700);
     }
   }
@@ -632,9 +657,11 @@ async function viewTrain(id) {
   function finishCycle() {
     commit();
     running = false;
+    const before = progressSnapshot();
     cycle.finishedAt = Date.now();
     delete cycle.curMs; delete cycle.curFailed;
     store.save();
+    notifyProgress(before);
     const st = store.cycleStats(cycle);
     const prev = set.cycles[set.cycles.length - 2];
     app.querySelector('.train').innerHTML = `
@@ -750,7 +777,8 @@ function viewCycle(id, n) {
 async function viewReview(id) {
   const set = store.getSet(id);
   if (!set) return go('#/');
-  const last = set.cycles[set.cycles.length - 1];
+  // último ciclo con ejercicios hechos (un ciclo recién empezado aún no tiene fallos que repasar)
+  const last = [...set.cycles].reverse().find(c => Object.keys(c.results).length) || null;
   const list = last ? Object.entries(last.results).filter(([, r]) => !r.ok).map(([k]) => +k) : [];
   if (!list.length) return go('#/set/' + id);
   const settings = store.getSettings();

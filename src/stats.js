@@ -1,8 +1,11 @@
 // Estadísticas globales de todos los sets.
 import * as store from './store.js';
-import { habitOn } from './ui-habit.js';
+import { habitOn, gamifyOn, levelCard } from './ui-habit.js';
 import { addDays, dayKey, parseDay } from './habit.js';
-import { t, locale } from './i18n.js';
+import { themeStats, mostMissed } from './progress.js';
+import { resolveItem, themeLabel, wpLevel } from './puzzles.js';
+import { openAnalysis, mainLine } from './analysis.js';
+import { t, tn, locale } from './i18n.js';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const pct = x => Math.round(x * 100) + '%';
@@ -28,13 +31,16 @@ function bestStreak(keys) {
   return best;
 }
 
+const itemTitle = item => (item.wp ? t('Ejercicio {n}', { n: item.wp }) : item.pgn ? t('Ejercicio {n}', { n: item.n }) : t('Puzle {id}', { id: item.id }));
+const itemSub = item => (item.wp ? wpLevel(item.wp) : item.rating ? `Elo ${item.rating}` : item.label || '');
+
 export function viewStats(app) {
   const sets = store.sets();
   const raw = store.rawData();
-  let solved = 0, ok = 0, time = 0, cyclesDone = 0;
+  let done = 0, ok = 0, time = 0, cyclesDone = 0;
   for (const s of sets) for (const c of s.cycles) {
     const st = store.cycleStats(c);
-    solved += st.done; ok += st.ok; time += c.elapsedMs;
+    done += st.done; ok += st.ok; time += c.elapsedMs;
     if (c.finishedAt) cyclesDone++;
   }
   const days = new Set(raw.days);
@@ -72,12 +78,49 @@ export function viewStats(app) {
     </a>`;
   }).join('');
 
+  // Rendimiento por tema (sets de Lichess)
+  const themes = themeStats(sets).filter(x => x.attempts >= 3);
+  const themeHtml = themes.length ? `
+    <section class="card">
+      <h2>${t('Rendimiento por tema')}</h2>
+      ${themes.map(x => `
+        <div class="trow">
+          <span class="tname">${esc(themeLabel(x.theme))}</span>
+          <span class="tbar"><i style="width:${Math.round(x.acc * 100)}%" class="${x.acc >= 0.8 ? 'good' : x.acc >= 0.6 ? 'mid' : 'low'}"></i></span>
+          <span class="tval">${pct(x.acc)}</span>
+          <small class="muted">${tn(x.attempts, '{n} intento', '{n} intentos')} · ${Math.round(x.avgMs / 1000)} s</small>
+        </div>`).join('')}
+      <p class="small muted">${t('De los sets de Lichess, contando todos los ciclos. Los temas más flojos, arriba.')}</p>
+    </section>` : '';
+
+  // Posiciones que más fallas
+  const missed = mostMissed(sets, 15);
+  const setById = new Map(sets.map(s => [s.id, s]));
+  const missedHtml = missed.length ? `
+    <section class="card">
+      <h2>${t('Las que más fallas')}</h2>
+      <div class="plist">
+        ${missed.map((m, k) => {
+          const s = setById.get(m.setId), item = s.items[m.idx];
+          return `<button class="prow" data-miss="${k}">
+            <span class="pres bad">${m.fails}✗</span>
+            <span class="ptitle"><b>${esc(itemTitle(item))}</b> <small class="muted">${esc(s.name)}${itemSub(item) ? ' · ' + esc(itemSub(item)) : ''}</small></span>
+            <span class="phist muted small">${t('{f} de {a}', { f: m.fails, a: m.attempts })}</span>
+            <span class="ptime ${m.lastOk ? 'ok-text' : 'bad-text'}">${m.lastOk ? '✓' : '✗'}</span>
+          </button>`;
+        }).join('')}
+      </div>
+      <p class="small muted">${t('Veces fallada de las veces jugada; a la derecha, el resultado la última vez. Toca una para analizarla.')}</p>
+      <button class="btn ghost" id="missSet">＋ ${t('Crear un set con estas posiciones')}</button>
+    </section>` : '';
+
   app.innerHTML = `
     <header class="top"><a class="icon-btn" href="#/">‹</a><h1>${t('Estadísticas')}</h1><span></span></header>
     <main class="wrap">
+      ${gamifyOn() ? levelCard(false) : ''}
       <section class="kpis">
-        <div class="kpi"><b>${solved}</b><span>${t('ejercicios resueltos')}</span></div>
-        <div class="kpi"><b>${solved ? pct(ok / solved) : '–'}</b><span>${t('acierto global')}</span></div>
+        <div class="kpi"><b>${done}</b><span>${t('ejercicios hechos')}</span></div>
+        <div class="kpi"><b>${done ? pct(ok / done) : '–'}</b><span>${t('acierto global')}</span></div>
         <div class="kpi"><b>${fmtLong(time)}</b><span>${t('entrenando')}</span></div>
         <div class="kpi"><b>${cyclesDone}</b><span>${t('ciclos completados')}</span></div>
         <div class="kpi"><b>${days.size}</b><span>${t('días entrenados')}</span></div>
@@ -88,7 +131,26 @@ export function viewStats(app) {
         <div class="heatmap">${cells.join('')}</div>
         <p class="small muted">${t('Últimas {n} semanas. Cuenta un día si hiciste al menos un ejercicio de un ciclo.', { n: WEEKS })}${h ? ' ' + t('En azul, días cubiertos con un protector.') : ''}</p>
       </section>
+      ${themeHtml}
+      ${missedHtml}
       <h2 class="section-title">${t('Evolución por set')}</h2>
       ${sets.length ? setRows : `<p class="muted">${t('Aún no tienes sets.')}</p>`}
+      ${gamifyOn() ? levelCard(true) : ''}
     </main>`;
+
+  app.querySelectorAll('[data-miss]').forEach(b => b.addEventListener('click', async () => {
+    const m = missed[+b.dataset.miss];
+    const s = setById.get(m.setId);
+    const last = s.cycles.filter(c => c.results[m.idx]).pop();
+    const p = await resolveItem(s.items[m.idx]);
+    openAnalysis({ fen: p.fen, solution: mainLine(p.tree), wrong: last?.results[m.idx]?.w || [], title: p.title, notes: p.notes, ref: last ? { setId: s.id, cycleN: last.n, idx: m.idx } : undefined });
+  }));
+  app.querySelector('#missSet')?.addEventListener('click', () => {
+    const items = missed.map(m => setById.get(m.setId).items[m.idx]);
+    const set = store.addSet({
+      id: store.uid(), name: t('Las que más fallo ({n})', { n: items.length }), source: 'review', order: 'random',
+      targetCycles: 5, createdAt: Date.now(), items: JSON.parse(JSON.stringify(items)), cycles: [],
+    });
+    location.hash = '#/set/' + set.id;
+  });
 }

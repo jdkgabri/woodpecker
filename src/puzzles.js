@@ -132,14 +132,14 @@ export async function loadLocalIndex() {
   return (localIndex = await res.json());
 }
 
-// Puzles de un tema: [[id, fen, jugadas, elo], ...] ordenados por Elo
+// Puzles de un tema: [[id, fen, jugadas, elo, temas?], ...] ordenados por Elo
 async function loadLocalTheme(theme) {
   if (localCache.has(theme)) return localCache.get(theme);
   const res = await fetch(import.meta.env.BASE_URL + `lichess/${theme}.txt`);
   if (!res.ok) throw new Error(t('No se pudo cargar la colección de puzles'));
   const rows = (await res.text()).split(/\r?\n/).filter(Boolean).map(l => {
-    const [id, fen, moves, rating] = l.split(';');
-    return [id, fen, moves, +rating];
+    const [id, fen, moves, rating, themes] = l.split(';');
+    return [id, fen, moves, +rating, themes];
   });
   localCache.set(theme, rows);
   return rows;
@@ -172,7 +172,9 @@ export async function pickLocalPuzzles({ theme, min, max, count, avoid = new Set
   };
   const chosen = pick(fresh, count);
   const repeated = chosen.length < count ? pick(used, count - chosen.length) : [];
-  const items = [...chosen, ...repeated].map(([id, fen, moves, rating]) => ({ id, fen, tree: solutionToTree(moves.split(' ')), rating }));
+  const items = [...chosen, ...repeated].map(([id, fen, moves, rating, themes]) => ({
+    id, fen, tree: solutionToTree(moves.split(' ')), rating, ...(themes ? { themes: themes.split(' ') } : {}),
+  }));
   return { items, repeated: repeated.length, available: rows.length };
 }
 

@@ -7,7 +7,8 @@ Para cada tema de la app y cada franja de 100 puntos de Elo se eligen al azar ha
 puzles de calidad (muy jugados, bien valorados y con Elo estable).
 
 Salida, un archivo por tema (<tema>.txt), una línea por puzle:
-    id;fen;jugadas;elo
+    id;fen;jugadas;elo[;temas]
+(los temas, separados por espacios, solo en mix.txt y solo los que usa la app)
 donde fen es la posición del ejercicio (tras la jugada del rival que incluye Lichess) y
 jugadas es la solución en UCI empezando por la jugada del usuario.
 Además index.json con el recuento por tema y franja.
@@ -48,7 +49,7 @@ def main(src, out_dir):
             n = seen.get(key, 0) + 1
             seen[key] = n
             b = buckets.setdefault(key, [])
-            rec = (pid, fen, moves, rating)
+            rec = (pid, fen, moves, rating, themes)
             if len(b) < PER_BUCKET:
                 b.append(rec)
             else:
@@ -66,12 +67,17 @@ def main(src, out_dir):
             if t != th:
                 continue
             counts[band] = len(recs)
-            for pid, fen, moves, rating in recs:
+            for pid, fen, moves, rating, themes in recs:
                 b = chess.Board(fen)
                 ms = moves.split()
                 b.push_uci(ms[0])  # jugada del rival que plantea el ejercicio
-                lines.append(f'{pid};{b.fen()};{" ".join(ms[1:])};{rating}')
-        lines.sort(key=lambda l: int(l.rsplit(';', 1)[1]))
+                line = f'{pid};{b.fen()};{" ".join(ms[1:])};{rating}'
+                if th == 'mix':
+                    tags = [x for x in themes.split() if x in THEMES]
+                    if tags:
+                        line += ';' + ' '.join(tags)
+                lines.append(line)
+        lines.sort(key=lambda l: int(l.split(';')[3]))
         with open(os.path.join(out_dir, f'{th}.txt'), 'w', encoding='utf-8', newline='\n') as w:
             w.write('\n'.join(lines) + '\n')
         index[th] = {'total': len(lines), 'bands': counts}
