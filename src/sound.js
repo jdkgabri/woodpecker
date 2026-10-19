@@ -1,10 +1,9 @@
 // Sounds from the Lichess "standard" set (Enigmahack / lila, AGPLv3+): public/sound/
 import { getSettings } from './store.js';
 
-const FILES = {
-  move: 'Move', capture: 'Capture', check: 'Move', mate: 'Move',
-  error: 'Error', success: 'Confirmation', notify: 'GenericNotify', select: 'Select',
-};
+// Like Lichess puzzles: only move and capture sounds (check and mate sound like a move,
+// and there is no right/wrong sound)
+const FILES = { move: 'Move', capture: 'Capture', check: 'Move', mate: 'Move' };
 const cache = {};
 
 export function sound(name) {

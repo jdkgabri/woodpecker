@@ -113,7 +113,6 @@ export class PuzzleBoard {
     this.failed = true;
     this.locked = true;
     this.sync();
-    sound('error');
     this.onEvent('wrong', { san: mv.san, uci });
     this.timer = setTimeout(() => {
       this.chess.undo();
@@ -142,7 +141,6 @@ export class PuzzleBoard {
     this.done = true;
     this.locked = true;
     this.sync();
-    if (!this.failed) sound('success');
     this.onEvent('solved', { ok: !this.failed });
   }
 
