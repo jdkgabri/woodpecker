@@ -4,7 +4,7 @@
       "source": "functions",
       "codebase": "default",
       "ignore": ["node_modules", "test.mjs"],
-      "predeploy": ["node -e \"require('fs').copyFileSync('src/habit.js', 'functions/habit.js')\""]
+      "predeploy": ["node scripts/copy-habit.mjs"]
     }
   ],
   "firestore": { "rules": "firestore.rules" },
