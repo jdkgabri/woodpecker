@@ -25,7 +25,7 @@ function senders() {
       mailer = mailer || nodemailer.createTransport({ service: 'gmail', auth: { user: GMAIL_USER.value(), pass: GMAIL_APP_PASSWORD.value() } });
       await mailer.sendMail({ from: `"Woodpecker" <${GMAIL_USER.value()}>`, to, subject: msg.title, text: `${msg.body}
 
-https://jdkgabri.github.io/woodpecker/`, html: emailHtml(msg) });
+https://woodpecker-93e04.web.app/`, html: emailHtml(msg) });
     },
     getEmail: async uid => (await getAuth().getUser(uid)).email,
   };

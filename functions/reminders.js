@@ -2,7 +2,7 @@
 import { compute } from './habit.js';
 
 const WINDOW_MIN = 60; // remind within the hour after the chosen time (in case a run is late)
-export const APP_URL = 'https://jdkgabri.github.io/woodpecker/';
+export const APP_URL = 'https://woodpecker-93e04.web.app/';
 
 // Local date 'YYYY-MM-DD' and minutes since midnight in the user's time zone
 export function localParts(now, tz) {
