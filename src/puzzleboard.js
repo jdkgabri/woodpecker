@@ -114,7 +114,7 @@ export class PuzzleBoard {
     this.locked = true;
     this.sync();
     sound('error');
-    this.onEvent('wrong', { san: mv.san });
+    this.onEvent('wrong', { san: mv.san, uci });
     this.timer = setTimeout(() => {
       this.chess.undo();
       this.cg.set({ lastMove: undefined });

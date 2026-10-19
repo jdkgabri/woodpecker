@@ -9,6 +9,13 @@ export default defineConfig({
       includeAssets: ['icon-192.png', 'icon-512.png'],
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,svg,json}'],
+        globIgnores: ['stockfish/**'],
+        // Stockfish (~7 MB) se descarga la primera vez que se analiza y queda guardado
+        runtimeCaching: [{
+          urlPattern: ({ url }) => url.pathname.includes('/stockfish/'),
+          handler: 'CacheFirst',
+          options: { cacheName: 'stockfish', expiration: { maxEntries: 4 } },
+        }],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         navigateFallback: 'index.html',
       },

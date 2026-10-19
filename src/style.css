@@ -77,6 +77,7 @@ p { margin: .4rem 0; }
 
 .tabs { display: flex; background: var(--bg2); border-radius: 10px; padding: 4px; border: 1px solid var(--line); }
 .tab { flex: 1; background: none; border: 0; color: var(--muted); padding: .6rem; border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer; }
+.small-tabs .tab { padding: .45rem; font-size: .9rem; }
 .tab.on { background: var(--bg3); color: var(--fg); }
 
 .form label { font-size: .85rem; color: var(--muted); margin-top: 4px; }
@@ -139,3 +140,17 @@ input[type=number], input[type=text], select {
   .train .info, .train .actions { grid-column: 2; padding-left: 0; padding-right: 0; }
   .train .actions { align-self: start; }
 }
+
+/* ---- análisis ---- */
+.eval-row { display: flex; align-items: center; gap: .6rem; padding: 0 16px 8px; }
+.eval-row b { font-size: 1.3rem; font-variant-numeric: tabular-nums; min-width: 4.5rem; }
+.eval-row .mini { margin-left: auto; font-size: .9rem !important; padding: 0; }
+.pv { display: flex; flex-direction: column; gap: 4px; }
+.pvline { text-align: left; background: var(--bg2); border: 1px solid var(--line); color: var(--fg); border-radius: 8px; padding: .4rem .6rem; font: inherit; font-size: .9rem; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pvline b { display: inline-block; min-width: 3.6rem; }
+.movelist { display: flex; flex-wrap: wrap; gap: 4px; }
+.mv { background: none; border: 0; color: var(--fg); font: inherit; padding: .15rem .35rem; border-radius: 6px; cursor: pointer; }
+.mv.on { background: var(--accent); color: var(--accent-fg); }
+.link { color: var(--accent); text-decoration: underline; }
+.ok-text { color: var(--ok); }
+@media (min-width: 900px) { .train .eval-row { grid-column: 2; padding: 0; } }

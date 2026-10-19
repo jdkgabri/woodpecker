@@ -8,6 +8,7 @@ import { WP_LEVELS, WP_TOTAL, LICHESS_THEMES, LICHESS_DIFFS, resolveItem, fetchL
 import { PuzzleBoard } from './puzzleboard.js';
 import * as lichess from './lichess.js';
 import * as sync from './sync.js';
+import { viewAnalysis, openAnalysis, mainLine } from './analysis.js';
 
 const app = document.getElementById('app');
 let cleanup = null; // función de salida de la vista actual
@@ -41,6 +42,7 @@ function route() {
   if (view === 'train') return viewTrain(id);
   if (view === 'review') return viewReview(id);
   if (view === 'settings') return viewSettings();
+  if (view === 'analysis') { cleanup = viewAnalysis(app); return; }
   return viewHome();
 }
 window.addEventListener('hashchange', route);
@@ -193,19 +195,40 @@ function bindWp() {
 }
 
 function formLichess() {
+  const a = lichess.getAuth();
+  const ref = a?.puzzleRating ? `tu Elo de puzles (${a.puzzleRating})` : 'un Elo de unos 1500 (conecta tu cuenta para usar el tuyo)';
   return `
     ${lichessNotice()}
     <section class="card form">
       <label for="theme">Tema</label>
       <select id="theme">${LICHESS_THEMES.map(([k, v]) => `<option value="${k}">${v}</option>`).join('')}</select>
-      <label for="diff">Dificultad</label>
-      <select id="diff">${LICHESS_DIFFS.map(([k, v]) => `<option value="${k}" ${k === 'normal' ? 'selected' : ''}>${v}</option>`).join('')}</select>
+      <label>Dificultad</label>
+      <div class="tabs small-tabs">
+        <button class="tab on" data-mode="rel">Relativa a mi Elo</button>
+        <button class="tab" data-mode="abs">Rango de Elo</button>
+      </div>
+      <div id="modeRel">
+        <select id="diff">${LICHESS_DIFFS.map(([k, v]) => `<option value="${k}" ${k === 'normal' ? 'selected' : ''}>${v}</option>`).join('')}</select>
+        <p class="muted small">Respecto a ${ref}. Cada nivel sube o baja unos 300 puntos.</p>
+      </div>
+      <div id="modeAbs" hidden>
+        <div class="grid2">
+          <div><label for="minR">Elo mínimo</label><input id="minR" type="number" min="400" max="3200" step="50" value="1400" inputmode="numeric"></div>
+          <div><label for="maxR">Elo máximo</label><input id="maxR" type="number" min="400" max="3200" step="50" value="1600" inputmode="numeric"></div>
+        </div>
+        <p class="muted small">${a ? 'Con tu cuenta se alcanzan aproximadamente 600 puntos por encima y por debajo de tu Elo de puzles.' : 'Sin cuenta se alcanzan aproximadamente de 800 a 2300.'}</p>
+      </div>
       <label for="n">Número de puzles</label>
-      <input id="n" type="number" min="10" max="300" value="100" inputmode="numeric">
+      <input id="n" type="number" min="10" max="500" value="100" inputmode="numeric">
+      <label for="order">Orden</label>
+      <select id="order">
+        <option value="seq">Fijo</option>
+        <option value="random">Aleatorio (se baraja en cada ciclo)</option>
+      </select>
       <label for="cycles">Ciclos objetivo</label>
       <input id="cycles" type="number" min="1" max="20" value="5" inputmode="numeric">
       <label for="name">Nombre</label>
-      <input id="name" type="text" placeholder="Lichess · Ataque doble">
+      <input id="name" type="text" placeholder="Automático">
       <button class="btn primary full" id="create">Descargar y crear</button>
       <p class="muted small" id="status"></p>
     </section>
@@ -215,30 +238,59 @@ function formLichess() {
 function lichessNotice() {
   const a = lichess.getAuth();
   return a
-    ? `<p class="small muted">Conectado a Lichess como <b>${esc(a.username || '')}</b>${a.puzzleRating ? ` (Elo de puzles ${a.puzzleRating})` : ''}: la dificultad se ajusta a tu nivel.</p>`
-    : `<section class="card"><p class="small">Sin cuenta, Lichess calcula la dificultad para un jugador de unos 1500. Conecta tu cuenta para que se ajuste a tu Elo de puzles.</p>
+    ? `<p class="small muted">Conectado a Lichess como <b>${esc(a.username || '')}</b>${a.puzzleRating ? ` · Elo de puzles ${a.puzzleRating}` : ''}</p>`
+    : `<section class="card"><p class="small">Conecta tu cuenta de Lichess para que la dificultad relativa use tu Elo de puzles y llegar a rangos más altos o más bajos.</p>
        <button class="btn ghost" id="liLogin">Conectar con Lichess</button></section>`;
 }
 
 function bindLichess() {
   $('#liLogin')?.addEventListener('click', () => lichess.login());
+  let mode = 'rel';
+  app.querySelectorAll('[data-mode]').forEach(b => b.addEventListener('click', () => {
+    mode = b.dataset.mode;
+    app.querySelectorAll('[data-mode]').forEach(x => x.classList.toggle('on', x === b));
+    $('#modeRel').hidden = mode !== 'rel';
+    $('#modeAbs').hidden = mode !== 'abs';
+  }));
   let ctrl = null;
   cleanup = () => ctrl?.abort();
   $('#create').addEventListener('click', async e => {
     const btn = e.currentTarget;
-    const theme = $('#theme').value, difficulty = $('#diff').value;
-    const count = Math.max(10, Math.min(300, +$('#n').value || 100));
+    const status = msg => { if ($('#status')) $('#status').textContent = msg; };
+    const theme = $('#theme').value;
+    const count = Math.max(10, Math.min(500, +$('#n').value || 100));
     const tName = LICHESS_THEMES.find(t => t[0] === theme)[1];
-    const name = $('#name').value.trim() || `Lichess · ${tName} (${LICHESS_DIFFS.find(d => d[0] === difficulty)[1].toLowerCase()})`;
+    const opts = { theme, count };
+    let label;
+    if (mode === 'rel') {
+      opts.difficulty = $('#diff').value;
+      label = LICHESS_DIFFS.find(d => d[0] === opts.difficulty)[1].toLowerCase();
+    } else {
+      opts.minRating = +$('#minR').value;
+      opts.maxRating = +$('#maxR').value;
+      if (!(opts.minRating > 0 && opts.maxRating >= opts.minRating)) return status('El rango de Elo no es válido.');
+      opts.baseRating = lichess.getAuth()?.puzzleRating || 1500;
+      label = `${opts.minRating}–${opts.maxRating}`;
+    }
+    const name = $('#name').value.trim() || `Lichess · ${tName} (${label})`;
     btn.disabled = true;
     ctrl = new AbortController();
     try {
-      const items = await fetchLichessPuzzles({ theme, difficulty, count }, n => { $('#status').textContent = `Descargando… ${n}/${count}`; }, ctrl.signal);
-      if (!items.length) throw new Error('No se recibieron puzles');
-      const set = store.addSet({ id: store.uid(), name, source: 'lichess', order: 'seq', targetCycles: +$('#cycles').value || 5, createdAt: Date.now(), items, cycles: [] });
+      const { items, complete } = await fetchLichessPuzzles(opts, (n, msg) => status(msg || `Descargando… ${n}/${count}`), ctrl.signal);
+      if (!items.length) throw new Error('No se encontraron puzles con esos criterios. Prueba un rango más amplio.');
+      if (!complete && !confirm(`Solo se encontraron ${items.length} de ${count} puzles con esos criterios. ¿Crear el set con ${items.length}?`)) {
+        btn.disabled = false;
+        return status('');
+      }
+      const ratings = items.map(x => x.rating);
+      const set = store.addSet({
+        id: store.uid(), name, source: 'lichess', order: $('#order').value, targetCycles: +$('#cycles').value || 5, createdAt: Date.now(),
+        lichess: { theme, mode, difficulty: opts.difficulty, minRating: opts.minRating, maxRating: opts.maxRating, eloMin: Math.min(...ratings), eloMax: Math.max(...ratings), eloAvg: Math.round(ratings.reduce((a, b) => a + b, 0) / ratings.length) },
+        items, cycles: [],
+      });
       go('#/set/' + set.id);
     } catch (err) {
-      if ($('#status')) $('#status').textContent = 'Error: ' + err.message;
+      status('Error: ' + err.message);
       btn.disabled = false;
     }
   });
@@ -264,9 +316,9 @@ function viewSet(id) {
         <button class="btn danger" id="del">Borrar set</button>
       </section>
       <section class="card">
-        <div class="row"><span class="muted">${set.source === 'woodpecker' ? `The Woodpecker Method · nº ${set.range[0]}–${set.range[1]}` : 'Puzles de Lichess'}</span>
+        <div class="row"><span class="muted">${set.source === 'woodpecker' ? `The Woodpecker Method · nº ${set.range[0]}–${set.range[1]}` : `Lichess · ${esc(LICHESS_THEMES.find(t => t[0] === set.lichess?.theme)?.[1] || 'puzles')}${set.lichess?.eloAvg ? ` · Elo ${set.lichess.eloMin}–${set.lichess.eloMax} (media ${set.lichess.eloAvg})` : ''}`}</span>
         <span class="muted">${set.items.length} ejercicios</span></div>
-        <div class="row muted small"><span>${set.order === 'random' ? 'Orden aleatorio' : 'Orden del libro'}</span>
+        <div class="row muted small"><span>${set.order === 'random' ? 'Orden aleatorio' : set.source === 'woodpecker' ? 'Orden del libro' : 'Orden fijo'}</span>
         <span>${finished.length}/${set.targetCycles || '–'} ciclos</span></div>
         ${cur ? `
           <div class="bar big"><i style="width:${(cur.pos / set.items.length) * 100}%"></i></div>
@@ -361,6 +413,7 @@ async function viewTrain(id) {
   let running = false, runStart = 0;
   let curMs = cycle.curMs || 0;        // tiempo del ejercicio actual
   let puzzle = null, solved = false, advanceTimer = null, tickTimer = null;
+  let wrongMoves = [];
 
   const now = () => performance.now();
   const live = () => (running ? now() - runStart : 0);
@@ -412,6 +465,7 @@ async function viewTrain(id) {
     const idx = cycle.order[cycle.pos];
     puzzle = await resolveItem(set.items[idx]);
     solved = false;
+    wrongMoves = [];
     board.load(puzzle);
     board.failed = !!cycle.curFailed;
     board.setPaused(!running);
@@ -434,9 +488,13 @@ async function viewTrain(id) {
       const r = cycle.results[cycle.order[cycle.pos - 1]];
       a.innerHTML = `
         ${r && !r.ok ? `<button class="btn ghost" id="markOk">✓ Contar como correcta</button>` : ''}
-        <a class="btn ghost" target="_blank" rel="noopener" href="https://lichess.org/analysis/${puzzle.fen.replace(/ /g, '_')}?color=${board.hero === 'w' ? 'white' : 'black'}">Analizar</a>
+        <button class="btn ghost" id="analyse">🔍 Analizar</button>
         <button class="btn primary" id="next">Siguiente ›</button>`;
       $('#next').onclick = loadCurrent;
+      $('#analyse').onclick = () => openAnalysis({
+        fen: puzzle.fen, solution: mainLine(puzzle.tree), wrong: wrongMoves, title: puzzle.title,
+        ref: { setId: set.id, cycleN: cycle.n, idx: cycle.order[cycle.pos - 1] },
+      });
       $('#markOk') && ($('#markOk').onclick = () => {
         r.ok = true; store.save(); updHeader();
         feedback('ok', '✓ Marcada como correcta'); renderActions();
@@ -454,6 +512,7 @@ async function viewTrain(id) {
   function onEvent(type, info) {
     if (type === 'wrong') {
       cycle.curFailed = true; store.save();
+      if (!wrongMoves.includes(info.uci)) wrongMoves.push(info.uci);
       feedback('bad', `✗ ${esc(info.san)} no es la solución. Inténtalo otra vez.`);
     } else if (type === 'good') {
       feedback('ok', '✓ ¡Bien! Sigue…');
@@ -542,7 +601,7 @@ async function viewReview(id) {
   const list = last ? Object.entries(last.results).filter(([, r]) => !r.ok).map(([k]) => +k) : [];
   if (!list.length) return go('#/set/' + id);
   const settings = store.getSettings();
-  let i = 0;
+  let i = 0, cur = null, wrong = [];
   app.innerHTML = `
     <div class="train">
       <header class="top"><a class="icon-btn" href="#/set/${set.id}">‹</a><h1 class="ellipsis">Repaso · ciclo ${last.n}</h1><span class="badge" id="cnt"></span></header>
@@ -551,7 +610,8 @@ async function viewReview(id) {
       <div class="actions">
         <button class="btn ghost" id="prev">‹ Anterior</button>
         <button class="btn ghost" id="sol">Solución</button>
-        <button class="btn ghost" id="retry">↺</button>
+        <button class="btn ghost" id="analyse" aria-label="Analizar">🔍</button>
+        <button class="btn ghost" id="retry" aria-label="Reintentar">↺</button>
         <button class="btn primary" id="next">Siguiente ›</button>
       </div>
     </div>`;
@@ -559,13 +619,14 @@ async function viewReview(id) {
   const board = new PuzzleBoard($('#board'), {
     coords: settings.coords,
     onEvent: (t, info) => {
-      if (t === 'wrong') fb('bad', `✗ ${esc(info.san)} no es la solución`);
+      if (t === 'wrong') { fb('bad', `✗ ${esc(info.san)} no es la solución`); if (!wrong.includes(info.uci)) wrong.push(info.uci); }
       if (t === 'good' || t === 'progress') fb('ok', '✓ Sigue…');
       if (t === 'solved') fb(info.ok ? 'ok' : 'bad', info.ok ? '✓ ¡Correcto!' : 'Solución mostrada');
     },
   });
   async function show() {
     const p = await resolveItem(set.items[list[i]]);
+    cur = p; wrong = [];
     board.load(p);
     const white = board.hero === 'w';
     $('#cnt').textContent = `${i + 1}/${list.length}`;
@@ -575,6 +636,10 @@ async function viewReview(id) {
   $('#prev').onclick = () => { i = (i - 1 + list.length) % list.length; show(); };
   $('#next').onclick = () => { i = (i + 1) % list.length; show(); };
   $('#retry').onclick = show;
+  $('#analyse').onclick = () => cur && openAnalysis({
+    fen: cur.fen, solution: mainLine(cur.tree), wrong, title: cur.title,
+    ref: { setId: set.id, cycleN: last.n, idx: list[i] },
+  });
   $('#sol').onclick = () => board.showSolution();
   cleanup = () => board.destroy();
   show();

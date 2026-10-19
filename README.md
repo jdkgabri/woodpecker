@@ -23,3 +23,9 @@ a partir del PGN del libro, que solo trae las posiciones. Formato por ejercicio:
 `{ n, fen, t }`, con `t = [[jugadaUci, respuestaUci|null, subárbol|null], ...]`;
 la primera entrada es la línea principal y el resto alternativas aceptadas.
 Cualquier jugada que dé mate se acepta siempre.
+
+## Análisis
+
+La pantalla de análisis usa Stockfish 17.1 compilado a WebAssembly
+([stockfish.js](https://github.com/nmrugg/stockfish.js), versión *lite single-thread*),
+en `public/stockfish/`. Stockfish es software libre bajo licencia GPLv3 (`public/stockfish/COPYING.txt`).
