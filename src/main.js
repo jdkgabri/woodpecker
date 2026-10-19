@@ -414,6 +414,10 @@ async function viewTrain(id) {
   let curMs = cycle.curMs || 0;        // tiempo del ejercicio actual
   let puzzle = null, solved = false, advanceTimer = null, tickTimer = null;
   let wrongMoves = [];
+  // último ejercicio terminado, para poder analizarlo aunque se haya pasado al siguiente
+  const PREV_KEY = 'wp:prev:' + set.id;
+  let prevPayload = null;
+  try { prevPayload = JSON.parse(sessionStorage.getItem(PREV_KEY) || 'null'); } catch {}
 
   const now = () => performance.now();
   const live = () => (running ? now() - runStart : 0);
@@ -491,16 +495,16 @@ async function viewTrain(id) {
         <button class="btn ghost" id="analyse">🔍 Analizar</button>
         <button class="btn primary" id="next">Siguiente ›</button>`;
       $('#next').onclick = loadCurrent;
-      $('#analyse').onclick = () => openAnalysis({
-        fen: puzzle.fen, solution: mainLine(puzzle.tree), wrong: wrongMoves, title: puzzle.title,
-        ref: { setId: set.id, cycleN: cycle.n, idx: cycle.order[cycle.pos - 1] },
-      });
+      $('#analyse').onclick = () => openAnalysis(prevPayload);
       $('#markOk') && ($('#markOk').onclick = () => {
         r.ok = true; store.save(); updHeader();
         feedback('ok', '✓ Marcada como correcta'); renderActions();
       });
     } else {
-      a.innerHTML = `<button class="btn ghost" id="sol">Ver solución</button>`;
+      a.innerHTML = `
+        ${prevPayload ? `<button class="btn ghost" id="prevAn">🔍 Analizar el anterior</button>` : ''}
+        <button class="btn ghost" id="sol">Ver solución</button>`;
+      $('#prevAn') && ($('#prevAn').onclick = () => { pause(); openAnalysis(prevPayload); });
       $('#sol').onclick = () => {
         if (!running) return;
         cycle.curFailed = true; store.save();
@@ -523,6 +527,11 @@ async function viewTrain(id) {
       const idx = cycle.order[cycle.pos];
       const ok = info.ok && !cycle.curFailed;
       cycle.results[idx] = { ok, ms: Math.round(curMs) };
+      prevPayload = {
+        fen: puzzle.fen, solution: mainLine(puzzle.tree), wrong: wrongMoves, title: puzzle.title,
+        ref: { setId: set.id, cycleN: cycle.n, idx },
+      };
+      try { sessionStorage.setItem(PREV_KEY, JSON.stringify(prevPayload)); } catch {}
       cycle.pos++;
       cycle.curMs = 0; cycle.curFailed = false;
       curMs = 0;
