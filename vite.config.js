@@ -13,7 +13,7 @@ export default defineConfig({
       filename: 'sw.js',
       injectManifest: {
         globPatterns: ['**/*.{js,css,html,png,svg,json,mp3}'],
-        globIgnores: ['stockfish/**'],
+        globIgnores: ['stockfish/**', 'lichess/**'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },
       manifest: {

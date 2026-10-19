@@ -59,6 +59,38 @@ export class Engine {
     this.send('go depth 30');
   }
 
+  /**
+   * Búsqueda con tiempo fijo; devuelve las líneas finales con la puntuación desde el punto de
+   * vista del bando que mueve: [{ move, cp|mate, pv }]
+   */
+  async search(fen, { multipv = 1, movetime = 1000 } = {}) {
+    ++this.gen;
+    this.off?.();
+    await this.ready;
+    this.stop();
+    await this.idle;
+    const lines = [];
+    const off = this.on(line => {
+      if (!line.startsWith('info ') || !line.includes(' pv ')) return;
+      const t = line.split(' ');
+      const get = k => t[t.indexOf(k) + 1];
+      const k = +(get('multipv') || 1);
+      const type = get('score');
+      const val = +t[t.indexOf('score') + 2];
+      const pv = t.slice(t.indexOf('pv') + 1);
+      lines[k - 1] = { move: pv[0], cp: type === 'cp' ? val : null, mate: type === 'mate' ? val : null, pv };
+    });
+    this.send(`setoption name MultiPV value ${multipv}`);
+    this.send(`position fen ${fen}`);
+    this.idle = this.waitFor(l => l.startsWith('bestmove'));
+    this.searching = true;
+    this.send(`go movetime ${movetime}`);
+    await this.idle;
+    this.searching = false;
+    off();
+    return lines.filter(Boolean);
+  }
+
   stop() { if (this.searching) this.send('stop'); }
 
   destroy() {

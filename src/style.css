@@ -279,3 +279,9 @@ input[type=number], input[type=text], select { background: #1d1b19; border-color
 .gauge i { position: absolute; top: 0; left: 0; right: 0; height: 50%; background: #403d39; transition: height 1s; }
 .gauge::after { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: #d85000; opacity: .6; }
 .gauge.flip { transform: scaleY(-1); }
+
+textarea { width: 100%; padding: .6rem; border-radius: var(--radius); border: 1px solid var(--line); background: #1d1b19; color: var(--fg-strong); font: .85rem/1.4 ui-monospace, Consolas, monospace; resize: vertical; }
+input[type=file] { color: var(--fg); }
+.issues { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+.warn-text { color: #d6a23a; }
+.notes { background: var(--bg2); border-left: 3px solid var(--primary); padding: .5rem .7rem; border-radius: var(--radius); }

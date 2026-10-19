@@ -80,6 +80,7 @@ export function viewAnalysis(app) {
           <p><span class="muted">${t('Solución del set:')}</span> <a href="#" id="loadSol" class="link">${esc(sanLine(p.fen, p.solution || []).join(' ') || '—')}</a></p>
           ${(p.wrong || []).length ? `<p><span class="muted">${t('Tus jugadas:')}</span> ${p.wrong.map((u, i) => `<a href="#" class="link" data-wrong="${i}">${esc(sanLine(p.fen, [u])[0] || u)}</a>`).join(', ')}</p>` : ''}
         </div>
+        ${p.notes ? `<p class="small notes">💬 ${esc(p.notes)}</p>` : ''}
         ${p.ref ? `<div id="refBox"></div>` : ''}
       </div>
       <div class="actions">

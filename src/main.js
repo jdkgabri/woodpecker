@@ -4,7 +4,8 @@ import 'chessground/assets/chessground.cburnett.css';
 import './style.css';
 
 import * as store from './store.js';
-import { wpLevel as wpLevelLabel, WP_LEVELS, WP_TOTAL, LICHESS_THEMES, LICHESS_DIFFS, themeLabel, diffLabel, resolveItem, fetchLichessPuzzles, loadWoodpecker } from './puzzles.js';
+import { wpLevel as wpLevelLabel, WP_LEVELS, WP_TOTAL, LICHESS_THEMES, LICHESS_DIFFS, DIFF_OFFSET, themeLabel, diffLabel, resolveItem, fetchLichessPuzzles, pickLocalPuzzles, localAvailable, loadWoodpecker } from './puzzles.js';
+import { formPgn, bindPgn } from './importpgn.js';
 import { PuzzleBoard } from './puzzleboard.js';
 import * as lichess from './lichess.js';
 import * as sync from './sync.js';
@@ -139,11 +140,14 @@ function viewNew() {
         <div class="tabs">
           <button class="tab ${tab === 'wp' ? 'on' : ''}" data-tab="wp">The Woodpecker Method</button>
           <button class="tab ${tab === 'li' ? 'on' : ''}" data-tab="li">Lichess</button>
+          <button class="tab ${tab === 'pgn' ? 'on' : ''}" data-tab="pgn">PGN</button>
         </div>
-        ${tab === 'wp' ? formWp() : formLichess()}
+        ${tab === 'wp' ? formWp() : tab === 'li' ? formLichess() : formPgn()}
       </main>`;
-    app.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => { tab = b.dataset.tab; render(); }));
-    tab === 'wp' ? bindWp() : bindLichess();
+    app.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => { if (cleanup) { cleanup(); cleanup = null; } tab = b.dataset.tab; render(); }));
+    if (tab === 'wp') bindWp();
+    else if (tab === 'li') bindLichess();
+    else cleanup = bindPgn(app, go);
   };
   render();
 }
@@ -203,32 +207,46 @@ function bindWp() {
   });
 }
 
+// Ids de puzles de Lichess que ya están en algún set (para dar preferencia a los nuevos)
+const usedLichessIds = () => new Set(store.sets().filter(x => x.source === 'lichess').flatMap(x => x.items.map(i => i.id)));
+
 function formLichess() {
   const a = lichess.getAuth();
-  const ref = a?.puzzleRating ? t('tu Elo de puzles ({r})', { r: a.puzzleRating }) : t('un Elo de unos 1500 (conecta tu cuenta para usar el tuyo)');
+  const myElo = a?.puzzleRating || '';
   return `
-    ${lichessNotice()}
     <section class="card form">
+      <label>${t('Origen de los puzles')}</label>
+      <div class="tabs small-tabs">
+        <button class="tab on" data-src="local">${t('Colección local')}</button>
+        <button class="tab" data-src="api">${t('Lichess (tu cuenta)')}</button>
+      </div>
+      <p class="muted small" id="srcHelp"></p>
+      <div id="apiLogin" hidden>
+        ${a ? `<p class="small">${t('Conectado a Lichess como {u}', { u: `<b>${esc(a.username || '')}</b>` })}${a.puzzleRating ? ` · ${t('Elo de puzles {r}', { r: a.puzzleRating })}` : ''}</p>`
+          : `<p class="small">${t('Para usar este origen conecta tu cuenta de Lichess.')}</p><button class="btn ghost" id="liLogin">${t('Conectar con Lichess')}</button>`}
+      </div>
       <label for="theme">${t('Tema')}</label>
       <select id="theme">${LICHESS_THEMES.map(([k]) => `<option value="${k}">${themeLabel(k)}</option>`).join('')}</select>
       <label>${t('Dificultad')}</label>
-      <div class="tabs small-tabs">
-        <button class="tab on" data-mode="rel">${t('Relativa a mi Elo')}</button>
-        <button class="tab" data-mode="abs">${t('Rango de Elo')}</button>
+      <div class="tabs small-tabs" id="modeTabs">
+        <button class="tab on" data-mode="abs">${t('Rango de Elo')}</button>
+        <button class="tab" data-mode="rel">${t('Relativa a mi Elo')}</button>
       </div>
-      <div id="modeRel">
-        <select id="diff">${LICHESS_DIFFS.map(([k]) => `<option value="${k}" ${k === 'normal' ? 'selected' : ''}>${diffLabel(k)}</option>`).join('')}</select>
-        <p class="muted small">${t('Respecto a {ref}. Cada nivel sube o baja unos 300 puntos.', { ref })}</p>
-      </div>
-      <div id="modeAbs" hidden>
+      <div id="modeAbs">
         <div class="grid2">
-          <div><label for="minR">${t('Elo mínimo')}</label><input id="minR" type="number" min="400" max="3200" step="50" value="1400" inputmode="numeric"></div>
-          <div><label for="maxR">${t('Elo máximo')}</label><input id="maxR" type="number" min="400" max="3200" step="50" value="1600" inputmode="numeric"></div>
+          <div><label for="minR">${t('Elo mínimo')}</label><input id="minR" type="number" min="300" max="3100" step="50" value="${myElo ? Math.max(400, Math.round((myElo - 200) / 50) * 50) : 1400}" inputmode="numeric"></div>
+          <div><label for="maxR">${t('Elo máximo')}</label><input id="maxR" type="number" min="300" max="3100" step="50" value="${myElo ? Math.round((myElo + 200) / 50) * 50 : 1600}" inputmode="numeric"></div>
         </div>
-        <p class="muted small">${t('Se puede pedir cualquier rango entre ~800 y {max}.', { max: a?.puzzleRating ? Math.max(2300, a.puzzleRating + 600) : 2300 })}${a?.puzzleRating ? ' ' + t('Cerca de tu Elo ({r}) se usa tu cuenta y es más rápido; lejos de él se piden sin cuenta y sets grandes pueden tardar alrededor de un minuto.', { r: a.puzzleRating }) : ''}</p>
       </div>
+      <div id="modeRel" hidden>
+        <select id="diff">${LICHESS_DIFFS.map(([k]) => `<option value="${k}" ${k === 'normal' ? 'selected' : ''}>${diffLabel(k)}</option>`).join('')}</select>
+        <div id="myEloBox"><label for="myElo">${t('Tu Elo de puzles')}</label><input id="myElo" type="number" min="400" max="3200" step="10" value="${myElo || 1500}" inputmode="numeric"></div>
+        <p class="muted small" id="relHelp"></p>
+      </div>
+      <p class="small muted" id="avail"></p>
       <label for="n">${t('Número de puzles')}</label>
       <input id="n" type="number" min="10" max="500" value="100" inputmode="numeric">
+      <label class="switch" id="preferBox"><input type="checkbox" id="preferNew" checked><span>${t('Preferir puzles que no estén en otros sets')}</span></label>
       <label for="order">${t('Orden')}</label>
       <select id="order">
         <option value="seq">${t('Fijo')}</option>
@@ -238,29 +256,57 @@ function formLichess() {
       <input id="cycles" type="number" min="1" max="20" value="5" inputmode="numeric">
       <label for="name">${t('Nombre')}</label>
       <input id="name" type="text" placeholder="${t('Automático')}">
-      <button class="btn primary full" id="create">${t('Descargar y crear')}</button>
+      <button class="btn primary full" id="create">${t('Crear set')}</button>
       <p class="muted small" id="status"></p>
-    </section>
-    <p class="muted small">${t('Se descargan una sola vez desde la base de puzles de Lichess y quedan guardados para usarlos sin conexión.')}</p>`;
-}
-
-function lichessNotice() {
-  const a = lichess.getAuth();
-  return a
-    ? `<p class="small muted">${t('Conectado a Lichess como {u}', { u: `<b>${esc(a.username || '')}</b>` })}${a.puzzleRating ? ` · ${t('Elo de puzles {r}', { r: a.puzzleRating })}` : ''}</p>`
-    : `<section class="card"><p class="small">${t('Conecta tu cuenta de Lichess para que la dificultad relativa use tu Elo de puzles y llegar a rangos más altos o más bajos.')}</p>
-       <button class="btn ghost" id="liLogin">${t('Conectar con Lichess')}</button></section>`;
+    </section>`;
 }
 
 function bindLichess() {
   $('#liLogin')?.addEventListener('click', () => lichess.login());
-  let mode = 'rel';
+  const auth = lichess.getAuth();
+  let src = 'local', mode = 'abs';
+  const relRange = () => {
+    const c = (+$('#myElo').value || 1500) + DIFF_OFFSET[$('#diff').value];
+    return [Math.max(300, c - 150), c + 150];
+  };
+  const range = () => (mode === 'abs' ? [+$('#minR').value, +$('#maxR').value] : relRange());
+  async function refresh() {
+    $('#srcHelp').textContent = src === 'local'
+      ? t('Una selección de unos 450.000 puzles de la base de datos de Lichess incluida en la app: cualquier tema y rango, al instante y sin conexión.')
+      : t('Lichess elige los puzles según tu Elo de puzles, en lotes de 50 y sin repetir. Necesita conexión.');
+    $('#apiLogin').hidden = src !== 'api';
+    $('#modeTabs').hidden = src === 'api';
+    $('#modeAbs').hidden = src === 'api' || mode !== 'abs';
+    $('#modeRel').hidden = src === 'local' && mode !== 'rel';
+    $('#myEloBox').hidden = src === 'api';
+    $('#preferBox').hidden = src === 'api';
+    $('#create').disabled = src === 'api' && !auth;
+    $('#create').textContent = src === 'api' ? t('Descargar y crear') : t('Crear set');
+    if (src === 'local' && mode === 'rel') {
+      const [lo, hi] = relRange();
+      $('#relHelp').textContent = t('Puzles de {a} a {b}.', { a: lo, b: hi });
+    } else if (src === 'api') {
+      $('#relHelp').textContent = auth?.puzzleRating ? t('Respecto a tu Elo de puzles ({r}). Cada nivel sube o baja unos 300 puntos.', { r: auth.puzzleRating }) : '';
+    }
+    if (src === 'local') {
+      const [lo, hi] = range();
+      const n = lo > 0 && hi >= lo ? await localAvailable($('#theme').value, lo, hi).catch(() => null) : null;
+      $('#avail').textContent = n == null ? '' : t('Disponibles en la colección: ~{n}', { n });
+    } else $('#avail').textContent = '';
+  }
+  app.querySelectorAll('[data-src]').forEach(b => b.addEventListener('click', () => {
+    src = b.dataset.src;
+    app.querySelectorAll('[data-src]').forEach(x => x.classList.toggle('on', x === b));
+    refresh();
+  }));
   app.querySelectorAll('[data-mode]').forEach(b => b.addEventListener('click', () => {
     mode = b.dataset.mode;
     app.querySelectorAll('[data-mode]').forEach(x => x.classList.toggle('on', x === b));
-    $('#modeRel').hidden = mode !== 'rel';
-    $('#modeAbs').hidden = mode !== 'abs';
+    refresh();
   }));
+  ['#theme', '#minR', '#maxR', '#diff', '#myElo'].forEach(sel => $(sel).addEventListener('input', refresh));
+  refresh();
+
   let ctrl = null;
   cleanup = () => ctrl?.abort();
   $('#create').addEventListener('click', async e => {
@@ -268,35 +314,38 @@ function bindLichess() {
     const status = msg => { if ($('#status')) $('#status').textContent = msg; };
     const theme = $('#theme').value;
     const count = Math.max(10, Math.min(500, +$('#n').value || 100));
-    const opts = { theme, count };
-    let label;
-    if (mode === 'rel') {
-      opts.difficulty = $('#diff').value;
-      label = diffLabel(opts.difficulty).toLowerCase();
-    } else {
-      opts.minRating = +$('#minR').value;
-      opts.maxRating = +$('#maxR').value;
-      if (!(opts.minRating > 0 && opts.maxRating >= opts.minRating)) return status(t('El rango de Elo no es válido.'));
-      opts.userRating = lichess.getAuth()?.puzzleRating || null;
-      label = `${opts.minRating}–${opts.maxRating}`;
-    }
-    const name = $('#name').value.trim() || `Lichess · ${themeLabel(theme)} (${label})`;
     btn.disabled = true;
-    ctrl = new AbortController();
     try {
-      const { items, complete, rateLimited } = await fetchLichessPuzzles(opts, (n, msg) => status(msg || t('Descargando… {n}/{m}', { n, m: count })), ctrl.signal);
-      if (!items.length) throw new Error(rateLimited ? t('Lichess está limitando las peticiones. Vuelve a intentarlo dentro de un rato.') : t('No se encontraron puzles con esos criterios. Prueba un rango más amplio.'));
-      const q = rateLimited
-        ? t('Lichess ha limitado las peticiones y solo se descargaron {n} de {m} puzles. ¿Crear el set con {n}?', { n: items.length, m: count })
-        : t('Solo se encontraron {n} de {m} puzles. ¿Crear el set con {n}?', { n: items.length, m: count });
-      if (!complete && !confirm(q)) {
-        btn.disabled = false;
-        return status('');
+      let items, meta, label;
+      if (src === 'local') {
+        const [lo, hi] = range();
+        if (!(lo > 0 && hi >= lo)) { btn.disabled = false; return status(t('El rango de Elo no es válido.')); }
+        status(t('Cargando la colección…'));
+        const r = await pickLocalPuzzles({ theme, min: lo, max: hi, count, avoid: $('#preferNew').checked ? usedLichessIds() : new Set() });
+        items = r.items;
+        if (!items.length) throw new Error(t('No hay puzles de ese tema en ese rango. Prueba un rango más amplio.'));
+        if (items.length < count && !confirm(t('Solo hay {n} puzles de ese tema en ese rango. ¿Crear el set con {n}?', { n: items.length }))) { btn.disabled = false; return status(''); }
+        if (r.repeated) alert(t('{n} puzles ya estaban en otros sets (no había suficientes nuevos en ese rango).', { n: r.repeated }));
+        label = `${lo}–${hi}`;
+        meta = { theme, source: 'local', mode, minRating: lo, maxRating: hi };
+      } else {
+        ctrl = new AbortController();
+        const difficulty = $('#diff').value;
+        const r = await fetchLichessPuzzles({ theme, difficulty, count }, (n, msg) => status(msg || t('Descargando… {n}/{m}', { n, m: count })), ctrl.signal);
+        items = r.items;
+        if (!items.length) throw new Error(r.rateLimited ? t('Lichess está limitando las peticiones. Vuelve a intentarlo dentro de un rato.') : t('Lichess no ha devuelto puzles.'));
+        const q = r.rateLimited
+          ? t('Lichess ha limitado las peticiones y solo se descargaron {n} de {m} puzles. ¿Crear el set con {n}?', { n: items.length, m: count })
+          : t('Solo se encontraron {n} de {m} puzles. ¿Crear el set con {n}?', { n: items.length, m: count });
+        if (!r.complete && !confirm(q)) { btn.disabled = false; return status(''); }
+        label = diffLabel(difficulty).toLowerCase();
+        meta = { theme, source: 'api', mode: 'rel', difficulty };
       }
       const ratings = items.map(x => x.rating);
+      const name = $('#name').value.trim() || `Lichess · ${themeLabel(theme)} (${label})`;
       const set = store.addSet({
         id: store.uid(), name, source: 'lichess', order: $('#order').value, targetCycles: +$('#cycles').value || 5, createdAt: Date.now(),
-        lichess: { theme, mode, difficulty: opts.difficulty, minRating: opts.minRating, maxRating: opts.maxRating, eloMin: Math.min(...ratings), eloMax: Math.max(...ratings), eloAvg: Math.round(ratings.reduce((a, b) => a + b, 0) / ratings.length) },
+        lichess: { ...meta, eloMin: Math.min(...ratings), eloMax: Math.max(...ratings), eloAvg: Math.round(ratings.reduce((x, y) => x + y, 0) / ratings.length) },
         items, cycles: [],
       });
       go('#/set/' + set.id);
@@ -319,6 +368,7 @@ function viewSet(id) {
   const target = prev ? prev.elapsedMs / 2 : null;
   const source = set.source === 'woodpecker'
     ? `The Woodpecker Method · ${t('nº {a}–{b}', { a: set.range[0], b: set.range[1] })}`
+    : set.source === 'pgn' ? t('PGN importado')
     : `Lichess · ${esc(set.lichess?.theme ? themeLabel(set.lichess.theme) : t('puzles'))}${set.lichess?.eloAvg ? ` · Elo ${set.lichess.eloMin}–${set.lichess.eloMax} (${t('media {n}', { n: set.lichess.eloAvg })})` : ''}`;
   app.innerHTML = `
     <header class="top"><a class="icon-btn" href="#/">‹</a><h1 class="ellipsis">${esc(set.name)}</h1>
@@ -332,7 +382,7 @@ function viewSet(id) {
       <section class="card">
         <div class="row"><span class="muted">${source}</span>
         <span class="muted">${tn(set.items.length, '{n} ejercicio', '{n} ejercicios')}</span></div>
-        <div class="row muted small"><span>${set.order === 'random' ? t('Orden aleatorio') : set.source === 'woodpecker' ? t('Orden del libro') : t('Orden fijo')}</span>
+        <div class="row muted small"><span>${set.order === 'random' ? t('Orden aleatorio') : set.source === 'woodpecker' ? t('Orden del libro') : set.source === 'pgn' ? t('Orden del archivo') : t('Orden fijo')}</span>
         <span>${t('{n}/{m} ciclos', { n: finished.length, m: set.targetCycles || '–' })}</span></div>
         ${cur ? `
           <div class="bar big"><i style="width:${(cur.pos / set.items.length) * 100}%"></i></div>
@@ -563,7 +613,7 @@ async function viewTrain(id) {
       cycle.results[idx] = { ok, ms: Math.round(curMs), ...(wrongMoves.length ? { w: wrongMoves.slice(0, 5) } : {}) };
       if (store.touchActivity()) celebrate(store.habitState().streak);
       prevPayload = {
-        fen: puzzle.fen, solution: mainLine(puzzle.tree), wrong: wrongMoves, title: puzzle.title,
+        fen: puzzle.fen, solution: mainLine(puzzle.tree), wrong: wrongMoves, title: puzzle.title, notes: puzzle.notes,
         ref: { setId: set.id, cycleN: cycle.n, idx },
       };
       try { sessionStorage.setItem(PREV_KEY, JSON.stringify(prevPayload)); } catch {}
@@ -646,8 +696,8 @@ function viewCycle(id, n) {
   if (!cycle) return go('#/set/' + id);
   const ui = CYCLE_UI[id] || (CYCLE_UI[id] = { filter: 'all', sort: 'played' });
   const st = store.cycleStats(cycle);
-  const title = item => (item.wp ? t('Ejercicio {n}', { n: item.wp }) : t('Puzle {id}', { id: item.id }));
-  const sub = item => (item.wp ? wpLevelLabel(item.wp) : item.rating ? `Elo ${item.rating}` : '');
+  const title = item => (item.wp ? t('Ejercicio {n}', { n: item.wp }) : item.pgn ? t('Ejercicio {n}', { n: item.n }) : t('Puzle {id}', { id: item.id }));
+  const sub = item => (item.wp ? wpLevelLabel(item.wp) : item.rating ? `Elo ${item.rating}` : item.label || '');
 
   // posición en que se jugó cada ejercicio
   const playedAt = new Map(cycle.order.map((idx, k) => [idx, k]));
@@ -692,7 +742,7 @@ function viewCycle(id, n) {
   app.querySelectorAll('[data-idx]').forEach(b => b.addEventListener('click', async () => {
     const idx = +b.dataset.idx;
     const p = await resolveItem(set.items[idx]);
-    openAnalysis({ fen: p.fen, solution: mainLine(p.tree), wrong: cycle.results[idx]?.w || [], title: p.title, ref: { setId: set.id, cycleN: cycle.n, idx } });
+    openAnalysis({ fen: p.fen, solution: mainLine(p.tree), wrong: cycle.results[idx]?.w || [], title: p.title, notes: p.notes, ref: { setId: set.id, cycleN: cycle.n, idx } });
   }));
 }
 
@@ -740,7 +790,7 @@ async function viewReview(id) {
   $('#next').onclick = () => { i = (i + 1) % list.length; show(); };
   $('#retry').onclick = show;
   $('#analyse').onclick = () => cur && openAnalysis({
-    fen: cur.fen, solution: mainLine(cur.tree), wrong, title: cur.title,
+    fen: cur.fen, solution: mainLine(cur.tree), wrong, title: cur.title, notes: cur.notes,
     ref: { setId: set.id, cycleN: last.n, idx: list[i] },
   });
   $('#sol').onclick = () => board.showSolution();

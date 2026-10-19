@@ -34,6 +34,7 @@ export async function resolveItem(item) {
     const p = db.get(item.wp);
     return { fen: p.fen, tree: p.t, title: t('Ejercicio {n}', { n: p.n }), sub: wpLevel(p.n) };
   }
+  if (item.pgn) return { fen: item.fen, tree: item.tree, title: t('Ejercicio {n}', { n: item.n }), sub: item.label || '', notes: item.notes };
   return { fen: item.fen, tree: item.tree, title: t('Puzle {id}', { id: item.id }), sub: item.rating ? `Elo ${item.rating}` : '', lichessId: item.id };
 }
 
@@ -62,18 +63,18 @@ function solutionToTree(sol) {
 }
 
 // Desplazamiento aproximado de cada nivel respecto al Elo de puzles del usuario
-// (sin cuenta, Lichess usa ~1500 como referencia).
-const DIFF_OFFSET = { easiest: -600, easier: -300, normal: 0, harder: 300, hardest: 600 };
+export const DIFF_OFFSET = { easiest: -600, easier: -300, normal: 0, harder: 300, hardest: 600 };
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+// ---------- API de Lichess (requiere cuenta conectada) ----------
 class RateLimited extends Error {}
 
 // GET con un reintento tras el límite de peticiones de Lichess (429)
-async function getJson(url, signal, onStatus, anonymous = false) {
+async function getJson(url, signal, onStatus) {
   for (let attempt = 0; ; attempt++) {
     if (signal?.aborted) throw new Error(t('Cancelado'));
-    const res = await fetch(url, { signal, headers: { Accept: 'application/json', ...(anonymous ? {} : authHeaders()) } });
+    const res = await fetch(url, { signal, headers: { Accept: 'application/json', ...authHeaders() } });
     if (res.status === 429) {
       if (attempt >= 1) throw new RateLimited();
       onStatus?.(t('Lichess pide esperar un minuto…'));
@@ -92,65 +93,85 @@ function toItem(j) {
 }
 
 /**
- * opts: { theme, count, difficulty }            -> dificultad relativa a tu Elo
- *       { theme, count, minRating, maxRating, userRating } -> rango absoluto
- * Devuelve { items, complete, rateLimited }.
+ * Descarga puzles con la cuenta del usuario: Lichess los elige según su Elo de puzles y no
+ * los repite entre lotes. opts: { theme, count, difficulty }. Devuelve { items, complete, rateLimited }.
  */
-export async function fetchLichessPuzzles(opts, onProgress, signal) {
-  const { theme, count } = opts;
+export async function fetchLichessPuzzles({ theme, count, difficulty }, onProgress, signal) {
   const seen = new Set();
   const out = [];
-  const absolute = opts.minRating != null;
-  const inRange = r => !absolute || (r >= opts.minRating && r <= opts.maxRating);
-
-  // Niveles a pedir: el elegido, o los que mejor cubren el rango absoluto
-  let levels;
-  let anonymous = false;
-  if (!absolute) levels = [opts.difficulty];
-  else {
-    // Con cuenta, Lichess centra los niveles en el Elo del usuario (±600 aprox.); sin cuenta, en ~1500.
-    // Se usa la cuenta solo si el rango pedido queda a su alcance; si no, se pide sin cuenta.
-    const mid = (opts.minRating + opts.maxRating) / 2;
-    anonymous = !opts.userRating || Math.abs(mid - opts.userRating) > Math.abs(mid - 1500);
-    const base = anonymous ? 1500 : opts.userRating;
-    const ranked = Object.keys(DIFF_OFFSET).sort((a, b) => Math.abs(base + DIFF_OFFSET[a] - mid) - Math.abs(base + DIFF_OFFSET[b] - mid));
-    const overlapping = ranked.filter(d => base + DIFF_OFFSET[d] + 300 >= opts.minRating && base + DIFF_OFFSET[d] - 300 <= opts.maxRating);
-    levels = overlapping.length ? overlapping : ranked.slice(0, 1);
-  }
-  const status = onProgress && (msg => onProgress(out.length, msg));
-  const add = j => {
-    if (out.length >= count || seen.has(j.puzzle.id) || !inRange(j.puzzle.rating)) return false;
-    seen.add(j.puzzle.id);
-    out.push(toItem(j));
-    return true;
-  };
-  let rateLimited = false;
+  let rateLimited = false, empty = 0;
   try {
-    // 1) Lotes de 50 (rápido). Sin cuenta, Lichess puede devolver siempre el mismo lote:
-    //    en cuanto un nivel no aporta nada nuevo, se deja de pedir.
-    let batchLevels = [...levels], requests = 0, turn = 0;
-    while (out.length < count && batchLevels.length && requests < Math.ceil(count / 50) * 6 + 4) {
-      const level = batchLevels[turn++ % batchLevels.length];
-      const data = await getJson(`https://lichess.org/api/puzzle/batch/${theme}?nb=50&difficulty=${level}`, signal, status, anonymous);
-      requests++;
-      const added = (data.puzzles || []).filter(add).length;
-      if (!added) batchLevels = batchLevels.filter(l => l !== level);
+    while (out.length < count && empty < 2) {
+      const data = await getJson(`https://lichess.org/api/puzzle/batch/${theme}?nb=50&difficulty=${difficulty}`, signal, msg => onProgress?.(out.length, msg));
+      let added = 0;
+      for (const j of data.puzzles || []) {
+        if (out.length >= count || seen.has(j.puzzle.id)) continue;
+        seen.add(j.puzzle.id);
+        out.push(toItem(j));
+        added++;
+      }
+      empty = added ? 0 : empty + 1;
       onProgress?.(out.length);
       await sleep(300);
-    }
-    // 2) Si faltan, de uno en uno (más lento, pero con más variedad)
-    let misses = 0, turn2 = 0;
-    const maxMisses = Math.max(60, (count - out.length) * 3);
-    while (out.length < count && misses < maxMisses) {
-      const level = levels[turn2++ % levels.length];
-      const j = await getJson(`https://lichess.org/api/puzzle/next?angle=${theme}&difficulty=${level}&_=${Math.random()}`, signal, status, anonymous);
-      if (!add(j)) misses++;
-      onProgress?.(out.length, t('Descargando (modo lento)… {n}/{m}', { n: out.length, m: count }));
-      await sleep(250);
     }
   } catch (e) {
     if (!(e instanceof RateLimited)) throw e;
     rateLimited = true;
   }
   return { items: out, complete: out.length >= count, rateLimited };
+}
+
+// ---------- Colección local (selección de la base de datos de Lichess, CC0) ----------
+const localCache = new Map();
+let localIndex = null;
+
+export async function loadLocalIndex() {
+  if (localIndex) return localIndex;
+  const res = await fetch(import.meta.env.BASE_URL + 'lichess/index.json');
+  if (!res.ok) throw new Error(t('No se pudo cargar la colección de puzles'));
+  return (localIndex = await res.json());
+}
+
+// Puzles de un tema: [[id, fen, jugadas, elo], ...] ordenados por Elo
+async function loadLocalTheme(theme) {
+  if (localCache.has(theme)) return localCache.get(theme);
+  const res = await fetch(import.meta.env.BASE_URL + `lichess/${theme}.txt`);
+  if (!res.ok) throw new Error(t('No se pudo cargar la colección de puzles'));
+  const rows = (await res.text()).split(/\r?\n/).filter(Boolean).map(l => {
+    const [id, fen, moves, rating] = l.split(';');
+    return [id, fen, moves, +rating];
+  });
+  localCache.set(theme, rows);
+  return rows;
+}
+
+// Cuántos puzles hay en la colección para un tema y rango (según el índice)
+export async function localAvailable(theme, min, max) {
+  const idx = await loadLocalIndex();
+  const bands = idx.themes[theme]?.bands || {};
+  let n = 0;
+  for (const [b, c] of Object.entries(bands)) {
+    const lo = +b, hi = lo + idx.band - 1;
+    if (hi < min || lo > max) continue;
+    n += Math.round(c * (Math.min(hi, max) - Math.max(lo, min) + 1) / idx.band);
+  }
+  return n;
+}
+
+/**
+ * Elige al azar puzles de la colección local. Da preferencia a los que no están en ningún
+ * otro set (avoid) y, si no llegan, completa con el resto.
+ */
+export async function pickLocalPuzzles({ theme, min, max, count, avoid = new Set() }) {
+  const rows = (await loadLocalTheme(theme)).filter(r => r[3] >= min && r[3] <= max);
+  const fresh = [], used = [];
+  for (const r of rows) (avoid.has(r[0]) ? used : fresh).push(r);
+  const pick = (arr, n) => {
+    for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; }
+    return arr.slice(0, n);
+  };
+  const chosen = pick(fresh, count);
+  const repeated = chosen.length < count ? pick(used, count - chosen.length) : [];
+  const items = [...chosen, ...repeated].map(([id, fen, moves, rating]) => ({ id, fen, tree: solutionToTree(moves.split(' ')), rating }));
+  return { items, repeated: repeated.length, available: rows.length };
 }

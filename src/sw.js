@@ -12,6 +12,12 @@ precacheAndRoute(self.__WB_MANIFEST);
 cleanupOutdatedCaches();
 registerRoute(new NavigationRoute(createHandlerBoundToURL('index.html')));
 
+// Colección de puzles de Lichess (~1,3 MB por tema): se guarda al usarla
+registerRoute(
+  ({ url }) => url.pathname.includes('/lichess/'),
+  new CacheFirst({ cacheName: 'lichess-collection', plugins: [new ExpirationPlugin({ maxEntries: 20 })] }),
+);
+
 // Stockfish (~7 MB) se descarga la primera vez que se analiza y queda guardado
 registerRoute(
   ({ url }) => url.pathname.includes('/stockfish/'),
