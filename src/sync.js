@@ -261,3 +261,10 @@ export async function disablePushHere() {
   if (uid) await fb.F.deleteDoc(fb.F.doc(fb.db, 'reminders', uid, 'devices', await deviceId(sub.endpoint))).catch(() => {});
   await sub.unsubscribe();
 }
+
+export async function sendTestReminder() {
+  if (!uid) throw new Error('Inicia sesión para usar los recordatorios');
+  const { getFunctions, httpsCallable } = await import('firebase/functions');
+  const fn = httpsCallable(getFunctions(fb.auth.app, 'europe-west1'), 'testReminder');
+  return (await fn()).data;
+}

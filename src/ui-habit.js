@@ -124,7 +124,8 @@ export async function bindHabitSettings(root, rerender) {
         <div class="times">
           ${cfg.times.map((t, i) => `<div class="time-row"><input type="time" value="${t}" data-t="${i}">${cfg.times.length > 1 ? `<button class="icon-btn" data-del="${i}" aria-label="Quitar">✕</button>` : ''}</div>`).join('')}
         </div>
-        ${cfg.times.length < 5 ? '<button class="btn ghost" id="addTime">＋ Añadir otra hora</button>' : ''}` : ''}
+        ${cfg.times.length < 5 ? '<button class="btn ghost" id="addTime">＋ Añadir otra hora</button>' : ''}
+        <button class="btn ghost" id="testRem">🔔 Enviar un recordatorio de prueba</button>` : ''}
       <p class="small muted" id="remMsg">${esc(msg)}</p>`;
     box.querySelector('#remPush').onchange = async e => {
       cfg.push = e.target.checked;
@@ -139,6 +140,17 @@ export async function bindHabitSettings(root, rerender) {
         if (pushHere) { await sync.disablePushHere(); pushHere = false; msg = 'Este dispositivo ya no recibirá notificaciones'; }
         else { await sync.enablePushHere(); pushHere = true; msg = '✓ Notificaciones activadas en este dispositivo'; }
       } catch (err) { msg = err.message; }
+      render();
+    });
+    box.querySelector('#testRem') && (box.querySelector('#testRem').onclick = async () => {
+      msg = 'Enviando…'; render();
+      try {
+        const r = await sync.sendTestReminder();
+        const parts = [];
+        if (cfg.push) parts.push(r.push ? `notificación a ${r.push} ${r.push === 1 ? 'dispositivo' : 'dispositivos'}` : 'ningún dispositivo registrado para notificaciones');
+        if (cfg.email) parts.push(r.email ? 'email enviado' : 'email no enviado');
+        msg = '✓ ' + parts.join(' · ');
+      } catch (err) { msg = 'Error: ' + err.message; }
       render();
     });
     box.querySelectorAll('[data-t]').forEach(inp => inp.onchange = () => {

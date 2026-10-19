@@ -86,6 +86,25 @@ export async function runReminders({ db, now = new Date(), sendPush, sendEmail, 
   return stats;
 }
 
+// Envía un recordatorio de prueba al usuario, sin comprobar si ha entrenado
+export async function sendTest({ db, uid, sendPush, sendEmail, getEmail }) {
+  const ref = db.doc(`reminders/${uid}`);
+  const cfg = (await ref.get()).data() || {};
+  const msg = { title: '♞ Recordatorio de prueba', body: 'Así te llegarán los avisos para entrenar. ¡Todo funciona!' };
+  const result = { push: 0, email: false };
+  if (cfg.push) {
+    for (const dev of (await ref.collection('devices').get()).docs) {
+      try { await sendPush(dev.data().sub, { ...msg, url: APP_URL }); result.push++; }
+      catch (err) { if (err.statusCode === 404 || err.statusCode === 410) await dev.ref.delete(); }
+    }
+  }
+  if (cfg.email) {
+    const to = await getEmail(uid);
+    if (to) { await sendEmail(to, msg); result.email = true; }
+  }
+  return result;
+}
+
 export function emailHtml(msg) {
   return `<div style="font-family:system-ui,sans-serif;max-width:480px;margin:auto;padding:24px;background:#161512;color:#e8e6e3;border-radius:12px">
   <h2 style="margin:0 0 8px">${msg.title}</h2>
