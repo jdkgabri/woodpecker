@@ -42,7 +42,7 @@ node scripts/i18n-keys.mjs          # every UI text has a Spanish translation
 npx firebase-tools emulators:exec --only firestore --project demo-woodpecker "cd functions && node test.mjs"
 ```
 
-Deployment: `npx firebase-tools deploy --only hosting` publishes the site to Firebase Hosting (the GitHub Pages workflow in `.github/workflows/deploy.yml` also publishes a copy on every push to `main`).
+Deployment: `npx firebase-tools deploy --only hosting` publishes the site to Firebase Hosting.
 Firebase rules and functions are deployed with `npx firebase-tools deploy --only firestore:rules,functions`.
 
 ## Translations
