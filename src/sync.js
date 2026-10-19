@@ -6,6 +6,7 @@
 // (los sets se guardan como texto porque Firestore no admite arrays anidados)
 import { firebaseConfig } from './firebase-config.js';
 import * as store from './store.js';
+import { VAPID_PUBLIC_KEY } from './push-config.js';
 
 // Solo para pruebas locales con los emuladores de Firebase (VITE_EMU=1 npm run dev)
 const EMU = import.meta.env.VITE_EMU;
@@ -22,6 +23,8 @@ let unsubs = [];
 let remoteVersions = new Map(); // setId -> updatedAt que hay en la nube
 let remoteDeleted = {};
 let remoteDays = new Set();
+let remoteFrozen = new Set();
+let remoteHabitAt = 0;
 let pushTimer = null;
 let pushing = null;
 let firstSnapshot = false;
@@ -79,7 +82,9 @@ function subscribe(onRemoteChange) {
     const m = snap.data() || {};
     remoteDeleted = m.deleted || {};
     remoteDays = new Set(m.days || []);
-    if (store.applyRemote({ deleted: remoteDeleted, days: [...remoteDays] })) onRemoteChange?.();
+    remoteFrozen = new Set(m.frozen || []);
+    remoteHabitAt = m.habit?.updatedAt || 0;
+    if (store.applyRemote({ deleted: remoteDeleted, days: [...remoteDays], frozen: [...remoteFrozen], habit: m.habit || null })) onRemoteChange?.();
     gotMeta = true;
     ready();
   }, onError));
@@ -146,13 +151,19 @@ async function push() {
       }
     }
     const newDays = data.days.filter(d => !remoteDays.has(d));
-    if (Object.keys(newDeleted).length || newDays.length) {
+    const newFrozen = data.frozen.filter(d => !remoteFrozen.has(d));
+    const habitChanged = (data.habit.updatedAt || 0) > remoteHabitAt;
+    if (Object.keys(newDeleted).length || newDays.length || newFrozen.length || habitChanged) {
       const meta = {};
       if (Object.keys(newDeleted).length) meta.deleted = newDeleted;
       if (newDays.length) meta.days = F.arrayUnion(...newDays);
+      if (newFrozen.length) meta.frozen = F.arrayUnion(...newFrozen);
+      if (habitChanged) meta.habit = data.habit;
       batch.set(F.doc(db, 'users', uid, 'meta', 'main'), meta, { merge: true });
       Object.assign(remoteDeleted, newDeleted);
       newDays.forEach(d => remoteDays.add(d));
+      newFrozen.forEach(d => remoteFrozen.add(d));
+      if (habitChanged) remoteHabitAt = data.habit.updatedAt;
       n++;
     }
     if (!n) return;
@@ -193,4 +204,60 @@ export async function signOut() {
   await flush().catch(() => {});
   const { auth, A } = await init();
   await A.signOut(auth);
+}
+
+// ---------------- Recordatorios ----------------
+// reminders/{uid}               -> { enabled, push, email, times: ['20:00'], tz, sent }
+// reminders/{uid}/devices/{id}  -> { sub: <PushSubscription JSON>, ua, createdAt }
+const remindersDoc = () => fb.F.doc(fb.db, 'reminders', uid);
+
+export async function loadReminders() {
+  if (!uid) return null;
+  const snap = await fb.F.getDoc(remindersDoc());
+  return snap.exists() ? snap.data() : null;
+}
+
+export async function saveReminders(cfg) {
+  if (!uid) throw new Error('Inicia sesión para usar los recordatorios');
+  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  await fb.F.setDoc(remindersDoc(), { ...cfg, tz, updatedAt: Date.now() }, { merge: true });
+}
+
+const b64ToBytes = b64 => {
+  const s = atob((b64 + '='.repeat((4 - (b64.length % 4)) % 4)).replace(/-/g, '+').replace(/_/g, '/'));
+  return Uint8Array.from(s, c => c.charCodeAt(0));
+};
+async function deviceId(endpoint) {
+  const h = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(endpoint));
+  return [...new Uint8Array(h)].slice(0, 12).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+export const pushSupported = () => 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+
+export async function pushEnabledHere() {
+  if (!pushSupported() || Notification.permission !== 'granted') return false;
+  const reg = await navigator.serviceWorker.getRegistration();
+  return !!(await reg?.pushManager.getSubscription());
+}
+
+export async function enablePushHere() {
+  if (!uid) throw new Error('Inicia sesión para usar los recordatorios');
+  if (!pushSupported()) throw new Error('Este navegador no admite notificaciones push');
+  const perm = await Notification.requestPermission();
+  if (perm !== 'granted') throw new Error('No se ha dado permiso para mostrar notificaciones');
+  const reg = await navigator.serviceWorker.ready;
+  const sub = (await reg.pushManager.getSubscription())
+    || await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64ToBytes(VAPID_PUBLIC_KEY) });
+  const json = sub.toJSON();
+  await fb.F.setDoc(fb.F.doc(fb.db, 'reminders', uid, 'devices', await deviceId(json.endpoint)), {
+    sub: json, ua: navigator.userAgent, createdAt: Date.now(),
+  });
+}
+
+export async function disablePushHere() {
+  const reg = await navigator.serviceWorker.getRegistration();
+  const sub = await reg?.pushManager.getSubscription();
+  if (!sub) return;
+  if (uid) await fb.F.deleteDoc(fb.F.doc(fb.db, 'reminders', uid, 'devices', await deviceId(sub.endpoint))).catch(() => {});
+  await sub.unsubscribe();
 }

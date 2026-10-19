@@ -1,0 +1,19 @@
+{
+  "name": "woodpecker-functions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.10.0",
+    "firebase-functions": "^6.6.0",
+    "nodemailer": "^7.0.13",
+    "web-push": "^3.6.7"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": "22"
+  }
+}

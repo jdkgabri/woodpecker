@@ -1,0 +1,96 @@
+// Lógica de los recordatorios (independiente de Firebase Functions para poder probarla).
+import { compute } from './habit.js';
+
+const WINDOW_MIN = 60; // se avisa durante la hora siguiente a la elegida (por si una ejecución se retrasa)
+export const APP_URL = 'https://jdkgabri.github.io/woodpecker/';
+
+// Fecha local 'YYYY-MM-DD' y minutos desde medianoche en la zona horaria del usuario
+export function localParts(now, tz) {
+  const f = new Intl.DateTimeFormat('en-CA', {
+    timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+  });
+  const p = Object.fromEntries(f.formatToParts(now).map(x => [x.type, x.value]));
+  return { day: `${p.year}-${p.month}-${p.day}`, minutes: +p.hour * 60 + +p.minute, y: +p.year, m: +p.month, d: +p.day, hh: +p.hour, mm: +p.minute };
+}
+
+export function dueTimes(cfg, now) {
+  const lp = localParts(now, cfg.tz || 'Europe/Madrid');
+  const already = cfg.sent?.day === lp.day ? cfg.sent.times || [] : [];
+  const due = (cfg.times || []).filter(t => {
+    const [h, m] = t.split(':').map(Number);
+    const diff = lp.minutes - (h * 60 + m);
+    return diff >= 0 && diff < WINDOW_MIN && !already.includes(t);
+  });
+  return { lp, due, already };
+}
+
+export function message(streak, rnd = Math.random) {
+  const pick = a => a[Math.floor(rnd() * a.length)];
+  if (streak > 0) {
+    return pick([
+      { title: `🔥 Tu racha de ${streak} ${streak === 1 ? 'día' : 'días'} te espera`, body: 'Aún no has entrenado hoy. Un par de ejercicios y la mantienes.' },
+      { title: `🔥 ¡No pierdas ${streak} ${streak === 1 ? 'día' : 'días'} de racha!`, body: 'Unos minutos de táctica bastan para seguir sumando.' },
+      { title: '♞ El pájaro carpintero no descansa', body: `Llevas ${streak} ${streak === 1 ? 'día' : 'días'} seguidos. Hoy toca seguir picando.` },
+    ]);
+  }
+  return pick([
+    { title: '♞ ¿Unos ejercicios hoy?', body: 'Tus ciclos Woodpecker te esperan. Con 5 minutos basta.' },
+    { title: '♞ Hora de entrenar táctica', body: 'Empieza hoy una nueva racha con un par de ejercicios.' },
+  ]);
+}
+
+/**
+ * Revisa todos los usuarios con recordatorios y envía los que tocan.
+ * deps: { db (firebase-admin Firestore), now, sendPush(sub, payload), sendEmail(to, msg), getEmail(uid), log }
+ */
+export async function runReminders({ db, now = new Date(), sendPush, sendEmail, getEmail, log = console.log }) {
+  const snap = await db.collection('reminders').where('enabled', '==', true).get();
+  const stats = { users: snap.size, sent: 0, skipped: 0 };
+  for (const doc of snap.docs) {
+    const uid = doc.id;
+    const cfg = doc.data();
+    const { lp, due, already } = dueTimes(cfg, now);
+    if (!due.length) continue;
+    const markSent = () => doc.ref.set({ sent: { day: lp.day, times: [...already, ...due] } }, { merge: true });
+    try {
+      const meta = (await db.doc(`users/${uid}/meta/main`).get()).data() || {};
+      const days = meta.days || [];
+      // Solo si el modo hábito sigue activo y hoy aún no ha entrenado
+      if (!meta.habit?.enabled || days.includes(lp.day)) { stats.skipped++; await markSent(); continue; }
+      // "now" con la fecha y hora locales del usuario, para calcular la racha
+      const localNow = new Date(lp.y, lp.m - 1, lp.d, lp.hh, lp.mm);
+      const { streak } = compute({ days, frozen: meta.frozen || [], enabledAt: meta.habit.enabledAt, dismissed: meta.habit.dismissed }, localNow);
+      const msg = message(streak);
+      if (cfg.push) {
+        const devices = await doc.ref.collection('devices').get();
+        for (const dev of devices.docs) {
+          try {
+            await sendPush(dev.data().sub, { ...msg, url: APP_URL });
+          } catch (err) {
+            // suscripción caducada o revocada: se borra
+            if (err.statusCode === 404 || err.statusCode === 410) await dev.ref.delete();
+            else log(`push ${uid}/${dev.id}: ${err.message}`);
+          }
+        }
+      }
+      if (cfg.email) {
+        const to = await getEmail(uid);
+        if (to) await sendEmail(to, msg);
+      }
+      stats.sent++;
+      await markSent();
+    } catch (err) {
+      log(`recordatorio ${uid}: ${err.message}`);
+    }
+  }
+  return stats;
+}
+
+export function emailHtml(msg) {
+  return `<div style="font-family:system-ui,sans-serif;max-width:480px;margin:auto;padding:24px;background:#161512;color:#e8e6e3;border-radius:12px">
+  <h2 style="margin:0 0 8px">${msg.title}</h2>
+  <p style="color:#bdb8b0">${msg.body}</p>
+  <p><a href="${APP_URL}" style="display:inline-block;background:#6fa83a;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600">Entrenar ahora</a></p>
+  <p style="color:#7d786f;font-size:12px">Recibes este email porque activaste los recordatorios en Woodpecker. Puedes desactivarlos en Ajustes → Modo hábito.</p>
+</div>`;
+}

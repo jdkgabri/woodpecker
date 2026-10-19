@@ -9,6 +9,8 @@ import { PuzzleBoard } from './puzzleboard.js';
 import * as lichess from './lichess.js';
 import * as sync from './sync.js';
 import { viewAnalysis, openAnalysis, mainLine } from './analysis.js';
+import { habitOn, streakCard, bindStreakCard, celebrate, habitSettings, bindHabitSettings } from './ui-habit.js';
+import { viewStats } from './stats.js';
 
 const app = document.getElementById('app');
 let cleanup = null; // función de salida de la vista actual
@@ -43,6 +45,7 @@ function route() {
   if (view === 'review') return viewReview(id);
   if (view === 'cycle') return viewCycle(id, +location.hash.split('/')[3]);
   if (view === 'settings') return viewSettings();
+  if (view === 'stats') return viewStats(app);
   if (view === 'analysis') { cleanup = viewAnalysis(app); return; }
   return viewHome();
 }
@@ -51,18 +54,20 @@ window.addEventListener('hashchange', route);
 // ---------- inicio ----------
 function viewHome() {
   const sets = store.sets();
-  const streak = store.streak();
+  const h = habitOn() ? store.habitState() : null;
   app.innerHTML = `
     <header class="top">
       <h1><span class="logo">♞</span> Woodpecker</h1>
       <div class="top-right">
-        ${streak ? `<span class="badge" title="Racha de días">🔥 ${streak}</span>` : ''}
+        ${h ? `<span class="badge" title="Racha de días">🔥 ${h.streak}</span>` : ''}
         ${syncBadge()}
+        <a class="icon-btn" href="#/stats" aria-label="Estadísticas">📊</a>
         <a class="icon-btn" href="#/settings" aria-label="Ajustes">⚙</a>
       </div>
     </header>
     <main class="wrap">
       ${installEvt ? `<button class="btn ghost full" id="install">📲 Instalar la app</button>` : ''}
+      ${streakCard()}
       <a class="btn primary full" href="#/new">＋ Nuevo set</a>
       ${sets.length ? '' : `
         <section class="card">
@@ -76,6 +81,7 @@ function viewHome() {
         ${sets.map(setCard).join('')}
       </section>
     </main>`;
+  bindStreakCard(app, route);
   $('#install')?.addEventListener('click', async () => { installEvt.prompt(); await installEvt.userChoice; installEvt = null; route(); });
   app.querySelectorAll('[data-quick]').forEach(b => b.addEventListener('click', () => {
     const l = WP_LEVELS.find(x => x.key === b.dataset.quick);
@@ -330,8 +336,15 @@ function viewSet(id) {
           ${target ? `<p class="small muted">Objetivo del método: completar el ciclo ${set.cycles.length + 1} en la mitad de tiempo (≈ ${fmt(target)}).</p>` : ''}
           <button class="btn primary full" id="start">▶ Empezar ciclo ${set.cycles.length + 1}</button>
         `}
-        ${failedIdx.length ? `<a class="btn ghost full" href="#/review/${set.id}">Repasar fallos del ciclo ${last.n} (${failedIdx.length})</a>` : ''}
+        ${failedIdx.length
+          ? `<a class="btn ghost full" href="#/review/${set.id}">Repasar fallos del ciclo ${last.n} (${failedIdx.length})</a>`
+          : `<p class="small muted">🔁 Repaso de fallos: ${last ? `sin fallos que repasar en el ciclo ${last.n}` : 'aquí podrás repasar sin cronómetro los ejercicios que falles'}.</p>`}
       </section>
+      ${!set.cycles.length ? `
+      <section class="card">
+        <h2>Ciclos</h2>
+        <p class="small muted">Aún no has empezado ningún ciclo. Cuando lo hagas verás aquí el tiempo y el acierto de cada uno, su evolución y la lista de ejercicios para analizarlos.</p>
+      </section>` : ''}
       ${set.cycles.length ? `
       <section class="card">
         <h2>Ciclos</h2>
@@ -386,7 +399,6 @@ async function viewTrain(id) {
   const cycle = store.currentCycle(set);
   if (!cycle) return go('#/set/' + id);
   const settings = store.getSettings();
-  store.touchActivity();
   store.setLocked(set.id);
 
   app.innerHTML = `
@@ -531,6 +543,7 @@ async function viewTrain(id) {
       const idx = cycle.order[cycle.pos];
       const ok = info.ok && !cycle.curFailed;
       cycle.results[idx] = { ok, ms: Math.round(curMs), ...(wrongMoves.length ? { w: wrongMoves.slice(0, 5) } : {}) };
+      if (store.touchActivity()) celebrate(store.habitState().streak);
       prevPayload = {
         fen: puzzle.fen, solution: mainLine(puzzle.tree), wrong: wrongMoves, title: puzzle.title,
         ref: { setId: set.id, cycleN: cycle.n, idx },
@@ -757,6 +770,7 @@ function viewSettings() {
         ${opts.map(([k, l]) => `<label class="switch"><input type="checkbox" data-k="${k}" ${s[k] ? 'checked' : ''}><span>${l}</span></label>`).join('')}
       </section>
       <section class="card" id="syncCard">${syncCard()}</section>
+      <section class="card form" id="habitCard">${habitSettings()}</section>
       <section class="card">
         <h2>Lichess</h2>
         ${(() => {
@@ -785,6 +799,7 @@ function viewSettings() {
   $('#liLogin')?.addEventListener('click', () => lichess.login());
   $('#liLogout')?.addEventListener('click', async () => { await lichess.logout(); route(); });
   bindSyncCard();
+  bindHabitSettings(app, route);
   cleanup = sync.onChange(bindSyncCard);
   navigator.storage?.persisted?.().then(p => {
     $('#persist') && ($('#persist').textContent = p ? '✓ Almacenamiento persistente activado' : 'El navegador podría borrar los datos si falta espacio: instala la app para protegerlos y exporta copias de vez en cuando.');
