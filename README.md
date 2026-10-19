@@ -18,7 +18,7 @@ npm run build     # genera dist/ (sitio estático listo para publicar)
 
 ## Soluciones
 
-`public/woodpecker.json` se genera con `woodpecker-tools/solve.py` (Stockfish 17.1)
+`public/woodpecker.json` se genera con `tools/solve.py` (Stockfish 17.1)
 a partir del PGN del libro, que solo trae las posiciones. Formato por ejercicio:
 `{ n, fen, t }`, con `t = [[jugadaUci, respuestaUci|null, subárbol|null], ...]`;
 la primera entrada es la línea principal y el resto alternativas aceptadas.
