@@ -4,7 +4,7 @@ import 'chessground/assets/chessground.cburnett.css';
 import './style.css';
 
 import * as store from './store.js';
-import { WP_LEVELS, WP_TOTAL, LICHESS_THEMES, LICHESS_DIFFS, resolveItem, fetchLichessPuzzles, loadWoodpecker } from './puzzles.js';
+import { wpLevel as wpLevelLabel, WP_LEVELS, WP_TOTAL, LICHESS_THEMES, LICHESS_DIFFS, resolveItem, fetchLichessPuzzles, loadWoodpecker } from './puzzles.js';
 import { PuzzleBoard } from './puzzleboard.js';
 import * as lichess from './lichess.js';
 import * as sync from './sync.js';
@@ -41,6 +41,7 @@ function route() {
   if (view === 'set') return viewSet(id);
   if (view === 'train') return viewTrain(id);
   if (view === 'review') return viewReview(id);
+  if (view === 'cycle') return viewCycle(id, +location.hash.split('/')[3]);
   if (view === 'settings') return viewSettings();
   if (view === 'analysis') { cleanup = viewAnalysis(app); return; }
   return viewHome();
@@ -338,14 +339,16 @@ function viewSet(id) {
           <thead><tr><th>#</th><th>Inicio</th><th>Tiempo</th><th>Hechos</th><th>Acierto</th></tr></thead>
           <tbody>${set.cycles.map(c => {
             const st = store.cycleStats(c);
-            return `<tr class="${c.finishedAt ? '' : 'live'}"><td>${c.n}</td><td>${date(c.startedAt)}</td><td>${fmt(c.elapsedMs)}</td>
+            return `<tr class="${c.finishedAt ? '' : 'live'} clickable" data-cycle="${c.n}"><td>${c.n} ›</td><td>${date(c.startedAt)}</td><td>${fmt(c.elapsedMs)}</td>
               <td>${st.done}/${set.items.length}</td><td>${st.done ? pct(st.acc) : '–'}</td></tr>`;
           }).join('')}</tbody>
         </table>
+        <p class="small muted">Toca un ciclo para ver sus ejercicios uno a uno y analizarlos.</p>
         ${finished.length ? `<p class="small muted">Tiempo medio por ejercicio en el último ciclo: ${fmt(prev.elapsedMs / set.items.length)}</p>` : ''}
       </section>` : ''}
     </main>`;
   $('#start')?.addEventListener('click', () => { store.startCycle(set); go('#/train/' + set.id); });
+  app.querySelectorAll('[data-cycle]').forEach(r => r.addEventListener('click', () => go(`#/cycle/${set.id}/${r.dataset.cycle}`)));
   $('#menu').addEventListener('click', () => { $('#opts').hidden = !$('#opts').hidden; });
   $('#rename').onclick = () => {
     const n = prompt('Nuevo nombre', set.name);
@@ -526,7 +529,7 @@ async function viewTrain(id) {
       commit();
       const idx = cycle.order[cycle.pos];
       const ok = info.ok && !cycle.curFailed;
-      cycle.results[idx] = { ok, ms: Math.round(curMs) };
+      cycle.results[idx] = { ok, ms: Math.round(curMs), ...(wrongMoves.length ? { w: wrongMoves.slice(0, 5) } : {}) };
       prevPayload = {
         fen: puzzle.fen, solution: mainLine(puzzle.tree), wrong: wrongMoves, title: puzzle.title,
         ref: { setId: set.id, cycleN: cycle.n, idx },
@@ -600,6 +603,64 @@ async function viewTrain(id) {
   try { await loadCurrent(); }
   catch (e) { feedback('bad', 'Error cargando ejercicio: ' + esc(e.message)); }
   tick();
+}
+
+// ---------- ejercicios de un ciclo ----------
+const CYCLE_UI = {}; // filtro y orden recordados por set durante la sesión
+function viewCycle(id, n) {
+  const set = store.getSet(id);
+  const cycle = set?.cycles.find(c => c.n === n);
+  if (!cycle) return go('#/set/' + id);
+  const ui = CYCLE_UI[id] || (CYCLE_UI[id] = { filter: 'all', sort: 'played' });
+  const st = store.cycleStats(cycle);
+  const title = item => (item.wp ? `Ejercicio ${item.wp}` : `Puzle ${item.id}`);
+  const sub = item => (item.wp ? wpLevelLabel(item.wp) : item.rating ? `Elo ${item.rating}` : '');
+
+  // posición en que se jugó cada ejercicio
+  const playedAt = new Map(cycle.order.map((idx, k) => [idx, k]));
+  let rows = cycle.order.filter(idx => cycle.results[idx]).map(idx => ({ idx, r: cycle.results[idx] }));
+  if (ui.filter === 'bad') rows = rows.filter(x => !x.r.ok);
+  if (ui.filter === 'ok') rows = rows.filter(x => x.r.ok);
+  if (ui.sort === 'slow') rows.sort((a, b) => b.r.ms - a.r.ms);
+  if (ui.sort === 'num') rows.sort((a, b) => a.idx - b.idx);
+  const history = idx => set.cycles.map(c => {
+    const r = c.results[idx];
+    return `<i class="hdot ${r ? (r.ok ? 'ok' : 'bad') : ''}" title="Ciclo ${c.n}: ${r ? (r.ok ? 'acierto' : 'fallo') : 'sin hacer'}"></i>`;
+  }).join('');
+
+  app.innerHTML = `
+    <header class="top"><a class="icon-btn" href="#/set/${set.id}">‹</a><h1 class="ellipsis">Ciclo ${cycle.n} · ${esc(set.name)}</h1><span></span></header>
+    <main class="wrap">
+      <section class="card">
+        <div class="row small"><span>${st.done}/${set.items.length} hechos · ${pct(st.acc)} de acierto</span><span>⏱ ${fmt(cycle.elapsedMs)}</span></div>
+        <div class="chips">
+          ${[['all', `Todos (${st.done})`], ['bad', `Fallados (${st.failed})`], ['ok', `Acertados (${st.ok})`]].map(([k, l]) => `<button class="chip ${ui.filter === k ? 'on' : ''}" data-filter="${k}">${l}</button>`).join('')}
+        </div>
+        <label class="small muted" for="sort">Ordenar por</label>
+        <select id="sort">
+          <option value="played" ${ui.sort === 'played' ? 'selected' : ''}>Orden en que los hiciste</option>
+          <option value="num" ${ui.sort === 'num' ? 'selected' : ''}>Número de ejercicio</option>
+          <option value="slow" ${ui.sort === 'slow' ? 'selected' : ''}>Más lentos primero</option>
+        </select>
+        <p class="small muted">Los puntos muestran tu resultado en cada ciclo (verde acierto, rojo fallo). Toca un ejercicio para analizarlo.</p>
+      </section>
+      <section class="plist">
+        ${rows.length ? rows.map(({ idx, r }) => `
+          <button class="prow" data-idx="${idx}">
+            <span class="pres ${r.ok ? 'ok' : 'bad'}">${r.ok ? '✓' : '✗'}</span>
+            <span class="ptitle"><b>${esc(title(set.items[idx]))}</b> <small class="muted">${esc(sub(set.items[idx]))} · nº ${playedAt.get(idx) + 1} del ciclo</small></span>
+            <span class="phist">${history(idx)}</span>
+            <span class="ptime">${fmt(r.ms)}</span>
+          </button>`).join('') : '<p class="muted center">No hay ejercicios con este filtro.</p>'}
+      </section>
+    </main>`;
+  app.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => { ui.filter = b.dataset.filter; route(); }));
+  $('#sort').addEventListener('change', e => { ui.sort = e.target.value; route(); });
+  app.querySelectorAll('[data-idx]').forEach(b => b.addEventListener('click', async () => {
+    const idx = +b.dataset.idx;
+    const p = await resolveItem(set.items[idx]);
+    openAnalysis({ fen: p.fen, solution: mainLine(p.tree), wrong: cycle.results[idx]?.w || [], title: p.title, ref: { setId: set.id, cycleN: cycle.n, idx } });
+  }));
 }
 
 // ---------- repaso de fallos (sin cronómetro) ----------
