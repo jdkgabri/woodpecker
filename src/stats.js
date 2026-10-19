@@ -46,16 +46,10 @@ export function viewStats(app) {
   const days = new Set(raw.days);
   const frozen = new Set(habitOn() ? raw.frozen : []);
 
-  // Activity map: last 16 weeks, columns = weeks (Monday on top)
-  const today = dayKey(new Date());
-  const WEEKS = 16;
-  const end = new Date(); end.setDate(end.getDate() + (6 - ((end.getDay() + 6) % 7)));
-  const startKey = addDays(dayKey(end), -(WEEKS * 7 - 1));
-  const cells = [];
-  for (let i = 0; i < WEEKS * 7; i++) {
-    const k = addDays(startKey, i);
-    const cls = k > today ? 'future' : days.has(k) ? 'done' : frozen.has(k) ? 'frozen' : '';
-    cells.push(`<i class="hm ${cls}" title="${parseDay(k).toLocaleDateString(locale())}"></i>`);
+  // Puzzles done per day (only results saved with a timestamp have a count)
+  const perDay = new Map();
+  for (const s of sets) for (const c of s.cycles) for (const r of Object.values(c.results)) {
+    if (r.t) { const k = dayKey(new Date(r.t)); perDay.set(k, (perDay.get(k) || 0) + 1); }
   }
 
   const h = habitOn() ? store.habitState() : null;
@@ -126,17 +120,15 @@ export function viewStats(app) {
         <div class="kpi"><b>${days.size}</b><span>${t('days trained')}</span></div>
         ${h ? `<div class="kpi"><b>${h.streak} / ${bestStreak([...days, ...frozen])}</b><span>${t('current / best streak')}</span></div>` : ''}
       </section>
-      <section class="card">
-        <h2>${t('Activity')}</h2>
-        <div class="heatmap">${cells.join('')}</div>
-        <p class="small muted">${t('Last {n} weeks. A day counts if you did at least one puzzle from a cycle.', { n: WEEKS })}${h ? ' ' + t('In blue, days covered by a streak freeze.') : ''}</p>
-      </section>
+      <section class="card" id="calCard"></section>
       ${themeHtml}
       ${missedHtml}
       <h2 class="section-title">${t('Progress by set')}</h2>
       ${sets.length ? setRows : `<p class="muted">${t('You have no sets yet.')}</p>`}
       ${gamifyOn() ? levelCard(true) : ''}
     </main>`;
+
+  renderCalendar(app.querySelector('#calCard'), { days, frozen, perDay, habit: !!h });
 
   app.querySelectorAll('[data-miss]').forEach(b => b.addEventListener('click', async () => {
     const m = missed[+b.dataset.miss];
@@ -152,5 +144,56 @@ export function viewStats(app) {
       targetCycles: 5, createdAt: Date.now(), items: JSON.parse(JSON.stringify(items)), cycles: [],
     });
     location.hash = '#/set/' + set.id;
+  });
+}
+
+// ---------- monthly activity calendar ----------
+let monthOffset = 0; // 0 = current month, -1 = previous one...
+
+function renderCalendar(card, { days, frozen, perDay, habit }) {
+  const today = dayKey(new Date());
+  const first = new Date(); first.setDate(1); first.setMonth(first.getMonth() + monthOffset);
+  const year = first.getFullYear(), month = first.getMonth();
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const lead = (first.getDay() + 6) % 7; // Monday first
+  const keys = Array.from({ length: daysInMonth }, (_, i) => dayKey(new Date(year, month, i + 1)));
+  const max = Math.max(1, ...keys.map(k => perDay.get(k) || 0));
+  const level = k => {
+    const n = perDay.get(k);
+    if (!days.has(k)) return 0;
+    if (!n) return 1;
+    return 1 + Math.min(3, Math.ceil((n / max) * 3));
+  };
+  const trained = keys.filter(k => days.has(k)).length;
+  const puzzles = keys.reduce((a, k) => a + (perDay.get(k) || 0), 0);
+  const weekdays = Array.from({ length: 7 }, (_, i) => new Date(2024, 0, 1 + i).toLocaleDateString(locale(), { weekday: 'narrow' }));
+  const title = first.toLocaleDateString(locale(), { month: 'long', year: 'numeric' });
+  const cell = (k, d) => {
+    const cls = ['cal-day', k === today ? 'today' : '', k > today ? 'future' : '',
+      days.has(k) ? 'lv' + level(k) : habit && frozen.has(k) ? 'frozen' : ''].filter(Boolean).join(' ');
+    return `<button class="${cls}" data-day="${k}">${d}</button>`;
+  };
+  card.innerHTML = `
+    <div class="cal-head">
+      <button class="icon-btn" id="calPrev" aria-label="${t('Previous month')}">‹</button>
+      <h2>${title.charAt(0).toUpperCase() + title.slice(1)}</h2>
+      <button class="icon-btn" id="calNext" aria-label="${t('Next month')}" ${monthOffset >= 0 ? 'disabled' : ''}>›</button>
+    </div>
+    <div class="cal">
+      ${weekdays.map(w => `<span class="cal-wd">${w}</span>`).join('')}
+      ${'<span></span>'.repeat(lead)}
+      ${keys.map((k, i) => cell(k, i + 1)).join('')}
+    </div>
+    <p class="small" id="calInfo">${t('{d} days trained this month', { d: trained })}${puzzles ? ' · ' + tn(puzzles, '{n} puzzle', '{n} puzzles') : ''}</p>
+    <p class="small muted cal-legend"><span><i class="cal-key lv2"></i> ${t('Trained (darker = more puzzles)')}</span>${habit ? `<span><i class="cal-key frozen"></i> ${t('Streak freeze')}</span>` : ''}</p>`;
+  card.querySelector('#calPrev').onclick = () => { monthOffset--; renderCalendar(card, { days, frozen, perDay, habit }); };
+  card.querySelector('#calNext').onclick = () => { if (monthOffset < 0) { monthOffset++; renderCalendar(card, { days, frozen, perDay, habit }); } };
+  card.querySelectorAll('[data-day]').forEach(b => b.onclick = () => {
+    const k = b.dataset.day, n = perDay.get(k);
+    const date = parseDay(k).toLocaleDateString(locale(), { weekday: 'long', day: 'numeric', month: 'long' });
+    card.querySelector('#calInfo').textContent = days.has(k)
+      ? (n ? `${date}: ${tn(n, '{n} puzzle', '{n} puzzles')}` : `${date}: ${t('trained')}`)
+      : habit && frozen.has(k) ? `${date}: ${t('saved with a streak freeze')}`
+      : k > today ? date : `${date}: ${t('no training')}`;
   });
 }

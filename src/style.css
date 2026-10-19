@@ -234,11 +234,6 @@ h3 { font-size: .95rem; margin: .6rem 0 0; }
 .kpi { background: var(--bg2); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; }
 .kpi b { font-size: 1.4rem; }
 .kpi span { color: var(--muted); font-size: .8rem; }
-.heatmap { display: grid; grid-auto-flow: column; grid-template-rows: repeat(7, 1fr); gap: 3px; }
-.hm { aspect-ratio: 1; border-radius: 3px; background: var(--bg3); }
-.hm.done { background: var(--accent); }
-.hm.frozen { background: #58a6ff; }
-.hm.future { background: transparent; }
 .section-title { margin: 8px 0 0; }
 
 /* ---- Lichess-style tweaks ---- */
@@ -332,3 +327,23 @@ cg-board {
 /* action buttons: wrap to a new row instead of squeezing the text */
 .actions { flex-wrap: wrap; }
 .actions .btn { flex: 1 1 auto; min-width: max-content; white-space: nowrap; font-size: .82rem; padding: .7rem .75rem; }
+
+/* ---- monthly activity calendar ---- */
+.cal-head { display: flex; align-items: center; justify-content: space-between; }
+.cal-head h2 { margin: 0; }
+.cal-head .icon-btn:disabled { opacity: .3; cursor: default; }
+.cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; max-width: 420px; width: 100%; margin: 0 auto; }
+.cal-wd { text-align: center; color: var(--muted); font-size: .75rem; padding-bottom: 2px; text-transform: uppercase; }
+.cal-day { aspect-ratio: 1; border: 0; border-radius: var(--radius); background: var(--bg3); color: var(--fg); font: inherit; font-size: .85rem; cursor: pointer; }
+.cal-day.future { background: transparent; color: var(--muted); opacity: .5; }
+.cal-day.today { box-shadow: inset 0 0 0 2px var(--primary); }
+.cal-day.lv1 { background: #3f5a22; color: #fff; }
+.cal-day.lv2 { background: #4f7a26; color: #fff; }
+.cal-day.lv3 { background: #629924; color: #fff; }
+.cal-day.lv4 { background: #7cbf2f; color: #fff; font-weight: 600; }
+.cal-day.frozen { background: #2f6fb3; color: #fff; }
+.cal-legend { display: flex; align-items: center; gap: 4px 14px; flex-wrap: wrap; }
+.cal-legend span { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.cal-key { display: inline-block; width: 12px; height: 12px; border-radius: 3px; }
+.cal-key.lv2 { background: #629924; }
+.cal-key.frozen { background: #2f6fb3; }
