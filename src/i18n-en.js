@@ -360,4 +360,11 @@ export const EN = {
   '{n} puzles ya estaban en otros sets (no había suficientes nuevos en ese rango).': '{n} puzzles were already in other sets (there were not enough new ones in that range).',
   'Lichess no ha devuelto puzles.': 'Lichess returned no puzzles.',
   'No se pudo cargar la colección de puzles': 'Could not load the puzzle collection',
+  'Colección de puzles de Lichess': 'Lichess puzzle collection',
+  'Cada tema se descarga la primera vez que lo usas. Puedes descargar ahora los 15 temas para crear sets sin conexión: unos 17 MB de descarga y unos 39 MB de espacio en el dispositivo.': 'Each theme is downloaded the first time you use it. You can download all 15 themes now to create sets offline: about 17 MB to download and about 39 MB of space on the device.',
+  'Descargar todo': 'Download all',
+  'Liberar espacio': 'Free up space',
+  'Colección completa guardada en este dispositivo': 'Full collection saved on this device',
+  'Temas guardados en este dispositivo: {n} de {m}': 'Themes saved on this device: {n} of {m}',
+  '¿Borrar la colección guardada? Se volverá a descargar cada tema cuando lo uses.': 'Delete the saved collection? Each theme will be downloaded again when you use it.',
 };

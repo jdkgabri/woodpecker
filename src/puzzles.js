@@ -175,3 +175,40 @@ export async function pickLocalPuzzles({ theme, min, max, count, avoid = new Set
   const items = [...chosen, ...repeated].map(([id, fen, moves, rating]) => ({ id, fen, tree: solutionToTree(moves.split(' ')), rating }));
   return { items, repeated: repeated.length, available: rows.length };
 }
+
+// ---------- Descarga completa de la colección (para usarla sin conexión) ----------
+const COLLECTION_CACHE = 'lichess-collection'; // la misma caché que usa el service worker
+const collectionUrls = () => [
+  new URL(import.meta.env.BASE_URL + 'lichess/index.json', location.href).href,
+  ...LICHESS_THEMES.map(([k]) => new URL(import.meta.env.BASE_URL + `lichess/${k}.txt`, location.href).href),
+];
+
+// { saved, total }: cuántos temas están guardados en el dispositivo
+export async function collectionStatus() {
+  if (!('caches' in window)) return null;
+  const cache = await caches.open(COLLECTION_CACHE);
+  const urls = collectionUrls().slice(1);
+  let saved = 0;
+  for (const u of urls) if (await cache.match(u)) saved++;
+  return { saved, total: urls.length };
+}
+
+export async function downloadCollection(onProgress, signal) {
+  const cache = await caches.open(COLLECTION_CACHE);
+  const urls = collectionUrls();
+  let done = 0;
+  for (const u of urls) {
+    if (signal?.aborted) throw new Error(t('Cancelado'));
+    if (!(await cache.match(u))) {
+      const res = await fetch(u, { signal, cache: 'no-cache' });
+      if (!res.ok) throw new Error(t('No se pudo cargar la colección de puzles'));
+      await cache.put(u, res);
+    }
+    onProgress?.(++done, urls.length);
+  }
+}
+
+export async function clearCollection() {
+  localCache.clear();
+  await caches.delete(COLLECTION_CACHE);
+}

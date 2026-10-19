@@ -4,7 +4,7 @@ import 'chessground/assets/chessground.cburnett.css';
 import './style.css';
 
 import * as store from './store.js';
-import { wpLevel as wpLevelLabel, WP_LEVELS, WP_TOTAL, LICHESS_THEMES, LICHESS_DIFFS, DIFF_OFFSET, themeLabel, diffLabel, resolveItem, fetchLichessPuzzles, pickLocalPuzzles, localAvailable, loadWoodpecker } from './puzzles.js';
+import { wpLevel as wpLevelLabel, WP_LEVELS, WP_TOTAL, LICHESS_THEMES, LICHESS_DIFFS, DIFF_OFFSET, themeLabel, diffLabel, resolveItem, fetchLichessPuzzles, pickLocalPuzzles, localAvailable, collectionStatus, downloadCollection, clearCollection, loadWoodpecker } from './puzzles.js';
 import { formPgn, bindPgn } from './importpgn.js';
 import { PuzzleBoard } from './puzzleboard.js';
 import * as lichess from './lichess.js';
@@ -853,6 +853,15 @@ function viewSettings() {
                <button class="btn ghost" id="liLogin">${t('Conectar con Lichess')}</button>`;
         })()}
       </section>
+      <section class="card" id="collCard">
+        <h2>${t('Colección de puzles de Lichess')}</h2>
+        <p class="small muted">${t('Cada tema se descarga la primera vez que lo usas. Puedes descargar ahora los 15 temas para crear sets sin conexión: unos 17 MB de descarga y unos 39 MB de espacio en el dispositivo.')}</p>
+        <p class="small" id="collStatus"></p>
+        <div class="grid2">
+          <button class="btn ghost" id="collDownload">⬇ ${t('Descargar todo')}</button>
+          <button class="btn ghost" id="collClear">${t('Liberar espacio')}</button>
+        </div>
+      </section>
       <section class="card">
         <h2>${t('Tus datos')}</h2>
         <p class="muted small">${t('El progreso se guarda en este dispositivo y, si has iniciado sesión con Google, también en la nube. Puedes exportar una copia de seguridad o importarla en otro dispositivo.')}</p>
@@ -877,6 +886,7 @@ function viewSettings() {
   bindSyncCard();
   bindHabitSettings(app, route);
   cleanup = sync.onChange(bindSyncCard);
+  bindCollection();
   navigator.storage?.persisted?.().then(p => {
     $('#persist') && ($('#persist').textContent = p ? '✓ ' + t('Almacenamiento persistente activado') : t('El navegador podría borrar los datos si falta espacio: instala la app para protegerlos y exporta copias de vez en cuando.'));
   });
@@ -895,6 +905,40 @@ function viewSettings() {
     try { store.importData(await f.text()); alert(t('Copia importada')); go('#/'); }
     catch (err) { alert(t('Error: {e}', { e: err.message })); }
   };
+}
+
+function bindCollection() {
+  let ctrl = null;
+  const show = async () => {
+    const st = await collectionStatus().catch(() => null);
+    if (!$('#collStatus')) return;
+    if (!st) { $('#collCard').hidden = true; return; }
+    $('#collStatus').textContent = st.saved === st.total
+      ? '✓ ' + t('Colección completa guardada en este dispositivo')
+      : t('Temas guardados en este dispositivo: {n} de {m}', { n: st.saved, m: st.total });
+    $('#collDownload').hidden = st.saved === st.total;
+    $('#collClear').disabled = !st.saved;
+  };
+  $('#collDownload').onclick = async () => {
+    const btn = $('#collDownload');
+    btn.disabled = true;
+    ctrl = new AbortController();
+    try {
+      await downloadCollection((n, m) => { if ($('#collStatus')) $('#collStatus').textContent = t('Descargando… {n}/{m}', { n, m }); }, ctrl.signal);
+    } catch (err) {
+      if ($('#collStatus')) { await show(); $('#collStatus').textContent += ' · ' + t('Error: {e}', { e: err.message }); }
+    }
+    btn.disabled = false;
+    show();
+  };
+  $('#collClear').onclick = async () => {
+    if (!confirm(t('¿Borrar la colección guardada? Se volverá a descargar cada tema cuando lo uses.'))) return;
+    await clearCollection();
+    show();
+  };
+  show();
+  const prev = cleanup;
+  cleanup = () => { ctrl?.abort(); prev?.(); };
 }
 
 lichess.handleRedirect()
