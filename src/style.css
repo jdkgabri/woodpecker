@@ -347,3 +347,11 @@ cg-board {
 .cal-key { display: inline-block; width: 12px; height: 12px; border-radius: 3px; }
 .cal-key.lv2 { background: #629924; }
 .cal-key.frozen { background: #2f6fb3; }
+
+/* readable board coordinates, scaled with the board and placed like Lichess:
+   rank numbers in the top-left corner and file letters in the bottom-right corner of the edge squares */
+.cg-wrap coords { font-size: clamp(11px, 2.8vmin, 15px); font-weight: 700; opacity: 1; line-height: 1; }
+.cg-wrap coords.ranks { left: 0; top: 0; height: 100%; width: auto; }
+.cg-wrap coords.ranks coord { flex: 1 1 0; padding: 3px 0 0 3px; transform: none; }
+.cg-wrap coords.files { left: 0; bottom: 0; width: 100%; height: auto; align-items: flex-end; text-transform: none; }
+.cg-wrap coords.files coord { flex: 1 1 0; text-align: right; padding: 0 3px 3px 0; }

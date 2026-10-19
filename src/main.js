@@ -522,21 +522,26 @@ async function viewTrain(id) {
   let curMs = cycle.curMs || 0;        // time spent on the current puzzle
   let puzzle = null, solved = false, advanceTimer = null, tickTimer = null;
   let wrongMoves = [];
+  let lastMs = 0; // time of the puzzle just finished, shown until the next one loads
   // last finished puzzle, so it can be analysed after moving on
   const PREV_KEY = 'wp:prev:' + set.id;
   let prevPayload = null;
   try { prevPayload = JSON.parse(sessionStorage.getItem(PREV_KEY) || 'null'); } catch {}
 
   const now = () => performance.now();
-  const live = () => (running ? now() - runStart : 0);
+  // The clock only runs while a puzzle is on the board: it stops when the puzzle is finished
+  // and restarts when the next one is loaded.
+  const live = () => (running && !solved ? now() - runStart : 0);
 
   function commit() {
     if (!running) return;
-    const d = now() - runStart;
-    cycle.elapsedMs += d;
-    curMs += d;
+    if (!solved) {
+      const d = now() - runStart;
+      cycle.elapsedMs += d;
+      curMs += d;
+      cycle.curMs = curMs;
+    }
     runStart = now();
-    cycle.curMs = curMs;
     store.save();
   }
   function pause(text = t('Paused')) {
@@ -562,7 +567,7 @@ async function viewTrain(id) {
   }
   function tick() {
     $('#tCycle').textContent = fmt(cycle.elapsedMs + live());
-    $('#tPuzzle').textContent = fmt(curMs + (solved ? 0 : live()));
+    $('#tPuzzle').textContent = fmt(solved ? lastMs : curMs + live());
   }
 
   function updHeader() {
@@ -577,6 +582,7 @@ async function viewTrain(id) {
     const idx = cycle.order[cycle.pos];
     puzzle = await resolveItem(set.items[idx]);
     solved = false;
+    runStart = now(); // the new puzzle's clock starts now, not when the previous one ended
     wrongMoves = [];
     board.load(puzzle);
     board.failed = !!cycle.curFailed;
@@ -643,6 +649,7 @@ async function viewTrain(id) {
       try { sessionStorage.setItem(PREV_KEY, JSON.stringify(prevPayload)); } catch {}
       cycle.pos++;
       cycle.curMs = 0; cycle.curFailed = false;
+      lastMs = curMs;
       curMs = 0;
       solved = true;
       store.save();
