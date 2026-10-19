@@ -1,11 +1,11 @@
-// Lectura de colecciones de ejercicios en PGN.
-// Soporta etiquetas, comentarios {..} y ;, variantes (..), NAGs ($n) y anotaciones !, ?, !?, etc.
+// Reading puzzle collections in PGN.
+// Supports tags, {..} and ; comments, (..) variations, NAGs ($n) and !, ?, !? annotations, etc.
 import { Chess } from 'chess.js';
 
 const NAG = { '!': 1, '?': 2, '!!': 3, '??': 4, '!?': 5, '?!': 6 };
-const BAD_NAGS = new Set([2, 4, 6]); // jugada mala / muy mala / dudosa
+const BAD_NAGS = new Set([2, 4, 6]); // mistake / blunder / dubious
 
-// Separa el texto en partidas: [{ headers, movetext }]
+// Splits the text into games: [{ headers, movetext }]
 export function splitGames(text) {
   const games = [];
   let cur = null, inMoves = false;
@@ -25,7 +25,7 @@ export function splitGames(text) {
   return games;
 }
 
-// Convierte el texto de jugadas en un árbol: [{ san, nags, comment, variations: [[...]] }]
+// Turns the movetext into a tree: [{ san, nags, comment, variations: [[...]] }]
 export function parseMovetext(text) {
   const tokens = text.match(/\{[^}]*\}|;[^\n]*|\(|\)|\$\d+|\d+\.(?:\.\.)?|\.\.\.|1-0|0-1|1\/2-1\/2|\*|[^\s(){};$]+/g) || [];
   const root = [];
@@ -70,9 +70,9 @@ const uciOf = mv => mv.from + mv.to + (mv.promotion || '');
 const cleanNotes = s => s.replace(/\s+/g, ' ').trim().slice(0, 600);
 
 /**
- * Interpreta una partida como ejercicio.
+ * Interprets a game as a puzzle.
  * opponentFirst: 'auto' | 'yes' | 'no'
- * Devuelve { ok, kind: 'solution'|'nosolution'|'error', fen, tree, label, notes, flags: [], reason }
+ * Returns { ok, kind: 'solution'|'nosolution'|'error', fen, tree, label, notes, flags: [], reason }
  */
 export function interpretGame(game, opponentFirst = 'auto') {
   const h = game.headers;
@@ -80,14 +80,14 @@ export function interpretGame(game, opponentFirst = 'auto') {
   const moves = parseMovetext(game.movetext || '');
   const flags = [];
   if (!h.FEN) {
-    if (moves.length) return { kind: 'error', reason: 'nofen' }; // partida completa, no un ejercicio
+    if (moves.length) return { kind: 'error', reason: 'nofen' }; // a full game, not a puzzle
     return { kind: 'error', reason: 'empty' };
   }
   let chess;
   try { chess = new Chess(h.FEN); } catch { return { kind: 'error', reason: 'badfen' }; }
   if (!moves.length) return { kind: 'nosolution', fen: chess.fen(), label };
 
-  // validar la línea principal
+  // validate the main line
   const probe = new Chess(chess.fen());
   for (const node of moves) {
     try { node.mv = probe.move(node.san); } catch { return { kind: 'error', reason: 'illegal', detail: node.san }; }
@@ -106,7 +106,7 @@ export function interpretGame(game, opponentFirst = 'auto') {
   return { kind: 'solution', fen: start.fen(), tree, label, notes, flags };
 }
 
-// Árbol de la app desde una línea principal que empieza con jugada del héroe
+// App tree from a main line that starts with the solver's move
 function buildTree(fen, line) {
   const chess = new Chess(fen);
   const build = i => {
@@ -126,7 +126,7 @@ function buildTree(fen, line) {
       chess.undo();
     }
     chess.undo();
-    // variantes en la jugada del héroe: soluciones alternativas, salvo las marcadas con ? / ?? / ?!
+    // variations on the solver's move: alternative solutions, except those marked ? / ?? / ?!
     const alts = [];
     for (const v of node.variations) {
       const first = v[0];
@@ -136,14 +136,14 @@ function buildTree(fen, line) {
         chess.undo();
         const u = uciOf(amv);
         if (u !== entry[0] && !alts.some(a => a[0] === u)) alts.push([u, null, null]);
-      } catch { /* variante ilegal: se ignora */ }
+      } catch { /* illegal variation: ignored */ }
     }
     return [entry, ...alts];
   };
   return build(0);
 }
 
-// Resumen de un archivo: [{ index, ...interpretación }]
+// Summary of a file: [{ index, ...interpretation }]
 export function analysePgn(text, opponentFirst = 'auto') {
   return splitGames(text).map((g, i) => ({ index: i + 1, ...interpretGame(g, opponentFirst) }));
 }

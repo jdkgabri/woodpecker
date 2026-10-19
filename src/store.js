@@ -1,20 +1,21 @@
-// Persistencia local (fuente de verdad de la interfaz). sync.js la replica en la nube si hay sesión.
+// Local persistence (the UI source of truth). sync.js replicates it to the cloud when signed in.
 import { compute as computeHabit, dayKey } from './habit.js';
+import { t } from './i18n.js';
 const KEY = 'wp:data:v1';
 const SETTINGS_KEY = 'wp:settings:v1';
 
 const DEFAULT_SETTINGS = {
-  autoPause: true,      // pausar al salir de la app / cambiar de pestaña
-  autoNext: true,       // pasar al siguiente ejercicio al resolver
+  autoPause: true,      // pause when leaving the app / switching tabs
+  autoNext: true,       // go to the next puzzle after solving
   sound: true,
   coords: true,
-  hidePaused: true,     // ocultar el tablero mientras está en pausa
+  hidePaused: true,     // hide the board while paused
 };
 
 let data = load();
-const snapshots = new Map(); // id -> JSON del set sin updatedAt, para detectar cambios
+const snapshots = new Map(); // id -> set JSON without updatedAt, to detect changes
 const saveListeners = new Set();
-let lockedSetId = null;      // set que se está entrenando: no se sobrescribe desde la nube
+let lockedSetId = null;      // set being trained: not overwritten from the cloud
 
 function load() {
   let d = { sets: [] };
@@ -24,7 +25,7 @@ function load() {
   } catch (e) { console.error(e); }
   d.deleted = d.deleted || {};
   d.days = d.days || [];
-  d.frozen = d.frozen || [];  // días cubiertos con un protector de racha
+  d.frozen = d.frozen || [];  // days covered with a streak freeze
   d.habit = d.habit || { enabled: false, enabledAt: null, dismissed: null, updatedAt: 0 };
   for (const s of d.sets) s.updatedAt = s.updatedAt || s.createdAt || Date.now();
   return d;
@@ -47,7 +48,7 @@ export function save() {
     }
   }
   try { localStorage.setItem(KEY, JSON.stringify(data)); }
-  catch (e) { console.error(e); alert('No se pudo guardar el progreso: ' + e.message); }
+  catch (e) { console.error(e); alert(t('Could not save progress: {e}', { e: e.message })); }
   saveListeners.forEach(f => f(changed));
 }
 
@@ -55,7 +56,7 @@ export const onSave = f => { saveListeners.add(f); return () => saveListeners.de
 export const setLocked = id => { lockedSetId = id; };
 export const rawData = () => data;
 
-// Aplica datos que vienen de la nube. Devuelve true si cambió algo visible.
+// Applies data coming from the cloud. Returns true if something visible changed.
 export function applyRemote({ sets = [], deleted = {}, days = [], frozen = [], habit = null }) {
   let changed = false;
   for (const [id, t] of Object.entries(deleted)) {
@@ -156,19 +157,19 @@ export function exportData() {
 }
 export function importData(json) {
   const obj = JSON.parse(json);
-  if (!obj || !obj.data || !Array.isArray(obj.data.sets)) throw new Error('Archivo de copia no válido');
+  if (!obj || !obj.data || !Array.isArray(obj.data.sets)) throw new Error(t('Invalid backup file'));
   const now = Date.now();
   data = { deleted: {}, days: [], frozen: [], habit: { enabled: false, enabledAt: null, dismissed: null, updatedAt: 0 }, ...obj.data };
-  // lo importado pasa a ser lo más reciente, para que se suba a la nube
+  // imported data becomes the newest, so it gets uploaded
   for (const s of data.sets) { s.updatedAt = now; snapshots.set(s.id, contentOf(s)); }
   try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { console.error(e); }
   saveListeners.forEach(f => f(data.sets.map(s => s.id)));
   if (obj.settings) setSettings(obj.settings);
 }
 
-// ---- Actividad diaria y modo hábito ----
-// Un día cuenta como entrenado si se ha terminado al menos un ejercicio de un ciclo.
-// Devuelve true si es el primer ejercicio del día.
+// ---- Daily activity and habit mode ----
+// A day counts as trained if at least one puzzle from a cycle was finished.
+// Returns true if it is the day's first puzzle.
 export function touchActivity() {
   const day = dayKey(new Date());
   if (data.days.includes(day)) return false;
@@ -180,14 +181,14 @@ export function touchActivity() {
 export const habitData = () => data.habit;
 export function setHabit(patch) {
   data.habit = { ...data.habit, ...patch, updatedAt: Date.now() };
-  // la fecha de activación se conserva para el cálculo de protectores semanales
+  // the activation date is kept for the weekly streak-freeze count
   if (data.habit.enabled && !data.habit.enabledAt) data.habit.enabledAt = Date.now();
   save();
 }
 export function habitState(now = new Date()) {
   return computeHabit({ days: data.days, frozen: data.frozen, enabledAt: data.habit.enabledAt, dismissed: data.habit.dismissed }, now);
 }
-// Cubre los días del hueco con protectores
+// Covers the gap days with streak freezes
 export function useFreezes(gap) {
   data.frozen = [...new Set([...data.frozen, ...gap])].sort();
   save();

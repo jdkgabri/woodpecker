@@ -1,4 +1,4 @@
-// Pantalla de análisis: tablero libre + Stockfish en el navegador.
+// Analysis screen: free board + Stockfish in the browser.
 import { Chessground } from 'chessground';
 import { Chess } from 'chess.js';
 import { Engine } from './engine.js';
@@ -11,7 +11,7 @@ const KEY = 'wp:analysis';
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const toColor = c => (c === 'w' ? 'white' : 'black');
 
-// Línea principal (jugadas uci alternas) de un árbol de solución
+// Main line (alternating uci moves) of a solution tree
 export function mainLine(tree) {
   const out = [];
   let t = tree;
@@ -24,7 +24,7 @@ export function mainLine(tree) {
 }
 
 /**
- * Abre el análisis. payload: { fen, solution: [uci], wrong: [uci], title, ref?: { setId, cycleN, idx } }
+ * Opens the analysis. payload: { fen, solution: [uci], wrong: [uci], title, ref?: { setId, cycleN, idx } }
  */
 export function openAnalysis(payload) {
   try { sessionStorage.setItem(KEY, JSON.stringify(payload)); } catch {}
@@ -59,35 +59,35 @@ export function viewAnalysis(app) {
 
   const start = new Chess(p.fen);
   const hero = start.turn();
-  let moves = [...(p.solution || [])]; // línea actual (uci desde la posición inicial)
-  let ply = 0;                           // cuántas jugadas de "moves" están aplicadas
+  let moves = [...(p.solution || [])]; // current line (uci from the start position)
+  let ply = 0;                           // how many moves of "moves" are applied
   let engineOn = true;
   let orientation = toColor(hero);
   let engine = null;
 
   app.innerHTML = `
     <div class="train">
-      <header class="top"><button class="icon-btn" id="back" aria-label="${t('Volver')}">‹</button>
-        <h1 class="ellipsis">${t('Análisis')} · ${esc(p.title || '')}</h1>
-        <button class="icon-btn" id="flip" aria-label="${t('Girar tablero')}">⇅</button></header>
+      <header class="top"><button class="icon-btn" id="back" aria-label="${t('Back')}">‹</button>
+        <h1 class="ellipsis">${t('Analysis')} · ${esc(p.title || '')}</h1>
+        <button class="icon-btn" id="flip" aria-label="${t('Flip board')}">⇅</button></header>
       <div class="eval-row"><b id="evalTxt">…</b><span class="muted small" id="depth"></span>
         <label class="switch mini"><input type="checkbox" id="engOn" checked><span>Stockfish</span></label></div>
       <div class="board-wrap with-gauge"><div class="gauge"><i id="gauge"></i></div><div class="board" id="board"></div></div>
       <div class="info">
-        <div class="pv" id="pvs"><p class="muted small">${t('Cargando motor…')}</p></div>
+        <div class="pv" id="pvs"><p class="muted small">${t('Loading engine…')}</p></div>
         <div class="movelist" id="moves"></div>
         <div class="small">
-          <p><span class="muted">${t('Solución del set:')}</span> <a href="#" id="loadSol" class="link">${esc(sanLine(p.fen, p.solution || []).join(' ') || '—')}</a></p>
-          ${(p.wrong || []).length ? `<p><span class="muted">${t('Tus jugadas:')}</span> ${p.wrong.map((u, i) => `<a href="#" class="link" data-wrong="${i}">${esc(sanLine(p.fen, [u])[0] || u)}</a>`).join(', ')}</p>` : ''}
+          <p><span class="muted">${t('Set solution:')}</span> <a href="#" id="loadSol" class="link">${esc(sanLine(p.fen, p.solution || []).join(' ') || '—')}</a></p>
+          ${(p.wrong || []).length ? `<p><span class="muted">${t('Your moves:')}</span> ${p.wrong.map((u, i) => `<a href="#" class="link" data-wrong="${i}">${esc(sanLine(p.fen, [u])[0] || u)}</a>`).join(', ')}</p>` : ''}
         </div>
         ${p.notes ? `<p class="small notes">💬 ${esc(p.notes)}</p>` : ''}
         ${p.ref ? `<div id="refBox"></div>` : ''}
       </div>
       <div class="actions">
-        <button class="btn ghost" id="first" aria-label="${t('Ir al inicio')}">⏮</button>
-        <button class="btn ghost" id="prev" aria-label="${t('Anterior')}">◀</button>
-        <button class="btn ghost" id="next" aria-label="${t('Siguiente')}">▶</button>
-        <button class="btn ghost" id="last" aria-label="${t('Ir al final')}">⏭</button>
+        <button class="btn ghost" id="first" aria-label="${t('First move')}">⏮</button>
+        <button class="btn ghost" id="prev" aria-label="${t('Previous')}">◀</button>
+        <button class="btn ghost" id="next" aria-label="${t('Next')}">▶</button>
+        <button class="btn ghost" id="last" aria-label="${t('Last move')}">⏭</button>
         <a class="btn ghost" id="lichess" target="_blank" rel="noopener">Lichess</a>
       </div>
     </div>`;
@@ -129,7 +129,7 @@ export function viewAnalysis(app) {
     });
     cg.setAutoShapes([]);
     $('#gauge').parentElement.classList.toggle('flip', orientation === 'black');
-    // lista de jugadas
+    // move list
     const sans = sanLine(p.fen, moves);
     $('#moves').innerHTML = sans.map((s, i) => `<button class="mv ${i + 1 === ply ? 'on' : ''}" data-ply="${i + 1}">${esc(s)}</button>`).join(' ');
     $('#lichess').href = 'https://lichess.org/analysis/' + c.fen().replace(/ /g, '_') + '?color=' + orientation;
@@ -142,20 +142,20 @@ export function viewAnalysis(app) {
     if (c.isGameOver()) {
       engine?.stop();
       if (c.isCheckmate()) $('#gauge').style.height = c.turn() === 'w' ? '100%' : '0%';
-      $('#evalTxt').textContent = c.isCheckmate() ? t('Jaque mate') : t('Tablas');
+      $('#evalTxt').textContent = c.isCheckmate() ? t('Checkmate') : t('Draw');
       $('#pvs').innerHTML = '';
       return;
     }
-    if (!engineOn) { engine?.stop(); $('#pvs').innerHTML = `<p class="muted small">${t('Motor desactivado')}</p>`; $('#evalTxt').textContent = ''; return; }
+    if (!engineOn) { engine?.stop(); $('#pvs').innerHTML = `<p class="muted small">${t('Engine off')}</p>`; $('#evalTxt').textContent = ''; return; }
     if (!engine) engine = new Engine();
     const fen = c.fen();
     engine.analyse(fen, 3, (lines, depth) => {
       const best = lines[0];
       $('#evalTxt').textContent = fmtScore(best);
-      // barra de evaluación como en Lichess (porcentaje de las blancas)
+      // evaluation bar like Lichess (white's share)
       const wc = best.mate != null ? (best.mate > 0 ? 1 : -1) : 2 / (1 + Math.exp(-0.00368208 * best.cp)) - 1;
       $('#gauge').style.height = (50 - wc * 50) + '%';
-      $('#depth').textContent = t('profundidad {d}', { d: depth });
+      $('#depth').textContent = t('depth {d}', { d: depth });
       $('#pvs').innerHTML = lines.map((l, i) => `
         <button class="pvline" data-pv="${i}"><b>${fmtScore(l)}</b> ${esc(sanLine(fen, l.pv.slice(0, 10)).join(' '))}</button>`).join('');
       app.querySelectorAll('[data-pv]').forEach(b => b.onclick = () => playUci(lines[+b.dataset.pv].pv[0]));
@@ -201,7 +201,7 @@ export function viewAnalysis(app) {
   };
   document.addEventListener('keydown', onKey);
 
-  // Desde un ciclo: permitir corregir el resultado si tu jugada era buena
+  // From a cycle: allow fixing the result if your move was good
   function renderRef() {
     const box = $('#refBox');
     if (!box) return;
@@ -210,8 +210,8 @@ export function viewAnalysis(app) {
     const r = cycle?.results[p.ref.idx];
     if (!r) { box.innerHTML = ''; return; }
     box.innerHTML = r.ok
-      ? `<p class="small ok-text">✓ ${t('Contado como correcto en el ciclo {n}', { n: cycle.n })}</p>`
-      : `<button class="btn ghost full" id="markOk">✓ ${t('Mi jugada era buena: contar como correcta')}</button>`;
+      ? `<p class="small ok-text">✓ ${t('Counted as correct in cycle {n}', { n: cycle.n })}</p>`
+      : `<button class="btn ghost full" id="markOk">✓ ${t('My move was good: count as correct')}</button>`;
     const b = $('#markOk');
     if (b) b.onclick = () => { r.ok = true; store.save(); renderRef(); };
   }

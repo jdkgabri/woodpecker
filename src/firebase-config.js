@@ -1,6 +1,6 @@
-// Configuración del proyecto de Firebase (Consola de Firebase → Configuración del proyecto → Tus apps → Web).
-// Estos valores no son secretos: identifican el proyecto, y el acceso a los datos lo protegen
-// el login de Google y las reglas de Firestore (firestore.rules).
+// Firebase project config (Firebase console → Project settings → Your apps → Web).
+// These values are not secrets: they identify the project; data access is protected by
+// Google sign-in and the Firestore rules (firestore.rules).
 export const firebaseConfig = {
   apiKey: 'AIzaSyD-Bxmy6rIUfft1y-XTE_1Fn5lPkSO5Y7g',
   authDomain: 'woodpecker-93e04.firebaseapp.com',

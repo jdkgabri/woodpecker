@@ -1,9 +1,9 @@
-// Estadísticas de progreso calculadas a partir de los sets (funciones puras, sin almacenamiento).
+// Progress statistics computed from the sets (pure functions, no storage).
 import { addDays } from './habit.js';
 
 const allResults = set => set.cycles.flatMap(c => Object.entries(c.results).map(([idx, r]) => ({ idx: +idx, ...r, cycle: c })));
 
-// ---------- rendimiento por tema (sets de Lichess) ----------
+// ---------- performance by theme (Lichess sets) ----------
 export function themeStats(sets) {
   const acc = new Map();
   for (const s of sets) {
@@ -22,7 +22,7 @@ export function themeStats(sets) {
   return [...acc.values()].map(a => ({ ...a, acc: a.ok / a.attempts, avgMs: a.ms / a.attempts })).sort((x, y) => x.acc - y.acc);
 }
 
-// ---------- posiciones que más fallas ----------
+// ---------- most missed positions ----------
 export function mostMissed(sets, limit = 20) {
   const out = [];
   for (const s of sets) {
@@ -39,11 +39,11 @@ export function mostMissed(sets, limit = 20) {
   return out.sort((a, b) => b.fails - a.fails || b.fails / b.attempts - a.fails / a.attempts).slice(0, limit);
 }
 
-// ---------- XP, niveles y logros ----------
+// ---------- XP, levels and achievements ----------
 export const RANKS = [
-  [1, 'Peón'], [5, 'Caballo'], [10, 'Alfil'], [15, 'Torre'], [20, 'Dama'], [30, 'Rey'], [40, 'Maestro'], [50, 'Gran Maestro'],
+  [1, 'Pawn'], [5, 'Knight'], [10, 'Bishop'], [15, 'Rook'], [20, 'Queen'], [30, 'King'], [40, 'Master'], [50, 'Grandmaster'],
 ];
-const RANK_ICON = { 'Peón': '♟', 'Caballo': '♞', 'Alfil': '♝', 'Torre': '♜', 'Dama': '♛', 'Rey': '♚', 'Maestro': '🎓', 'Gran Maestro': '👑' };
+const RANK_ICON = { 'Pawn': '♟', 'Knight': '♞', 'Bishop': '♝', 'Rook': '♜', 'Queen': '♛', 'King': '♚', 'Master': '🎓', 'Grandmaster': '👑' };
 
 export const xpForLevel = L => 50 * (L - 1) ** 2;
 export function levelInfo(xp) {
@@ -54,7 +54,7 @@ export function levelInfo(xp) {
 }
 
 function coveredStreaks(days, frozen) {
-  // longitud de la racha en cada día entrenado
+  // streak length on each trained day
   const cov = new Set([...days, ...frozen]);
   const res = new Map();
   for (const d of [...days].sort()) {
@@ -84,29 +84,29 @@ export function computeXp({ sets, days = [], frozen = [] }) {
   return xp;
 }
 
-// Logros: [id, icono, nombre, descripción, comprobación]
+// Achievements: [id, icon, name, description, check]
 export const ACHIEVEMENTS = [
-  ['first', '🐣', 'Primer picotazo', 'Resuelve tu primer ejercicio', s => s.solved >= 1],
-  ['s100', '💯', 'Cien', 'Resuelve 100 ejercicios', s => s.solved >= 100],
-  ['s500', '🎯', 'Quinientos', 'Resuelve 500 ejercicios', s => s.solved >= 500],
-  ['s1000', '🏅', 'Mil', 'Resuelve 1.000 ejercicios', s => s.solved >= 1000],
-  ['s5000', '🏆', 'Cinco mil', 'Resuelve 5.000 ejercicios', s => s.solved >= 5000],
-  ['cycle1', '🔁', 'Primer ciclo', 'Completa un ciclo', s => s.cycles >= 1],
-  ['cycle10', '♻️', 'Constancia', 'Completa 10 ciclos', s => s.cycles >= 10],
-  ['perfect', '✨', 'Ciclo perfecto', 'Completa un ciclo de al menos 20 ejercicios sin fallar ninguno', s => s.perfect],
-  ['half', '⚡', 'A mitad de tiempo', 'Completa un ciclo en la mitad de tiempo que el anterior', s => s.half],
-  ['seven', '🐦', 'Pájaro carpintero', 'Completa los 7 ciclos de un set', s => s.sevenCycles],
-  ['book', '📚', 'El libro entero', 'Completa un ciclo con los 1128 ejercicios del libro', s => s.fullBook],
-  ['marathon', '🏃', 'Maratón', 'Completa un ciclo de al menos 200 ejercicios', s => s.marathon],
-  ['fast', '⏱', 'Reflejos', 'Completa un ciclo de al menos 50 ejercicios con menos de 10 s de media', s => s.fast],
-  ['day50', '🔥', 'Día intenso', 'Resuelve 50 ejercicios en un mismo día', s => s.bestDay >= 50],
-  ['streak3', '🌱', 'Tres seguidos', 'Racha de 3 días', s => s.bestStreak >= 3],
-  ['streak7', '📅', 'Una semana', 'Racha de 7 días', s => s.bestStreak >= 7],
-  ['streak30', '🗓', 'Un mes', 'Racha de 30 días', s => s.bestStreak >= 30],
-  ['streak100', '💎', 'Cien días', 'Racha de 100 días', s => s.bestStreak >= 100],
-  ['days30', '📈', 'Treinta días', 'Entrena 30 días en total', s => s.daysTrained >= 30],
-  ['lichess', '🐴', 'Puzles de Lichess', 'Crea un set de Lichess', s => s.hasLichess],
-  ['pgn', '📄', 'Colección propia', 'Importa un set desde un PGN', s => s.hasPgn],
+  ['first', '🐣', 'First peck', 'Solve your first puzzle', s => s.solved >= 1],
+  ['s100', '💯', 'One hundred', 'Solve 100 puzzles', s => s.solved >= 100],
+  ['s500', '🎯', 'Five hundred', 'Solve 500 puzzles', s => s.solved >= 500],
+  ['s1000', '🏅', 'One thousand', 'Solve 1,000 puzzles', s => s.solved >= 1000],
+  ['s5000', '🏆', 'Five thousand', 'Solve 5,000 puzzles', s => s.solved >= 5000],
+  ['cycle1', '🔁', 'First cycle', 'Complete a cycle', s => s.cycles >= 1],
+  ['cycle10', '♻️', 'Perseverance', 'Complete 10 cycles', s => s.cycles >= 10],
+  ['perfect', '✨', 'Perfect cycle', 'Complete a cycle of at least 20 puzzles without a single mistake', s => s.perfect],
+  ['half', '⚡', 'Half the time', 'Complete a cycle in half the time of the previous one', s => s.half],
+  ['seven', '🐦', 'Woodpecker', 'Complete 7 cycles of a set', s => s.sevenCycles],
+  ['book', '📚', 'The whole book', 'Complete a cycle with all 1,128 puzzles of the book', s => s.fullBook],
+  ['marathon', '🏃', 'Marathon', 'Complete a cycle of at least 200 puzzles', s => s.marathon],
+  ['fast', '⏱', 'Reflexes', 'Complete a cycle of at least 50 puzzles averaging under 10 s', s => s.fast],
+  ['day50', '🔥', 'Intense day', 'Solve 50 puzzles in a single day', s => s.bestDay >= 50],
+  ['streak3', '🌱', 'Three in a row', '3-day streak', s => s.bestStreak >= 3],
+  ['streak7', '📅', 'One week', '7-day streak', s => s.bestStreak >= 7],
+  ['streak30', '🗓', 'One month', '30-day streak', s => s.bestStreak >= 30],
+  ['streak100', '💎', 'One hundred days', '100-day streak', s => s.bestStreak >= 100],
+  ['days30', '📈', 'Thirty days', 'Train on 30 days in total', s => s.daysTrained >= 30],
+  ['lichess', '🐴', 'Lichess puzzles', 'Create a Lichess set', s => s.hasLichess],
+  ['pgn', '📄', 'Own collection', 'Import a set from a PGN', s => s.hasPgn],
 ];
 
 export function summary({ sets, days = [], frozen = [] }) {

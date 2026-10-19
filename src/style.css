@@ -1,14 +1,14 @@
-/* Estilo inspirado en el tema oscuro de Lichess */
+/* Style inspired by Lichess' dark theme */
 :root {
   --bg: #161512;
-  --bg2: #262421;       /* cajas */
-  --bg3: #302e2c;       /* elementos dentro de cajas */
+  --bg2: #262421;       /* boxes */
+  --bg3: #302e2c;       /* elements inside boxes */
   --line: #3d3a37;
   --fg: #bababa;
   --fg-strong: #e2e2e2;
   --muted: #8a8784;
-  --primary: #3692e7;   /* botones y enlaces */
-  --accent: #629924;    /* verde Lichess: acierto, progreso */
+  --primary: #3692e7;   /* buttons and links */
+  --accent: #629924;    /* Lichess green: success, progress */
   --accent-fg: #fff;
   --bad: #cc3333;
   --ok: #629924;
@@ -114,7 +114,7 @@ input[type=number], input[type=text], select {
 .chart .clabel { fill: var(--muted); font-size: 9px; text-anchor: middle; }
 .big-num { font-size: 2.6rem; font-weight: 700; font-variant-numeric: tabular-nums; }
 
-/* ---- entrenamiento ---- */
+/* ---- training ---- */
 .train { display: flex; flex-direction: column; min-height: 100dvh; }
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; padding: 0 16px 8px; }
 .stats div { background: var(--bg2); border-radius: 8px; padding: 4px 8px; display: flex; flex-direction: column; }
@@ -141,7 +141,7 @@ input[type=number], input[type=text], select {
 .actions { display: flex; gap: 8px; padding: 10px 16px 16px; flex-wrap: wrap; }
 .actions .btn { flex: 1; min-width: 0; padding: .7rem .5rem; }
 
-/* promoción (como en Lichess) */
+/* promotion (like Lichess) */
 .cg-wrap .promotion { position: absolute; inset: 0; z-index: 30; background: rgba(250, 250, 250, .7); cursor: pointer; }
 .cg-wrap .promotion square { position: absolute; width: 12.5%; height: 12.5%; cursor: pointer; border-radius: 50%;
   background: radial-gradient(circle, #b0b0b0 25%, #808080 100%); box-shadow: inset 0 0 25px 3px #404040; transition: .2s; }
@@ -159,7 +159,7 @@ input[type=number], input[type=text], select {
   .train .actions { align-self: start; }
 }
 
-/* ---- análisis ---- */
+/* ---- analysis ---- */
 .eval-row { display: flex; align-items: center; gap: .6rem; padding: 0 16px 8px; }
 .eval-row b { font-size: 1.3rem; font-variant-numeric: tabular-nums; min-width: 4.5rem; }
 .eval-row .mini { margin-left: auto; font-size: .9rem !important; padding: 0; }
@@ -173,7 +173,7 @@ input[type=number], input[type=text], select {
 .ok-text { color: var(--ok); }
 @media (min-width: 900px) { .train .eval-row { grid-column: 2; padding: 0; } }
 
-/* ---- lista de ejercicios del ciclo ---- */
+/* ---- cycle's puzzle list ---- */
 .clickable { cursor: pointer; }
 .clickable:active td, .clickable:hover td { background: var(--bg3); }
 .plist { display: flex; flex-direction: column; gap: 6px; }
@@ -194,7 +194,7 @@ input[type=number], input[type=text], select {
 .hdot.bad { background: var(--bad); }
 .ptime { font-variant-numeric: tabular-nums; color: var(--muted); font-size: .9rem; min-width: 3rem; text-align: right; }
 
-/* ---- modo hábito ---- */
+/* ---- habit mode ---- */
 .streak-top { display: flex; align-items: center; gap: 12px; }
 .flame { font-size: 2.4rem; filter: grayscale(1) opacity(.5); line-height: 1; }
 .flame.lit { filter: none; animation: flicker 2.4s ease-in-out infinite; }
@@ -229,7 +229,7 @@ input[type=number], input[type=text], select {
 .time-row input { flex: 1; padding: .6rem; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: inherit; color-scheme: dark; }
 h3 { font-size: .95rem; margin: .6rem 0 0; }
 
-/* ---- estadísticas ---- */
+/* ---- statistics ---- */
 .kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
 .kpi { background: var(--bg2); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; }
 .kpi b { font-size: 1.4rem; }
@@ -241,7 +241,7 @@ h3 { font-size: .95rem; margin: .6rem 0 0; }
 .hm.future { background: transparent; }
 .section-title { margin: 8px 0 0; }
 
-/* ---- ajustes al estilo Lichess ---- */
+/* ---- Lichess-style tweaks ---- */
 .chip, .tab, input[type=number], input[type=text], select, .time-row input, .prow, .pvline, .stats div, .kpi, .freezes { border-radius: var(--radius) !important; }
 .chip { background: var(--bg3); border-color: transparent; }
 .chip.on { border-color: var(--primary); background: color-mix(in srgb, var(--primary) 18%, var(--bg3)); }
@@ -257,7 +257,7 @@ input[type=number], input[type=text], select { background: #1d1b19; border-color
 .tbl tr.live td { color: var(--primary); }
 .chart .cbar { fill: var(--primary); }
 
-/* recuadro de estado del puzle (como .puzzle__feedback de Lichess) */
+/* puzzle status box (like Lichess' .puzzle__feedback) */
 .pfb { display: flex; align-items: center; gap: 14px; background: var(--bg2); border-radius: var(--radius); padding: 14px 16px; min-height: 84px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12); }
 .pfb-text { display: flex; flex-direction: column; min-width: 0; }
@@ -272,7 +272,7 @@ input[type=number], input[type=text], select { background: #1d1b19; border-color
 .fb-icon.bad { color: var(--bad); }
 .feedback { min-height: 0; }
 
-/* barra de evaluación del análisis */
+/* analysis evaluation bar */
 .board-wrap.with-gauge { display: grid; grid-template-columns: 12px 1fr; gap: 0; aspect-ratio: auto; }
 .board-wrap.with-gauge .board { aspect-ratio: 1; }
 .gauge { position: relative; background: #fff; overflow: hidden; }
@@ -286,7 +286,7 @@ input[type=file] { color: var(--fg); }
 .warn-text { color: #d6a23a; }
 .notes { background: var(--bg2); border-left: 3px solid var(--primary); padding: .5rem .7rem; border-radius: var(--radius); }
 
-/* ---- nivel, logros y rendimiento por tema ---- */
+/* ---- level, achievements and performance by theme ---- */
 .lvl-top { display: flex; align-items: center; gap: 12px; }
 .lvl-icon { font-size: 2.2rem; width: 52px; height: 52px; display: grid; place-items: center; background: var(--bg3); border-radius: 50%; flex: none; }
 .lvl-text { display: flex; flex-direction: column; flex: 1; min-width: 0; }

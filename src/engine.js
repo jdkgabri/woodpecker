@@ -1,4 +1,4 @@
-// Stockfish 17.1 (WASM, versión lite de un hilo) ejecutándose en un Web Worker.
+// Stockfish 17.1 (WASM, lite single-threaded build) running in a Web Worker.
 export class Engine {
   constructor() {
     this.worker = new Worker(import.meta.env.BASE_URL + 'stockfish/stockfish.js');
@@ -10,7 +10,7 @@ export class Engine {
     this.send('setoption name Hash value 32');
     this.send('isready');
     this.gen = 0;
-    this.idle = Promise.resolve(); // se resuelve cuando no hay búsqueda en marcha
+    this.idle = Promise.resolve(); // resolves when no search is running
   }
 
   on(f) { this.listeners.add(f); return () => this.listeners.delete(f); }
@@ -22,14 +22,14 @@ export class Engine {
   }
 
   /**
-   * Analiza hasta profundidad 30 (o hasta stop) y llama a onUpdate con las líneas.
-   * lines[k] = { multipv, depth, cp|mate (desde el punto de vista de las blancas), pv: [uci] }
+   * Analyses up to depth 30 (or until stop) and calls onUpdate with the lines.
+   * lines[k] = { multipv, depth, cp|mate (from white's point of view), pv: [uci] }
    */
   async analyse(fen, multipv, onUpdate) {
     const gen = ++this.gen;
     await this.ready;
     this.stop();
-    await this.idle; // las opciones solo se pueden cambiar con el motor parado
+    await this.idle; // options can only be changed while the engine is idle
     if (gen !== this.gen) return;
     const whiteToMove = fen.split(' ')[1] === 'w';
     const lines = [];
@@ -60,8 +60,8 @@ export class Engine {
   }
 
   /**
-   * Búsqueda con tiempo fijo; devuelve las líneas finales con la puntuación desde el punto de
-   * vista del bando que mueve: [{ move, cp|mate, pv }]
+   * Fixed-time search; returns the final lines with the score from the point of view
+   * of the side to move: [{ move, cp|mate, pv }]
    */
   async search(fen, { multipv = 1, movetime = 1000 } = {}) {
     ++this.gen;

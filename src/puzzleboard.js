@@ -14,9 +14,9 @@ function dests(chess) {
 }
 
 /**
- * Tablero de puzle.
- * tree = [[uci, replyUci|null, subtree|null], ...]  (primera entrada = línea principal)
- * Cualquier jugada que dé mate se acepta siempre.
+ * Puzzle board.
+ * tree = [[uci, replyUci|null, subtree|null], ...]  (first entry = main line)
+ * Any mating move is always accepted.
  */
 export class PuzzleBoard {
   constructor(el, { coords = true, onEvent = () => {} } = {}) {
@@ -109,7 +109,7 @@ export class PuzzleBoard {
       this.onEvent('good');
       return;
     }
-    // jugada incorrecta
+    // wrong move
     this.failed = true;
     this.locked = true;
     this.sync();
@@ -146,21 +146,21 @@ export class PuzzleBoard {
     this.onEvent('solved', { ok: !this.failed });
   }
 
-  // Muestra la solución desde la posición actual (cuenta como fallo)
+  // Shows the solution from the current position (counts as a failure)
   showSolution() {
     if (this.done) return;
     this.failed = true;
     this.locked = true;
     clearTimeout(this.timer);
-    // si estábamos esperando deshacer una jugada errónea
+    // if we were about to undo a wrong move
     if (this.pending) {
-      // jugada correcta a la espera de la respuesta del rival
+      // correct move waiting for the opponent's reply
       const m = this.pending;
       this.pending = null;
       this.playUci(m[1]);
       this.node = m[2];
     } else if (this.chess.turn() !== this.hero) {
-      // jugada errónea aún sin deshacer
+      // wrong move not undone yet
       this.chess.undo();
       this.cg.set({ lastMove: undefined });
       this.sync();
@@ -185,7 +185,7 @@ export class PuzzleBoard {
 }
 
 
-// Selector de promoción sobre el tablero, como en Lichess. Devuelve 'q' | 'n' | 'r' | 'b' | '' (cancelado)
+// On-board promotion picker, like Lichess. Returns 'q' | 'n' | 'r' | 'b' | '' (cancelled)
 export function askPromotion(el, orient, color, dest) {
   return new Promise(resolve => {
     const file = dest.charCodeAt(0) - 97;

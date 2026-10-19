@@ -7,7 +7,7 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['icon-192.png', 'icon-512.png'],
-      // Service worker propio (src/sw.js) para poder recibir notificaciones push
+      // Custom service worker (src/sw.js) to receive push notifications
       strategies: 'injectManifest',
       srcDir: 'src',
       filename: 'sw.js',
@@ -17,10 +17,10 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },
       manifest: {
-        name: 'Woodpecker — entrenamiento táctico',
+        name: 'Woodpecker — tactics trainer',
         short_name: 'Woodpecker',
-        description: 'Ciclos del método Woodpecker con pausa y progreso guardado en el dispositivo.',
-        lang: 'es',
+        description: 'Woodpecker Method tactics cycles with pause, progress and offline play.',
+        lang: 'en',
         display: 'standalone',
         orientation: 'portrait',
         start_url: './',

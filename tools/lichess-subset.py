@@ -1,17 +1,17 @@
-"""Genera la colección local de puzles de Lichess a partir de la base de datos oficial (CC0).
+"""Builds the app's local Lichess puzzle collection from the official database (CC0).
 
-Uso:  python tools/lichess-subset.py lichess_db_puzzle.csv.zst public/lichess
-Base: https://database.lichess.org/#puzzles
+Usage:    python tools/lichess-subset.py lichess_db_puzzle.csv.zst public/lichess
+Database: https://database.lichess.org/#puzzles
 
-Para cada tema de la app y cada franja de 100 puntos de Elo se eligen al azar hasta PER_BUCKET
-puzles de calidad (muy jugados, bien valorados y con Elo estable).
+For every app theme and every 100-point rating band, up to PER_BUCKET quality puzzles
+(often played, well rated and with a stable rating) are picked at random.
 
-Salida, un archivo por tema (<tema>.txt), una línea por puzle:
-    id;fen;jugadas;elo[;temas]
-(los temas, separados por espacios, solo en mix.txt y solo los que usa la app)
-donde fen es la posición del ejercicio (tras la jugada del rival que incluye Lichess) y
-jugadas es la solución en UCI empezando por la jugada del usuario.
-Además index.json con el recuento por tema y franja.
+Output, one file per theme (<theme>.txt), one line per puzzle:
+    id;fen;moves;rating[;themes]
+(themes, space separated, only in mix.txt and only those the app uses)
+where fen is the puzzle position (after the opponent move included by Lichess) and
+moves is the solution in UCI starting with the user's move.
+Plus index.json with the count per theme and band.
 """
 import csv, io, json, os, random, sys
 import chess, zstandard
@@ -27,7 +27,7 @@ random.seed(20261019)
 
 def main(src, out_dir):
     os.makedirs(out_dir, exist_ok=True)
-    # muestreo aleatorio uniforme (reservoir) por (tema, franja)
+    # uniform random sampling (reservoir) per (theme, band)
     buckets, seen = {}, {}
     f = open(src, 'rb')
     reader = csv.reader(io.TextIOWrapper(zstandard.ZstdDecompressor().stream_reader(f), encoding='utf-8'))
@@ -57,8 +57,8 @@ def main(src, out_dir):
                 if j < PER_BUCKET:
                     b[j] = rec
         if total % 500000 == 0:
-            print(f'{total} leídos, {kept} de calidad', flush=True)
-    print(f'{total} puzles en la base, {kept} pasan el filtro de calidad')
+            print(f'{total} read, {kept} pass the quality filter', flush=True)
+    print(f'{total} puzzles in the database, {kept} pass the quality filter')
 
     index = {}
     for th in THEMES:
@@ -70,7 +70,7 @@ def main(src, out_dir):
             for pid, fen, moves, rating, themes in recs:
                 b = chess.Board(fen)
                 ms = moves.split()
-                b.push_uci(ms[0])  # jugada del rival que plantea el ejercicio
+                b.push_uci(ms[0])  # opponent move that sets up the puzzle
                 line = f'{pid};{b.fen()};{" ".join(ms[1:])};{rating}'
                 if th == 'mix':
                     tags = [x for x in themes.split() if x in THEMES]
@@ -81,7 +81,7 @@ def main(src, out_dir):
         with open(os.path.join(out_dir, f'{th}.txt'), 'w', encoding='utf-8', newline='\n') as w:
             w.write('\n'.join(lines) + '\n')
         index[th] = {'total': len(lines), 'bands': counts}
-        print(f'{th}: {len(lines)} puzles')
+        print(f'{th}: {len(lines)} puzzles')
     with open(os.path.join(out_dir, 'index.json'), 'w') as w:
         json.dump({'band': BAND, 'perBucket': PER_BUCKET, 'themes': index}, w, separators=(',', ':'))
 

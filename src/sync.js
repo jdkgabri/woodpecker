@@ -1,15 +1,15 @@
-// Sincronización opcional con Firebase (login con Google + Firestore).
-// El almacenamiento local sigue siendo la fuente de verdad: aquí solo se replica.
-// Estructura en Firestore:
+// Optional sync with Firebase (Google sign-in + Firestore).
+// Local storage remains the source of truth: this only replicates it.
+// Firestore layout:
 //   users/{uid}/sets/{setId}  -> { json: "<set serializado>", updatedAt }
 //   users/{uid}/meta/main     -> { deleted: { setId: timestamp }, days: [...] }
-// (los sets se guardan como texto porque Firestore no admite arrays anidados)
+// (sets are stored as text because Firestore does not support nested arrays)
 import { firebaseConfig } from './firebase-config.js';
 import * as store from './store.js';
 import { VAPID_PUBLIC_KEY } from './push-config.js';
 import { t, lang } from './i18n.js';
 
-// Solo para pruebas locales con los emuladores de Firebase (VITE_EMU=1 npm run dev)
+// Only for local tests with the Firebase emulators (VITE_EMU=1 npm run dev)
 const EMU = import.meta.env.VITE_EMU;
 const config = EMU ? { apiKey: 'demo-key', projectId: 'demo-woodpecker', authDomain: 'localhost' } : firebaseConfig;
 
@@ -21,7 +21,7 @@ const emit = () => listeners.forEach(f => f(state));
 let fb = null;
 let uid = null;
 let unsubs = [];
-let remoteVersions = new Map(); // setId -> updatedAt que hay en la nube
+let remoteVersions = new Map(); // setId -> updatedAt stored in the cloud
 let remoteDeleted = {};
 let remoteDays = new Set();
 let remoteFrozen = new Set();
@@ -36,7 +36,7 @@ async function init() {
     import('firebase/app'), import('firebase/auth'), import('firebase/firestore'),
   ]);
   const app = initializeApp(config);
-  const auth = A.getAuth(app); // la sesión se guarda en IndexedDB: no caduca al cerrar la app
+  const auth = A.getAuth(app); // the session lives in IndexedDB: it does not expire when the app closes
   const db = F.getFirestore(app);
   if (EMU) {
     A.connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true });
@@ -76,7 +76,7 @@ function subscribe(onRemoteChange) {
   const ready = () => {
     if (gotSets && gotMeta && !firstSnapshot) {
       firstSnapshot = true;
-      schedulePush(0); // sube lo que solo existe (o es más nuevo) en este dispositivo
+      schedulePush(0); // upload what only exists (or is newer) on this device
     }
   };
   unsubs.push(F.onSnapshot(metaDoc, snap => {
@@ -110,7 +110,7 @@ function subscribe(onRemoteChange) {
 function onError(e) {
   console.error(e);
   state.status = 'error';
-  state.error = e.code === 'permission-denied' ? t('Permiso denegado: revisa las reglas de Firestore.') : e.message;
+  state.error = e.code === 'permission-denied' ? t('Permission denied: check the Firestore rules.') : e.message;
   emit();
 }
 
@@ -176,7 +176,7 @@ async function push() {
       state.error = null;
       state.lastSync = Date.now();
     } catch (e) {
-      // se reintentará en el siguiente guardado
+      // will be retried on the next save
       for (const [id, v] of sent) v === undefined ? remoteVersions.delete(id) : remoteVersions.set(id, v);
       onError(e);
       return;
@@ -207,7 +207,7 @@ export async function signOut() {
   await A.signOut(auth);
 }
 
-// ---------------- Recordatorios ----------------
+// ---------------- Reminders ----------------
 // reminders/{uid}               -> { enabled, push, email, times: ['20:00'], tz, sent }
 // reminders/{uid}/devices/{id}  -> { sub: <PushSubscription JSON>, ua, createdAt }
 const remindersDoc = () => fb.F.doc(fb.db, 'reminders', uid);
@@ -219,7 +219,7 @@ export async function loadReminders() {
 }
 
 export async function saveReminders(cfg) {
-  if (!uid) throw new Error(t('Inicia sesión para usar los recordatorios'));
+  if (!uid) throw new Error(t('Sign in to use reminders'));
   const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
   await fb.F.setDoc(remindersDoc(), { ...cfg, tz, lang: lang(), updatedAt: Date.now() }, { merge: true });
 }
@@ -233,7 +233,7 @@ async function deviceId(endpoint) {
   return [...new Uint8Array(h)].slice(0, 12).map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
-// Idioma de los recordatorios (push y email)
+// Language of the reminders (push and email)
 export async function saveLang() {
   if (!uid) return;
   const snap = await fb.F.getDoc(remindersDoc());
@@ -249,10 +249,10 @@ export async function pushEnabledHere() {
 }
 
 export async function enablePushHere() {
-  if (!uid) throw new Error(t('Inicia sesión para usar los recordatorios'));
-  if (!pushSupported()) throw new Error(t('Este navegador no admite notificaciones push'));
+  if (!uid) throw new Error(t('Sign in to use reminders'));
+  if (!pushSupported()) throw new Error(t('This browser does not support push notifications'));
   const perm = await Notification.requestPermission();
-  if (perm !== 'granted') throw new Error(t('No se ha dado permiso para mostrar notificaciones'));
+  if (perm !== 'granted') throw new Error(t('Permission to show notifications was not granted'));
   const reg = await navigator.serviceWorker.ready;
   const sub = (await reg.pushManager.getSubscription())
     || await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64ToBytes(VAPID_PUBLIC_KEY) });
@@ -271,7 +271,7 @@ export async function disablePushHere() {
 }
 
 export async function sendTestReminder() {
-  if (!uid) throw new Error(t('Inicia sesión para usar los recordatorios'));
+  if (!uid) throw new Error(t('Sign in to use reminders'));
   const { getFunctions, httpsCallable } = await import('firebase/functions');
   const fn = httpsCallable(getFunctions(fb.auth.app, 'europe-west1'), 'testReminder');
   return (await fn()).data;

@@ -1,10 +1,10 @@
-// Lógica de los recordatorios (independiente de Firebase Functions para poder probarla).
+// Reminder logic (independent of Firebase Functions so it can be tested).
 import { compute } from './habit.js';
 
-const WINDOW_MIN = 60; // se avisa durante la hora siguiente a la elegida (por si una ejecución se retrasa)
+const WINDOW_MIN = 60; // remind within the hour after the chosen time (in case a run is late)
 export const APP_URL = 'https://jdkgabri.github.io/woodpecker/';
 
-// Fecha local 'YYYY-MM-DD' y minutos desde medianoche en la zona horaria del usuario
+// Local date 'YYYY-MM-DD' and minutes since midnight in the user's time zone
 export function localParts(now, tz) {
   const f = new Intl.DateTimeFormat('en-CA', {
     timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
@@ -24,9 +24,9 @@ export function dueTimes(cfg, now) {
   return { lp, due, already };
 }
 
-export function message(streak, rnd = Math.random, lang = 'es') {
+export function message(streak, rnd = Math.random, lang = 'en') {
   const pick = a => a[Math.floor(rnd() * a.length)];
-  if (lang === 'en') {
+  if (lang !== 'es') {
     const d = streak === 1 ? 'day' : 'days';
     if (streak > 0) {
       return pick([
@@ -55,7 +55,7 @@ export function message(streak, rnd = Math.random, lang = 'es') {
 }
 
 /**
- * Revisa todos los usuarios con recordatorios y envía los que tocan.
+ * Checks every user with reminders and sends the ones that are due.
  * deps: { db (firebase-admin Firestore), now, sendPush(sub, payload), sendEmail(to, msg), getEmail(uid), log }
  */
 export async function runReminders({ db, now = new Date(), sendPush, sendEmail, getEmail, log = console.log }) {
@@ -70,9 +70,9 @@ export async function runReminders({ db, now = new Date(), sendPush, sendEmail, 
     try {
       const meta = (await db.doc(`users/${uid}/meta/main`).get()).data() || {};
       const days = meta.days || [];
-      // Solo si el modo hábito sigue activo y hoy aún no ha entrenado
+      // Only if habit mode is still on and the user has not trained today
       if (!meta.habit?.enabled || days.includes(lp.day)) { stats.skipped++; await markSent(); continue; }
-      // "now" con la fecha y hora locales del usuario, para calcular la racha
+      // "now" with the user's local date and time, to compute the streak
       const localNow = new Date(lp.y, lp.m - 1, lp.d, lp.hh, lp.mm);
       const { streak } = compute({ days, frozen: meta.frozen || [], enabledAt: meta.habit.enabledAt, dismissed: meta.habit.dismissed }, localNow);
       const msg = message(streak, Math.random, cfg.lang);
@@ -83,7 +83,7 @@ export async function runReminders({ db, now = new Date(), sendPush, sendEmail, 
           try {
             await sendPush(dev.data().sub, { ...msg, url: APP_URL });
           } catch (err) {
-            // suscripción caducada o revocada: se borra
+            // expired or revoked subscription: delete it
             if (err.statusCode === 404 || err.statusCode === 410) await dev.ref.delete();
             else log(`push ${uid}/${dev.id}: ${err.message}`);
           }
@@ -102,11 +102,11 @@ export async function runReminders({ db, now = new Date(), sendPush, sendEmail, 
   return stats;
 }
 
-// Envía un recordatorio de prueba al usuario, sin comprobar si ha entrenado
+// Sends a test reminder to the user, without checking whether they trained
 export async function sendTest({ db, uid, sendPush, sendEmail, getEmail }) {
   const ref = db.doc(`reminders/${uid}`);
   const cfg = (await ref.get()).data() || {};
-  const msg = cfg.lang === 'en'
+  const msg = cfg.lang !== 'es'
     ? { title: '♞ Test reminder', body: 'This is how your training reminders will look. Everything works!', lang: 'en' }
     : { title: '♞ Recordatorio de prueba', body: 'Así te llegarán los avisos para entrenar. ¡Todo funciona!', lang: 'es' };
   const result = { push: 0, email: false };
@@ -124,7 +124,7 @@ export async function sendTest({ db, uid, sendPush, sendEmail, getEmail }) {
 }
 
 export function emailHtml(msg) {
-  const en = msg.lang === 'en';
+  const en = msg.lang !== 'es';
   return `<div style="font-family:system-ui,sans-serif;max-width:480px;margin:auto;padding:24px;background:#161512;color:#e8e6e3;border-radius:12px">
   <h2 style="margin:0 0 8px">${msg.title}</h2>
   <p style="color:#bdb8b0">${msg.body}</p>

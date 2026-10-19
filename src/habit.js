@@ -1,6 +1,6 @@
-// Lógica de la racha (funciones puras, sin acceso a almacenamiento).
-// Un día cuenta si se ha hecho al menos un ejercicio de un ciclo (days) o se ha cubierto
-// con un protector de racha (frozen). Fechas como 'YYYY-MM-DD' en hora local.
+// Streak logic (pure functions, no storage access).
+// A day counts if at least one puzzle from a cycle was done (days) or it was covered
+// with a streak freeze (frozen). Dates as 'YYYY-MM-DD' in local time.
 
 export const dayKey = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 export const parseDay = k => { const [y, m, d] = k.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -14,7 +14,7 @@ function mondayOf(d) {
   return m;
 }
 
-// Lunes transcurridos desde que se activó el modo hábito
+// Mondays elapsed since habit mode was enabled
 export function weeksSince(enabledAt, now) {
   const ms = mondayOf(now) - mondayOf(new Date(enabledAt));
   return Math.max(0, Math.round(ms / (7 * 86400000)));
@@ -33,7 +33,7 @@ export function compute({ days = [], frozen = [], enabledAt, dismissed = null },
 
   const freezes = Math.max(0, 1 + weeksSince(enabledAt || now, now) - frozen.length);
 
-  // ¿Se ha roto la racha? Hueco de días sin cubrir justo antes de hoy, tras una racha.
+  // Is the streak broken? A gap of uncovered days right before today, after a streak.
   let broken = null;
   if (!covered(yesterday)) {
     const gap = [];
@@ -46,7 +46,7 @@ export function compute({ days = [], frozen = [], enabledAt, dismissed = null },
     }
   }
 
-  // Últimos 7 días para el calendario
+  // Last 7 days for the calendar
   const week = [];
   for (let i = 6; i >= 0; i--) {
     const k = addDays(today, -i);

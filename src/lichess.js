@@ -1,4 +1,4 @@
-// Login con Lichess mediante OAuth2 + PKCE (no necesita servidor propio).
+// Lichess login with OAuth2 + PKCE (no backend needed).
 import { t } from './i18n.js';
 
 const HOST = 'https://lichess.org';
@@ -37,7 +37,7 @@ export async function login() {
   location.href = `${HOST}/oauth?${p}`;
 }
 
-// Llamar al arrancar: completa el login si volvemos de Lichess con ?code=...
+// Call on startup: completes the login when coming back from Lichess with ?code=...
 export async function handleRedirect() {
   const url = new URL(location.href);
   const code = url.searchParams.get('code');
@@ -48,7 +48,7 @@ export async function handleRedirect() {
   localStorage.removeItem(PKCE_KEY);
   history.replaceState(null, '', redirectUri() + (pkce?.back || ''));
   if (error) throw new Error('Lichess: ' + (url.searchParams.get('error_description') || error));
-  if (!pkce || pkce.state !== state) throw new Error(t('La respuesta de Lichess no coincide; vuelve a intentarlo.'));
+  if (!pkce || pkce.state !== state) throw new Error(t('The Lichess response does not match; please try again.'));
   const res = await fetch(`${HOST}/api/token`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -60,7 +60,7 @@ export async function handleRedirect() {
       client_id: CLIENT_ID,
     }),
   });
-  if (!res.ok) throw new Error(t('No se pudo completar el login con Lichess ({s})', { s: res.status }));
+  if (!res.ok) throw new Error(t('Could not complete the Lichess login ({s})', { s: res.status }));
   const tok = await res.json();
   const auth = { token: tok.access_token, expiresAt: Date.now() + (tok.expires_in || 0) * 1000 };
   setAuth(auth);

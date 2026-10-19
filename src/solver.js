@@ -1,5 +1,5 @@
-// Cálculo de soluciones con el Stockfish de la app (misma lógica que tools/solve.py).
-// tree = [[jugadaUci, respuestaUci|null, subárbol|null], ...]   (primera entrada = línea principal)
+// Solution computation with the app's Stockfish (same logic as tools/solve.py).
+// tree = [[moveUci, replyUci|null, subtree|null], ...]   (first entry = main line)
 import { Chess } from 'chess.js';
 
 const MULTIPV = 5;
@@ -23,8 +23,8 @@ function acceptable(lines) {
 }
 
 /**
- * Calcula el árbol de solución para la posición (le toca al usuario).
- * engine: instancia de Engine; movetime: ms por jugada del usuario.
+ * Computes the solution tree for the position (user to move).
+ * engine: Engine instance; movetime: ms per user move.
  */
 export async function solvePosition(engine, fen, { movetime = 1500, signal } = {}) {
   const chess = new Chess(fen);
@@ -38,7 +38,7 @@ export async function solvePosition(engine, fen, { movetime = 1500, signal } = {
     if (!lines.length) return null;
     let { kind, acc } = acceptable(lines);
     if (step > 1) {
-      if (kind === 'cp' && acc.length !== 1) return null; // continuación ambigua: termina antes
+      if (kind === 'cp' && acc.length !== 1) return null; // ambiguous continuation: end before it
       if (kindRoot === 'mate' && kind !== 'mate') return null;
       if (kind === 'cp' && step > MAX_HERO_CP) return null;
       if (step > MAX_HERO_MATE) return null;
@@ -51,7 +51,7 @@ export async function solvePosition(engine, fen, { movetime = 1500, signal } = {
       const entry = [l.move, null, null];
       const key = posKey(chess.fen());
       const repeated = seen.get(key);
-      // las alternativas, los finales de partida y las repeticiones terminan el ejercicio
+      // alternatives, game over and repetitions end the puzzle
       if (idx > 0 || chess.isGameOver() || repeated || nodes >= MAX_NODES) {
         node.push(entry);
         chess.undo();
@@ -79,8 +79,8 @@ export async function solvePosition(engine, fen, { movetime = 1500, signal } = {
 }
 
 /**
- * Comprueba la primera jugada de una solución dada. Devuelve null si parece buena,
- * o un texto corto con el motivo de la duda.
+ * Checks the first move of a given solution. Returns null if it looks fine,
+ * or a short code with the reason for doubt.
  */
 export async function checkFirstMove(engine, fen, uci, { movetime = 800 } = {}) {
   const lines = await engine.search(fen, { multipv: 3, movetime });
@@ -89,7 +89,7 @@ export async function checkFirstMove(engine, fen, uci, { movetime = 800 } = {}) 
   const own = lines.find(l => l.move === uci);
   let score = own;
   if (!score) {
-    // evaluar la posición tras la jugada (desde el punto de vista del rival) y darle la vuelta
+    // evaluate the position after the move (from the opponent's view) and flip it
     const c = new Chess(fen);
     try { c.move({ from: uci.slice(0, 2), to: uci.slice(2, 4), promotion: uci[4] }); } catch { return 'illegal'; }
     if (c.isCheckmate()) return null;

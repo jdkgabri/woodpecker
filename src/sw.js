@@ -1,4 +1,4 @@
-// Service worker: caché sin conexión + notificaciones de recordatorio (Web Push).
+// Service worker: offline cache + reminder notifications (Web Push).
 import { precacheAndRoute, cleanupOutdatedCaches, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute, NavigationRoute } from 'workbox-routing';
 import { CacheFirst } from 'workbox-strategies';
@@ -12,13 +12,13 @@ precacheAndRoute(self.__WB_MANIFEST);
 cleanupOutdatedCaches();
 registerRoute(new NavigationRoute(createHandlerBoundToURL('index.html')));
 
-// Colección de puzles de Lichess (~1,3 MB por tema): se guarda al usarla
+// Lichess puzzle collection (~1.3 MB per theme): cached when used
 registerRoute(
   ({ url }) => url.pathname.includes('/lichess/'),
   new CacheFirst({ cacheName: 'lichess-collection', plugins: [new ExpirationPlugin({ maxEntries: 20 })] }),
 );
 
-// Stockfish (~7 MB) se descarga la primera vez que se analiza y queda guardado
+// Stockfish (~7 MB) is downloaded on first analysis and kept
 registerRoute(
   ({ url }) => url.pathname.includes('/stockfish/'),
   new CacheFirst({ cacheName: 'stockfish', plugins: [new ExpirationPlugin({ maxEntries: 4 })] }),
