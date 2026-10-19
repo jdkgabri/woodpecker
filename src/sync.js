@@ -61,7 +61,10 @@ export async function start(onRemoteChange) {
     state.status = user ? 'syncing' : 'off';
     state.error = null;
     emit();
-    if (user) subscribe(onRemoteChange);
+    if (user) {
+      subscribe(onRemoteChange);
+      saveLang().catch(() => {}); // keep the reminder language in step with this device
+    }
   });
   store.onSave(() => schedulePush());
   document.addEventListener('visibilitychange', () => { if (document.hidden) flush(); });
@@ -234,10 +237,11 @@ async function deviceId(endpoint) {
 }
 
 // Language of the reminders (push and email)
+// Stores the resolved language ("automatic" becomes the device language), only if it changed
 export async function saveLang() {
   if (!uid) return;
   const snap = await fb.F.getDoc(remindersDoc());
-  if (snap.exists()) await fb.F.setDoc(remindersDoc(), { lang: lang() }, { merge: true });
+  if (snap.exists() && snap.data().lang !== lang()) await fb.F.setDoc(remindersDoc(), { lang: lang() }, { merge: true });
 }
 
 export const pushSupported = () => 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
