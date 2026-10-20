@@ -424,4 +424,7 @@ export const ES = {
   'trained': 'entrenado',
   'saved with a streak freeze': 'salvado con un protector de racha',
   'no training': 'sin entrenar',
+  'Count as incorrect': 'Contar como fallada',
+  'Marked as incorrect': 'Marcada como fallada',
+  'Counted as incorrect in cycle {n}': 'Contada como fallada en el ciclo {n}',
 };

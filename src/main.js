@@ -609,14 +609,22 @@ async function viewTrain(id) {
     if (solved) {
       const r = cycle.results[cycle.order[cycle.pos - 1]];
       a.innerHTML = `
-        ${r && !r.ok ? `<button class="btn ghost" id="markOk">✓ ${t('Count as correct')}</button>` : ''}
+        ${r ? (r.ok
+          ? `<button class="btn ghost" id="markBad">✗ ${t('Count as incorrect')}</button>`
+          : `<button class="btn ghost" id="markOk">✓ ${t('Count as correct')}</button>`) : ''}
         <button class="btn ghost" id="analyse">🔍 ${t('Analyse')}</button>
         <button class="btn success" id="next">${t('Next')} ›</button>`;
       $('#next').onclick = loadCurrent;
       $('#analyse').onclick = () => openAnalysis(prevPayload);
+      // manual override of the result, in both directions (failed puzzles go to the mistake review)
       $('#markOk') && ($('#markOk').onclick = () => {
         r.ok = true; store.save(); updHeader();
         feedback('ok', t('Marked as correct'), t('It counts as solved in this cycle')); renderActions();
+      });
+      $('#markBad') && ($('#markBad').onclick = () => {
+        clearTimeout(advanceTimer);
+        r.ok = false; store.save(); updHeader();
+        feedback('failed', t('Marked as incorrect'), t('Added to the mistake review')); renderActions();
       });
     } else {
       a.innerHTML = `

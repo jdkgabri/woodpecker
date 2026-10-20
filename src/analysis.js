@@ -209,11 +209,14 @@ export function viewAnalysis(app) {
     const cycle = set?.cycles.find(c => c.n === p.ref.cycleN);
     const r = cycle?.results[p.ref.idx];
     if (!r) { box.innerHTML = ''; return; }
+    // manual override of the result, in both directions (failed puzzles go to the mistake review)
     box.innerHTML = r.ok
-      ? `<p class="small ok-text">✓ ${t('Counted as correct in cycle {n}', { n: cycle.n })}</p>`
-      : `<button class="btn ghost full" id="markOk">✓ ${t('My move was good: count as correct')}</button>`;
-    const b = $('#markOk');
-    if (b) b.onclick = () => { r.ok = true; store.save(); renderRef(); };
+      ? `<p class="small ok-text">✓ ${t('Counted as correct in cycle {n}', { n: cycle.n })}</p>
+         <button class="btn ghost full" id="markBad">✗ ${t('Count as incorrect')}</button>`
+      : `<p class="small bad-text">✗ ${t('Counted as incorrect in cycle {n}', { n: cycle.n })}</p>
+         <button class="btn ghost full" id="markOk">✓ ${t('My move was good: count as correct')}</button>`;
+    $('#markOk') && ($('#markOk').onclick = () => { r.ok = true; store.save(); renderRef(); });
+    $('#markBad') && ($('#markBad').onclick = () => { r.ok = false; store.save(); renderRef(); });
   }
   if (p.ref) renderRef();
 
