@@ -484,6 +484,11 @@ function feedbackHtml(state, hero, title, sub) {
   return `<div class="pfb ${state}">${icon}<div class="pfb-text"><strong>${tt}</strong><em>${st}</em></div></div>`;
 }
 
+// Pause/play icons as SVG: the ⏸/▶ characters are drawn as coloured emoji on Android
+const ICON_PAUSE = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>';
+const ICON_PLAY = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 4.5v15l13-7.5z"/></svg>';
+const ICON_PLAY_SMALL = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M7 4.5v15l13-7.5z"/></svg>';
+
 // ---------- training (timed cycle) ----------
 async function viewTrain(id) {
   const set = store.getSet(id);
@@ -497,7 +502,7 @@ async function viewTrain(id) {
     <div class="train">
       <header class="top"><a class="icon-btn" href="#/set/${set.id}">‹</a>
         <h1 class="ellipsis">${t('Cycle {n}', { n: cycle.n })} · ${esc(set.name)}</h1>
-        <button class="icon-btn pause-btn" id="pause" aria-label="${t('Pause')}">⏸</button></header>
+        <button class="icon-btn pause-btn" id="pause" aria-label="${t('Pause')}">${ICON_PAUSE}</button></header>
       <div class="stats">
         <div><small>${t('Cycle')}</small><b id="tCycle">00:00</b></div>
         <div><small>${t('Puzzle')}</small><b id="tPuzzle">00:00</b></div>
@@ -550,10 +555,10 @@ async function viewTrain(id) {
     running = false;
     board.setPaused(true);
     $('#ovText').textContent = text;
-    $('#resume').textContent = '▶ ' + t('Resume');
+    $('#resume').innerHTML = ICON_PLAY_SMALL + ' ' + t('Resume');
     $('#overlay').classList.add('show');
     $('#overlay').classList.toggle('hide-board', settings.hidePaused);
-    $('#pause').textContent = '▶';
+    $('#pause').innerHTML = ICON_PLAY;
     tick();
     sync.flush().catch(() => {});
   }
@@ -563,7 +568,7 @@ async function viewTrain(id) {
     runStart = now();
     board.setPaused(false);
     $('#overlay').classList.remove('show');
-    $('#pause').textContent = '⏸';
+    $('#pause').innerHTML = ICON_PAUSE;
   }
   function tick() {
     $('#tCycle').textContent = fmt(cycle.elapsedMs + live());
@@ -700,8 +705,8 @@ async function viewTrain(id) {
   $('#overlay').classList.add('show');
   $('#overlay').classList.toggle('hide-board', settings.hidePaused);
   $('#ovText').textContent = fresh ? `${t('Cycle {n}', { n: cycle.n })} · ${tn(set.items.length, '{n} puzzle', '{n} puzzles')}` : t('Cycle paused');
-  $('#resume').textContent = '▶ ' + (fresh ? t('Start') : t('Resume'));
-  $('#pause').textContent = '▶';
+  $('#resume').innerHTML = ICON_PLAY_SMALL + ' ' + (fresh ? t('Start') : t('Resume'));
+  $('#pause').innerHTML = ICON_PLAY;
   tickTimer = setInterval(() => { tick(); if (running && Math.random() < 0.05) commit(); }, 250);
 
   cleanup = () => {
