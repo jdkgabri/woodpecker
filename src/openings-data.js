@@ -4,6 +4,7 @@
 // Trap lines (trap: true) show mistakes on purpose, so they are study-only (no move drill).
 // Every line is checked by scripts/check-openings.mjs (legal moves, notes on existing plies).
 
+import { MAIN_LINES } from './main-lines.js';
 import { MORE_OPENINGS } from './openings-more.js';
 
 export const OPENINGS = [
@@ -798,6 +799,12 @@ export const OPENINGS = [
   },
 ];
 OPENINGS.push(...MORE_OPENINGS);
+
+// Tree-only lines with a written main line get Study and Practise too
+for (const o of OPENINGS) for (const l of o.lines) {
+  const ml = l.treeOnly && MAIN_LINES[l.tree?.file];
+  if (ml) { l.moves = ml.moves; l.notes = ml.notes; delete l.treeOnly; }
+}
 
 // ---------- grouped openings ----------
 // Openings that belong together are shown as one opening made of parts. The parts keep their own ideas,

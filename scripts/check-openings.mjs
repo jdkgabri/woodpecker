@@ -11,9 +11,14 @@ const fail = (where, msg) => { errors++; console.log('FAIL', where, msg); };
 const both = (where, obj) => { if (!obj?.en || !obj?.es) fail(where, 'missing en/es'); };
 
 for (const o of OPENINGS) {
-  both(o.id + '.name', o.name); both(o.id + '.summary', o.summary); both(o.id + '.structure', o.structure);
+  both(o.id + '.name', o.name); both(o.id + '.summary', o.summary);
   if (o.intro.en.length !== o.intro.es.length) fail(o.id, 'intro paragraphs differ');
-  for (const side of ['w', 'b']) if (o.plans[side] && o.plans[side].en.length !== o.plans[side].es.length) fail(o.id, 'plans differ ' + side);
+  // grouped openings keep structure and plans in each part
+  for (const part of o.parts || [o]) {
+    both(part.id + '.structure', part.structure);
+    if (part.intro.en.length !== part.intro.es.length) fail(part.id, 'intro paragraphs differ');
+    for (const side of ['w', 'b']) if (part.plans[side] && part.plans[side].en.length !== part.plans[side].es.length) fail(part.id, 'plans differ ' + side);
+  }
   for (const line of [...o.lines, ...(o.traps || [])]) {
     const where = `${o.id}/${line.id}`;
     both(where + '.name', line.name);
