@@ -1170,4 +1170,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('semi-slav', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 c4 c6 Nf3 Nf6 Nc3 e6')],
   },
+  // ---- Modern Defence
+  {
+    id: 'modern', side: 'b', eco: 'B06', puzzles: 'modern',
+    name: { en: 'Modern Defence', es: 'Defensa Moderna' },
+    summary: {
+      en: '1.e4 g6 — Black fianchettoes first and lets White build a centre, to attack it later.',
+      es: '1.e4 g6: las negras hacen primero el fianchetto y dejan que las blancas construyan un centro, para atacarlo después.',
+    },
+    intro: {
+      en: [
+        'Close to the Pirc, but Black delays ...Nf6, keeping options like ...c6 and ...d5 or ...a6 and ...b5.',
+        'The g7-bishop is the soul of the opening: it presses on d4 and the long diagonal.',
+      ],
+      es: [
+        'Parecida a la Pirc, pero las negras retrasan ...Cf6, manteniendo opciones como ...c6 y ...d5 o ...a6 y ...b5.',
+        'El alfil de g7 es el alma de la apertura: presiona d4 y la gran diagonal.',
+      ],
+    },
+    structure: {
+      en: 'White has the big centre (e4–d4); Black has a flexible setup g6–d6 and strikes back with ...c5, ...e5 or ...d5.',
+      es: 'Las blancas tienen el gran centro (e4–d4); las negras un esquema flexible g6–d6 y contraatacan con ...c5, ...e5 o ...d5.',
+    },
+    plans: {
+      b: {
+        en: ['...Bg7, ...d6, then decide: ...c6 and ...d5, or ...a6 and ...b5.', 'Challenge the centre with ...c5 or ...e5.', 'Do not fall behind in development.'],
+        es: ['...Ag7, ...d6, y después decidir: ...c6 y ...d5, o ...a6 y ...b5.', 'Desafiar el centro con ...c5 o ...e5.', 'No quedarse atrás en desarrollo.'],
+      },
+      w: {
+        en: ['Keep the big centre and develop naturally.', 'Be3, Qd2 and Bh6 to trade the g7-bishop.', 'f4 and e5 against slow play.'],
+        es: ['Mantener el gran centro y desarrollar con naturalidad.', 'Ae3, Dd2 y Ah6 para cambiar el alfil de g7.', 'f4 y e5 contra el juego lento.'],
+      },
+    },
+    lines: [tree('modern', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 g6')],
+  },
 ];

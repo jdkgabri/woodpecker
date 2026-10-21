@@ -1,0 +1,22 @@
+{
+ "d4 Bg7": {
+  "en": "The fianchetto first. Then ...d6 and a choice: ...c6 and ...d5, or ...a6 and ...b5 on the queenside, striking the centre later with ...c5 or ...e5.",
+  "es": "Primero el fianchetto. Después ...d6 y una elección: ...c6 y ...d5, o ...a6 y ...b5 en el flanco de dama, golpeando el centro más tarde con ...c5 o ...e5."
+ },
+ "Nf3 Bg7 Bc4 d6 Ng5 e6 Qf3": {
+  "en": "After ...e6 the f7-pawn is safe, and the g5-knight is now loose on the d8–g5 diagonal: ...Qxg5.",
+  "es": "Tras ...e6 el peón de f7 está a salvo, y el caballo de g5 queda suelto en la diagonal d8–g5: ...Dxg5."
+ },
+ "Nf3 Bg7 Bc4 d6 Ng5 e6 O-O": {
+  "en": "After ...e6 the f7-pawn is safe, and the g5-knight is now loose on the d8–g5 diagonal: ...Qxg5.",
+  "es": "Tras ...e6 el peón de f7 está a salvo, y el caballo de g5 queda suelto en la diagonal d8–g5: ...Dxg5."
+ },
+ "Bc4 Bg7 Qf3 e6 Nh3": {
+  "en": "...Nc6! and ...Nd4 hits the queen and c2.",
+  "es": "¡...Cc6! y ...Cd4 ataca la dama y c2."
+ },
+ "d4 Bg7 e5 d6 Bf4": {
+  "en": "...dxe5 Bxe5 Bxe5 dxe5 Qxd1+: the queens come off, White can no longer castle and the e5-pawn is weak.",
+  "es": "...dxe5 Axe5 Axe5 dxe5 Dxd1+: salen las damas, las blancas ya no pueden enrocar y el peón de e5 es débil."
+ }
+}
