@@ -446,4 +446,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('scandinavian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 d5')],
   },
+  // ---- pirc
+  {
+    id: 'pirc', side: 'b', eco: 'B07–B09', puzzles: 'pirc',
+    name: { en: 'Pirc Defence', es: 'Defensa Pirc' },
+    summary: {
+      en: '1.e4 d6 2.d4 Nf6 3.Nc3 g6 — let White build a centre and attack it from the flanks.',
+      es: '1.e4 d6 2.d4 Cf6 3.Cc3 g6 — dejar que las blancas monten el centro y atacarlo desde los flancos.',
+    },
+    intro: {
+      en: [
+        'In the Pirc Black fianchettoes the king\'s bishop and castles quickly, inviting White to build a big centre that will be attacked later with ...c5 or ...e5.',
+        'White\'s most aggressive tries are the Austrian Attack (f4) and the 150 Attack (Be3, Qd2, Bh6), aiming at Black\'s king. Accurate timing of ...c5 or ...e5 is the key.',
+      ],
+      es: [
+        'En la Pirc las negras hacen el fianchetto del alfil de rey y enrocan pronto, invitando a las blancas a montar un gran centro que se atacará después con ...c5 o ...e5.',
+        'Los intentos más agresivos de las blancas son el Ataque Austriaco (f4) y el Ataque 150 (Ae3, Dd2, Ah6), contra el rey negro. La clave es el momento justo para ...c5 o ...e5.',
+      ],
+    },
+    structure: {
+      en: 'Black: d6–g6 with the bishop on g7. White: e4–d4 (sometimes f4). The centre is attacked with ...c5 or ...e5; if it advances (e5 or d5), Black undermines it.',
+      es: 'Negras: d6–g6 con el alfil en g7. Blancas: e4–d4 (a veces f4). El centro se ataca con ...c5 o ...e5; si avanza (e5 o d5), las negras lo socavan.',
+    },
+    plans: {
+      b: {
+        en: ['...Bg7 and castle quickly.', 'Strike with ...c5 or ...e5.', 'Queenside play with ...c6, ...b5 against the 150 Attack.'],
+        es: ['...Ag7 y enrocar pronto.', 'Golpear con ...c5 o ...e5.', 'Juego en el flanco de dama con ...c6 y ...b5 contra el Ataque 150.'],
+      },
+      w: {
+        en: ['Big centre with f4 (Austrian Attack).', 'Be3, Qd2 and Bh6 to trade the g7-bishop.', 'Kingside attack with h4–h5.'],
+        es: ['Gran centro con f4 (Ataque Austriaco).', 'Ae3, Dd2 y Ah6 para cambiar el alfil de g7.', 'Ataque en el flanco de rey con h4–h5.'],
+      },
+    },
+    lines: [tree('pirc', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 d6 d4 Nf6 Nc3 g6')],
+  },
 ];

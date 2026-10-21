@@ -1,0 +1,30 @@
+{
+ "": {
+  "en": "The Pirc for Black: ...Bg7 and quick castling, then counterattack the centre with ...c5, ...e5 or ...c6 and ...b5.",
+  "es": "La Pirc con negras: ...Ag7 y enroque rápido, y luego contraatacar el centro con ...c5, ...e5 o ...c6 y ...b5."
+ },
+ "Nf3 Bg7": {
+  "en": "The Classical: White develops normally and Black castles, then ...c6, ...Bg4 or ...Nc6 and ...e5.",
+  "es": "La Clásica: las blancas desarrollan con normalidad y las negras enrocan, y luego ...c6, ...Ag4 o ...Cc6 y ...e5."
+ },
+ "Bg5 Bg7 Qd2 c6": {
+  "en": "Against the Bg5–Qd2 attack, ...c6 and ...b5 give queenside counterplay, and the bishop on h6 can be met by ...Bxh6.",
+  "es": "Contra el ataque Ag5–Dd2, ...c6 y ...b5 dan contrajuego en el flanco de dama, y a Ah6 se puede responder con ...Axh6."
+ },
+ "Bg5 Bg7 Bxf6 Bxf6": {
+  "en": "Giving up the bishop for the knight leaves Black with the bishop pair and no weaknesses.",
+  "es": "Dar el alfil por el caballo deja a las negras con la pareja de alfiles y sin debilidades."
+ },
+ "f4 Bg7": {
+  "en": "The Austrian Attack: White builds a big centre. Castle quickly and strike with ...c5 or ...e5.",
+  "es": "El Ataque Austriaco: las blancas montan un gran centro. Enroca rápido y golpea con ...c5 o ...e5."
+ },
+ "f4 Bg7 e5 Nfd7": {
+  "en": "The knight retreats and will hit e5 with ...c5 or ...f6 and ...Nc6.",
+  "es": "El caballo se retira y atacará e5 con ...c5 o ...f6 y ...Cc6."
+ },
+ "Be3 Bg7 Qd2": {
+  "en": "The 150 Attack: Qd2, Bh6 and h4–h5. Castle and counter on the queenside with ...c6 and ...b5.",
+  "es": "El Ataque 150: Dd2, Ah6 y h4–h5. Enroca y contraataca en el flanco de dama con ...c6 y ...b5."
+ }
+}
