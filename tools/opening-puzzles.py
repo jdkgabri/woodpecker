@@ -68,6 +68,7 @@ GROUPS = {
                                                               'Queens_Gambit_Declined_Baltic', 'Queens_Gambit_Declined_Marshall'))),
     'benko': ('b', has('Benko_Gambit')),
     'budapest': ('b', has('Indian_Defense_Budapest_Defense')),
+    'albin': ('b', has('Queens_Gambit_Declined_Albin_Countergambit')),
 }
 
 random.seed(20261021)

@@ -922,4 +922,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('catalan', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4 Nf6 c4 e6 g3')],
   },
+  // ---- albin
+  {
+    id: 'albin', side: 'b', vs: 'd4', eco: 'D08–D09', puzzles: 'albin',
+    name: { en: 'Albin Countergambit', es: 'Contragambito Albin' },
+    summary: {
+      en: '1.d4 d5 2.c4 e5 — Black answers the Queen\'s Gambit with a counter-gambit and a cramping pawn on d4.',
+      es: '1.d4 d5 2.c4 e5 — las negras responden al Gambito de Dama con un contragambito y un peón incómodo en d4.',
+    },
+    intro: {
+      en: [
+        'Instead of defending d5, Black strikes back with 2...e5. After 3.dxe5 d4 the pawn on d4 cramps White, takes away c3 and e3 from White\'s pieces, and Black gets quick development with ...Nc6, ...Bg4 or ...Be6 and often long castling.',
+        'It is a sharp surprise weapon full of traps — the most famous is the Lasker Trap, 4.e3? Bb4+ 5.Bd2 dxe3!, which ends with ...fxg1=N+. White\'s best setup is Nf3, g3, Bg2, O-O and Nbd2, attacking the d4-pawn.',
+      ],
+      es: [
+        'En lugar de defender d5, las negras contraatacan con 2...e5. Tras 3.dxe5 d4 el peón de d4 encoge a las blancas, quita las casillas c3 y e3 a sus piezas, y las negras desarrollan rápido con ...Cc6, ...Ag4 o ...Ae6 y a menudo enroque largo.',
+        'Es un arma sorpresa aguda y llena de trampas; la más famosa es la Trampa de Lasker, 4.e3? Ab4+ 5.Ad2 ¡dxe3!, que termina con ...fxg1=C+. El mejor esquema blanco es Cf3, g3, Ag2, O-O y Cbd2, atacando el peón de d4.',
+      ],
+    },
+    structure: {
+      en: 'Black\'s pawn on d4 against White\'s extra pawn on e5. Black wins the e5-pawn back with ...Nge7–g6 or ...Qe7, or keeps the gambit and attacks with long castling and ...h5–h4.',
+      es: 'El peón negro de d4 frente al peón extra blanco de e5. Las negras recuperan el peón de e5 con ...Cge7–g6 o ...De7, o mantienen el gambito y atacan con enroque largo y ...h5–h4.',
+    },
+    plans: {
+      b: {
+        en: ['...d4 to cramp White, then ...Nc6 and ...Bg4 or ...Be6.', 'Castle long and attack with ...h5–h4 if White castles short.', 'Win back e5 with ...Nge7–g6 or ...Qe7.'],
+        es: ['...d4 para encoger a las blancas, luego ...Cc6 y ...Ag4 o ...Ae6.', 'Enroque largo y ataque con ...h5–h4 si las blancas enrocan corto.', 'Recuperar e5 con ...Cge7–g6 o ...De7.'],
+      },
+      w: {
+        en: ['Nf3, g3, Bg2 and O-O: the safest setup.', 'Nbd2–b3 to attack d4.', 'Avoid e3 early: it walks into the Lasker Trap.'],
+        es: ['Cf3, g3, Ag2 y O-O: el esquema más seguro.', 'Cbd2–b3 para atacar d4.', 'Evitar e3 pronto: cae en la Trampa de Lasker.'],
+      },
+    },
+    lines: [tree('albin', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 c4 e5')],
+  },
 ];

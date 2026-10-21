@@ -1,0 +1,34 @@
+{
+ "": {
+  "en": "The Albin Countergambit for Black: 2...e5 and 3...d4. The d4-pawn cramps White, and Black develops with ...Nc6, ...Nge7–g6 or ...Bg4, often castling long.",
+  "es": "El Contragambito Albin con negras: 2...e5 y 3...d4. El peón de d4 encoge a las blancas, y las negras desarrollan con ...Cc6, ...Cge7–g6 o ...Ag4, a menudo con enroque largo."
+ },
+ "dxe5 d4": {
+  "en": "The point of the gambit: the pawn on d4 takes away c3 and e3 from White's pieces.",
+  "es": "La idea del gambito: el peón de d4 quita las casillas c3 y e3 a las piezas blancas."
+ },
+ "dxe5 d4 Nf3 Nc6": {
+  "en": "...Nc6 attacks e5 and supports d4. Next ...Nge7–g6 wins the e5-pawn back, or ...Bg4 and ...Qd7 with O-O-O.",
+  "es": "...Cc6 ataca e5 y apoya d4. Después ...Cge7–g6 recupera el peón de e5, o ...Ag4 y ...Dd7 con O-O-O."
+ },
+ "dxe5 d4 Nf3 Nc6 g3 Nge7": {
+  "en": "Against the fianchetto, the knight goes to g6 to win back e5.",
+  "es": "Contra el fianchetto, el caballo va a g6 para recuperar e5."
+ },
+ "dxe5 d4 Nf3 Nc6 a3 Nge7": {
+  "en": "a3 prepares b4; Black just continues ...Ng6 and recovers the pawn.",
+  "es": "a3 prepara b4; las negras simplemente siguen con ...Cg6 y recuperan el peón."
+ },
+ "dxe5 d4 e3": {
+  "en": "4.e3? is the famous mistake. 4...Bb4+ sets the Lasker Trap: 5.Bd2? dxe3! 6.Bxb4 exf2+ 7.Ke2 fxg1=N+!, and after 5.Bd2 dxe3 6.fxe3 Qh4+ Black is also better.",
+  "es": "4.e3? es el famoso error. 4...Ab4+ prepara la Trampa de Lasker: 5.Ad2? ¡dxe3! 6.Axb4 exf2+ 7.Re2 ¡fxg1=C+!, y tras 5.Ad2 dxe3 6.fxe3 Dh4+ las negras también están mejor."
+ },
+ "Nc3 exd4 Qxd4 Nc6": {
+  "en": "White declined the gambit; ...Nc6 gains time on the queen.",
+  "es": "Las blancas rehusaron el gambito; ...Cc6 gana tiempo sobre la dama."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qd1 d4": {
+  "en": "After Qd1?, ...d4 kicks the knight and Black has a big space advantage.",
+  "es": "Tras Dd1?, ...d4 echa al caballo y las negras tienen una gran ventaja de espacio."
+ }
+}
