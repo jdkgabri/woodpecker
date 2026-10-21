@@ -158,6 +158,8 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('london', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4'),
       tree('london-kid', { en: 'Against the King\'s Indian setup', es: 'Contra la estructura India de Rey' }, 'd4 Nf6 Bf4 g6'),
+    
+      tree('london-d5', { en: 'Against 1...d5', es: 'Contra 1...d5' }, 'd4 d5 Bf4'),
     ],
   },
   // ---- morra
@@ -434,7 +436,9 @@ export const MORE_OPENINGS = [
         es: ['Ganar espacio con e5.', 'Perseguir el alfil con h4–h5 o Ch4.', 'Atacar en el flanco de rey antes de que las negras completen su desarrollo.'],
       },
     },
-    lines: [tree('caro-kann', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 c6')],
+    lines: [tree('caro-kann', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 c6'),
+      tree('caro-classical', { en: 'Classical (4...Bf5)', es: 'Clásica (4...Af5)' }, 'e4 c6 d4 d5 Nc3 dxe4 Nxe4 Bf5'),
+    ],
   },
   // ---- scandinavian
   {
@@ -880,6 +884,8 @@ export const MORE_OPENINGS = [
       tree('french-tarrasch', { en: 'Against the Tarrasch (3.Nd2)', es: 'Contra la Tarrasch (3.Cd2)' }, 'e4 e6 d4 d5 Nd2'),
     
       tree('french-winawer', { en: 'Winawer (3...Bb4)', es: 'Winawer (3...Ab4)' }, 'e4 e6 d4 d5 Nc3 Bb4'),
+    
+      tree('french-advance-black', { en: 'Against the Advance (3.e5)', es: 'Contra el Avance (3.e5)' }, 'e4 e6 d4 d5 e5'),
     ],
   },
   // ---- nimzo-indian

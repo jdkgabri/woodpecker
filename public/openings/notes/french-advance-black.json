@@ -1,0 +1,22 @@
+{
+ "c5 c3 Nc6 Nf3 Qb6": {
+  "en": "The main line: ...c5, ...Nc6 and ...Qb6 all hit d4. Next come ...Bd7, ...Nge7–f5 or ...cxd4 with ...Bb4+ tricks.",
+  "es": "La línea principal: ...c5, ...Cc6 y ...Db6 atacan d4. Después llegan ...Ad7, ...Cge7–f5 o ...cxd4 con trucos de ...Ab4+."
+ },
+ "c5 c3 Nc6 Be3 Qb6 b3 cxd4 cxd4 Bb4+ Bd2": {
+  "en": "...Qxd4! and if Bxb4, ...Qxe5+ and ...Nxb4: Black wins material.",
+  "es": "¡...Dxd4! y si Axb4, ...Dxe5+ y ...Cxb4: las negras ganan material."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 b3 Bd7 Be3 cxd4 Nxd4": {
+  "en": "The e5-pawn has lost its support: ...Nxe5.",
+  "es": "El peón de e5 ha perdido su apoyo: ...Cxe5."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 Bd3 Bd7 O-O cxd4 cxd4 Nxd4 Nxd4 Qxd4 Nc3 a6 Be3": {
+  "en": "Nothing defends e5 any more: ...Qxe5.",
+  "es": "Ya nada defiende e5: ...Dxe5."
+ },
+ "": {
+  "en": "Against the Advance: ...c5, ...Nc6, ...Qb6 and ...Nge7–f5.",
+  "es": "Contra el Avance: ...c5, ...Cc6, ...Db6 y ...Cge7–f5."
+ }
+}

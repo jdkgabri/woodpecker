@@ -1,0 +1,14 @@
+{
+ "Nf6 e3": {
+  "en": "The London pyramid: e3, Nf3, Bd3, c3 and Nbd2, then Ne5 or a kingside attack with h4–h5 when Black castles short.",
+  "es": "La pirámide London: e3, Cf3, Ad3, c3 y Cbd2, y después Ce5 o un ataque en el flanco de rey con h4–h5 cuando las negras enrocan corto."
+ },
+ "Bf5 e3 Nf6 Nf3 Nc6 Bb5 Qd7": {
+  "en": "Ne5! hits the queen and the c6-knight, which is pinned against it.",
+  "es": "¡Ce5! ataca la dama y el caballo de c6, que está clavado contra ella."
+ },
+ "": {
+  "en": "The classical London against ...d5: e3, Nf3, c3, Bd3, Nbd2.",
+  "es": "La Londres clásica contra ...d5: e3, Cf3, c3, Ad3, Cbd2."
+ }
+}

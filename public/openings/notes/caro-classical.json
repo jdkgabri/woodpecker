@@ -1,0 +1,18 @@
+{
+ "Ng3 Bg6": {
+  "en": "The classical main line: after h4 h6 Nf3 Nd7 h5 Bh7, Black finishes with ...Ngf6, ...e6, ...Bd6 or ...Be7, and often castles long.",
+  "es": "La línea principal clásica: tras h4 h6 Cf3 Cd7 h5 Ah7, las negras completan con ...Cgf6, ...e6, ...Ad6 o ...Ae7, y a menudo enrocan largo."
+ },
+ "Bd3": {
+  "en": "Bd3? leaves d4 unprotected: ...Qxd4. If Qf3, ...Bxe4 keeps the extra pawn.",
+  "es": "¿Ad3? deja d4 sin defensa: ...Dxd4. Si Df3, ...Axe4 conserva el peón de más."
+ },
+ "Ng3 Bg6 Nf3 Nd7 Bc4 Ngf6 O-O e6 Bg5 Bd6 Ne5": {
+  "en": "Ne5? Nxe5 dxe5 Bxe5: Black wins a pawn.",
+  "es": "¿Ce5? Cxe5 dxe5 Axe5: las negras ganan un peón."
+ },
+ "": {
+  "en": "The Classical: ...Bf5–g6, ...Nd7 and ...Ngf6.",
+  "es": "La Clásica: ...Af5–g6, ...Cd7 y ...Cgf6."
+ }
+}
