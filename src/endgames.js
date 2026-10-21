@@ -104,6 +104,16 @@ export function viewEndgame(app, n, k0, go) {
     function show(mode) {
       clearTimeout(timer);
       keys = null;
+      if (!f.positions.length) {
+        // a final explained only in words
+        main.innerHTML = `<div class="wrap">
+          <section class="card eg-idea">${tx(f.idea).split('\n').map(x => `<p>${esc(x)}</p>`).join('')}</section>
+          <div class="grid2">
+            ${fIdx > 0 ? `<a class="btn ghost" href="#/endgame/${d.finals[fIdx - 1].n}">‹ ${t('Previous endgame')}</a>` : '<span></span>'}
+            ${fIdx + 1 < d.finals.length ? `<a class="btn ghost" href="#/endgame/${d.finals[fIdx + 1].n}">${t('Next endgame')} ›</a>` : '<span></span>'}
+          </div>${credit()}</div>`;
+        return;
+      }
       const ref = f.positions[k];
       const p = d.pos[ref.p - 1];
       app.querySelector('#egCount').textContent = f.positions.length > 1 ? `${k + 1}/${f.positions.length}` : '';
