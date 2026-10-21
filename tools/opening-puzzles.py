@@ -69,6 +69,8 @@ GROUPS = {
     'benko': ('b', has('Benko_Gambit')),
     'budapest': ('b', has('Indian_Defense_Budapest_Defense')),
     'albin': ('b', has('Queens_Gambit_Declined_Albin_Countergambit')),
+    'colle': ('w', has('Queens_Pawn_Game_Colle_System', 'Queens_Pawn_Game_Zukertort_Variation')),
+    'philidor': ('b', has('Philidor_Defense', exclude=('Philidor_Defense_Lion_Variation',))),
 }
 
 random.seed(20261021)
