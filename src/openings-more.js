@@ -548,4 +548,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('petrov', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 e5 Nf3 Nf6')],
   },
+  // ---- king's indian
+  {
+    id: 'kings-indian', side: 'b', eco: 'E60–E99', puzzles: 'kings-indian',
+    name: { en: 'King\'s Indian Defence', es: 'Defensa India de Rey' },
+    summary: {
+      en: '1.d4 Nf6 with ...g6, ...Bg7, ...d6, ...O-O and ...e5 — a counterattacking setup against almost everything.',
+      es: '1.d4 Cf6 con ...g6, ...Ag7, ...d6, ...O-O y ...e5 — una estructura de contraataque contra casi todo.',
+    },
+    intro: {
+      en: [
+        'The King\'s Indian lets White take the centre and strikes later with ...e5 (or ...c5). The fianchettoed bishop on g7 is Black\'s best piece.',
+        'In the closed lines (White plays d5) Black attacks on the kingside with ...f5, while White attacks on the queenside with c5. This tree starts from 1...Nf6, so it also covers the London, the Trompowsky and other systems.',
+      ],
+      es: [
+        'La India de Rey deja que las blancas tomen el centro y golpea después con ...e5 (o ...c5). El alfil en fianchetto de g7 es la mejor pieza negra.',
+        'En las líneas cerradas (las blancas juegan d5) las negras atacan en el flanco de rey con ...f5, mientras las blancas atacan en el de dama con c5. Este árbol empieza en 1...Cf6, así que también cubre la Londres, el Trompowsky y otros sistemas.',
+      ],
+    },
+    structure: {
+      en: 'Black: d6–e5 with the bishop on g7. If White closes the centre with d5, the pawn chains point to opposite wings: Black plays ...f5–f4 and White c4–c5.',
+      es: 'Negras: d6–e5 con el alfil en g7. Si las blancas cierran el centro con d5, las cadenas apuntan a flancos opuestos: las negras juegan ...f5–f4 y las blancas c4–c5.',
+    },
+    plans: {
+      b: {
+        en: ['...g6, ...Bg7, ...d6, ...O-O and ...e5.', 'In closed centres, ...Ne8 or ...Nh5 and ...f5.', 'In open centres, use the g7-bishop and the e5 square.'],
+        es: ['...g6, ...Ag7, ...d6, ...O-O y ...e5.', 'Con el centro cerrado, ...Ce8 o ...Ch5 y ...f5.', 'Con el centro abierto, aprovechar el alfil de g7 y la casilla e5.'],
+      },
+      w: {
+        en: ['Take the centre with c4, e4 and d4.', 'Close it with d5 and attack on the queenside with c5.', 'Sämisch (f3) and Be3–Qd2 setups to attack the king.'],
+        es: ['Tomar el centro con c4, e4 y d4.', 'Cerrarlo con d5 y atacar en el flanco de dama con c5.', 'Estructuras Sämisch (f3) y Ae3–Dd2 para atacar al rey.'],
+      },
+    },
+    lines: [tree('kings-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6')],
+  },
 ];

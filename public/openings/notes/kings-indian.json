@@ -1,0 +1,38 @@
+{
+ "": {
+  "en": "The King's Indian for Black: ...Nf6, ...g6, ...Bg7, ...d6 and ...O-O, then ...e5. The same setup works against c4, the London and other systems.",
+  "es": "La India de Rey con negras: ...Cf6, ...g6, ...Ag7, ...d6 y ...O-O, y luego ...e5. La misma estructura funciona contra c4, la Londres y otros sistemas."
+ },
+ "c4 g6 Nc3 Bg7 e4 d6": {
+  "en": "White has the big centre; Black prepares to hit it with ...e5 after castling.",
+  "es": "Las blancas tienen el gran centro; las negras preparan atacarlo con ...e5 tras enrocar."
+ },
+ "c4 g6 Nc3 Bg7 e4 d6 Nf3 O-O Be2 e5": {
+  "en": "The Classical: ...e5 challenges d4. If d5, Black plays ...Nbd7 or ...a5 and later ...Ne8 and ...f5 on the kingside.",
+  "es": "La Clásica: ...e5 desafía d4. Si d5, las negras juegan ...Cbd7 o ...a5 y más tarde ...Ce8 y ...f5 en el flanco de rey."
+ },
+ "c4 g6 Nc3 Bg7 e4 d6 Nf3 O-O Be2 e5 dxe5 dxe5": {
+  "en": "The exchange on e5 leads to a queenless middlegame that is fine for Black: the d4-square is a good post.",
+  "es": "El cambio en e5 lleva a un medio juego sin damas que está bien para las negras: d4 es una buena casilla."
+ },
+ "c4 g6 Nc3 Bg7 e4 d6 f3 O-O": {
+  "en": "The Sämisch (f3): White plans Be3, Qd2 and a kingside pawn storm. ...Nbd7 or ...c5 and ...e5 strike back in the centre.",
+  "es": "La Sämisch (f3): las blancas planean Ae3, Dd2 y un avance de peones en el flanco de rey. ...Cbd7 o ...c5 y ...e5 contraatacan en el centro."
+ },
+ "c4 g6 Nc3 Bg7 e4 d6 f4 O-O": {
+  "en": "The Four Pawns Attack: a huge centre. Castle, then strike with ...c5 or ...e5.",
+  "es": "El Ataque de los Cuatro Peones: un centro enorme. Enroca y golpea con ...c5 o ...e5."
+ },
+ "c4 g6 Nc3 Bg7 e4 d6 Bd3 O-O Be3 Ng4": {
+  "en": "Be3? allows ...Ng4, hitting the bishop and gaining the bishop pair.",
+  "es": "Ae3? permite ...Cg4, atacando el alfil y ganando la pareja de alfiles."
+ },
+ "Bf4 g6": {
+  "en": "Against the London, the King's Indian setup is a good answer: ...Bg7, ...d6, ...O-O and ...Nbd7 with ...e5.",
+  "es": "Contra la Londres, la estructura India de Rey es una buena respuesta: ...Ag7, ...d6, ...O-O y ...Cbd7 con ...e5."
+ },
+ "Nc3 d5": {
+  "en": "Against 2.Nc3 (Veresov or Jobava ideas), ...d5 takes the centre first.",
+  "es": "Contra 2.Cc3 (ideas Veresov o Jobava), ...d5 ocupa primero el centro."
+ }
+}
