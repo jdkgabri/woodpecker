@@ -1,0 +1,22 @@
+{
+ "Nb5 a6": {
+  "en": "Against Nb5, ...a6 kicks the knight at once. The critical answer is Nd6+, giving White the bishop pair; that is the price of this line.",
+  "es": "Contra Cb5, ...a6 echa al caballo de inmediato. La respuesta crítica es Cd6+, que da a las blancas la pareja de alfiles; ese es el precio de esta línea."
+ },
+ "Nb5 a6 Nd6+ Bxd6 Qxd6": {
+  "en": "White has the bishop pair and the d6-queen is active, but Black has a lead in development: ...Qf6 offers a queen trade and ...Nge7 with ...O-O follow.",
+  "es": "Las blancas tienen la pareja de alfiles y la dama de d6 es activa, pero las negras van por delante en desarrollo: ...Df6 ofrece el cambio de damas y siguen ...Cge7 con ...O-O."
+ },
+ "Nb5 a6 N5a3": {
+  "en": "Retreating to a3 puts the knight offside: Black develops comfortably with ...Nf6, ...Bc5 or ...d5.",
+  "es": "Retirarse a a3 deja el caballo fuera de juego: las negras desarrollan con comodidad con ...Cf6, ...Ac5 o ...d5."
+ },
+ "Nxc6 bxc6": {
+  "en": "After the exchange Black's centre (c6, d6, e5) controls d5; ...d6, ...Nf6 and ...Be7 follow.",
+  "es": "Tras el cambio, el centro negro (c6, d6, e5) controla d5; siguen ...d6, ...Cf6 y ...Ae7."
+ },
+ "": {
+  "en": "The Old Sicilian (Löwenthal-style): ...e5 kicks the knight at once. Black must be careful about the d5-square and the b5-knight jump.",
+  "es": "La Siciliana Antigua (estilo Löwenthal): ...e5 echa al caballo de inmediato. Las negras deben cuidar la casilla d5 y el salto del caballo a b5."
+ }
+}

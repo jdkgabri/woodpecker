@@ -483,6 +483,13 @@ export const OPENINGS = [
         tree: { file: 'classical-sicilian' },
       },
       {
+        id: 'old-sicilian',
+        name: { en: 'Old Sicilian (...e5 early)', es: 'Siciliana Antigua (...e5 temprano)' },
+        moves: 'e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 e5',
+        treeOnly: true,
+        tree: { file: 'old-sicilian' },
+      },
+      {
         id: 'najdorf-english',
         tree: { file: 'najdorf-english' },
         name: { en: 'Najdorf: English Attack (6.Be3 e5)', es: 'Najdorf: Ataque Inglés (6.Ae3 e5)' },
