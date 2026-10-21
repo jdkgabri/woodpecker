@@ -1,0 +1,26 @@
+{
+ "": {
+  "en": "The Queen's Gambit Declined for Black, and the same setup against other d4 systems: ...d5, ...e6, ...Nf6, ...Be7 and ...O-O, freeing the game later with ...c5 or ...dxc4 and ...e5.",
+  "es": "El Gambito de Dama Rehusado con negras, y la misma estructura contra otros sistemas con d4: ...d5, ...e6, ...Cf6, ...Ae7 y ...O-O, liberando el juego más tarde con ...c5 o ...dxc4 y ...e5."
+ },
+ "c4 e6": {
+  "en": "...e6 holds d5 solidly. The price is the c8-bishop, which needs ...b6 or ...dxc4 and ...e5 later.",
+  "es": "...e6 sostiene d5 con solidez. El precio es el alfil de c8, que necesitará ...b6 o ...dxc4 y ...e5 más adelante."
+ },
+ "c4 e6 Nc3 Nf6": {
+  "en": "Develop and watch e4. Against Bg5, ...Be7 and ...O-O; against cxd5, ...exd5 and a solid structure.",
+  "es": "Desarrolla y vigila e4. Contra Ag5, ...Ae7 y ...O-O; contra cxd5, ...exd5 y una estructura sólida."
+ },
+ "c4 e6 cxd5 exd5": {
+  "en": "The Exchange structure: Black's c8-bishop is free now, and ...c6, ...Bd6 and ...Bf5 are natural.",
+  "es": "La estructura del Cambio: ahora el alfil de c8 está libre, y ...c6, ...Ad6 y ...Af5 son naturales."
+ },
+ "Bf4 e6": {
+  "en": "Against the London, ...e6, ...Nf6, ...c5 and ...Nc6: the most solid answer, with ...Bd6 to trade the London bishop.",
+  "es": "Contra la Londres, ...e6, ...Cf6, ...c5 y ...Cc6: la respuesta más sólida, con ...Ad6 para cambiar el alfil de la Londres."
+ },
+ "Nf3 e6": {
+  "en": "Against slow Nf3 setups (Colle, Torre), the same structure works; ...c5 is the key break.",
+  "es": "Contra esquemas lentos con Cf3 (Colle, Torre), funciona la misma estructura; ...c5 es la ruptura clave."
+ }
+}

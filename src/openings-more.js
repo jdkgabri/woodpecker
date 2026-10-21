@@ -718,4 +718,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('slav-black', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 c4 c6')],
   },
+  // ---- qgd (black)
+  {
+    id: 'qgd-black', side: 'b', vs: 'd4', eco: 'D30–D69', puzzles: 'qgd-black',
+    name: { en: 'Queen\'s Gambit Declined (as Black)', es: 'Gambito de Dama Rehusado (con negras)' },
+    summary: {
+      en: '1.d4 d5 with ...e6 and ...Nf6 — the classical, rock-solid answer to 1.d4.',
+      es: '1.d4 d5 con ...e6 y ...Cf6 — la respuesta clásica y sólida como una roca a 1.d4.',
+    },
+    intro: {
+      en: [
+        'Black keeps the pawn on d5 with ...e6, develops with ...Nf6, ...Be7 and ...O-O and frees the game later with ...c5 or ...dxc4 and ...e5.',
+        'This tree starts after 1.d4 d5, so it also covers the London, the Colle and other systems that do not play c4.',
+      ],
+      es: [
+        'Las negras mantienen el peón en d5 con ...e6, desarrollan con ...Cf6, ...Ae7 y ...O-O y liberan el juego más tarde con ...c5 o ...dxc4 y ...e5.',
+        'Este árbol empieza tras 1.d4 d5, así que también cubre la Londres, el Colle y otros sistemas que no juegan c4.',
+      ],
+    },
+    structure: {
+      en: 'd5–e6 against d4–c4. Black\'s light-squared bishop is the problem piece: ...b6 and ...Bb7 or ...dxc4 and ...e5 free it.',
+      es: 'd5–e6 contra d4–c4. El alfil negro de casillas blancas es la pieza problemática: ...b6 y ...Ab7 o ...dxc4 y ...e5 lo liberan.',
+    },
+    plans: {
+      b: {
+        en: ['...Nf6, ...Be7, ...O-O and ...h6.', 'Free the game with ...c5 or ...dxc4 and ...e5.', '...b6 and ...Bb7 to activate the bishop.'],
+        es: ['...Cf6, ...Ae7, ...O-O y ...h6.', 'Liberar el juego con ...c5 o ...dxc4 y ...e5.', '...b6 y ...Ab7 para activar el alfil.'],
+      },
+      w: {
+        en: ['Bg5 to pin the knight.', 'Minority attack with b4–b5 in the Exchange structure.', 'Central break with e4.'],
+        es: ['Ag5 para clavar el caballo.', 'Ataque de minorías con b4–b5 en la estructura del Cambio.', 'Ruptura central con e4.'],
+      },
+    },
+    lines: [tree('qgd-black', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5')],
+  },
 ];
