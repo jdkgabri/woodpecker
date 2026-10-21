@@ -1,0 +1,94 @@
+{
+ "": {
+  "en": "Your Italian repertoire from move one: what club players answer after 1.e4 e5 and how to reach good Italian positions against all of it. The quiet Pianissimo setup (c3, d3, O-O, a4) is the backbone.",
+  "es": "Tu repertorio de la Italiana desde la primera jugada: qué responden los jugadores de club tras 1.e4 e5 y cómo llegar a buenas posiciones italianas contra todo ello. El esquema tranquilo del Pianissimo (c3, d3, O-O, a4) es la columna vertebral."
+ },
+ "Nf3": {
+  "en": "Develops and attacks e5 at once.",
+  "es": "Desarrolla y ataca e5 de inmediato."
+ },
+ "Nf3 Nc6 Bc4": {
+  "en": "The Italian: the bishop aims at f7, the weakest point in Black's camp.",
+  "es": "La Italiana: el alfil apunta a f7, el punto más débil del campo negro."
+ },
+ "Nf3 Nc6 Bc4 Bc5 c3": {
+  "en": "c3 prepares d4 and gives the bishop a retreat on c2 later. Here the repertoire continues quietly with d3.",
+  "es": "c3 prepara d4 y más adelante da al alfil una retirada en c2. Aquí el repertorio sigue tranquilo con d3."
+ },
+ "Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3": {
+  "en": "The Giuoco Pianissimo: e4 is protected and White builds up slowly — castle, a4, Re1, h3 and Nbd2–f1–g3.",
+  "es": "El Giuoco Pianissimo: e4 queda protegido y las blancas construyen poco a poco: enroque, a4, Te1, h3 y Cbd2–f1–g3."
+ },
+ "Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 d6 O-O Bg4 a4": {
+  "en": "...Bg4 pins the knight; a4 gains space first. Later h3 asks the bishop to decide.",
+  "es": "...Ag4 clava el caballo; a4 gana espacio primero. Más tarde h3 obliga al alfil a decidir."
+ },
+ "Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 O-O O-O d5 exd5": {
+  "en": "Black breaks with ...d5. After exd5 Nxd5 White plays Re1 and a4, with pressure on e5.",
+  "es": "Las negras rompen con ...d5. Tras exd5 Cxd5 las blancas juegan Te1 y a4, con presión sobre e5."
+ },
+ "Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 d5 exd5": {
+  "en": "An early ...d5 opens the centre before Black has castled: after exd5 Nxd5 the e5-pawn becomes a target.",
+  "es": "Un ...d5 temprano abre el centro antes de que las negras hayan enrocado: tras exd5 Cxd5 el peón de e5 se convierte en un objetivo."
+ },
+ "Nf3 Nc6 Bc4 Bc5 c3 d6": {
+  "en": "...d6 is natural but passive; d3 keeps the same setup.",
+  "es": "...d6 es natural pero pasiva; d3 mantiene la misma estructura."
+ },
+ "Nf3 Nc6 Bc4 Bc5 c3 h6 b4": {
+  "en": "Wasting a move with ...h6 allows b4 with tempo on the bishop, and then d4 with a big centre.",
+  "es": "Perder un tiempo con ...h6 permite b4 ganando tiempo sobre el alfil, y después d4 con un gran centro."
+ },
+ "Nf3 Nc6 Bc4 Nf6": {
+  "en": "The Two Knights Defence. In this repertoire d3 keeps it quiet and transposes to the Pianissimo.",
+  "es": "La Defensa de los Dos Caballos. En este repertorio d3 la mantiene tranquila y transpone al Pianissimo."
+ },
+ "Nf3 Nc6 Bc4 Nf6 d3 d5 exd5": {
+  "en": "...d5 gives up the centre: after exd5 Nxd5 O-O, the e5-pawn is a target.",
+  "es": "...d5 cede el centro: tras exd5 Cxd5 O-O, el peón de e5 es un objetivo."
+ },
+ "Nf3 Nc6 Bc4 Nf6 d3 d5 exd5 Na5": {
+  "en": "...Na5 tries to win the bishop, but O-O keeps a healthy extra pawn.",
+  "es": "...Ca5 intenta ganar el alfil, pero O-O conserva un peón de más sano."
+ },
+ "Nf3 Nc6 Bc4 h6": {
+  "en": "...h6 stops Ng5 and Bg5 but costs a tempo; c3 and d4 or d3 follow.",
+  "es": "...h6 evita Cg5 y Ag5 pero cuesta un tiempo; siguen c3 y d4 o d3."
+ },
+ "Nf3 Nc6 Bc4 h6 c3 Bc5 b4": {
+  "en": "Same trick: b4 gains time on the bishop, followed by a4 or d4.",
+  "es": "El mismo truco: b4 gana tiempo sobre el alfil, seguido de a4 o d4."
+ },
+ "Nf3 Nc6 Bc4 d6 c3 Bg4 h3": {
+  "en": "h3 asks the bishop: ...Bh5 can be met by g4 at the right time, ...Bxf3 gives White the bishop pair.",
+  "es": "h3 pregunta al alfil: a ...Ah5 se puede responder con g4 en el momento justo, y ...Axf3 da a las blancas la pareja de alfiles."
+ },
+ "Nf3 d6": {
+  "en": "Philidor's Defence: solid but passive. Bc4 and c3 keep the Italian setup.",
+  "es": "La Defensa Philidor: sólida pero pasiva. Ac4 y c3 mantienen el esquema italiano."
+ },
+ "Nf3 d6 Bc4 Bg4 O-O": {
+  "en": "Castling avoids tricks on f2 and prepares h3 and c3.",
+  "es": "Enrocar evita trucos sobre f2 y prepara h3 y c3."
+ },
+ "Nf3 Nf6": {
+  "en": "The Petrov: Black counterattacks e4. Taking on e5 is the main line.",
+  "es": "La Petrov: las negras contraatacan e4. Tomar en e5 es la línea principal."
+ },
+ "Nf3 Nf6 Nxe5 Nc6": {
+  "en": "The Stafford Gambit, a trap-filled line popular online. Taking on c6 and playing d3 refutes it calmly.",
+  "es": "El Gambito Stafford, una línea llena de trampas popular en internet. Tomar en c6 y jugar d3 lo refuta con calma."
+ },
+ "Nf3 Nf6 Nxe5 Nc6 Nxc6 dxc6 d3 Bc5 h3": {
+  "en": "h3 stops ...Ng4, Black's main idea against f2. White keeps the extra pawn safely.",
+  "es": "h3 evita ...Cg4, la idea principal negra contra f2. Las blancas conservan el peón de más con seguridad."
+ },
+ "Nf3 Nf6 Nxe5 d6 Nf3": {
+  "en": "The knight retreats first; only now can Black take on e4.",
+  "es": "El caballo se retira primero; solo ahora pueden las negras tomar en e4."
+ },
+ "Nf3 Nf6 Nxe5 Nxe4 d3": {
+  "en": "Copying with 3...Nxe4? is a mistake in principle: d3 kicks the knight, and Qe2 ideas on the e-file follow.",
+  "es": "Copiar con 3...Cxe4? es un error de principio: d3 echa al caballo y siguen ideas con De2 en la columna e."
+ }
+}

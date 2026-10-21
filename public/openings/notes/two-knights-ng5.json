@@ -1,0 +1,70 @@
+{
+ "": {
+  "en": "Two Knights with 4.Ng5: White attacks f7 at once with knight and bishop. Black must react: 4...d5 is the main line, 4...Bc5 is the wild Traxler counterattack.",
+  "es": "Dos Caballos con 4.Cg5: las blancas atacan f7 de inmediato con caballo y alfil. Las negras deben reaccionar: 4...d5 es la línea principal, 4...Ac5 es el salvaje contraataque Traxler."
+ },
+ "d5 exd5": {
+  "en": "White takes back, and recapturing with the knight allows the Fried Liver sacrifice on f7. That is why 5...Na5 is the main line.",
+  "es": "Las blancas recapturan, y tomar con el caballo permite el sacrificio Fegatello en f7. Por eso 5...Ca5 es la línea principal."
+ },
+ "d5 exd5 Na5": {
+  "en": "The main line: Black gives a pawn and chases the bishop. In return Black gets fast development.",
+  "es": "La línea principal: las negras entregan un peón y persiguen al alfil. A cambio consiguen un desarrollo rápido."
+ },
+ "d5 exd5 Na5 Bb5+": {
+  "en": "The check gains time and keeps the extra pawn for now.",
+  "es": "El jaque gana tiempo y de momento conserva el peón de más."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2": {
+  "en": "White is a pawn up; the bishop retreats to safety. Black's compensation is activity: ...h6 and ...e4 are coming.",
+  "es": "Las blancas tienen un peón de más; el alfil se retira a un lugar seguro. La compensación negra es actividad: llegan ...h6 y ...e4."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4 Ne5": {
+  "en": "The knight jumps to e5, its best square. White plans d4 and keeps the extra pawn.",
+  "es": "El caballo salta a e5, su mejor casilla. Las blancas planean d4 y conservan el peón de más."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 Nxc6 Bc4": {
+  "en": "Recapturing with the knight lets the bishop back to c4, and f7 is attacked again.",
+  "es": "Recapturar con el caballo deja volver al alfil a c4, y f7 vuelve a estar atacado."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 Nxc6 Bc4 Nd5 Nxf7": {
+  "en": "...Nd5? allows Nxf7, forking queen and rook.",
+  "es": "...Cd5? permite Cxf7, con ataque doble a dama y torre."
+ },
+ "d5 exd5 Na5 Bb5+ Bd7 Qe2": {
+  "en": "Qe2 attacks e5 and keeps the pin on the d7-bishop.",
+  "es": "De2 ataca e5 y mantiene la clavada del alfil de d7."
+ },
+ "d5 exd5 Na5 Bb5+ Bd7 Qe2 Nxd5 Qxe5+": {
+  "en": "...Nxd5? drops the e5-pawn with check.",
+  "es": "...Cxd5? pierde el peón de e5 con jaque."
+ },
+ "d5 exd5 Nxd5": {
+  "en": "Taking back with the knight is natural, but it allows the Fried Liver sacrifice.",
+  "es": "Recapturar con el caballo es natural, pero permite el sacrificio Fegatello."
+ },
+ "d5 exd5 Nxd5 Nxf7": {
+  "en": "The Fried Liver Attack: the knight is sacrificed to drag the king out. See the Fried Liver tree for all the details.",
+  "es": "El ataque Fegatello: el caballo se sacrifica para sacar al rey. Consulta el árbol del Fegatello para todos los detalles."
+ },
+ "Bc5": {
+  "en": "The Traxler: Black ignores the threat on f7 and counterattacks f2.",
+  "es": "El Traxler: las negras ignoran la amenaza sobre f7 y contraatacan f2."
+ },
+ "Bc5 Bxf7+": {
+  "en": "Bxf7+! is the safest answer: White wins a pawn and the black king loses the right to castle, without the complications of Nxf7.",
+  "es": "¡Axf7+! es la respuesta más segura: las blancas ganan un peón y el rey negro pierde el enroque, sin las complicaciones de Cxf7."
+ },
+ "Bc5 Bxf7+ Kf8 Bb3 h6 Nf7": {
+  "en": "...h6? lets the knight into f7, forking queen and rook.",
+  "es": "...h6? deja entrar al caballo en f7, con ataque doble a dama y torre."
+ },
+ "Bc5 Bxf7+ Kf8 Bb3 Bxf2+ Kxf2 Ng4+ Qxg4": {
+  "en": "The knight check simply drops the knight to the queen.",
+  "es": "El jaque de caballo simplemente pierde el caballo ante la dama."
+ },
+ "Nxe4 Bxf7+": {
+  "en": "4...Nxe4? 5.Bxf7+ Ke7 6.d4: the black king is stuck in the centre.",
+  "es": "4...Cxe4? 5.Axf7+ Re7 6.d4: el rey negro queda atrapado en el centro."
+ }
+}

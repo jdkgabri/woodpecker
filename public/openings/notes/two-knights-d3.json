@@ -1,0 +1,66 @@
+{
+ "": {
+  "en": "Two Knights with 4.d3: White avoids all the forcing theory, protects e4 and builds up as in the Pianissimo. The key piece is the rook on e1, which punishes Black whenever the e-file opens.",
+  "es": "Dos Caballos con 4.d3: las blancas evitan toda la teoría forzada, protegen e4 y construyen como en el Pianissimo. La pieza clave es la torre de e1, que castiga a las negras en cuanto se abre la columna e."
+ },
+ "Bc5 O-O": {
+  "en": "Castle first, then Re1 and c3. The order matters: Re1 prepares to meet ...d5 with pressure on e5.",
+  "es": "Primero enrocar, luego Te1 y c3. El orden importa: Te1 prepara la respuesta a ...d5 con presión sobre e5."
+ },
+ "Bc5 O-O O-O Re1 d6 c3": {
+  "en": "c3 prepares d4 and Bb5 or a4 to keep the bishop.",
+  "es": "c3 prepara d4, y Ab5 o a4 para conservar el alfil."
+ },
+ "Bc5 O-O O-O Re1 d6 c3 Bg4 Bb5": {
+  "en": "Bb5 pins the knight and prepares h3 and d4.",
+  "es": "Ab5 clava el caballo y prepara h3 y d4."
+ },
+ "Bc5 O-O O-O Re1 Ng4 Re2": {
+  "en": "...Ng4 attacks f2, but the rook simply steps to e2 and f2 is safe; the knight will have to go back.",
+  "es": "...Cg4 ataca f2, pero la torre se aparta a e2 y f2 queda seguro; el caballo tendrá que volver."
+ },
+ "Bc5 O-O O-O Re1 d5 exd5": {
+  "en": "...d5 opens the e-file too early: after exd5 Nxd5 the e5-pawn is weak and Re1 is already there.",
+  "es": "...d5 abre la columna e demasiado pronto: tras exd5 Cxd5 el peón de e5 es débil y la Te1 ya está allí."
+ },
+ "Bc5 O-O O-O Re1 h6 c3 a6 d4": {
+  "en": "Against slow moves White strikes with d4, gaining time on the c5-bishop.",
+  "es": "Contra jugadas lentas las blancas golpean con d4, ganando tiempo sobre el alfil de c5."
+ },
+ "h6 O-O d5 exd5 Nxd5 Re1": {
+  "en": "Re1 attacks e5 at once. Black has to defend it accurately.",
+  "es": "Te1 ataca e5 de inmediato. Las negras deben defenderlo con precisión."
+ },
+ "h6 O-O d5 exd5 Nxd5 Re1 Bg4 Nxe5": {
+  "en": "Nxe5! ignores the pin: if ...Bxd1, the knight moves with a discovered check from the e1-rook and wins the black queen.",
+  "es": "¡Cxe5! ignora la clavada: si ...Axd1, el caballo se mueve con jaque a la descubierta de la Te1 y gana la dama negra."
+ },
+ "h6 O-O d5 exd5 Nxd5 Re1 f6 d4": {
+  "en": "...f6 weakens the king; d4 opens the centre while Black is not castled.",
+  "es": "...f6 debilita al rey; d4 abre el centro mientras las negras no han enrocado."
+ },
+ "Be7 O-O O-O Re1 d6 c3 Na5 Bb5": {
+  "en": "The bishop avoids the trade: from b5 it goes to a4 and c2, as in the Spanish.",
+  "es": "El alfil evita el cambio: desde b5 irá a a4 y c2, como en la Española."
+ },
+ "Be7 O-O d6 Re1 Na5 Bb5+": {
+  "en": "Bb5+ avoids the trade with check; Black must block on c6 or d7.",
+  "es": "Ab5+ evita el cambio con jaque; las negras deben tapar en c6 o d7."
+ },
+ "d5 exd5": {
+  "en": "The Two Knights break ...d5 is less effective after d3: White takes and keeps pressure on e5.",
+  "es": "La ruptura ...d5 de los Dos Caballos es menos eficaz tras d3: las blancas toman y mantienen la presión sobre e5."
+ },
+ "d5 exd5 Nxd5 O-O Bg4 Re1 f6 Nxe5": {
+  "en": "Nxe5! The same pattern: after ...fxe5 the queen takes on g4, and after ...Bxd1 the knight gives a discovered check from the e1-rook and wins the queen.",
+  "es": "¡Cxe5! El mismo patrón: tras ...fxe5 la dama toma en g4, y tras ...Axd1 el caballo da jaque a la descubierta con la Te1 y gana la dama."
+ },
+ "d5 exd5 Nxd5 O-O Bc5 Re1 O-O Nxe5": {
+  "en": "With Black castled, White can simply take the e5-pawn.",
+  "es": "Con las negras enrocadas, las blancas pueden simplemente tomar el peón de e5."
+ },
+ "d5 exd5 Na5": {
+  "en": "...Na5 gives up a pawn for the bishop pair, but after O-O White is comfortably better.",
+  "es": "...Ca5 entrega un peón a cambio de la pareja de alfiles, pero tras O-O las blancas están cómodamente mejor."
+ }
+}

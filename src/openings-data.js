@@ -68,7 +68,15 @@ export const OPENINGS = [
     puzzles: 'italian',
     lines: [
       {
+        id: 'italian-all',
+        name: { en: "All of Black's replies after 1.e4 e5", es: 'Todas las respuestas negras tras 1.e4 e5' },
+        moves: 'e4 e5',
+        treeOnly: true,
+        tree: { file: 'italian-all' },
+      },
+      {
         id: 'pianissimo',
+        tree: { file: 'pianissimo' },
         name: { en: 'Giuoco Pianissimo: 4.c3 Nf6 5.d3', es: 'Giuoco Pianissimo: 4.c3 Cf6 5.d3' },
         moves: 'e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 d6 O-O a6 a4 Ba7 Re1 O-O h3 h6 Nbd2 Re8 Nf1 Be6 Bxe6 Rxe6 Ng3',
         puzzles: 'italian-giuoco',
@@ -88,6 +96,7 @@ export const OPENINGS = [
       },
       {
         id: 'classical',
+        tree: { file: 'classical' },
         name: { en: 'Giuoco Piano: 4.c3 Nf6 5.d4', es: 'Giuoco Piano: 4.c3 Cf6 5.d4' },
         moves: 'e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Nce7 O-O O-O Rfe1 c6',
         puzzles: 'italian-giuoco',
@@ -179,6 +188,7 @@ export const OPENINGS = [
       },
       {
         id: 'two-knights-d3',
+        tree: { file: 'two-knights-d3' },
         name: { en: 'Two Knights: 4.d3 (quiet)', es: 'Dos Caballos: 4.d3 (tranquila)' },
         moves: 'e4 e5 Nf3 Nc6 Bc4 Nf6 d3 Be7 O-O O-O Re1 d6 c3 Na5 Bb5 a6 Ba4 b5 Bc2',
         puzzles: 'italian-two-knights',
@@ -192,6 +202,7 @@ export const OPENINGS = [
       },
       {
         id: 'two-knights-ng5',
+        tree: { file: 'two-knights-ng5' },
         name: { en: 'Two Knights: 4.Ng5 d5 (main line)', es: 'Dos Caballos: 4.Cg5 d5 (línea principal)' },
         moves: 'e4 e5 Nf3 Nc6 Bc4 Nf6 Ng5 d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4 Ne5 Bd6',
         puzzles: 'italian-two-knights',
@@ -207,6 +218,7 @@ export const OPENINGS = [
       },
       {
         id: 'fried-liver',
+        tree: { file: 'fried-liver' },
         name: { en: 'Fried Liver Attack (Fegatello)', es: 'Ataque Fegatello (Fried Liver)' },
         moves: 'e4 e5 Nf3 Nc6 Bc4 Nf6 Ng5 d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Ke6 Nc3 Ncb4',
         puzzles: 'italian-two-knights',

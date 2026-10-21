@@ -1,0 +1,146 @@
+{
+ "": {
+  "en": "The Giuoco Pianissimo: White keeps the centre closed with c3 and d3, castles and builds up slowly. These are the replies club players choose and the best answer to each.",
+  "es": "El Giuoco Pianissimo: las blancas mantienen el centro cerrado con c3 y d3, enrocan y construyen poco a poco. Estas son las respuestas que eligen los jugadores de club y la mejor contestación a cada una."
+ },
+ "Nf6 d3": {
+  "en": "e4 is protected, so Black has no targets. Next: castle, a4, Re1, h3, Nbd2–f1–g3.",
+  "es": "e4 queda protegido, así que las negras no tienen objetivos. Después: enroque, a4, Te1, h3, Cbd2–f1–g3."
+ },
+ "Nf6 d3 d6 O-O Bg4 a4": {
+  "en": "a4 gains space and threatens b4 and a5, hunting the c5-bishop. Black must give it a square with ...a6 or ...a5.",
+  "es": "a4 gana espacio y amenaza b4 y a5, cazando el alfil de c5. Las negras deben darle una casilla con ...a6 o ...a5."
+ },
+ "Nf6 d3 d6 O-O O-O a4": {
+  "en": "The same idea: a4 prepares b4 and a5 against the c5-bishop.",
+  "es": "La misma idea: a4 prepara b4 y a5 contra el alfil de c5."
+ },
+ "Nf6 d3 d6 O-O a6 a4 Ba7 Re1": {
+  "en": "The bishop is safe on a7. Re1, h3, Nbd2–f1–g3 is the standard plan; d4 comes when everything is ready.",
+  "es": "El alfil está seguro en a7. Te1, h3, Cbd2–f1–g3 es el plan habitual; d4 llega cuando todo esté preparado."
+ },
+ "Nf6 d3 O-O O-O d5 exd5 Nxd5 a4": {
+  "en": "Black has opened the centre. White keeps the plan: a4 gains space and Re1 will put pressure on e5.",
+  "es": "Las negras han abierto el centro. Las blancas mantienen el plan: a4 gana espacio y Te1 presionará e5."
+ },
+ "Nf6 d3 O-O O-O d5 exd5 Nxd5 a4 Be6 Ng5": {
+  "en": "Ng5 hits the e6-bishop and eyes f7 and the d5-knight's defender.",
+  "es": "Cg5 ataca el alfil de e6 y apunta a f7 y al defensor del caballo de d5."
+ },
+ "Nf6 d3 h6 O-O a6 d4": {
+  "en": "...a6 is slow here: d4! strikes while the c5-bishop and e5 are both targets.",
+  "es": "...a6 es lenta aquí: ¡d4! golpea mientras el alfil de c5 y e5 son ambos objetivos."
+ },
+ "Nf6 d3 d5 exd5 Nxd5 Qb3": {
+  "en": "An early ...d5 is punished by Qb3: the queen and bishop hit d5, and the queen also attacks b7 and f7.",
+  "es": "Un ...d5 temprano se castiga con Db3: dama y alfil atacan d5, y la dama también ataca b7 y f7."
+ },
+ "Nf6 d3 d5 exd5 Nxd5 Qb3 Be6 Qxb7": {
+  "en": "Qxb7 wins a pawn and attacks the knight on c6.",
+  "es": "Dxb7 gana un peón y ataca el caballo de c6."
+ },
+ "Nf6 d3 d5 exd5 Nxd5 Qb3 Na5 Qb5+": {
+  "en": "Qb5+ checks and attacks both the knight on a5 and the bishop on c5.",
+  "es": "Db5+ da jaque y ataca a la vez el caballo de a5 y el alfil de c5."
+ },
+ "d6 d3 Bg4 O-O Nge7 Bxf7+": {
+  "en": "Bxf7+! Kxf7 Ng5+ breaks the pin with check, and Qxg4 wins the bishop: White ends a pawn up with Black's king exposed.",
+  "es": "¡Axf7+! Rxf7 Cg5+ rompe la clavada con jaque, y Dxg4 gana el alfil: las blancas quedan con un peón de más y el rey negro expuesto."
+ },
+ "h6": {
+  "en": "...h6 is a wasted move here, and it allows b4 with tempo on the bishop.",
+  "es": "...h6 es una jugada perdida aquí, y permite b4 ganando tiempo sobre el alfil."
+ },
+ "h6 b4 Bb6 b5": {
+  "en": "b5 kicks the knight away from e5's defence.",
+  "es": "b5 echa al caballo que defiende e5."
+ },
+ "h6 b4 Bb6 b5 Na5 Bxf7+": {
+  "en": "Bxf7+! Kxf7 Nxe5+: the king is exposed and White wins material.",
+  "es": "¡Axf7+! Rxf7 Cxe5+: el rey queda expuesto y las blancas ganan material."
+ },
+ "h6 b4 Bb6 b5 Nce7 Nxe5": {
+  "en": "With the knight gone from c6, e5 falls.",
+  "es": "Con el caballo fuera de c6, cae e5."
+ },
+ "Nf6 d3 d6 O-O Bg4 a4 O-O b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "Nf6 d3 d6 O-O Bg4 a4 Qd7 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "Nf6 d3 d6 O-O O-O a4 Bg4 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "Nf6 d3 d6 O-O h6 a4 Bg4 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "Nf6 d3 d6 O-O h6 a4 O-O b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "Nf6 d3 O-O O-O d6 a4 Bg4 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "Nf6 d3 O-O O-O h6 a4 d6 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "Nf6 d3 O-O O-O a6 a4 Na5 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "Nf6 d3 h6 O-O d6 a4 Bg4 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "Nf6 d3 h6 O-O d6 a4 O-O b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "Nf6 d3 h6 O-O O-O a4 d6 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "d6 d3 Bg4 O-O Nf6 a4 O-O b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "d6 d3 Bg4 O-O Nf6 a4 Qd7 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "d6 d3 h6 O-O Nf6 a4 Bg4 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "d6 d3 h6 O-O Nf6 a4 O-O b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "d6 d3 Nf6 O-O Bg4 a4 O-O b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "d6 d3 Nf6 O-O Bg4 a4 Qd7 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "d6 d3 Nf6 O-O O-O a4 Bg4 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "d6 d3 Nf6 O-O h6 a4 Bg4 b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ },
+ "d6 d3 Nf6 O-O h6 a4 O-O b4": {
+  "en": "The bishop trap! After b4 the bishop must go to b6, and a5 catches it. Before castling or developing, Black needed ...a6 or ...a5.",
+  "es": "¡La trampa del alfil! Tras b4 el alfil debe ir a b6, y a5 lo atrapa. Antes de enrocar o desarrollar, las negras necesitaban ...a6 o ...a5."
+ }
+}

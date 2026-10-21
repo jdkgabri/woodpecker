@@ -26,10 +26,10 @@ PARAMS = {'variant': 'standard', 'speeds': 'blitz,rapid,classical', 'ratings': '
 MIN_SHARE = 0.04       # opponent replies played at least this often
 MAX_REPLIES = 4
 MIN_GAMES = 400        # stop where positions become rare...
-MIN_REL = 0.003        # ...or below this share of the games at the root
+MIN_REL = 0.0015       # ...or below this share of the games at the root
 MAX_DEPTH = 18         # plies after the root
 NEAR_BEST = 25         # our move: popular move accepted if within this many centipawns of the best
-PREFER_TOL = 50        # repertoire move accepted if within this many centipawns of the best
+PREFER_TOL = 35        # repertoire move accepted if within this many centipawns of the best
 TIME = float(os.environ.get('TREE_TIME', 1.0))
 THREADS = int(os.environ.get('THREADS', 6))
 
@@ -52,7 +52,7 @@ def throttle(rate_limited=False):
         try:
             fd = os.open(LOCK, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
             break
-        except FileExistsError:
+        except (FileExistsError, PermissionError):  # Windows: PermissionError while another process deletes it
             try:
                 if time.time() - os.path.getmtime(LOCK) > 120:
                     os.remove(LOCK)
@@ -77,7 +77,12 @@ def throttle(rate_limited=False):
         json.dump(st, open(STATE, 'w'))
     finally:
         os.close(fd)
-        os.remove(LOCK)
+        for _ in range(20):
+            try:
+                os.remove(LOCK)
+                break
+            except PermissionError:
+                time.sleep(0.05)
 
 
 def explore(board):
