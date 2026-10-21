@@ -1,0 +1,22 @@
+{
+ "d5": {
+  "en": "...d5! is Black's best: after fxe5 Nxe4 Nf3 the position is sharp but balanced.",
+  "es": "¡...d5! es lo mejor para las negras: tras fxe5 Cxe4 Cf3 la posición es aguda pero equilibrada."
+ },
+ "exf4 e5": {
+  "en": "e5 kicks the knight back: White gains space and follows with Nf3, d4 and Bxf4.",
+  "es": "e5 hace retroceder al caballo: las blancas ganan espacio y siguen con Cf3, d4 y Axf4."
+ },
+ "exf4 e5 Qe7": {
+  "en": "...Qe7 pins the e5-pawn, but Qe2 breaks the pin and renews exf6: the knight has to go back to g8.",
+  "es": "...De7 clava el peón de e5, pero De2 rompe la clavada y renueva exf6: el caballo tiene que volver a g8."
+ },
+ "Nc6": {
+  "en": "...Nc6? fxe5 Nxe5 d4: White's centre pawns chase the knights back.",
+  "es": "¿...Cc6? fxe5 Cxe5 d4: los peones centrales blancos persiguen a los caballos."
+ },
+ "": {
+  "en": "The Vienna Gambit proper: f4 against ...Nf6.",
+  "es": "El Gambito Vienés propiamente dicho: f4 contra ...Cf6."
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "exd5 exf4 Nf3": {
+  "en": "Simple development: Nf3 stops ...Qh4+, and d4 and Bxf4 follow. White keeps the extra d5-pawn for a while.",
+  "es": "Desarrollo sencillo: Cf3 impide ...Dh4+, y siguen d4 y Axf4. Las blancas mantienen un tiempo el peón de más en d5."
+ },
+ "exd5 exf4 Nf3 Qxd5 Nc3 Qe6+ Be2": {
+  "en": "Watch the e-file: once White castles, Bb5+ and Re1 can pin the queen against the king.",
+  "es": "Atento a la columna e: cuando las blancas enroquen, Ab5+ y Te1 pueden clavar la dama contra el rey."
+ },
+ "exd5 Qxd5 Nf3 exf4 Nc3 Qe6+ Be2 Nf6 O-O Bd6 Bb5+ c6": {
+  "en": "The black queen and king share the e-file: Bb5+ and Re1! pin the queen.",
+  "es": "La dama y el rey negros comparten la columna e: Ab5+ y ¡Te1! clavan la dama."
+ },
+ "exd5 exf4 Nf3 Qxd5 Nc3 Qe6+ Be2 Nf6 O-O Bc5+ d4 Bb6": {
+  "en": "Bb5+! c6 Re1: the queen is pinned against the king on the e-file.",
+  "es": "¡Ab5+! c6 Te1: la dama queda clavada contra el rey en la columna e."
+ },
+ "": {
+  "en": "The Falkbeer: take on d5 and keep the extra pawn safely.",
+  "es": "El Falkbeer: toma en d5 y conserva el peón de más con seguridad."
+ }
+}

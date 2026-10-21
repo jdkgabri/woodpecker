@@ -1,0 +1,22 @@
+{
+ "Nf3": {
+  "en": "Nf3 stops ...Qh4+ and prepares d4 and Bxf4. White gives a pawn for a quick centre and the open f-file.",
+  "es": "Cf3 impide ...Dh4+ y prepara d4 y Axf4. Las blancas dan un peón a cambio de un centro rápido y la columna f abierta."
+ },
+ "Nf3 Nc6 d4 g5 d5 Nb8": {
+  "en": "...g5 opened the long diagonal: Qd4! attacks the rook on h8.",
+  "es": "...g5 abrió la gran diagonal: ¡Dd4! ataca la torre de h8."
+ },
+ "Nf3 Nc6 d4 d5 exd5 Qxd5 Nc3 Qd8": {
+  "en": "d5! kicks the knight, and Bb5+, Qe2+ and Bxf4 follow with a big lead in development.",
+  "es": "¡d5! echa al caballo, y siguen Ab5+, De2+ y Axf4 con una gran ventaja en desarrollo."
+ },
+ "Nf3 d6 d4 Bg4 Nc3 Bxf3": {
+  "en": "Qxf3: the queen joins the attack on f7 and the f4-pawn will fall.",
+  "es": "Dxf3: la dama se suma al ataque sobre f7 y el peón de f4 caerá."
+ },
+ "": {
+  "en": "Gambit accepted: Nf3 first, then d4, Bc4 and h4 against ...g5.",
+  "es": "Gambito aceptado: primero Cf3, luego d4, Ac4 y h4 contra ...g5."
+ }
+}

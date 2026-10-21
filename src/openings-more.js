@@ -36,7 +36,11 @@ export const MORE_OPENINGS = [
         es: ['Contraatacar en el centro con ...d5.', 'Mantener el peón con ...g5 solo si es seguro.', 'Aprovechar la diagonal g1–a7 debilitada con ...Ac5.'],
       },
     },
-    lines: [tree('kings-gambit', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 f4')],
+    lines: [tree('kings-gambit', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 f4'),
+      tree('kg-accepted', { en: 'Gambit accepted', es: 'Gambito aceptado' }, 'e4 e5 f4 exf4'),
+    
+      tree('kg-falkbeer', { en: 'Falkbeer Countergambit', es: 'Contragambito Falkbeer' }, 'e4 e5 f4 d5'),
+    ],
   },
   // ---- scotch
   {
@@ -322,7 +326,9 @@ export const MORE_OPENINGS = [
         es: ['Responder a f4 con ...d5!', 'Desarrollar rápido y enrocar antes de que se abra la columna f.', 'Usar la casilla e5 para un caballo.'],
       },
     },
-    lines: [tree('vienna', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nc3')],
+    lines: [tree('vienna', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nc3'),
+      tree('vienna-gambit', { en: 'Vienna Gambit (2...Nf6 3.f4)', es: 'Gambito Vienés (2...Cf6 3.f4)' }, 'e4 e5 Nc3 Nf6 f4'),
+    ],
   },
   // ---- vs scandinavian
   {
