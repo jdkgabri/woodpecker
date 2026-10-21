@@ -1,0 +1,42 @@
+{
+ "": {
+  "en": "The London System: Bf4 before e3, then Nf3, c3, Bd3 and Nbd2 against almost everything. This tree starts at 1.d4, so it covers 1...d5, 1...Nf6, 1...e6 and gambits like the Englund.",
+  "es": "El Sistema Londres: Af4 antes de e3, luego Cf3, c3, Ad3 y Cbd2 contra casi todo. Este árbol empieza en 1.d4, así que cubre 1...d5, 1...Cf6, 1...e6 y gambitos como el Englund."
+ },
+ "d5 Bf4": {
+  "en": "The bishop comes out before e3 locks it in.",
+  "es": "El alfil sale antes de que e3 lo encierre."
+ },
+ "d5 Bf4 Nf6 e3 e6 Nf3 Bd6": {
+  "en": "...Bd6 offers to trade White's best bishop. c3 keeps the structure; Bg3 or Bxd6 are fine too.",
+  "es": "...Ad6 ofrece cambiar el mejor alfil blanco. c3 mantiene la estructura; Ag3 o Axd6 también están bien."
+ },
+ "d5 Bf4 Nf6 e3 e6 Nf3 c5 c3": {
+  "en": "The pyramid c3–d4–e3 is rock solid. Next: Nbd2, Bd3 and O-O, then Ne5 with kingside play.",
+  "es": "La pirámide c3–d4–e3 es sólida como una roca. Después: Cbd2, Ad3 y O-O, y luego Ce5 con juego en el flanco de rey."
+ },
+ "d5 Bf4 Nf6 e3 c5 Nf3 Qb6 Nbd2": {
+  "en": "Against ...Qb6 (hitting b2), Nbd2 or Qc1 keep everything protected; if ...Qxb2, Rb1 and the queen is in trouble.",
+  "es": "Contra ...Db6 (atacando b2), Cbd2 o Dc1 lo mantienen todo protegido; si ...Dxb2, Tb1 y la dama pasa apuros."
+ },
+ "d5 Bf4 Nc6 e3 Bf5 Nf3 Nb4 Bb5+": {
+  "en": "...Nb4 eyes c2, but Bb5+ comes first, and Na3 or Bd3 cover c2 next.",
+  "es": "...Cb4 apunta a c2, pero Ab5+ llega antes, y luego Ca3 o Ad3 cubren c2."
+ },
+ "Nf6 Bf4": {
+  "en": "Against 1...Nf6 the London is the same: Bf4, e3, Nf3, c3, h3 when ...Nh5 is possible.",
+  "es": "Contra 1...Cf6 la Londres es la misma: Af4, e3, Cf3, c3, y h3 cuando ...Ch5 sea posible."
+ },
+ "Nf6 Bf4 g6 e3": {
+  "en": "Against the King's Indian setup, keep the pyramid and play h3, Be2 or Bd3 and O-O; c4 is also possible.",
+  "es": "Contra la estructura India de Rey, mantén la pirámide y juega h3, Ae2 o Ad3 y O-O; c4 también es posible."
+ },
+ "e5": {
+  "en": "The Englund Gambit, a trappy line. Take the pawn and develop carefully.",
+  "es": "El Gambito Englund, una línea llena de trampas. Toma el peón y desarrolla con cuidado."
+ },
+ "e5 dxe5 Nc6 Nf3 Qe7": {
+  "en": "The Englund trap: after Bf4 Qb4+ Bd2 Qxb2, the natural Bc3? loses to ...Bb4! Qd2 Bxc3 Qxc3 Qc1#. Nc3! keeps everything protected.",
+  "es": "La trampa del Englund: tras Af4 Db4+ Ad2 Dxb2, la natural Ac3? pierde por ...¡Ab4! Dd2 Axc3 Dxc3 Dc1#. ¡Cc3! lo mantiene todo protegido."
+ }
+}

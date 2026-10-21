@@ -106,4 +106,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('ruy', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nf3 Nc6 Bb5')],
   },
+  // ---- london
+  {
+    id: 'london', side: 'w', eco: 'D02, A46, A48', puzzles: 'london',
+    name: { en: 'London System', es: 'Sistema Londres' },
+    summary: {
+      en: '1.d4 and Bf4 — the same solid setup against almost everything: Bf4, e3, Nf3, c3, Bd3, Nbd2.',
+      es: '1.d4 y Af4 — la misma estructura sólida contra casi todo: Af4, e3, Cf3, c3, Ad3, Cbd2.',
+    },
+    intro: {
+      en: [
+        'The London is a system rather than a sequence of moves: White develops the dark-squared bishop to f4 before playing e3, then completes a solid pyramid of pawns on c3, d4 and e3.',
+        'It is popular because there is little theory to learn, but you still need to know the critical replies: an early ...c5 with ...Qb6 hitting b2, and setups where Black plays ...Bd6 to trade bishops.',
+      ],
+      es: [
+        'La Londres es un sistema más que una secuencia de jugadas: las blancas desarrollan el alfil de casillas negras a f4 antes de jugar e3 y luego completan una pirámide sólida de peones en c3, d4 y e3.',
+        'Es popular porque hay poca teoría, pero aun así hay que conocer las respuestas críticas: ...c5 temprano con ...Db6 atacando b2, y los planes en los que las negras juegan ...Ad6 para cambiar alfiles.',
+      ],
+    },
+    structure: {
+      en: 'Pawns on c3–d4–e3 against Black\'s d5 (or a King\'s Indian setup). The e5 square is White\'s outpost: a knight there, backed by f4 or the bishop, supports a kingside attack.',
+      es: 'Peones en c3–d4–e3 contra d5 negro (o una estructura India de Rey). La casilla e5 es el puesto avanzado blanco: un caballo allí, apoyado por f4 o el alfil, sostiene un ataque en el flanco de rey.',
+    },
+    plans: {
+      w: {
+        en: ['Bf4, e3, Nf3, c3, Bd3, Nbd2 and castling.', 'Ne5 followed by f4 or Qf3 for a kingside attack.', 'Keep h3 ready so the f4-bishop can retreat to h2 if attacked by ...Nh5.'],
+        es: ['Af4, e3, Cf3, c3, Ad3, Cbd2 y enroque.', 'Ce5 seguido de f4 o Df3 para atacar en el flanco de rey.', 'Tener h3 preparado para que el alfil de f4 se retire a h2 si lo ataca ...Ch5.'],
+      },
+      b: {
+        en: ['...c5 and ...Qb6 against b2.', '...Bd6 to trade the strong f4-bishop.', 'Fianchetto with ...g6 and break with ...e5.'],
+        es: ['...c5 y ...Db6 contra b2.', '...Ad6 para cambiar el fuerte alfil de f4.', 'Fianchetto con ...g6 y ruptura ...e5.'],
+      },
+    },
+    lines: [tree('london', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4')],
+  },
 ];
