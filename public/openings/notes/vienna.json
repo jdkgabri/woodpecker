@@ -1,0 +1,38 @@
+{
+ "": {
+  "en": "The Vienna Gambit: 2.Nc3 and then f4. White opens the f-file and uses the e5 push against Black's king's knight.",
+  "es": "El Gambito Vienés: 2.Cc3 y luego f4. Las blancas abren la columna f y usan el avance e5 contra el caballo de rey negro."
+ },
+ "Nc6 f4": {
+  "en": "f4 hits e5 at once. If ...exf4, Bc4 or Nf3 and d4 give White a strong centre.",
+  "es": "f4 ataca e5 de inmediato. Si ...exf4, Ac4 o Cf3 y d4 dan a las blancas un centro fuerte."
+ },
+ "Nc6 f4 Nf6 fxe5": {
+  "en": "After fxe5 Nxe5, d4! kicks the knight and e5 hits the other one: both black knights are driven back and White dominates the centre.",
+  "es": "Tras fxe5 Cxe5, ¡d4! echa al caballo y e5 ataca al otro: ambos caballos negros retroceden y las blancas dominan el centro."
+ },
+ "Nf6 f4": {
+  "en": "The real Vienna Gambit. Black's best is 3...d5!; slower moves give White a big centre.",
+  "es": "El verdadero Gambito Vienés. Lo mejor para las negras es ¡3...d5!; las jugadas lentas dan a las blancas un gran centro."
+ },
+ "Nf6 f4 exf4 e5": {
+  "en": "e5! kicks the knight: Black's position is uncomfortable and the f4-pawn will fall.",
+  "es": "¡e5! echa al caballo: la posición negra es incómoda y el peón de f4 caerá."
+ },
+ "Nf6 f4 d5 Nf3": {
+  "en": "Against ...d5, take or keep the tension: fxe5 Nxe4 leads to sharp play; Nf3 is the calm choice.",
+  "es": "Contra ...d5, tomar o mantener la tensión: fxe5 Cxe4 lleva a juego agudo; Cf3 es la opción tranquila."
+ },
+ "Nf6 f4 Nc6 fxe5": {
+  "en": "After fxe5 Nxe5, d4! kicks the knight and e5 hits the other one: both black knights are driven back and White dominates the centre.",
+  "es": "Tras fxe5 Cxe5, ¡d4! echa al caballo y e5 ataca al otro: ambos caballos negros retroceden y las blancas dominan el centro."
+ },
+ "Bc5 Nf3": {
+  "en": "Against ...Bc5, Nf3 attacks e5 and prepares d4 or Na4 against the bishop.",
+  "es": "Contra ...Ac5, Cf3 ataca e5 y prepara d4 o Ca4 contra el alfil."
+ },
+ "Bc5 Nf3 Bxf2+ Kxf2": {
+  "en": "The bishop sacrifice on f2 gains nothing: White's king is safe after Kxf2 and the material counts.",
+  "es": "El sacrificio de alfil en f2 no consigue nada: el rey blanco está seguro tras Rxf2 y el material cuenta."
+ }
+}

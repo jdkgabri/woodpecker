@@ -276,4 +276,72 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('french-advance', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e6')],
   },
+  // ---- vienna
+  {
+    id: 'vienna', side: 'w', eco: 'C25–C29', puzzles: 'vienna',
+    name: { en: 'Vienna Game', es: 'Partida Vienesa' },
+    summary: {
+      en: '1.e4 e5 2.Nc3 — flexible development that prepares f4 or Bc4, with many traps.',
+      es: '1.e4 e5 2.Cc3 — desarrollo flexible que prepara f4 o Ac4, con muchas trampas.',
+    },
+    intro: {
+      en: [
+        'With 2.Nc3 White protects e4 and keeps the f-pawn free, so f4 can follow (the Vienna Gambit) once Black has committed.',
+        'Black usually plays 2...Nf6 or 2...Nc6. After 2...Nf6 3.f4 the key reply is 3...d5!, striking in the centre; slow moves let White take over with e5.',
+      ],
+      es: [
+        'Con 2.Cc3 las blancas protegen e4 y dejan libre el peón f, de modo que f4 puede llegar (Gambito Vienés) cuando las negras se hayan comprometido.',
+        'Las negras suelen jugar 2...Cf6 o 2...Cc6. Tras 2...Cf6 3.f4 la respuesta clave es 3...d5!, golpeando en el centro; las jugadas lentas permiten a las blancas tomar la iniciativa con e5.',
+      ],
+    },
+    structure: {
+      en: 'After f4 and fxe5 White gets a half-open f-file and a pawn on e5 that cramps the black knight. If Black strikes with ...d5 first, the centre opens and both sides develop freely.',
+      es: 'Tras f4 y fxe5 las blancas consiguen la columna f semiabierta y un peón en e5 que molesta al caballo negro. Si las negras golpean antes con ...d5, el centro se abre y ambos bandos desarrollan con libertad.',
+    },
+    plans: {
+      w: {
+        en: ['f4 and fxe5 to open the f-file.', 'Push e5 to kick the f6-knight.', 'Bc4 aiming at f7.'],
+        es: ['f4 y fxe5 para abrir la columna f.', 'Empujar e5 para echar al caballo de f6.', 'Ac4 apuntando a f7.'],
+      },
+      b: {
+        en: ['Answer f4 with ...d5!', 'Develop quickly and castle before the f-file opens.', 'Use the e5 square for a knight.'],
+        es: ['Responder a f4 con ...d5!', 'Desarrollar rápido y enrocar antes de que se abra la columna f.', 'Usar la casilla e5 para un caballo.'],
+      },
+    },
+    lines: [tree('vienna', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nc3')],
+  },
+  // ---- vs scandinavian
+  {
+    id: 'vs-scandinavian', side: 'w', vs: 'e4', eco: 'B01', puzzles: 'vs-scandinavian',
+    name: { en: 'Against the Scandinavian', es: 'Contra la Escandinava' },
+    summary: {
+      en: '1.e4 d5 2.exd5 — take the pawn and gain time against the black queen.',
+      es: '1.e4 d5 2.exd5 — tomar el peón y ganar tiempo contra la dama negra.',
+    },
+    intro: {
+      en: [
+        'Against 1...d5 White simply takes and develops with tempo: after 2...Qxd5 3.Nc3 the queen has to move again, and White gets a lead in development and a pawn on d4.',
+        'If Black recaptures with the knight (2...Nf6), White can play d4, Nf3 and c4 to gain space.',
+      ],
+      es: [
+        'Contra 1...d5 las blancas simplemente toman y desarrollan ganando tiempo: tras 2...Dxd5 3.Cc3 la dama tiene que moverse otra vez, y las blancas consiguen ventaja en desarrollo y un peón en d4.',
+        'Si las negras recapturan con el caballo (2...Cf6), las blancas pueden jugar d4, Cf3 y c4 para ganar espacio.',
+      ],
+    },
+    structure: {
+      en: 'White keeps a pawn on d4 against Black\'s c6–e6 (a Caro-Kann-like structure). White has more space and easier development.',
+      es: 'Las blancas mantienen un peón en d4 frente a c6–e6 negro (una estructura parecida a la Caro-Kann). Las blancas tienen más espacio y un desarrollo más fácil.',
+    },
+    plans: {
+      w: {
+        en: ['Nc3 to gain time on the queen.', 'd4, Nf3, Bc4 or Bd3 and castling.', 'Use the extra space; Ne5 is often strong.'],
+        es: ['Cc3 para ganar tiempo sobre la dama.', 'd4, Cf3, Ac4 o Ad3 y enroque.', 'Aprovechar el espacio extra; Ce5 suele ser fuerte.'],
+      },
+      b: {
+        en: ['Put the queen on a5 or d6, safe from attack.', 'Develop the c8-bishop to f5 or g4 before ...e6.', 'Solid setup with ...c6 and ...e6.'],
+        es: ['Colocar la dama en a5 o d6, a salvo de ataques.', 'Desarrollar el alfil de c8 a f5 o g4 antes de ...e6.', 'Estructura sólida con ...c6 y ...e6.'],
+      },
+    },
+    lines: [tree('vs-scandinavian', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 d5')],
+  },
 ];

@@ -1,0 +1,22 @@
+{
+ "": {
+  "en": "Against the Scandinavian: take on d5 and develop with tempo against the black queen (Nc3), then d4, Nf3 and Bc4 or Bd3.",
+  "es": "Contra la Escandinava: toma en d5 y desarrolla ganando tiempo contra la dama negra (Cc3), luego d4, Cf3 y Ac4 o Ad3."
+ },
+ "exd5 Qxd5 Nc3": {
+  "en": "Nc3 gains a tempo on the queen. Its best squares are a5 and d6 (or d8).",
+  "es": "Cc3 gana un tiempo sobre la dama. Sus mejores casillas son a5 y d6 (o d8)."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4": {
+  "en": "d4 claims the centre; Nf3, Bc4 and Bd2 follow, with ideas of Nd5 against the queen.",
+  "es": "d4 ocupa el centro; siguen Cf3, Ac4 y Ad2, con ideas de Cd5 contra la dama."
+ },
+ "exd5 Nf6": {
+  "en": "The Modern Scandinavian: Black regains the pawn with the knight.",
+  "es": "La Escandinava Moderna: las negras recuperan el peón con el caballo."
+ },
+ "exd5 c6": {
+  "en": "The Scandinavian Gambit: taking with dxc6 is safe and keeps a healthy extra pawn.",
+  "es": "El Gambito Escandinavo: tomar con dxc6 es seguro y conserva un peón de más sano."
+ }
+}
