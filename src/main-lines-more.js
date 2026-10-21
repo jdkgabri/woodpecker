@@ -5760,5 +5760,291 @@ export default {
     "es": "...Cb4 y ...Da5, ...Tfb8: la presión en las columnas a y b compensa el peón."
    }
   }
+ },
+ "budapest": {
+  "moves": "d4 Nf6 c4 e5 dxe5 Ng4 Nf3 Nc6 Bf4 Bb4+ Nbd2 Qe7 e3 Ngxe5 Nxe5 Nxe5 Be2 Bc5",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...Nf6 controls e4.",
+    "es": "...Cf6 controla e4."
+   },
+   "3": {
+    "en": "c4 gains space.",
+    "es": "c4 gana espacio."
+   },
+   "4": {
+    "en": "The Budapest Gambit: ...e5 offers a pawn for quick development.",
+    "es": "El Gambito Budapest: ...e5 ofrece un peón a cambio de un desarrollo rápido."
+   },
+   "5": {
+    "en": "White takes.",
+    "es": "Las blancas toman."
+   },
+   "6": {
+    "en": "...Ng4 attacks e5.",
+    "es": "...Cg4 ataca e5."
+   },
+   "7": {
+    "en": "Nf3 defends.",
+    "es": "Cf3 defiende."
+   },
+   "8": {
+    "en": "A second attacker.",
+    "es": "Un segundo atacante."
+   },
+   "9": {
+    "en": "A second defender.",
+    "es": "Un segundo defensor."
+   },
+   "10": {
+    "en": "...Bb4+ develops with check.",
+    "es": "...Ab4+ desarrolla con jaque."
+   },
+   "12": {
+    "en": "...Qe7: a third attacker on e5.",
+    "es": "...De7: un tercer atacante sobre e5."
+   },
+   "14": {
+    "en": "Black wins the pawn back.",
+    "es": "Las negras recuperan el peón."
+   },
+   "16": {
+    "en": "The knight is strong on e5.",
+    "es": "El caballo es fuerte en e5."
+   },
+   "18": {
+    "en": "...Bc5 aims at e3 and f2: material is level and Black is active, though White has the bishop pair.",
+    "es": "...Ac5 apunta a e3 y f2: el material está igualado y las negras están activas, aunque las blancas tienen la pareja de alfiles."
+   }
+  }
+ },
+ "modern": {
+  "moves": "e4 g6 d4 Bg7 Nf3 d6 Nc3 c6 Be3 a6",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "The Modern: Black fianchettoes first.",
+    "es": "La Moderna: las negras hacen primero el fianchetto."
+   },
+   "3": {
+    "en": "White takes the whole centre.",
+    "es": "Las blancas ocupan todo el centro."
+   },
+   "4": {
+    "en": "The bishop on the long diagonal.",
+    "es": "El alfil en la gran diagonal."
+   },
+   "6": {
+    "en": "...d6 controls e5.",
+    "es": "...d6 controla e5."
+   },
+   "8": {
+    "en": "...c6 and ...a6: the flexible setup, preparing ...b5.",
+    "es": "...c6 y ...a6: el esquema flexible, preparando ...b5."
+   },
+   "10": {
+    "en": "...a6 and ...b5 next: Black gains space on the queenside before deciding where the king goes. White has more space.",
+    "es": "...a6 y luego ...b5: las negras ganan espacio en el flanco de dama antes de decidir dónde va el rey. Las blancas tienen más espacio."
+   }
+  }
+ },
+ "vs-english": {
+  "moves": "c4 e5 Nc3 Nf6 g3 Nc6 Bg2 g6",
+  "notes": {
+   "1": {
+    "en": "1.c4: the English.",
+    "es": "1.c4: la Inglesa."
+   },
+   "2": {
+    "en": "...e5: a reversed Sicilian.",
+    "es": "...e5: una Siciliana invertida."
+   },
+   "3": {
+    "en": "The knight fights for d5.",
+    "es": "El caballo lucha por d5."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "The fianchetto.",
+    "es": "El fianchetto."
+   },
+   "6": {
+    "en": "Development, supporting e5.",
+    "es": "Desarrollo, apoyando e5."
+   },
+   "8": {
+    "en": "...g6 and ...Bg7: Black mirrors the setup (the Closed English). Then ...d6 and ...f5 for kingside play.",
+    "es": "...g6 y ...Ag7: las negras copian el esquema (la Inglesa Cerrada). Después ...d6 y ...f5 para jugar en el flanco de rey."
+   }
+  }
+ },
+ "bogo-indian": {
+  "moves": "d4 Nf6 c4 e6 Nf3 Bb4+ Bd2 Be7 Nc3 O-O e4 d5 e5 Ne4 Bd3 Nxd2",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...Nf6 controls e4.",
+    "es": "...Cf6 controla e4."
+   },
+   "3": {
+    "en": "c4 gains space.",
+    "es": "c4 gana espacio."
+   },
+   "4": {
+    "en": "...e6.",
+    "es": "...e6."
+   },
+   "5": {
+    "en": "Nf3 avoids the Nimzo-Indian.",
+    "es": "Cf3 evita la Nimzoindia."
+   },
+   "6": {
+    "en": "The Bogo-Indian: ...Bb4+ develops with check.",
+    "es": "La Bogo-India: ...Ab4+ desarrolla con jaque."
+   },
+   "7": {
+    "en": "Bd2 blocks.",
+    "es": "Ad2 tapa."
+   },
+   "8": {
+    "en": "...Be7: the bishop retreats, and the d2-bishop is now a bit passive.",
+    "es": "...Ae7: el alfil se retira, y el alfil de d2 queda ahora algo pasivo."
+   },
+   "10": {
+    "en": "Castle.",
+    "es": "Enroque."
+   },
+   "12": {
+    "en": "...d5 hits the centre.",
+    "es": "...d5 golpea el centro."
+   },
+   "13": {
+    "en": "e5 kicks the knight.",
+    "es": "e5 echa al caballo."
+   },
+   "14": {
+    "en": "...Ne4: the knight jumps forward.",
+    "es": "...Ce4: el caballo salta adelante."
+   },
+   "16": {
+    "en": "...Nxd2: Black gets the bishop pair. Next ...c5 against the centre. Balanced.",
+    "es": "...Cxd2: las negras obtienen la pareja de alfiles. Después ...c5 contra el centro. Equilibrio."
+   }
+  }
+ },
+ "vs-reti": {
+  "moves": "Nf3 d5 d4 Nf6 Bf4 c6 e3 Bg4 Be2 e6 Nbd2 Bf5",
+  "notes": {
+   "1": {
+    "en": "1.Nf3: a flexible start.",
+    "es": "1.Cf3: un inicio flexible."
+   },
+   "2": {
+    "en": "...d5 takes the centre.",
+    "es": "...d5 toma el centro."
+   },
+   "3": {
+    "en": "d4: a London setup.",
+    "es": "d4: un esquema London."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "6": {
+    "en": "...c6: the Slav-style setup.",
+    "es": "...c6: el esquema tipo Eslava."
+   },
+   "8": {
+    "en": "...Bg4: the bishop comes out before ...e6.",
+    "es": "...Ag4: el alfil sale antes de ...e6."
+   },
+   "10": {
+    "en": "...e6 opens the f8-bishop.",
+    "es": "...e6 abre el alfil de f8."
+   },
+   "12": {
+    "en": "...Bf5 keeps the bishop active on the b1–h7 diagonal. Black is solid; ...Nbd7 and ...Bd6 follow.",
+    "es": "...Af5 mantiene el alfil activo en la diagonal b1–h7. Las negras están sólidas; siguen ...Cbd7 y ...Ad6."
+   }
+  }
+ },
+ "benoni": {
+  "moves": "d4 Nf6 c4 c5 d5 e6 Nc3 exd5 cxd5 d6 e4 g6 Nf3 Bg7 Bd3 O-O O-O a6 a4 Bg4 h3 Bxf3 Qxf3 Re8",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...Nf6 controls e4.",
+    "es": "...Cf6 controla e4."
+   },
+   "3": {
+    "en": "c4 gains space.",
+    "es": "c4 gana espacio."
+   },
+   "4": {
+    "en": "...c5 challenges d4.",
+    "es": "...c5 desafía d4."
+   },
+   "5": {
+    "en": "d5 gains space.",
+    "es": "d5 gana espacio."
+   },
+   "6": {
+    "en": "The Modern Benoni: ...e6.",
+    "es": "La Benoni Moderna: ...e6."
+   },
+   "8": {
+    "en": "...exd5 opens the e-file.",
+    "es": "...exd5 abre la columna e."
+   },
+   "10": {
+    "en": "...d6: the Benoni structure.",
+    "es": "...d6: la estructura Benoni."
+   },
+   "12": {
+    "en": "...g6 and ...Bg7: the bishop presses the long diagonal.",
+    "es": "...g6 y ...Ag7: el alfil presiona la gran diagonal."
+   },
+   "16": {
+    "en": "Castle.",
+    "es": "Enroque."
+   },
+   "18": {
+    "en": "...a6 prepares ...b5.",
+    "es": "...a6 prepara ...b5."
+   },
+   "19": {
+    "en": "a4 stops ...b5.",
+    "es": "a4 impide ...b5."
+   },
+   "20": {
+    "en": "...Bg4 trades the bishop for the knight that supports e5.",
+    "es": "...Ag4 cambia el alfil por el caballo que apoya e5."
+   },
+   "22": {
+    "en": "Black takes on f3.",
+    "es": "Las negras toman en f3."
+   },
+   "24": {
+    "en": "...Re8 hits e4, and ...Nbd7–e5 follows: Black's pieces fight for e5.",
+    "es": "...Te8 ataca e4, y sigue ...Cbd7–e5: las piezas negras luchan por e5."
+   }
+  }
  }
 };
