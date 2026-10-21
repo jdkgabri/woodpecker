@@ -888,4 +888,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('nimzo-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 e6 Nc3')],
   },
+  // ---- catalan
+  {
+    id: 'catalan', side: 'w', eco: 'E00–E09', puzzles: 'catalan',
+    name: { en: 'Catalan Opening', es: 'Apertura Catalana' },
+    summary: {
+      en: '1.d4 Nf6 2.c4 e6 3.g3 — Queen\'s Gambit with a fianchettoed bishop pressing on the long diagonal.',
+      es: '1.d4 Cf6 2.c4 e6 3.g3 — un Gambito de Dama con el alfil en fianchetto presionando la gran diagonal.',
+    },
+    intro: {
+      en: [
+        'The Catalan combines d4 and c4 with a kingside fianchetto. The g2-bishop pushes against Black\'s queenside along the long diagonal, especially after ...d5 and ...dxc4.',
+        'If Black takes on c4, White often gives the pawn time and wins it back with Qa4+ or Qc2; if Black keeps the centre closed, White enjoys long-term pressure.',
+      ],
+      es: [
+        'La Catalana combina d4 y c4 con un fianchetto en el flanco de rey. El alfil de g2 presiona el flanco de dama negro por la gran diagonal, sobre todo tras ...d5 y ...dxc4.',
+        'Si las negras toman en c4, las blancas suelen tomarse su tiempo y recuperar el peón con Da4+ o Dc2; si las negras mantienen el centro cerrado, las blancas disfrutan de una presión duradera.',
+      ],
+    },
+    structure: {
+      en: 'Queen\'s Gambit structure (d4–c4 against d5–e6) with the bishop on g2. The b7 and c6 squares are the main targets; Black aims to free the game with ...c5 or ...e5.',
+      es: 'Estructura de Gambito de Dama (d4–c4 contra d5–e6) con el alfil en g2. Las casillas b7 y c6 son los objetivos principales; las negras buscan liberarse con ...c5 o ...e5.',
+    },
+    plans: {
+      w: {
+        en: ['Bg2, Nf3, castle and press on the long diagonal.', 'Win back the c4-pawn with Qa4+ or Qc2.', 'Use the c-file and the outpost on c6 or e5.'],
+        es: ['Ag2, Cf3, enroque y presión por la gran diagonal.', 'Recuperar el peón de c4 con Da4+ o Dc2.', 'Aprovechar la columna c y los puestos avanzados en c6 o e5.'],
+      },
+      b: {
+        en: ['Take on c4 and try to keep it with ...b5 only when safe.', 'Free the game with ...c5 or ...e5.', 'Develop the c8-bishop to b7 or d7–c6 to fight the g2-bishop.'],
+        es: ['Tomar en c4 e intentar conservarlo con ...b5 solo cuando sea seguro.', 'Liberarse con ...c5 o ...e5.', 'Desarrollar el alfil de c8 a b7 o d7–c6 para luchar contra el de g2.'],
+      },
+    },
+    lines: [tree('catalan', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4 Nf6 c4 e6 g3')],
+  },
 ];

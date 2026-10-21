@@ -1,0 +1,30 @@
+{
+ "": {
+  "en": "The Catalan: d4, c4 and the g2-bishop pressing on the long diagonal. White develops with Bg2, Nf3, O-O and Qc2, and wins back c4 if Black takes it.",
+  "es": "La Catalana: d4, c4 y el alfil de g2 presionando la gran diagonal. Las blancas desarrollan con Ag2, Cf3, O-O y Dc2, y recuperan c4 si las negras lo toman."
+ },
+ "d5 Bg2": {
+  "en": "The bishop goes straight to g2, aiming at d5 and b7.",
+  "es": "El alfil va directamente a g2, apuntando a d5 y b7."
+ },
+ "d5 Bg2 Be7 Nf3 O-O O-O": {
+  "en": "The Closed Catalan. After ...dxc4 or ...c6, Qc2 and later Rd1, Nbd2 or Ne5 keep the pressure.",
+  "es": "La Catalana Cerrada. Tras ...dxc4 o ...c6, Dc2 y más tarde Td1, Cbd2 o Ce5 mantienen la presión."
+ },
+ "d5 Bg2 Be7 Nf3 O-O O-O dxc4 Qc2": {
+  "en": "Qc2 wins the c4-pawn back: Black cannot hold it with ...b5 without weakening the long diagonal.",
+  "es": "Dc2 recupera el peón de c4: las negras no pueden sostenerlo con ...b5 sin debilitar la gran diagonal."
+ },
+ "d5 Bg2 c5 Nf3": {
+  "en": "Against ...c5, castle and use the extra development; an isolated pawn often appears after cxd5.",
+  "es": "Contra ...c5, enroca y aprovecha el desarrollo extra; tras cxd5 suele aparecer un peón aislado."
+ },
+ "Bb4+ Bd2": {
+  "en": "The Bogo-Indian check: Bd2 offers to trade the dark-squared bishops.",
+  "es": "El jaque de la Bogo-India: Ad2 ofrece cambiar los alfiles de casillas oscuras."
+ },
+ "c5": {
+  "en": "...c5 aims for a Benoni; Nf3 and the g2-bishop keep White comfortable.",
+  "es": "...c5 busca una Benoni; Cf3 y el alfil de g2 mantienen a las blancas cómodas."
+ }
+}
