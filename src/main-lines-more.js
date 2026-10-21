@@ -4131,7 +4131,7 @@ export default {
    },
    "27": {
     "en": "d5!? gives up the exchange: the famous line of the Exchange Grünfeld.",
-    "es": "¡?d5 entrega la calidad: la famosa línea del Cambio de la Grünfeld."
+    "es": "d5!? entrega la calidad: la famosa línea del Cambio de la Grünfeld."
    },
    "28": {
     "en": "Black takes the rook.",
