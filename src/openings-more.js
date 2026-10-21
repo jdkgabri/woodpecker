@@ -878,6 +878,8 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('french', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 e6'),
       tree('french-tarrasch', { en: 'Against the Tarrasch (3.Nd2)', es: 'Contra la Tarrasch (3.Cd2)' }, 'e4 e6 d4 d5 Nd2'),
+    
+      tree('french-winawer', { en: 'Winawer (3...Bb4)', es: 'Winawer (3...Ab4)' }, 'e4 e6 d4 d5 Nc3 Bb4'),
     ],
   },
   // ---- nimzo-indian

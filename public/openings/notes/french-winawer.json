@@ -1,0 +1,22 @@
+{
+ "e5 c5": {
+  "en": "...c5 hits the base of the chain at once. After a3 Bxc3+ bxc3 Ne7, Black attacks d4 and c3 while White aims at the kingside (Qg4).",
+  "es": "...c5 golpea de inmediato la base de la cadena. Tras a3 Axc3+ bxc3 Ce7, las negras atacan d4 y c3 mientras las blancas apuntan al flanco de rey (Dg4)."
+ },
+ "exd5 exd5": {
+  "en": "The exchange variation: symmetrical and calm. Black develops easily with ...Nf6 or ...Ne7, ...O-O and ...Bf5 or ...Bg4.",
+  "es": "La variante del cambio: simétrica y tranquila. Las negras desarrollan con facilidad con ...Cf6 o ...Ce7, ...O-O y ...Af5 o ...Ag4."
+ },
+ "Bd3 c5": {
+  "en": "With the bishop pinning c3, ...c5 and ...dxe4 put pressure on d4 and e4 at the same time.",
+  "es": "Con el alfil clavando c3, ...c5 y ...dxe4 presionan a la vez d4 y e4."
+ },
+ "e5 c5 Bd2 Ne7 Nb5 Bxd2+ Qxd2 O-O Nd6": {
+  "en": "The knight on d6 looks scary but is out of play: ...cxd4 takes the d4-pawn.",
+  "es": "El caballo de d6 impresiona pero está fuera de juego: ...cxd4 se lleva el peón de d4."
+ },
+ "": {
+  "en": "The Winawer: ...Bb4 pins the knight; after e5, ...c5 and often ...Bxc3+.",
+  "es": "La Winawer: ...Ab4 clava el caballo; tras e5, ...c5 y a menudo ...Axc3+."
+ }
+}
