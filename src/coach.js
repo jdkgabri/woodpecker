@@ -39,11 +39,15 @@ const KIND_CLASS = { blunder: 'bad', mistake: 'bad', inaccuracy: 'warn', missed:
 
 // ---------- Lichess ----------
 async function fetchGame(id) {
-  const res = await fetch(`${LICHESS}/game/export/${id}?moves=true&clocks=false&evals=false&opening=true`, { headers: { Accept: 'application/json', ...authHeaders() } });
-  if (res.status === 404) throw new Error(t('Game not found on Lichess.'));
+  // /game/export rejects the CORS preflight that the Authorization header triggers; the /api endpoint accepts it
+  const res = await fetch(`${LICHESS}/api/games/export/_ids?moves=true&clocks=false&evals=false&opening=true`, {
+    method: 'POST', body: id, headers: { Accept: 'application/x-ndjson', 'Content-Type': 'text/plain', ...authHeaders() },
+  });
   if (res.status === 401) throw new Error(t('Lichess only shares this game with logged-in users. Connect your Lichess account in Settings and try again.'));
   if (!res.ok) throw new Error(t('Lichess responded {s}', { s: res.status }));
-  return slimGame(await res.json());
+  const line = (await res.text()).split('\n').find(l => l.trim());
+  if (!line) throw new Error(t('Game not found on Lichess.'));
+  return slimGame(JSON.parse(line));
 }
 async function fetchRecent(user) {
   const res = await fetch(`${LICHESS}/api/games/user/${encodeURIComponent(user)}?max=20&moves=true&opening=true`, { headers: { Accept: 'application/x-ndjson', ...authHeaders() } });
