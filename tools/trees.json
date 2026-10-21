@@ -29,7 +29,7 @@
   {"file": "kings-gambit", "root": "e4 e5 f4", "side": "w", "prefer": ["Nf3", "Bc4", "d4", "Nc3", "O-O"]},
   {"file": "vienna", "root": "e4 e5 Nc3", "side": "w", "prefer": ["f4", "Bc4", "Nf3", "d3", "exf5", "fxe5"]},
   {"file": "london", "root": "d4", "side": "w", "prefer": ["Bf4", "e3", "Nf3", "c3", "Bd3", "Nbd2", "h3", "O-O"]},
-  {"file": "catalan", "root": "d4 Nf6 c4 e6 g3", "side": "w", "prefer": ["Bg2", "Nf3", "O-O", "Qc2", "Qa4+", "Qxc4"]},
+  {"file": "catalan", "root": "d4 Nf6 c4 e6 g3", "side": "w", "min_rel": 0.004, "max_depth": 14, "prefer": ["Bg2", "Nf3", "O-O", "Qc2", "Qa4+", "Qxc4"]},
   {"file": "english", "root": "c4", "side": "w", "prefer": ["Nc3", "g3", "Bg2", "Nf3", "O-O", "d3"]},
   {"file": "alapin", "root": "e4 c5", "side": "w", "prefer": ["c3", "d4", "e5", "Nf3", "cxd4", "Bc4", "Bd3"]},
   {"file": "morra", "root": "e4 c5", "side": "w", "prefer": ["d4", "c3", "Nxc3", "Nf3", "Bc4", "O-O", "Qe2", "Rd1"]},
@@ -51,5 +51,8 @@
   {"file": "slav-black", "root": "d4 d5 c4 c6", "side": "b", "prefer": ["Nf6", "dxc4", "Bf5", "e6", "a6", "Nbd7", "Bb4", "O-O"]},
   {"file": "qgd-black", "root": "d4 d5", "side": "b", "prefer": ["e6", "Nf6", "Be7", "O-O", "h6", "b6", "Nbd7", "c6", "c5"]},
   {"file": "benko", "root": "d4 Nf6 c4 c5 d5", "side": "b", "prefer": ["b5", "a6", "Bxa6", "g6", "d6", "Bg7", "Nbd7", "O-O"]},
-  {"file": "budapest", "root": "d4 Nf6 c4 e5", "side": "b", "prefer": ["Ng4", "Nc6", "Bb4+", "Ngxe5", "Qe7", "Bc5"]}
+  {"file": "budapest", "root": "d4 Nf6 c4 e5", "side": "b", "prefer": ["Ng4", "Nc6", "Bb4+", "Ngxe5", "Qe7", "Bc5"]},
+  {"file": "alapin-nf6", "root": "e4 c5 c3 Nf6", "side": "w", "prefer": ["e5", "d4", "Nf3", "cxd4", "Bc4", "Bd3"], "graft": {"into": "alapin", "path": "c3"}},
+  {"file": "french-nc3", "root": "e4 e6 d4 d5 Nc3", "side": "b", "prefer": ["Nf6", "Bb4", "Be7", "dxe4", "c5", "O-O", "Nfd7", "Nc6", "Bxc3+"], "graft": {"into": "french", "path": "d4 d5", "replace": true}},
+  {"file": "nimzo-e3", "root": "d4 Nf6 c4 e6 Nc3 Bb4 e3", "side": "b", "prefer": ["O-O", "c5", "d5", "b6", "Bxc3+", "Nc6"], "graft": {"into": "nimzo-indian", "path": "Bb4"}}
 ]

@@ -220,6 +220,9 @@ class Builder:
 
 
 def build_one(spec):
+    global MIN_REL, MAX_DEPTH
+    MIN_REL = spec.get('min_rel', MIN_REL)      # per-tree limits for unusually deep trees
+    MAX_DEPTH = spec.get('max_depth', MAX_DEPTH)
     board = chess.Board()
     for s in spec['root']:
         board.push_san(s)
@@ -251,6 +254,8 @@ def main():
     if a.only:
         wanted = set(a.only.split(','))
         specs = [s for s in specs if s['file'] in wanted]
+    else:
+        specs = [s for s in specs if 'graft' not in s]  # branches are built on request, then grafted
     if not a.force:
         specs = [s for s in specs if not os.path.exists(os.path.join(OUT, s['file'] + '.json'))]
     print(f'{len(specs)} trees to build', flush=True)
