@@ -616,4 +616,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('grunfeld', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 g6 Nc3')],
   },
+  // ---- queen's indian
+  {
+    id: 'queens-indian', side: 'b', eco: 'E12–E19', puzzles: 'queens-indian',
+    name: { en: 'Queen\'s Indian Defence', es: 'Defensa India de Dama' },
+    summary: {
+      en: '1.d4 Nf6 2.c4 e6 3.Nf3 b6 — control e4 from a distance with the fianchettoed bishop.',
+      es: '1.d4 Cf6 2.c4 e6 3.Cf3 b6 — controlar e4 a distancia con el alfil en fianchetto.',
+    },
+    intro: {
+      en: [
+        'When White avoids the Nimzo-Indian with 3.Nf3, Black plays ...b6 and ...Bb7 (or ...Ba6, hitting c4) to fight for the e4 square.',
+        'It is a solid and flexible defence. White usually fianchettoes too (g3 and Bg2) or plays a3 to prevent ...Bb4.',
+      ],
+      es: [
+        'Cuando las blancas evitan la Nimzoindia con 3.Cf3, las negras juegan ...b6 y ...Ab7 (o ...Aa6, atacando c4) para luchar por la casilla e4.',
+        'Es una defensa sólida y flexible. Las blancas suelen hacer también el fianchetto (g3 y Ag2) o jugar a3 para evitar ...Ab4.',
+      ],
+    },
+    structure: {
+      en: 'Black keeps the centre flexible (e6, d6 or d5) with the bishop on b7 controlling e4. Breaks with ...c5 or ...d5 free the game.',
+      es: 'Las negras mantienen el centro flexible (e6, d6 o d5) con el alfil en b7 controlando e4. Las rupturas ...c5 o ...d5 liberan el juego.',
+    },
+    plans: {
+      b: {
+        en: ['...b6 and ...Bb7 or ...Ba6.', 'Control e4; ...Ne4 when possible.', 'Free the game with ...c5 or ...d5.'],
+        es: ['...b6 y ...Ab7 o ...Aa6.', 'Controlar e4; ...Ce4 cuando sea posible.', 'Liberar el juego con ...c5 o ...d5.'],
+      },
+      w: {
+        en: ['g3 and Bg2 to fight for the long diagonal.', 'Build the centre with Nc3 and e4.', 'a3 to prevent ...Bb4.'],
+        es: ['g3 y Ag2 para luchar por la gran diagonal.', 'Montar el centro con Cc3 y e4.', 'a3 para evitar ...Ab4.'],
+      },
+    },
+    lines: [tree('queens-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 e6 Nf3')],
+  },
 ];

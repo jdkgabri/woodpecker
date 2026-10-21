@@ -1,0 +1,34 @@
+{
+ "": {
+  "en": "The Queen's Indian for Black: ...b6 and ...Bb7 control e4 from a distance. With ...Be7, ...O-O and ...d5 or ...c5 Black gets a solid, flexible game.",
+  "es": "La India de Dama con negras: ...b6 y ...Ab7 controlan e4 a distancia. Con ...Ae7, ...O-O y ...d5 o ...c5 las negras consiguen un juego sólido y flexible."
+ },
+ "b6 Nc3 Bb7": {
+  "en": "The bishop on b7 makes e4 hard for White to play.",
+  "es": "El alfil de b7 hace que e4 sea difícil de jugar para las blancas."
+ },
+ "b6 Nc3 Bb7 Bg5 Be7": {
+  "en": "...Be7 unpins calmly; ...h6 and ...Ne4 can follow to free the game.",
+  "es": "...Ae7 deshace la clavada con calma; pueden seguir ...h6 y ...Ce4 para liberar el juego."
+ },
+ "b6 Nc3 Bb7 Bg5 Be7 e4 Nxe4": {
+  "en": "e4? drops a pawn: it is attacked by the f6-knight and the b7-bishop and defended only once.",
+  "es": "e4? pierde un peón: lo atacan el caballo de f6 y el alfil de b7 y solo está defendido una vez."
+ },
+ "b6 Nc3 Bb7 Bg5 Be7 e3 O-O Bd3 d5 cxd5 Nxd5 Bxe7 Qxe7 e4": {
+  "en": "e4 kicks the d5-knight, but ...Nf4! hits the d3-bishop and g2: Black is very active.",
+  "es": "e4 echa al caballo de d5, pero ¡...Cf4! ataca el alfil de d3 y g2: las negras están muy activas."
+ },
+ "b6 Bg5 Bb7 e3 Be7 Nc3 O-O Bd3 d5 cxd5 Nxd5 Bxe7 Qxe7 e4": {
+  "en": "e4 kicks the d5-knight, but ...Nf4! hits the d3-bishop and g2: Black is very active.",
+  "es": "e4 echa al caballo de d5, pero ¡...Cf4! ataca el alfil de d3 y g2: las negras están muy activas."
+ },
+ "b6 g3 Bb7 Bg2 Be7": {
+  "en": "Against the fianchetto, ...Be7 and ...O-O, then ...d5 or ...Ne4 fight for the centre.",
+  "es": "Contra el fianchetto, ...Ae7 y ...O-O, y luego ...d5 o ...Ce4 luchan por el centro."
+ },
+ "b6 a3 Bb7 Nc3 d5": {
+  "en": "Against the Petrosian (a3), ...d5 takes the centre at once.",
+  "es": "Contra la Petrosian (a3), ...d5 ocupa el centro de inmediato."
+ }
+}
