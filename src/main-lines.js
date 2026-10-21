@@ -1,6 +1,8 @@
 // Main lines of the tree-only lines: the most played reply at every step, answered with the tree's move,
 // with a move-by-move explanation (keys are ply numbers counted from the initial position, as in openings-data.js).
 // A line listed here gets Study and Practise besides Explore and Practise branches.
+// main-lines-more.js holds the rest, in the same format (written with tools, merged below).
+import MORE from './main-lines-more.js';
 const CARO_START = {
   2: { en: '1...c6 prepares ...d5 with the c-pawn behind it: if White ever takes on d5, Black recaptures with a pawn and keeps a foothold in the centre.', es: '1...c6 prepara ...d5 con el peón c detrás: si las blancas toman en d5, las negras recapturan con un peón y mantienen presencia en el centro.' },
   4: { en: 'The point of the Caro-Kann: Black challenges e4 at once. White has to choose: defend it, exchange on d5 or advance with e5.', es: 'La idea de la Caro-Kann: las negras desafían e4 de inmediato. Las blancas deben elegir: defenderlo, cambiar en d5 o avanzar con e5.' },
@@ -76,3 +78,4 @@ export const MAIN_LINES = {
     },
   },
 };
+Object.assign(MAIN_LINES, MORE);
