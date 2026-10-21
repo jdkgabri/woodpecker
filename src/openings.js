@@ -7,6 +7,7 @@ import { pickPuzzlesFromFile } from './puzzles.js';
 import { openAnalysis } from './analysis.js';
 import { sound } from './sound.js';
 import { t, tn, lang, san } from './i18n.js';
+import { treeMemory } from './opening-tree.js';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const tx = obj => (obj ? obj[lang()] ?? obj.en : '');
@@ -60,14 +61,20 @@ export function viewOpenings(app) {
       <p class="small muted">${esc(tx(o.summary))}</p>
       <div class="small muted">${tn(o.lines.length, '{n} line', '{n} lines')}${o.traps?.length ? ' · ' + tn(o.traps.length, '{n} trap', '{n} traps') : ''}</div>
     </a>`;
+  // White openings by White's first move, Black openings by the move they answer
+  const first = o => o.vs || o.lines[0].moves.split(' ')[0];
+  const section = (title, keep, sub) => {
+    const list = OPENINGS.filter(keep);
+    return list.length ? `<h2 class="section-title">${title} <span class="muted small">· ${sub}</span></h2>${list.map(card).join('')}` : '';
+  };
   app.innerHTML = `
     <header class="top"><a class="icon-btn" href="#/">‹</a><h1>${t('Openings')}</h1><span></span></header>
     <main class="wrap">
       <p class="small muted">${t('Ideas, plans and main lines explained move by move, with drills and tactics from each opening.')}</p>
-      <h2 class="section-title">${t('With White')}</h2>
-      ${OPENINGS.filter(o => o.side === 'w').map(card).join('')}
-      <h2 class="section-title">${t('With Black')}</h2>
-      ${OPENINGS.filter(o => o.side === 'b').map(card).join('')}
+      ${section(t('With White'), o => o.side === 'w' && first(o) === 'e4', '1.e4')}
+      ${section(t('With White'), o => o.side === 'w' && first(o) !== 'e4', t('1.d4 and others'))}
+      ${section(t('With Black'), o => o.side === 'b' && first(o) === 'e4', t('against 1.e4'))}
+      ${section(t('With Black'), o => o.side === 'b' && first(o) !== 'e4', t('against 1.d4 and others'))}
     </main>`;
 }
 
@@ -79,24 +86,29 @@ export function viewOpening(app, id, go) {
   const stats = drillStats();
   const lineCard = (l, trap) => {
     const s = stats[`${o.id}/${l.id}`];
-    const preview = numbered(l.moves.split(' ').slice(0, 8)).join(' ') + (l.moves.split(' ').length > 8 ? ' …' : '');
-    return `
-      <div class="card">
-        <strong>${esc(tx(l.name))}</strong>
-        <p class="small muted mono">${esc(preview)}</p>
-        ${s ? `<p class="small ${s.last ? 'muted' : 'ok-text'}">${tn(s.runs, 'Practised {n} time', 'Practised {n} times')} · ${s.last ? tn(s.last, 'last time {n} mistake', 'last time {n} mistakes') : t('last time without mistakes')}</p>` : ''}
-        <div class="grid2">
-          <a class="btn ghost" href="#/opening/${o.id}/${l.id}">📖 ${t('Study')}</a>
-          ${trap ? '' : `<a class="btn primary" href="#/drill/${o.id}/${l.id}">♟ ${t('Practise')}</a>`}
-        </div>
-        ${l.tree ? `
-        <div class="tree-box">
-          <p class="small"><strong>🌳 ${t('All branches')}</strong> · <span class="muted">${t('The replies club players really choose, with the best answer to each.')}</span></p>
+    const sans = l.moves.split(' ');
+    const preview = numbered(sans.slice(0, 8)).join(' ') + (sans.length > 8 ? ' …' : '');
+    const mem = l.tree ? Object.values(treeMemory(`${o.id}/${l.id}`)) : [];
+    const treeBox = l.tree ? `
+        <div class="${l.treeOnly ? '' : 'tree-box'}">
+          ${l.treeOnly ? '' : `<p class="small"><strong>🌳 ${t('All branches')}</strong> · <span class="muted">${t('The replies club players really choose, with the best answer to each.')}</span></p>`}
+          ${mem.length ? `<p class="small muted">${tn(mem.length, '{n} branch practised', '{n} branches practised')} · ${tn(mem.filter(m => m.box >= 2).length, '{n} mastered', '{n} mastered')}</p>` : ''}
           <div class="grid2">
             <a class="btn ghost" href="#/tree/${o.id}/${l.id}">🌳 ${t('Explore')}</a>
             <a class="btn primary" href="#/tdrill/${o.id}/${l.id}">♟ ${t('Practise branches')}</a>
           </div>
-        </div>` : ''}
+        </div>` : '';
+    return `
+      <div class="card">
+        <strong>${esc(tx(l.name))}</strong>
+        <p class="small muted mono">${esc(preview)}</p>
+        ${l.treeOnly ? `<p class="small muted">${esc(tx(l.summary) || t('The replies club players really choose, with the best answer to each.'))}</p>` : `
+        ${s ? `<p class="small ${s.last ? 'muted' : 'ok-text'}">${tn(s.runs, 'Practised {n} time', 'Practised {n} times')} · ${s.last ? tn(s.last, 'last time {n} mistake', 'last time {n} mistakes') : t('last time without mistakes')}</p>` : ''}
+        <div class="grid2">
+          <a class="btn ghost" href="#/opening/${o.id}/${l.id}">📖 ${t('Study')}</a>
+          ${trap ? '' : `<a class="btn primary" href="#/drill/${o.id}/${l.id}">♟ ${t('Practise')}</a>`}
+        </div>`}
+        ${treeBox}
       </div>`;
   };
   const plans = side => o.plans[side] ? `
@@ -117,6 +129,7 @@ export function viewOpening(app, id, go) {
       <h2 class="section-title">${t('Main lines')}</h2>
       ${o.lines.map(l => lineCard(l, false)).join('')}
       ${o.traps?.length ? `<h2 class="section-title">${t('Traps')}</h2>${o.traps.map(l => lineCard(l, true)).join('')}` : ''}
+      ${o.puzzles ? `
       <h2 class="section-title">${t('Tactics from this opening')}</h2>
       <section class="card form">
         <p class="small muted">${t('Puzzles from real games that started with this opening, where you play your side. Train them in cycles like any other set.')}</p>
@@ -130,8 +143,9 @@ export function viewOpening(app, id, go) {
         <input id="ogN" type="number" min="10" max="300" value="50" inputmode="numeric">
         <button class="btn primary full" id="ogCreate">${t('Create set')}</button>
         <p class="small muted" id="ogStatus"></p>
-      </section>
+      </section>` : ''}
     </main>`;
+  if (!o.puzzles) return;
   app.querySelector('#ogCreate').onclick = async e => {
     const btn = e.currentTarget;
     const status = m => { app.querySelector('#ogStatus').textContent = m; };

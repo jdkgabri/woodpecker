@@ -1,7 +1,7 @@
 // Service worker: offline cache + reminder notifications (Web Push).
 import { precacheAndRoute, cleanupOutdatedCaches, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute, NavigationRoute } from 'workbox-routing';
-import { CacheFirst } from 'workbox-strategies';
+import { CacheFirst, StaleWhileRevalidate } from 'workbox-strategies';
 import { ExpirationPlugin } from 'workbox-expiration';
 import { clientsClaim } from 'workbox-core';
 
@@ -12,10 +12,16 @@ precacheAndRoute(self.__WB_MANIFEST);
 cleanupOutdatedCaches();
 registerRoute(new NavigationRoute(createHandlerBoundToURL('index.html')));
 
+// Opening trees and their notes (small, updated with the app): served from cache, refreshed in the background
+registerRoute(
+  ({ url }) => url.pathname.includes('/openings/trees/') || url.pathname.includes('/openings/notes/'),
+  new StaleWhileRevalidate({ cacheName: 'opening-trees', plugins: [new ExpirationPlugin({ maxEntries: 200 })] }),
+);
+
 // Lichess puzzle collection (~1.3 MB per theme) and opening puzzles: cached when used
 registerRoute(
-  ({ url }) => url.pathname.includes('/lichess/') || url.pathname.includes('/openings/'),
-  new CacheFirst({ cacheName: 'lichess-collection', plugins: [new ExpirationPlugin({ maxEntries: 20 })] }),
+  ({ url }) => url.pathname.includes('/lichess/') || url.pathname.includes('/openings/puzzles/'),
+  new CacheFirst({ cacheName: 'lichess-collection', plugins: [new ExpirationPlugin({ maxEntries: 80 })] }),
 );
 
 // Stockfish (~7 MB) is downloaded on first analysis and kept

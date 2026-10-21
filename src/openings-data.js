@@ -4,6 +4,8 @@
 // Trap lines (trap: true) show mistakes on purpose, so they are study-only (no move drill).
 // Every line is checked by scripts/check-openings.mjs (legal moves, notes on existing plies).
 
+import { MORE_OPENINGS } from './openings-more.js';
+
 export const OPENINGS = [
   // =============================================================================================
   {
@@ -666,3 +668,4 @@ export const OPENINGS = [
     ],
   },
 ];
+OPENINGS.push(...MORE_OPENINGS);

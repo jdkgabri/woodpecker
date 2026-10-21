@@ -488,4 +488,11 @@ export const ES = {
   'The replies club players really choose, with the best answer to each.': 'Las respuestas que eligen de verdad los jugadores de club, con la mejor contestación a cada una.',
   'Explore': 'Explorar',
   'Practise branches': 'Practicar ramas',
+  'This move loses about {n} pawns compared with the best one. Find how to punish it.': 'Esta jugada pierde unos {n} peones respecto a la mejor. Busca cómo castigarla.',
+  '{n} branch practised': '{n} rama practicada',
+  '{n} branches practised': '{n} ramas practicadas',
+  '{n} mastered': '{n} dominadas',
+  '1.d4 and others': '1.d4 y otras',
+  'against 1.e4': 'contra 1.e4',
+  'against 1.d4 and others': 'contra 1.d4 y otras',
 };

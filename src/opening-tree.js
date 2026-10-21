@@ -15,12 +15,19 @@ const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;'
 const tx = obj => (obj ? obj[lang()] ?? obj.en : '');
 const toColor = c => (c === 'w' ? 'white' : 'black');
 
+// Notes live in public/openings/notes/<file>.json ({ 'san san …': { en, es } }), or inline in
+// the line (line.tree.notes).
 const cache = new Map();
 async function loadTree(file) {
   if (cache.has(file)) return cache.get(file);
-  const res = await fetch(import.meta.env.BASE_URL + `openings/trees/${file}.json`);
+  const base = import.meta.env.BASE_URL + 'openings/';
+  const [res, notes] = await Promise.all([
+    fetch(base + `trees/${file}.json`),
+    fetch(base + `notes/${file}.json`).then(r => (r.ok ? r.json() : {})).catch(() => ({})),
+  ]);
   if (!res.ok) throw new Error(t('Could not load the opening tree'));
   const tree = await res.json();
+  tree.notes = notes;
   cache.set(file, tree);
   return tree;
 }
@@ -120,8 +127,7 @@ export function viewOpeningTree(app, id, lineId, mode, go, start) {
 
   let tree, list, path = [];  // path: nodes played after the root
   const rootLen = () => tree.root.length;
-  const notes = line.tree.notes || {};
-  const noteOf = p => notes[p.map(n => n.s).join(' ')];
+  const noteOf = p => { const k = p.map(n => n.s).join(' '); return line.tree.notes?.[k] || tree.notes?.[k]; };
   const childrenOf = p => (p.length ? p[p.length - 1].c || [] : tree.c);
 
   function board(p) {
@@ -187,8 +193,9 @@ export function viewOpeningTree(app, id, lineId, mode, go, start) {
     drawMoves(true);
     const cur = path[path.length - 1];
     const n = noteOf(path);
+    const auto = cur && !n && mark(cur) ? t('This move loses about {n} pawns compared with the best one. Find how to punish it.', { n: (cur.l / 100).toFixed(1) }) : '';
     note(cur
-      ? `<strong>${esc(moveLabel(cur, rootLen() + path.length - 1))}</strong> <span class="small muted">${facts(cur)}</span>${n ? '<br>' + esc(tx(n)) : ''}`
+      ? `<strong>${esc(moveLabel(cur, rootLen() + path.length - 1))}</strong> <span class="small muted">${facts(cur)}</span>${n ? '<br>' + esc(tx(n)) : auto ? '<br>' + esc(auto) : ''}`
       : `<strong>${esc(tx(line.name))}</strong>${n ? '<br>' + esc(tx(n)) : ''}`);
     const ply = rootLen() + path.length;
     const ours = c.turn() === o.side;
