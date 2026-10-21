@@ -1,0 +1,34 @@
+{
+ "": {
+  "en": "The Scandinavian for Black: 1...d5 and 2...Qxd5. After 3.Nc3 the queen goes to a5, then ...Nf6, ...c6 and ...Bf5 or ...Bg4 complete a solid setup.",
+  "es": "La Escandinava con negras: 1...d5 y 2...Dxd5. Tras 3.Cc3 la dama va a a5, y luego ...Cf6, ...c6 y ...Af5 o ...Ag4 completan una estructura sólida."
+ },
+ "exd5 Qxd5 Nc3 Qa5": {
+  "en": "On a5 the queen is out of reach of White's minor pieces and watches the a5–e1 diagonal.",
+  "es": "En a5 la dama queda fuera del alcance de las piezas menores blancas y vigila la diagonal a5–e1."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 Nf6": {
+  "en": "Develop the knight, then ...c6 and ...Bf5: the classical Scandinavian setup.",
+  "es": "Desarrolla el caballo, y luego ...c6 y ...Af5: la estructura clásica de la Escandinava."
+ },
+ "exd5 Qxd5 Nf3 Bg4": {
+  "en": "Without Nc3, the queen stays in the centre and ...Bg4 develops with a pin.",
+  "es": "Sin Cc3, la dama se queda en el centro y ...Ag4 desarrolla clavando."
+ },
+ "exd5 Qxd5 d4 Nc6": {
+  "en": "Against an early d4, ...Nc6 hits it at once.",
+  "es": "Contra un d4 temprano, ...Cc6 lo ataca de inmediato."
+ },
+ "exd5 Qxd5 d4 Nc6 Nc3 Qxd4": {
+  "en": "Nc3? drops the d4-pawn: ...Qxd4.",
+  "es": "Cc3? pierde el peón de d4: ...Dxd4."
+ },
+ "e5 Bf5": {
+  "en": "Against 2.e5 the game becomes a Caro-Kann Advance where Black has saved the ...c6 tempo: ...Bf5, ...e6 and ...c5.",
+  "es": "Contra 2.e5 la partida se convierte en un Avance de la Caro-Kann en el que las negras han ahorrado el tiempo de ...c6: ...Af5, ...e6 y ...c5."
+ },
+ "Nf3 dxe4": {
+  "en": "Nf3? just gives a pawn: ...dxe4 and the knight has to move.",
+  "es": "Cf3? simplemente regala un peón: ...dxe4 y el caballo tiene que moverse."
+ }
+}

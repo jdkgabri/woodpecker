@@ -412,4 +412,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('caro-kann', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 c6')],
   },
+  // ---- scandinavian
+  {
+    id: 'scandinavian', side: 'b', eco: 'B01', puzzles: 'scandinavian',
+    name: { en: 'Scandinavian Defence', es: 'Defensa Escandinava' },
+    summary: {
+      en: '1.e4 d5 — challenge e4 at once and take back with the queen.',
+      es: '1.e4 d5 — discutir e4 de inmediato y recapturar con la dama.',
+    },
+    intro: {
+      en: [
+        'The Scandinavian forces matters on move one: after 2.exd5 Qxd5 3.Nc3 the queen retreats (usually to a5 or d6) and Black develops with ...Nf6, ...Bf5 or ...Bg4, ...e6 and ...c6.',
+        'The structure is simple and the plans are easy to learn, which makes it a good practical choice. The danger is White\'s lead in development if Black is careless with the queen.',
+      ],
+      es: [
+        'La Escandinava fuerza la situación en la primera jugada: tras 2.exd5 Dxd5 3.Cc3 la dama se retira (normalmente a a5 o d6) y las negras desarrollan con ...Cf6, ...Af5 o ...Ag4, ...e6 y ...c6.',
+        'La estructura es sencilla y los planes fáciles de aprender, lo que la convierte en una buena opción práctica. El peligro es la ventaja en desarrollo blanca si las negras descuidan la dama.',
+      ],
+    },
+    structure: {
+      en: 'Black gets c6–e6 against White\'s d4, like a Caro-Kann, with the light-squared bishop outside the chain.',
+      es: 'Las negras consiguen c6–e6 frente a d4 blanco, como en la Caro-Kann, con el alfil de casillas blancas fuera de la cadena.',
+    },
+    plans: {
+      b: {
+        en: ['Queen to a5 or d6, then ...Nf6 and ...Bf5 or ...Bg4.', '...c6 and ...e6 for a solid centre.', 'Castle and use the half-open d-file.'],
+        es: ['Dama a a5 o d6, luego ...Cf6 y ...Af5 o ...Ag4.', '...c6 y ...e6 para un centro sólido.', 'Enrocar y aprovechar la columna d semiabierta.'],
+      },
+      w: {
+        en: ['Gain time on the queen with Nc3.', 'd4 and quick development.', 'Use the lead in development before Black castles.'],
+        es: ['Ganar tiempo sobre la dama con Cc3.', 'd4 y desarrollo rápido.', 'Aprovechar la ventaja en desarrollo antes de que las negras enroquen.'],
+      },
+    },
+    lines: [tree('scandinavian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 d5')],
+  },
 ];
