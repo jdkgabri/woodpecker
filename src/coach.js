@@ -191,7 +191,7 @@ export function viewCoachGame(app, id, colorParam, go) {
       </div>`;
     const $ = s => main.querySelector(s);
     cg?.destroy();
-    let solved = false, tries = 0, hints = 0, busy = false;
+    let solved = false, tries = 0, hints = 0, busy = false, waiting = false;
     const chess = () => new Chess(mo.fen);
     const dests = () => {
       const d = new Map();
@@ -217,21 +217,47 @@ export function viewCoachGame(app, id, colorParam, go) {
       $('#coNote').className = 'pfb ' + state;
       $('#coNote').innerHTML = `<div class="pfb-text">${html}</div>`;
     };
-    note(`<strong>${esc(questionFor(mo.lesson, { color: review.color }))}</strong>${mo.lesson === 'book' && mo.book ? `<em>${esc(mo.book.opening)}</em>` : ''}`);
+    const question = () => note(`<strong>${esc(questionFor(mo.lesson, { color: review.color }))}</strong>${mo.lesson === 'book' && mo.book ? `<em>${esc(mo.book.opening)}</em>` : ''}`);
     const actions = () => {
+      const prev = idx > 0 ? `<button class="btn ghost" id="coPrev">‹ ${t('Previous')}</button>` : '';
       $('#coActions').innerHTML = solved
-        ? `<button class="btn ghost" id="coLine">▶ ${t('Show the line')}</button><button class="btn primary" id="coNext">${idx + 1 < total ? t('Next moment') + ' ›' : t('Summary') + ' ›'}</button>`
-        : `<button class="btn ghost" id="coHint">💡 ${t('Hint')}</button><button class="btn ghost" id="coSol">${t('Show the solution')}</button><button class="btn ghost" id="coSkip">${t('Skip')}</button>`;
+        ? `${prev}<button class="btn ghost" id="coLine">▶ ${t('Show the line')}</button><button class="btn primary" id="coNext">${idx + 1 < total ? t('Next moment') + ' ›' : t('Summary') + ' ›'}</button>`
+        : waiting
+          ? `${prev}<button class="btn primary" id="coRetry">↺ ${t('Try again')}</button><button class="btn ghost" id="coHint">💡 ${t('Hint')}</button><button class="btn ghost" id="coSol">${t('Show the solution')}</button>`
+          : `${prev}<button class="btn ghost" id="coHint">💡 ${t('Hint')}</button><button class="btn ghost" id="coSol">${t('Show the solution')}</button><button class="btn ghost" id="coSkip">${t('Skip')}</button>`;
+      if (idx > 0) $('#coPrev').onclick = () => runMoments(review, idx - 1);
       if (solved) {
         $('#coNext').onclick = () => runMoments(review, idx + 1);
         $('#coLine').onclick = playLine;
-      } else {
-        $('#coHint').onclick = hint;
-        $('#coSol').onclick = () => finish(false, true);
-        $('#coSkip').onclick = () => { review.results[idx] = review.results[idx] ?? 'skipped'; saveReview(id, review); runMoments(review, idx + 1); };
+        return;
       }
+      $('#coHint').onclick = () => { if (waiting) retry(); hint(); };
+      $('#coSol').onclick = () => finish(false, true);
+      if (waiting) $('#coRetry').onclick = () => { retry(); question(); };
+      else $('#coSkip').onclick = () => { review.results[idx] = review.results[idx] ?? 'skipped'; saveReview(id, review); runMoments(review, idx + 1); };
     };
+    question();
     actions();
+
+    // after a wrong try the move (and the opponent's answer) stay on the board until "Try again"
+    function retry() {
+      waiting = false;
+      cg.setAutoShapes([]);
+      reset();
+      actions();
+    }
+    function wrongTry(c, reply) {
+      waiting = true;
+      cg.set({ movable: { color: undefined } });
+      if (reply) setTimeout(() => {
+        if (!alive || !waiting) return;
+        let m;
+        try { m = c.move({ from: reply.slice(0, 2), to: reply.slice(2, 4), promotion: reply[4] }); } catch { return; }
+        sound(m.captured ? 'capture' : 'move');
+        cg.set({ fen: c.fen(), lastMove: [m.from, m.to], turnColor: toColor(c.turn()), check: c.inCheck() ? toColor(c.turn()) : false });
+      }, 500);
+      actions();
+    }
 
     function hint() {
       hints++;
@@ -265,7 +291,7 @@ export function viewCoachGame(app, id, colorParam, go) {
     }
 
     async function onMove(orig, dest) {
-      if (solved || busy) { reset(); return; }
+      if (solved || busy || waiting) { reset(); return; }
       const c = chess();
       const piece = c.get(orig);
       const promo = piece?.type === 'p' && (dest[1] === '8' || dest[1] === '1') ? 'q' : '';
@@ -274,17 +300,14 @@ export function viewCoachGame(app, id, colorParam, go) {
       try { mv = c.move({ from: orig, to: dest, promotion: promo || undefined }); } catch { reset(); return; }
       sound(mv.captured ? 'capture' : 'move');
       tries++;
-      if (mo.good.includes(uci)) return finish(true);
+      if (mo.good.includes(uci)) return finish(true, false, null, true);
       if (uci === mo.played) {
         note(`<strong>${t('That is what you played in the game.')}</strong><em>${esc(mo.refute.text)}</em>`, 'bad');
-        cg.setAutoShapes([{ orig: mo.refute.uci.slice(0, 2), dest: mo.refute.uci.slice(2, 4), brush: 'red' }]);
-        setTimeout(() => { if (alive) reset(); }, 900);
-        return;
+        return wrongTry(c, mo.refute.uci);
       }
       if (mo.lesson === 'book') {
         note(`<strong>${t('That is not the move from your tree.')}</strong><em>${t('Try again or look at the solution.')}</em>`, 'warn');
-        setTimeout(() => { if (alive) reset(); }, 900);
-        return;
+        return wrongTry(c, null);
       }
       busy = true;
       note(`<strong>${t('Let me check that move…')}</strong>`);
@@ -294,7 +317,7 @@ export function viewCoachGame(app, id, colorParam, go) {
       if (!alive) return;
       const mine = r ? 100 - winPct(r) : 50;
       const diff = mo.bestWp - mine;
-      if (diff <= 4) return finish(true, false, uci);
+      if (diff <= 4) return finish(true, false, uci, true);
       const reply = r?.pv?.[0];
       let why = '';
       if (reply) {
@@ -303,20 +326,33 @@ export function viewCoachGame(app, id, colorParam, go) {
         why = out.kind !== 'none'
           ? t('After {m}, {what}.', { m: san(s), what: out.text })
           : t('Your opponent answers {m} and is better.', { m: san(s) });
-        cg.setAutoShapes([{ orig: reply.slice(0, 2), dest: reply.slice(2, 4), brush: 'red' }]);
       }
-      if (diff <= 12) note(`<strong>${t('Not bad, but there is something better.')}</strong><em>${esc(why)} ${t('Try again or look at the solution.')}</em>`, 'warn');
+      if (diff <= 12) note(`<strong>${t('Not bad, but there is something better.')}</strong><em>${esc(why)}</em>`, 'warn');
       else note(`<strong>${t('That has a problem.')}</strong><em>${esc(why)}</em>`, 'bad');
-      setTimeout(() => { if (alive) reset(); }, 900);
+      wrongTry(c, reply);
     }
 
-    function finish(correct, shown = false, alt = null) {
+    // keepMove: the user's (good) move stays on the board; otherwise the best move is played from the start
+    function finish(correct, shown = false, alt = null, keepMove = false) {
       solved = true;
+      waiting = false;
       review.results[idx] = correct ? (tries === 1 && !hints ? 'first' : 'solved') : 'shown';
       saveReview(id, review);
-      reset();
-      cg.set({ movable: { color: undefined } });
-      cg.setAutoShapes([{ orig: mo.best.uci.slice(0, 2), dest: mo.best.uci.slice(2, 4), brush: 'green' }]);
+      cg.setAutoShapes([]);
+      if (keepMove) cg.set({ movable: { color: undefined } });
+      else {
+        reset();
+        cg.set({ movable: { color: undefined } });
+        setTimeout(() => {
+          if (!alive) return;
+          const c = chess();
+          const u = mo.best.uci;
+          let m;
+          try { m = c.move({ from: u.slice(0, 2), to: u.slice(2, 4), promotion: u[4] }); } catch { return; }
+          sound(m.captured ? 'capture' : 'move');
+          cg.set({ fen: c.fen(), lastMove: [m.from, m.to], check: c.inCheck() ? toColor(c.turn()) : false });
+        }, 300);
+      }
       const head = correct ? (alt ? t('Good move! The engine slightly prefers {m}.', { m: san(mo.best.san) }) : t('Excellent!')) : t('The best move was {m}.', { m: san(mo.best.san) });
       const lesson = LESSONS[mo.lesson];
       note(`<strong>${esc(head)}</strong><em>${esc(mo.best.text)}</em>`, correct ? 'ok' : 'failed');

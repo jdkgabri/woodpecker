@@ -36,7 +36,7 @@ function setProgress(i, clean) {
   try { localStorage.setItem(PROGRESS, JSON.stringify(all)); } catch {}
 }
 
-const credit = () => `<p class="small muted credit">${t('Based on "100 Endgames You Must Know" by Jesús de la Villa (Esfera Editorial), with permission.')}</p>`;
+const credit = () => `<p class="small muted credit">${t('Based on "100 Endgames You Must Know" by Jesús de la Villa (Esfera Editorial).')}</p>`;
 const goalText = p => (p.goal === 'win'
   ? (p.hero === 'w' ? t('White wins') : t('Black wins'))
   : (p.hero === 'w' ? t('White draws') : t('Black draws')));

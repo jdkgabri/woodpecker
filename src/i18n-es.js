@@ -690,7 +690,7 @@ export const ES = {
   "The exchange removes an active enemy piece.": "El cambio elimina una pieza activa del rival.",
   "The pawn gains space and takes squares away from the enemy pieces.": "El peón gana espacio y quita casillas a las piezas rivales.",
   "The king steps away from future checks and pins.": "El rey se aparta de futuros jaques y clavadas.",
-  "Based on \"100 Endgames You Must Know\" by Jesús de la Villa (Esfera Editorial), with permission.": "Basado en «Los 100 finales que hay que saber», de Jesús de la Villa (Esfera Editorial), con su permiso.",
+  "Based on \"100 Endgames You Must Know\" by Jesús de la Villa (Esfera Editorial).": "Basado en «Los 100 finales que hay que saber», de Jesús de la Villa (Esfera Editorial).",
   "White wins": "Ganan las blancas",
   "Black wins": "Ganan las negras",
   "White draws": "Las blancas hacen tablas",
@@ -728,4 +728,5 @@ export const ES = {
   'The 100 endgames you must know': 'Los 100 finales que hay que saber',
   'Review your Lichess games': 'Revisa tus partidas de Lichess',
   'Your progress': 'Tu progreso',
+  'Try again': 'Reintentar',
 };
