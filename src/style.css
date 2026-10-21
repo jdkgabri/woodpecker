@@ -400,3 +400,13 @@ cg-board {
 .bar.big { height: 8px; background: rgba(128,128,128,.25); border-radius: 4px; overflow: hidden; margin: 8px 0; }
 .bar.big span { display: block; height: 100%; background: var(--accent); transition: width .3s; }
 .moment-row { grid-template-columns: 1fr auto 2em; }
+
+/* Endgames */
+.chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.chip { display: inline-block; min-width: 1.6em; text-align: center; padding: 1px 6px; border-radius: 10px; background: var(--bg2); font-size: .8rem; color: var(--muted); }
+.chip.ok { background: var(--accent); color: var(--accent-fg, #fff); }
+.eg-tabs { display: flex; gap: 8px; padding: 0 16px 10px; }
+.eg-tabs .btn { flex: 1; }
+.eg-idea p { margin: 6px 0; }
+.eg-vars { margin-top: 6px; line-height: 1.5; }
+.credit { font-style: italic; }
