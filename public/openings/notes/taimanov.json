@@ -1,0 +1,42 @@
+{
+ "Nc3 Qc7": {
+  "en": "The main Taimanov setup: ...Qc7 and ...a6, with ...Nf6 and ...Bb4 or ...Be7 later. The pin ...Bb4 on c3 is often the key to tactics on e4.",
+  "es": "El esquema principal de la Taimanov: ...Dc7 y ...a6, con ...Cf6 y ...Ab4 o ...Ae7 más tarde. La clavada ...Ab4 sobre c3 es a menudo la clave de la táctica en e4."
+ },
+ "Nc3 Qc7 Ndb5 Qb8": {
+  "en": "The knight on b5 eyes d6 and c7; ...Qb8 keeps d6 covered and ...a6 kicks the knight next.",
+  "es": "El caballo de b5 apunta a d6 y c7; ...Db8 mantiene controlada d6 y luego ...a6 echa al caballo."
+ },
+ "Nc3 Qc7 Ndb5 Qb8 g3 a6 Bf4": {
+  "en": "Bf4 attacks the queen, but ...e5! blocks with tempo: the bishop is attacked and so is the b5-knight. One of them falls.",
+  "es": "Af4 ataca la dama, pero ¡...e5! tapa ganando tiempo: el alfil queda atacado y también el caballo de b5. Uno de los dos cae."
+ },
+ "Nc3 Qc7 Ndb5 Qb8 Be3 a6 Bb6": {
+  "en": "Bb6?? ignores the attack on b5: ...axb5 wins a piece.",
+  "es": "¿¿Ab6?? ignora el ataque a b5: ...axb5 gana una pieza."
+ },
+ "Nc3 Qc7 Be3 a6 Be2 Nf6 Qd2 Bb4 a3": {
+  "en": "The c3-knight is pinned against the queen on d2: ...Nxe4! wins a pawn and keeps the initiative.",
+  "es": "El caballo de c3 está clavado contra la dama de d2: ¡...Cxe4! gana un peón y mantiene la iniciativa."
+ },
+ "Nc3 Qc7 Nxc6 bxc6": {
+  "en": "Take towards the centre: ...d5 comes next and the b-file opens for the rook.",
+  "es": "Captura hacia el centro: luego llega ...d5 y la columna b se abre para la torre."
+ },
+ "Be3 Nf6 Nc3 Bb4 f3 d5 exd5 Nxd5 Bd2": {
+  "en": "f3 weakened the e1–h4 diagonal: ...Qh4+! g3 Qxd4 wins the knight.",
+  "es": "f3 debilitó la diagonal e1–h4: ¡...Dh4+! g3 Dxd4 gana el caballo."
+ },
+ "Be3 Nf6 Nc3 Bb4 f3 d5 exd5 Nxd5 Qd2": {
+  "en": "...Nxe3 Qxe3 and the d4-knight has one defender against queen and knight: ...Qxd4.",
+  "es": "...Cxe3 Dxe3 y el caballo de d4 tiene un defensor contra dama y caballo: ...Dxd4."
+ },
+ "Be3 Nf6 Nc3 Bb4 Bd3 d5 e5": {
+  "en": "e5 just drops a pawn: ...Nxe5 with the c6-knight.",
+  "es": "e5 simplemente pierde un peón: ...Cxe5 con el caballo de c6."
+ },
+ "": {
+  "en": "The Taimanov: ...e6 and ...Nc6 with ...Qc7 and ...a6. Flexible: the king's knight and bishop wait until White commits.",
+  "es": "La Taimanov: ...e6 y ...Cc6 con ...Dc7 y ...a6. Flexible: el caballo y el alfil de rey esperan a que las blancas se comprometan."
+ }
+}
