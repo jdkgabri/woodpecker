@@ -186,12 +186,14 @@ export function viewCoachGame(app, id, colorParam, go) {
         <div class="info">
           <div class="pfb" id="coNote"></div>
           <div class="coach-extra small" id="coExtra"></div>
+          <div class="coach-answer small" id="coAnswer" hidden></div>
         </div>
+        <div class="coach-ask" id="coAsk"></div>
         <div class="actions" id="coActions"></div>
       </div>`;
     const $ = s => main.querySelector(s);
     cg?.destroy();
-    let solved = false, tries = 0, hints = 0, busy = false, waiting = false;
+    let solved = false, tries = 0, hints = 0, busy = false, waiting = false, exploring = false;
     const chess = () => new Chess(mo.fen);
     const dests = () => {
       const d = new Map();
@@ -226,6 +228,7 @@ export function viewCoachGame(app, id, colorParam, go) {
           ? `${prev}<button class="btn primary" id="coRetry">↺ ${t('Try again')}</button><button class="btn ghost" id="coHint">💡 ${t('Hint')}</button><button class="btn ghost" id="coSol">${t('Show the solution')}</button>`
           : `${prev}<button class="btn ghost" id="coHint">💡 ${t('Hint')}</button><button class="btn ghost" id="coSol">${t('Show the solution')}</button><button class="btn ghost" id="coSkip">${t('Skip')}</button>`;
       if (idx > 0) $('#coPrev').onclick = () => runMoments(review, idx - 1);
+      askChips();
       if (solved) {
         $('#coNext').onclick = () => runMoments(review, idx + 1);
         $('#coLine').onclick = playLine;
@@ -238,6 +241,110 @@ export function viewCoachGame(app, id, colorParam, go) {
     };
     question();
     actions();
+
+    // ---- guided questions to the teacher ----
+    function askChips() {
+      const qs = [['threat', t('What is my opponent threatening?')], ['loose', t('Which pieces are loose?')]];
+      if (!solved) qs.push(['look', t('What should I look for?')]);
+      else {
+        qs.push(['why-best', t('Why is this move good?')]);
+        if (mo.played && mo.lesson !== 'book') qs.push(['why-bad', t('Why was my move bad?')]);
+        qs.push(['explore', t('What if I play something else?')]);
+      }
+      $('#coAsk').innerHTML = `<p class="small muted">❓ ${t('Ask your teacher')}</p><div class="chips">${qs.map(([k, l]) => `<button class="chip" data-ask="${k}">${esc(l)}</button>`).join('')}</div>`;
+      $('#coAsk').querySelectorAll('[data-ask]').forEach(b => b.onclick = () => ask(b.dataset.ask, b.textContent));
+    }
+    const answer = (q, html) => {
+      const el = $('#coAnswer');
+      el.hidden = false;
+      el.innerHTML = `<p><b>${esc(q)}</b></p>${html}`;
+    };
+    async function ask(kind, q) {
+      if (busy) return;
+      const me = review.color, them = me === 'w' ? 'b' : 'w';
+      if (kind === 'look') { answer(q, ''); $('#coAnswer').hidden = true; return hint(); }
+      // answers refer to the moment's position
+      exploring = false;
+      if (waiting) retry(); else reset();
+      if (kind === 'loose') {
+        const c = chess();
+        const list = side => hangingPieces(c, side).map(h => t('{piece} on {sq}', { piece: thePiece(h.type), sq: h.square }));
+        const mine = list(me), theirs = list(them);
+        cg.setAutoShapes([...hangingPieces(c, me).map(h => ({ orig: h.square, brush: 'red' })), ...hangingPieces(c, them).map(h => ({ orig: h.square, brush: 'green' }))]);
+        return answer(q, `<p>${mine.length ? esc(t('Yours (red): {list}. They are attacked and not defended well enough.', { list: mine.join(', ') })) : esc(t('None of your pieces is loose.'))}</p>
+          <p>${theirs.length ? esc(t('Your opponent\'s (green): {list}. Maybe you can win one of them.', { list: theirs.join(', ') })) : esc(t('None of your opponent\'s pieces is loose.'))}</p>`);
+      }
+      if (kind === 'threat') {
+        if (chess().inCheck()) return answer(q, `<p>${esc(t('You are in check: the first thing is to get out of it.'))}</p>`);
+        const nf = nullMoveFen(mo.fen);
+        if (!nf) return answer(q, `<p>${esc(t('I cannot tell in this position.'))}</p>`);
+        busy = true;
+        answer(q, `<p class="muted">${esc(t('Let me look…'))}</p>`);
+        engine ||= new Engine();
+        const th = (await engine.search(nf, { multipv: 1, movetime: 600 }))[0];
+        busy = false;
+        if (!alive) return;
+        const u = th?.pv?.[0];
+        const out = u ? lineOutcome(nf, th.pv, th.mate != null ? th.mate : null, 8, th.cp) : { kind: 'none' };
+        if (u && (out.kind === 'mate' || (out.kind === 'material' && out.gain >= 1))) {
+          cg.setAutoShapes([{ orig: u.slice(0, 2), dest: u.slice(2, 4), brush: 'red' }]);
+          const s = new Chess(nf).move({ from: u.slice(0, 2), to: u.slice(2, 4), promotion: u[4] }).san;
+          return answer(q, `<p>${esc(t('If it were your opponent\'s move, they would play {m}: {why}', { m: san(s), why: `${describeMove(nf, u)}, ${out.text}` }))}</p>`);
+        }
+        return answer(q, `<p>${esc(t('Nothing concrete: even if your opponent moved twice in a row, they would not win anything. You have time to improve your position.'))}</p>`);
+      }
+      if (kind === 'why-best') {
+        const ideas = strategicIdeas(mo.fen, mo.best.uci).filter(i => !mo.best.text.includes(i.text)).slice(0, 3).map(i => `<li>${esc(i.text)}</li>`).join('');
+        return answer(q, `<p>${esc(mo.best.text)}</p>${ideas ? `<ul>${ideas}</ul>` : ''}`);
+      }
+      if (kind === 'why-bad') {
+        cg.setAutoShapes([{ orig: mo.refute.uci.slice(0, 2), dest: mo.refute.uci.slice(2, 4), brush: 'red' }]);
+        const dmg = (mo.damage || []).map(d => `<li>${esc(d)}</li>`).join('');
+        const played = t('you played {m}.', { m: san(mo.playedSan) });
+        return answer(q, `<p>${esc(played[0].toUpperCase() + played.slice(1))} ${esc(mo.refute.text)}</p>${dmg ? `<ul>${dmg}</ul>` : ''}`);
+      }
+      if (kind === 'explore') {
+        exploring = true;
+        cg.setAutoShapes([]);
+        cg.set({ fen: mo.fen, turnColor: toColor(me), lastMove: undefined, check: chess().inCheck() ? toColor(me) : false, movable: { color: toColor(me), dests: dests() } });
+        return answer(q, `<p>${esc(t('Play any move on the board and I will tell you what happens. It does not count as a try.'))}</p>`);
+      }
+    }
+    async function explore(orig, dest) {
+      const c = chess();
+      const piece = c.get(orig);
+      const promo = piece?.type === 'p' && (dest[1] === '8' || dest[1] === '1') ? 'q' : '';
+      let mv;
+      try { mv = c.move({ from: orig, to: dest, promotion: promo || undefined }); } catch { return; }
+      sound(mv.captured ? 'capture' : 'move');
+      cg.set({ movable: { color: undefined } });
+      if (orig + dest + promo === mo.played) {
+        cg.setAutoShapes([{ orig: mo.refute.uci.slice(0, 2), dest: mo.refute.uci.slice(2, 4), brush: 'red' }]);
+        answer(t('What if I play something else?'), `<p><b>${esc(t('That is what you played in the game.'))}</b> ${esc(mo.refute.text)}</p><p><button class="btn ghost" id="coExploreAgain">↺ ${t('Try another move')}</button></p>`);
+        $('#coExploreAgain').onclick = () => ask('explore', t('What if I play something else?'));
+        return;
+      }
+      busy = true;
+      answer(t('What if I play something else?'), `<p class="muted">${esc(t('Let me check that move…'))}</p>`);
+      engine ||= new Engine();
+      const r = (await engine.search(c.fen(), { multipv: 1, movetime: TRY_MS }))[0];
+      busy = false;
+      if (!alive) return;
+      const diff = mo.bestWp - (r ? 100 - winPct(r) : 50);
+      const reply = r?.pv?.[0];
+      let why = '';
+      if (reply) {
+        const out = lineOutcome(c.fen(), r.pv, r.mate != null ? r.mate : null, 8, r.cp);
+        const s = new Chess(c.fen()).move({ from: reply.slice(0, 2), to: reply.slice(2, 4), promotion: reply[4] }).san;
+        why = out.kind !== 'none' ? t('After {m}, {what}.', { m: san(s), what: out.text }) : t('Your opponent would answer {m}.', { m: san(s) });
+        cg.setAutoShapes([{ orig: reply.slice(0, 2), dest: reply.slice(2, 4), brush: 'red' }]);
+      }
+      const verdict = diff <= 4 ? t('{m} is also a good move.', { m: san(mv.san) })
+        : diff <= 12 ? t('{m} is playable, but worse than {b}.', { m: san(mv.san), b: san(mo.best.san) })
+          : t('{m} is a mistake.', { m: san(mv.san) });
+      answer(t('What if I play something else?'), `<p><b>${esc(verdict)}</b> ${esc(why)}</p><p><button class="btn ghost" id="coExploreAgain">↺ ${t('Try another move')}</button></p>`);
+      $('#coExploreAgain').onclick = () => ask('explore', t('What if I play something else?'));
+    }
 
     // after a wrong try the move (and the opponent's answer) stay on the board until "Try again"
     function retry() {
@@ -291,6 +398,7 @@ export function viewCoachGame(app, id, colorParam, go) {
     }
 
     async function onMove(orig, dest) {
+      if (exploring && solved && !busy) return explore(orig, dest);
       if (solved || busy || waiting) { reset(); return; }
       const c = chess();
       const piece = c.get(orig);
@@ -370,6 +478,8 @@ export function viewCoachGame(app, id, colorParam, go) {
       const c = chess();
       const pv = mo.best.pv.slice(0, 6);
       let i = 0;
+      exploring = false;
+      cg.set({ movable: { color: undefined } });
       cg.setAutoShapes([]);
       const step = () => {
         if (!alive || i >= pv.length) return;

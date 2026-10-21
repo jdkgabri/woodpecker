@@ -416,3 +416,9 @@ cg-board {
 .home-tile { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 12px; text-decoration: none; color: inherit; }
 .home-tile .tile-icon { font-size: 1.5rem; line-height: 1.2; }
 .home-tile small { line-height: 1.25; }
+
+/* coach: guided questions */
+.coach-ask { margin-top: 10px; }
+.coach-ask .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.coach-answer { margin-top: 8px; padding: 10px 12px; border-radius: 10px; background: var(--card2, rgba(127,127,127,.12)); }
+.coach-answer ul { margin: 6px 0 0 18px; padding: 0; }
