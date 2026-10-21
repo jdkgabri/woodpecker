@@ -1,0 +1,34 @@
+{
+ "": {
+  "en": "The Benko Gambit for Black: after 3.d5, ...b5! gives a pawn to open the a- and b-files. With ...a6, ...Bxa6, ...g6, ...Bg7, ...d6 and ...O-O Black gets long-lasting queenside pressure.",
+  "es": "El Gambito Benko con negras: tras 3.d5, ¡...b5! entrega un peón para abrir las columnas a y b. Con ...a6, ...Axa6, ...g6, ...Ag7, ...d6 y ...O-O las negras consiguen una presión duradera en el flanco de dama."
+ },
+ "b5 cxb5 a6": {
+  "en": "The point: Black offers a second pawn to open the files completely.",
+  "es": "La idea: las negras ofrecen un segundo peón para abrir del todo las columnas."
+ },
+ "b5 cxb5 a6 bxa6 g6": {
+  "en": "Usually Black recaptures on a6 later with the bishop; first ...g6 and ...Bg7 prepare the long diagonal.",
+  "es": "Normalmente las negras recapturan en a6 más tarde con el alfil; primero ...g6 y ...Ag7 preparan la gran diagonal."
+ },
+ "b5 cxb5 a6 Nc3 axb5": {
+  "en": "If White declines the second pawn, ...axb5 opens the a-file anyway.",
+  "es": "Si las blancas rehúsan el segundo peón, ...axb5 abre la columna a de todos modos."
+ },
+ "b5 b3": {
+  "en": "Declining with b3 keeps the c4-pawn protected; ...g6 and ...Bg7 develop normally.",
+  "es": "Rehusar con b3 mantiene protegido el peón de c4; ...g6 y ...Ag7 desarrollan con normalidad."
+ },
+ "b5 Nc3 b4": {
+  "en": "...b4 kicks the knight: from b1 or a4 it is out of play.",
+  "es": "...b4 echa al caballo: desde b1 o a4 queda fuera de juego."
+ },
+ "b5 Nc3 b4 Nb5 a6": {
+  "en": "Nb5? walks into ...a6: the knight has no safe square.",
+  "es": "Cb5? se mete en ...a6: el caballo no tiene casilla segura."
+ },
+ "b5 e3 bxc4 Bxc4 Ba6": {
+  "en": "...Ba6 trades White's good bishop; the open b-file belongs to Black.",
+  "es": "...Aa6 cambia el alfil bueno de las blancas; la columna b abierta pertenece a las negras."
+ }
+}

@@ -752,4 +752,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('qgd-black', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5')],
   },
+  // ---- benko
+  {
+    id: 'benko', side: 'b', vs: 'd4', eco: 'A57–A59', puzzles: 'benko',
+    name: { en: 'Benko Gambit', es: 'Gambito Benko' },
+    summary: {
+      en: '1.d4 Nf6 2.c4 c5 3.d5 b5 — a pawn for long-term pressure on the a- and b-files.',
+      es: '1.d4 Cf6 2.c4 c5 3.d5 b5 — un peón a cambio de presión duradera por las columnas a y b.',
+    },
+    intro: {
+      en: [
+        'When White advances d5, Black gives a pawn with ...b5. After cxb5 a6 bxa6 Bxa6 the rooks use the open a- and b-files and the g7-bishop rakes the long diagonal.',
+        'The compensation lasts even into the endgame, which makes it a favourite of players who like clear plans rather than sharp tactics.',
+      ],
+      es: [
+        'Cuando las blancas avanzan d5, las negras entregan un peón con ...b5. Tras cxb5 a6 bxa6 Axa6 las torres usan las columnas a y b abiertas y el alfil de g7 barre la gran diagonal.',
+        'La compensación dura incluso en el final, por eso la eligen jugadores que prefieren planes claros a la táctica aguda.',
+      ],
+    },
+    structure: {
+      en: 'White\'s pawn on d5 and an extra queenside pawn; Black\'s pawns on c5 and d6 with open a- and b-files and the bishop on g7.',
+      es: 'Peón blanco en d5 y un peón de más en el flanco de dama; peones negros en c5 y d6 con las columnas a y b abiertas y el alfil en g7.',
+    },
+    plans: {
+      b: {
+        en: ['...b5, ...a6 and ...Bxa6.', '...g6, ...Bg7, ...d6 and ...O-O.', 'Rooks on a8 and b8, queen on a5 or b6.'],
+        es: ['...b5, ...a6 y ...Axa6.', '...g6, ...Ag7, ...d6 y ...O-O.', 'Torres en a8 y b8, dama en a5 o b6.'],
+      },
+      w: {
+        en: ['Keep the extra pawn and trade pieces.', 'Central break with e4–e5.', 'Decline with Nf3 or a4 if you prefer.'],
+        es: ['Conservar el peón extra y cambiar piezas.', 'Ruptura central con e4–e5.', 'Rehusar con Cf3 o a4 si lo prefieres.'],
+      },
+    },
+    lines: [tree('benko', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 c5 d5')],
+  },
 ];
