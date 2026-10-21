@@ -1,106 +1,434 @@
 {
-  "sicilian": [
-    ["accel-dragon", "Accelerated Dragon", "Dragón Acelerado", "e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 g6",
-     "The Accelerated Dragon: ...g6 before ...d6, so Black can later play ...d5 in one move. White's main tries are the Maróczy Bind (c4) and Nc3 with Be3.",
-     "El Dragón Acelerado: ...g6 antes de ...d6, para poder jugar más tarde ...d5 de una vez. Los intentos principales de las blancas son el Bind de Maróczy (c4) y Cc3 con Ae3."],
-    ["hyper-dragon", "Hyperaccelerated Dragon", "Dragón Hiperacelerado", "e4 c5 Nf3 g6",
-     "The Hyperaccelerated Dragon: 2...g6 at once. Black keeps the option of ...Nc6, ...d6 or ...d5 depending on White's setup.",
-     "El Dragón Hiperacelerado: 2...g6 de inmediato. Las negras mantienen la opción de ...Cc6, ...d6 o ...d5 según el esquema blanco."],
-    ["taimanov", "Taimanov", "Taimanov", "e4 c5 Nf3 e6 d4 cxd4 Nxd4 Nc6",
-     "The Taimanov: ...e6 and ...Nc6 with ...Qc7 and ...a6. Flexible: the king's knight and bishop wait until White commits.",
-     "La Taimanov: ...e6 y ...Cc6 con ...Dc7 y ...a6. Flexible: el caballo y el alfil de rey esperan a que las blancas se comprometan."],
-    ["kan", "Kan (Paulsen)", "Kan (Paulsen)", "e4 c5 Nf3 e6 d4 cxd4 Nxd4 a6",
-     "The Kan: ...e6 and ...a6, keeping the knights at home and controlling b5. ...Qc7, ...Nf6 and ...b5 follow.",
-     "La Kan: ...e6 y ...a6, dejando los caballos en casa y controlando b5. Siguen ...Dc7, ...Cf6 y ...b5."],
-    ["sveshnikov", "Sveshnikov", "Sveshnikov", "e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 Nf6 Nc3 e5",
-     "The Sveshnikov: ...e5 gains time on the knight and accepts a hole on d5 for active piece play and the bishop pair.",
-     "La Sveshnikov: ...e5 gana tiempo sobre el caballo y acepta un agujero en d5 a cambio de piezas activas y la pareja de alfiles."],
-    ["classical-sicilian", "Classical (...Nc6 and ...d6)", "Clásica (...Cc6 y ...d6)", "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 Nc6",
-     "The Classical Sicilian: ...d6, ...Nf6 and ...Nc6. Against the Richter-Rauzer (Bg5), ...e6 and ...Bd7 are the usual answers.",
-     "La Siciliana Clásica: ...d6, ...Cf6 y ...Cc6. Contra la Richter-Rauzer (Ag5), ...e6 y ...Ad7 son las respuestas habituales."],
-    ["scheveningen", "Scheveningen", "Scheveningen", "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 e6",
-     "The Scheveningen: the small centre e6–d6 is solid and flexible. Watch out for the Keres Attack (g4).",
-     "La Scheveningen: el pequeño centro e6–d6 es sólido y flexible. Cuidado con el Ataque Keres (g4)."],
-    ["old-sicilian", "Old Sicilian (...e5 early)", "Siciliana Antigua (...e5 temprano)", "e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 e5",
-     "The Old Sicilian (Löwenthal-style): ...e5 kicks the knight at once. Black must be careful about the d5-square and the b5-knight jump.",
-     "La Siciliana Antigua (estilo Löwenthal): ...e5 echa al caballo de inmediato. Las negras deben cuidar la casilla d5 y el salto del caballo a b5."],
-    ["vs-grand-prix", "Against the Grand Prix Attack", "Contra el Ataque Grand Prix", "e4 c5 Nc3 Nc6 f4",
-     "The Grand Prix Attack: White plays f4 and Bc4 or Bb5 and attacks on the kingside. ...g6, ...Bg7, ...d6 and ...e6 keep Black solid.",
-     "El Ataque Grand Prix: las blancas juegan f4 y Ac4 o Ab5 y atacan en el flanco de rey. ...g6, ...Ag7, ...d6 y ...e6 mantienen sólidas a las negras."],
-    ["vs-rossolimo", "Against the Rossolimo (3.Bb5)", "Contra la Rossolimo (3.Ab5)", "e4 c5 Nf3 Nc6 Bb5",
-     "The Rossolimo: White threatens Bxc6 and doubled pawns. ...g6 and ...Bg7 is the main answer.",
-     "La Rossolimo: las blancas amenazan Axc6 y peones doblados. ...g6 y ...Ag7 es la respuesta principal."],
-    ["vs-moscow", "Against the Moscow (3.Bb5+)", "Contra la Moscú (3.Ab5+)", "e4 c5 Nf3 d6 Bb5+",
-     "The Moscow Variation: White trades the light-squared bishops. ...Bd7 is simple and solid.",
-     "La Variante Moscú: las blancas cambian los alfiles de casillas blancas. ...Ad7 es sencilla y sólida."],
-    ["vs-closed-sicilian", "Against the Closed Sicilian", "Contra la Siciliana Cerrada", "e4 c5 Nc3 Nc6 g3",
-     "The Closed Sicilian: White fianchettoes and plays slowly. Mirror the setup with ...g6 and ...Bg7 and play on the queenside with ...Rb8 and ...b5.",
-     "La Siciliana Cerrada: las blancas hacen el fianchetto y juegan con calma. Copia la estructura con ...g6 y ...Ag7 y juega en el flanco de dama con ...Tb8 y ...b5."]
+ "sicilian": [
+  [
+   "accel-dragon",
+   "Accelerated Dragon",
+   "Dragón Acelerado",
+   "e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 g6",
+   "The Accelerated Dragon: ...g6 before ...d6, so Black can later play ...d5 in one move. White's main tries are the Maróczy Bind (c4) and Nc3 with Be3.",
+   "El Dragón Acelerado: ...g6 antes de ...d6, para poder jugar más tarde ...d5 de una vez. Los intentos principales de las blancas son el Bind de Maróczy (c4) y Cc3 con Ae3."
   ],
-  "ruy-lopez": [
-    ["ruy-closed", "Closed Ruy Lopez", "Española Cerrada", "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O",
-     "The Closed Ruy Lopez: h3 and d4, then the knight goes Nbd2–f1–g3 towards the kingside.",
-     "La Española Cerrada: h3 y d4, y luego el caballo va Cbd2–f1–g3 hacia el flanco de rey."],
-    ["ruy-berlin", "Berlin Defence", "Defensa Berlinesa", "e4 e5 Nf3 Nc6 Bb5 Nf6",
-     "The Berlin: Black counterattacks e4. After O-O Nxe4 d4 the famous Berlin endgame can arise.",
-     "La Berlinesa: las negras contraatacan e4. Tras O-O Cxe4 d4 puede surgir el famoso final berlinés."],
-    ["ruy-exchange", "Exchange Variation", "Variante del Cambio", "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6",
-     "The Exchange Variation: White gives the bishop pair to damage Black's structure and aims for a better endgame with the healthy kingside majority.",
-     "La Variante del Cambio: las blancas entregan la pareja de alfiles para dañar la estructura negra y buscan un final mejor con su mayoría sana en el flanco de rey."],
-    ["ruy-open", "Open Variation", "Variante Abierta", "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4",
-     "The Open Ruy Lopez: Black takes on e4 and gets active pieces; White hits back with d4 and Re1.",
-     "La Española Abierta: las negras toman en e4 y consiguen piezas activas; las blancas contraatacan con d4 y Te1."],
-    ["ruy-marshall", "Anti-Marshall", "Anti-Marshall", "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O",
-     "Against ...O-O (inviting the Marshall Gambit), a4 or h3 avoid the sharpest theory.",
-     "Contra ...O-O (que invita al Gambito Marshall), a4 o h3 evitan la teoría más aguda."]
+  [
+   "hyper-dragon",
+   "Hyperaccelerated Dragon",
+   "Dragón Hiperacelerado",
+   "e4 c5 Nf3 g6",
+   "The Hyperaccelerated Dragon: 2...g6 at once. Black keeps the option of ...Nc6, ...d6 or ...d5 depending on White's setup.",
+   "El Dragón Hiperacelerado: 2...g6 de inmediato. Las negras mantienen la opción de ...Cc6, ...d6 o ...d5 según el esquema blanco."
   ],
-  "scotch": [
-    ["scotch-classical", "Classical (4...Bc5)", "Clásica (4...Ac5)", "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Bc5", "Against 4...Bc5, trade on c6 or play Be3 and c3.", "Contra 4...Ac5, cambia en c6 o juega Ae3 y c3."],
-    ["scotch-mieses", "Mieses (4...Nf6)", "Mieses (4...Cf6)", "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Nf6", "Against 4...Nf6, Nxc6 and e5 gain space.", "Contra 4...Cf6, Cxc6 y e5 ganan espacio."]
+  [
+   "taimanov",
+   "Taimanov",
+   "Taimanov",
+   "e4 c5 Nf3 e6 d4 cxd4 Nxd4 Nc6",
+   "The Taimanov: ...e6 and ...Nc6 with ...Qc7 and ...a6. Flexible: the king's knight and bishop wait until White commits.",
+   "La Taimanov: ...e6 y ...Cc6 con ...Dc7 y ...a6. Flexible: el caballo y el alfil de rey esperan a que las blancas se comprometan."
   ],
-  "kings-gambit": [
-    ["kg-accepted", "Gambit accepted", "Gambito aceptado", "e4 e5 f4 exf4", "Gambit accepted: Nf3 first, then d4, Bc4 and h4 against ...g5.", "Gambito aceptado: primero Cf3, luego d4, Ac4 y h4 contra ...g5."],
-    ["kg-falkbeer", "Falkbeer Countergambit", "Contragambito Falkbeer", "e4 e5 f4 d5", "The Falkbeer: take on d5 and keep the extra pawn safely.", "El Falkbeer: toma en d5 y conserva el peón de más con seguridad."]
+  [
+   "kan",
+   "Kan (Paulsen)",
+   "Kan (Paulsen)",
+   "e4 c5 Nf3 e6 d4 cxd4 Nxd4 a6",
+   "The Kan: ...e6 and ...a6, keeping the knights at home and controlling b5. ...Qc7, ...Nf6 and ...b5 follow.",
+   "La Kan: ...e6 y ...a6, dejando los caballos en casa y controlando b5. Siguen ...Dc7, ...Cf6 y ...b5."
   ],
-  "vienna": [
-    ["vienna-gambit", "Vienna Gambit (2...Nf6 3.f4)", "Gambito Vienés (2...Cf6 3.f4)", "e4 e5 Nc3 Nf6 f4", "The Vienna Gambit proper: f4 against ...Nf6.", "El Gambito Vienés propiamente dicho: f4 contra ...Cf6."],
-    ["vienna-nc6", "Against 2...Nc6", "Contra 2...Cc6", "e4 e5 Nc3 Nc6", "Against 2...Nc6: Bc4 or f4.", "Contra 2...Cc6: Ac4 o f4."]
+  [
+   "sveshnikov",
+   "Sveshnikov",
+   "Sveshnikov",
+   "e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 Nf6 Nc3 e5",
+   "The Sveshnikov: ...e5 gains time on the knight and accepts a hole on d5 for active piece play and the bishop pair.",
+   "La Sveshnikov: ...e5 gana tiempo sobre el caballo y acepta un agujero en d5 a cambio de piezas activas y la pareja de alfiles."
   ],
-  "london": [
-    ["london-d5", "Against 1...d5", "Contra 1...d5", "d4 d5 Bf4", "The classical London against ...d5: e3, Nf3, c3, Bd3, Nbd2.", "La Londres clásica contra ...d5: e3, Cf3, c3, Ad3, Cbd2."],
-    ["london-kid", "Against the King's Indian setup", "Contra la estructura India de Rey", "d4 Nf6 Bf4 g6", "Against ...g6, keep the pyramid and add h3 to save the bishop.", "Contra ...g6, mantén la pirámide y añade h3 para conservar el alfil."]
+  [
+   "classical-sicilian",
+   "Classical (...Nc6 and ...d6)",
+   "Clásica (...Cc6 y ...d6)",
+   "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 Nc6",
+   "The Classical Sicilian: ...d6, ...Nf6 and ...Nc6. Against the Richter-Rauzer (Bg5), ...e6 and ...Bd7 are the usual answers.",
+   "La Siciliana Clásica: ...d6, ...Cf6 y ...Cc6. Contra la Richter-Rauzer (Ag5), ...e6 y ...Ad7 son las respuestas habituales."
   ],
-  "english": [
-    ["english-e5", "Reversed Sicilian (1...e5)", "Siciliana Invertida (1...e5)", "c4 e5", "1...e5: a Sicilian with colours reversed and an extra tempo for White.", "1...e5: una Siciliana con colores invertidos y un tiempo de más para las blancas."],
-    ["english-symmetrical", "Symmetrical (1...c5)", "Simétrica (1...c5)", "c4 c5", "1...c5: fight for d5 and the long diagonal.", "1...c5: lucha por d5 y la gran diagonal."]
+  [
+   "scheveningen",
+   "Scheveningen",
+   "Scheveningen",
+   "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 e6",
+   "The Scheveningen: the small centre e6–d6 is solid and flexible. Watch out for the Keres Attack (g4).",
+   "La Scheveningen: el pequeño centro e6–d6 es sólido y flexible. Cuidado con el Ataque Keres (g4)."
   ],
-  "alapin": [
-    ["alapin-d5", "Against 2...d5", "Contra 2...d5", "e4 c5 c3 d5", "Against 2...d5: exd5 Qxd5 and d4, gaining time on the queen.", "Contra 2...d5: exd5 Dxd5 y d4, ganando tiempo sobre la dama."]
+  [
+   "old-sicilian",
+   "Old Sicilian (...e5 early)",
+   "Siciliana Antigua (...e5 temprano)",
+   "e4 c5 Nf3 Nc6 d4 cxd4 Nxd4 e5",
+   "The Old Sicilian (Löwenthal-style): ...e5 kicks the knight at once. Black must be careful about the d5-square and the b5-knight jump.",
+   "La Siciliana Antigua (estilo Löwenthal): ...e5 echa al caballo de inmediato. Las negras deben cuidar la casilla d5 y el salto del caballo a b5."
   ],
-  "french": [
-    ["french-winawer", "Winawer (3...Bb4)", "Winawer (3...Ab4)", "e4 e6 d4 d5 Nc3 Bb4", "The Winawer: ...Bb4 pins the knight; after e5, ...c5 and often ...Bxc3+.", "La Winawer: ...Ab4 clava el caballo; tras e5, ...c5 y a menudo ...Axc3+."],
-    ["french-tarrasch", "Against the Tarrasch (3.Nd2)", "Contra la Tarrasch (3.Cd2)", "e4 e6 d4 d5 Nd2", "Against 3.Nd2: ...c5 or ...Nf6.", "Contra 3.Cd2: ...c5 o ...Cf6."],
-    ["french-advance-black", "Against the Advance (3.e5)", "Contra el Avance (3.e5)", "e4 e6 d4 d5 e5", "Against the Advance: ...c5, ...Nc6, ...Qb6 and ...Nge7–f5.", "Contra el Avance: ...c5, ...Cc6, ...Db6 y ...Cge7–f5."]
+  [
+   "vs-grand-prix",
+   "Against the Grand Prix Attack",
+   "Contra el Ataque Grand Prix",
+   "e4 c5 Nc3 Nc6 f4",
+   "The Grand Prix Attack: White plays f4 and Bc4 or Bb5 and attacks on the kingside. ...g6, ...Bg7, ...d6 and ...e6 keep Black solid.",
+   "El Ataque Grand Prix: las blancas juegan f4 y Ac4 o Ab5 y atacan en el flanco de rey. ...g6, ...Ag7, ...d6 y ...e6 mantienen sólidas a las negras."
   ],
-  "caro-kann": [
-    ["caro-classical", "Classical (4...Bf5)", "Clásica (4...Af5)", "e4 c6 d4 d5 Nc3 dxe4 Nxe4 Bf5", "The Classical: ...Bf5–g6, ...Nd7 and ...Ngf6.", "La Clásica: ...Af5–g6, ...Cd7 y ...Cgf6."],
-    ["caro-advance-black", "Against the Advance", "Contra el Avance", "e4 c6 d4 d5 e5 Bf5", "Against the Advance: ...e6, ...c5 and ...Nc6.", "Contra el Avance: ...e6, ...c5 y ...Cc6."],
-    ["caro-panov", "Against the Panov Attack", "Contra el Ataque Panov", "e4 c6 d4 d5 exd5 cxd5 c4", "Against the Panov: ...Nf6, ...e6 and play against the isolated pawn.", "Contra el Panov: ...Cf6, ...e6 y juego contra el peón aislado."]
+  [
+   "vs-rossolimo",
+   "Against the Rossolimo (3.Bb5)",
+   "Contra la Rossolimo (3.Ab5)",
+   "e4 c5 Nf3 Nc6 Bb5",
+   "The Rossolimo: White threatens Bxc6 and doubled pawns. ...g6 and ...Bg7 is the main answer.",
+   "La Rossolimo: las blancas amenazan Axc6 y peones doblados. ...g6 y ...Ag7 es la respuesta principal."
   ],
-  "pirc": [
-    ["pirc-austrian", "Against the Austrian Attack (f4)", "Contra el Ataque Austriaco (f4)", "e4 d6 d4 Nf6 Nc3 g6 f4", "Against f4: ...Bg7, ...O-O and ...c5.", "Contra f4: ...Ag7, ...O-O y ...c5."],
-    ["pirc-150", "Against the 150 Attack (Be3)", "Contra el Ataque 150 (Ae3)", "e4 d6 d4 Nf6 Nc3 g6 Be3", "Against Be3 and Qd2: ...c6 and ...b5.", "Contra Ae3 y Dd2: ...c6 y ...b5."]
+  [
+   "vs-moscow",
+   "Against the Moscow (3.Bb5+)",
+   "Contra la Moscú (3.Ab5+)",
+   "e4 c5 Nf3 d6 Bb5+",
+   "The Moscow Variation: White trades the light-squared bishops. ...Bd7 is simple and solid.",
+   "La Variante Moscú: las blancas cambian los alfiles de casillas blancas. ...Ad7 es sencilla y sólida."
   ],
-  "kings-indian": [
-    ["kid-classical", "Classical (7.Be2 e5 8.O-O)", "Clásica (7.Ae2 e5 8.O-O)", "d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 Nf3 O-O Be2 e5", "The Classical: ...Nc6 and, after d5, ...Ne7, ...Ne8 and ...f5.", "La Clásica: ...Cc6 y, tras d5, ...Ce7, ...Ce8 y ...f5."],
-    ["kid-samisch", "Against the Sämisch (f3)", "Contra la Sämisch (f3)", "d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 f3", "Against the Sämisch: ...O-O and ...c5 or ...e5.", "Contra la Sämisch: ...O-O y ...c5 o ...e5."],
-    ["kid-fianchetto", "Against the Fianchetto (g3)", "Contra el Fianchetto (g3)", "d4 Nf6 c4 g6 Nf3 Bg7 g3", "Against the fianchetto: ...O-O, ...d6 and ...Nc6 or ...Nbd7 with ...e5.", "Contra el fianchetto: ...O-O, ...d6 y ...Cc6 o ...Cbd7 con ...e5."]
-  ],
-  "grunfeld": [
-    ["grunfeld-exchange", "Exchange Variation", "Variante del Cambio", "d4 Nf6 c4 g6 Nc3 d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7", "The Exchange main line: ...c5, ...O-O, ...Nc6 and pressure on d4.", "La línea principal del Cambio: ...c5, ...O-O, ...Cc6 y presión sobre d4."]
-  ],
-  "nimzo-indian": [
-    ["nimzo-qc2", "Classical (4.Qc2)", "Clásica (4.Dc2)", "d4 Nf6 c4 e6 Nc3 Bb4 Qc2", "Against 4.Qc2: ...O-O and ...d5 or ...c5.", "Contra 4.Dc2: ...O-O y ...d5 o ...c5."],
-    ["nimzo-samisch", "Sämisch (4.a3)", "Sämisch (4.a3)", "d4 Nf6 c4 e6 Nc3 Bb4 a3", "Against 4.a3: ...Bxc3+ and play against the doubled c-pawns.", "Contra 4.a3: ...Axc3+ y juego contra los peones c doblados."]
+  [
+   "vs-closed-sicilian",
+   "Against the Closed Sicilian",
+   "Contra la Siciliana Cerrada",
+   "e4 c5 Nc3 Nc6 g3",
+   "The Closed Sicilian: White fianchettoes and plays slowly. Mirror the setup with ...g6 and ...Bg7 and play on the queenside with ...Rb8 and ...b5.",
+   "La Siciliana Cerrada: las blancas hacen el fianchetto y juegan con calma. Copia la estructura con ...g6 y ...Ag7 y juega en el flanco de dama con ...Tb8 y ...b5."
   ]
+ ],
+ "ruy-lopez": [
+  [
+   "ruy-closed",
+   "Closed Ruy Lopez",
+   "Española Cerrada",
+   "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O",
+   "The Closed Ruy Lopez: h3 and d4, then the knight goes Nbd2–f1–g3 towards the kingside.",
+   "La Española Cerrada: h3 y d4, y luego el caballo va Cbd2–f1–g3 hacia el flanco de rey."
+  ],
+  [
+   "ruy-berlin",
+   "Berlin Defence",
+   "Defensa Berlinesa",
+   "e4 e5 Nf3 Nc6 Bb5 Nf6",
+   "The Berlin: Black counterattacks e4. After O-O Nxe4 d4 the famous Berlin endgame can arise.",
+   "La Berlinesa: las negras contraatacan e4. Tras O-O Cxe4 d4 puede surgir el famoso final berlinés."
+  ],
+  [
+   "ruy-exchange",
+   "Exchange Variation",
+   "Variante del Cambio",
+   "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6",
+   "The Exchange Variation: White gives the bishop pair to damage Black's structure and aims for a better endgame with the healthy kingside majority.",
+   "La Variante del Cambio: las blancas entregan la pareja de alfiles para dañar la estructura negra y buscan un final mejor con su mayoría sana en el flanco de rey."
+  ],
+  [
+   "ruy-open",
+   "Open Variation",
+   "Variante Abierta",
+   "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4",
+   "The Open Ruy Lopez: Black takes on e4 and gets active pieces; White hits back with d4 and Re1.",
+   "La Española Abierta: las negras toman en e4 y consiguen piezas activas; las blancas contraatacan con d4 y Te1."
+  ],
+  [
+   "ruy-marshall",
+   "Anti-Marshall",
+   "Anti-Marshall",
+   "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O",
+   "Against ...O-O (inviting the Marshall Gambit), a4 or h3 avoid the sharpest theory.",
+   "Contra ...O-O (que invita al Gambito Marshall), a4 o h3 evitan la teoría más aguda."
+  ]
+ ],
+ "scotch": [
+  [
+   "scotch-classical",
+   "Classical (4...Bc5)",
+   "Clásica (4...Ac5)",
+   "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Bc5",
+   "Against 4...Bc5, trade on c6 or play Be3 and c3.",
+   "Contra 4...Ac5, cambia en c6 o juega Ae3 y c3."
+  ],
+  [
+   "scotch-mieses",
+   "Mieses (4...Nf6)",
+   "Mieses (4...Cf6)",
+   "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Nf6",
+   "Against 4...Nf6, Nxc6 and e5 gain space.",
+   "Contra 4...Cf6, Cxc6 y e5 ganan espacio."
+  ]
+ ],
+ "kings-gambit": [
+  [
+   "kg-accepted",
+   "Gambit accepted",
+   "Gambito aceptado",
+   "e4 e5 f4 exf4",
+   "Gambit accepted: Nf3 first, then d4, Bc4 and h4 against ...g5.",
+   "Gambito aceptado: primero Cf3, luego d4, Ac4 y h4 contra ...g5."
+  ],
+  [
+   "kg-falkbeer",
+   "Falkbeer Countergambit",
+   "Contragambito Falkbeer",
+   "e4 e5 f4 d5",
+   "The Falkbeer: take on d5 and keep the extra pawn safely.",
+   "El Falkbeer: toma en d5 y conserva el peón de más con seguridad."
+  ]
+ ],
+ "vienna": [
+  [
+   "vienna-gambit",
+   "Vienna Gambit (2...Nf6 3.f4)",
+   "Gambito Vienés (2...Cf6 3.f4)",
+   "e4 e5 Nc3 Nf6 f4",
+   "The Vienna Gambit proper: f4 against ...Nf6.",
+   "El Gambito Vienés propiamente dicho: f4 contra ...Cf6."
+  ],
+  [
+   "vienna-nc6",
+   "Against 2...Nc6",
+   "Contra 2...Cc6",
+   "e4 e5 Nc3 Nc6",
+   "Against 2...Nc6: Bc4 or f4.",
+   "Contra 2...Cc6: Ac4 o f4."
+  ]
+ ],
+ "london": [
+  [
+   "london-d5",
+   "Against 1...d5",
+   "Contra 1...d5",
+   "d4 d5 Bf4",
+   "The classical London against ...d5: e3, Nf3, c3, Bd3, Nbd2.",
+   "La Londres clásica contra ...d5: e3, Cf3, c3, Ad3, Cbd2."
+  ],
+  [
+   "london-kid",
+   "Against the King's Indian setup",
+   "Contra la estructura India de Rey",
+   "d4 Nf6 Bf4 g6",
+   "Against ...g6, keep the pyramid and add h3 to save the bishop.",
+   "Contra ...g6, mantén la pirámide y añade h3 para conservar el alfil."
+  ]
+ ],
+ "english": [
+  [
+   "english-e5",
+   "Reversed Sicilian (1...e5)",
+   "Siciliana Invertida (1...e5)",
+   "c4 e5",
+   "1...e5: a Sicilian with colours reversed and an extra tempo for White.",
+   "1...e5: una Siciliana con colores invertidos y un tiempo de más para las blancas."
+  ],
+  [
+   "english-symmetrical",
+   "Symmetrical (1...c5)",
+   "Simétrica (1...c5)",
+   "c4 c5",
+   "1...c5: fight for d5 and the long diagonal.",
+   "1...c5: lucha por d5 y la gran diagonal."
+  ]
+ ],
+ "alapin": [
+  [
+   "alapin-d5",
+   "Against 2...d5",
+   "Contra 2...d5",
+   "e4 c5 c3 d5",
+   "Against 2...d5: exd5 Qxd5 and d4, gaining time on the queen.",
+   "Contra 2...d5: exd5 Dxd5 y d4, ganando tiempo sobre la dama."
+  ]
+ ],
+ "french": [
+  [
+   "french-winawer",
+   "Winawer (3...Bb4)",
+   "Winawer (3...Ab4)",
+   "e4 e6 d4 d5 Nc3 Bb4",
+   "The Winawer: ...Bb4 pins the knight; after e5, ...c5 and often ...Bxc3+.",
+   "La Winawer: ...Ab4 clava el caballo; tras e5, ...c5 y a menudo ...Axc3+."
+  ],
+  [
+   "french-tarrasch",
+   "Against the Tarrasch (3.Nd2)",
+   "Contra la Tarrasch (3.Cd2)",
+   "e4 e6 d4 d5 Nd2",
+   "Against 3.Nd2: ...c5 or ...Nf6.",
+   "Contra 3.Cd2: ...c5 o ...Cf6."
+  ],
+  [
+   "french-advance-black",
+   "Against the Advance (3.e5)",
+   "Contra el Avance (3.e5)",
+   "e4 e6 d4 d5 e5",
+   "Against the Advance: ...c5, ...Nc6, ...Qb6 and ...Nge7–f5.",
+   "Contra el Avance: ...c5, ...Cc6, ...Db6 y ...Cge7–f5."
+  ]
+ ],
+ "caro-kann": [
+  [
+   "caro-classical",
+   "Classical (4...Bf5)",
+   "Clásica (4...Af5)",
+   "e4 c6 d4 d5 Nc3 dxe4 Nxe4 Bf5",
+   "The Classical: ...Bf5–g6, ...Nd7 and ...Ngf6.",
+   "La Clásica: ...Af5–g6, ...Cd7 y ...Cgf6."
+  ],
+  [
+   "caro-advance-black",
+   "Against the Advance",
+   "Contra el Avance",
+   "e4 c6 d4 d5 e5 Bf5",
+   "Against the Advance: ...e6, ...c5 and ...Nc6.",
+   "Contra el Avance: ...e6, ...c5 y ...Cc6."
+  ],
+  [
+   "caro-panov",
+   "Against the Panov Attack",
+   "Contra el Ataque Panov",
+   "e4 c6 d4 d5 exd5 cxd5 c4",
+   "Against the Panov: ...Nf6, ...e6 and play against the isolated pawn.",
+   "Contra el Panov: ...Cf6, ...e6 y juego contra el peón aislado."
+  ]
+ ],
+ "pirc": [
+  [
+   "pirc-austrian",
+   "Against the Austrian Attack (f4)",
+   "Contra el Ataque Austriaco (f4)",
+   "e4 d6 d4 Nf6 Nc3 g6 f4",
+   "Against f4: ...Bg7, ...O-O and ...c5.",
+   "Contra f4: ...Ag7, ...O-O y ...c5."
+  ],
+  [
+   "pirc-150",
+   "Against the 150 Attack (Be3)",
+   "Contra el Ataque 150 (Ae3)",
+   "e4 d6 d4 Nf6 Nc3 g6 Be3",
+   "Against Be3 and Qd2: ...c6 and ...b5.",
+   "Contra Ae3 y Dd2: ...c6 y ...b5."
+  ]
+ ],
+ "kings-indian": [
+  [
+   "kid-classical",
+   "Classical (7.Be2 e5 8.O-O)",
+   "Clásica (7.Ae2 e5 8.O-O)",
+   "d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 Nf3 O-O Be2 e5",
+   "The Classical: ...Nc6 and, after d5, ...Ne7, ...Ne8 and ...f5.",
+   "La Clásica: ...Cc6 y, tras d5, ...Ce7, ...Ce8 y ...f5."
+  ],
+  [
+   "kid-samisch",
+   "Against the Sämisch (f3)",
+   "Contra la Sämisch (f3)",
+   "d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 f3",
+   "Against the Sämisch: ...O-O and ...c5 or ...e5.",
+   "Contra la Sämisch: ...O-O y ...c5 o ...e5."
+  ],
+  [
+   "kid-fianchetto",
+   "Against the Fianchetto (g3)",
+   "Contra el Fianchetto (g3)",
+   "d4 Nf6 c4 g6 Nf3 Bg7 g3",
+   "Against the fianchetto: ...O-O, ...d6 and ...Nc6 or ...Nbd7 with ...e5.",
+   "Contra el fianchetto: ...O-O, ...d6 y ...Cc6 o ...Cbd7 con ...e5."
+  ]
+ ],
+ "grunfeld": [
+  [
+   "grunfeld-exchange",
+   "Exchange Variation",
+   "Variante del Cambio",
+   "d4 Nf6 c4 g6 Nc3 d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7",
+   "The Exchange main line: ...c5, ...O-O, ...Nc6 and pressure on d4.",
+   "La línea principal del Cambio: ...c5, ...O-O, ...Cc6 y presión sobre d4."
+  ]
+ ],
+ "nimzo-indian": [
+  [
+   "nimzo-qc2",
+   "Classical (4.Qc2)",
+   "Clásica (4.Dc2)",
+   "d4 Nf6 c4 e6 Nc3 Bb4 Qc2",
+   "Against 4.Qc2: ...O-O and ...d5 or ...c5.",
+   "Contra 4.Dc2: ...O-O y ...d5 o ...c5."
+  ],
+  [
+   "nimzo-samisch",
+   "Sämisch (4.a3)",
+   "Sämisch (4.a3)",
+   "d4 Nf6 c4 e6 Nc3 Bb4 a3",
+   "Against 4.a3: ...Bxc3+ and play against the doubled c-pawns.",
+   "Contra 4.a3: ...Axc3+ y juego contra los peones c doblados."
+  ]
+ ],
+ "open-games-black": [
+  [
+   "eb-four-knights",
+   "Against the Four Knights (3.Nc3)",
+   "Contra los Cuatro Caballos (3.Cc3)",
+   "e4 e5 Nf3 Nc6 Nc3",
+   "The Four Knights: White develops calmly. ...Nf6 makes it symmetrical; then ...Bb4 or ...Bc5 and quick castling.",
+   "Los Cuatro Caballos: las blancas desarrollan con calma. ...Cf6 lo hace simétrico; después ...Ab4 o ...Ac5 y enroque rápido."
+  ],
+  [
+   "eb-bishops",
+   "Against the Bishop's Opening (2.Bc4)",
+   "Contra la Apertura de Alfil (2.Ac4)",
+   "e4 e5 Bc4",
+   "The Bishop's Opening: ...Nf6 attacks e4 at once and keeps the option of ...c6 and ...d5.",
+   "La Apertura de Alfil: ...Cf6 ataca e4 de inmediato y mantiene la opción de ...c6 y ...d5."
+  ],
+  [
+   "eb-ponziani",
+   "Against the Ponziani (3.c3)",
+   "Contra la Ponziani (3.c3)",
+   "e4 e5 Nf3 Nc6 c3",
+   "The Ponziani: c3 prepares d4 but takes c3 from the knight. ...Nf6 or ...d5 strike before White's centre is ready.",
+   "La Ponziani: c3 prepara d4 pero le quita c3 al caballo. ...Cf6 o ...d5 golpean antes de que el centro blanco esté listo."
+  ],
+  [
+   "eb-danish",
+   "Against the Centre Game and Danish Gambit (2.d4)",
+   "Contra el Centro y el Gambito Danés (2.d4)",
+   "e4 e5 d4",
+   "2.d4: take with ...exd4. Against the Danish (3.c3), ...d5 gives back the pawn and frees Black's game.",
+   "2.d4: toma con ...exd4. Contra el Danés (3.c3), ...d5 devuelve el peón y libera el juego negro."
+  ]
+ ],
+ "vs-london": [
+  [
+   "vs-trompowsky",
+   "Against the Trompowsky (2.Bg5)",
+   "Contra el Trompowsky (2.Ag5)",
+   "d4 Nf6 Bg5",
+   "The Trompowsky: ...Ne4 hits the bishop at once; ...c5 and ...Qb6 against b2 are typical ideas.",
+   "El Trompowsky: ...Ce4 ataca el alfil de inmediato; ...c5 y ...Db6 contra b2 son ideas típicas."
+  ],
+  [
+   "vs-colle",
+   "Against the Colle (e3, Bd3)",
+   "Contra el Colle (e3, Ad3)",
+   "d4 d5 Nf3 Nf6 e3",
+   "Against the Colle, ...c5 and ...Nc6 hit d4 before White plays e4; ...Bg4 develops the bishop outside the chain.",
+   "Contra el Colle, ...c5 y ...Cc6 atacan d4 antes de que las blancas jueguen e4; ...Ag4 saca el alfil fuera de la cadena."
+  ],
+  [
+   "vs-jobava",
+   "Against the Jobava London (2.Nc3)",
+   "Contra la London Jobava (2.Cc3)",
+   "d4 d5 Nc3",
+   "Against 2.Nc3 and Bf4, cover b5 and c7: ...Nf6 with ...c6 or ...a6, and ...Bf5 or ...e6.",
+   "Contra 2.Cc3 y Af4, cubre b5 y c7: ...Cf6 con ...c6 o ...a6, y ...Af5 o ...e6."
+  ],
+  [
+   "vs-bdg",
+   "Against the Blackmar-Diemer Gambit (2.e4)",
+   "Contra el Gambito Blackmar-Diemer (2.e4)",
+   "d4 d5 e4",
+   "The Blackmar-Diemer: take the pawn and develop. White's attack is dangerous only if Black ignores development and king safety.",
+   "El Blackmar-Diemer: toma el peón y desarrolla. El ataque blanco solo es peligroso si las negras descuidan el desarrollo y la seguridad del rey."
+  ]
+ ]
 }

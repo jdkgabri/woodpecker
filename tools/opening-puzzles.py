@@ -71,9 +71,9 @@ GROUPS = {
     'albin': ('b', has('Queens_Gambit_Declined_Albin_Countergambit')),
     'colle': ('w', has('Queens_Pawn_Game_Colle_System', 'Queens_Pawn_Game_Zukertort_Variation')),
     'philidor': ('b', has('Philidor_Defense', exclude=('Philidor_Defense_Lion_Variation',))),
-    'open-games-black': ('b', has('Italian_Game', 'Ruy_Lopez', 'Scotch_Game', 'Vienna_Game', 'Vienna_Gambit', 'Kings_Gambit', 'Four_Knights_Game')),
+    'open-games-black': ('b', has('Italian_Game', 'Ruy_Lopez', 'Scotch_Game', 'Vienna_Game', 'Vienna_Gambit', 'Kings_Gambit', 'Four_Knights_Game', 'Bishops_Opening', 'Ponziani_Opening', 'Danish_Gambit', 'Center_Game')),
     'modern': ('b', has('Modern_Defense')),
-    'vs-london': ('b', has('Queens_Pawn_Game_London_System', 'Queens_Pawn_Game_Accelerated_London_System', 'London_System', 'Indian_Defense_London_System', 'Indian_Defense_Accelerated_London_System')),
+    'vs-london': ('b', has('Queens_Pawn_Game_London_System', 'Queens_Pawn_Game_Accelerated_London_System', 'London_System', 'Indian_Defense_London_System', 'Indian_Defense_Accelerated_London_System', 'Trompowsky_Attack', 'Queens_Pawn_Game_Colle_System', 'Rapport-Jobava_System', 'Blackmar-Diemer_Gambit')),
     'semi-slav': ('b', has('Semi-Slav_Defense')),
     'benoni': ('b', has('Benoni_Defense')),
     'bogo-indian': ('b', has('Bogo-Indian_Defense')),
@@ -84,6 +84,9 @@ GROUPS = {
     'reti': ('w', has('Reti_Opening', 'Zukertort_Opening')),
     'trompowsky': ('w', has('Trompowsky_Attack')),
     'jobava': ('w', has('Rapport-Jobava_System')),
+    'grand-prix': ('w', has('Sicilian_Defense_Grand_Prix_Attack', 'Sicilian_Defense_McDonnell_Attack')),
+    'vs-other-e4': ('w', has('Pirc_Defense', 'Modern_Defense', 'Alekhine_Defense', 'Petrovs_Defense', 'Philidor_Defense')),
+    'vs-other-d4': ('w', has('Dutch_Defense', 'Benko_Gambit', 'Indian_Defense_Budapest_Defense')),
 }
 
 random.seed(20261021)

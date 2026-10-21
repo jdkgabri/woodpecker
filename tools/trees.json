@@ -1609,5 +1609,236 @@
    "O-O-O",
    "f3"
   ]
+ },
+ {
+  "file": "grand-prix",
+  "root": "e4 c5 Nc3",
+  "side": "w",
+  "prefer": [
+   "f4",
+   "Nf3",
+   "Bc4",
+   "Bb5",
+   "O-O",
+   "d3",
+   "Qe1",
+   "Qh4",
+   "f5",
+   "Bxc6"
+  ]
+ },
+ {
+  "file": "eb-four-knights",
+  "root": "e4 e5 Nf3 Nc6 Nc3",
+  "side": "b",
+  "prefer": [
+   "Nf6",
+   "Bb4",
+   "O-O",
+   "d6",
+   "Nd4",
+   "Bc5"
+  ]
+ },
+ {
+  "file": "eb-bishops",
+  "root": "e4 e5 Bc4",
+  "side": "b",
+  "prefer": [
+   "Nf6",
+   "Bc5",
+   "c6",
+   "d5",
+   "Nc6",
+   "O-O"
+  ]
+ },
+ {
+  "file": "eb-ponziani",
+  "root": "e4 e5 Nf3 Nc6 c3",
+  "side": "b",
+  "prefer": [
+   "Nf6",
+   "d5",
+   "Nxe4",
+   "Be7",
+   "exd4"
+  ]
+ },
+ {
+  "file": "eb-danish",
+  "root": "e4 e5 d4",
+  "side": "b",
+  "prefer": [
+   "exd4",
+   "Nc6",
+   "d5",
+   "Nf6",
+   "Bb4+",
+   "Qe7"
+  ]
+ },
+ {
+  "file": "vs-trompowsky",
+  "root": "d4 Nf6 Bg5",
+  "side": "b",
+  "prefer": [
+   "Ne4",
+   "e6",
+   "c5",
+   "d5",
+   "h6",
+   "Qb6"
+  ]
+ },
+ {
+  "file": "vs-colle",
+  "root": "d4 d5 Nf3 Nf6 e3",
+  "side": "b",
+  "prefer": [
+   "c5",
+   "e6",
+   "Nc6",
+   "Bd6",
+   "Bg4",
+   "O-O"
+  ]
+ },
+ {
+  "file": "vs-jobava",
+  "root": "d4 d5 Nc3",
+  "side": "b",
+  "prefer": [
+   "Nf6",
+   "Bf5",
+   "c6",
+   "e6",
+   "a6",
+   "c5"
+  ]
+ },
+ {
+  "file": "vs-bdg",
+  "root": "d4 d5 e4",
+  "side": "b",
+  "prefer": [
+   "dxe4",
+   "Nf6",
+   "Bf5",
+   "e6",
+   "c6",
+   "exf3"
+  ]
+ },
+ {
+  "file": "w-vs-pirc",
+  "root": "e4 d6",
+  "side": "w",
+  "prefer": [
+   "d4",
+   "Nc3",
+   "Be3",
+   "Qd2",
+   "f3",
+   "Bh6",
+   "O-O-O",
+   "h4"
+  ]
+ },
+ {
+  "file": "w-vs-modern",
+  "root": "e4 g6",
+  "side": "w",
+  "prefer": [
+   "d4",
+   "Nc3",
+   "Be3",
+   "Qd2",
+   "f3",
+   "Bh6",
+   "O-O-O",
+   "h4"
+  ]
+ },
+ {
+  "file": "w-vs-alekhine",
+  "root": "e4 Nf6",
+  "side": "w",
+  "prefer": [
+   "e5",
+   "d4",
+   "Nf3",
+   "Be2",
+   "c4",
+   "O-O",
+   "exd6"
+  ]
+ },
+ {
+  "file": "w-vs-petrov",
+  "root": "e4 e5 Nf3 Nf6",
+  "side": "w",
+  "prefer": [
+   "Nxe5",
+   "Nf3",
+   "Nc3",
+   "Nxe4",
+   "d4",
+   "Bd3",
+   "O-O"
+  ]
+ },
+ {
+  "file": "w-vs-philidor",
+  "root": "e4 e5 Nf3 d6",
+  "side": "w",
+  "prefer": [
+   "d4",
+   "Nc3",
+   "Bc4",
+   "Be2",
+   "O-O",
+   "dxe5"
+  ]
+ },
+ {
+  "file": "w-vs-dutch",
+  "root": "d4 f5",
+  "side": "w",
+  "prefer": [
+   "g3",
+   "Bg2",
+   "Nf3",
+   "c4",
+   "O-O",
+   "Nc3",
+   "d5"
+  ]
+ },
+ {
+  "file": "w-vs-benko",
+  "root": "d4 Nf6 c4 c5 d5 b5",
+  "side": "w",
+  "prefer": [
+   "cxb5",
+   "bxa6",
+   "Nc3",
+   "e4",
+   "Nf3",
+   "g3"
+  ]
+ },
+ {
+  "file": "w-vs-budapest",
+  "root": "d4 Nf6 c4 e5",
+  "side": "w",
+  "prefer": [
+   "dxe5",
+   "Bf4",
+   "Nf3",
+   "Nbd2",
+   "e3",
+   "a3"
+  ]
  }
 ]

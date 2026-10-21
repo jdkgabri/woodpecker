@@ -1104,11 +1104,11 @@ export const MORE_OPENINGS = [
   },
   // ---- Against the London
   {
-    id: 'vs-london', side: 'b', vs: 'd4', eco: 'D02', puzzles: 'vs-london',
-    name: { en: 'Against the London System', es: 'Contra el Sistema London' },
+    id: 'vs-london', side: 'b', vs: 'd4', eco: 'D00–D05, A45', puzzles: 'vs-london',
+    name: { en: 'Against the 1.d4 systems', es: 'Contra los sistemas de 1.d4' },
     summary: {
-      en: '1.d4 d5 2.Bf4 — a concrete setup against the London: ...c5 and ...Nc6, with ...Qb6 hitting b2.',
-      es: '1.d4 d5 2.Af4: un esquema concreto contra la London: ...c5 y ...Cc6, con ...Db6 atacando b2.',
+      en: 'When White plays 1.d4 without c4: the London, the Trompowsky, the Colle, the Jobava London and the Blackmar-Diemer Gambit.',
+      es: 'Cuando las blancas juegan 1.d4 sin c4: la London, el Trompowsky, el Colle, la London Jobava y el Gambito Blackmar-Diemer.',
     },
     intro: {
       en: [

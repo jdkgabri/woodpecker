@@ -825,15 +825,15 @@ const GROUPED = [
     },
   },
   {
-    id: 'anti-sicilian', side: 'w', vs: 'e4', eco: 'B21–B22', from: ['morra', 'alapin'],
-    name: { en: 'Against the Sicilian: Morra and Alapin', es: 'Contra la Siciliana: Morra y Alapin' },
+    id: 'anti-sicilian', side: 'w', vs: 'e4', eco: 'B21–B23', from: ['morra', 'alapin', 'grand-prix'],
+    name: { en: 'Against the Sicilian: Morra, Alapin and Grand Prix', es: 'Contra la Siciliana: Morra, Alapin y Grand Prix' },
     summary: {
-      en: 'Two practical weapons against 1...c5: the Smith-Morra Gambit for fast development, and the Alapin (2.c3) for a classical centre.',
-      es: 'Dos armas prácticas contra 1...c5: el Gambito Smith-Morra para un desarrollo rápido, y la Alapin (2.c3) para un centro clásico.',
+      en: 'Three practical weapons against 1...c5: the Smith-Morra Gambit for fast development, the Alapin (2.c3) for a classical centre and the Grand Prix (2.Nc3 and f4) for a kingside attack.',
+      es: 'Tres armas prácticas contra 1...c5: el Gambito Smith-Morra para un desarrollo rápido, la Alapin (2.c3) para un centro clásico y el Grand Prix (2.Cc3 y f4) para atacar en el flanco de rey.',
     },
     intro: {
-      en: ['Instead of the Open Sicilian and its huge theory, White chooses the type of game: the Morra gives a pawn for open lines and attack, the Alapin builds the centre with c3 and d4 and leads to calmer positions.'],
-      es: ['En lugar de la Siciliana Abierta y su enorme teoría, las blancas eligen el tipo de partida: la Morra da un peón a cambio de líneas abiertas y ataque, la Alapin construye el centro con c3 y d4 y lleva a posiciones más tranquilas.'],
+      en: ['Instead of the Open Sicilian and its huge theory, White chooses the type of game: the Morra gives a pawn for open lines and attack, the Alapin builds the centre with c3 and d4 and leads to calmer positions, and the Grand Prix attacks the king with f4–f5. Pick one as your main weapon.'],
+      es: ['En lugar de la Siciliana Abierta y su enorme teoría, las blancas eligen el tipo de partida: la Morra da un peón a cambio de líneas abiertas y ataque, la Alapin construye el centro con c3 y d4 y lleva a posiciones más tranquilas, y el Grand Prix ataca al rey con f4–f5. Elige una como arma principal.'],
     },
   },
   {
