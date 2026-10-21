@@ -19,6 +19,17 @@ import { viewEndgames, viewEndgameChapter, viewEndgame } from './endgames.js';
 import { t, tn, locale, san, LANGS, langSetting, applyDocumentLang } from './i18n.js';
 
 const app = document.getElementById('app');
+
+// Phones: the docked action bar (style.css) needs room below the content; track its height
+const dockRO = new ResizeObserver(es => { for (const e of es) document.documentElement.style.setProperty('--dock-h', e.target.offsetHeight + 'px'); });
+let docked = null;
+new MutationObserver(() => {
+  const bar = app.querySelector('.train .actions');
+  if (bar === docked) return;
+  if (docked) dockRO.unobserve(docked);
+  docked = bar;
+  if (bar) dockRO.observe(bar);
+}).observe(app, { childList: true, subtree: true });
 let cleanup = null; // exit function of the current view
 
 // ---------- utilities ----------

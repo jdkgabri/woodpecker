@@ -422,3 +422,14 @@ cg-board {
 .coach-ask .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .coach-answer { margin-top: 8px; padding: 10px 12px; border-radius: 10px; background: var(--card2, rgba(127,127,127,.12)); }
 .coach-answer ul { margin: 6px 0 0 18px; padding: 0; }
+
+/* phones: the action buttons stay docked at the bottom of the screen, so they never move
+   when the text above them grows (main.js keeps --dock-h equal to the bar's height) */
+@media (max-width: 899px) {
+  .train .actions {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; margin: 0;
+    background: var(--bg); border-top: 1px solid var(--line);
+    padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+  }
+  .train { padding-bottom: calc(var(--dock-h, 64px) + 8px); }
+}
