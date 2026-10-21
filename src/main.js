@@ -13,6 +13,7 @@ import { viewAnalysis, openAnalysis, mainLine } from './analysis.js';
 import { habitOn, gamifyOn, levelCard, progressSnapshot, notifyProgress, streakCard, bindStreakCard, celebrate, habitSettings, bindHabitSettings } from './ui-habit.js';
 import { viewStats } from './stats.js';
 import { viewOpenings, viewOpening, viewOpeningLine } from './openings.js';
+import { viewOpeningTree } from './opening-tree.js';
 import { t, tn, locale, san, LANGS, langSetting, applyDocumentLang } from './i18n.js';
 
 const app = document.getElementById('app');
@@ -57,6 +58,11 @@ function route() {
     return viewOpening(app, id, go);
   }
   if (view === 'drill') { cleanup = viewOpeningLine(app, id, location.hash.split('/')[3], 'drill', go); return; }
+  if (view === 'tree' || view === 'tdrill') {
+    const [, , , lineId, start] = location.hash.split('/');
+    cleanup = viewOpeningTree(app, id, lineId, view === 'tree' ? 'study' : 'drill', go, start);
+    return;
+  }
   if (view === 'analysis') { cleanup = viewAnalysis(app); return; }
   return viewHome();
 }

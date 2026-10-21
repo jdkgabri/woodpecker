@@ -372,3 +372,14 @@ cg-board {
 .note-text { display: block; line-height: 1.45; }
 .note-text strong { color: var(--fg-strong); }
 .mv:disabled { cursor: default; color: var(--fg); }
+
+/* Opening trees */
+.tree-box { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line, rgba(128,128,128,.25)); }
+.branches { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.branches p { margin: 0; }
+.branch { display: grid; grid-template-columns: 7.5em 1fr 3.5em; align-items: center; gap: 10px; width: 100%; text-align: left;
+  background: var(--bg2); color: var(--fg); border: 0; border-radius: 8px; padding: 8px 12px; font: inherit; cursor: pointer; }
+.branch:hover { filter: brightness(1.15); }
+.branch .bar { height: 6px; background: rgba(128,128,128,.25); border-radius: 3px; overflow: hidden; }
+.branch .bar span { display: block; height: 100%; background: var(--accent); }
+.branch > span:last-child { text-align: right; }

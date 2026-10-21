@@ -89,6 +89,14 @@ export function viewOpening(app, id, go) {
           <a class="btn ghost" href="#/opening/${o.id}/${l.id}">📖 ${t('Study')}</a>
           ${trap ? '' : `<a class="btn primary" href="#/drill/${o.id}/${l.id}">♟ ${t('Practise')}</a>`}
         </div>
+        ${l.tree ? `
+        <div class="tree-box">
+          <p class="small"><strong>🌳 ${t('All branches')}</strong> · <span class="muted">${t('The replies club players really choose, with the best answer to each.')}</span></p>
+          <div class="grid2">
+            <a class="btn ghost" href="#/tree/${o.id}/${l.id}">🌳 ${t('Explore')}</a>
+            <a class="btn primary" href="#/tdrill/${o.id}/${l.id}">♟ ${t('Practise branches')}</a>
+          </div>
+        </div>` : ''}
       </div>`;
   };
   const plans = side => o.plans[side] ? `
