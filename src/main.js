@@ -14,6 +14,7 @@ import { habitOn, gamifyOn, levelCard, progressSnapshot, notifyProgress, streakC
 import { viewStats } from './stats.js';
 import { viewOpenings, viewOpening, viewOpeningLine } from './openings.js';
 import { viewOpeningTree } from './opening-tree.js';
+import { viewCoach, viewCoachGame } from './coach.js';
 import { t, tn, locale, san, LANGS, langSetting, applyDocumentLang } from './i18n.js';
 
 const app = document.getElementById('app');
@@ -64,6 +65,11 @@ function route() {
     return;
   }
   if (view === 'analysis') { cleanup = viewAnalysis(app); return; }
+  if (view === 'coach') {
+    if (id) cleanup = viewCoachGame(app, id, location.hash.split('/')[3], go);
+    else viewCoach(app, go);
+    return;
+  }
   return viewHome();
 }
 window.addEventListener('hashchange', route);
@@ -78,6 +84,7 @@ function viewHome() {
       <div class="top-right">
         ${h ? `<span class="badge" title="${t('Day streak')}">🔥 ${h.streak}</span>` : ''}
         ${syncBadge()}
+        <a class="icon-btn" href="#/coach" aria-label="${t('Game review')}">🎓</a>
         <a class="icon-btn" href="#/openings" aria-label="${t('Openings')}">📖</a>
         <a class="icon-btn" href="#/stats" aria-label="${t('Statistics')}">📊</a>
         <a class="icon-btn" href="#/settings" aria-label="${t('Settings')}">⚙</a>

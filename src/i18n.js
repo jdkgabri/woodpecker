@@ -22,8 +22,10 @@ export function lang() {
 export const locale = () => (lang() === 'es' ? 'es-ES' : 'en-GB');
 
 export function t(text, params = {}) {
-  const out = lang() === 'es' ? (ES[text] ?? text.split('|')[0]) : text.split('|')[0];
-  return out.replace(/\{(\w+)\}/g, (m, k) => (k in params ? params[k] : m));
+  const es = lang() === 'es';
+  const out = (es ? (ES[text] ?? text.split('|')[0]) : text.split('|')[0]).replace(/\{(\w+)\}/g, (m, k) => (k in params ? params[k] : m));
+  // Spanish contractions when a parameter starts with "el": "a el caballo" → "al caballo"
+  return es ? out.replace(/(^|[\s(])([aA]) el(?=\s)/g, '$1$2l').replace(/(^|[\s(])([dD])e el(?=\s)/g, '$1$2el') : out;
 }
 
 // Move notation in the current language: Spanish uses R D T A C for K Q R B N

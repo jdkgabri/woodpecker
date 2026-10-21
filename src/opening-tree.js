@@ -18,7 +18,7 @@ const toColor = c => (c === 'w' ? 'white' : 'black');
 // Notes live in public/openings/notes/<file>.json ({ 'san san …': { en, es } }), or inline in
 // the line (line.tree.notes).
 const cache = new Map();
-async function loadTree(file) {
+export async function loadTree(file) {
   if (cache.has(file)) return cache.get(file);
   const base = import.meta.env.BASE_URL + 'openings/';
   const [res, notes] = await Promise.all([
