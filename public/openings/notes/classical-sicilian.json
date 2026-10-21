@@ -1,0 +1,26 @@
+{
+ "Be3 Ng4": {
+  "en": "Against Be3, ...Ng4! hits the bishop at once and stops White's English-Attack plans (f3, Qd2, O-O-O).",
+  "es": "Contra Ae3, ¡...Cg4! ataca el alfil de inmediato e impide los planes del Ataque Inglés (f3, Dd2, O-O-O)."
+ },
+ "Be3 Ng4 Bg5 Qb6": {
+  "en": "...Qb6 attacks d4, b2 and, together with the g4-knight, f2. If Nxc6??, ...Qxf2 is mate.",
+  "es": "...Db6 ataca d4, b2 y, junto al caballo de g4, f2. Si Cxc6??, ...Dxf2 es mate."
+ },
+ "Be3 Ng4 Bc1 Qb6": {
+  "en": "The same idea: d4, b2 and f2 are all under fire, and Nxc6?? walks into ...Qxf2#.",
+  "es": "La misma idea: d4, b2 y f2 están bajo ataque, y Cxc6?? cae en ...Dxf2#."
+ },
+ "Bg5 e6": {
+  "en": "The Richter-Rauzer (Bg5): ...e6 and ...Be7 or ...Qb6, then ...Bd7 and long castling or ...h6.",
+  "es": "La Richter-Rauzer (Ag5): ...e6 y ...Ae7 o ...Db6, y luego ...Ad7 y enroque largo o ...h6."
+ },
+ "Bb5 Bd7": {
+  "en": "Against Bb5, ...Bd7 keeps the structure intact; if White takes on c6, Black recaptures and keeps the bishop pair.",
+  "es": "Contra Ab5, ...Ad7 mantiene la estructura intacta; si las blancas toman en c6, las negras recapturan y conservan la pareja de alfiles."
+ },
+ "": {
+  "en": "The Classical Sicilian: ...d6, ...Nf6 and ...Nc6. Against the Richter-Rauzer (Bg5), ...e6 and ...Bd7 are the usual answers.",
+  "es": "La Siciliana Clásica: ...d6, ...Cf6 y ...Cc6. Contra la Richter-Rauzer (Ag5), ...e6 y ...Ad7 son las respuestas habituales."
+ }
+}
