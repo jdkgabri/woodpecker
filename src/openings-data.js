@@ -458,7 +458,15 @@ export const OPENINGS = [
     puzzles: 'sicilian',
     lines: [
       {
+        id: 'sicilian-all',
+        name: { en: "All of White's tries after 1.e4 c5", es: 'Todos los intentos blancos tras 1.e4 c5' },
+        moves: 'e4 c5',
+        treeOnly: true,
+        tree: { file: 'sicilian-all' },
+      },
+      {
         id: 'najdorf-english',
+        tree: { file: 'najdorf-english' },
         name: { en: 'Najdorf: English Attack (6.Be3 e5)', es: 'Najdorf: Ataque Inglés (6.Ae3 e5)' },
         moves: 'e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be3 e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4 b5 g5 b4',
         puzzles: 'sicilian-najdorf',
@@ -474,6 +482,7 @@ export const OPENINGS = [
       },
       {
         id: 'najdorf-bg5',
+        tree: { file: 'najdorf-bg5' },
         name: { en: 'Najdorf: 6.Bg5 e6', es: 'Najdorf: 6.Ag5 e6' },
         moves: 'e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Bg5 e6 f4 Be7 Qf3 Qc7 O-O-O Nbd7 g4 b5 Bxf6 Nxf6 g5 Nd7 f5',
         puzzles: 'sicilian-najdorf',
@@ -487,6 +496,7 @@ export const OPENINGS = [
       },
       {
         id: 'najdorf-be2',
+        tree: { file: 'najdorf-be2' },
         name: { en: 'Najdorf: Classical 6.Be2', es: 'Najdorf: Clásica 6.Ae2' },
         moves: 'e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be2 e5 Nb3 Be7 O-O O-O Be3 Be6 Qd2 Nbd7 a4 Rc8',
         puzzles: 'sicilian-najdorf',
@@ -499,6 +509,7 @@ export const OPENINGS = [
       },
       {
         id: 'dragon-bc4',
+        tree: { file: 'dragon-bc4' },
         name: { en: 'Dragon: Yugoslav Attack 9.Bc4', es: 'Dragón: Ataque Yugoslavo 9.Ac4' },
         moves: 'e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 g6 Be3 Bg7 f3 O-O Qd2 Nc6 Bc4 Bd7 O-O-O Rc8 Bb3 Ne5 Kb1 Nc4 Bxc4 Rxc4 g4',
         puzzles: 'sicilian-dragon',
@@ -514,6 +525,7 @@ export const OPENINGS = [
       },
       {
         id: 'dragon-000',
+        tree: { file: 'dragon-000' },
         name: { en: 'Dragon: Yugoslav 9.O-O-O d5', es: 'Dragón: Yugoslavo 9.O-O-O d5' },
         moves: 'e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 g6 Be3 Bg7 f3 O-O Qd2 Nc6 O-O-O d5 exd5 Nxd5 Nxc6 bxc6 Bd4 e5 Bc5 Be6',
         puzzles: 'sicilian-dragon',
@@ -526,6 +538,7 @@ export const OPENINGS = [
       },
       {
         id: 'anti-alapin',
+        tree: { file: 'anti-alapin' },
         name: { en: 'Anti-Sicilian: Alapin 2.c3', es: 'Antisiciliana: Alapin 2.c3' },
         moves: 'e4 c5 c3 Nf6 e5 Nd5 d4 cxd4 Nf3 Nc6 cxd4 d6 Bc4 Nb6 Bb5 dxe5 Nxe5 Bd7',
         puzzles: 'sicilian-anti',
@@ -539,6 +552,7 @@ export const OPENINGS = [
       },
       {
         id: 'anti-morra',
+        tree: { file: 'anti-morra' },
         name: { en: 'Anti-Sicilian: Smith-Morra Gambit', es: 'Antisiciliana: Gambito Smith-Morra' },
         moves: 'e4 c5 d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1 e5 h3 O-O Be3',
         puzzles: 'sicilian-anti',

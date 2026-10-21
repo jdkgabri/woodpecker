@@ -1,0 +1,46 @@
+{
+ "": {
+  "en": "Against the Alapin (2.c3) Black hits e4 at once with 2...Nf6. After 3.e5 Nd5 the knight is safe on d5, because White's knight cannot use c3 to attack it, and Black undermines e5 with ...d6 and ...Nc6.",
+  "es": "Contra la Alapin (2.c3) las negras atacan e4 de inmediato con 2...Cf6. Tras 3.e5 Cd5 el caballo está seguro en d5, porque el caballo blanco no puede usar c3 para atacarlo, y las negras socavan e5 con ...d6 y ...Cc6."
+ },
+ "Nf6": {
+  "en": "c3 took the c3-square from White's knight, so e4 is hard to defend. White usually pushes e5.",
+  "es": "c3 quitó la casilla c3 al caballo blanco, así que e4 es difícil de defender. Las blancas suelen avanzar e5."
+ },
+ "Nf6 e5 Nd5 d4 cxd4": {
+  "en": "Trade on d4 first, then ...Nc6 and ...d6 attack the centre.",
+  "es": "Primero cambiar en d4, luego ...Cc6 y ...d6 atacan el centro."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nf3 d6": {
+  "en": "...d6 challenges e5. If White keeps the pawn, the d4-pawn becomes weak.",
+  "es": "...d6 discute e5. Si las blancas mantienen el peón, el de d4 se debilita."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nf3 d6 Bc4 Nb6": {
+  "en": "The knight hits the bishop and keeps an eye on d5 and c4.",
+  "es": "El caballo ataca al alfil y vigila d5 y c4."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nf3 d6 Bc4 Nb6 Bxf7+": {
+  "en": "Bxf7+? is a common trick, but after ...Kxf7 Ng5+ Kg8 Black is a piece up for a pawn and the attack runs out.",
+  "es": "Axf7+? es un truco común, pero tras ...Rxf7 Cg5+ Rg8 las negras tienen una pieza por un peón y el ataque se agota."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nf3 d6 Bb5 Qa5+": {
+  "en": "Qa5+ checks and attacks the b5-bishop at the same time: White cannot keep everything protected.",
+  "es": "Da5+ da jaque y a la vez ataca el alfil de b5: las blancas no pueden protegerlo todo."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 Qxd4 e6": {
+  "en": "The queen in the centre will be chased by ...Nc6. Black develops with tempo.",
+  "es": "La dama en el centro será perseguida por ...Cc6. Las negras desarrollan ganando tiempo."
+ },
+ "Nf6 e5 Nd5 Nf3 Nc6": {
+  "en": "Same plan: ...Nc6, ...cxd4 after d4, and ...d6.",
+  "es": "El mismo plan: ...Cc6, ...cxd4 tras d4, y ...d6."
+ },
+ "Nf6 d3": {
+  "en": "Defending e4 with d3 is passive: Black gets a comfortable game with ...Nc6, ...d5 or ...g6.",
+  "es": "Defender e4 con d3 es pasivo: las negras consiguen un juego cómodo con ...Cc6, ...d5 o ...g6."
+ },
+ "Nf6 d4 Nxe4": {
+  "en": "d4?! ignores the threat: ...Nxe4 wins a central pawn.",
+  "es": "d4?! ignora la amenaza: ...Cxe4 gana un peón central."
+ }
+}

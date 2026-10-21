@@ -1,0 +1,38 @@
+{
+ "": {
+  "en": "Najdorf with 6.Be2: the classical, positional line. Black answers ...e5, ...Be7, ...O-O, ...Be6 and ...Nbd7, and fights for the d5-square; the c-file and ...b5 give counterplay.",
+  "es": "Najdorf con 6.Ae2: la línea clásica y posicional. Las negras responden ...e5, ...Ae7, ...O-O, ...Ae6 y ...Cbd7, y luchan por la casilla d5; la columna c y ...b5 dan contrajuego."
+ },
+ "e5": {
+  "en": "...e5 gains space and kicks the knight. The hole on d5 is the price: Black must keep it under control.",
+  "es": "...e5 gana espacio y echa al caballo. El precio es el agujero de d5: las negras deben mantenerlo bajo control."
+ },
+ "e5 Nb3 Be7 O-O O-O Be3 Be6": {
+  "en": "The bishop on e6 controls d5. Next: ...Nbd7, ...Rc8 and ...b5 or ...Qc7.",
+  "es": "El alfil de e6 controla d5. Después: ...Cbd7, ...Tc8 y ...b5 o ...Dc7."
+ },
+ "e5 Nb3 Be7 O-O O-O Be3 Be6 f4 exf4": {
+  "en": "When White plays f4, take on f4: the e5-square becomes an excellent post for a black knight.",
+  "es": "Cuando las blancas juegan f4, toma en f4: la casilla e5 se convierte en un puesto excelente para un caballo negro."
+ },
+ "e5 Nb3 Be7 O-O O-O f4 Be6 f5 Bd7": {
+  "en": "After f5 the bishop retreats; Black plays on the queenside with ...b5 and ...Bc6, and later ...d5 if possible.",
+  "es": "Tras f5 el alfil se retira; las negras juegan en el flanco de dama con ...b5 y ...Ac6, y más tarde ...d5 si es posible."
+ },
+ "e5 Nb3 Be7 O-O O-O Be3 Be6 f3 Nbd7 Nd5 Bxd5 exd5": {
+  "en": "Taking on d5 is fine here: White's pawn on d5 closes the centre and Black plays on the c-file.",
+  "es": "Tomar en d5 está bien aquí: el peón blanco de d5 cierra el centro y las negras juegan por la columna c."
+ },
+ "e5 Nb3 Be7 O-O O-O Bg5 Be6 Bxf6 Bxf6 Nd5 Nd7": {
+  "en": "White gave up the bishop for control of d5. Black regroups with ...Nd7 and ...Bg5 or ...Be7.",
+  "es": "Las blancas entregaron el alfil a cambio del control de d5. Las negras se reagrupan con ...Cd7 y ...Ag5 o ...Ae7."
+ },
+ "e5 Nb3 Be7 O-O O-O Be3 Be6 f4 exf4 Bxf4 Nbd7 Bxd6 Qb6+": {
+  "en": "Bxd6?? loses a piece: Qb6+ checks the king and attacks the d6-bishop at the same time.",
+  "es": "Axd6?? pierde una pieza: Db6+ da jaque al rey y ataca a la vez el alfil de d6."
+ },
+ "e5 Nb3 Be7 Be3 Be6 O-O O-O f4 exf4 Bxf4 Nbd7 Bxd6 Qb6+": {
+  "en": "Bxd6?? loses a piece: Qb6+ checks the king and attacks the d6-bishop at the same time.",
+  "es": "Axd6?? pierde una pieza: Db6+ da jaque al rey y ataca a la vez el alfil de d6."
+ }
+}

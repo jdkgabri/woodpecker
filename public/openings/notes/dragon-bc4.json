@@ -1,0 +1,38 @@
+{
+ "": {
+  "en": "Dragon against the Yugoslav Attack with 9.Bc4: White aims the bishop at f7 and castles long. Black plays ...Bd7, ...Rc8 and an early ...b5, using the queenside pawns to harass the bishop and open lines towards White's king.",
+  "es": "La Dragón contra el Ataque Yugoslavo con 9.Ac4: las blancas apuntan el alfil a f7 y enrocan largo. Las negras juegan ...Ad7, ...Tc8 y un ...b5 temprano, usando los peones del flanco de dama para acosar al alfil y abrir líneas hacia el rey blanco."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5": {
+  "en": "...b5! The pawn storm starts at once: ...a5–a4 will chase the b3-bishop.",
+  "es": "¡...b5! El avance de peones empieza de inmediato: ...a5–a4 perseguirá al alfil de b3."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5": {
+  "en": "A pure race: White pushes h4–h5, Black ...a5–a4. Every tempo counts.",
+  "es": "Una carrera pura: las blancas empujan h4–h5 y las negras ...a5–a4. Cada tiempo cuenta."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 a4 bxa4": {
+  "en": "a4? to stop ...a4 opens the b-file towards White's king.",
+  "es": "a4? para frenar ...a4 abre la columna b hacia el rey blanco."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 a3 b4": {
+  "en": "Against a3, ...b4 opens lines anyway.",
+  "es": "Contra a3, ...b4 abre líneas de todos modos."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 a3 b4 Nd5 a4": {
+  "en": "Nd5? blocks the bishop's retreat: ...a4 traps it on b3.",
+  "es": "Cd5? bloquea la retirada del alfil: ...a4 lo atrapa en b3."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 Nd5 a4": {
+  "en": "Nd5? blocks the bishop's retreat: ...a4 traps it on b3.",
+  "es": "Cd5? bloquea la retirada del alfil: ...a4 lo atrapa en b3."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Kb1 a5 Nd5 a4": {
+  "en": "Nd5? blocks the bishop's retreat: ...a4 traps it on b3.",
+  "es": "Cd5? bloquea la retirada del alfil: ...a4 lo atrapa en b3."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 g4 a5 Nd5 a4": {
+  "en": "Nd5? blocks the bishop's retreat: ...a4 traps it on b3.",
+  "es": "Cd5? bloquea la retirada del alfil: ...a4 lo atrapa en b3."
+ }
+}

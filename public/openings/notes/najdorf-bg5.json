@@ -1,0 +1,13 @@
+{
+  "": { "en": "Najdorf with 6.Bg5: the sharpest main line. Black answers with ...e6, ...Be7, ...Qc7, ...Nbd7 and ...b5, and counterattacks on the queenside while White castles long and storms the kingside.", "es": "Najdorf con 6.Ag5: la línea principal más aguda. Las negras responden con ...e6, ...Ae7, ...Dc7, ...Cbd7 y ...b5, y contraatacan en el flanco de dama mientras las blancas enrocan largo y lanzan sus peones en el de rey." },
+  "e6": { "en": "...e6 unpins the knight by guarding it with the bishop and queen soon.", "es": "...e6 prepara deshacer la clavada protegiendo el caballo con el alfil y la dama." },
+  "e6 f4 Be7 Qf3 Qc7": { "en": "The queen leaves the d-file and supports ...Nbd7 and ...b5.", "es": "La dama sale de la columna d y apoya ...Cbd7 y ...b5." },
+  "e6 f4 Be7 Qf3 Qc7 O-O-O Nbd7": { "en": "Black develops the last minor piece and keeps f6 defended. Now the race starts: ...b5–b4 against g4–g5.", "es": "Las negras desarrollan la última pieza menor y mantienen f6 defendido. Empieza la carrera: ...b5–b4 contra g4–g5." },
+  "e6 f4 Be7 Qf3 Qc7 O-O-O Nbd7 g4 b5": { "en": "Counterattack at once: ...b5–b4 hits the c3-knight that defends e4.", "es": "Contraataque inmediato: ...b5–b4 ataca el caballo de c3 que defiende e4." },
+  "e6 f4 Be7 Qf3 Qc7 O-O-O Nbd7 g4 b5 Bxf6 Nxf6 g5 Nd7 f5 Bxg5+ Kb1 Ne5": { "en": "The critical position: Black has grabbed a pawn and the e5-knight is a superb defender.", "es": "La posición crítica: las negras han ganado un peón y el caballo de e5 es un defensor magnífico." },
+  "e6 f4 Be7 Qf3 Qc7 O-O-O Nbd7 Bd3 b5 Rhe1 Bb7 Nd5 exd5": { "en": "White sacrifices on d5, a typical attacking idea. Taking is correct; Black must then defend precisely.", "es": "Las blancas sacrifican en d5, una idea de ataque típica. Tomar es correcto; luego las negras deben defender con precisión." },
+  "e6 f4 Be7 Bd3 h6 Bh4 Nxe4": { "en": "...Nxe4! The e4-pawn was not really protected: Black wins a pawn.", "es": "¡...Cxe4! El peón de e4 no estaba realmente protegido: las negras ganan un peón." },
+  "e6 Bd3 Be7 O-O Nxe4": { "en": "...Nxe4! The same trick: e4 is loose and Black wins a pawn.", "es": "¡...Cxe4! El mismo truco: e4 está suelto y las negras ganan un peón." },
+  "e6 f4 Be7 Qf3 Qc7 Bd3 Nbd7 O-O Qb6": { "en": "With White castled short, ...Qb6 hits b2 and the d4-knight.", "es": "Con las blancas enrocadas en corto, ...Db6 ataca b2 y el caballo de d4." },
+  "e6 Qd2 Be7 O-O-O Qc7": { "en": "Against Qd2 and O-O-O, the same setup: ...Qc7, ...Nbd7, ...b5.", "es": "Contra Dd2 y O-O-O, la misma estructura: ...Dc7, ...Cbd7, ...b5." }
+}

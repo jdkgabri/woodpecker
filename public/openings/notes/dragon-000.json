@@ -1,0 +1,34 @@
+{
+ "": {
+  "en": "Dragon against the Yugoslav Attack with 9.O-O-O: the sharpest answer is 9...d5!, opening the centre at once. Black sacrifices a pawn for fast, active play against White's king.",
+  "es": "La Dragón contra el Ataque Yugoslavo con 9.O-O-O: la respuesta más aguda es ¡9...d5!, abriendo el centro de inmediato. Las negras sacrifican un peón a cambio de juego rápido y activo contra el rey blanco."
+ },
+ "d5": {
+  "en": "...d5! hits e4 and opens the long diagonal for the g7-bishop.",
+  "es": "¡...d5! ataca e4 y abre la gran diagonal para el alfil de g7."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Nxd5 cxd5 Qxd5": {
+  "en": "White grabs a pawn, but now ...Qc7 hits c2 and offers the a8-rook as bait.",
+  "es": "Las blancas ganan un peón, pero ahora ...Dc7 ataca c2 y ofrece la torre de a8 como cebo."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Nxd5 cxd5 Qxd5 Qc7": {
+  "en": "The famous trap: if Qxa8?, ...Bf5 threatens mate on c2 and the queen is too far away to help.",
+  "es": "La famosa trampa: si Dxa8?, ...Af5 amenaza mate en c2 y la dama está demasiado lejos para ayudar."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Nxd5 cxd5 Qxd5 Qc7 Qxa8 Bf5": {
+  "en": "Mate on c2 is threatened and the queen cannot come back in time: White has to give it up, and Black's attack decides.",
+  "es": "Amenaza mate en c2 y la dama no puede volver a tiempo: las blancas tienen que entregarla, y el ataque negro decide."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Nxd5 cxd5 Qxd5 Qc7 Qc5 Qb7": {
+  "en": "The right retreat for White leaves Black with strong pressure on the b-file for the pawn.",
+  "es": "Con la retirada correcta, las negras mantienen una fuerte presión por la columna b a cambio del peón."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Bd4 e5 Bc5 Be6": {
+  "en": "...Be6 keeps the pawn and offers the exchange: if Bxf8, Black gets huge compensation on the dark squares.",
+  "es": "...Ae6 mantiene el peón y ofrece la calidad: si Axf8, las negras obtienen una gran compensación en las casillas oscuras."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Bd4 e5 Bc5 Be6 Bxf8 Qxf8": {
+  "en": "Black is an exchange down but has the bishop pair, a strong centre and attacking chances.",
+  "es": "Las negras tienen una calidad menos pero la pareja de alfiles, un centro fuerte y posibilidades de ataque."
+ }
+}

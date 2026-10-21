@@ -1,0 +1,34 @@
+{
+ "": {
+  "en": "The Smith-Morra Gambit from Black's side: accept the pawn with ...dxc3 and set up ...Nc6, ...d6, ...e6, ...Nf6 and ...Be7. Castle quickly and the extra pawn should tell.",
+  "es": "El Gambito Smith-Morra desde el lado negro: acepta el peón con ...dxc3 y monta ...Cc6, ...d6, ...e6, ...Cf6 y ...Ae7. Enroca pronto y el peón de más debería notarse."
+ },
+ "dxc3 Nxc3 Nc6": {
+  "en": "Develop first; the order ...Nc6, ...d6, ...e6 keeps the d5 and b5 squares covered.",
+  "es": "Primero desarrollar; el orden ...Cc6, ...d6, ...e6 mantiene cubiertas las casillas d5 y b5."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6": {
+  "en": "...e6 blunts the c4-bishop: no tricks on f7. Next ...Nf6, ...Be7 and ...O-O.",
+  "es": "...e6 neutraliza el alfil de c4: no hay trucos sobre f7. Después ...Cf6, ...Ae7 y ...O-O."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1 e5": {
+  "en": "...e5 closes the d-file against White's rooks and gives Black a safe position with the extra pawn.",
+  "es": "...e5 cierra la columna d frente a las torres blancas y da a las negras una posición segura con el peón de más."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 e5 dxe5": {
+  "en": "An early e5 just gives away another pawn: after the queen trade Black is two pawns up.",
+  "es": "Un e5 temprano solo regala otro peón: tras el cambio de damas las negras tienen dos peones de más."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 Bf4 Nf6 Nb5 Nxe4": {
+  "en": "Nb5 aims at d6, but it leaves e4 undefended: ...Nxe4.",
+  "es": "Cb5 apunta a d6, pero deja e4 sin defensa: ...Cxe4."
+ },
+ "dxc3 Bc4 cxb2 Bxb2": {
+  "en": "White gives a second pawn for even faster development. Black takes and plays the same setup.",
+  "es": "Las blancas entregan un segundo peón a cambio de un desarrollo aún más rápido. Las negras lo toman y juegan la misma estructura."
+ },
+ "dxc3 Bc4 cxb2 Bxb2 Nc6 Nf3 d6 Ng5 Qa5+": {
+  "en": "Ng5? aims at f7, but Qa5+ checks and attacks the knight on g5.",
+  "es": "Cg5? apunta a f7, pero Da5+ da jaque y ataca el caballo de g5."
+ }
+}

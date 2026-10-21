@@ -1,0 +1,26 @@
+{
+ "": {
+  "en": "Najdorf against the English Attack (6.Be3): Black plays ...e5, ...Be6, ...Be7, ...O-O and ...Nbd7, then races on the queenside with ...b5–b4 while White storms with g4–g5.",
+  "es": "La Najdorf contra el Ataque Inglés (6.Ae3): las negras juegan ...e5, ...Ae6, ...Ae7, ...O-O y ...Cbd7, y luego corren en el flanco de dama con ...b5–b4 mientras las blancas avanzan g4–g5."
+ },
+ "e5 Nb3 Be6": {
+  "en": "The bishop controls d5, the key square of this structure.",
+  "es": "El alfil controla d5, la casilla clave de esta estructura."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7": {
+  "en": "Opposite-side castling: now it is a race. Black's counterplay is ...b5–b4 to drive the c3-knight away from d5.",
+  "es": "Enroques opuestos: ahora es una carrera. El contrajuego negro es ...b5–b4 para alejar el caballo de c3 de d5."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O g4 d5": {
+  "en": "When White pushes g4 before castling, the central break ...d5 is strong: the centre opens while White's king is still on e1.",
+  "es": "Cuando las blancas avanzan g4 antes de enrocar, la ruptura central ...d5 es fuerte: el centro se abre con el rey blanco aún en e1."
+ },
+ "e5 Nb3 Be6 Be2 Be7 O-O O-O f4": {
+  "en": "Against the quieter Be2 and O-O setups, the plan is the same; meet f4 with ...exf4 or ...Nbd7 and ...Qc7.",
+  "es": "Contra los esquemas más tranquilos con Ae2 y O-O, el plan es el mismo; responde a f4 con ...exf4 o ...Cbd7 y ...Dc7."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4 b5 g5 b4": {
+  "en": "...b4 kicks the c3-knight, which defends e4 and controls d5. Wherever it goes, Black's queenside attack gains time.",
+  "es": "...b4 echa al caballo de c3, que defiende e4 y controla d5. Vaya donde vaya, el ataque negro en el flanco de dama gana tiempo."
+ }
+}
