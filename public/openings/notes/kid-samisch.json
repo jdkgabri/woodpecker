@@ -1,0 +1,30 @@
+{
+ "O-O Be3 c5": {
+  "en": "...c5! strikes at once, before White's queenside castling and kingside attack are ready. After d5, ...e6 or ...a6 and ...b5.",
+  "es": "¡...c5! golpea de inmediato, antes de que el enroque largo y el ataque blanco estén listos. Tras d5, ...e6 o ...a6 y ...b5."
+ },
+ "O-O Bd3 c5 Be3": {
+  "en": "...Ng4! hits the e3-bishop; after fxg4 cxd4 Black wins the piece back and White's centre falls apart.",
+  "es": "¡...Cg4! ataca el alfil de e3; tras fxg4 cxd4 las negras recuperan la pieza y el centro blanco se desmorona."
+ },
+ "O-O Be3 c5 d5 a6 Qd2 Nbd7 Bd3 Ne5 Bc2": {
+  "en": "The bishop left c4 unprotected: ...Nxc4.",
+  "es": "El alfil ha dejado c4 sin defensa: ...Cxc4."
+ },
+ "O-O Be3 c5 d5 a6 Qd2 Nbd7 O-O-O": {
+  "en": "Opposite castling: ...b5! opens lines against the white king at once.",
+  "es": "Enroques opuestos: ¡...b5! abre líneas contra el rey blanco de inmediato."
+ },
+ "O-O Bg5 c5 d5 a6 Qd2 Nbd7 O-O-O": {
+  "en": "Opposite castling: ...b5! opens lines against the white king at once.",
+  "es": "Enroques opuestos: ¡...b5! abre líneas contra el rey blanco de inmediato."
+ },
+ "O-O Be3 c5 d5 a6 Bd3 Nbd7 Nge2 Ne5 Qd2": {
+  "en": "...Nxd3+ takes White's important bishop: Black gets the bishop pair.",
+  "es": "...Cxd3+ se lleva el importante alfil blanco: las negras obtienen la pareja de alfiles."
+ },
+ "": {
+  "en": "Against the Sämisch: ...O-O and ...c5 or ...e5.",
+  "es": "Contra la Sämisch: ...O-O y ...c5 o ...e5."
+ }
+}

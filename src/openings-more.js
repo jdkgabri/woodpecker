@@ -332,6 +332,8 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('vienna', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nc3'),
       tree('vienna-gambit', { en: 'Vienna Gambit (2...Nf6 3.f4)', es: 'Gambito Vienés (2...Cf6 3.f4)' }, 'e4 e5 Nc3 Nf6 f4'),
+    
+      tree('vienna-nc6', { en: 'Against 2...Nc6', es: 'Contra 2...Cc6' }, 'e4 e5 Nc3 Nc6'),
     ],
   },
   // ---- vs scandinavian
@@ -402,6 +404,8 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('english', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'c4'),
       tree('english-e5', { en: 'Reversed Sicilian (1...e5)', es: 'Siciliana Invertida (1...e5)' }, 'c4 e5'),
+    
+      tree('english-symmetrical', { en: 'Symmetrical (1...c5)', es: 'Simétrica (1...c5)' }, 'c4 c5'),
     ],
   },
   // ---- caro-kann
@@ -612,7 +616,9 @@ export const MORE_OPENINGS = [
         es: ['Tomar el centro con c4, e4 y d4.', 'Cerrarlo con d5 y atacar en el flanco de dama con c5.', 'Estructuras Sämisch (f3) y Ae3–Dd2 para atacar al rey.'],
       },
     },
-    lines: [tree('kings-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6')],
+    lines: [tree('kings-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6'),
+      tree('kid-samisch', { en: 'Against the Sämisch (f3)', es: 'Contra la Sämisch (f3)' }, 'd4 Nf6 c4 g6 Nc3 Bg7 e4 d6 f3'),
+    ],
   },
   // ---- grunfeld
   {
@@ -1271,5 +1277,39 @@ export const MORE_OPENINGS = [
       },
     },
     lines: [tree('vs-english', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'c4')],
+  },
+  // ---- Bogo-Indian
+  {
+    id: 'bogo-indian', side: 'b', vs: 'd4', eco: 'E11', puzzles: 'bogo-indian',
+    name: { en: 'Bogo-Indian Defence', es: 'Defensa Bogo-India' },
+    summary: {
+      en: '1.d4 Nf6 2.c4 e6 3.Nf3 Bb4+ — a simple, solid check that develops with tempo when White avoids the Nimzo-Indian.',
+      es: '1.d4 Cf6 2.c4 e6 3.Cf3 Ab4+: un jaque sencillo y sólido que desarrolla con tiempo cuando las blancas evitan la Nimzo-India.',
+    },
+    intro: {
+      en: [
+        'When White plays 3.Nf3 instead of 3.Nc3, the Bogo-Indian gives the check anyway. After Bd2 Black chooses between ...Qe7, ...Be7 or trading on d2.',
+        'It is a calm opening: easy development and a solid position.',
+      ],
+      es: [
+        'Cuando las blancas juegan 3.Cf3 en lugar de 3.Cc3, la Bogo-India da el jaque igualmente. Tras Ad2 las negras eligen entre ...De7, ...Ae7 o cambiar en d2.',
+        'Es una apertura tranquila: desarrollo fácil y posición sólida.',
+      ],
+    },
+    structure: {
+      en: 'Black often trades the dark-squared bishop and puts the pawns on dark squares (...d6, ...e5) or plays ...d5.',
+      es: 'Las negras suelen cambiar el alfil de casillas negras y poner los peones en casillas negras (...d6, ...e5) o juegan ...d5.',
+    },
+    plans: {
+      b: {
+        en: ['...Qe7 keeps the bishop; ...Bxd2+ simplifies.', '...O-O, ...d6 and ...e5, or ...d5.', 'Use the fianchetto ...b6–Bb7 in some lines.'],
+        es: ['...De7 conserva el alfil; ...Axd2+ simplifica.', '...O-O, ...d6 y ...e5, o ...d5.', 'Usar el fianchetto ...b6–Ab7 en algunas líneas.'],
+      },
+      w: {
+        en: ['Bd2 or Nbd2 against the check.', 'g3 and Bg2: a Catalan-style setup.', 'Gain space in the centre with e4.'],
+        es: ['Ad2 o Cbd2 contra el jaque.', 'g3 y Ag2: un esquema tipo Catalana.', 'Ganar espacio en el centro con e4.'],
+      },
+    },
+    lines: [tree('bogo-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 e6 Nf3 Bb4+')],
   },
 ];

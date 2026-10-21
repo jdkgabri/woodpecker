@@ -1,0 +1,14 @@
+{
+ "Bd2 Be7": {
+  "en": "The modern retreat: White's bishop on d2 is not very active, and Black continues with ...d5 or ...O-O and ...d6, ...Nbd7 and ...e5.",
+  "es": "La retirada moderna: el alfil blanco en d2 no está muy activo, y las negras siguen con ...d5 o ...O-O y ...d6, ...Cbd7 y ...e5."
+ },
+ "Bd2 Be7 Nc3 O-O e4 d5 e5 Ne4 Nxe4": {
+  "en": "...dxe4: the f3-knight is attacked and then d4 falls.",
+  "es": "...dxe4: el caballo de f3 queda atacado y luego cae d4."
+ },
+ "Bd2 Be7 Nc3 O-O Bg5 d5 cxd5 exd5 Bxf6 Bxf6 e4": {
+  "en": "e4 opens the centre with White's king still on e1: ...dxe4 and ...Re8 put pressure on the e-file.",
+  "es": "e4 abre el centro con el rey blanco todavía en e1: ...dxe4 y ...Te8 presionan la columna e."
+ }
+}

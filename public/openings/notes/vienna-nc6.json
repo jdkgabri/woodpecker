@@ -1,0 +1,26 @@
+{
+ "Bc4": {
+  "en": "Bc4 aims at f7; f4 or d3 with Nf3 follow. Watch for tricks on f7 in every line.",
+  "es": "Ac4 apunta a f7; siguen f4 o d3 con Cf3. Atento a los trucos sobre f7 en todas las líneas."
+ },
+ "Bc4 d6 Nf3 Bg4 h3 Bh5": {
+  "en": "Légal's trick: Nxe5! If ...Bxd1, Bxf7+ Ke7 Nd5 is mate; otherwise Qxh5 and White is a pawn up.",
+  "es": "El truco de Légal: ¡Cxe5! Si ...Axd1, Axf7+ Re7 Cd5 es mate; si no, Dxh5 y las blancas tienen un peón de más."
+ },
+ "Bc4 d6 Nf3 Nf6 Ng5 d5 exd5 Nxd5": {
+  "en": "Nxf7! Kxf7 Bxd5+ and Qh5+: the black king is dragged out and White wins material.",
+  "es": "¡Cxf7! Rxf7 Axd5+ y Dh5+: el rey negro sale al descubierto y las blancas ganan material."
+ },
+ "Bc4 Nf6 Nf3 h6 d4 Bb4 dxe5 Nxe4": {
+  "en": "Qd5! threatens mate on f7 and attacks the e4-knight.",
+  "es": "¡Dd5! amenaza mate en f7 y ataca el caballo de e4."
+ },
+ "Bc4 Nf6 Nf3 Bc5 d3 O-O Bg5 d6 Nd5 h6 Nxf6+ gxf6 Bxh6 Re8": {
+  "en": "Black's king is wide open: Nh4 and Qh5 (or Nf5) break through.",
+  "es": "El rey negro está muy expuesto: Ch4 y Dh5 (o Cf5) rompen la defensa."
+ },
+ "": {
+  "en": "Against 2...Nc6: Bc4 or f4.",
+  "es": "Contra 2...Cc6: Ac4 o f4."
+ }
+}
