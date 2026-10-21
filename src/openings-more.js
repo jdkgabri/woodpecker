@@ -140,4 +140,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('london', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4')],
   },
+  // ---- morra
+  {
+    id: 'morra', side: 'w', vs: 'e4', eco: 'B21', puzzles: 'morra',
+    name: { en: 'Smith-Morra Gambit', es: 'Gambito Smith-Morra' },
+    summary: {
+      en: '1.e4 c5 2.d4 cxd4 3.c3 — a pawn for fast development and open lines against the Sicilian.',
+      es: '1.e4 c5 2.d4 cxd4 3.c3 — un peón a cambio de desarrollo rápido y líneas abiertas contra la Siciliana.',
+    },
+    intro: {
+      en: [
+        'In the Morra White sacrifices a pawn (sometimes two) to develop quickly: Nc3, Nf3, Bc4, castling, Qe2 and Rd1, with pressure on the open c- and d-files.',
+        'It is very dangerous at club level because natural moves can lose quickly. Black can accept and defend accurately, or decline with 3...d3, 3...Nf6 or 3...d5.',
+      ],
+      es: [
+        'En el Morra las blancas sacrifican un peón (a veces dos) para desarrollarse rápido: Cc3, Cf3, Ac4, enroque, De2 y Td1, con presión por las columnas c y d abiertas.',
+        'Es muy peligroso a nivel de club porque las jugadas naturales pueden perder rápido. Las negras pueden aceptar y defender con precisión, o rehusar con 3...d3, 3...Cf6 o 3...d5.',
+      ],
+    },
+    structure: {
+      en: 'White has given the d- and c-pawns for open files: rooks go to c1 and d1. Black has an extra pawn and a solid but passive centre (d6–e6).',
+      es: 'Las blancas han dado los peones d y c a cambio de columnas abiertas: las torres van a c1 y d1. Las negras tienen un peón de más y un centro sólido pero pasivo (d6–e6).',
+    },
+    plans: {
+      w: {
+        en: ['Nc3, Nf3, Bc4, O-O, Qe2, Rd1 and Rc1.', 'Target d6 and f7; watch for Nd5 and e5 breaks.', 'Keep the initiative: material is less important than time.'],
+        es: ['Cc3, Cf3, Ac4, O-O, De2, Td1 y Tc1.', 'Atacar d6 y f7; atento a las rupturas Cd5 y e5.', 'Mantener la iniciativa: el material importa menos que el tiempo.'],
+      },
+      b: {
+        en: ['Develop carefully and castle quickly.', 'Avoid pinning traps on the d-file.', 'Give back the pawn with ...d5 when it frees the game.'],
+        es: ['Desarrollar con cuidado y enrocar pronto.', 'Evitar trampas de clavada en la columna d.', 'Devolver el peón con ...d5 cuando libere el juego.'],
+      },
+    },
+    lines: [tree('morra', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 c5')],
+  },
 ];

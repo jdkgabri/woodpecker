@@ -1,0 +1,38 @@
+{
+ "": {
+  "en": "The Smith-Morra Gambit: 2.d4 cxd4 3.c3. White gives a pawn for quick development (Nc3, Nf3, Bc4, O-O, Qe2, Rd1) and open lines against the black king.",
+  "es": "El Gambito Smith-Morra: 2.d4 cxd4 3.c3. Las blancas entregan un peón a cambio de desarrollo rápido (Cc3, Cf3, Ac4, O-O, De2, Td1) y líneas abiertas contra el rey negro."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3": {
+  "en": "Gambit accepted. The knight comes to c3 with tempo; next Nf3, Bc4 and O-O.",
+  "es": "Gambito aceptado. El caballo llega a c3 ganando tiempo; después Cf3, Ac4 y O-O."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 e6 Bc4": {
+  "en": "The bishop aims at e6 and f7. Castling, Qe2 and Rd1 complete the setup.",
+  "es": "El alfil apunta a e6 y f7. El enroque, De2 y Td1 completan la estructura."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 d6 Bc4 Nf6 e5": {
+  "en": "...Nf6? lets White push e5 with tempo and open lines against the king.",
+  "es": "...Cf6? permite a las blancas avanzar e5 ganando tiempo y abrir líneas contra el rey."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 d6 Bc4 g6 Qb3": {
+  "en": "...g6? weakens f7: Qb3 hits it together with the bishop.",
+  "es": "...g6? debilita f7: Db3 lo ataca junto con el alfil."
+ },
+ "d4 cxd4 c3 d3": {
+  "en": "Declining with ...d3 gives the pawn back but keeps White's c-pawn on c3; Nf3 and Bxd3 or Qxd3 follow.",
+  "es": "Rehusar con ...d3 devuelve el peón pero deja el peón blanco en c3; siguen Cf3 y Axd3 o Dxd3."
+ },
+ "d4 cxd4 c3 Nc6 cxd4": {
+  "en": "If Black does not take, White simply gets the full centre for free.",
+  "es": "Si las negras no toman, las blancas consiguen gratis todo el centro."
+ },
+ "d4 cxd4 c3 Nf6 e5 Nd5": {
+  "en": "This transposes to an Alapin with an extra tempo for White.",
+  "es": "Esto transpone a una Alapin con un tiempo extra para las blancas."
+ },
+ "d4 Nc6 d5": {
+  "en": "...Nc6? lets d5 gain space with tempo.",
+  "es": "...Cc6? permite a d5 ganar espacio con tiempo."
+ }
+}
