@@ -1,0 +1,22 @@
+{
+ "": {
+  "en": "The Dutch for Black, Classical style: ...f5, ...Nf6, ...e6, ...Be7 and ...O-O, then ...d6 and ...Qe8–h5 or ...d5 (Stonewall). Black fights for e4 and plays on the kingside.",
+  "es": "La Holandesa con negras, estilo clásico: ...f5, ...Cf6, ...e6, ...Ae7 y ...O-O, y luego ...d6 y ...De8–h5 o ...d5 (Muro de Piedra). Las negras luchan por e4 y juegan en el flanco de rey."
+ },
+ "c4 Nf6 Nc3 e6": {
+  "en": "...e6 keeps the position flexible: ...Bb4 (pinning the knight that supports e4) or ...Be7 and ...O-O.",
+  "es": "...e6 mantiene la posición flexible: ...Ab4 (clavando el caballo que apoya e4) o ...Ae7 y ...O-O."
+ },
+ "Bf4 Nf6 e3 e6": {
+  "en": "Against the London, the same setup; ...Be7, ...O-O and ...b6 with ...Bb7 control e4.",
+  "es": "Contra la Londres, la misma estructura; ...Ae7, ...O-O y ...b6 con ...Ab7 controlan e4."
+ },
+ "Nf3 Nf6 g3 e6": {
+  "en": "Against the fianchetto, ...Be7 and ...O-O, then ...d6 and ...Qe8 or the Stonewall with ...d5.",
+  "es": "Contra el fianchetto, ...Ae7 y ...O-O, y luego ...d6 y ...De8 o el Muro de Piedra con ...d5."
+ },
+ "Nc3 Nf6": {
+  "en": "Against 2.Nc3 (preparing e4), ...Nf6 keeps control of e4.",
+  "es": "Contra 2.Cc3 (preparando e4), ...Cf6 mantiene el control de e4."
+ }
+}

@@ -650,4 +650,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('queens-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 e6 Nf3')],
   },
+  // ---- dutch
+  {
+    id: 'dutch', side: 'b', eco: 'A80–A99', puzzles: 'dutch',
+    name: { en: 'Dutch Defence', es: 'Defensa Holandesa' },
+    summary: {
+      en: '1.d4 f5 — control e4 and prepare a kingside attack; unbalanced from move one.',
+      es: '1.d4 f5 — controlar e4 y preparar un ataque en el flanco de rey; desequilibrada desde la primera jugada.',
+    },
+    intro: {
+      en: [
+        'With 1...f5 Black controls e4 and plans to attack on the kingside. Main setups are the Leningrad (...g6, ...Bg7), the Stonewall (...e6, ...d5, ...c6) and the Classical (...e6, ...Be7).',
+        'The weakened e8–h5 diagonal and the e5/e6 squares are the price; White\'s sharpest tries are early gambits such as 2.e4 (Staunton Gambit) or 2.Bg5.',
+      ],
+      es: [
+        'Con 1...f5 las negras controlan e4 y preparan un ataque en el flanco de rey. Las estructuras principales son la Leningrado (...g6, ...Ag7), el Muro de Piedra (...e6, ...d5, ...c6) y la Clásica (...e6, ...Ae7).',
+        'El precio es la diagonal e8–h5 debilitada y las casillas e5 y e6; los intentos más agudos de las blancas son gambitos tempranos como 2.e4 (Gambito Staunton) o 2.Ag5.',
+      ],
+    },
+    structure: {
+      en: 'Black: f5 with either g6 (Leningrad) or e6–d5 (Stonewall). White usually fianchettoes and fights for e4 with Nc3 and f3 or e4.',
+      es: 'Negras: f5 con g6 (Leningrado) o e6–d5 (Muro de Piedra). Las blancas suelen hacer el fianchetto y luchar por e4 con Cc3 y f3 o e4.',
+    },
+    plans: {
+      b: {
+        en: ['...Nf6, ...e6 or ...g6, then castle.', 'Control e4 and attack with ...Qe8–h5.', 'Break with ...e5 in the Leningrad.'],
+        es: ['...Cf6, ...e6 o ...g6, luego enroque.', 'Controlar e4 y atacar con ...De8–h5.', 'Romper con ...e5 en la Leningrado.'],
+      },
+      w: {
+        en: ['Fianchetto with g3 and Bg2.', 'Break with e4 to open lines.', 'Use the e5 square and the weak e6-pawn.'],
+        es: ['Fianchetto con g3 y Ag2.', 'Romper con e4 para abrir líneas.', 'Aprovechar la casilla e5 y el débil peón de e6.'],
+      },
+    },
+    lines: [tree('dutch', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 f5')],
+  },
 ];
