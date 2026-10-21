@@ -1,0 +1,609 @@
+// Opening courses. Text is bilingual ({ en, es }) because it is long-form content, not UI.
+// Line format: moves = SAN separated by spaces from the initial position; notes are keyed by ply
+// (1 = White's first move). `puzzles` names a file in public/openings/puzzles/ for training sets.
+// Trap lines (trap: true) show mistakes on purpose, so they are study-only (no move drill).
+// Every line is checked by scripts/check-openings.mjs (legal moves, notes on existing plies).
+
+export const OPENINGS = [
+  // =============================================================================================
+  {
+    id: 'italian',
+    side: 'w',
+    eco: 'C50–C59',
+    name: { en: 'Italian Game', es: 'Apertura Italiana' },
+    summary: {
+      en: '1.e4 e5 2.Nf3 Nc6 3.Bc4 — fast development aimed at f7, from slow manoeuvring to sharp gambits.',
+      es: '1.e4 e5 2.Cf3 Cc6 3.Ac4 — desarrollo rápido apuntando a f7, desde el juego de maniobras hasta gambitos muy agudos.',
+    },
+    intro: {
+      en: [
+        'The Italian Game is one of the oldest openings in chess and is still a favourite from club level to the world elite. After 1.e4 e5 2.Nf3 Nc6 3.Bc4 White develops quickly and points the bishop at f7, the weakest square in Black\'s camp because only the king defends it.',
+        'There are two very different ways to play it. The classical approach strikes in the centre at once with c3 and d4, or gambits material for time (Evans Gambit, Fried Liver). The modern approach — the Giuoco Pianissimo, the "very quiet game" — keeps the centre closed with c3 and d3, castles, and tries to outmanoeuvre the opponent before breaking with d4 or attacking on the kingside.',
+        'Black\'s main replies are 3...Bc5 (Giuoco Piano, symmetrical development that also eyes f2) and 3...Nf6 (Two Knights Defence, a more provocative counterattack against e4).',
+      ],
+      es: [
+        'La Italiana es una de las aperturas más antiguas del ajedrez y sigue siendo una de las favoritas, desde el nivel de club hasta la élite mundial. Tras 1.e4 e5 2.Cf3 Cc6 3.Ac4 las blancas desarrollan rápido y apuntan con el alfil a f7, la casilla más débil del campo negro porque solo la defiende el rey.',
+        'Hay dos maneras muy distintas de jugarla. La clásica golpea en el centro enseguida con c3 y d4, o entrega material a cambio de tiempo (Gambito Evans, ataque Fegatello). La moderna —el Giuoco Pianissimo, el "juego muy tranquilo"— mantiene el centro cerrado con c3 y d3, enroca y trata de superar al rival maniobrando antes de romper con d4 o atacar en el flanco de rey.',
+        'Las respuestas principales de las negras son 3...Ac5 (Giuoco Piano, desarrollo simétrico que también apunta a f2) y 3...Cf6 (Defensa de los Dos Caballos, un contraataque más provocativo contra e4).',
+      ],
+    },
+    structure: {
+      en: 'In the Pianissimo the typical pawn structure is c3–d3–e4 against e5–d6. The tension is kept for a long time: whoever breaks in the centre (d3–d4 for White, ...d6–d5 for Black) at the right moment usually takes over. When c3 and d4 are played early and pawns are traded on d4, White often gets either a broad pawn centre or an isolated d-pawn with free piece play.',
+      es: 'En el Pianissimo la estructura típica es c3–d3–e4 contra e5–d6. La tensión se mantiene mucho tiempo: quien rompe en el centro (d3–d4 las blancas, ...d6–d5 las negras) en el momento justo suele tomar la iniciativa. Cuando se juegan c3 y d4 pronto y se cambian peones en d4, las blancas suelen conseguir un centro amplio o un peón aislado en d4 con juego libre de piezas.',
+    },
+    plans: {
+      w: {
+        en: [
+          'Prepare d4 with c3: if Black allows it with gain of tempo, White gets the ideal centre.',
+          'The knight tour Nbd2–f1–g3 (after Re1 and h3) brings a knight towards f5 and h5, close to Black\'s king.',
+          'a4 (sometimes a5) gains queenside space and gives the light-squared bishop a safe retreat on a2.',
+          'Bg5 or Be3 to challenge Black\'s c5-bishop or pin the f6-knight; h3 first stops ...Bg4 and ...Ng4.',
+          'In open positions, keep the pressure on f7 with Bc4, Ng5 and Qb3.',
+        ],
+        es: [
+          'Preparar d4 con c3: si las negras lo permiten ganando tiempo, las blancas consiguen el centro ideal.',
+          'La ruta del caballo Cbd2–f1–g3 (tras Te1 y h3) lo acerca a f5 y h5, junto al rey negro.',
+          'a4 (a veces a5) gana espacio en el flanco de dama y da al alfil de casillas blancas una retirada segura en a2.',
+          'Ag5 o Ae3 para discutir el alfil de c5 o clavar el caballo de f6; h3 antes evita ...Ag4 y ...Cg4.',
+          'En posiciones abiertas, mantener la presión sobre f7 con Ac4, Cg5 y Db3.',
+        ],
+      },
+      b: {
+        en: [
+          'Break with ...d5 when it is well prepared: it frees Black\'s game and blunts the c4-bishop.',
+          '...a6 and ...Ba7 keep the c5-bishop safe from b4 or Na4 and maintain pressure on f2.',
+          '...Be6 offers to trade White\'s best piece, the c4-bishop.',
+          'Mirror White\'s manoeuvres: ...h6 against Bg5, ...Re8 and ...Nf8–g6 or ...Ne7–g6.',
+        ],
+        es: [
+          'Romper con ...d5 cuando esté bien preparado: libera el juego negro y neutraliza el alfil de c4.',
+          '...a6 y ...Aa7 protegen el alfil de c5 de b4 o Ca4 y mantienen la presión sobre f2.',
+          '...Ae6 ofrece cambiar la mejor pieza blanca, el alfil de c4.',
+          'Copiar las maniobras blancas: ...h6 contra Ag5, ...Te8 y ...Cf8–g6 o ...Ce7–g6.',
+        ],
+      },
+    },
+    puzzles: 'italian',
+    lines: [
+      {
+        id: 'pianissimo',
+        name: { en: 'Giuoco Pianissimo: 4.c3 Nf6 5.d3', es: 'Giuoco Pianissimo: 4.c3 Cf6 5.d3' },
+        moves: 'e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 d6 O-O a6 a4 Ba7 Re1 O-O h3 h6 Nbd2 Re8 Nf1 Be6 Bxe6 Rxe6 Ng3',
+        puzzles: 'italian-giuoco',
+        notes: {
+          5: { en: 'The Italian bishop: it controls d5 and aims at f7.', es: 'El alfil italiano: controla d5 y apunta a f7.' },
+          6: { en: 'Giuoco Piano: Black mirrors White and eyes f2.', es: 'Giuoco Piano: las negras copian a las blancas y apuntan a f2.' },
+          7: { en: 'c3 prepares d4 and gives the queen access to b3.', es: 'c3 prepara d4 y abre a la dama el camino a b3.' },
+          9: { en: '5.d3 is the Pianissimo: White keeps the centre closed and plays a long manoeuvring game. (5.d4 leads to the sharp classical lines.)', es: '5.d3 es el Pianissimo: las blancas mantienen el centro cerrado y juegan una partida larga de maniobras. (5.d4 lleva a las líneas clásicas agudas.)' },
+          12: { en: '...a6 prepares ...Ba7, so the bishop cannot be harassed by b4 or Na4.', es: '...a6 prepara ...Aa7, para que el alfil no pueda ser hostigado con b4 o Ca4.' },
+          13: { en: 'a4 gains space; if Black ever plays ...b5, White opens the a-file with axb5.', es: 'a4 gana espacio; si las negras juegan ...b5, las blancas abren la columna a con axb5.' },
+          17: { en: 'A useful prophylactic move: no ...Bg4 pin and no ...Ng4 jumps.', es: 'Una útil jugada profiláctica: ni clavada con ...Ag4 ni saltos con ...Cg4.' },
+          19: { en: 'Start of the classic manoeuvre Nbd2–f1–g3.', es: 'Comienza la maniobra clásica Cbd2–f1–g3.' },
+          22: { en: 'Black challenges the c4-bishop, White\'s most active piece.', es: 'Las negras discuten el alfil de c4, la pieza blanca más activa.' },
+          23: { en: 'Trading is simple. White can also keep the bishop with 12.Bb3 or 12.Ba2 and let Black decide.', es: 'Cambiar es lo más sencillo. Las blancas también pueden conservar el alfil con 12.Ab3 o 12.Aa2 y dejar decidir a las negras.' },
+          25: { en: 'The knight eyes f5 and h5. Typical plans now: Be3 to trade Black\'s strong bishop, d3–d4 when ready, or Nh4–f5. A rich, balanced middlegame.', es: 'El caballo apunta a f5 y h5. Planes típicos: Ae3 para cambiar el buen alfil negro, d3–d4 cuando esté listo, o Ch4–f5. Un medio juego rico y equilibrado.' },
+        },
+      },
+      {
+        id: 'classical',
+        name: { en: 'Giuoco Piano: 4.c3 Nf6 5.d4', es: 'Giuoco Piano: 4.c3 Cf6 5.d4' },
+        moves: 'e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Nce7 O-O O-O Rfe1 c6',
+        puzzles: 'italian-giuoco',
+        notes: {
+          9: { en: 'The classical strike: White wants a big pawn centre.', es: 'El golpe clásico: las blancas quieren un gran centro de peones.' },
+          11: { en: 'The ideal pawn duo on d4 and e4 — Black must hit back immediately.', es: 'El dúo de peones ideal en d4 y e4: las negras deben reaccionar de inmediato.' },
+          12: { en: 'The main line. Note 7.Nc3!? Nxe4 8.O-O, the sharp Møller Attack, which gives up a pawn for the initiative.', es: 'La línea principal. Ojo con 7.Cc3!? Cxe4 8.O-O, el agudo Ataque Møller, que entrega un peón por la iniciativa.' },
+          16: { en: 'The key freeing move: Black gives up the centre to free the position. Without it, e4–e5 would be very strong.', es: 'La jugada liberadora clave: las negras ceden el centro para liberar su juego. Sin ella, e4–e5 sería muy fuerte.' },
+          19: { en: 'Qb3 pressures d5 and b7.', es: 'Db3 presiona d5 y b7.' },
+          20: { en: '...Nce7 keeps d5 solidly defended.', es: '...Cce7 mantiene d5 sólidamente defendido.' },
+          24: { en: 'A typical isolated-queen\'s-pawn position: White has space and active pieces (Ne5, rook lifts, kingside pressure); Black wants to blockade d5 and trade pieces until the d4-pawn becomes weak.', es: 'Una posición típica de peón aislado en d4: las blancas tienen espacio y piezas activas (Ce5, elevación de torres, presión en el flanco de rey); las negras quieren bloquear en d5 y cambiar piezas hasta que el peón de d4 sea débil.' },
+        },
+      },
+      {
+        id: 'evans',
+        name: { en: 'Evans Gambit', es: 'Gambito Evans' },
+        moves: 'e4 e5 Nf3 Nc6 Bc4 Bc5 b4 Bxb4 c3 Ba5 d4 d6 Qb3 Qd7 dxe5 Bb6 Nbd2 Na5 Qc2 Nxc4 Nxc4 Qe6',
+        puzzles: 'italian-evans',
+        notes: {
+          7: { en: 'The Evans Gambit: White gives a pawn to gain time for c3 and d4, building a big centre with fast development.', es: 'El Gambito Evans: las blancas entregan un peón para ganar tiempo para c3 y d4 y construir un gran centro con desarrollo rápido.' },
+          9: { en: 'Gaining a tempo on the bishop and preparing d4.', es: 'Gana un tiempo sobre el alfil y prepara d4.' },
+          10: { en: '...Ba5 keeps the pressure on c3 and is the most popular retreat. 5...Be7 is a solid alternative.', es: '...Aa5 mantiene la presión sobre c3 y es la retirada más popular. 5...Ae7 es una alternativa sólida.' },
+          11: { en: 'White strikes in the centre; e5 and f7 are under pressure.', es: 'Las blancas golpean en el centro; e5 y f7 están bajo presión.' },
+          12: { en: 'Lasker\'s Defence: Black holds e5 and is ready to return the pawn for a safe position. Taking with 6...exd4 7.O-O leads to wild positions where White has a dangerous initiative.', es: 'La Defensa Lasker: las negras sostienen e5 y están dispuestas a devolver el peón a cambio de una posición segura. Tomar con 6...exd4 7.O-O lleva a posiciones salvajes en las que las blancas tienen una peligrosa iniciativa.' },
+          13: { en: 'Qb3 hits f7 — the theme of the whole opening.', es: 'Db3 ataca f7, el tema de toda la apertura.' },
+          16: { en: 'Black gives back the pawn but gets a solid position and the bishop pair.', es: 'Las negras devuelven el peón pero obtienen una posición sólida y la pareja de alfiles.' },
+          18: { en: '...Na5 to trade White\'s dangerous bishop.', es: '...Ca5 para cambiar el peligroso alfil blanco.' },
+          22: { en: 'The queen hits the c4-knight and keeps an eye on e5. Material is about level: White has more space and active pieces, Black has the bishop pair and a sound structure. A great practical weapon, especially in fast games.', es: 'La dama ataca el caballo de c4 y vigila e5. El material está prácticamente igualado: las blancas tienen más espacio y piezas activas; las negras, la pareja de alfiles y una estructura sana. Un arma práctica excelente, sobre todo en partidas rápidas.' },
+        },
+      },
+      {
+        id: 'two-knights-d3',
+        name: { en: 'Two Knights: 4.d3 (quiet)', es: 'Dos Caballos: 4.d3 (tranquila)' },
+        moves: 'e4 e5 Nf3 Nc6 Bc4 Nf6 d3 Be7 O-O O-O Re1 d6 c3 Na5 Bb5 a6 Ba4 b5 Bc2',
+        puzzles: 'italian-two-knights',
+        notes: {
+          6: { en: 'The Two Knights Defence: Black counterattacks e4 instead of copying White.', es: 'La Defensa de los Dos Caballos: las negras contraatacan e4 en vez de copiar a las blancas.' },
+          7: { en: '4.d3 avoids all forcing theory and leads to Pianissimo-type positions. 4.Ng5 is the sharp alternative (next lines).', es: '4.d3 evita toda la teoría forzada y lleva a posiciones tipo Pianissimo. 4.Cg5 es la alternativa aguda (siguientes líneas).' },
+          14: { en: 'Black wants to trade the bishop with ...Nxc4; White sidesteps.', es: 'Las negras quieren cambiar el alfil con ...Cxc4; las blancas lo evitan.' },
+          15: { en: 'With Bb5 and Ba4 the bishop avoids the exchange and later settles on c2, like in the Spanish.', es: 'Con Ab5 y Aa4 el alfil evita el cambio y después se instala en c2, como en la Española.' },
+          19: { en: 'The structure resembles a closed Ruy Lopez: White can play Nbd2–f1–g3, d4 and kingside play.', es: 'La estructura recuerda a una Española cerrada: las blancas pueden jugar Cbd2–f1–g3, d4 y jugar en el flanco de rey.' },
+        },
+      },
+      {
+        id: 'two-knights-ng5',
+        name: { en: 'Two Knights: 4.Ng5 d5 (main line)', es: 'Dos Caballos: 4.Cg5 d5 (línea principal)' },
+        moves: 'e4 e5 Nf3 Nc6 Bc4 Nf6 Ng5 d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4 Ne5 Bd6',
+        puzzles: 'italian-two-knights',
+        notes: {
+          7: { en: 'Ng5 attacks f7 twice (knight and bishop). It breaks the rule of not moving a piece twice, but it is perfectly sound.', es: 'Cg5 ataca f7 dos veces (caballo y alfil). Rompe la norma de no mover dos veces la misma pieza, pero es perfectamente correcto.' },
+          8: { en: 'The best defence: Black blocks the bishop\'s diagonal and counterattacks.', es: 'La mejor defensa: las negras cortan la diagonal del alfil y contraatacan.' },
+          9: { en: 'Forced. Now Black must not recapture with the knight — see the Fried Liver line.', es: 'Forzado. Ahora las negras no deben recapturar con el caballo: mira la línea del Fegatello.' },
+          10: { en: 'The main line: Black hits the bishop and gives a pawn for rapid development.', es: 'La línea principal: las negras atacan el alfil y entregan un peón a cambio de un desarrollo rápido.' },
+          15: { en: 'White keeps the extra pawn but falls behind in development.', es: 'Las blancas conservan el peón de más pero se retrasan en el desarrollo.' },
+          16: { en: 'Kicking the knight; Black\'s compensation is time and space.', es: 'Expulsa al caballo; la compensación negra es tiempo y espacio.' },
+          20: { en: 'Black has full compensation for the pawn: development, space and attacking chances. White must defend accurately, for example with d4 or f4. A line to know if you play 4.Ng5.', es: 'Las negras tienen plena compensación por el peón: desarrollo, espacio y posibilidades de ataque. Las blancas deben defenderse con precisión, por ejemplo con d4 o f4. Una línea que hay que conocer si se juega 4.Cg5.' },
+        },
+      },
+      {
+        id: 'fried-liver',
+        name: { en: 'Fried Liver Attack (Fegatello)', es: 'Ataque Fegatello (Fried Liver)' },
+        moves: 'e4 e5 Nf3 Nc6 Bc4 Nf6 Ng5 d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Ke6 Nc3 Ncb4',
+        puzzles: 'italian-two-knights',
+        notes: {
+          10: { en: 'This natural recapture is a mistake: the d5-knight is left without enough protection.', es: 'Esta recaptura natural es un error: el caballo de d5 queda sin suficiente protección.' },
+          11: { en: 'The Fried Liver (Fegatello): White sacrifices a knight to drag the king into the open. 6.d4! (the Lolli Attack) is objectively even stronger.', es: 'El Fegatello (Fried Liver): las blancas sacrifican un caballo para sacar al rey al centro. 6.d4! (Ataque Lolli) es objetivamente aún más fuerte.' },
+          13: { en: 'Check, and pressure on the pinned d5-knight.', es: 'Jaque, y presión sobre el caballo de d5.' },
+          14: { en: 'The only way to keep the knight: the king walks into the centre.', es: 'La única forma de conservar el caballo: el rey se va al centro.' },
+          15: { en: 'More attackers come in; d5 is attacked three times.', es: 'Entran más atacantes; d5 está atacado tres veces.' },
+          16: { en: 'Black defends d5 and threatens ...Nxc2+. White continues with a3, O-O, d4 and Re1: the black king stuck in the centre rarely survives in practice.', es: 'Las negras defienden d5 y amenazan ...Cxc2+. Las blancas siguen con a3, O-O, d4 y Te1: en la práctica, el rey negro atrapado en el centro rara vez sobrevive.' },
+        },
+      },
+    ],
+    traps: [
+      {
+        id: 'blackburne-shilling',
+        trap: true,
+        name: { en: 'Trap to avoid: Blackburne–Shilling Gambit', es: 'Trampa a evitar: Gambito Blackburne–Shilling' },
+        moves: 'e4 e5 Nf3 Nc6 Bc4 Nd4 Nxe5 Qg5 Nxf7 Qxg2 Rf1 Qxe4+ Be2 Nf3#',
+        notes: {
+          6: { en: 'An annoying trap. The correct reply is 4.Nxd4 exd4 5.c3, or simply 4.O-O or 4.c3, with a good game.', es: 'Una trampa molesta. Lo correcto es 4.Cxd4 exd4 5.c3, o simplemente 4.O-O o 4.c3, con buena partida.' },
+          7: { en: 'Greedy and wrong.', es: 'Codicioso y erróneo.' },
+          8: { en: 'Double attack on e5 and g2.', es: 'Ataque doble a e5 y g2.' },
+          9: { en: 'A fork of queen and rook... that walks into mate.', es: 'Un ataque doble a dama y torre... que lleva al mate.' },
+          14: { en: 'Mate. Lesson: against 3...Nd4, don\'t grab the e5-pawn.', es: 'Mate. Lección: contra 3...Cd4, no te comas el peón de e5.' },
+        },
+      },
+    ],
+  },
+
+  // =============================================================================================
+  {
+    id: 'queens-gambit',
+    side: 'w',
+    eco: 'D06–D69',
+    name: { en: "Queen's Gambit", es: 'Gambito de Dama' },
+    summary: {
+      en: '1.d4 d5 2.c4 — White offers a wing pawn to win the centre; one of the most solid and respected openings.',
+      es: '1.d4 d5 2.c4 — las blancas ofrecen un peón de flanco para ganar el centro; una de las aperturas más sólidas y respetadas.',
+    },
+    intro: {
+      en: [
+        'After 1.d4 d5 2.c4 White attacks Black\'s d5-pawn with a wing pawn. It is not a real gambit: if Black takes on c4, White usually wins the pawn back easily while building the ideal centre with e4.',
+        'Black has three main approaches: keep the centre with 2...e6 (Queen\'s Gambit Declined, very solid), 2...c6 (the Slav, which keeps the c8-bishop\'s diagonal open) or take the pawn with 2...dxc4 (Queen\'s Gambit Accepted) and counterattack the centre with ...c5.',
+        'White\'s play revolves around pressure on d5, natural development and, depending on the structure, the minority attack on the queenside or the e4 break.',
+      ],
+      es: [
+        'Tras 1.d4 d5 2.c4 las blancas atacan el peón negro de d5 con un peón de flanco. No es un gambito de verdad: si las negras toman en c4, las blancas suelen recuperar el peón con facilidad mientras construyen el centro ideal con e4.',
+        'Las negras tienen tres planteamientos principales: mantener el centro con 2...e6 (Gambito de Dama Rehusado, muy sólido), 2...c6 (la Eslava, que mantiene abierta la diagonal del alfil de c8) o tomar el peón con 2...dxc4 (Gambito de Dama Aceptado) y contraatacar el centro con ...c5.',
+        'El juego blanco gira en torno a la presión sobre d5, el desarrollo natural y, según la estructura, el ataque de minorías en el flanco de dama o la ruptura e4.',
+      ],
+    },
+    structure: {
+      en: 'Three key structures: (1) the Queen\'s Gambit Declined with tension on d5 and c4; (2) the Carlsbad structure after cxd5 exd5, with White\'s d4/e3 against Black\'s c6/d5 — ideal for the minority attack b4–b5; (3) isolated queen\'s pawn positions from the Accepted, where the side with the isolated pawn plays actively on the kingside and the other side blockades it.',
+      es: 'Tres estructuras clave: (1) el Gambito de Dama Rehusado, con tensión en d5 y c4; (2) la estructura Carlsbad tras cxd5 exd5, con d4/e3 blancos contra c6/d5 negros, ideal para el ataque de minorías b4–b5; (3) posiciones de peón aislado de dama en el Aceptado, donde el bando con el peón aislado juega activamente en el flanco de rey y el otro lo bloquea.',
+    },
+    plans: {
+      w: {
+        en: [
+          'Pressure d5 with c4 and Nc3, often adding Bg5 to pin the f6-knight that defends it.',
+          'In Carlsbad structures: the minority attack Rb1, b4–b5 to leave Black with a weak c-pawn; or Botvinnik\'s plan f3 and e4 with the knights on e2 and c3.',
+          'With an isolated d4-pawn: active pieces, Ne5, a Bd3/Qc2 battery against h7, rook lifts and the d4–d5 break.',
+          'Grab the centre with e4 whenever Black allows it.',
+        ],
+        es: [
+          'Presionar d5 con c4 y Cc3, a menudo añadiendo Ag5 para clavar el caballo de f6 que lo defiende.',
+          'En estructuras Carlsbad: el ataque de minorías Tb1, b4–b5 para dejar a las negras con un peón c débil; o el plan de Botvinnik f3 y e4 con los caballos en e2 y c3.',
+          'Con un peón aislado en d4: piezas activas, Ce5, una batería Ad3/Dc2 contra h7, elevación de torres y la ruptura d4–d5.',
+          'Ocupar el centro con e4 siempre que las negras lo permitan.',
+        ],
+      },
+      b: {
+        en: [
+          'Free the position with ...c5 or ...e5 at the right moment.',
+          'Trade pieces with ...Ne4 or ...Nxd5 to ease the lack of space.',
+          'Develop the problem c8-bishop: ...b6 and ...Bb7, or ...Bf5 before ...e6 in the Slav.',
+          'In the Carlsbad structure, counterplay on the kingside with ...Ne4, ...f5 or ...Nf8–g6.',
+        ],
+        es: [
+          'Liberar la posición con ...c5 o ...e5 en el momento oportuno.',
+          'Cambiar piezas con ...Ce4 o ...Cxd5 para aliviar la falta de espacio.',
+          'Desarrollar el problemático alfil de c8: ...b6 y ...Ab7, o ...Af5 antes de ...e6 en la Eslava.',
+          'En la estructura Carlsbad, contrajuego en el flanco de rey con ...Ce4, ...f5 o ...Cf8–g6.',
+        ],
+      },
+    },
+    puzzles: 'queens-gambit',
+    lines: [
+      {
+        id: 'qgd-tartakower',
+        name: { en: 'Declined: Orthodox, Tartakower', es: 'Rehusado: Ortodoxa, Tartakower' },
+        moves: 'd4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 h6 Bh4 b6 cxd5 Nxd5 Bxe7 Qxe7 Nxd5 exd5 Rc1 Be6',
+        puzzles: 'qg-declined',
+        notes: {
+          3: { en: 'The Queen\'s Gambit.', es: 'El Gambito de Dama.' },
+          4: { en: 'Declining: very solid, but the c8-bishop is temporarily locked in.', es: 'Rehusando: muy sólido, aunque el alfil de c8 queda encerrado de momento.' },
+          7: { en: 'Pins the knight that defends d5.', es: 'Clava el caballo que defiende d5.' },
+          8: { en: 'Unpins and prepares to castle.', es: 'Deshace la clavada y prepara el enroque.' },
+          12: { en: 'Asking the bishop: ...h6 is a useful move for Black\'s king later on.', es: 'Pregunta al alfil: ...h6 es una jugada útil para el rey negro más adelante.' },
+          14: { en: 'The Tartakower: the c8-bishop will come out on b7 or e6.', es: 'La Tartakower: el alfil de c8 saldrá por b7 o e6.' },
+          15: { en: 'White releases the tension and simplifies.', es: 'Las blancas liberan la tensión y simplifican.' },
+          22: { en: 'Black is solid; ...c5 often follows, creating "hanging pawns" on c5 and d5. White pressures them with Qa4, Be2, Rc1 and dxc5 at the right moment.', es: 'Las negras están sólidas; suele seguir ...c5, creando "peones colgantes" en c5 y d5. Las blancas los presionan con Da4, Ae2, Tc1 y dxc5 en el momento oportuno.' },
+        },
+      },
+      {
+        id: 'qgd-exchange',
+        name: { en: 'Declined: Exchange (Carlsbad structure)', es: 'Rehusado: Variante del Cambio (estructura Carlsbad)' },
+        moves: 'd4 d5 c4 e6 Nc3 Nf6 cxd5 exd5 Bg5 c6 e3 Be7 Bd3 Nbd7 Qc2 O-O Nf3 Re8 O-O Nf8 Rab1 Ng6 b4 a6 a4',
+        puzzles: 'qg-declined',
+        notes: {
+          7: { en: 'The Exchange Variation fixes the pawn structure: the Carlsbad.', es: 'La Variante del Cambio fija la estructura de peones: la Carlsbad.' },
+          10: { en: '...c6 supports d5 and keeps the position compact.', es: '...c6 apoya d5 y mantiene la posición compacta.' },
+          15: { en: 'Qc2 and Bd3 aim at h7 and stop ...Bf5.', es: 'Dc2 y Ad3 apuntan a h7 y evitan ...Af5.' },
+          20: { en: 'The knight heads for g6 or e6 — a typical Black regrouping.', es: 'El caballo va hacia g6 o e6, un reagrupamiento típico de las negras.' },
+          21: { en: 'The minority attack: Rb1, b4, a4 and b5 to trade on c6 and leave Black with a weak pawn on c6 or d5.', es: 'El ataque de minorías: Tb1, b4, a4 y b5 para cambiar en c6 y dejar a las negras con un peón débil en c6 o d5.' },
+          25: { en: 'White plans b5. Black looks for kingside counterplay (...Ne4, ...Bd6, ...Qc7). Alternative plan for White: Nge2, f3 and e4 (Botvinnik).', es: 'Las blancas preparan b5. Las negras buscan contrajuego en el flanco de rey (...Ce4, ...Ad6, ...Dc7). Plan alternativo para las blancas: Cge2, f3 y e4 (Botvinnik).' },
+        },
+      },
+      {
+        id: 'qga',
+        name: { en: 'Accepted: classical with ...c5', es: 'Aceptado: clásica con ...c5' },
+        moves: 'd4 d5 c4 dxc4 Nf3 Nf6 e3 e6 Bxc4 c5 O-O a6 a4 Nc6 Qe2 cxd4 Rd1 Be7 exd4 O-O Nc3',
+        puzzles: 'qg-accepted',
+        notes: {
+          4: { en: 'Black takes the pawn, but does not try to keep it.', es: 'Las negras toman el peón, pero no intentan conservarlo.' },
+          5: { en: '3.Nf3 stops ...e5 and prepares e3. (3.e4, grabbing the whole centre, is also very popular.)', es: '3.Cf3 evita ...e5 y prepara e3. (3.e4, ocupando todo el centro, también es muy popular.)' },
+          7: { en: 'Opening the bishop to win back c4.', es: 'Abre el alfil para recuperar c4.' },
+          9: { en: 'Material is level again.', es: 'El material vuelve a estar igualado.' },
+          10: { en: 'Black\'s thematic counter-strike on the centre.', es: 'El contragolpe temático de las negras contra el centro.' },
+          13: { en: 'a4 stops ...b5 expansion.', es: 'a4 frena la expansión ...b5.' },
+          16: { en: 'Black releases the tension; White will get an isolated d-pawn.', es: 'Las negras liberan la tensión; las blancas tendrán un peón aislado en d4.' },
+          19: { en: 'The isolated queen\'s pawn: a weakness in the endgame, but it gives White space and outposts on e5 and c5.', es: 'El peón aislado de dama: una debilidad en el final, pero da a las blancas espacio y puestos avanzados en e5 y c5.' },
+          21: { en: 'Typical plans: Bg5, Ne5, Bd3 with a battery against h7, a rook lift via d3 and the d4–d5 break. Black blockades with ...Nd5 and ...Nb4 and trades pieces.', es: 'Planes típicos: Ag5, Ce5, Ad3 con batería contra h7, elevar una torre por d3 y la ruptura d4–d5. Las negras bloquean con ...Cd5 y ...Cb4 y cambian piezas.' },
+        },
+      },
+      {
+        id: 'slav',
+        name: { en: 'Slav Defence: main line', es: 'Defensa Eslava: línea principal' },
+        moves: 'd4 d5 c4 c6 Nf3 Nf6 Nc3 dxc4 a4 Bf5 e3 e6 Bxc4 Bb4 O-O O-O Qe2 Nbd7 e4 Bg6 Bd3',
+        puzzles: 'qg-slav',
+        notes: {
+          4: { en: 'The Slav: d5 is supported without blocking the c8-bishop.', es: 'La Eslava: d5 queda apoyado sin encerrar al alfil de c8.' },
+          8: { en: 'Black takes on c4 now that ...b5 would hold it.', es: 'Las negras toman en c4 ahora que ...b5 lo sostendría.' },
+          9: { en: 'a4 stops ...b5; Black will not keep the pawn.', es: 'a4 impide ...b5; las negras no conservarán el peón.' },
+          10: { en: 'The bishop comes out before ...e6 — the whole point of the Slav.', es: 'El alfil sale antes de ...e6: la idea de toda la Eslava.' },
+          13: { en: 'Pawn regained.', es: 'Peón recuperado.' },
+          14: { en: 'The pin on c3 slows down e4.', es: 'La clavada en c3 frena e4.' },
+          19: { en: 'White achieves e4 with a space advantage in the centre.', es: 'Las blancas logran e4 con ventaja de espacio en el centro.' },
+          21: { en: 'White has the centre and the e4–e5 push; Black is solid and pressures e4 and the light squares.', es: 'Las blancas tienen el centro y el avance e4–e5; las negras están sólidas y presionan e4 y las casillas blancas.' },
+        },
+      },
+    ],
+    traps: [
+      {
+        id: 'albin-lasker',
+        trap: true,
+        name: { en: 'Trap to avoid: Lasker Trap (Albin Countergambit)', es: 'Trampa a evitar: Trampa Lasker (Contragambito Albin)' },
+        moves: 'd4 d5 c4 e5 dxe5 d4 e3 Bb4+ Bd2 dxe3 Bxb4 exf2+ Ke2 fxg1=N+',
+        notes: {
+          4: { en: 'The Albin Countergambit, a sharp try. The right answer is 3.dxe5 d4 4.Nf3.', es: 'El Contragambito Albin, un intento agudo. Lo correcto es 3.dxe5 d4 4.Cf3.' },
+          7: { en: 'A natural-looking mistake.', es: 'Un error de aspecto natural.' },
+          11: { en: 'Losing at once; 6.fxe3 was necessary.', es: 'Pierde enseguida; había que jugar 6.fxe3.' },
+          14: { en: 'Underpromotion to a knight with check! Black wins a lot of material. Remember: after 3...d4, play 4.Nf3.', es: '¡Subpromoción a caballo con jaque! Las negras ganan mucho material. Recuerda: tras 3...d4, juega 4.Cf3.' },
+        },
+      },
+      {
+        id: 'qga-greed',
+        trap: true,
+        name: { en: 'Trap for Black: holding on to the c4-pawn', es: 'Trampa para las negras: aferrarse al peón de c4' },
+        moves: 'd4 d5 c4 dxc4 e3 b5 a4 c6 axb5 cxb5 Qf3',
+        notes: {
+          6: { en: 'Trying to keep the pawn. It is risky, but the real mistake comes later.', es: 'Intentar conservar el peón. Es arriesgado, pero el error de verdad llega después.' },
+          8: { en: 'Supporting b5 again — already dubious, as Black falls further behind in development.', es: 'Apoya b5 otra vez; ya es dudosa, porque las negras se retrasan aún más en el desarrollo.' },
+          10: { en: 'The mistake: recapturing opens the long diagonal towards the a8-rook.', es: 'El error: recapturar abre la gran diagonal hacia la torre de a8.' },
+          11: { en: 'The queen hits the a8-rook: Black loses material. Lesson: in the Accepted, Black should not cling to the c4-pawn.', es: 'La dama ataca la torre de a8: las negras pierden material. Lección: en el Aceptado, las negras no deben aferrarse al peón de c4.' },
+        },
+      },
+    ],
+  },
+
+  // =============================================================================================
+  {
+    id: 'sicilian',
+    side: 'b',
+    eco: 'B20–B99',
+    name: { en: 'Sicilian Defence', es: 'Defensa Siciliana' },
+    summary: {
+      en: '1.e4 c5 — the most popular and combative answer to 1.e4: unbalanced positions with chances for both sides.',
+      es: '1.e4 c5 — la respuesta más popular y combativa a 1.e4: posiciones desequilibradas con opciones para ambos bandos.',
+    },
+    intro: {
+      en: [
+        'With 1...c5 Black fights for d4 from the side instead of copying White. The position is unbalanced from the first move: in the main lines White gets more space and attacking chances on the kingside, while Black gets the half-open c-file, an extra central pawn and queenside counterplay.',
+        'In the Open Sicilian (2.Nf3 and 3.d4) White trades the d-pawn for Black\'s c-pawn. Black has many systems; here we cover the two most ambitious: the Najdorf (5...a6), the favourite of Fischer and Kasparov, and the Dragon (5...g6), with the bishop on the long diagonal.',
+        'Many players avoid the main lines with "anti-Sicilians" such as 2.c3 or the Smith-Morra Gambit. Having a clear answer to each one is part of playing the Sicilian.',
+      ],
+      es: [
+        'Con 1...c5 las negras luchan por d4 desde el flanco en lugar de copiar a las blancas. La posición queda desequilibrada desde la primera jugada: en las líneas principales las blancas obtienen más espacio y opciones de ataque en el flanco de rey, mientras que las negras consiguen la columna c semiabierta, un peón central de más y contrajuego en el flanco de dama.',
+        'En la Siciliana Abierta (2.Cf3 y 3.d4) las blancas cambian el peón d por el peón c negro. Las negras tienen muchos sistemas; aquí vemos los dos más ambiciosos: la Najdorf (5...a6), la favorita de Fischer y Kasparov, y el Dragón (5...g6), con el alfil en la gran diagonal.',
+        'Muchos jugadores evitan las líneas principales con "antisicilianas" como 2.c3 o el Gambito Smith-Morra. Tener una respuesta clara para cada una forma parte de jugar la Siciliana.',
+      ],
+    },
+    structure: {
+      en: 'Typical Open Sicilian structure: Black has pawns on d6 and e6 or e5 (or g6 in the Dragon) against White\'s e4-pawn. The d5-square and the d6-pawn are key. In Najdorf lines with ...e5 Black accepts a hole on d5 in exchange for central control and activity. With castling on opposite sides (English Attack, Yugoslav Attack) it becomes a race: White storms with g4–g5 or h4–h5, Black with ...b5–b4 and pressure along the c-file.',
+      es: 'Estructura típica de la Siciliana Abierta: las negras tienen peones en d6 y e6 o e5 (o g6 en el Dragón) contra el peón blanco de e4. La casilla d5 y el peón de d6 son claves. En las líneas Najdorf con ...e5 las negras aceptan un agujero en d5 a cambio de control central y actividad. Con enroques opuestos (Ataque Inglés, Ataque Yugoslavo) se convierte en una carrera: las blancas avanzan con g4–g5 o h4–h5, las negras con ...b5–b4 y presión por la columna c.',
+    },
+    plans: {
+      b: {
+        en: [
+          'Use the half-open c-file: ...Rc8, ...Qc7 or ...Qa5, and the exchange sacrifice ...Rxc3 to wreck White\'s queenside.',
+          'Expand on the queenside with ...a6 and ...b5–b4 to drive away the c3-knight.',
+          'Break in the centre with ...d5 when possible: it often equalises immediately.',
+          'In ...e5 structures, control d5 with ...Be6 and by trading the pieces that could land there.',
+          'Dragon: the g7-bishop is Black\'s best piece — keep it and aim everything at White\'s king.',
+        ],
+        es: [
+          'Aprovechar la columna c semiabierta: ...Tc8, ...Dc7 o ...Da5, y el sacrificio de calidad ...Txc3 para destrozar el flanco de dama blanco.',
+          'Expandirse en el flanco de dama con ...a6 y ...b5–b4 para expulsar al caballo de c3.',
+          'Romper en el centro con ...d5 cuando sea posible: a menudo iguala de inmediato.',
+          'En estructuras con ...e5, controlar d5 con ...Ae6 y cambiando las piezas que podrían instalarse allí.',
+          'Dragón: el alfil de g7 es la mejor pieza negra; consérvalo y dirige todo contra el rey blanco.',
+        ],
+      },
+      w: {
+        en: [
+          'Pawn storms against the black king (f3, g4, h4–h5) when castled on opposite sides.',
+          'Occupy d5 with a knight in ...e5 structures.',
+          'Bc4 against f7 and e6, and sacrifices on e6, d5 or b5 in the Najdorf.',
+        ],
+        es: [
+          'Avalanchas de peones contra el rey negro (f3, g4, h4–h5) con enroques opuestos.',
+          'Ocupar d5 con un caballo en estructuras con ...e5.',
+          'Ac4 contra f7 y e6, y sacrificios en e6, d5 o b5 en la Najdorf.',
+        ],
+      },
+    },
+    puzzles: 'sicilian',
+    lines: [
+      {
+        id: 'najdorf-english',
+        name: { en: 'Najdorf: English Attack (6.Be3 e5)', es: 'Najdorf: Ataque Inglés (6.Ae3 e5)' },
+        moves: 'e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be3 e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4 b5 g5 b4',
+        puzzles: 'sicilian-najdorf',
+        notes: {
+          10: { en: 'The Najdorf: a flexible move that controls b5 and prepares ...e5 or ...b5. Black waits to see White\'s setup.', es: 'La Najdorf: una jugada flexible que controla b5 y prepara ...e5 o ...b5. Las negras esperan a ver el planteamiento blanco.' },
+          11: { en: 'The English Attack: Be3, f3, Qd2, O-O-O and g4.', es: 'El Ataque Inglés: Ae3, f3, Dd2, O-O-O y g4.' },
+          12: { en: 'Black grabs central space and kicks the d4-knight, accepting a backward d6-pawn and a hole on d5.', es: 'Las negras ganan espacio central y expulsan al caballo de d4, aceptando un peón retrasado en d6 y un agujero en d5.' },
+          14: { en: 'The bishop controls d5 — the key square.', es: 'El alfil controla d5, la casilla clave.' },
+          18: { en: 'Black castles short; opposite-side castling means a race.', es: 'Las negras enrocan corto; los enroques opuestos significan carrera.' },
+          22: { en: 'Black\'s counterattack: ...b5–b4 to drive away the c3-knight, then ...a5–a4 and ...Rc8.', es: 'El contraataque negro: ...b5–b4 para expulsar al caballo de c3, después ...a5–a4 y ...Tc8.' },
+          24: { en: 'Both sides race. Watch the d5-square: after Nd5, recapture to keep control of it (often ...Bxd5).', es: 'Ambos bandos corren. Vigila la casilla d5: tras Cd5, recaptura para mantener su control (a menudo ...Axd5).' },
+        },
+      },
+      {
+        id: 'najdorf-bg5',
+        name: { en: 'Najdorf: 6.Bg5 e6', es: 'Najdorf: 6.Ag5 e6' },
+        moves: 'e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Bg5 e6 f4 Be7 Qf3 Qc7 O-O-O Nbd7 g4 b5 Bxf6 Nxf6 g5 Nd7 f5',
+        puzzles: 'sicilian-najdorf',
+        notes: {
+          11: { en: 'The most aggressive try: a pin plus f4–e5 ideas.', es: 'El intento más agresivo: clavada e ideas de f4–e5.' },
+          12: { en: 'Solid: Black covers d5 and prepares ...Be7. The famous Poisoned Pawn, 7.f4 Qb6, is the sharpest alternative.', es: 'Sólida: las negras cubren d5 y preparan ...Ae7. El famoso Peón Envenenado, 7.f4 Db6, es la alternativa más aguda.' },
+          16: { en: 'Classical setup: the queen on c7 watches e5; the knight goes to d7.', es: 'Formación clásica: la dama en c7 vigila e5; el caballo va a d7.' },
+          20: { en: 'Black counterattacks at once; speed is everything.', es: 'Las negras contraatacan enseguida; la velocidad lo es todo.' },
+          25: { en: 'Very sharp: White threatens fxe6 and Nd5. Black usually answers with ...Nc5, ...b4 and ...Bb7, hitting e4. Know your lines here!', es: 'Muy agudo: las blancas amenazan fxe6 y Cd5. Las negras suelen responder con ...Cc5, ...b4 y ...Ab7, atacando e4. ¡Aquí hay que saberse las líneas!' },
+        },
+      },
+      {
+        id: 'najdorf-be2',
+        name: { en: 'Najdorf: Classical 6.Be2', es: 'Najdorf: Clásica 6.Ae2' },
+        moves: 'e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be2 e5 Nb3 Be7 O-O O-O Be3 Be6 Qd2 Nbd7 a4 Rc8',
+        puzzles: 'sicilian-najdorf',
+        notes: {
+          11: { en: 'A positional approach: White castles short and fights for d5.', es: 'Un planteamiento posicional: las blancas enrocan corto y luchan por d5.' },
+          12: { en: 'Black takes space; with White\'s king on g1 there is no pawn race, so it is a strategic battle.', es: 'Las negras ganan espacio; con el rey blanco en g1 no hay carrera de peones, así que es una lucha estratégica.' },
+          21: { en: 'a4 stops ...b5.', es: 'a4 impide ...b5.' },
+          22: { en: 'Black uses the c-file and prepares ...d5 or ...Qc7. Black is fully equal — Fischer loved these positions.', es: 'Las negras usan la columna c y preparan ...d5 o ...Dc7. Igualdad total; a Fischer le encantaban estas posiciones.' },
+        },
+      },
+      {
+        id: 'dragon-bc4',
+        name: { en: 'Dragon: Yugoslav Attack 9.Bc4', es: 'Dragón: Ataque Yugoslavo 9.Ac4' },
+        moves: 'e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 g6 Be3 Bg7 f3 O-O Qd2 Nc6 Bc4 Bd7 O-O-O Rc8 Bb3 Ne5 Kb1 Nc4 Bxc4 Rxc4 g4',
+        puzzles: 'sicilian-dragon',
+        notes: {
+          10: { en: 'The Dragon: the bishop goes to g7, its most powerful square.', es: 'El Dragón: el alfil va a g7, su casilla más poderosa.' },
+          13: { en: 'The Yugoslav Attack: f3 stops ...Ng4; then Qd2, Bh6 to trade the dragon bishop, and h4–h5.', es: 'El Ataque Yugoslavo: f3 evita ...Cg4; después Dd2, Ah6 para cambiar el alfil del dragón, y h4–h5.' },
+          17: { en: 'Bc4 controls d5 and stops ...d5.', es: 'Ac4 controla d5 e impide ...d5.' },
+          20: { en: 'Black\'s attack starts on the c-file.', es: 'El ataque negro empieza por la columna c.' },
+          22: { en: 'The knight heads for c4 to hit the queen and the e3-bishop.', es: 'El caballo va a c4 para atacar a la dama y al alfil de e3.' },
+          26: { en: 'The rook on c4 is very active; the exchange sacrifice ...Rxc3 is a constant theme.', es: 'La torre en c4 es muy activa; el sacrificio de calidad ...Txc3 es un tema constante.' },
+          27: { en: 'A pure race: White plays h4–h5 and Bh6; Black plays ...b5–b4, ...Qa5 and ...Rxc3. Concrete moves matter more than general principles.', es: 'Una carrera pura: las blancas juegan h4–h5 y Ah6; las negras ...b5–b4, ...Da5 y ...Txc3. Las jugadas concretas importan más que los principios generales.' },
+        },
+      },
+      {
+        id: 'dragon-000',
+        name: { en: 'Dragon: Yugoslav 9.O-O-O d5', es: 'Dragón: Yugoslavo 9.O-O-O d5' },
+        moves: 'e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 g6 Be3 Bg7 f3 O-O Qd2 Nc6 O-O-O d5 exd5 Nxd5 Nxc6 bxc6 Bd4 e5 Bc5 Be6',
+        puzzles: 'sicilian-dragon',
+        notes: {
+          17: { en: 'Castling first, without Bc4, allows Black\'s freeing strike.', es: 'Enrocar antes, sin Ac4, permite el golpe liberador negro.' },
+          18: { en: 'Black opens lines towards White\'s king, even at the cost of a pawn.', es: 'Las negras abren líneas hacia el rey blanco, aunque cueste un peón.' },
+          23: { en: '12.Nxd5 cxd5 13.Qxd5 Qc7! gives Black a strong attack for the pawn.', es: '12.Cxd5 cxd5 13.Dxd5 Dc7! da a las negras un fuerte ataque por el peón.' },
+          26: { en: 'Black has active pieces, the open b-file and a strong centre in exchange for slightly loose pawns: a very playable position.', es: 'Las negras tienen piezas activas, la columna b abierta y un centro fuerte a cambio de peones algo sueltos: una posición muy jugable.' },
+        },
+      },
+      {
+        id: 'anti-alapin',
+        name: { en: 'Anti-Sicilian: Alapin 2.c3', es: 'Antisiciliana: Alapin 2.c3' },
+        moves: 'e4 c5 c3 Nf6 e5 Nd5 d4 cxd4 Nf3 Nc6 cxd4 d6 Bc4 Nb6 Bb5 dxe5 Nxe5 Bd7',
+        puzzles: 'sicilian-anti',
+        notes: {
+          3: { en: 'The Alapin: White prepares d4 to build a classical centre.', es: 'La Alapin: las blancas preparan d4 para construir un centro clásico.' },
+          4: { en: 'Hitting e4 at once is the most direct answer.', es: 'Atacar e4 de inmediato es la respuesta más directa.' },
+          6: { en: 'The knight is fine on d5: c3 took that square away from White\'s knight.', es: 'El caballo está bien en d5: c3 quitó esa casilla al caballo blanco.' },
+          12: { en: 'Black challenges the e5-pawn immediately.', es: 'Las negras desafían el peón de e5 de inmediato.' },
+          18: { en: 'Black is fine: active pieces and pressure on d4. (2...d5 is the other main reply.)', es: 'Las negras están bien: piezas activas y presión sobre d4. (2...d5 es la otra respuesta principal.)' },
+        },
+      },
+      {
+        id: 'anti-morra',
+        name: { en: 'Anti-Sicilian: Smith-Morra Gambit', es: 'Antisiciliana: Gambito Smith-Morra' },
+        moves: 'e4 c5 d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1 e5 h3 O-O Be3',
+        puzzles: 'sicilian-anti',
+        notes: {
+          5: { en: 'The Smith-Morra Gambit: a pawn for fast development and open lines.', es: 'El Gambito Smith-Morra: un peón por desarrollo rápido y líneas abiertas.' },
+          6: { en: 'Accepting is the critical answer.', es: 'Aceptar es la respuesta crítica.' },
+          12: { en: 'Black keeps the position compact and prepares ...Nf6 and ...Be7.', es: 'Las negras mantienen la posición compacta y preparan ...Cf6 y ...Ae7.' },
+          18: { en: '...e5 closes the d-file and stops ideas like Nd5 and e5: Black has a solid extra pawn.', es: '...e5 cierra la columna d y frena ideas como Cd5 y e5: las negras tienen un peón de más sólido.' },
+          21: { en: 'Black continues with ...Be6, ...a6 and ...b5. Accurate defence keeps the extra pawn.', es: 'Las negras siguen con ...Ae6, ...a6 y ...b5. Defendiendo con precisión conservan el peón de más.' },
+        },
+      },
+    ],
+    traps: [
+      {
+        id: 'siberian',
+        trap: true,
+        name: { en: 'Trap for White: the Siberian Trap (Smith-Morra)', es: 'Trampa para las blancas: la Trampa Siberiana (Smith-Morra)' },
+        moves: 'e4 c5 d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 e6 Bc4 Qc7 O-O Nf6 Qe2 Ng4 h3 Nd4 Nxd4 Qh2#',
+        notes: {
+          16: { en: 'The knight eyes h2 and f2, together with the queen on the b8–h2 diagonal.', es: 'El caballo apunta a h2 y f2, junto con la dama en la diagonal b8–h2.' },
+          17: { en: 'Natural, but losing.', es: 'Natural, pero pierde.' },
+          18: { en: 'The point: the queen on e2 is attacked, and taking the knight allows mate.', es: 'La idea: la dama de e2 está atacada, y tomar el caballo permite el mate.' },
+          20: { en: 'Mate on h2. In the Morra, watch the b8–h2 diagonal once White has castled.', es: 'Mate en h2. En el Morra, vigila la diagonal b8–h2 cuando las blancas hayan enrocado.' },
+        },
+      },
+    ],
+  },
+
+  // =============================================================================================
+  {
+    id: 'black-lion',
+    side: 'b',
+    eco: 'C41 / A53–A55',
+    name: { en: 'Black Lion', es: 'Black Lion (León Negro)' },
+    summary: {
+      en: '1.e4 d6 2.d4 Nf6 3.Nc3 Nbd7 — a flexible Philidor-style setup with ...e5 and ...c6 and a surprising kingside "claw" with ...h6 and ...g5.',
+      es: '1.e4 d6 2.d4 Cf6 3.Cc3 Cbd7 — una formación flexible al estilo Philidor con ...e5 y ...c6 y una sorprendente "garra" en el flanco de rey con ...h6 y ...g5.',
+    },
+    intro: {
+      en: [
+        'The Black Lion (also known as the Lion Defence or Lion\'s Den) is a modern way to reach Philidor-type positions while avoiding many of White\'s sharp options. Black builds a compact centre with ...d6, ...Nf6, ...Nbd7, ...e5 and ...c6, develops with ...Be7 and only later decides where to play.',
+        'Its trademark is the "Lion\'s Claw": when White castles short and puts the bishop on c4, Black often keeps the king in the centre and pushes ...h6 and ...g5–g4, using the pawns as a battering ram against the white king.',
+        'It is a system rather than a theoretical battle: understanding the plans matters more than memorising moves, and the same setup can be used against 1.d4 (Old Indian style).',
+      ],
+      es: [
+        'El Black Lion (también llamado Defensa León o Lion\'s Den) es una forma moderna de llegar a posiciones tipo Philidor evitando muchas de las opciones agudas de las blancas. Las negras construyen un centro compacto con ...d6, ...Cf6, ...Cbd7, ...e5 y ...c6, desarrollan con ...Ae7 y solo después deciden dónde jugar.',
+        'Su sello es la "garra del león": cuando las blancas enrocan corto y colocan el alfil en c4, las negras a menudo dejan el rey en el centro y avanzan ...h6 y ...g5–g4, usando los peones como ariete contra el rey blanco.',
+        'Es un sistema más que una batalla teórica: entender los planes importa más que memorizar jugadas, y la misma formación sirve contra 1.d4 (al estilo de la India Antigua).',
+      ],
+    },
+    structure: {
+      en: 'Black\'s pawns on c6, d6 and e5 form a solid "Philidor wall" that blunts White\'s centre. The d6-pawn and the f7-square are the sensitive points. If White plays d4–d5 the centre closes and Black plays on the wings (...cxd5, ...g5 or ...f5 breaks); if White trades on e5, the d-file opens and Black\'s knights use c5 and e6.',
+      es: 'Los peones negros en c6, d6 y e5 forman un sólido "muro Philidor" que frena el centro blanco. El peón de d6 y la casilla f7 son los puntos sensibles. Si las blancas juegan d4–d5 el centro se cierra y las negras juegan en los flancos (rupturas ...cxd5, ...g5 o ...f5); si las blancas cambian en e5, se abre la columna d y los caballos negros usan c5 y e6.',
+    },
+    plans: {
+      b: {
+        en: [
+          'Keep the central tension: don\'t take on d4 unless it wins something, because ...exd4 gives White a free hand.',
+          'The Lion\'s Claw: ...h6, ...g5, ...Nf8–g6 and ...g4 against a white king on g1.',
+          'Queenside expansion with ...a6 and ...b5 to gain space and chase the c4-bishop.',
+          '...Qc7 and ...Nb6 or ...Nc5 to improve the pieces behind the pawn wall.',
+          'Beware of Bxf7+ tricks while the king is on e8.',
+        ],
+        es: [
+          'Mantener la tensión central: no tomar en d4 salvo que gane algo, porque ...exd4 deja las manos libres a las blancas.',
+          'La garra del león: ...h6, ...g5, ...Cf8–g6 y ...g4 contra un rey blanco en g1.',
+          'Expansión en el flanco de dama con ...a6 y ...b5 para ganar espacio y hostigar al alfil de c4.',
+          '...Dc7 y ...Cb6 o ...Cc5 para mejorar las piezas detrás del muro de peones.',
+          'Cuidado con los golpes Axf7+ mientras el rey esté en e8.',
+        ],
+      },
+      w: {
+        en: [
+          'Pressure on f7 with Bc4, Ng5 and Qe2 or Qf3.',
+          'Space with a4 to stop ...b5, and d4–d5 to cramp Black.',
+          'Trading on e5 to open the d-file towards d6 and d8.',
+        ],
+        es: [
+          'Presión sobre f7 con Ac4, Cg5 y De2 o Df3.',
+          'Espacio con a4 para impedir ...b5, y d4–d5 para restringir a las negras.',
+          'Cambiar en e5 para abrir la columna d hacia d6 y d8.',
+        ],
+      },
+    },
+    puzzles: 'black-lion',
+    lines: [
+      {
+        id: 'lion-claw',
+        name: { en: 'Main setup against 1.e4: the Lion\'s Claw', es: 'Formación principal contra 1.e4: la garra del león' },
+        moves: 'e4 d6 d4 Nf6 Nc3 Nbd7 Nf3 e5 Bc4 Be7 O-O c6 a4 Qc7 h3 h6 Re1 g5',
+        notes: {
+          6: { en: 'The Lion move order: ...Nbd7 before ...e5 avoids the Philidor\'s exchange lines.', es: 'El orden del León: ...Cbd7 antes de ...e5 evita las líneas de cambio de la Philidor.' },
+          8: { en: 'Now the pawn wall is ready to be completed with ...c6.', es: 'Ahora el muro de peones está listo para completarse con ...c6.' },
+          9: { en: 'The most testing setup, aiming at f7.', es: 'El planteamiento más exigente, apuntando a f7.' },
+          12: { en: '...c6 prepares ...b5 and gives the queen a route to c7.', es: '...c6 prepara ...b5 y abre a la dama el camino a c7.' },
+          14: { en: 'The queen protects e5 and joins the queenside.', es: 'La dama protege e5 y se une al flanco de dama.' },
+          16: { en: 'Preparing the claw: ...g5 to push the f3-knight away and attack White\'s castled king.', es: 'Preparando la garra: ...g5 para expulsar al caballo de f3 y atacar al rey enrocado.' },
+          18: { en: 'The claw is out: next ...Nf8–g6, ...g4 or ...Rg8. Black\'s king stays in the centre or goes queenside. Unusual, but very dangerous for unprepared opponents.', es: 'La garra está fuera: después ...Cf8–g6, ...g4 o ...Tg8. El rey negro se queda en el centro o va al flanco de dama. Poco habitual, pero muy peligroso para rivales que no lo conocen.' },
+        },
+      },
+      {
+        id: 'lion-d5',
+        name: { en: 'White closes the centre with d5', es: 'Las blancas cierran el centro con d5' },
+        moves: 'e4 d6 d4 Nf6 Nc3 Nbd7 Nf3 e5 Be2 Be7 O-O O-O a4 c6 d5 Nc5 Nd2 a5',
+        notes: {
+          9: { en: 'A quieter development; White plans a4 and d5 to gain space.', es: 'Un desarrollo más tranquilo; las blancas planean a4 y d5 para ganar espacio.' },
+          15: { en: 'd5 closes the centre: now the play is on the wings.', es: 'd5 cierra el centro: ahora se juega en los flancos.' },
+          16: { en: 'The knight finds a great square on c5.', es: 'El caballo encuentra una gran casilla en c5.' },
+          18: { en: '...a5 secures the knight. Plans: ...Bd7 and ...cxd5 to open the c-file, or ...Ne8 and ...f5 on the kingside.', es: '...a5 asegura el caballo. Planes: ...Ad7 y ...cxd5 para abrir la columna c, o ...Ce8 y ...f5 en el flanco de rey.' },
+        },
+      },
+      {
+        id: 'lion-d4',
+        name: { en: 'The same setup against 1.d4 (Old Indian style)', es: 'La misma formación contra 1.d4 (estilo India Antigua)' },
+        moves: 'd4 Nf6 c4 d6 Nc3 Nbd7 e4 e5 Nf3 c6 Be2 Be7 O-O O-O Re1 a6 Bf1 b5',
+        notes: {
+          4: { en: 'The Old Indian: the same ideas as the Lion with ...Nbd7, ...e5 and ...c6.', es: 'La India Antigua: las mismas ideas que el León con ...Cbd7, ...e5 y ...c6.' },
+          8: { en: 'The pawn wall again; White has extra space thanks to c4.', es: 'De nuevo el muro de peones; las blancas tienen más espacio gracias a c4.' },
+          16: { en: '...a6 and ...b5 challenge White\'s c4-pawn and gain queenside space.', es: '...a6 y ...b5 desafían el peón de c4 y ganan espacio en el flanco de dama.' },
+          18: { en: 'Black is solid and flexible: next ...Bb7, ...Qc7 and ...Re8, choosing between ...exd4 and keeping the tension.', es: 'Las negras están sólidas y flexibles: después ...Ab7, ...Dc7 y ...Te8, eligiendo entre ...exd4 y mantener la tensión.' },
+        },
+      },
+    ],
+    traps: [
+      {
+        id: 'lion-ng5',
+        trap: true,
+        name: { en: 'Trap to avoid: 5...c6? 6.Ng5! — play 5...Be7 first', es: 'Trampa a evitar: 5...c6? 6.Cg5!, juega antes 5...Ae7' },
+        moves: 'e4 d6 d4 Nf6 Nc3 Nbd7 Nf3 e5 Bc4 c6 Ng5 d5 exd5 cxd5 Nxd5 Nxd5 Qh5',
+        notes: {
+          9: { en: 'The critical moment: with the bishop on c4, f7 is attacked. Black must answer 5...Be7 (or 5...h6), so that Ng5 can be met calmly.', es: 'El momento crítico: con el alfil en c4, f7 está atacado. Las negras deben responder 5...Ae7 (o 5...h6), para poder contestar Cg5 con tranquilidad.' },
+          10: { en: 'Natural in the Lion, but premature here. 5...a6? and 5...g6? fail the same way.', es: 'Natural en el León, pero aquí es prematura. 5...a6? y 5...g6? fallan de la misma manera.' },
+          11: { en: 'Bishop and knight both hit f7: Nxf7 forking queen and rook, or Bxf7+, is threatened.', es: 'Alfil y caballo atacan f7: amenaza Cxf7 con ataque doble a dama y torre, o Axf7+.' },
+          12: { en: 'Blocking the bishop is the most natural try, but it opens the centre with the black king still on e8.', es: 'Tapar el alfil es el intento más natural, pero abre el centro con el rey negro aún en e8.' },
+          15: { en: 'A tactical blow: the d5-knight will be pinned against the f7 weakness.', es: 'Un golpe táctico: el caballo de d5 quedará clavado frente a la debilidad de f7.' },
+          17: { en: 'Double attack: mate on f7 and the d5-knight. After ...Qe7 (or ...g6) comes Bxd5 and White is clearly better. Remember: in the Lion, develop with ...Be7 before ...c6.', es: 'Ataque doble: mate en f7 y el caballo de d5. Tras ...De7 (o ...g6) viene Axd5 y las blancas están claramente mejor. Recuerda: en el León, desarrolla con ...Ae7 antes de ...c6.' },
+        },
+      },
+    ],
+  },
+];

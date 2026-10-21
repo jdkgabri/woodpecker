@@ -364,3 +364,11 @@ cg-board {
 
 .icon-btn svg { display: block; }
 .btn svg { flex: none; }
+
+/* ---- openings ---- */
+.mono { font-family: ui-monospace, Consolas, monospace; font-size: .8rem; }
+.plans { margin: .2rem 0 .6rem; padding-left: 1.2rem; }
+.plans li { margin: .25rem 0; }
+.note-text { display: block; line-height: 1.45; }
+.note-text strong { color: var(--fg-strong); }
+.mv:disabled { cursor: default; color: var(--fg); }

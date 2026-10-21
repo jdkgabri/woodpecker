@@ -12,9 +12,9 @@ precacheAndRoute(self.__WB_MANIFEST);
 cleanupOutdatedCaches();
 registerRoute(new NavigationRoute(createHandlerBoundToURL('index.html')));
 
-// Lichess puzzle collection (~1.3 MB per theme): cached when used
+// Lichess puzzle collection (~1.3 MB per theme) and opening puzzles: cached when used
 registerRoute(
-  ({ url }) => url.pathname.includes('/lichess/'),
+  ({ url }) => url.pathname.includes('/lichess/') || url.pathname.includes('/openings/'),
   new CacheFirst({ cacheName: 'lichess-collection', plugins: [new ExpirationPlugin({ maxEntries: 20 })] }),
 );
 

@@ -12,6 +12,7 @@ import * as sync from './sync.js';
 import { viewAnalysis, openAnalysis, mainLine } from './analysis.js';
 import { habitOn, gamifyOn, levelCard, progressSnapshot, notifyProgress, streakCard, bindStreakCard, celebrate, habitSettings, bindHabitSettings } from './ui-habit.js';
 import { viewStats } from './stats.js';
+import { viewOpenings, viewOpening, viewOpeningLine } from './openings.js';
 import { t, tn, locale, LANGS, langSetting, applyDocumentLang } from './i18n.js';
 
 const app = document.getElementById('app');
@@ -49,6 +50,13 @@ function route() {
   if (view === 'cycle') return viewCycle(id, +location.hash.split('/')[3]);
   if (view === 'settings') return viewSettings();
   if (view === 'stats') return viewStats(app);
+  if (view === 'openings') return viewOpenings(app);
+  if (view === 'opening') {
+    const lineId = location.hash.split('/')[3];
+    if (lineId) { cleanup = viewOpeningLine(app, id, lineId, 'study', go); return; }
+    return viewOpening(app, id, go);
+  }
+  if (view === 'drill') { cleanup = viewOpeningLine(app, id, location.hash.split('/')[3], 'drill', go); return; }
   if (view === 'analysis') { cleanup = viewAnalysis(app); return; }
   return viewHome();
 }
@@ -64,6 +72,7 @@ function viewHome() {
       <div class="top-right">
         ${h ? `<span class="badge" title="${t('Day streak')}">🔥 ${h.streak}</span>` : ''}
         ${syncBadge()}
+        <a class="icon-btn" href="#/openings" aria-label="${t('Openings')}">📖</a>
         <a class="icon-btn" href="#/stats" aria-label="${t('Statistics')}">📊</a>
         <a class="icon-btn" href="#/settings" aria-label="${t('Settings')}">⚙</a>
       </div>
@@ -372,6 +381,7 @@ function viewSet(id) {
     ? `The Woodpecker Method · ${t('no. {a}–{b}', { a: set.range[0], b: set.range[1] })}`
     : set.source === 'pgn' ? t('Imported PGN')
     : set.source === 'review' ? t('Selection of the positions you miss most')
+    : set.source === 'opening' ? `${t('Opening tactics')}${set.opening?.eloMin ? ` · Elo ${set.opening.eloMin}–${set.opening.eloMax}` : ''}`
     : `Lichess · ${esc(set.lichess?.theme ? themeLabel(set.lichess.theme) : t('puzzles'))}${set.lichess?.eloAvg ? ` · Elo ${set.lichess.eloMin}–${set.lichess.eloMax} (${t('avg {n}', { n: set.lichess.eloAvg })})` : ''}`;
   app.innerHTML = `
     <header class="top"><a class="icon-btn" href="#/">‹</a><h1 class="ellipsis">${esc(set.name)}</h1>

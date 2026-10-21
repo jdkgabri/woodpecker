@@ -132,16 +132,17 @@ export async function loadLocalIndex() {
   return (localIndex = await res.json());
 }
 
-// A theme's puzzles: [[id, fen, moves, rating, themes?], ...] sorted by rating
-async function loadLocalTheme(theme) {
-  if (localCache.has(theme)) return localCache.get(theme);
-  const res = await fetch(import.meta.env.BASE_URL + `lichess/${theme}.txt`);
+// A puzzle file's rows: [[id, fen, moves, rating, themes?], ...] sorted by rating
+// (local collection: lichess/<theme>.txt; opening puzzles: openings/puzzles/<group>.txt)
+async function loadPuzzleFile(path) {
+  if (localCache.has(path)) return localCache.get(path);
+  const res = await fetch(import.meta.env.BASE_URL + path);
   if (!res.ok) throw new Error(t('Could not load the puzzle collection'));
   const rows = (await res.text()).split(/\r?\n/).filter(Boolean).map(l => {
     const [id, fen, moves, rating, themes] = l.split(';');
     return [id, fen, moves, +rating, themes];
   });
-  localCache.set(theme, rows);
+  localCache.set(path, rows);
   return rows;
 }
 
@@ -159,11 +160,11 @@ export async function localAvailable(theme, min, max) {
 }
 
 /**
- * Picks random puzzles from the local collection. Prefers those not in any other
- * set (avoid) and, if there are not enough, fills up with the rest.
+ * Picks random puzzles from a puzzle file. Prefers those not in any other set (avoid) and,
+ * if there are not enough, fills up with the rest.
  */
-export async function pickLocalPuzzles({ theme, min, max, count, avoid = new Set() }) {
-  const rows = (await loadLocalTheme(theme)).filter(r => r[3] >= min && r[3] <= max);
+export async function pickPuzzlesFromFile(path, { min, max, count, avoid = new Set() }) {
+  const rows = (await loadPuzzleFile(path)).filter(r => r[3] >= min && r[3] <= max);
   const fresh = [], used = [];
   for (const r of rows) (avoid.has(r[0]) ? used : fresh).push(r);
   const pick = (arr, n) => {
@@ -177,6 +178,8 @@ export async function pickLocalPuzzles({ theme, min, max, count, avoid = new Set
   }));
   return { items, repeated: repeated.length, available: rows.length };
 }
+
+export const pickLocalPuzzles = ({ theme, ...opts }) => pickPuzzlesFromFile(`lichess/${theme}.txt`, opts);
 
 // ---------- Full collection download (for offline use) ----------
 const COLLECTION_CACHE = 'lichess-collection'; // the same cache the service worker uses

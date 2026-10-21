@@ -13,6 +13,8 @@ repeated, ever faster cycles. Live at <https://woodpecker-93e04.web.app/>.
   - the **Lichess API with your account**: puzzles picked around your puzzle rating.
 - **PGN import**: solutions with variations and comments; puzzles without moves are solved
   with Stockfish on the device; doubtful cases are reported before creating the set.
+- **Opening courses** (Italian Game, Queen's Gambit, Sicilian, Black Lion): ideas, plans and main
+  lines explained move by move, traps, a move drill and tactics sets from each opening.
 - **Timed cycles with pause** (button, `space`/`p`, or automatic when leaving the app),
   mistake review, per-cycle puzzle list and in-app **Stockfish analysis**.
 - **Progress**: time/accuracy chart per cycle, performance by theme, most missed positions,
@@ -38,6 +40,7 @@ node tests/habit.test.mjs
 node tests/pgn.test.mjs
 node tests/progress.test.mjs
 node scripts/i18n-keys.mjs          # every UI text has a Spanish translation
+node scripts/check-openings.mjs     # opening lines: legal moves, notes on existing plies
 # server reminders (needs the Firestore emulator):
 npx firebase-tools emulators:exec --only firestore --project demo-woodpecker "cd functions && node test.mjs"
 ```
@@ -58,6 +61,8 @@ not in Spanish.
   which only contains the positions. Per puzzle: `{ n, fen, t }` with
   `t = [[moveUci, replyUci|null, subtree|null], ...]`; the first entry is the main line and the rest
   are accepted alternatives. Any mating move is always accepted.
+- `src/openings-data.js` holds the opening courses (bilingual text); `public/openings/puzzles/` is
+  generated with `tools/opening-puzzles.py` from the Lichess puzzle database (opening tags).
 - `public/lichess/` is generated with `tools/lichess-subset.py` from the
   [Lichess puzzle database](https://database.lichess.org/#puzzles) (CC0).
 
