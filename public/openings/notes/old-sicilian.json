@@ -4,8 +4,8 @@
   "es": "Contra Cb5, ...a6 echa al caballo de inmediato. La respuesta crítica es Cd6+, que da a las blancas la pareja de alfiles; ese es el precio de esta línea."
  },
  "Nb5 a6 Nd6+ Bxd6 Qxd6": {
-  "en": "White has the bishop pair and the d6-queen is active, but Black has a lead in development: ...Qf6 offers a queen trade and ...Nge7 with ...O-O follow.",
-  "es": "Las blancas tienen la pareja de alfiles y la dama de d6 es activa, pero las negras van por delante en desarrollo: ...Df6 ofrece el cambio de damas y siguen ...Cge7 con ...O-O."
+  "en": "White has the bishop pair and an active queen, but Black is ahead in development: ...Qe7 offers a queen trade, and ...Nf6 with ...O-O follow.",
+  "es": "Las blancas tienen la pareja de alfiles y una dama activa, pero las negras van por delante en desarrollo: ...De7 ofrece el cambio de damas, y siguen ...Cf6 con ...O-O."
  },
  "Nb5 a6 N5a3": {
   "en": "Retreating to a3 puts the knight offside: Black develops comfortably with ...Nf6, ...Bc5 or ...d5.",
