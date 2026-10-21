@@ -1,0 +1,14 @@
+{
+ "d4 exd4": {
+  "en": "Nxd4, then Nc3, Bf4 or Be3, Qd2 and O-O-O: White has more space and attacking chances.",
+  "es": "Cxd4, y después Cc3, Af4 o Ae3, Dd2 y O-O-O: las blancas tienen más espacio y posibilidades de ataque."
+ },
+ "d4 Bg4": {
+  "en": "dxe5 Bxf3 Qxf3 dxe5 Bc4: the queen and bishop aim at f7.",
+  "es": "dxe5 Axf3 Dxf3 dxe5 Ac4: la dama y el alfil apuntan a f7."
+ },
+ "d4 Nc6 Nc3 exd4 Nxd4 Nxd4 Qxd4 c5": {
+  "en": "Qa4+! Bd7 Qb3: the queen hits b7 and f7.",
+  "es": "¡Da4+! Ad7 Db3: la dama ataca b7 y f7."
+ }
+}

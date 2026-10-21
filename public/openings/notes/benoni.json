@@ -1,0 +1,18 @@
+{
+ "Nc3 exd5": {
+  "en": "...exd5 cxd5 d6 and ...g6: the Modern Benoni structure. ...Bg7, ...O-O, ...Re8 and ...a6–b5 follow.",
+  "es": "...exd5 cxd5 d6 y ...g6: la estructura de la Benoni Moderna. Siguen ...Ag7, ...O-O, ...Te8 y ...a6–b5."
+ },
+ "Bg5 exd5 Bxf6 Qxf6 Qxd5": {
+  "en": "...Qxb2! and the a1-rook falls.",
+  "es": "¡...Dxb2! y la torre de a1 cae."
+ },
+ "Bg5 exd5 Bxf6 Qxf6 cxd5": {
+  "en": "...Qxb2: the bishop is gone from c1, so b2 is free to take.",
+  "es": "...Dxb2: el alfil ya no está en c1, así que b2 se puede tomar."
+ },
+ "Nc3 exd5 cxd5 d6 e4 g6 f4 Bg7 Nf3 O-O Be2 Re8 Qc2": {
+  "en": "...c4! frees c5 for a knight and prepares ...b5: the queenside majority moves.",
+  "es": "¡...c4! libera c5 para un caballo y prepara ...b5: la mayoría del flanco de dama se pone en marcha."
+ }
+}

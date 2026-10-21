@@ -1,0 +1,22 @@
+{
+ "Nxe5 d6": {
+  "en": "Nf3 Nxe4, then d4 or Nc3 (forcing a trade on c3): quiet development and a small, lasting edge.",
+  "es": "Cf3 Cxe4, y después d4 o Cc3 (forzando el cambio en c3): desarrollo tranquilo y una pequeña ventaja duradera."
+ },
+ "Nxe5 Nc6": {
+  "en": "The Stafford Gambit: Nxc6! dxc6 and White is a pawn up. Then Nc3, d3 and Be2, castling short and watching f2.",
+  "es": "El Gambito Stafford: ¡Cxc6! dxc6 y las blancas tienen un peón de más. Después Cc3, d3 y Ae2, enrocando corto y vigilando f2."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 h5 d3 Qd4": {
+  "en": "Be3! hits the queen, with the c5-bishop behind it on the same diagonal.",
+  "es": "¡Ae3! ataca la dama, con el alfil de c5 detrás en la misma diagonal."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 h5 d3 Ng4": {
+  "en": "hxg4! With h3 and d3 played, the Stafford tricks do not work: White is a piece up.",
+  "es": "¡hxg4! Con h3 y d3 jugados, los trucos del Stafford no funcionan: las blancas tienen una pieza de más."
+ },
+ "Nxe5 Qe7 Nf3 Qxe4+ Be2 Bc5": {
+  "en": "d4! kicks the bishop with tempo.",
+  "es": "¡d4! echa al alfil ganando tiempo."
+ }
+}

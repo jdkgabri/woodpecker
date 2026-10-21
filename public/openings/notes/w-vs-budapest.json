@@ -1,0 +1,18 @@
+{
+ "dxe5 Ng4": {
+  "en": "Bf4 and Nf3 hold the e5-pawn; then e3, Nc3 or Nbd2 and Be2. Give it back only for a clear advantage.",
+  "es": "Af4 y Cf3 sostienen el peón de e5; después e3, Cc3 o Cbd2 y Ae2. Devuélvelo solo a cambio de una ventaja clara."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bc5 e3 O-O": {
+  "en": "h3! and the g4-knight must retreat: Black cannot win back e5.",
+  "es": "¡h3! y el caballo de g4 tiene que retirarse: las negras no pueden recuperar e5."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bc5 e3 d6": {
+  "en": "exd6 and White stays a pawn up.",
+  "es": "exd6 y las blancas siguen con un peón de más."
+ },
+ "dxe5 Ng4 Nf3 d6 Bf4 Be7": {
+  "en": "exd6 and White stays a pawn up.",
+  "es": "exd6 y las blancas siguen con un peón de más."
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "O-O Nc6": {
+  "en": "The Mar del Plata: after d5 Ne7, Black plays ...Ne8 or ...Nd7, then ...f5–f4 and a kingside pawn storm, while White attacks on the queenside with b4 and c5.",
+  "es": "La Mar del Plata: tras d5 Ce7, las negras juegan ...Ce8 o ...Cd7, y después ...f5–f4 y avalancha en el flanco de rey, mientras las blancas atacan en el de dama con b4 y c5."
+ },
+ "d5 Nbd7 Be3 Ng4 Bg5 f6 Bd2 f5 h3": {
+  "en": "...Nxf2! Kxf2 fxe4 Nxe4 Qh4+ and ...Qxe4: Black wins the material back with interest.",
+  "es": "¡...Cxf2! Rxf2 fxe4 Cxe4 Dh4+ y ...Dxe4: las negras recuperan el material con creces."
+ },
+ "dxe5 dxe5 Qxd8 Rxd8 Nxe5 Nxe4 Nxf7": {
+  "en": "...Bxc3+ bxc3 Kxf7: Black is a piece up for a pawn.",
+  "es": "...Axc3+ bxc3 Rxf7: las negras tienen una pieza de más por un peón."
+ },
+ "dxe5 dxe5 Qxd8 Rxd8": {
+  "en": "The exchange variation: equal, but Black has an easy game. Watch the e4 and f2 squares: tricks with ...Nxe4 are common.",
+  "es": "La variante del cambio: igualdad, pero las negras juegan con comodidad. Atento a e4 y f2: los trucos con ...Cxe4 son habituales."
+ },
+ "": {
+  "en": "The Classical: ...Nc6 and, after d5, ...Ne7, ...Ne8 and ...f5.",
+  "es": "La Clásica: ...Cc6 y, tras d5, ...Ce7, ...Ce8 y ...f5."
+ }
+}

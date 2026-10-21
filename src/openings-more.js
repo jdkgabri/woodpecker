@@ -626,6 +626,8 @@ export const MORE_OPENINGS = [
       tree('kid-samisch', { en: 'Against the Sämisch (f3)', es: 'Contra la Sämisch (f3)' }, 'd4 Nf6 c4 g6 Nc3 Bg7 e4 d6 f3'),
     
       tree('kid-fianchetto', { en: 'Against the Fianchetto (g3)', es: 'Contra el Fianchetto (g3)' }, 'd4 Nf6 c4 g6 Nf3 Bg7 g3'),
+    
+      tree('kid-classical', { en: 'Classical (7.Be2 e5 8.O-O)', es: 'Clásica (7.Ae2 e5 8.O-O)' }, 'd4 Nf6 c4 g6 Nc3 Bg7 e4 d6 Nf3 O-O Be2 e5'),
     ],
   },
   // ---- grunfeld
@@ -1477,5 +1479,185 @@ export const MORE_OPENINGS = [
       },
     },
     lines: [tree('jobava', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4')],
+  },
+  // ---- Modern Benoni
+  {
+    id: 'benoni', side: 'b', vs: 'd4', eco: 'A60–A79', puzzles: 'benoni',
+    name: { en: 'Modern Benoni', es: 'Benoni Moderna' },
+    summary: {
+      en: '1.d4 Nf6 2.c4 c5 3.d5 e6 — an unbalanced fight: White\'s central majority against Black\'s queenside majority and active pieces.',
+      es: '1.d4 Cf6 2.c4 c5 3.d5 e6: una lucha desequilibrada. La mayoría central blanca contra la mayoría negra en el flanco de dama y las piezas activas.',
+    },
+    intro: {
+      en: [
+        'After ...exd5 cxd5, Black gets a queenside majority and the long diagonal for the g7-bishop; White has a central majority and plans e4–e5.',
+        'It is a fighting choice: Black must play actively (...Re8, ...a6, ...b5) or White\'s centre will roll.',
+      ],
+      es: [
+        'Tras ...exd5 cxd5, las negras obtienen una mayoría en el flanco de dama y la gran diagonal para el alfil de g7; las blancas tienen una mayoría central y buscan e4–e5.',
+        'Es una elección de lucha: las negras deben jugar con actividad (...Te8, ...a6, ...b5) o el centro blanco avanzará.',
+      ],
+    },
+    structure: {
+      en: 'Pawns d6/c5 against d5/e4. Key squares: e5 for Black, e4–e5 break for White; Black\'s break is ...b5.',
+      es: 'Peones d6/c5 contra d5/e4. Casillas clave: e5 para las negras, la ruptura e4–e5 para las blancas; la ruptura negra es ...b5.',
+    },
+    plans: {
+      b: {
+        en: ['...exd5, ...d6, ...g6, ...Bg7 and ...O-O.', '...Re8 to stop e4–e5.', '...a6 and ...b5 on the queenside.'],
+        es: ['...exd5, ...d6, ...g6, ...Ag7 y ...O-O.', '...Te8 para frenar e4–e5.', '...a6 y ...b5 en el flanco de dama.'],
+      },
+      w: {
+        en: ['e4, Nf3, Be2 and O-O.', 'Prepare e5 with f4 in sharp lines.', 'a4 to stop ...b5.'],
+        es: ['e4, Cf3, Ae2 y O-O.', 'Preparar e5 con f4 en las líneas agudas.', 'a4 para frenar ...b5.'],
+      },
+    },
+    lines: [tree('benoni', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 c5 d5 e6')],
+  },
+  // ---- King's Indian Attack
+  {
+    id: 'kia', side: 'w', eco: 'A07–A08', puzzles: 'kia',
+    name: { en: 'King\'s Indian Attack', es: 'Ataque Indio de Rey' },
+    summary: {
+      en: '1.Nf3 with g3, Bg2, O-O, d3 and e4 — a universal setup you can play against almost anything.',
+      es: '1.Cf3 con g3, Ag2, O-O, d3 y e4: un esquema universal que se puede jugar contra casi todo.',
+    },
+    intro: {
+      en: [
+        'The King\'s Indian Defence with an extra tempo: White builds the same setup every game and attacks on the kingside with e4–e5, Nf1–h2–g4 and h4.',
+        'It is especially effective against French and Sicilian-type setups (...e6 and ...c5).',
+      ],
+      es: [
+        'La India de Rey con un tiempo de más: las blancas construyen el mismo esquema en cada partida y atacan en el flanco de rey con e4–e5, Cf1–h2–g4 y h4.',
+        'Es especialmente eficaz contra esquemas tipo Francesa y Siciliana (...e6 y ...c5).',
+      ],
+    },
+    structure: {
+      en: 'Pawns d3–e4 with the fianchettoed bishop; after e5, the e5-pawn cramps Black\'s kingside.',
+      es: 'Peones d3–e4 con el alfil en fianchetto; tras e5, el peón de e5 encierra el flanco de rey negro.',
+    },
+    plans: {
+      w: {
+        en: ['Nf3, g3, Bg2, O-O, d3, Nbd2 and e4.', 'e5 to gain space, then Nf1, h4 and Bf4.', 'Kingside attack with Ng5 or Nh2–g4.'],
+        es: ['Cf3, g3, Ag2, O-O, d3, Cbd2 y e4.', 'e5 para ganar espacio, después Cf1, h4 y Af4.', 'Ataque en el flanco de rey con Cg5 o Ch2–g4.'],
+      },
+      b: {
+        en: ['Queenside play with ...b5–b4 and ...a5.', 'Take the centre with ...d5 and ...e5.', 'Trade pieces to blunt the attack.'],
+        es: ['Juego en el flanco de dama con ...b5–b4 y ...a5.', 'Tomar el centro con ...d5 y ...e5.', 'Cambiar piezas para frenar el ataque.'],
+      },
+    },
+    lines: [tree('kia', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'Nf3')],
+  },
+  // ---- Grand Prix Attack
+  {
+    id: 'grand-prix', side: 'w', vs: 'e4', eco: 'B21, B23', puzzles: 'grand-prix',
+    name: { en: 'Grand Prix Attack', es: 'Ataque Grand Prix' },
+    summary: {
+      en: '1.e4 c5 2.Nc3 and f4 — an attacking system against the Sicilian with little theory: f4, Nf3, Bc4 or Bb5, castling and a kingside attack.',
+      es: '1.e4 c5 2.Cc3 y f4: un sistema de ataque contra la Siciliana con poca teoría. f4, Cf3, Ac4 o Ab5, enroque y ataque en el flanco de rey.',
+    },
+    intro: {
+      en: [
+        'White avoids the Open Sicilian and builds the same setup almost every game: Nc3, f4, Nf3 and the bishop to c4 or b5, then O-O, d3 and the attack with Qe1–h4 and f4–f5.',
+        'Against ...g6 setups, Bb5 and Bxc6 damage Black\'s pawns; against ...e6 and ...d5, White must be careful in the centre.',
+      ],
+      es: [
+        'Las blancas evitan la Siciliana Abierta y construyen casi siempre el mismo esquema: Cc3, f4, Cf3 y el alfil a c4 o b5, después O-O, d3 y el ataque con De1–h4 y f4–f5.',
+        'Contra los esquemas con ...g6, Ab5 y Axc6 dañan los peones negros; contra ...e6 y ...d5, las blancas deben tener cuidado en el centro.',
+      ],
+    },
+    structure: {
+      en: 'Pawns e4–f4 with d3: White plays on the kingside (f5), Black on the queenside and in the centre (...d5, ...b5).',
+      es: 'Peones e4–f4 con d3: las blancas juegan en el flanco de rey (f5), las negras en el de dama y en el centro (...d5, ...b5).',
+    },
+    plans: {
+      w: {
+        en: ['Nc3, f4, Nf3, Bc4 or Bb5, O-O and d3.', 'Qe1–h4, f5 and Bh6 against the castled king.', 'Bxc6 when it damages Black\'s structure.'],
+        es: ['Cc3, f4, Cf3, Ac4 o Ab5, O-O y d3.', 'De1–h4, f5 y Ah6 contra el rey enrocado.', 'Axc6 cuando dañe la estructura negra.'],
+      },
+      b: {
+        en: ['...g6, ...Bg7, ...d6 and ...e6 to stop f5.', '...d5 to open the centre.', '...b5–b4 on the queenside.'],
+        es: ['...g6, ...Ag7, ...d6 y ...e6 para frenar f5.', '...d5 para abrir el centro.', '...b5–b4 en el flanco de dama.'],
+      },
+    },
+    lines: [tree('grand-prix', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 c5 Nc3')],
+  },
+  // ---- Against other replies to 1.e4
+  {
+    id: 'vs-other-e4', side: 'w', vs: 'e4', eco: 'B02–B09, C41–C43', puzzles: 'vs-other-e4',
+    name: { en: 'Against Pirc, Modern, Alekhine, Petrov and Philidor', es: 'Contra Pirc, Moderna, Alekhine, Petrov y Philidor' },
+    summary: {
+      en: 'With White against the other replies to 1.e4: the 150 Attack against the Pirc and the Modern, simple systems against the Alekhine and the Petrov, and how to punish the Philidor and the Black Lion.',
+      es: 'Con blancas contra las demás respuestas a 1.e4: el Ataque 150 contra la Pirc y la Moderna, sistemas sencillos contra la Alekhine y la Petrov, y cómo castigar la Philidor y el Black Lion.',
+    },
+    intro: {
+      en: [
+        'These defences are common at club level precisely because they avoid main-line theory. A clear plan against each one is enough.',
+        'Pirc and Modern: Be3, Qd2, f3, Bh6 and O-O-O with h4–h5. Alekhine: take space with e5 and d4 and develop calmly. Petrov: 3.Nxe5 and quiet development. Philidor: d4, Nc3, Bc4 and pressure on f7.',
+      ],
+      es: [
+        'Estas defensas son frecuentes en club precisamente porque evitan la teoría principal. Basta con un plan claro contra cada una.',
+        'Pirc y Moderna: Ae3, Dd2, f3, Ah6 y O-O-O con h4–h5. Alekhine: ganar espacio con e5 y d4 y desarrollar con calma. Petrov: 3.Cxe5 y desarrollo tranquilo. Philidor: d4, Cc3, Ac4 y presión sobre f7.',
+      ],
+    },
+    structure: {
+      en: 'Most of these give White a big centre; the question is whether Black can attack it before White\'s pieces are ready.',
+      es: 'La mayoría dan a las blancas un gran centro; la cuestión es si las negras pueden atacarlo antes de que las piezas blancas estén listas.',
+    },
+    plans: {
+      w: {
+        en: ['Keep the centre and develop quickly.', 'Against fianchetto setups: Be3, Qd2 and Bh6 to trade the g7-bishop.', 'Against the Philidor and the Lion: Bc4 and tricks on f7.'],
+        es: ['Mantener el centro y desarrollar rápido.', 'Contra los fianchettos: Ae3, Dd2 y Ah6 para cambiar el alfil de g7.', 'Contra la Philidor y el Lion: Ac4 y trucos sobre f7.'],
+      },
+      b: {
+        en: ['Undermine the centre with ...c5, ...e5 or ...d5.', 'Counterattack on the queenside.', 'Wait for White to overextend.'],
+        es: ['Socavar el centro con ...c5, ...e5 o ...d5.', 'Contraatacar en el flanco de dama.', 'Esperar a que las blancas se sobreextiendan.'],
+      },
+    },
+    lines: [
+      tree('w-vs-pirc', { en: 'Against the Pirc (1...d6): the 150 Attack', es: 'Contra la Pirc (1...d6): el Ataque 150' }, 'e4 d6'),
+      tree('w-vs-modern', { en: 'Against the Modern (1...g6)', es: 'Contra la Moderna (1...g6)' }, 'e4 g6'),
+      tree('w-vs-alekhine', { en: 'Against the Alekhine (1...Nf6)', es: 'Contra la Alekhine (1...Cf6)' }, 'e4 Nf6'),
+      tree('w-vs-petrov', { en: 'Against the Petrov (2...Nf6)', es: 'Contra la Petrov (2...Cf6)' }, 'e4 e5 Nf3 Nf6'),
+      tree('w-vs-philidor', { en: 'Against the Philidor (2...d6)', es: 'Contra la Philidor (2...d6)' }, 'e4 e5 Nf3 d6'),
+    ],
+  },
+  // ---- Against the Dutch, Benko and Budapest
+  {
+    id: 'vs-other-d4', side: 'w', eco: 'A51–A52, A57–A59, A80–A99', puzzles: 'vs-other-d4',
+    name: { en: 'Against the Dutch, Benko and Budapest', es: 'Contra la Holandesa, Benko y Budapest' },
+    summary: {
+      en: 'With White after 1.d4: a fianchetto setup against the Dutch, accepting the Benko Gambit, and keeping the pawn against the Budapest.',
+      es: 'Con blancas tras 1.d4: un esquema con fianchetto contra la Holandesa, aceptar el Gambito Benko y conservar el peón contra el Budapest.',
+    },
+    intro: {
+      en: [
+        'Three ambitious defences that try to unbalance the game early. Against all of them, calm and accurate development is the best answer.',
+        'Dutch: g3, Bg2, Nf3, c4 and O-O, aiming at the weakened e6 and e5 squares. Benko: take the pawn and keep it with careful development. Budapest: Bf4, Nf3 and Nbd2 hold the e5-pawn as long as possible.',
+      ],
+      es: [
+        'Tres defensas ambiciosas que buscan desequilibrar pronto. Contra todas, el desarrollo tranquilo y preciso es la mejor respuesta.',
+        'Holandesa: g3, Ag2, Cf3, c4 y O-O, apuntando a las casillas debilitadas e6 y e5. Benko: tomar el peón y conservarlo con un desarrollo cuidadoso. Budapest: Af4, Cf3 y Cbd2 sostienen el peón de e5 todo lo posible.',
+      ],
+    },
+    structure: {
+      en: 'Each defence gives Black something (the f5-pawn, open queenside files, active pieces); White keeps a solid centre and a long-term edge.',
+      es: 'Cada defensa da algo a las negras (el peón de f5, columnas abiertas en el flanco de dama, piezas activas); las blancas mantienen un centro sólido y una ventaja a largo plazo.',
+    },
+    plans: {
+      w: {
+        en: ['Develop calmly and castle.', 'Against the Dutch, prepare e4.', 'Against the gambits, keep the extra pawn without greed.'],
+        es: ['Desarrollar con calma y enrocar.', 'Contra la Holandesa, preparar e4.', 'Contra los gambitos, conservar el peón de más sin codicia.'],
+      },
+      b: {
+        en: ['Dutch: kingside attack with ...Qe8–h5.', 'Benko: pressure on the a- and b-files.', 'Budapest: win back e5 with ...Ng4 and ...Nc6.'],
+        es: ['Holandesa: ataque en el flanco de rey con ...De8–h5.', 'Benko: presión en las columnas a y b.', 'Budapest: recuperar e5 con ...Cg4 y ...Cc6.'],
+      },
+    },
+    lines: [
+      tree('w-vs-dutch', { en: 'Against the Dutch (1...f5)', es: 'Contra la Holandesa (1...f5)' }, 'd4 f5'),
+      tree('w-vs-benko', { en: 'Against the Benko Gambit', es: 'Contra el Gambito Benko' }, 'd4 Nf6 c4 c5 d5 b5'),
+      tree('w-vs-budapest', { en: 'Against the Budapest Gambit', es: 'Contra el Gambito Budapest' }, 'd4 Nf6 c4 e5'),
+    ],
   },
 ];

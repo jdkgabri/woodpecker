@@ -1,0 +1,30 @@
+{
+ "Nc6 Nf3": {
+  "en": "Against ...Nc6, Nf3 first and f4 later; Bc4 or Bb5 and quick castling keep the attacking setup.",
+  "es": "Contra ...Cc6, primero Cf3 y f4 más tarde; Ac4 o Ab5 y enroque rápido mantienen el esquema de ataque."
+ },
+ "d6 f4": {
+  "en": "Against ...d6, f4 at once: the Grand Prix setup with Nf3, Bc4 or Bb5, O-O and Qe1–h4.",
+  "es": "Contra ...d6, f4 de inmediato: el esquema Grand Prix con Cf3, Ac4 o Ab5, O-O y De1–h4."
+ },
+ "Nc6 Nf3 g6 Bc4 e6 d4 cxd4 Nxd4 Bg7": {
+  "en": "Ndb5! and Nd6+: the hole on d6 decides.",
+  "es": "¡Cdb5! y Cd6+: el agujero de d6 decide."
+ },
+ "Nc6 Nf3 e5 Bc4 d6 O-O Nf6": {
+  "en": "Ng5! attacks f7 twice (knight and bishop).",
+  "es": "¡Cg5! ataca f7 dos veces (caballo y alfil)."
+ },
+ "Nc6 Nf3 g6 Bc4 Bg7 O-O d6 d3 Bg4": {
+  "en": "Bxf7+! Kxf7 Ng5+ and Qxg4: White wins a pawn and the black king is exposed.",
+  "es": "¡Axf7+! Rxf7 Cg5+ y Dxg4: las blancas ganan un peón y el rey negro queda expuesto."
+ },
+ "e6 Nf3 Nc6 d4 cxd4 Nxd4 Bc5 Nxc6 bxc6 Bd3 Nf6": {
+  "en": "e5! kicks the knight; Ne4 and Qg4 follow with an attack.",
+  "es": "¡e5! echa al caballo; siguen Ce4 y Dg4 con ataque."
+ },
+ "e6 Nf3 Nf6 d4 cxd4 Nxd4 Bb4 e5 Ne4": {
+  "en": "Qg4! hits g7 and the e4-knight.",
+  "es": "¡Dg4! ataca g7 y el caballo de e4."
+ }
+}

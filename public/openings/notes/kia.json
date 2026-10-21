@@ -1,0 +1,22 @@
+{
+ "d5 g3": {
+  "en": "The KIA setup: g3, Bg2, O-O, d3, Nbd2 and e4, then e5 and a kingside attack.",
+  "es": "El esquema del AIR: g3, Ag2, O-O, d3, Cbd2 y e4, y después e5 y ataque en el flanco de rey."
+ },
+ "Nf6 g3 Nc6 Bg2 e5 O-O Bc5": {
+  "en": "Nxe5! and if ...Nxe5, d4 forks the knight and the bishop.",
+  "es": "¡Cxe5! y si ...Cxe5, d4 ataca a la vez el caballo y el alfil."
+ },
+ "Nc6 e4 d5 exd5 Qxd5 Nc3 Qe6+ Be2 Qg6": {
+  "en": "Nb5! threatens Nxc7+ forking king and rook.",
+  "es": "¡Cb5! amenaza Cxc7+ atacando rey y torre."
+ },
+ "Nc6 e4 d5 exd5 Qxd5 Nc3 Qd8 d4 Bg4": {
+  "en": "d5! sends the knight back home; after ...Bxf3 gxf3 White has the bishop pair and a big lead in development.",
+  "es": "¡d5! devuelve el caballo a casa; tras ...Axf3 gxf3 las blancas tienen la pareja de alfiles y una gran ventaja en desarrollo."
+ },
+ "Nc6 e4 e5 Bc4 h6 O-O Bc5 c3 Nf6 d4 exd4": {
+  "en": "cxd4 Bb6 d5 and e5: White's centre rolls forward.",
+  "es": "cxd4 Ab6 d5 y e5: el centro blanco avanza."
+ }
+}

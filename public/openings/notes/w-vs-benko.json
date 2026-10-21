@@ -1,0 +1,14 @@
+{
+ "cxb5 a6": {
+  "en": "bxa6: take the gambit pawn. Nc3, e4 (recapturing on f1 with the king if Black trades bishops), Nf3, g3 and Kg2.",
+  "es": "bxa6: toma el peón del gambito. Cc3, e4 (recapturando en f1 con el rey si las negras cambian alfiles), Cf3, g3 y Rg2."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bg7 e4 Qa5 Bd2 Bxa6": {
+  "en": "e5! kicks the f6-knight back to g8 before Black has castled.",
+  "es": "¡e5! devuelve el caballo de f6 a g8 antes de que las negras hayan enrocado."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bxa6 e4 Bxf1 Kxf1 Bg7": {
+  "en": "e5! kicks the f6-knight back to g8 before Black has castled.",
+  "es": "¡e5! devuelve el caballo de f6 a g8 antes de que las negras hayan enrocado."
+ }
+}
