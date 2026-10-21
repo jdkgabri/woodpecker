@@ -344,4 +344,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('vs-scandinavian', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 d5')],
   },
+  // ---- english
+  {
+    id: 'english', side: 'w', eco: 'A10–A39', puzzles: 'english',
+    name: { en: 'English Opening', es: 'Apertura Inglesa' },
+    summary: {
+      en: '1.c4 — controls d5 from the side; a flexible opening with a kingside fianchetto.',
+      es: '1.c4 — controla d5 desde el flanco; una apertura flexible con fianchetto en el flanco de rey.',
+    },
+    intro: {
+      en: [
+        'With 1.c4 White fights for d5 without committing the centre pawns. The usual setup is Nc3, g3, Bg2 and Nf3, often called a "reversed Sicilian".',
+        'Black\'s main answers are 1...e5, 1...Nf6, 1...c5 (Symmetrical) and 1...e6. White adapts but keeps the same ideas: pressure on d5 and the long diagonal, and queenside play with b4 or Rb1.',
+      ],
+      es: [
+        'Con 1.c4 las blancas luchan por d5 sin comprometer los peones centrales. La estructura habitual es Cc3, g3, Ag2 y Cf3, a menudo llamada "Siciliana invertida".',
+        'Las respuestas principales de las negras son 1...e5, 1...Cf6, 1...c5 (Simétrica) y 1...e6. Las blancas se adaptan pero mantienen las mismas ideas: presión sobre d5 y la gran diagonal, y juego en el flanco de dama con b4 o Tb1.',
+      ],
+    },
+    structure: {
+      en: 'Pawns on c4, d3 and e2/e3 with the bishop on g2. White plays on the queenside (b4–b5) and on the light squares; Black often takes space with ...e5 and ...f5.',
+      es: 'Peones en c4, d3 y e2/e3 con el alfil en g2. Las blancas juegan en el flanco de dama (b4–b5) y en las casillas blancas; las negras suelen ganar espacio con ...e5 y ...f5.',
+    },
+    plans: {
+      w: {
+        en: ['Nc3, g3, Bg2, Nf3 and castle.', 'Queenside expansion with Rb1, b4 and b5.', 'Control d5 with the knight and the bishop.'],
+        es: ['Cc3, g3, Ag2, Cf3 y enroque.', 'Expansión en el flanco de dama con Tb1, b4 y b5.', 'Controlar d5 con el caballo y el alfil.'],
+      },
+      b: {
+        en: ['Take space with ...e5 and ...f5.', 'Play ...d5 when it is well supported.', 'Mirror the fianchetto and fight for the long diagonal.'],
+        es: ['Ganar espacio con ...e5 y ...f5.', 'Jugar ...d5 cuando esté bien apoyado.', 'Copiar el fianchetto y luchar por la gran diagonal.'],
+      },
+    },
+    lines: [tree('english', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'c4')],
+  },
 ];

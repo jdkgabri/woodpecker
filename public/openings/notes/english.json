@@ -1,0 +1,38 @@
+{
+ "": {
+  "en": "The English Opening with the same setup against everything: Nc3, g3, Bg2, then Nf3 or e3 and Nge2, O-O and play on the queenside or in the centre with d3 and e4.",
+  "es": "La Apertura Inglesa con la misma estructura contra todo: Cc3, g3, Ag2, luego Cf3 o e3 y Cge2, O-O y juego en el flanco de dama o en el centro con d3 y e4."
+ },
+ "e5": {
+  "en": "The Reversed Sicilian: White plays a Sicilian with an extra tempo.",
+  "es": "La Siciliana Invertida: las blancas juegan una Siciliana con un tiempo de más."
+ },
+ "e5 Nc3": {
+  "en": "Nc3 controls d5, the key square of the English.",
+  "es": "Cc3 controla d5, la casilla clave de la Inglesa."
+ },
+ "e5 Nc3 Nf6 g3 d5 cxd5": {
+  "en": "Black plays an Open Sicilian a tempo down: after ...Nxd5 Bg2 the bishop pressures the d5-knight and b7.",
+  "es": "Las negras juegan una Siciliana abierta con un tiempo menos: tras ...Cxd5 Ag2 el alfil presiona el caballo de d5 y b7."
+ },
+ "e5 Nc3 Nf6 g3 Bb4 Bg2": {
+  "en": "Against ...Bb4, the fianchetto keeps everything protected; if ...Bxc3, bxc3 gives the bishop pair and a strong centre with d3 and e4.",
+  "es": "Contra ...Ab4, el fianchetto lo mantiene todo protegido; si ...Axc3, bxc3 da la pareja de alfiles y un centro fuerte con d3 y e4."
+ },
+ "e5 Nc3 Nc6 g3": {
+  "en": "The Closed English: g3, Bg2, d3, and Rb1–b4 on the queenside.",
+  "es": "La Inglesa Cerrada: g3, Ag2, d3, y Tb1–b4 en el flanco de dama."
+ },
+ "Nf6 Nc3 g6 g3": {
+  "en": "Against the King's Indian setup, the same fianchetto: Bg2, Nf3, O-O and d4 or d3 and e4.",
+  "es": "Contra la estructura India de Rey, el mismo fianchetto: Ag2, Cf3, O-O y d4 o d3 y e4."
+ },
+ "c5": {
+  "en": "The Symmetrical English: copy the setup and fight for d5 and the long diagonal.",
+  "es": "La Inglesa Simétrica: copia la estructura y lucha por d5 y la gran diagonal."
+ },
+ "e6": {
+  "en": "...e6 often leads to Queen's Gambit or Nimzo-Indian structures; Nc3 and g3 keep it flexible.",
+  "es": "...e6 suele llevar a estructuras de Gambito de Dama o Nimzoindia; Cc3 y g3 lo mantienen flexible."
+ }
+}
