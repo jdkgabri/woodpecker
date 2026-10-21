@@ -156,7 +156,9 @@ export const MORE_OPENINGS = [
         es: ['...c5 y ...Db6 contra b2.', '...Ad6 para cambiar el fuerte alfil de f4.', 'Fianchetto con ...g6 y ruptura ...e5.'],
       },
     },
-    lines: [tree('london', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4')],
+    lines: [tree('london', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4'),
+      tree('london-kid', { en: 'Against the King\'s Indian setup', es: 'Contra la estructura India de Rey' }, 'd4 Nf6 Bf4 g6'),
+    ],
   },
   // ---- morra
   {
@@ -874,7 +876,9 @@ export const MORE_OPENINGS = [
         es: ['Ganar espacio con e5 y atacar en el flanco de rey.', 'Sostener d4 con c3 y Cf3.', 'Aprovechar el mal alfil francés.'],
       },
     },
-    lines: [tree('french', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 e6')],
+    lines: [tree('french', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 e6'),
+      tree('french-tarrasch', { en: 'Against the Tarrasch (3.Nd2)', es: 'Contra la Tarrasch (3.Cd2)' }, 'e4 e6 d4 d5 Nd2'),
+    ],
   },
   // ---- nimzo-indian
   {

@@ -1,0 +1,14 @@
+{
+ "e3 Bg7": {
+  "en": "Against the King's Indian setup, the London keeps it simple: Nf3, h3 (keeping the f4-bishop safe from ...Nh5), c3, Be2 and O-O. White waits for ...e5 and answers with dxe5.",
+  "es": "Contra el esquema india de rey, la London lo mantiene sencillo: Cf3, h3 (protegiendo el alfil de f4 de ...Ch5), c3, Ae2 y O-O. Las blancas esperan ...e5 y contestan dxe5."
+ },
+ "e3 Bg7 Nf3 d6 h3 O-O c3 Nbd7 Be2 Re8 O-O e5 dxe5 dxe5 Nxe5 Nh5": {
+  "en": "Nxf7! Kxf7 Bc4+ Re6 Bxe6+: White wins the exchange and a pawn.",
+  "es": "¡Cxf7! Rxf7 Ac4+ Te6 Axe6+: las blancas ganan la calidad y un peón."
+ },
+ "": {
+  "en": "Against ...g6, keep the pyramid and add h3 to save the bishop.",
+  "es": "Contra ...g6, mantén la pirámide y añade h3 para conservar el alfil."
+ }
+}

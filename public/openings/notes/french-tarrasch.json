@@ -1,0 +1,18 @@
+{
+ "c5": {
+  "en": "...c5 strikes at d4 at once, using the fact that the d2-knight does not control d4.",
+  "es": "...c5 golpea d4 de inmediato, aprovechando que el caballo de d2 no controla d4."
+ },
+ "c5 exd5 Qxd5": {
+  "en": "...Qxd5 avoids the isolated pawn: the queen is safe on d5 because Nc3 is no longer possible (the knight is on d2). ...cxd4 and ...Nc6 follow.",
+  "es": "...Dxd5 evita el peón aislado: la dama está segura en d5 porque ya no es posible Cc3 (el caballo está en d2). Siguen ...cxd4 y ...Cc6."
+ },
+ "c5 c3 Nc6 Ngf3 Nf6 e5 Nd7 Bb5 cxd4 Bxc6": {
+  "en": "Bxc6? gives up the bishop too early: after ...bxc6 and ...Ba6, Black's bishops are strong and the c-pawn joins the centre.",
+  "es": "¿Axc6? entrega el alfil demasiado pronto: tras ...bxc6 y ...Aa6, los alfiles negros son fuertes y el peón c se suma al centro."
+ },
+ "": {
+  "en": "Against 3.Nd2: ...c5 or ...Nf6.",
+  "es": "Contra 3.Cd2: ...c5 o ...Cf6."
+ }
+}
