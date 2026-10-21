@@ -1,0 +1,22 @@
+{
+ "Nf6": {
+  "en": "...Nf6, then ...Bf5 and ...e6, or ...c6 / ...a6 to take b5 away from the knight.",
+  "es": "...Cf6, y después ...Af5 y ...e6, o ...c6 / ...a6 para quitarle b5 al caballo."
+ },
+ "Nf6 e4 dxe4 f3 Bf5 g4 Bg6 f4": {
+  "en": "g4 and f4 weaken White's king: ...e6, then ...Bb4 or ...h5, exploit the weakened light squares.",
+  "es": "g4 y f4 debilitan al rey blanco: ...e6, y después ...Ab4 o ...h5, aprovechan las casillas blancas debilitadas."
+ },
+ "Nf6 e4 dxe4 Bg5 Bf5 Bxf6 exf6 f3": {
+  "en": "...Bb4! pins the c3-knight, and ...exf3 keeps the extra pawn.",
+  "es": "¡...Ab4! clava el caballo de c3, y ...exf3 conserva el peón de más."
+ },
+ "Nf6 e4 dxe4 f3 Bf5 fxe4 Nxe4 Nxe4 Bxe4 Qe2": {
+  "en": "The d4-pawn is unprotected: ...Qxd4.",
+  "es": "El peón de d4 está sin defender: ...Dxd4."
+ },
+ "": {
+  "en": "Against 2.Nc3 and Bf4, cover b5 and c7: ...Nf6 with ...c6 or ...a6, and ...Bf5 or ...e6.",
+  "es": "Contra 2.Cc3 y Af4, cubre b5 y c7: ...Cf6 con ...c6 o ...a6, y ...Af5 o ...e6."
+ }
+}

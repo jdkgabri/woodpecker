@@ -1,0 +1,18 @@
+{
+ "Bc4 c5": {
+  "en": "The classical Exchange: ...c5, ...Nc6, ...O-O and ...Bg4 put pressure on d4. Black lets White keep the centre and attacks it.",
+  "es": "El Cambio clásico: ...c5, ...Cc6, ...O-O y ...Ag4 presionan d4. Las negras dejan que las blancas mantengan el centro y lo atacan."
+ },
+ "Bc4 c5 Nf3 O-O O-O cxd4 cxd4 Nc6 d5": {
+  "en": "d5? leaves the a1-rook on the long diagonal: ...Na5 hits the bishop and ...Bxa1 follows.",
+  "es": "¿d5? deja la torre de a1 en la gran diagonal: ...Ca5 ataca el alfil y sigue ...Axa1."
+ },
+ "Bc4 c5 Nf3 O-O O-O cxd4 cxd4 Nc6 Bb2 Bg4 d5": {
+  "en": "...Bxb2 dxc6 Bxa1: Black comes out with extra material.",
+  "es": "...Axb2 dxc6 Axa1: las negras salen con material de más."
+ },
+ "": {
+  "en": "The Exchange main line: ...c5, ...O-O, ...Nc6 and pressure on d4.",
+  "es": "La línea principal del Cambio: ...c5, ...O-O, ...Cc6 y presión sobre d4."
+ }
+}

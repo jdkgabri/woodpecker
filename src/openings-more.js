@@ -624,6 +624,8 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('kings-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6'),
       tree('kid-samisch', { en: 'Against the Sämisch (f3)', es: 'Contra la Sämisch (f3)' }, 'd4 Nf6 c4 g6 Nc3 Bg7 e4 d6 f3'),
+    
+      tree('kid-fianchetto', { en: 'Against the Fianchetto (g3)', es: 'Contra el Fianchetto (g3)' }, 'd4 Nf6 c4 g6 Nf3 Bg7 g3'),
     ],
   },
   // ---- grunfeld
@@ -658,7 +660,9 @@ export const MORE_OPENINGS = [
         es: ['Montar el centro con e4 y mantener d4 protegido.', 'Empujar d5 en el momento justo.', 'Atacar en el flanco de rey con h4 o f4–f5.'],
       },
     },
-    lines: [tree('grunfeld', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 g6 Nc3')],
+    lines: [tree('grunfeld', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 g6 Nc3'),
+      tree('grunfeld-exchange', { en: 'Exchange Variation', es: 'Variante del Cambio' }, 'd4 Nf6 c4 g6 Nc3 d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7'),
+    ],
   },
   // ---- queen's indian
   {
@@ -1160,6 +1164,12 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('vs-london', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 Bf4'),
       tree('vs-trompowsky', { en: 'Against the Trompowsky (2.Bg5)', es: 'Contra el Trompowsky (2.Ag5)' }, 'd4 Nf6 Bg5'),
+    
+      tree('vs-colle', { en: 'Against the Colle (e3, Bd3)', es: 'Contra el Colle (e3, Ad3)' }, 'd4 d5 Nf3 Nf6 e3'),
+    
+      tree('vs-jobava', { en: 'Against the Jobava London (2.Nc3)', es: 'Contra la London Jobava (2.Cc3)' }, 'd4 d5 Nc3'),
+    
+      tree('vs-bdg', { en: 'Against the Blackmar-Diemer Gambit (2.e4)', es: 'Contra el Gambito Blackmar-Diemer (2.e4)' }, 'd4 d5 e4'),
     ],
   },
   // ---- Semi-Slav
@@ -1433,5 +1443,39 @@ export const MORE_OPENINGS = [
       },
     },
     lines: [tree('vs-reti', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'Nf3')],
+  },
+  // ---- Jobava London
+  {
+    id: 'jobava', side: 'w', eco: 'D00, A45', puzzles: 'jobava',
+    name: { en: 'Jobava London (Rapport–Jobava)', es: 'London Jobava (Rapport–Jobava)' },
+    summary: {
+      en: '1.d4 with Nc3 and Bf4 — an aggressive version of the London: the knight jumps to b5 and White often castles long.',
+      es: '1.d4 con Cc3 y Af4: una versión agresiva de la London. El caballo salta a b5 y las blancas a menudo enrocan largo.',
+    },
+    intro: {
+      en: [
+        'Instead of the slow c3–e3 pyramid, White puts the knight on c3, threatening Nb5 and c7.',
+        'Sharp and practical: plans with Qd2, O-O-O and f3–g4 are common.',
+      ],
+      es: [
+        'En lugar de la lenta pirámide c3–e3, las blancas ponen el caballo en c3, amenazando Cb5 y c7.',
+        'Aguda y práctica: son habituales los planes con Dd2, O-O-O y f3–g4.',
+      ],
+    },
+    structure: {
+      en: 'Pawns d4–e3 with the knight on c3 (blocking the c-pawn); the f4-bishop and Nb5 aim at c7.',
+      es: 'Peones d4–e3 con el caballo en c3 (tapando el peón c); el alfil de f4 y Cb5 apuntan a c7.',
+    },
+    plans: {
+      w: {
+        en: ['Nc3 and Bf4, then e3.', 'Nb5 against c7 when Black is careless.', 'Qd2, O-O-O and a kingside pawn storm.'],
+        es: ['Cc3 y Af4, después e3.', 'Cb5 contra c7 si las negras se descuidan.', 'Dd2, O-O-O y avalancha de peones en el flanco de rey.'],
+      },
+      b: {
+        en: ['...a6 or ...c6 to cover b5.', '...c5 against d4.', '...Bd6 to trade the f4-bishop.'],
+        es: ['...a6 o ...c6 para cubrir b5.', '...c5 contra d4.', '...Ad6 para cambiar el alfil de f4.'],
+      },
+    },
+    lines: [tree('jobava', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4')],
   },
 ];

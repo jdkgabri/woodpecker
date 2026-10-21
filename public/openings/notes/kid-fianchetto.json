@@ -1,0 +1,22 @@
+{
+ "O-O Bg2": {
+  "en": "Against the fianchetto, ...d6 and ...Nc6 (the Panno, with ...a6 and ...Rb8) or ...Nbd7 with ...e5 are the main plans.",
+  "es": "Contra el fianchetto, ...d6 y ...Cc6 (la Panno, con ...a6 y ...Tb8) o ...Cbd7 con ...e5 son los planes principales."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 dxe5 dxe5 Qxd8 Rxd8 Bg5 Be6 Ne4": {
+  "en": "...Nxe4! Bxd8 Nxd8: Black gets two pieces for the rook.",
+  "es": "¡...Cxe4! Axd8 Cxd8: las negras obtienen dos piezas por la torre."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 dxe5 dxe5 Qxd8 Rxd8 Bg5 Be6 b3 h6 Bxf6 Bxf6 Nb5": {
+  "en": "...e4! opens the long diagonal: the a1-rook falls.",
+  "es": "¡...e4! abre la gran diagonal: la torre de a1 cae."
+ },
+ "O-O Bg2 d6 O-O Nc6 d5 Na5 Nbd2 c5 Qc2": {
+  "en": "...b5! hits c4, and the a5-knight joins the attack.",
+  "es": "¡...b5! ataca c4, y el caballo de a5 se suma al ataque."
+ },
+ "": {
+  "en": "Against the fianchetto: ...O-O, ...d6 and ...Nc6 or ...Nbd7 with ...e5.",
+  "es": "Contra el fianchetto: ...O-O, ...d6 y ...Cc6 o ...Cbd7 con ...e5."
+ }
+}

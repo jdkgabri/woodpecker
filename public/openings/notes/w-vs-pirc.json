@@ -1,0 +1,22 @@
+{
+ "d4 Nf6": {
+  "en": "Nc3 and then the 150 Attack: Be3, Qd2, f3 or Nf3, Bh6 to trade the dragon bishop, O-O-O and h4–h5.",
+  "es": "Cc3 y después el Ataque 150: Ae3, Dd2, f3 o Cf3, Ah6 para cambiar el alfil del fianchetto, O-O-O y h4–h5."
+ },
+ "d4 g6 Nc3 Bg7 Be3 Nf6 Qd2 O-O f3 Re8": {
+  "en": "...Re8 is slow: O-O-O and the attack with g4, h4–h5 and Bh6.",
+  "es": "...Te8 es lento: O-O-O y el ataque con g4, h4–h5 y Ah6."
+ },
+ "d4 Nf6 Nc3 c6 f4 Qa5 Bd3 Nbd7": {
+  "en": "e5! kicks the knight from f6, and the queen on a5 can become a target.",
+  "es": "¡e5! echa al caballo de f6, y la dama de a5 puede convertirse en un objetivo."
+ },
+ "d4 Nf6 Nc3 e5 Nf3 exd4 Nxd4 c5": {
+  "en": "...c5? weakens d5 and d6: Bb5+! exploits it.",
+  "es": "¿...c5? debilita d5 y d6: ¡Ab5+! lo aprovecha."
+ },
+ "d4 Nf6 Nc3 e5 Nf3 exd4 Nxd4 Nc6 Be3 Bg4": {
+  "en": "f3! kicks the bishop and prepares Qd2 and O-O-O.",
+  "es": "¡f3! echa al alfil y prepara Dd2 y O-O-O."
+ }
+}

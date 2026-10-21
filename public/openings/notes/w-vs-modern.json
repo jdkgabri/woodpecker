@@ -1,0 +1,18 @@
+{
+ "d4 Bg7": {
+  "en": "The same plan as against the Pirc: Nc3, Be3, Qd2, Bh6 and long castling.",
+  "es": "El mismo plan que contra la Pirc: Cc3, Ae3, Dd2, Ah6 y enroque largo."
+ },
+ "d4 Bg7 Nc3 c5 Be3 cxd4 Bxd4 e5": {
+  "en": "Bc5! stops Black from castling, and Nb5–d6 follows.",
+  "es": "¡Ac5! impide el enroque negro, y sigue Cb5–d6."
+ },
+ "d4 Bg7 Nc3 c5 Be3 Qb6": {
+  "en": "Nd5! attacks the queen and c7.",
+  "es": "¡Cd5! ataca la dama y c7."
+ },
+ "d4 d6 Nc3 Bg7 Be3 Nf6 Qd2 O-O f3 Re8": {
+  "en": "...Re8 is slow: O-O-O and the attack with g4, h4–h5 and Bh6.",
+  "es": "...Te8 es lento: O-O-O y el ataque con g4, h4–h5 y Ah6."
+ }
+}
