@@ -40,6 +40,46 @@ os.makedirs(CACHE, exist_ok=True)
 os.makedirs(OUT, exist_ok=True)
 
 
+# All build processes share one request budget: a lock file serialises the requests, a state
+# file holds the time of the next allowed request and the current interval. A 429 makes every
+# process wait a minute and slows the pace.
+LOCK = os.path.join(CACHE, '..', 'explorer.lock')
+STATE = os.path.join(CACHE, '..', 'explorer.state')
+
+
+def throttle(rate_limited=False):
+    while True:
+        try:
+            fd = os.open(LOCK, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            break
+        except FileExistsError:
+            try:
+                if time.time() - os.path.getmtime(LOCK) > 120:
+                    os.remove(LOCK)
+            except OSError:
+                pass
+            time.sleep(0.05)
+    try:
+        try:
+            st = json.load(open(STATE))
+        except (OSError, ValueError):
+            st = {'next': 0, 'interval': 0.5}
+        if rate_limited:
+            st['interval'] = min(5.0, st['interval'] * 1.5)
+            st['next'] = time.time() + 65
+            print(f"429: pausing, interval now {st['interval']:.2f}s", file=sys.stderr, flush=True)
+        else:
+            st['interval'] = max(0.5, st['interval'] * 0.99)
+            wait = st['next'] - time.time()
+            if wait > 0:
+                time.sleep(wait)
+            st['next'] = time.time() + st['interval']
+        json.dump(st, open(STATE, 'w'))
+    finally:
+        os.close(fd)
+        os.remove(LOCK)
+
+
 def explore(board):
     key = board.fen().replace('/', '_').replace(' ', '+')
     path = os.path.join(CACHE, key + '.json')
@@ -50,13 +90,14 @@ def explore(board):
             pass
     url = EXPLORER + '?' + urllib.parse.urlencode({**PARAMS, 'fen': board.fen()})
     req = urllib.request.Request(url, headers={'Authorization': 'Bearer ' + os.environ['LICHESS_TOKEN']})
-    for attempt in range(8):
+    for attempt in range(12):
+        throttle()
         try:
             data = json.load(urllib.request.urlopen(req, timeout=30))
             break
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                time.sleep(60)
+                throttle(rate_limited=True)
                 continue
             raise
         except (urllib.error.URLError, TimeoutError):
@@ -66,7 +107,6 @@ def explore(board):
     tmp = path + '.tmp%d' % os.getpid()
     json.dump(data, open(tmp, 'w'))
     os.replace(tmp, path)
-    time.sleep(0.4)
     return data
 
 
@@ -100,7 +140,8 @@ class Builder:
         win = m['white'] if self.us == chess.WHITE else m['black']
         return {'g': n, 'w': round(100 * win / n), 'd': round(100 * m['draws'] / n)}
 
-    def our_move(self, board, data):
+    def our_move(self, board, data, explore_fn=None):
+        """(move, score, explorer data or None). The explorer is only asked when no repertoire move fits."""
         evals = self.evals(board)
         best = evals[0][1]
         ev = {m.uci(): s for m, s in evals}
@@ -113,32 +154,36 @@ class Builder:
             if score is None:
                 score = self.eval_move(board, move)
             if score >= best - PREFER_TOL:
-                return move, score
+                return move, score, data
+        if data is None and explore_fn:
+            data = explore_fn()
         popular = {m['uci']: total(m) for m in data['moves']} if data else {}
         near = [u for u, s in ev.items() if s >= best - NEAR_BEST]
         pick = max(near, key=lambda u: popular.get(u, 0)) if near else evals[0][0].uci()
-        return chess.Move.from_uci(pick), ev.get(pick, best)
+        return chess.Move.from_uci(pick), ev.get(pick, best), data
 
-    def build(self, board):
-        """Children of the position (list of nodes)."""
+    def build(self, board, games=None):
+        """Children of the position (list of nodes). `games`: how often it was reached, when known."""
         depth = board.ply() - self.root_ply
         if depth >= MAX_DEPTH or board.is_game_over():
             return []
-        data = explore(board)
-        games = total(data)
+        data = None
+        if games is None or board.turn != self.us:
+            data = explore(board)
+            games = total(data)
         if self.root_games is None:
             self.root_games = games
         if games < max(MIN_GAMES, MIN_REL * self.root_games):
             return []
         self.nodes += 1
         if board.turn == self.us:
-            move, score = self.our_move(board, data)
+            move, score, data = self.our_move(board, data, lambda: explore(board))
             node = {'s': board.san(move), 'u': move.uci(), 'e': score}
-            m = next((x for x in data['moves'] if x['uci'] == move.uci()), None)
+            m = next((x for x in data['moves'] if x['uci'] == move.uci()), None) if data else None
             if m:
                 node.update(self.stats(m))
             board.push(move)
-            kids = self.build(board)
+            kids = self.build(board, total(m) if m else None)
             board.pop()
             if kids:
                 node['c'] = kids
@@ -158,9 +203,9 @@ class Builder:
             # loss = how much better it is for us than after the opponent's best reply
             node = {'s': san, 'u': m['uci'], 'e': score, 'p': round(100 * total(m) / games, 1),
                     'l': max(0, score - best), **self.stats(m)}
-            kids = self.build(board)
+            kids = self.build(board, total(m))
             if not kids and not board.is_game_over():
-                reply, rscore = self.our_move(board, None)
+                reply, rscore, _ = self.our_move(board, None)
                 kids = [{'s': board.san(reply), 'u': reply.uci(), 'e': rscore}]
             board.pop()
             if kids:

@@ -38,6 +38,36 @@ GROUPS = {
                                'Sicilian_Defense_Nyezhmetdinov-Rossolimo', 'Sicilian_Defense_Moscow', 'Sicilian_Defense_Closed',
                                'Sicilian_Defense_Grand_Prix')),
     'black-lion': ('b', has('Philidor_Defense_Lion_Variation', 'Lion_Defense', 'Philidor_Defense_Hanham', 'Old_Indian_Defense')),
+    # tree-based courses (src/openings-more.js): one group per opening, named like the opening
+    'ruy-lopez': ('w', has('Ruy_Lopez')),
+    'scotch': ('w', has('Scotch_Game')),
+    'kings-gambit': ('w', has('Kings_Gambit')),
+    'vienna': ('w', has('Vienna_Game')),
+    'london': ('w', has('Queens_Pawn_Game_Accelerated_London_System', 'Queens_Pawn_Game_London_System', 'Indian_Defense_London_System',
+                        'Indian_Defense_Accelerated_London_System', 'London_System')),
+    'catalan': ('w', has('Catalan_Opening')),
+    'english': ('w', has('English_Opening')),
+    'alapin': ('w', has('Sicilian_Defense_Alapin', 'Sicilian_Defense_Delayed_Alapin')),
+    'morra': ('w', has('Sicilian_Defense_Smith-Morra')),
+    'french-advance': ('w', has('French_Defense_Advance')),
+    'caro-advance': ('w', has('Caro-Kann_Defense_Advance')),
+    'vs-scandinavian': ('w', has('Scandinavian_Defense')),
+    'french': ('b', has('French_Defense')),
+    'caro-kann': ('b', has('Caro-Kann_Defense')),
+    'scandinavian': ('b', has('Scandinavian_Defense')),
+    'pirc': ('b', has('Pirc_Defense')),
+    'alekhine': ('b', has('Alekhine_Defense')),
+    'petrov': ('b', has('Russian_Game', 'Petrovs_Defense')),
+    'kings-indian': ('b', has('Kings_Indian_Defense')),
+    'grunfeld': ('b', has('Grunfeld_Defense')),
+    'nimzo-indian': ('b', has('Nimzo-Indian_Defense')),
+    'queens-indian': ('b', has('Queens_Indian_Defense')),
+    'dutch': ('b', has('Dutch_Defense')),
+    'slav-black': ('b', has('Slav_Defense')),
+    'qgd-black': ('b', has('Queens_Gambit_Declined', exclude=('Queens_Gambit_Declined_Albin', 'Queens_Gambit_Declined_Chigorin',
+                                                              'Queens_Gambit_Declined_Baltic', 'Queens_Gambit_Declined_Marshall'))),
+    'benko': ('b', has('Benko_Gambit')),
+    'budapest': ('b', has('Indian_Defense_Budapest_Defense')),
 }
 
 random.seed(20261021)
@@ -45,8 +75,10 @@ random.seed(20261021)
 
 def main(src, out_dir):
     os.makedirs(out_dir, exist_ok=True)
-    samples = {g: [] for g in GROUPS}
-    seen = {g: 0 for g in GROUPS}
+    # groups already extracted are kept as they are (sets built from them stay valid)
+    groups = {g: v for g, v in GROUPS.items() if not os.path.exists(os.path.join(out_dir, f'{g}.txt'))}
+    samples = {g: [] for g in groups}
+    seen = {g: 0 for g in groups}
     reader = csv.reader(io.TextIOWrapper(zstandard.ZstdDecompressor().stream_reader(open(src, 'rb')), encoding='utf-8'))
     next(reader)
     for row in reader:
@@ -55,7 +87,7 @@ def main(src, out_dir):
             continue
         tags = opening.split()
         solver = 'b' if fen.split()[1] == 'w' else 'w'  # the FEN has the opponent to move
-        for g, (side, pred) in GROUPS.items():
+        for g, (side, pred) in groups.items():
             if side != solver or not pred(tags):
                 continue
             seen[g] += 1
@@ -66,7 +98,10 @@ def main(src, out_dir):
                 j = random.randrange(seen[g])
                 if j < PER_GROUP:
                     samples[g][j] = rec
-    index = {}
+    try:
+        index = json.load(open(os.path.join(out_dir, 'index.json')))
+    except OSError:
+        index = {}
     for g, recs in samples.items():
         lines = []
         for pid, fen, moves, rating in sorted(recs, key=lambda r: r[3]):
