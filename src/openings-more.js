@@ -1136,4 +1136,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('vs-london', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 Bf4')],
   },
+  // ---- Semi-Slav
+  {
+    id: 'semi-slav', side: 'b', vs: 'd4', eco: 'D43–D49', puzzles: 'semi-slav',
+    name: { en: 'Semi-Slav Defence', es: 'Defensa Semieslava' },
+    summary: {
+      en: '1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 e6 — the solid triangle c6–d5–e6 with dynamic options like the Meran (...dxc4 and ...b5).',
+      es: '1.d4 d5 2.c4 c6 3.Cf3 Cf6 4.Cc3 e6: el sólido triángulo c6–d5–e6 con opciones dinámicas como la Merano (...dxc4 y ...b5).',
+    },
+    intro: {
+      en: [
+        'The Semi-Slav combines the Slav (...c6) with the Queen\'s Gambit Declined (...e6). It is very solid, but Black keeps the option of taking on c4 and expanding with ...b5.',
+        'The main idea of the Meran: ...dxc4, ...b5, ...Bb7, ...a6 and the freeing break ...c5.',
+      ],
+      es: [
+        'La Semieslava combina la Eslava (...c6) con el Gambito de Dama Rehusado (...e6). Es muy sólida, pero las negras conservan la opción de tomar en c4 y expandirse con ...b5.',
+        'La idea principal de la Merano: ...dxc4, ...b5, ...Ab7, ...a6 y la ruptura liberadora ...c5.',
+      ],
+    },
+    structure: {
+      en: 'The triangle c6–d5–e6 shuts the c8-bishop in; Black frees it with ...dxc4 and ...b5–Bb7, or with ...e5.',
+      es: 'El triángulo c6–d5–e6 encierra al alfil de c8; las negras lo liberan con ...dxc4 y ...b5–Ab7, o con ...e5.',
+    },
+    plans: {
+      b: {
+        en: ['...Nbd7 and ...Bd6.', 'After e3 and Bd3: ...dxc4, ...b5, ...Bb7 and ...c5.', '...e5 when White plays slowly.'],
+        es: ['...Cbd7 y ...Ad6.', 'Tras e3 y Ad3: ...dxc4, ...b5, ...Ab7 y ...c5.', '...e5 cuando las blancas juegan con calma.'],
+      },
+      w: {
+        en: ['e3 and Bd3, or the sharp Bg5.', 'e4 in the centre when possible.', 'Qc2 to prevent ...dxc4 lines.'],
+        es: ['e3 y Ad3, o la aguda Ag5.', 'e4 en el centro cuando sea posible.', 'Dc2 para evitar las líneas de ...dxc4.'],
+      },
+    },
+    lines: [tree('semi-slav', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 c4 c6 Nf3 Nf6 Nc3 e6')],
+  },
 ];

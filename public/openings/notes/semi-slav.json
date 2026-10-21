@@ -1,0 +1,22 @@
+{
+ "Bg5 Nbd7": {
+  "en": "...Nbd7 keeps everything solid. After e3, ...dxc4 Bxc4 and ...b5 gain time on the bishop, Meran-style.",
+  "es": "...Cbd7 lo mantiene todo sólido. Tras e3, ...dxc4 Axc4 y ...b5 ganan tiempo sobre el alfil, al estilo Merano."
+ },
+ "e3 Nbd7 Bd3 dxc4": {
+  "en": "The Meran: after Bxc4, ...b5, ...Bb7, ...a6 and the freeing ...c5.",
+  "es": "La Merano: tras Axc4, ...b5, ...Ab7, ...a6 y la ruptura liberadora ...c5."
+ },
+ "Bf4 dxc4": {
+  "en": "With the bishop on f4 instead of g5, Black can take on c4 and hold the pawn with ...b5.",
+  "es": "Con el alfil en f4 en lugar de g5, las negras pueden tomar en c4 y sostener el peón con ...b5."
+ },
+ "Bf4 dxc4 e3 b5 a4 Bb4 axb5": {
+  "en": "...cxb5: the pin ...Bb4 on c3 makes it hard for White to win the pawn back; Black stays a pawn up.",
+  "es": "...cxb5: la clavada ...Ab4 sobre c3 dificulta a las blancas recuperar el peón; las negras siguen con un peón de más."
+ },
+ "cxd5 exd5": {
+  "en": "The exchange frees the c8-bishop: ...Bd6, ...O-O and ...Bf5 or ...Re8 give Black an easy, symmetrical game.",
+  "es": "El cambio libera el alfil de c8: ...Ad6, ...O-O y ...Af5 o ...Te8 dan a las negras un juego fácil y simétrico."
+ }
+}
