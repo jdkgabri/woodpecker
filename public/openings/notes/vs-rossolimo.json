@@ -1,0 +1,42 @@
+{
+ "g6": {
+  "en": "...g6 and ...Bg7 is the main answer: if White takes on c6, the bishop on g7 and the pawns c6/c5 fight for d4 and the dark squares.",
+  "es": "...g6 y ...Ag7 es la respuesta principal: si las blancas toman en c6, el alfil de g7 y los peones c6/c5 luchan por d4 y las casillas negras."
+ },
+ "g6 Bxc6 bxc6": {
+  "en": "Take towards the centre. Black has the bishop pair; plans are ...Bg7, ...d6, ...Nf6 or ...Nh6–f7, and ...e5 or ...c4 depending on White's setup.",
+  "es": "Captura hacia el centro. Las negras tienen la pareja de alfiles; los planes son ...Ag7, ...d6, ...Cf6 o ...Ch6–f7, y ...e5 o ...c4 según el esquema blanco."
+ },
+ "g6 Bxc6 bxc6 d4 Bg7 d5": {
+  "en": "d5 leaves the king in the centre and weakens the light squares: ...Ba6! covers f1 and stops White from castling.",
+  "es": "d5 deja al rey en el centro y debilita las casillas blancas: ¡...Aa6! controla f1 e impide que las blancas enroquen."
+ },
+ "g6 O-O Bg7": {
+  "en": "Black finishes the fianchetto. After c3 or Re1, ...e5 or ...Nf6 claim the centre; the e5-pawn stops d4 for good.",
+  "es": "Las negras completan el fianchetto. Tras c3 o Re1, ...e5 o ...Cf6 reclaman el centro; el peón de e5 impide d4 definitivamente."
+ },
+ "g6 c3 Bg7 d4 cxd4 cxd4 Nf6 d5": {
+  "en": "d5?? leaves the b5-bishop loose: ...Qa5+ checks and wins it.",
+  "es": "¿¿d5?? deja suelto el alfil de b5: ...Da5+ da jaque y lo gana."
+ },
+ "g6 c3 Bg7 d4 cxd4 Bxc6": {
+  "en": "Do not recapture yet: ...dxc3! threatens ...cxb2, and the bishop on c6 is still attacked by two pawns.",
+  "es": "No recapturas todavía: ¡...dxc3! amenaza ...cxb2, y el alfil de c6 sigue atacado por dos peones."
+ },
+ "g6 d4 cxd4 Nxd4 Bg7 Be3 Nf6 Nxc6": {
+  "en": "...dxc6 attacks the b5-bishop and opens the d-file against the queen: White loses the e4-pawn.",
+  "es": "...dxc6 ataca el alfil de b5 y abre la columna d contra la dama: las blancas pierden el peón de e4."
+ },
+ "g6 d4 cxd4 Nxd4 Bg7 Bxc6 dxc6 Be3": {
+  "en": "...c5 kicks the knight: it is attacked three times (pawn, bishop and queen) and defended only twice.",
+  "es": "...c5 echa al caballo: está atacado tres veces (peón, alfil y dama) y defendido solo dos."
+ },
+ "g6 d4 cxd4 Nxd4 Bg7 Bxc6 dxc6 Nc3": {
+  "en": "Nc3?? forgets the pin on the long diagonal: ...Qxd4 wins the knight.",
+  "es": "¿¿Cc3?? olvida la clavada en la gran diagonal: ...Dxd4 gana el caballo."
+ },
+ "": {
+  "en": "The Rossolimo: White threatens Bxc6 and doubled pawns. ...g6 and ...Bg7 is the main answer.",
+  "es": "La Rossolimo: las blancas amenazan Axc6 y peones doblados. ...g6 y ...Ag7 es la respuesta principal."
+ }
+}

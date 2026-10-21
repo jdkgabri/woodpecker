@@ -1,0 +1,38 @@
+{
+ "": {
+  "en": "The Kan: ...e6 and ...a6, keeping the knights at home and controlling b5. ...Qc7, ...Nf6 and ...b5 follow.",
+  "es": "La Kan: ...e6 y ...a6, dejando los caballos en casa y controlando b5. Siguen ...Dc7, ...Cf6 y ...b5."
+ },
+ "Nc3 Qc7": {
+  "en": "...Qc7 controls e5 and keeps the knights flexible. Next come ...Nf6 and, often, ...Bb4 pinning the c3-knight.",
+  "es": "...Dc7 controla e5 y mantiene flexibles los caballos. Siguen ...Cf6 y, a menudo, ...Ab4 clavando el caballo de c3."
+ },
+ "Nc3 Qc7 Be3 Nf6 f3 Bb4 Qd2 d5": {
+  "en": "With the pin on c3, ...d5 strikes at e4 at the right moment: Black opens the centre while White's king is still there.",
+  "es": "Con la clavada en c3, ...d5 golpea e4 en el momento justo: las negras abren el centro con el rey blanco todavía allí."
+ },
+ "Nc3 Qc7 Be3 Nf6 f3 Bb4 Qd2 d5 Bd3": {
+  "en": "...e5! kicks the d4-knight with tempo; after Nf5 the bishop takes it (...Bxf5).",
+  "es": "¡...e5! echa al caballo de d4 ganando tiempo; tras Cf5 el alfil lo captura (...Axf5)."
+ },
+ "Nc3 Qc7 Be3 Nf6 Be2 Bb4 Qd3": {
+  "en": "The c3-knight is pinned, so e4 is weak: ...Nxe4!, and if Qxe4 then ...Bxc3+ bxc3 Qxc3+ forks king, rook and bishop.",
+  "es": "El caballo de c3 está clavado, así que e4 es débil: ¡...Cxe4!, y si Dxe4 entonces ...Axc3+ bxc3 Dxc3+ ataca rey, torre y alfil."
+ },
+ "Nc3 Qc7 Be3 Nf6 Qd2 Bb4": {
+  "en": "Watch the pin: the c3-knight is tied to the queen on d2, so ...Nxe4 is a threat.",
+  "es": "Atento a la clavada: el caballo de c3 está atado a la dama de d2, así que ...Cxe4 es una amenaza."
+ },
+ "Nc3 Qc7 g3 Nf6 Bf4": {
+  "en": "Bf4?? walks into a fork: ...e5 attacks the bishop and the d4-knight.",
+  "es": "¿¿Af4?? cae en una horquilla: ...e5 ataca el alfil y el caballo de d4."
+ },
+ "Nc3 Qc7 Bd3 Nf6 O-O b5": {
+  "en": "The queenside expansion: ...b5 and ...Bb7 aim at e4; ...Bc5 or ...Nc6 follow.",
+  "es": "La expansión en el flanco de dama: ...b5 y ...Ab7 apuntan a e4; siguen ...Ac5 o ...Cc6."
+ },
+ "c4": {
+  "en": "The Maróczy setup (c4): Black does not fight it head-on; ...Qc7, ...Nf6 and ...Bb4 or ...Bc5 put pressure on c4 and e4.",
+  "es": "El esquema Maróczy (c4): las negras no lo atacan de frente; ...Dc7, ...Cf6 y ...Ab4 o ...Ac5 presionan c4 y e4."
+ }
+}

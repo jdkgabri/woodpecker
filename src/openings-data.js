@@ -490,6 +490,20 @@ export const OPENINGS = [
         tree: { file: 'old-sicilian' },
       },
       {
+        id: 'kan',
+        name: { en: 'Kan (Paulsen)', es: 'Kan (Paulsen)' },
+        moves: 'e4 c5 Nf3 e6 d4 cxd4 Nxd4 a6',
+        treeOnly: true,
+        tree: { file: 'kan' },
+      },
+      {
+        id: 'vs-rossolimo',
+        name: { en: 'Against the Rossolimo (3.Bb5)', es: 'Contra la Rossolimo (3.Ab5)' },
+        moves: 'e4 c5 Nf3 Nc6 Bb5',
+        treeOnly: true,
+        tree: { file: 'vs-rossolimo' },
+      },
+      {
         id: 'najdorf-english',
         tree: { file: 'najdorf-english' },
         name: { en: 'Najdorf: English Attack (6.Be3 e5)', es: 'Najdorf: Ataque Inglés (6.Ae3 e5)' },
