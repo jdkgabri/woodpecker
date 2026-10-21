@@ -5438,5 +5438,327 @@ export default {
     "es": "...e6: las negras tienen un peón de más sano; si Dxb7, ...Cd7 y ...Tb8 con buen juego."
    }
   }
+ },
+ "scandinavian": {
+  "moves": "e4 d5 exd5 Qxd5 Nc3 Qa5 Nf3 Nf6 d4 c6 Bd2 Bf5",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "The Scandinavian: Black attacks e4 at once.",
+    "es": "La Escandinava: las negras atacan e4 de inmediato."
+   },
+   "3": {
+    "en": "White takes.",
+    "es": "Las blancas toman."
+   },
+   "4": {
+    "en": "The queen recaptures.",
+    "es": "La dama recaptura."
+   },
+   "5": {
+    "en": "Nc3 gains time on the queen.",
+    "es": "Cc3 gana tiempo sobre la dama."
+   },
+   "6": {
+    "en": "...Qa5: the queen is safe here, and once the d2-pawn moves it pins the c3-knight.",
+    "es": "...Da5: la dama está segura aquí, y cuando el peón de d2 se mueva clavará el caballo de c3."
+   },
+   "8": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "10": {
+    "en": "...c6 gives the queen a retreat and controls d5 and b5.",
+    "es": "...c6 da a la dama una retirada y controla d5 y b5."
+   },
+   "11": {
+    "en": "Bd2 unpins and prepares Nd5 or Bc4 tricks.",
+    "es": "Ad2 deshace la clavada y prepara trucos con Cd5 o Ac4."
+   },
+   "12": {
+    "en": "...Bf5: the bishop comes out before ...e6, the typical Scandinavian setup. White has more space; Black is solid.",
+    "es": "...Af5: el alfil sale antes de ...e6, el esquema típico de la Escandinava. Las blancas tienen más espacio; las negras están sólidas."
+   }
+  }
+ },
+ "alekhine": {
+  "moves": "e4 Nf6 e5 Nd5 d4 d6 c4 Nb6 exd6 cxd6 Nc3 g6 Nf3 Bg4",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "The Alekhine: ...Nf6 provokes e5.",
+    "es": "La Alekhine: ...Cf6 provoca e5."
+   },
+   "3": {
+    "en": "e5 kicks the knight.",
+    "es": "e5 echa al caballo."
+   },
+   "4": {
+    "en": "The knight jumps to d5.",
+    "es": "El caballo salta a d5."
+   },
+   "5": {
+    "en": "d4 builds the centre.",
+    "es": "d4 construye el centro."
+   },
+   "6": {
+    "en": "...d6 attacks e5.",
+    "es": "...d6 ataca e5."
+   },
+   "7": {
+    "en": "c4 kicks the knight again.",
+    "es": "c4 vuelve a echar al caballo."
+   },
+   "8": {
+    "en": "The knight goes to b6, eyeing c4.",
+    "es": "El caballo va a b6, apuntando a c4."
+   },
+   "9": {
+    "en": "The Exchange Variation.",
+    "es": "La Variante del Cambio."
+   },
+   "10": {
+    "en": "...cxd6: a solid structure; Black will pressure d4 and c4.",
+    "es": "...cxd6: una estructura sólida; las negras presionarán d4 y c4."
+   },
+   "12": {
+    "en": "...g6 and ...Bg7 put pressure on d4.",
+    "es": "...g6 y ...Ag7 presionan d4."
+   },
+   "14": {
+    "en": "...Bg4 pins the knight that defends d4. Black has active counterplay against the centre.",
+    "es": "...Ag4 clava el caballo que defiende d4. Las negras tienen contrajuego activo contra el centro."
+   }
+  }
+ },
+ "petrov": {
+  "moves": "e4 e5 Nf3 Nf6 Nxe5 d6 Nf3 Nxe4 Qe2 Qe7 d3 Nf6 Qxe7+ Bxe7 Be2 d5",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5.",
+    "es": "1...e5."
+   },
+   "3": {
+    "en": "The knight attacks e5.",
+    "es": "El caballo ataca e5."
+   },
+   "4": {
+    "en": "The Petrov: counterattack e4 instead of defending e5.",
+    "es": "La Petrov: contraataca e4 en lugar de defender e5."
+   },
+   "5": {
+    "en": "White takes.",
+    "es": "Las blancas toman."
+   },
+   "6": {
+    "en": "...d6 first! Taking on e4 at once (...Nxe4?) runs into Qe2.",
+    "es": "¡Primero ...d6! Tomar en e4 de inmediato (¿...Cxe4?) choca con De2."
+   },
+   "7": {
+    "en": "The knight retreats.",
+    "es": "El caballo se retira."
+   },
+   "8": {
+    "en": "Now take the pawn.",
+    "es": "Ahora toma el peón."
+   },
+   "9": {
+    "en": "Qe2 pins the knight on the e-file.",
+    "es": "De2 clava el caballo en la columna e."
+   },
+   "10": {
+    "en": "...Qe7 blocks.",
+    "es": "...De7 tapa."
+   },
+   "11": {
+    "en": "d3 kicks the knight.",
+    "es": "d3 echa al caballo."
+   },
+   "12": {
+    "en": "The knight retreats.",
+    "es": "El caballo se retira."
+   },
+   "14": {
+    "en": "The queens are off: an equal, quiet endgame-like position.",
+    "es": "Salen las damas: una posición igualada y tranquila, casi de final."
+   },
+   "16": {
+    "en": "...d5 takes the centre. Equal.",
+    "es": "...d5 toma el centro. Igualdad."
+   }
+  }
+ },
+ "queens-indian": {
+  "moves": "d4 Nf6 c4 e6 Nf3 b6 Nc3 Bb7 Bg5 Be7 e3 O-O Bd3 d5 O-O Nbd7 Rc1 c5 cxd5 Nxd5",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...Nf6 controls e4.",
+    "es": "...Cf6 controla e4."
+   },
+   "3": {
+    "en": "c4 gains space.",
+    "es": "c4 gana espacio."
+   },
+   "4": {
+    "en": "...e6 prepares ...b6 or ...d5.",
+    "es": "...e6 prepara ...b6 o ...d5."
+   },
+   "5": {
+    "en": "Nf3 avoids the Nimzo-Indian.",
+    "es": "Cf3 evita la Nimzoindia."
+   },
+   "6": {
+    "en": "The Queen's Indian: ...b6 and ...Bb7 control e4.",
+    "es": "La India de Dama: ...b6 y ...Ab7 controlan e4."
+   },
+   "8": {
+    "en": "The bishop on the long diagonal.",
+    "es": "El alfil en la gran diagonal."
+   },
+   "9": {
+    "en": "Bg5 pins the knight.",
+    "es": "Ag5 clava el caballo."
+   },
+   "10": {
+    "en": "...Be7 unpins.",
+    "es": "...Ae7 deshace la clavada."
+   },
+   "12": {
+    "en": "Castle.",
+    "es": "Enroque."
+   },
+   "14": {
+    "en": "...d5 takes the centre.",
+    "es": "...d5 toma el centro."
+   },
+   "16": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "18": {
+    "en": "...c5 hits d4.",
+    "es": "...c5 golpea d4."
+   },
+   "20": {
+    "en": "...Nxd5: equal, with free piece play for Black.",
+    "es": "...Cxd5: igualdad, con juego libre de piezas para las negras."
+   }
+  }
+ },
+ "dutch": {
+  "moves": "d4 f5 c4 Nf6 Nc3 e6 Bg5 d6 e3 Be7",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "The Dutch: ...f5 controls e4 and prepares kingside play.",
+    "es": "La Holandesa: ...f5 controla e4 y prepara juego en el flanco de rey."
+   },
+   "3": {
+    "en": "c4 gains space.",
+    "es": "c4 gana espacio."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "6": {
+    "en": "...e6 opens the f8-bishop.",
+    "es": "...e6 abre el alfil de f8."
+   },
+   "7": {
+    "en": "Bg5 pins the knight.",
+    "es": "Ag5 clava el caballo."
+   },
+   "8": {
+    "en": "...d6 prepares ...e5 (the Classical Dutch).",
+    "es": "...d6 prepara ...e5 (la Holandesa Clásica)."
+   },
+   "10": {
+    "en": "...Be7 unpins; ...O-O, ...Qe8–h5 and ...e5 follow: Black attacks on the kingside.",
+    "es": "...Ae7 deshace la clavada; siguen ...O-O, ...De8–h5 y ...e5: las negras atacan en el flanco de rey."
+   }
+  }
+ },
+ "benko": {
+  "moves": "d4 Nf6 c4 c5 d5 b5 cxb5 a6 bxa6 g6 Nc3 Bxa6 e4 d6 Bxa6 Nxa6 Nf3 Bg7 O-O O-O Re1 Nb4",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...Nf6 controls e4.",
+    "es": "...Cf6 controla e4."
+   },
+   "3": {
+    "en": "c4 gains space.",
+    "es": "c4 gana espacio."
+   },
+   "4": {
+    "en": "...c5 challenges d4.",
+    "es": "...c5 desafía d4."
+   },
+   "5": {
+    "en": "d5 gains space.",
+    "es": "d5 gana espacio."
+   },
+   "6": {
+    "en": "The Benko Gambit: ...b5 offers a pawn.",
+    "es": "El Gambito Benko: ...b5 ofrece un peón."
+   },
+   "7": {
+    "en": "White takes.",
+    "es": "Las blancas toman."
+   },
+   "8": {
+    "en": "...a6 offers another pawn to open the a-file.",
+    "es": "...a6 ofrece otro peón para abrir la columna a."
+   },
+   "10": {
+    "en": "...g6 first: the bishop will go to g7.",
+    "es": "Primero ...g6: el alfil irá a g7."
+   },
+   "12": {
+    "en": "The bishop recaptures on a6.",
+    "es": "El alfil recaptura en a6."
+   },
+   "14": {
+    "en": "...d6 completes the structure.",
+    "es": "...d6 completa la estructura."
+   },
+   "16": {
+    "en": "The knight recaptures, heading for b4 or c7.",
+    "es": "El caballo recaptura, camino de b4 o c7."
+   },
+   "18": {
+    "en": "The fianchetto: the g7-bishop presses the queenside.",
+    "es": "El fianchetto: el alfil de g7 presiona el flanco de dama."
+   },
+   "20": {
+    "en": "Castle.",
+    "es": "Enroque."
+   },
+   "22": {
+    "en": "...Nb4 and ...Qa5, ...Rfb8: pressure on the a- and b-files makes up for the pawn.",
+    "es": "...Cb4 y ...Da5, ...Tfb8: la presión en las columnas a y b compensa el peón."
+   }
+  }
  }
 };
