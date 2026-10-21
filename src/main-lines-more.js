@@ -1516,8 +1516,8 @@ export default {
     "es": "Cf3 protege d4."
    },
    "10": {
-    "en": "...Qb6 adds a third attacker on d4 and hits b2.",
-    "es": "...Db6 suma un tercer atacante sobre d4 y ataca b2."
+    "en": "...Qb6 hits b2 and adds pressure on d4 behind the c5-pawn: once Black plays ...cxd4, the queen attacks d4 directly.",
+    "es": "...Db6 ataca b2 y presiona d4 detrás del peón de c5: cuando las negras jueguen ...cxd4, la dama atacará d4 directamente."
    },
    "11": {
     "en": "Be2 prepares castling and keeps everything protected.",
