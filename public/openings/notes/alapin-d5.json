@@ -1,0 +1,30 @@
+{
+ "exd5 Qxd5": {
+  "en": "d4 at once: the queen on d5 is a target, and Nf3, Be2, O-O and Nc3 follow with tempo.",
+  "es": "d4 de inmediato: la dama de d5 es un objetivo, y siguen Cf3, Ae2, O-O y Cc3 ganando tiempo."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Nc6 cxd4 Bg4 Be2 Bxf3 Bxf3 Qxd4": {
+  "en": "Bxc6+! bxc6 Qxd4: the c6-knight was the queen's only defender.",
+  "es": "¡Axc6+! bxc6 Dxd4: el caballo de c6 era el único defensor de la dama."
+ },
+ "exd5 Qxd5 d4 Nc6 Nf3 cxd4 cxd4 Bg4 Be2 Bxf3 Bxf3 Qe6+ Be3 O-O-O": {
+  "en": "d5! kicks the queen and the c6-knight, and Qb3–a4 follows against the black king.",
+  "es": "¡d5! echa a la dama y al caballo de c6, y sigue Db3–a4 contra el rey negro."
+ },
+ "exd5 Nf6 d4 Nxd5 Nf3 cxd4 cxd4 Nc6 Nc3 Nxc3 bxc3 Bg4": {
+  "en": "d5! kicks the knight: the pin on f3 does not stop White's centre.",
+  "es": "¡d5! echa al caballo: la clavada en f3 no frena el centro blanco."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Nc6 cxd4 Nf6 Nc3 Qd8 d5 Nb4": {
+  "en": "Qa4+ and Qxb4: the knight falls.",
+  "es": "Da4+ y Dxb4: el caballo cae."
+ },
+ "exd5 Qxd5 d4 Nc6 Nf3 cxd4 cxd4 Nf6 Nc3 Qa5 d5 Nb4": {
+  "en": "a3! and the b4-knight has no safe square.",
+  "es": "¡a3! y el caballo de b4 no tiene ninguna casilla segura."
+ },
+ "": {
+  "en": "Against 2...d5: exd5 Qxd5 and d4, gaining time on the queen.",
+  "es": "Contra 2...d5: exd5 Dxd5 y d4, ganando tiempo sobre la dama."
+ }
+}

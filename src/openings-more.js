@@ -228,7 +228,9 @@ export const MORE_OPENINGS = [
         es: ['Golpear de inmediato con ...d5 o ...Cf6.', 'Bloquear el peón aislado en d5.', 'Socavar e5 con ...d6.'],
       },
     },
-    lines: [tree('alapin', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 c5')],
+    lines: [tree('alapin', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 c5'),
+      tree('alapin-d5', { en: 'Against 2...d5', es: 'Contra 2...d5' }, 'e4 c5 c3 d5'),
+    ],
   },
   // ---- caro advance
   {
@@ -516,6 +518,8 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('pirc', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 d6 d4 Nf6 Nc3 g6'),
       tree('pirc-austrian', { en: 'Against the Austrian Attack (f4)', es: 'Contra el Ataque Austriaco (f4)' }, 'e4 d6 d4 Nf6 Nc3 g6 f4'),
+    
+      tree('pirc-150', { en: 'Against the 150 Attack (Be3)', es: 'Contra el Ataque 150 (Ae3)' }, 'e4 d6 d4 Nf6 Nc3 g6 Be3'),
     ],
   },
   // ---- alekhine
@@ -1108,6 +1112,8 @@ export const MORE_OPENINGS = [
       tree('eb-scotch', { en: 'Against the Scotch (3.d4)', es: 'Contra la Escocesa (3.d4)' }, 'e4 e5 Nf3 Nc6 d4'),
       tree('eb-vienna', { en: 'Against the Vienna (2.Nc3)', es: 'Contra la Viena (2.Cc3)' }, 'e4 e5 Nc3'),
       tree('eb-kings-gambit', { en: 'Against the King\'s Gambit (2.f4)', es: 'Contra el Gambito de Rey (2.f4)' }, 'e4 e5 f4'),
+    
+      tree('eb-ponziani', { en: 'Against the Ponziani (3.c3)', es: 'Contra la Ponziani (3.c3)' }, 'e4 e5 Nf3 Nc6 c3'),
     ],
   },
   // ---- Against the London

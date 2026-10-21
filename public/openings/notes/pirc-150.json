@@ -1,0 +1,26 @@
+{
+ "c6": {
+  "en": "Against the 150 Attack (Be3, Qd2, Bh6), ...c6 and ...b5 start queenside play at once; Black often delays castling.",
+  "es": "Contra el Ataque 150 (Ae3, Dd2, Ah6), ...c6 y ...b5 empiezan el juego en el flanco de dama de inmediato; las negras a menudo retrasan el enroque."
+ },
+ "c6 Qd2 Bg7 Nf3 b5 Bh6 O-O Bxg7 Kxg7 O-O-O b4 Ne2": {
+  "en": "The knight left e4 undefended: ...Nxe4.",
+  "es": "El caballo ha dejado e4 sin defensa: ...Cxe4."
+ },
+ "c6 Qd2 Bg7 O-O-O b5 Bh6 Bxh6 Qxh6 b4 Nce2": {
+  "en": "The knight left e4 undefended: ...Nxe4.",
+  "es": "El caballo ha dejado e4 sin defensa: ...Cxe4."
+ },
+ "c6 Qd2 Bg7 Nf3 b5 O-O-O": {
+  "en": "With White castled long, ...b4! kicks the c3-knight and the attack starts.",
+  "es": "Con las blancas enrocadas largo, ¡...b4! echa al caballo de c3 y empieza el ataque."
+ },
+ "c6 f3 Bg7 Qd2 b5 a3 Nbd7 O-O-O": {
+  "en": "...a5! and ...b4 open lines against the castled king.",
+  "es": "¡...a5! y ...b4 abren líneas contra el rey enrocado."
+ },
+ "": {
+  "en": "Against Be3 and Qd2: ...c6 and ...b5.",
+  "es": "Contra Ae3 y Dd2: ...c6 y ...b5."
+ }
+}

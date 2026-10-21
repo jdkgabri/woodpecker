@@ -1,0 +1,30 @@
+{
+ "Nf6": {
+  "en": "...Nf6 hits e4: after c3 the knight cannot go to c3 to defend it. Against d4, ...Nxe4 is the main answer.",
+  "es": "...Cf6 ataca e4: tras c3 el caballo no puede ir a c3 a defenderlo. Contra d4, ...Cxe4 es la respuesta principal."
+ },
+ "Nf6 Bd3 d5 exd5": {
+  "en": "...Qxd5: the bishop on d3 blocks White's d-pawn, and Black has a comfortable lead in development.",
+  "es": "...Dxd5: el alfil de d3 tapa el peón d blanco, y las negras van cómodamente por delante en desarrollo."
+ },
+ "Nf6 Bd3 d5 exd5 Qxd5 O-O": {
+  "en": "The bishop on d3 is unprotected: ...Qxd3.",
+  "es": "El alfil de d3 está sin defender: ...Dxd3."
+ },
+ "Nf6 d4 Nxe4 dxe5 Bc5 Nd4": {
+  "en": "...Qh4! and f2 is attacked by the queen and the e4-knight.",
+  "es": "¡...Dh4! y f2 queda atacado por la dama y el caballo de e4."
+ },
+ "Nf6 Qc2 d5 exd5 Qxd5 c4": {
+  "en": "...Nb4! hits the queen on c2 (and the d3-square).",
+  "es": "¡...Cb4! ataca la dama de c2 (y la casilla d3)."
+ },
+ "Nf6 d4 Nxe4 d5 Bc5 Be3": {
+  "en": "...Bxe3 fxe3 Ne7: White's pawns are doubled, and even after Nxe5 O-O Black is better thanks to the active e4-knight and the weak e3-pawn.",
+  "es": "...Axe3 fxe3 Ce7: los peones blancos quedan doblados, y aunque sigan Cxe5 O-O las negras están mejor gracias al caballo activo de e4 y al débil peón de e3."
+ },
+ "": {
+  "en": "The Ponziani: c3 prepares d4 but takes c3 from the knight. ...Nf6 or ...d5 strike before White's centre is ready.",
+  "es": "La Ponziani: c3 prepara d4 pero le quita c3 al caballo. ...Cf6 o ...d5 golpean antes de que el centro blanco esté listo."
+ }
+}
