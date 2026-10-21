@@ -4578,5 +4578,290 @@ export default {
     "es": "...dxe3: las negras abren líneas; tras fxe3 Axd2+ la partida está equilibrada y viva."
    }
   }
+ },
+ "eb-italian": {
+  "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Nc3 Nxe4 O-O Bxc3 bxc3 d5",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5: Black takes his share of the centre and frees the f8-bishop and the queen.",
+    "es": "1...e5: las negras toman su parte del centro y liberan el alfil de f8 y la dama."
+   },
+   "3": {
+    "en": "The knight attacks e5.",
+    "es": "El caballo ataca e5."
+   },
+   "4": {
+    "en": "...Nc6 defends e5 and develops.",
+    "es": "...Cc6 defiende e5 y desarrolla."
+   },
+   "5": {
+    "en": "The Italian: the bishop aims at f7.",
+    "es": "La Italiana: el alfil apunta a f7."
+   },
+   "6": {
+    "en": "The Giuoco Piano: ...Bc5 mirrors White and eyes f2.",
+    "es": "El Giuoco Piano: ...Ac5 copia a las blancas y apunta a f2."
+   },
+   "7": {
+    "en": "c3 prepares d4.",
+    "es": "c3 prepara d4."
+   },
+   "8": {
+    "en": "...Nf6 hits e4 before White can play d4 comfortably.",
+    "es": "...Cf6 ataca e4 antes de que las blancas jueguen d4 con comodidad."
+   },
+   "9": {
+    "en": "White strikes in the centre.",
+    "es": "Las blancas golpean en el centro."
+   },
+   "10": {
+    "en": "Take: the centre opens.",
+    "es": "Toma: el centro se abre."
+   },
+   "12": {
+    "en": "...Bb4+ develops with check.",
+    "es": "...Ab4+ desarrolla con jaque."
+   },
+   "13": {
+    "en": "Nc3 blocks and offers the e4-pawn (the Møller Attack ideas).",
+    "es": "Cc3 tapa y ofrece el peón de e4 (las ideas del Ataque Møller)."
+   },
+   "14": {
+    "en": "Take the pawn.",
+    "es": "Toma el peón."
+   },
+   "15": {
+    "en": "White castles and hopes for an attack.",
+    "es": "Las blancas enrocan y esperan atacar."
+   },
+   "16": {
+    "en": "...Bxc3 removes an attacker...",
+    "es": "...Axc3 elimina un atacante..."
+   },
+   "18": {
+    "en": "...and ...d5 hits the c4-bishop and holds the e4-knight: Black is a pawn up and fine.",
+    "es": "...y ...d5 ataca el alfil de c4 y sostiene el caballo de e4: las negras tienen un peón de más y están bien."
+   }
+  }
+ },
+ "eb-ruy": {
+  "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O h3 Bb7",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5: Black takes his share of the centre and frees the f8-bishop and the queen.",
+    "es": "1...e5: las negras toman su parte del centro y liberan el alfil de f8 y la dama."
+   },
+   "3": {
+    "en": "The knight attacks e5.",
+    "es": "El caballo ataca e5."
+   },
+   "4": {
+    "en": "...Nc6 defends e5 and develops.",
+    "es": "...Cc6 defiende e5 y desarrolla."
+   },
+   "5": {
+    "en": "The Ruy Lopez: the bishop attacks the defender of e5.",
+    "es": "La Española: el alfil ataca al defensor de e5."
+   },
+   "6": {
+    "en": "The Morphy Defence: ask the bishop at once.",
+    "es": "La Defensa Morphy: pregunta al alfil de inmediato."
+   },
+   "8": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "10": {
+    "en": "The closed main line: ...Be7 and castling.",
+    "es": "La línea principal cerrada: ...Ae7 y enroque."
+   },
+   "11": {
+    "en": "Re1 makes Bxc6 and Nxe5 a real threat.",
+    "es": "Te1 convierte Axc6 y Cxe5 en una amenaza real."
+   },
+   "12": {
+    "en": "...b5 removes the threat.",
+    "es": "...b5 elimina la amenaza."
+   },
+   "14": {
+    "en": "...d6 defends e5 solidly.",
+    "es": "...d6 defiende e5 con solidez."
+   },
+   "16": {
+    "en": "Castle.",
+    "es": "Enroque."
+   },
+   "17": {
+    "en": "h3 stops ...Bg4.",
+    "es": "h3 impide ...Ag4."
+   },
+   "18": {
+    "en": "The Zaitsev: ...Bb7, ...Re8 and ...Bf8 put pressure on e4. A solid, active setup.",
+    "es": "La Zaitsev: ...Ab7, ...Te8 y ...Af8 presionan e4. Un esquema sólido y activo."
+   }
+  }
+ },
+ "eb-scotch": {
+  "moves": "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6 b3 g6",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5: Black takes his share of the centre and frees the f8-bishop and the queen.",
+    "es": "1...e5: las negras toman su parte del centro y liberan el alfil de f8 y la dama."
+   },
+   "3": {
+    "en": "The knight attacks e5.",
+    "es": "El caballo ataca e5."
+   },
+   "4": {
+    "en": "...Nc6 defends e5 and develops.",
+    "es": "...Cc6 defiende e5 y desarrolla."
+   },
+   "5": {
+    "en": "The Scotch: White opens the centre.",
+    "es": "La Escocesa: las blancas abren el centro."
+   },
+   "6": {
+    "en": "Take.",
+    "es": "Toma."
+   },
+   "8": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "9": {
+    "en": "White trades on c6.",
+    "es": "Las blancas cambian en c6."
+   },
+   "10": {
+    "en": "Take towards the centre.",
+    "es": "Captura hacia el centro."
+   },
+   "11": {
+    "en": "The Mieses: e5 kicks the knight.",
+    "es": "La Mieses: e5 echa al caballo."
+   },
+   "12": {
+    "en": "...Qe7! pins the e5-pawn against the king.",
+    "es": "¡...De7! clava el peón de e5 contra el rey."
+   },
+   "13": {
+    "en": "Qe2 breaks the pin.",
+    "es": "De2 rompe la clavada."
+   },
+   "14": {
+    "en": "The knight goes to d5.",
+    "es": "El caballo va a d5."
+   },
+   "15": {
+    "en": "c4 kicks it again...",
+    "es": "c4 vuelve a echarlo..."
+   },
+   "16": {
+    "en": "...but ...Ba6 pins the c4-pawn against the queen.",
+    "es": "...pero ...Aa6 clava el peón de c4 contra la dama."
+   },
+   "18": {
+    "en": "...g6 and ...Bg7 put pressure on e5. A sharp, balanced line.",
+    "es": "...g6 y ...Ag7 presionan e5. Una línea aguda y equilibrada."
+   }
+  }
+ },
+ "eb-vienna": {
+  "moves": "e4 e5 Nc3 Nf6 Nf3 Bb4 d3 d5 exd5 Nxd5 Bd2 Nc6 Nxd5 Qxd5",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5: Black takes his share of the centre and frees the f8-bishop and the queen.",
+    "es": "1...e5: las negras toman su parte del centro y liberan el alfil de f8 y la dama."
+   },
+   "3": {
+    "en": "The Vienna: Nc3 prepares f4.",
+    "es": "La Vienesa: Cc3 prepara f4."
+   },
+   "4": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "5": {
+    "en": "Nf3 turns it into a quiet game (Four Knights-style).",
+    "es": "Cf3 lo convierte en una partida tranquila (al estilo de los Cuatro Caballos)."
+   },
+   "6": {
+    "en": "...Bb4 pins the knight that defends e4.",
+    "es": "...Ab4 clava el caballo que defiende e4."
+   },
+   "8": {
+    "en": "...d5 opens the centre at once.",
+    "es": "...d5 abre el centro de inmediato."
+   },
+   "10": {
+    "en": "The knight recaptures.",
+    "es": "El caballo recaptura."
+   },
+   "12": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "14": {
+    "en": "The queen recaptures in the centre: Black is active and comfortable.",
+    "es": "La dama recaptura en el centro: las negras están activas y cómodas."
+   }
+  }
+ },
+ "eb-kings-gambit": {
+  "moves": "e4 e5 f4 exf4 Nf3 Nf6 e5 Nh5 d4 d5",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5: Black takes his share of the centre and frees the f8-bishop and the queen.",
+    "es": "1...e5: las negras toman su parte del centro y liberan el alfil de f8 y la dama."
+   },
+   "3": {
+    "en": "The King's Gambit.",
+    "es": "El Gambito de Rey."
+   },
+   "4": {
+    "en": "Accept: Black is a pawn up.",
+    "es": "Acepta: las negras tienen un peón de más."
+   },
+   "5": {
+    "en": "Nf3 stops ...Qh4+.",
+    "es": "Cf3 impide ...Dh4+."
+   },
+   "6": {
+    "en": "The Schallopp: ...Nf6 attacks e4.",
+    "es": "La Schallopp: ...Cf6 ataca e4."
+   },
+   "7": {
+    "en": "e5 kicks the knight.",
+    "es": "e5 echa al caballo."
+   },
+   "8": {
+    "en": "...Nh5 protects the f4-pawn.",
+    "es": "...Ch5 protege el peón de f4."
+   },
+   "10": {
+    "en": "...d5 takes the centre: Black keeps the extra pawn with a solid position.",
+    "es": "...d5 toma el centro: las negras conservan el peón de más con una posición sólida."
+   }
+  }
  }
 };
