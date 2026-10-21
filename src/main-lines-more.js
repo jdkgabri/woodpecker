@@ -4321,5 +4321,262 @@ export default {
     "es": "...Da5 ataca c3 y a3: las negras atacan los peones débiles."
    }
   }
+ },
+ "qgd-black": {
+  "moves": "d4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 h6 Bh4 b6",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5: Black takes his share of the centre.",
+    "es": "...d5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The Queen's Gambit: c4 attacks d5 from the side.",
+    "es": "El Gambito de Dama: c4 ataca d5 desde el lado."
+   },
+   "4": {
+    "en": "The Declined: ...e6 holds d5 solidly. The c8-bishop is shut in for now.",
+    "es": "El Rehusado: ...e6 sostiene d5 con solidez. El alfil de c8 queda encerrado de momento."
+   },
+   "5": {
+    "en": "More pressure on d5.",
+    "es": "Más presión sobre d5."
+   },
+   "6": {
+    "en": "Development, defending d5.",
+    "es": "Desarrollo, defendiendo d5."
+   },
+   "7": {
+    "en": "Bg5 pins the knight that defends d5.",
+    "es": "Ag5 clava el caballo que defiende d5."
+   },
+   "8": {
+    "en": "...Be7 unpins.",
+    "es": "...Ae7 deshace la clavada."
+   },
+   "10": {
+    "en": "Castle first.",
+    "es": "Primero el enroque."
+   },
+   "12": {
+    "en": "...h6 asks the bishop: useful later for the king.",
+    "es": "...h6 pregunta al alfil: útil más adelante para el rey."
+   },
+   "14": {
+    "en": "The Tartakower: ...b6 and ...Bb7 solve the problem of the c8-bishop. A rock-solid setup.",
+    "es": "La Tartakower: ...b6 y ...Ab7 resuelven el problema del alfil de c8. Un esquema sólido como una roca."
+   }
+  }
+ },
+ "slav-black": {
+  "moves": "d4 d5 c4 c6 Nc3 Nf6 Nf3 dxc4 a4 Bf5 e3 e6 Bxc4 a6",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5: Black takes his share of the centre.",
+    "es": "...d5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The Queen's Gambit: c4 attacks d5 from the side.",
+    "es": "El Gambito de Dama: c4 ataca d5 desde el lado."
+   },
+   "4": {
+    "en": "The Slav: ...c6 supports d5 without shutting in the c8-bishop.",
+    "es": "La Eslava: ...c6 apoya d5 sin encerrar el alfil de c8."
+   },
+   "6": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "8": {
+    "en": "...dxc4: now ...b5 could hold the pawn.",
+    "es": "...dxc4: ahora ...b5 podría sostener el peón."
+   },
+   "9": {
+    "en": "a4 stops ...b5.",
+    "es": "a4 impide ...b5."
+   },
+   "10": {
+    "en": "...Bf5: the bishop comes out before ...e6, the whole point of the Slav.",
+    "es": "...Af5: el alfil sale antes de ...e6, la gracia de la Eslava."
+   },
+   "12": {
+    "en": "...e6 opens the f8-bishop.",
+    "es": "...e6 abre el alfil de f8."
+   },
+   "13": {
+    "en": "White wins the pawn back.",
+    "es": "Las blancas recuperan el peón."
+   },
+   "14": {
+    "en": "...a6 prepares ...b5 or ...c5. White has a little more space; Black is very solid.",
+    "es": "...a6 prepara ...b5 o ...c5. Las blancas tienen algo más de espacio; las negras están muy sólidas."
+   }
+  }
+ },
+ "semi-slav": {
+  "moves": "d4 d5 c4 c6 Nf3 Nf6 Nc3 e6 Bg5 Nbd7 e3 dxc4 Bxc4 b5 Bd3 Bd6",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5: Black takes his share of the centre.",
+    "es": "...d5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The Queen's Gambit: c4 attacks d5 from the side.",
+    "es": "El Gambito de Dama: c4 ataca d5 desde el lado."
+   },
+   "4": {
+    "en": "...c6 supports d5.",
+    "es": "...c6 apoya d5."
+   },
+   "6": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "8": {
+    "en": "The Semi-Slav: ...e6 makes the c6–d5–e6 triangle.",
+    "es": "La Semieslava: ...e6 forma el triángulo c6–d5–e6."
+   },
+   "9": {
+    "en": "Bg5 pins the knight.",
+    "es": "Ag5 clava el caballo."
+   },
+   "10": {
+    "en": "...Nbd7 supports f6.",
+    "es": "...Cbd7 apoya f6."
+   },
+   "12": {
+    "en": "...dxc4, Meran-style.",
+    "es": "...dxc4, al estilo Merano."
+   },
+   "14": {
+    "en": "...b5 gains time on the bishop and space on the queenside.",
+    "es": "...b5 gana tiempo sobre el alfil y espacio en el flanco de dama."
+   },
+   "16": {
+    "en": "...Bd6 prepares castling and ...e5. Next ...Bb7 and ...c5 free the game; White keeps a small edge in the centre.",
+    "es": "...Ad6 prepara el enroque y ...e5. Después ...Ab7 y ...c5 liberan el juego; las blancas mantienen una pequeña ventaja en el centro."
+   }
+  }
+ },
+ "qga-black": {
+  "moves": "d4 d5 c4 dxc4 Nc3 Nf6 e4 e5 d5 b5 Nxb5 Nxe4",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5: Black takes his share of the centre.",
+    "es": "...d5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The Queen's Gambit: c4 attacks d5 from the side.",
+    "es": "El Gambito de Dama: c4 ataca d5 desde el lado."
+   },
+   "4": {
+    "en": "The Accepted: Black takes the pawn, without trying to keep it at all costs.",
+    "es": "El Aceptado: las negras toman el peón, sin intentar conservarlo a toda costa."
+   },
+   "5": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "6": {
+    "en": "...Nf6 watches e4.",
+    "es": "...Cf6 vigila e4."
+   },
+   "7": {
+    "en": "e4 builds the centre.",
+    "es": "e4 construye el centro."
+   },
+   "8": {
+    "en": "...e5! hits the centre at once.",
+    "es": "¡...e5! golpea el centro de inmediato."
+   },
+   "9": {
+    "en": "d5 gains space.",
+    "es": "d5 gana espacio."
+   },
+   "10": {
+    "en": "...b5 holds the c4-pawn...",
+    "es": "...b5 sostiene el peón de c4..."
+   },
+   "11": {
+    "en": "...and if Nxb5...",
+    "es": "...y si Cxb5..."
+   },
+   "12": {
+    "en": "...Nxe4: Black wins the e4-pawn and is better.",
+    "es": "...Cxe4: las negras ganan el peón de e4 y están mejor."
+   }
+  }
+ },
+ "albin": {
+  "moves": "d4 d5 c4 e5 dxe5 d4 Nf3 Nc6 e3 Bg4 Be2 Bb4+ Bd2 dxe3",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5: Black takes his share of the centre.",
+    "es": "...d5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The Queen's Gambit: c4 attacks d5 from the side.",
+    "es": "El Gambito de Dama: c4 ataca d5 desde el lado."
+   },
+   "4": {
+    "en": "The Albin Countergambit: Black gives a pawn for space and quick development.",
+    "es": "El Contragambito Albin: las negras dan un peón a cambio de espacio y un desarrollo rápido."
+   },
+   "5": {
+    "en": "White takes.",
+    "es": "Las blancas toman."
+   },
+   "6": {
+    "en": "...d4: the wedge cramps White.",
+    "es": "...d4: la cuña estorba a las blancas."
+   },
+   "7": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "8": {
+    "en": "...Nc6 attacks e5.",
+    "es": "...Cc6 ataca e5."
+   },
+   "9": {
+    "en": "e3 tries to undermine the d4-pawn.",
+    "es": "e3 intenta socavar el peón de d4."
+   },
+   "10": {
+    "en": "...Bg4 pins the f3-knight.",
+    "es": "...Ag4 clava el caballo de f3."
+   },
+   "12": {
+    "en": "...Bb4+ develops with check.",
+    "es": "...Ab4+ desarrolla con jaque."
+   },
+   "13": {
+    "en": "Bd2 blocks.",
+    "es": "Ad2 tapa."
+   },
+   "14": {
+    "en": "...dxe3: Black opens lines; after fxe3 Bxd2+ the game is balanced and lively.",
+    "es": "...dxe3: las negras abren líneas; tras fxe3 Axd2+ la partida está equilibrada y viva."
+   }
+  }
  }
 };
