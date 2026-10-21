@@ -2328,5 +2328,484 @@ export default {
     "es": "a3 pregunta al alfil de b4: las blancas obtienen la pareja de alfiles. Una ventaja pequeña pero clara."
    }
   }
+ },
+ "french": {
+  "moves": "e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Bd3 cxd4 cxd4 Bd7 O-O Nxd4",
+  "notes": {
+   "2": {
+    "en": "The French: Black prepares ...d5 with a solid pawn chain. The price: the c8-bishop is shut in for a while.",
+    "es": "La Francesa: las negras preparan ...d5 con una cadena de peones sólida. El precio: el alfil de c8 queda encerrado un tiempo."
+   },
+   "3": {
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
+   },
+   "4": {
+    "en": "...d5 challenges e4 at once.",
+    "es": "...d5 desafía e4 de inmediato."
+   },
+   "5": {
+    "en": "The Advance Variation: White gains space; Black will attack the chain at its base, d4.",
+    "es": "La Variante del Avance: las blancas ganan espacio; las negras atacarán la cadena por su base, d4."
+   },
+   "6": {
+    "en": "...c5! hits d4 at once: this is the key idea against the Advance.",
+    "es": "¡...c5! golpea d4 de inmediato: esta es la idea clave contra el Avance."
+   },
+   "7": {
+    "en": "c3 supports d4.",
+    "es": "c3 apoya d4."
+   },
+   "8": {
+    "en": "A second attacker on d4.",
+    "es": "Un segundo atacante sobre d4."
+   },
+   "9": {
+    "en": "Nf3 defends d4.",
+    "es": "Cf3 defiende d4."
+   },
+   "10": {
+    "en": "...Qb6 hits b2 and adds pressure on d4 behind the c5-pawn.",
+    "es": "...Db6 ataca b2 y presiona d4 detrás del peón de c5."
+   },
+   "11": {
+    "en": "Bd3 develops but leaves d4 short of defenders: it is the Milner-Barry Gambit idea.",
+    "es": "Ad3 desarrolla pero deja d4 con pocos defensores: es la idea del Gambito Milner-Barry."
+   },
+   "12": {
+    "en": "Black exchanges first...",
+    "es": "Las negras cambian primero..."
+   },
+   "14": {
+    "en": "...and ...Bd7 prepares ...Nxd4: the d4-pawn is attacked three times.",
+    "es": "...y ...Ad7 prepara ...Cxd4: el peón de d4 está atacado tres veces."
+   },
+   "15": {
+    "en": "White castles and gives up d4: the Milner-Barry Gambit.",
+    "es": "Las blancas enrocan y entregan d4: el Gambito Milner-Barry."
+   },
+   "16": {
+    "en": "Take the pawn: Black is a pawn up. White gets a lead in development (Nxd4 Qxd4 Nc3), but with careful play Black is fine.",
+    "es": "Toma el peón: las negras tienen un peón de más. Las blancas obtienen ventaja en desarrollo (Cxd4 Dxd4 Cc3), pero con un juego cuidadoso las negras están bien."
+   }
+  }
+ },
+ "french-advance-black": {
+  "moves": "e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Bd3 Bd7 O-O cxd4 cxd4 Nxd4 Nxd4 Qxd4 Nc3 a6 Qe2 Ne7",
+  "notes": {
+   "2": {
+    "en": "The French: Black prepares ...d5 with a solid pawn chain. The price: the c8-bishop is shut in for a while.",
+    "es": "La Francesa: las negras preparan ...d5 con una cadena de peones sólida. El precio: el alfil de c8 queda encerrado un tiempo."
+   },
+   "3": {
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
+   },
+   "4": {
+    "en": "...d5 challenges e4 at once.",
+    "es": "...d5 desafía e4 de inmediato."
+   },
+   "5": {
+    "en": "The Advance Variation: White gains space; Black will attack the chain at its base, d4.",
+    "es": "La Variante del Avance: las blancas ganan espacio; las negras atacarán la cadena por su base, d4."
+   },
+   "6": {
+    "en": "...c5! hits d4 at once: this is the key idea against the Advance.",
+    "es": "¡...c5! golpea d4 de inmediato: esta es la idea clave contra el Avance."
+   },
+   "7": {
+    "en": "c3 supports d4.",
+    "es": "c3 apoya d4."
+   },
+   "8": {
+    "en": "A second attacker on d4.",
+    "es": "Un segundo atacante sobre d4."
+   },
+   "9": {
+    "en": "Nf3 defends d4.",
+    "es": "Cf3 defiende d4."
+   },
+   "10": {
+    "en": "...Qb6 hits b2 and adds pressure on d4 behind the c5-pawn.",
+    "es": "...Db6 ataca b2 y presiona d4 detrás del peón de c5."
+   },
+   "11": {
+    "en": "Bd3 develops but leaves d4 short of defenders: it is the Milner-Barry Gambit idea.",
+    "es": "Ad3 desarrolla pero deja d4 con pocos defensores: es la idea del Gambito Milner-Barry."
+   },
+   "12": {
+    "en": "...Bd7 prepares ...cxd4 and ...Nxd4 without allowing Bb5+ tricks.",
+    "es": "...Ad7 prepara ...cxd4 y ...Cxd4 sin permitir trucos de Ab5+."
+   },
+   "13": {
+    "en": "White castles and offers the d4-pawn.",
+    "es": "Las blancas enrocan y ofrecen el peón de d4."
+   },
+   "16": {
+    "en": "Black takes the pawn...",
+    "es": "Las negras toman el peón..."
+   },
+   "18": {
+    "en": "...and the queen recaptures: Black is a pawn up.",
+    "es": "...y la dama recaptura: las negras tienen un peón de más."
+   },
+   "19": {
+    "en": "White develops with tempo threats (Nb5).",
+    "es": "Las blancas desarrollan con amenazas (Cb5)."
+   },
+   "20": {
+    "en": "...a6 takes b5 away from the knight.",
+    "es": "...a6 le quita b5 al caballo."
+   },
+   "21": {
+    "en": "Qe2: White hopes for an attack with the extra development.",
+    "es": "De2: las blancas confían en atacar con su ventaja en desarrollo."
+   },
+   "22": {
+    "en": "...Ne7 heads for c6 or f5. Black is a sound pawn up: the gambit does not give White enough.",
+    "es": "...Ce7 va hacia c6 o f5. Las negras tienen un peón de más sano: el gambito no da suficiente a las blancas."
+   }
+  }
+ },
+ "french-tarrasch": {
+  "moves": "e4 e6 d4 d5 Nd2 c5 c3 Nc6 Ngf3 Nf6 e5 Nd7 Bd3 cxd4 cxd4 Be7 O-O f6",
+  "notes": {
+   "2": {
+    "en": "The French: Black prepares ...d5 with a solid pawn chain. The price: the c8-bishop is shut in for a while.",
+    "es": "La Francesa: las negras preparan ...d5 con una cadena de peones sólida. El precio: el alfil de c8 queda encerrado un tiempo."
+   },
+   "3": {
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
+   },
+   "4": {
+    "en": "...d5 challenges e4 at once.",
+    "es": "...d5 desafía e4 de inmediato."
+   },
+   "5": {
+    "en": "The Tarrasch: the knight goes to d2 so that the c-pawn can support d4 and ...Bb4 does not pin.",
+    "es": "La Tarrasch: el caballo va a d2 para que el peón c pueda apoyar d4 y ...Ab4 no clave."
+   },
+   "6": {
+    "en": "...c5 strikes at d4 at once.",
+    "es": "...c5 golpea d4 de inmediato."
+   },
+   "7": {
+    "en": "c3 keeps d4 protected.",
+    "es": "c3 mantiene d4 protegido."
+   },
+   "8": {
+    "en": "Development, pressing d4.",
+    "es": "Desarrollo, presionando d4."
+   },
+   "9": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "10": {
+    "en": "...Nf6 provokes e5.",
+    "es": "...Cf6 provoca e5."
+   },
+   "11": {
+    "en": "e5 gains space and kicks the knight.",
+    "es": "e5 gana espacio y echa al caballo."
+   },
+   "12": {
+    "en": "The knight goes to d7, from where it hits e5 and c5.",
+    "es": "El caballo va a d7, desde donde ataca e5 y c5."
+   },
+   "13": {
+    "en": "The bishop aims at h7.",
+    "es": "El alfil apunta a h7."
+   },
+   "15": {
+    "en": "White recaptures: a classic French chain d4–e5.",
+    "es": "Las blancas recapturan: una cadena francesa clásica d4–e5."
+   },
+   "16": {
+    "en": "Development, preparing castling.",
+    "es": "Desarrollo, preparando el enroque."
+   },
+   "18": {
+    "en": "...f6! attacks the head of the chain: the second typical French break after ...c5.",
+    "es": "¡...f6! ataca la cabeza de la cadena: la segunda ruptura típica de la Francesa tras ...c5."
+   }
+  }
+ },
+ "french-winawer": {
+  "moves": "e4 e6 d4 d5 Nc3 Bb4 e5 c5 a3 Bxc3+ bxc3 Ne7 Qg4 Qc7 Qxg7 Rg8 Qxh7 cxd4 Ne2 Nbc6 f4 dxc3 Qd3 d4",
+  "notes": {
+   "2": {
+    "en": "The French: Black prepares ...d5 with a solid pawn chain. The price: the c8-bishop is shut in for a while.",
+    "es": "La Francesa: las negras preparan ...d5 con una cadena de peones sólida. El precio: el alfil de c8 queda encerrado un tiempo."
+   },
+   "3": {
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
+   },
+   "4": {
+    "en": "...d5 challenges e4 at once.",
+    "es": "...d5 desafía e4 de inmediato."
+   },
+   "5": {
+    "en": "Nc3 defends e4.",
+    "es": "Cc3 defiende e4."
+   },
+   "6": {
+    "en": "The Winawer: ...Bb4 pins the knight that defends e4.",
+    "es": "La Winawer: ...Ab4 clava el caballo que defiende e4."
+   },
+   "7": {
+    "en": "e5 gains space.",
+    "es": "e5 gana espacio."
+   },
+   "8": {
+    "en": "...c5 hits the base of the chain.",
+    "es": "...c5 golpea la base de la cadena."
+   },
+   "9": {
+    "en": "a3 asks the bishop at once.",
+    "es": "a3 pregunta al alfil de inmediato."
+   },
+   "10": {
+    "en": "Black gives the bishop to double White's pawns.",
+    "es": "Las negras entregan el alfil para doblar los peones blancos."
+   },
+   "12": {
+    "en": "...Ne7 heads for f5 or c6.",
+    "es": "...Ce7 va hacia f5 o c6."
+   },
+   "13": {
+    "en": "Qg4: White attacks g7, which Black's dark-squared bishop no longer defends.",
+    "es": "Dg4: las blancas atacan g7, que el alfil de casillas negras ya no defiende."
+   },
+   "14": {
+    "en": "The Poisoned Pawn: Black lets White take on g7 and h7 and counterattacks in the centre.",
+    "es": "El Peón Envenenado: las negras dejan que las blancas tomen en g7 y h7 y contraatacan en el centro."
+   },
+   "16": {
+    "en": "The rook takes the open g-file.",
+    "es": "La torre toma la columna g abierta."
+   },
+   "18": {
+    "en": "...cxd4: Black's counterplay against c3 and the centre.",
+    "es": "...cxd4: el contrajuego negro contra c3 y el centro."
+   },
+   "19": {
+    "en": "Ne2 develops and protects c3 and g3.",
+    "es": "Ce2 desarrolla y protege c3 y g3."
+   },
+   "20": {
+    "en": "Development, hitting e5.",
+    "es": "Desarrollo, atacando e5."
+   },
+   "21": {
+    "en": "f4 protects e5.",
+    "es": "f4 protege e5."
+   },
+   "22": {
+    "en": "Black takes c3 and keeps the pawn there as a thorn.",
+    "es": "Las negras toman c3 y dejan allí el peón como una espina."
+   },
+   "23": {
+    "en": "The queen comes back to stop ...d4–d3 tricks.",
+    "es": "La dama vuelve para frenar los trucos con ...d4–d3."
+   },
+   "24": {
+    "en": "...d4: a sharp, double-edged position. Very theoretical, but rich for both sides.",
+    "es": "...d4: una posición aguda y de doble filo. Muy teórica, pero rica para los dos bandos."
+   }
+  }
+ },
+ "pirc": {
+  "moves": "e4 d6 d4 Nf6 Nc3 g6 Nf3 Bg7 Bc4 O-O O-O Bg4 h3 Bxf3 Qxf3 c6 Bg5 Nbd7",
+  "notes": {
+   "2": {
+    "en": "The Pirc: Black lets White build a centre, planning to attack it later.",
+    "es": "La Pirc: las negras dejan que las blancas construyan un centro para atacarlo después."
+   },
+   "3": {
+    "en": "White takes the whole centre.",
+    "es": "Las blancas ocupan todo el centro."
+   },
+   "4": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "5": {
+    "en": "Nc3 protects e4.",
+    "es": "Cc3 protege e4."
+   },
+   "6": {
+    "en": "The fianchetto: the g7-bishop will press on d4 and the long diagonal.",
+    "es": "El fianchetto: el alfil de g7 presionará d4 y la gran diagonal."
+   },
+   "7": {
+    "en": "The Classical system: quiet development.",
+    "es": "El sistema Clásico: desarrollo tranquilo."
+   },
+   "8": {
+    "en": "The bishop on the long diagonal.",
+    "es": "El alfil en la gran diagonal."
+   },
+   "9": {
+    "en": "Bc4 aims at f7.",
+    "es": "Ac4 apunta a f7."
+   },
+   "10": {
+    "en": "Castle first: the king is safe and the rook joins in.",
+    "es": "Primero el enroque: el rey queda a salvo y la torre se une."
+   },
+   "12": {
+    "en": "...Bg4 pins the f3-knight, which defends d4.",
+    "es": "...Ag4 clava el caballo de f3, que defiende d4."
+   },
+   "13": {
+    "en": "h3 asks the bishop.",
+    "es": "h3 pregunta al alfil."
+   },
+   "14": {
+    "en": "Black gives the bishop for the knight: d4 loses a defender.",
+    "es": "Las negras dan el alfil por el caballo: d4 pierde un defensor."
+   },
+   "16": {
+    "en": "...c6 prepares ...b5 and ...Nbd7, and takes d5 away from White's pieces.",
+    "es": "...c6 prepara ...b5 y ...Cbd7, y le quita d5 a las piezas blancas."
+   },
+   "18": {
+    "en": "...Nbd7 prepares ...e5. Black is solid; White has the bishop pair.",
+    "es": "...Cbd7 prepara ...e5. Las negras están sólidas; las blancas tienen la pareja de alfiles."
+   }
+  }
+ },
+ "pirc-austrian": {
+  "moves": "e4 d6 d4 Nf6 Nc3 g6 f4 Bg7 Nf3 O-O Bd3 c5 dxc5 Na6",
+  "notes": {
+   "2": {
+    "en": "The Pirc: Black lets White build a centre, planning to attack it later.",
+    "es": "La Pirc: las negras dejan que las blancas construyan un centro para atacarlo después."
+   },
+   "3": {
+    "en": "White takes the whole centre.",
+    "es": "Las blancas ocupan todo el centro."
+   },
+   "4": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "5": {
+    "en": "Nc3 protects e4.",
+    "es": "Cc3 protege e4."
+   },
+   "6": {
+    "en": "The fianchetto: the g7-bishop will press on d4 and the long diagonal.",
+    "es": "El fianchetto: el alfil de g7 presionará d4 y la gran diagonal."
+   },
+   "7": {
+    "en": "The Austrian Attack: f4 builds a huge centre and prepares e5.",
+    "es": "El Ataque Austriaco: f4 construye un centro enorme y prepara e5."
+   },
+   "8": {
+    "en": "The bishop on the long diagonal.",
+    "es": "El alfil en la gran diagonal."
+   },
+   "9": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "10": {
+    "en": "Castle before striking back.",
+    "es": "Enroca antes de contraatacar."
+   },
+   "11": {
+    "en": "Bd3 supports e4.",
+    "es": "Ad3 apoya e4."
+   },
+   "12": {
+    "en": "...c5! strikes at d4: against the big centre, Black must hit back.",
+    "es": "¡...c5! golpea d4: contra el gran centro, las negras deben contraatacar."
+   },
+   "13": {
+    "en": "White takes.",
+    "es": "Las blancas toman."
+   },
+   "14": {
+    "en": "...Na6: the knight recaptures on c5 next, with active play against the white centre.",
+    "es": "...Ca6: el caballo recapturará en c5, con juego activo contra el centro blanco."
+   }
+  }
+ },
+ "pirc-150": {
+  "moves": "e4 d6 d4 Nf6 Nc3 g6 Be3 c6 f3 Bg7 Qd2 b5 O-O-O Nbd7 g4 Qa5 Kb1 Nb6",
+  "notes": {
+   "2": {
+    "en": "The Pirc: Black lets White build a centre, planning to attack it later.",
+    "es": "La Pirc: las negras dejan que las blancas construyan un centro para atacarlo después."
+   },
+   "3": {
+    "en": "White takes the whole centre.",
+    "es": "Las blancas ocupan todo el centro."
+   },
+   "4": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "5": {
+    "en": "Nc3 protects e4.",
+    "es": "Cc3 protege e4."
+   },
+   "6": {
+    "en": "The fianchetto: the g7-bishop will press on d4 and the long diagonal.",
+    "es": "El fianchetto: el alfil de g7 presionará d4 y la gran diagonal."
+   },
+   "7": {
+    "en": "The 150 Attack: Be3, Qd2, Bh6 and long castling.",
+    "es": "El Ataque 150: Ae3, Dd2, Ah6 y enroque largo."
+   },
+   "8": {
+    "en": "...c6: Black prepares queenside play before castling.",
+    "es": "...c6: las negras preparan juego en el flanco de dama antes de enrocar."
+   },
+   "9": {
+    "en": "f3 supports e4 and prepares g4.",
+    "es": "f3 apoya e4 y prepara g4."
+   },
+   "10": {
+    "en": "The fianchetto.",
+    "es": "El fianchetto."
+   },
+   "11": {
+    "en": "Qd2 prepares Bh6.",
+    "es": "Dd2 prepara Ah6."
+   },
+   "12": {
+    "en": "...b5: the counterattack starts at once.",
+    "es": "...b5: el contraataque empieza de inmediato."
+   },
+   "13": {
+    "en": "White castles long into Black's pawns.",
+    "es": "Las blancas enrocan largo hacia los peones negros."
+   },
+   "14": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "15": {
+    "en": "g4: White's kingside attack.",
+    "es": "g4: el ataque blanco en el flanco de rey."
+   },
+   "16": {
+    "en": "...Qa5 joins the attack on the white king.",
+    "es": "...Da5 se une al ataque contra el rey blanco."
+   },
+   "17": {
+    "en": "Kb1 steps away from danger.",
+    "es": "Rb1 se aparta del peligro."
+   },
+   "18": {
+    "en": "...Nb6 heads for c4: a race of attacks where Black is fine because the king has not castled into White's storm.",
+    "es": "...Cb6 va hacia c4: una carrera de ataques en la que las negras están bien porque su rey no ha enrocado hacia la avalancha blanca."
+   }
+  }
  }
 };
