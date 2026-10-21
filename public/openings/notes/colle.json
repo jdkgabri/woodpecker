@@ -1,0 +1,14 @@
+{
+ "d5 Nf3": {
+  "en": "The Colle System: Nf3, e3, Bd3, Nbd2, c3 and O-O, then the e4 break. The d3-bishop then aims at h7.",
+  "es": "El Sistema Colle: Cf3, e3, Ad3, Cbd2, c3 y O-O, y después la ruptura e4. El alfil de d3 apunta entonces a h7."
+ },
+ "Nf6 Nf3": {
+  "en": "Same setup against ...Nf6: e3, Bd3, Nbd2 and c3 before e4.",
+  "es": "El mismo esquema contra ...Cf6: e3, Ad3, Cbd2 y c3 antes de e4."
+ },
+ "e5": {
+  "en": "The Englund Gambit: take the pawn (dxe5) and keep it simply with Nf3 and Bf4. Beware of ...Qe7 tricks on the e-file.",
+  "es": "El Gambito Englund: toma el peón (dxe5) y consérvalo con sencillez con Cf3 y Af4. Cuidado con los trucos de ...De7 en la columna e."
+ }
+}

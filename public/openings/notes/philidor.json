@@ -1,0 +1,22 @@
+{
+ "Bc4 Nf6": {
+  "en": "...Nf6 hits e4 and develops; ...Be7 and ...O-O follow. Black keeps the solid e5–d6 centre.",
+  "es": "...Cf6 ataca e4 y desarrolla; siguen ...Ae7 y ...O-O. Las negras mantienen el sólido centro e5–d6."
+ },
+ "d4 exd4": {
+  "en": "...exd4 gives up the centre but frees the pieces: ...Nf6, ...Be7, ...O-O, then ...Re8 and ...Bf8 put pressure on e4.",
+  "es": "...exd4 cede el centro pero libera las piezas: ...Cf6, ...Ae7, ...O-O, y después ...Te8 y ...Af8 presionan e4."
+ },
+ "d4 exd4 Nxd4 Nf6 Bg5 Be7 Nc3": {
+  "en": "The fork trick: ...Nxe4! If Nxe4 then ...Bxg5, and if Bxe7 then ...Nxc3 and ...Qxe7. Black wins a pawn.",
+  "es": "El truco de la horquilla: ¡...Cxe4! Si Cxe4 entonces ...Axg5, y si Axe7 entonces ...Cxc3 y ...Dxe7. Las negras ganan un peón."
+ },
+ "d4 exd4 Nxd4 Nf6 Nc3 Be7 Bg5": {
+  "en": "The fork trick: ...Nxe4! If Nxe4 then ...Bxg5, and if Bxe7 then ...Nxc3 and ...Qxe7. Black wins a pawn.",
+  "es": "El truco de la horquilla: ¡...Cxe4! Si Cxe4 entonces ...Axg5, y si Axe7 entonces ...Cxc3 y ...Dxe7. Las negras ganan un peón."
+ },
+ "h3 Nf6 Bc4": {
+  "en": "Without Nc3, e4 is unprotected: ...Nxe4!",
+  "es": "Sin Cc3, e4 está sin defender: ¡...Cxe4!"
+ }
+}

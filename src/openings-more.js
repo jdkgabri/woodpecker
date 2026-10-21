@@ -396,7 +396,9 @@ export const MORE_OPENINGS = [
         es: ['Ganar espacio con ...e5 y ...f5.', 'Jugar ...d5 cuando esté bien apoyado.', 'Copiar el fianchetto y luchar por la gran diagonal.'],
       },
     },
-    lines: [tree('english', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'c4')],
+    lines: [tree('english', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'c4'),
+      tree('english-e5', { en: 'Reversed Sicilian (1...e5)', es: 'Siciliana Invertida (1...e5)' }, 'c4 e5'),
+    ],
   },
   // ---- caro-kann
   {
@@ -975,5 +977,73 @@ export const MORE_OPENINGS = [
       },
     },
     lines: [tree('albin', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 c4 e5')],
+  },
+  // ---- colle
+  {
+    id: 'colle', side: 'w', eco: 'D04–D05', puzzles: 'colle',
+    name: { en: 'Colle System', es: 'Sistema Colle' },
+    summary: {
+      en: '1.d4, Nf3, e3, Bd3, c3, Nbd2 and O-O — a solid system that prepares the central break e4.',
+      es: '1.d4, Cf3, e3, Ad3, c3, Cbd2 y O-O: un sistema sólido que prepara la ruptura central e4.',
+    },
+    intro: {
+      en: [
+        'The Colle System is a set-up rather than a line: White builds a pyramid with c3, d4 and e3, puts the bishop on d3 aiming at h7, castles and then frees the game with e3–e4.',
+        'It is easy to learn and leads to attacking positions against the black king. The Colle–Zukertort version (b3 and Bb2 instead of c3) is a close relative.',
+      ],
+      es: [
+        'El Sistema Colle es un esquema más que una línea: las blancas montan una pirámide con c3, d4 y e3, ponen el alfil en d3 apuntando a h7, enrocan y luego liberan el juego con e3–e4.',
+        'Es fácil de aprender y lleva a posiciones de ataque contra el rey negro. La versión Colle–Zukertort (b3 y Ab2 en lugar de c3) es una pariente cercana.',
+      ],
+    },
+    structure: {
+      en: 'Pawns on c3, d4 and e3 with the bishop on d3. The key break is e3–e4, usually prepared with Nbd2, Re1 and Qe2 or Qc2.',
+      es: 'Peones en c3, d4 y e3 con el alfil en d3. La ruptura clave es e3–e4, normalmente preparada con Cbd2, Te1 y De2 o Dc2.',
+    },
+    plans: {
+      w: {
+        en: ['Nf3, e3, Bd3, c3, Nbd2 and O-O.', 'Prepare e4 with Re1 and Qe2 or Qc2.', 'After e4 opens the centre, attack the king with the d3-bishop and the knights.'],
+        es: ['Cf3, e3, Ad3, c3, Cbd2 y O-O.', 'Preparar e4 con Te1 y De2 o Dc2.', 'Tras abrir el centro con e4, atacar al rey con el alfil de d3 y los caballos.'],
+      },
+      b: {
+        en: ['Develop the c8-bishop before ...e6 (...Bf5 or ...Bg4).', 'Strike with ...c5 and ...Nc6.', 'Meet e4 by exchanging in the centre.'],
+        es: ['Desarrollar el alfil de c8 antes de ...e6 (...Af5 o ...Ag4).', 'Golpear con ...c5 y ...Cc6.', 'Responder a e4 cambiando en el centro.'],
+      },
+    },
+    lines: [tree('colle', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4')],
+  },
+  // ---- philidor
+  {
+    id: 'philidor', side: 'b', eco: 'C41', puzzles: 'philidor',
+    name: { en: 'Philidor Defence', es: 'Defensa Philidor' },
+    summary: {
+      en: '1.e4 e5 2.Nf3 d6 — a solid defence of e5; in the classical line Black gives up the centre with ...exd4 and develops quickly.',
+      es: '1.e4 e5 2.Cf3 d6: una defensa sólida de e5; en la línea clásica las negras ceden el centro con ...exd4 y desarrollan rápido.',
+    },
+    intro: {
+      en: [
+        'The Philidor defends e5 with the d-pawn. After 3.d4 Black can keep the centre (the Hanham setup, close to the Black Lion) or exchange with 3...exd4 and develop with ...Nf6, ...Be7 and ...O-O.',
+        'It is solid but slightly passive; the key is to know the typical traps after 3.d4, where natural moves can drop material.',
+      ],
+      es: [
+        'La Philidor defiende e5 con el peón d. Tras 3.d4 las negras pueden mantener el centro (el esquema Hanham, parecido al Black Lion) o cambiar con 3...exd4 y desarrollar con ...Cf6, ...Ae7 y ...O-O.',
+        'Es sólida pero algo pasiva; la clave es conocer las trampas típicas tras 3.d4, donde jugadas naturales pueden perder material.',
+      ],
+    },
+    structure: {
+      en: 'After ...exd4 Black has a small but solid centre with the pawn on d6; White has more space. Black plays for ...Re8, ...Bf8 and ...d5 or ...c6 and ...d5.',
+      es: 'Tras ...exd4 las negras tienen un centro pequeño pero sólido con el peón en d6; las blancas tienen más espacio. Las negras buscan ...Te8, ...Af8 y ...d5 o ...c6 y ...d5.',
+    },
+    plans: {
+      b: {
+        en: ['...exd4, ...Nf6, ...Be7 and ...O-O.', '...Re8 and ...Bf8 to pressure e4.', 'Free the game with ...d5 when it is safe.'],
+        es: ['...exd4, ...Cf6, ...Ae7 y ...O-O.', '...Te8 y ...Af8 para presionar e4.', 'Liberar el juego con ...d5 cuando sea seguro.'],
+      },
+      w: {
+        en: ['Take the centre with d4 and Nc3.', 'Use the extra space: f4 or Bf4 and Qd2 with long castling.', 'Watch for tricks on f7 with Bc4.'],
+        es: ['Ocupar el centro con d4 y Cc3.', 'Aprovechar el espacio extra: f4 o Af4 y Dd2 con enroque largo.', 'Atención a los trucos sobre f7 con Ac4.'],
+      },
+    },
+    lines: [tree('philidor', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 e5 Nf3 d6')],
   },
 ];

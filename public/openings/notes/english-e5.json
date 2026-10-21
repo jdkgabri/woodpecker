@@ -1,0 +1,22 @@
+{
+ "Nc3": {
+  "en": "A reversed Sicilian with an extra tempo: Nc3, g3 and Bg2 fight for d5, and Nf3, O-O and d3 or d4 follow.",
+  "es": "Una Siciliana invertida con un tiempo de más: Cc3, g3 y Ag2 luchan por d5, y siguen Cf3, O-O y d3 o d4."
+ },
+ "Nc3 Nf6 g3 Bc5 Bg2 c6 Nf3 O-O": {
+  "en": "The e5-pawn is unprotected: Nxe5.",
+  "es": "El peón de e5 está sin defender: Cxe5."
+ },
+ "Nc3 Nf6 g3 Bc5 Bg2 c6 Nf3 d5": {
+  "en": "The e5-pawn is unprotected: Nxe5.",
+  "es": "El peón de e5 está sin defender: Cxe5."
+ },
+ "Nc3 Nf6 g3 Bc5 Bg2 O-O Nf3 Re8": {
+  "en": "...Re8 does not really hold e5: Nxe5 Bxf2+ Kxf2 Rxe5 d4 and White gains the centre with tempo.",
+  "es": "...Te8 no sostiene realmente e5: Cxe5 Axf2+ Rxf2 Txe5 d4 y las blancas ganan el centro con tiempo."
+ },
+ "": {
+  "en": "1...e5: a Sicilian with colours reversed and an extra tempo for White.",
+  "es": "1...e5: una Siciliana con colores invertidos y un tiempo de más para las blancas."
+ }
+}
