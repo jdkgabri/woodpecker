@@ -8,6 +8,7 @@ import { Chessground } from 'chessground';
 import { Chess } from 'chess.js';
 import { OPENINGS, findOpening } from './openings-data.js';
 import { openAnalysis } from './analysis.js';
+import { Engine } from './engine.js';
 import { sound } from './sound.js';
 import { t, tn, lang, san } from './i18n.js';
 
@@ -234,6 +235,29 @@ export function viewOpeningTree(app, id, lineId, mode, go, start) {
 
   // ---------- drill ----------
   let branch = null, mistakes = 0, wrongHere = 0, done = false, lastKey = null;
+  let engine = null, checking = false;
+  // Our moves in every line of this opening, by position: a move different from the branch can still be repertoire
+  const posKey = fen => fen.split(' ').slice(0, 4).join(' ');
+  const repMoves = new Map();
+  for (const l of o.lines) {
+    const c = new Chess();
+    for (const s of (l.moves || '').split(' ').filter(Boolean)) {
+      const k = posKey(c.fen()), mine = c.turn() === o.side;
+      let m;
+      try { m = c.move(s); } catch { break; }
+      if (mine) { const u = m.from + m.to + (m.promotion || ''); if (!repMoves.has(k)) repMoves.set(k, []); repMoves.get(k).push({ u, name: l.name }); }
+    }
+  }
+  // A good move that is not this branch's: no mistake, but the branch goes on with its own move
+  function otherGood(text, want) {
+    sound('move');
+    setTimeout(() => {
+      if (!alive || done) return;
+      advance();
+      cg.setAutoShapes([{ orig: want.u.slice(0, 2), dest: want.u.slice(2, 4), brush: 'green' }]);
+      note(`<strong>${esc(text)}</strong>`, 'warn');
+    }, 300);
+  }
 
   function counter() { $('#otCount').textContent = `${masteredCount(memId, list)}/${list.length}`; }
 
@@ -288,19 +312,49 @@ export function viewOpeningTree(app, id, lineId, mode, go, start) {
     const piece = c.get(orig);
     const promo = piece?.type === 'p' && (dest[1] === '8' || dest[1] === '1') ? 'q' : '';
     const want = branch.path[path.length];
-    if (orig + dest + promo === want.u) {
+    // castling by dropping the king on its rook (e1h1) is the same move as e1g1
+    let uci = orig + dest + promo;
+    if (piece?.type === 'k' && c.get(dest)?.type === 'r' && c.get(dest)?.color === piece.color) uci = orig + (dest[0] === 'h' ? 'g' : 'c') + dest[1];
+    if (uci === want.u) {
       path = [...path, want]; wrongHere = 0;
       playSound(path);
       cg.setAutoShapes([]);
       advance();
       return;
     }
+    if (checking) { setTimeout(() => { advance(); note(`<strong>${t('Let me check that move…')}</strong>`, 'play'); }, 300); return; }
+    const rep = (repMoves.get(posKey(c.fen())) || []).find(r => r.u === uci);
+    if (rep) return otherGood(t('Good move: it is also in your repertoire ({line}). In this branch we practise {m}: play it.', { line: tx(rep.name), m: san(want.s) }), want);
+    checking = true;
+    note(`<strong>${t('Let me check that move…')}</strong>`, 'play');
+    const after = u => { const x = new Chess(c.fen()); x.move({ from: u.slice(0, 2), to: u.slice(2, 4), promotion: u[4] || undefined }); return x.fen(); };
+    const score = r => (!r ? 0 : r.mate != null ? (r.mate > 0 ? -10000 : 10000) : -r.cp); // for us, after our move
+    (async () => {
+      let good = false;
+      try {
+        engine ||= new Engine();
+        const [mine] = await engine.search(after(uci), { movetime: 500 });
+        const [best] = await engine.search(after(want.u), { movetime: 500 });
+        good = score(mine) >= score(best) - 35;
+      } catch { /* no engine: treat as a normal mistake */ }
+      checking = false;
+      if (!alive || done) return;
+      if (good) return otherGood(t('Good move too! But this branch continues with {m}: play it.', { m: san(want.s) }), want);
+      wrongMove(want);
+    })();
+  }
+
+  function wrongMove(want) {
     mistakes++; wrongHere++;
     sound('move');
-    setTimeout(() => advance(), 300);
     const hint = wrongHere >= 2;
-    if (hint) cg.setAutoShapes([{ orig: want.u.slice(0, 2), dest: want.u.slice(2, 4), brush: 'green' }]);
-    drillNote(`<strong>${t('Not this move')}</strong> — ${hint ? t('the line continues with the arrow.') : t('try again.')}`);
+    // put the piece back first, then the message (advance() redraws the note)
+    setTimeout(() => {
+      if (!alive || done) return;
+      advance();
+      if (hint) cg.setAutoShapes([{ orig: want.u.slice(0, 2), dest: want.u.slice(2, 4), brush: 'green' }]);
+      drillNote(`<strong>${t('Not this move')}</strong> — ${hint ? t('the line continues with the arrow.') : t('try again.')}`);
+    }, 300);
   }
 
   function finish() {
@@ -339,6 +393,7 @@ export function viewOpeningTree(app, id, lineId, mode, go, start) {
 
   return () => {
     alive = false;
+    engine?.destroy();
     clearTimeout(timer);
     window.removeEventListener('resize', onResize);
     document.removeEventListener('keydown', onKey);

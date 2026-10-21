@@ -751,4 +751,6 @@ export const ES = {
   "{m} is playable, but worse than {b}.": "{m} se puede jugar, pero es peor que {b}.",
   "{m} is a mistake.": "{m} es un error.",
   "Try another move": "Probar otra jugada",
+  "Good move: it is also in your repertoire ({line}). In this branch we practise {m}: play it.": "Buena jugada: también es de tu repertorio ({line}). En esta rama practicamos {m}: juégala.",
+  "Good move too! But this branch continues with {m}: play it.": "¡También es buena! Pero esta rama sigue con {m}: juégala.",
 };
