@@ -1,0 +1,22 @@
+{
+  "": { "en": "Your Queen's Gambit repertoire from 1.d4 d5: what club players answer to 2.c4 and how to reach good positions against all of it. The plan is always the same: Nc3, Nf3, Bg5 and e3, then pressure on d5.", "es": "Tu repertorio del Gambito de Dama desde 1.d4 d5: qué responden los jugadores de club a 2.c4 y cómo llegar a buenas posiciones contra todo ello. El plan es siempre el mismo: Cc3, Cf3, Ag5 y e3, y presión sobre d5." },
+  "c4": { "en": "The Queen's Gambit: c4 attacks d5 from the side. If Black takes, White gets the centre with e4.", "es": "El Gambito de Dama: c4 ataca d5 desde el flanco. Si las negras toman, las blancas se quedan con el centro con e4." },
+  "c4 e6": { "en": "The Queen's Gambit Declined: solid, but the c8-bishop is shut in behind e6.", "es": "El Gambito de Dama Rehusado: sólido, pero el alfil de c8 queda encerrado detrás de e6." },
+  "c4 e6 Nc3 Nf6 Nf3 Be7 Bg5": { "en": "Bg5 pins the knight that defends d5 — the classical setup.", "es": "Ag5 clava el caballo que defiende d5: la estructura clásica." },
+  "c4 e6 Nc3 Nf6 Nf3 Be7 Bg5 O-O e3 h6 Bh4": { "en": "The bishop keeps the pin. Typical plans: Rc1, Bd3, O-O and, after cxd5, the minority attack with b4–b5.", "es": "El alfil mantiene la clavada. Planes típicos: Tc1, Ad3, O-O y, tras cxd5, el ataque de minorías con b4–b5." },
+  "c4 e6 Nc3 Nf6 Nf3 Be7 Bg5 h6 Bh4 g5 Bg3": { "en": "...g5 drives the bishop away but weakens Black's kingside for the rest of the game.", "es": "...g5 echa al alfil pero debilita el flanco de rey negro para el resto de la partida." },
+  "c4 e6 Nc3 Nf6 Nf3 Bb4 Bg5": { "en": "Against the Ragozin (...Bb4) Bg5 pins the other knight too.", "es": "Contra la Ragozin (...Ab4) Ag5 clava también el otro caballo." },
+  "c4 e6 Nc3 Nf6 Nf3 c5 Bg5 h6 Bxf6": { "en": "...h6 here costs a pawn: after Bxf6 Qxf6 cxd5 the d5-pawn falls.", "es": "...h6 aquí cuesta un peón: tras Axf6 Dxf6 cxd5 cae el peón de d5." },
+  "c4 e6 Nc3 c6 Nf3 f5 Bg5": { "en": "The Stonewall (...f5) leaves e5 and e6 weak; Bg5 develops with tempo on the queen's diagonal.", "es": "El Muro de Piedra (...f5) deja débiles e5 y e6; Ag5 desarrolla ganando tiempo sobre la diagonal de la dama." },
+  "c4 e6 Nc3 dxc4 e4": { "en": "When Black gives up the centre, take it: e4 and Bxc4 regain the pawn with a big centre.", "es": "Cuando las negras ceden el centro, ocúpalo: e4 y Axc4 recuperan el peón con un gran centro." },
+  "c4 dxc4": { "en": "The Queen's Gambit Accepted. Black cannot keep the pawn for long; White builds the centre.", "es": "El Gambito de Dama Aceptado. Las negras no pueden conservar el peón mucho tiempo; las blancas montan el centro." },
+  "c4 dxc4 Nc3 e6 e4": { "en": "e4 takes the centre; the c4-pawn will be recaptured with the bishop.", "es": "e4 ocupa el centro; el peón de c4 se recuperará con el alfil." },
+  "c4 dxc4 Nc3 e6 e4 Bb4 Bxc4 Bxc3+ bxc3": { "en": "Giving up the bishop leaves Black weak on the dark squares, and White's centre is even stronger.", "es": "Entregar el alfil deja a las negras débiles en las casillas oscuras, y el centro blanco es aún más fuerte." },
+  "c4 dxc4 Nc3 Nc6 Nf3 Bg4 d5": { "en": "d5! kicks the knight and gains space; Black's development is awkward.", "es": "¡d5! echa al caballo y gana espacio; el desarrollo negro es incómodo." },
+  "c4 dxc4 Nc3 Nf6 Nf3 Bg4 Ne5": { "en": "Ne5 hits the c4-pawn and sidesteps the pin.", "es": "Ce5 ataca el peón de c4 y esquiva la clavada." },
+  "c4 c6": { "en": "The Slav: Black holds d5 with the c-pawn so the c8-bishop can come out.", "es": "La Eslava: las negras sostienen d5 con el peón c para que el alfil de c8 pueda salir." },
+  "c4 c6 Nc3 Bf5 Qb3": { "en": "Developing the bishop before ...Nf6 leaves b7 weak: Qb3 hits it at once.", "es": "Sacar el alfil antes de ...Cf6 deja débil b7: Db3 lo ataca de inmediato." },
+  "c4 c6 Nc3 Nf6 Nf3 Bf5 cxd5": { "en": "With the bishop on f5, cxd5 cxd5 and Qb3 targets b7.", "es": "Con el alfil en f5, cxd5 cxd5 y Db3 apunta a b7." },
+  "c4 Nf6 Nf3 c6 Nc3 dxc4 a4": { "en": "a4 stops ...b5, so White will win the c4-pawn back.", "es": "a4 impide ...b5, así que las blancas recuperarán el peón de c4." },
+  "c4 Nf6": { "en": "Black ignores the centre for a move: Nf3 and Nc3 keep everything under control.", "es": "Las negras ignoran el centro una jugada: Cf3 y Cc3 lo mantienen todo bajo control." }
+}

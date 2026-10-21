@@ -308,7 +308,15 @@ export const OPENINGS = [
     puzzles: 'queens-gambit',
     lines: [
       {
+        id: 'qg-all',
+        name: { en: "All of Black's replies after 1.d4 d5", es: 'Todas las respuestas negras tras 1.d4 d5' },
+        moves: 'd4 d5',
+        treeOnly: true,
+        tree: { file: 'qg-all' },
+      },
+      {
         id: 'qgd-tartakower',
+        tree: { file: 'qgd-tartakower' },
         name: { en: 'Declined: Orthodox, Tartakower', es: 'Rehusado: Ortodoxa, Tartakower' },
         moves: 'd4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 h6 Bh4 b6 cxd5 Nxd5 Bxe7 Qxe7 Nxd5 exd5 Rc1 Be6',
         puzzles: 'qg-declined',
@@ -325,6 +333,7 @@ export const OPENINGS = [
       },
       {
         id: 'qgd-exchange',
+        tree: { file: 'qgd-exchange' },
         name: { en: 'Declined: Exchange (Carlsbad structure)', es: 'Rehusado: Variante del Cambio (estructura Carlsbad)' },
         moves: 'd4 d5 c4 e6 Nc3 Nf6 cxd5 exd5 Bg5 c6 e3 Be7 Bd3 Nbd7 Qc2 O-O Nf3 Re8 O-O Nf8 Rab1 Ng6 b4 a6 a4',
         puzzles: 'qg-declined',
@@ -339,6 +348,7 @@ export const OPENINGS = [
       },
       {
         id: 'qga',
+        tree: { file: 'qga' },
         name: { en: 'Accepted: classical with ...c5', es: 'Aceptado: clásica con ...c5' },
         moves: 'd4 d5 c4 dxc4 Nf3 Nf6 e3 e6 Bxc4 c5 O-O a6 a4 Nc6 Qe2 cxd4 Rd1 Be7 exd4 O-O Nc3',
         puzzles: 'qg-accepted',
@@ -356,6 +366,7 @@ export const OPENINGS = [
       },
       {
         id: 'slav',
+        tree: { file: 'slav' },
         name: { en: 'Slav Defence: main line', es: 'Defensa Eslava: línea principal' },
         moves: 'd4 d5 c4 c6 Nf3 Nf6 Nc3 dxc4 a4 Bf5 e3 e6 Bxc4 Bb4 O-O O-O Qe2 Nbd7 e4 Bg6 Bd3',
         puzzles: 'qg-slav',

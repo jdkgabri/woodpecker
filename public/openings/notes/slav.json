@@ -1,0 +1,62 @@
+{
+ "": {
+  "en": "The Slav from White's side: Black supports d5 with ...c6 so the c8-bishop can come out. White develops with Nf3 and Nc3 and punishes an early bishop sortie by attacking b7.",
+  "es": "La Eslava desde el lado blanco: las negras apoyan d5 con ...c6 para que el alfil de c8 pueda salir. Las blancas desarrollan con Cf3 y Cc3 y castigan una salida temprana del alfil atacando b7."
+ },
+ "Nf3 Nf6 Nc3 dxc4 a4": {
+  "en": "a4 stops ...b5, so Black cannot hold the extra pawn. Next: e3 and Bxc4.",
+  "es": "a4 impide ...b5, así que las negras no pueden mantener el peón de más. Después: e3 y Axc4."
+ },
+ "Nf3 Nf6 Nc3 dxc4 a4 Bf5 e3 e6 Bxc4": {
+  "en": "The pawn is back and White has a free, comfortable game: O-O, Qe2 and e4 are the plan.",
+  "es": "El peón ha vuelto y las blancas tienen un juego libre y cómodo: el plan es O-O, De2 y e4."
+ },
+ "Nf3 Nf6 Nc3 dxc4 a4 Nd5 e4": {
+  "en": "...Nd5? invites e4 with tempo: White takes the whole centre.",
+  "es": "...Cd5? invita a e4 ganando tiempo: las blancas se quedan con todo el centro."
+ },
+ "Nf3 Nf6 Nc3 Bf5 cxd5": {
+  "en": "With the bishop out of c8, b7 is weak. cxd5 opens the c-file and prepares Qb3.",
+  "es": "Con el alfil fuera de c8, b7 es débil. cxd5 abre la columna c y prepara Db3."
+ },
+ "Nf3 Nf6 Nc3 Bf5 cxd5 cxd5 Qb3": {
+  "en": "Qb3 hits b7 and d5 at once.",
+  "es": "Db3 ataca b7 y d5 a la vez."
+ },
+ "Nf3 Nf6 Nc3 Bf5 cxd5 cxd5 Qb3 Qb6 Nxd5": {
+  "en": "Black defended b7 but forgot d5: Nxd5 wins a pawn.",
+  "es": "Las negras defendieron b7 pero olvidaron d5: Cxd5 gana un peón."
+ },
+ "Nf3 Nf6 Nc3 Bg4 Ne5": {
+  "en": "Ne5 attacks the g4-bishop and prepares Qb3 against b7.",
+  "es": "Ce5 ataca el alfil de g4 y prepara Db3 contra b7."
+ },
+ "Nf3 Nf6 Nc3 Bg4 Ne5 Bh5 cxd5 Nxd5 g4": {
+  "en": "g4 hits the h5-bishop; after ...Bg6 the e5-knight takes it and White gets the bishop pair and space.",
+  "es": "g4 ataca el alfil de h5; tras ...Ag6 el caballo de e5 lo captura y las blancas consiguen la pareja de alfiles y espacio."
+ },
+ "Nf3 Bf5 Nc3 e6 Qb3": {
+  "en": "The bishop left c8 before ...Nf6: Qb3 hits b7 at once.",
+  "es": "El alfil salió de c8 antes de ...Cf6: Db3 ataca b7 de inmediato."
+ },
+ "Nf3 Bf5 Nc3 e6 Qb3 b6 cxd5": {
+  "en": "...b6 weakens the long diagonal and c6; cxd5 opens lines against them.",
+  "es": "...b6 debilita la gran diagonal y c6; cxd5 abre líneas contra ellas."
+ },
+ "Nf3 e6 Nc3 f5 Bf4": {
+  "en": "Against the Stonewall (...f5), Bf4 develops the bishop before e3 and controls e5.",
+  "es": "Contra el Muro de Piedra (...f5), Af4 desarrolla el alfil antes de e3 y controla e5."
+ },
+ "Nf3 e6 Nc3 dxc4 a4": {
+  "en": "a4 makes ...b5 hard to sustain; if Black still plays it, axb5 breaks up the queenside, and White regains the pawn with e3 and Bxc4.",
+  "es": "a4 hace difícil sostener ...b5; si las negras lo juegan igualmente, axb5 rompe su flanco de dama, y las blancas recuperan el peón con e3 y Axc4."
+ },
+ "Nf3 e6 Nc3 Bb4 e3 Bxc3+ bxc3": {
+  "en": "Giving up the bishop for the knight leaves Black weak on the dark squares; White gets the bishop pair.",
+  "es": "Dar el alfil por el caballo deja a las negras débiles en las casillas oscuras; las blancas consiguen la pareja de alfiles."
+ },
+ "Nf3 Bg4 Nc3 e6 Ne5": {
+  "en": "Ne5 hits the g4-bishop; Qb3 against b7 follows.",
+  "es": "Ce5 ataca el alfil de g4; sigue Db3 contra b7."
+ }
+}

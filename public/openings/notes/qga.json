@@ -1,0 +1,16 @@
+{
+  "": { "en": "The Queen's Gambit Accepted: Black takes on c4 but cannot keep the pawn. White plays Nf3, e3 and Bxc4, and gets free development and the centre.", "es": "El Gambito de Dama Aceptado: las negras toman en c4 pero no pueden conservar el peón. Las blancas juegan Cf3, e3 y Axc4, y consiguen desarrollo libre y el centro." },
+  "Nf3": { "en": "Nf3 first stops ...e5 and keeps all options open.", "es": "Cf3 primero impide ...e5 y mantiene todas las opciones abiertas." },
+  "Nf3 Nf6 e3": { "en": "e3 opens the bishop's path to c4: the pawn will be won back.", "es": "e3 abre el camino del alfil hacia c4: el peón se recuperará." },
+  "Nf3 Nf6 e3 e6 Bxc4": { "en": "Material is level and White has the freer game. Plans: O-O, Qe2, Rd1 and e4, or a4 against ...b5.", "es": "El material está igualado y las blancas tienen el juego más libre. Planes: O-O, De2, Td1 y e4, o a4 contra ...b5." },
+  "Nf3 Nf6 e3 e6 Bxc4 c5 O-O": { "en": "The classical main line. After ...cxd4 exd4 White has an isolated d-pawn with active pieces.", "es": "La línea principal clásica. Tras ...cxd4 exd4 las blancas tienen un peón aislado en d4 con piezas activas." },
+  "Nf3 Nf6 e3 e6 Bxc4 Bb4+ Nc3": { "en": "Block with the knight: if Black takes on c3, White gets the bishop pair and a strong centre.", "es": "Tapa con el caballo: si las negras toman en c3, las blancas consiguen la pareja de alfiles y un centro fuerte." },
+  "Nf3 Nf6 e3 b5 a4": { "en": "Trying to keep the pawn with ...b5 fails: a4 attacks the chain, and the c4-pawn will fall.", "es": "Intentar conservar el peón con ...b5 falla: a4 ataca la cadena y el peón de c4 caerá." },
+  "Nf3 Nf6 e3 b5 a4 Bd7 axb5": { "en": "...Bd7? does not hold b5: White wins material on the queenside.", "es": "...Ad7? no sostiene b5: las blancas ganan material en el flanco de dama." },
+  "Nf3 e6 e3 b5 a4": { "en": "Same idea: a4 undermines the b5-pawn before Black can support it.", "es": "La misma idea: a4 socava el peón de b5 antes de que las negras puedan apoyarlo." },
+  "Nf3 Nf6 e3 Bg4 Bxc4": { "en": "The pawn is back; if ...Nc6, Qb3 hits b7.", "es": "El peón ha vuelto; si ...Cc6, Db3 ataca b7." },
+  "Nf3 Nf6 e3 Nc6 Bxc4 Bg4 Qb3": { "en": "With the bishop gone from c8, b7 is weak: Qb3 attacks it and f7 at once.", "es": "Con el alfil fuera de c8, b7 es débil: Db3 lo ataca a la vez que f7." },
+  "Nf3 Bg4 Ne5": { "en": "Ne5 hits the bishop and the c4-pawn.", "es": "Ce5 ataca el alfil y el peón de c4." },
+  "Nf3 Nc6 Nc3 Bg4 d5": { "en": "d5! kicks the knight: Black has no good square for it.", "es": "¡d5! echa al caballo: las negras no tienen una buena casilla para él." },
+  "Nf3 Nc6 Nc3 Bg4 d5 Nb4 Qa4+": { "en": "Qa4+ checks and hits the b4-knight: Black loses a piece.", "es": "Da4+ da jaque y ataca el caballo de b4: las negras pierden una pieza." }
+}

@@ -1,0 +1,34 @@
+{
+ "": {
+  "en": "The Queen's Gambit Declined with 4.Bg5: White pins the f6-knight that defends d5. Calm development (e3, Nf3, Rc1, Bd3) and well-timed exchanges on d5 and e7 give White a small, lasting edge.",
+  "es": "El Gambito de Dama Rehusado con 4.Ag5: las blancas clavan el caballo de f6 que defiende d5. El desarrollo tranquilo (e3, Cf3, Tc1, Ad3) y los cambios en d5 y e7 en el momento justo dan a las blancas una ventaja pequeña y duradera."
+ },
+ "Be7 e3 O-O Nf3 h6 Bh4": {
+  "en": "Keep the pin. The bishop goes back to h4 and the tension stays.",
+  "es": "Mantén la clavada. El alfil vuelve a h4 y la tensión se mantiene."
+ },
+ "Be7 e3 O-O Nf3 h6 Bh4 b6": {
+  "en": "The Tartakower: Black prepares ...Bb7 for the light-squared bishop. White exchanges on d5 and e7 to simplify.",
+  "es": "La Tartakower: las negras preparan ...Ab7 para el alfil de casillas blancas. Las blancas cambian en d5 y e7 para simplificar."
+ },
+ "Be7 e3 O-O Nf3 h6 Bh4 b6 cxd5 Nxd5 Bxe7 Qxe7 Nxd5 exd5 Rc1": {
+  "en": "Black has hanging-pawn or isolated-pawn chances later; White plays on the c-file against c7 and c6.",
+  "es": "Más adelante las negras pueden quedarse con peones colgantes o aislados; las blancas juegan por la columna c contra c7 y c6."
+ },
+ "Be7 e3 O-O Nf3 h6 Bh4 Nbd7 cxd5 exd5 Rc1": {
+  "en": "The classic Exchange structure: Rc1, Bd3, O-O and later the minority attack with b4–b5.",
+  "es": "La estructura clásica del Cambio: Tc1, Ad3, O-O y más tarde el ataque de minorías con b4–b5."
+ },
+ "Nbd7": {
+  "en": "Careful with this move order: after cxd5 exd5, Nxd5?? loses to the Elephant Trap — ...Nxd5! Bxd8 Bb4+ and Black wins back the queen, ending a piece for a pawn ahead.",
+  "es": "Cuidado con este orden de jugadas: tras cxd5 exd5, Cxd5?? pierde por la Trampa del Elefante: ...¡Cxd5! Axd8 Ab4+ y las negras recuperan la dama, quedando con una pieza por un peón."
+ },
+ "Bb4 e3": {
+  "en": "Against the Ragozin-style ...Bb4, simply e3 and Nf3; if ...Bxc3+, bxc3 gives a strong centre.",
+  "es": "Contra ...Ab4 al estilo Ragozin, simplemente e3 y Cf3; si ...Axc3+, bxc3 da un centro fuerte."
+ },
+ "c6 e3": {
+  "en": "...c6 may lead to the Cambridge Springs (...Nbd7 and ...Qa5); the calm e3, Nf3 and Qc2 or cxd5 keep everything under control.",
+  "es": "...c6 puede llevar a la Cambridge Springs (...Cbd7 y ...Da5); las tranquilas e3, Cf3 y Dc2 o cxd5 lo mantienen todo bajo control."
+ }
+}

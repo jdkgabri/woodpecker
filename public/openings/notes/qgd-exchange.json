@@ -1,0 +1,22 @@
+{
+ "": {
+  "en": "The Exchange Variation of the Queen's Gambit Declined: White takes on d5 to fix Black's pawn structure, then plays Bg5, e3, Bd3, Qc2, Nf3 and O-O. The classic plan is the minority attack with Rab1 and b4–b5.",
+  "es": "La Variante del Cambio del Gambito de Dama Rehusado: las blancas toman en d5 para fijar la estructura negra, y luego juegan Ag5, e3, Ad3, Dc2, Cf3 y O-O. El plan clásico es el ataque de minorías con Tab1 y b4–b5."
+ },
+ "exd5 Bg5": {
+  "en": "The bishop pins the f6-knight, which defends d5.",
+  "es": "El alfil clava el caballo de f6, que defiende d5."
+ },
+ "exd5 Bg5 Be7 e3 O-O Bd3 c6 Qc2": {
+  "en": "Qc2 and Bd3 aim at h7 and stop ...Bf5. Next: Nf3 (or Nge2), O-O and Rab1.",
+  "es": "Dc2 y Ad3 apuntan a h7 e impiden ...Af5. Después: Cf3 (o Cge2), O-O y Tab1."
+ },
+ "exd5 Bg5 Be7 e3 O-O Bd3 b6": {
+  "en": "...b6? leaves d5 short of defenders: Bxf6 Bxf6 Qh5! and the queen picks up d5.",
+  "es": "...b6? deja d5 sin suficientes defensores: Axf6 Axf6 ¡Dh5! y la dama gana d5."
+ },
+ "Nxd5": {
+  "en": "Recapturing with the knight gives up the centre. e3, Bd3 and Nf3, followed by e4 at the right moment, give White a free and comfortable game.",
+  "es": "Recapturar con el caballo cede el centro. e3, Ad3 y Cf3, seguidos de e4 en el momento justo, dan a las blancas un juego libre y cómodo."
+ }
+}
