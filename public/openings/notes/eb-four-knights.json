@@ -1,0 +1,30 @@
+{
+ "Nf6": {
+  "en": "The symmetrical Four Knights. Against Bb5, ...Bb4 or ...Nd4; against Bc4, ...Bc5; against d4, ...exd4 or ...Bb4.",
+  "es": "Los Cuatro Caballos simétricos. Contra Ab5, ...Ab4 o ...Cd4; contra Ac4, ...Ac5; contra d4, ...exd4 o ...Ab4."
+ },
+ "Nf6 Bc4 Bc5 Ng5 O-O O-O d6 d3": {
+  "en": "...Bg4! hits the queen and takes f3 and h3 away from the g5-knight; ...h6 next can trap it.",
+  "es": "¡...Ag4! ataca la dama y le quita f3 y h3 al caballo de g5; luego ...h6 puede atraparlo."
+ },
+ "Nf6 Bc4 Bc5 Ng5 O-O Nxf7": {
+  "en": "Two pieces for a rook and a pawn is a bad trade for White here: ...Rxf7 and Black's minor pieces dominate.",
+  "es": "Dos piezas por torre y peón es un mal cambio para las blancas aquí: ...Txf7 y las piezas menores negras dominan."
+ },
+ "Nf6 Bc4 Bc5 Ng5 O-O Bxf7+": {
+  "en": "Two pieces for a rook and a pawn is a bad trade for White here: ...Rxf7 and Black's minor pieces dominate.",
+  "es": "Dos piezas por torre y peón es un mal cambio para las blancas aquí: ...Txf7 y las piezas menores negras dominan."
+ },
+ "Nf6 Bc4 Bc5 O-O O-O a3 d6 b4 Bb6 Na4": {
+  "en": "The knight left e4 undefended: ...Nxe4.",
+  "es": "El caballo ha dejado e4 sin defensa: ...Cxe4."
+ },
+ "Nf6 d4 Bb4 dxe5 Nxe4 Bd3": {
+  "en": "...Nxc3 bxc3 Bxc3+ forks king and rook: Black wins the exchange.",
+  "es": "...Cxc3 bxc3 Axc3+ ataca rey y torre: las negras ganan la calidad."
+ },
+ "": {
+  "en": "The Four Knights: White develops calmly. ...Nf6 makes it symmetrical; then ...Bb4 or ...Bc5 and quick castling.",
+  "es": "Los Cuatro Caballos: las blancas desarrollan con calma. ...Cf6 lo hace simétrico; después ...Ab4 o ...Ac5 y enroque rápido."
+ }
+}

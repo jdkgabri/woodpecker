@@ -553,6 +553,13 @@ export const OPENINGS = [
         tree: { file: 'vs-closed-sicilian' },
       },
       {
+        id: 'hyper-dragon',
+        name: { en: 'Hyperaccelerated Dragon', es: 'Dragón Hiperacelerado' },
+        moves: 'e4 c5 Nf3 g6',
+        treeOnly: true,
+        tree: { file: 'hyper-dragon' },
+      },
+      {
         id: 'najdorf-english',
         tree: { file: 'najdorf-english' },
         name: { en: 'Najdorf: English Attack (6.Be3 e5)', es: 'Najdorf: Ataque Inglés (6.Ae3 e5)' },

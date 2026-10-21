@@ -1,0 +1,22 @@
+{
+ "Ne4": {
+  "en": "...Ne4 hits the bishop at once and stops Bxf6. Then ...c5 and ...Qb6 against b2, or ...d5.",
+  "es": "...Ce4 ataca el alfil de inmediato e impide Axf6. Después ...c5 y ...Db6 contra b2, o ...d5."
+ },
+ "Ne4 Nf3 d5 Bf4 e6 e3": {
+  "en": "...g5! chases the f4-bishop; with ...h5 next it can run out of squares.",
+  "es": "¡...g5! persigue el alfil de f4; con ...h5 después puede quedarse sin casillas."
+ },
+ "Ne4 Nf3 d5 Bh4 c5 c3 Qb6 b3": {
+  "en": "...Qh6! attacks the h4-bishop.",
+  "es": "¡...Dh6! ataca el alfil de h4."
+ },
+ "Ne4 Nf3 d5 Bh4 c5 e3 Qb6 b3": {
+  "en": "...Nc6: more pressure on d4, and the queen eyes b2 and the long diagonal.",
+  "es": "...Cc6: más presión sobre d4, y la dama apunta a b2 y a la gran diagonal."
+ },
+ "": {
+  "en": "The Trompowsky: ...Ne4 hits the bishop at once; ...c5 and ...Qb6 against b2 are typical ideas.",
+  "es": "El Trompowsky: ...Ce4 ataca el alfil de inmediato; ...c5 y ...Db6 contra b2 son ideas típicas."
+ }
+}

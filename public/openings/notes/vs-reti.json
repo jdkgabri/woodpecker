@@ -1,0 +1,14 @@
+{
+ "d5": {
+  "en": "...d5 takes the centre. Next ...Nf6 and ...c6, with the c8-bishop to f5 or g4 before ...e6.",
+  "es": "...d5 toma el centro. Siguen ...Cf6 y ...c6, con el alfil de c8 a f5 o g4 antes de ...e6."
+ },
+ "d5 e4": {
+  "en": "The Tennison Gambit: ...dxe4 and keep the pawn with ...Nf6, watching f7.",
+  "es": "El Gambito Tennison: ...dxe4 y conserva el peón con ...Cf6, vigilando f7."
+ },
+ "d5 e4 dxe4 Ng5 e6 Nc3": {
+  "en": "After ...e6 the g5-knight is loose: ...Qxg5.",
+  "es": "Tras ...e6 el caballo de g5 queda suelto: ...Dxg5."
+ }
+}

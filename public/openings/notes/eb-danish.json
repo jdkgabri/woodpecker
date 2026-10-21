@@ -1,0 +1,30 @@
+{
+ "exd4": {
+  "en": "Take the pawn. Against the Danish (c3), ...Nc6 and ...Nf6 or ...d5 develop and give the pawns back when it suits; against Qxd4, ...Nc6 gains time on the queen.",
+  "es": "Toma el peón. Contra el Danés (c3), ...Cc6 y ...Cf6 o ...d5 desarrollan y devuelven los peones cuando conviene; contra Dxd4, ...Cc6 gana tiempo sobre la dama."
+ },
+ "exd4 c3 Nc6 Bc4": {
+  "en": "...Nf6! attacks e4 and Black keeps the extra pawn.",
+  "es": "¡...Cf6! ataca e4 y las negras conservan el peón de más."
+ },
+ "exd4 c3 Nc6 Nf3 d5 e5": {
+  "en": "...dxc3: Black is two pawns up.",
+  "es": "...dxc3: las negras tienen dos peones de más."
+ },
+ "exd4 Bc4 Nc6 Nf3 Nf6 e5 d5 exf6 dxc4 fxg7": {
+  "en": "...Qe7+! forces the queens off, then ...Bxg7: Black stays a piece up.",
+  "es": "¡...De7+! fuerza el cambio de damas y luego ...Axg7: las negras siguen con una pieza de más."
+ },
+ "exd4 Nf3 Nc6 Bc4 Nf6 e5 d5 exf6": {
+  "en": "exf6? dxc4: Black wins a piece.",
+  "es": "¿exf6? dxc4: las negras ganan una pieza."
+ },
+ "exd4 Nf3 Nc6 Bc4 Nf6 e5 d5 exd6 Bxd6 Nxd4": {
+  "en": "...Nxd4! Bxf7+ Kxf7 Qxd4 only gives White two pawns for the piece.",
+  "es": "¡...Cxd4! Axf7+ Rxf7 Dxd4 solo da a las blancas dos peones por la pieza."
+ },
+ "": {
+  "en": "2.d4: take with ...exd4. Against the Danish (3.c3), ...d5 gives back the pawn and frees Black's game.",
+  "es": "2.d4: toma con ...exd4. Contra el Danés (3.c3), ...d5 devuelve el peón y libera el juego negro."
+ }
+}

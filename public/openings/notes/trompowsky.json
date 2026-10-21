@@ -1,0 +1,18 @@
+{
+ "Ne4 Bf4": {
+  "en": "The bishop stays active on f4; f3 next kicks the knight from e4.",
+  "es": "El alfil sigue activo en f4; luego f3 echa al caballo de e4."
+ },
+ "Ne4 Bf4 g5 Be5 f6": {
+  "en": "e3! and if ...fxe5?, Qh5 is mate.",
+  "es": "¡e3! y si ¿...fxe5?, Dh5 es mate."
+ },
+ "Ne4 Bf4 c5 f3 g5": {
+  "en": "Bxb8! Rxb8 fxe4: White wins a piece.",
+  "es": "¡Axb8! Txb8 fxe4: las blancas ganan una pieza."
+ },
+ "d5 Bxf6": {
+  "en": "Bxf6 doubles Black's pawns; e3, c4 or Nd2 and f4 follow with a solid centre.",
+  "es": "Axf6 dobla los peones negros; siguen e3, c4 o Cd2 y f4 con un centro sólido."
+ }
+}

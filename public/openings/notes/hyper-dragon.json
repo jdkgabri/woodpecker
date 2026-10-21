@@ -1,0 +1,30 @@
+{
+ "d4 cxd4": {
+  "en": "Take on d4. If Qxd4, ...Nf6 and ...Nc6 gain time on the queen; if Nxd4, ...Bg7 and ...Nc6 lead to Accelerated Dragon positions.",
+  "es": "Toma en d4. Si Dxd4, ...Cf6 y ...Cc6 ganan tiempo sobre la dama; si Cxd4, ...Ag7 y ...Cc6 llevan a posiciones del Dragón Acelerado."
+ },
+ "d4 cxd4 Qxd4 Nf6 e5 Nc6 Qd1 Ng4 Bf4": {
+  "en": "...Qb6! hits b2 and f2 at the same time.",
+  "es": "¡...Db6! ataca b2 y f2 a la vez."
+ },
+ "Nc3 Bg7 d4 cxd4 Nxd4 Nc6 Nxc6 bxc6 Bc4 d6 Qf3 Nf6 Bg5 O-O O-O-O": {
+  "en": "...Bg4! skewers the queen on f3 and the rook on d1.",
+  "es": "¡...Ag4! ensarta la dama de f3 y la torre de d1."
+ },
+ "Bc4 Bg7 Nc3 Nc6 Ng5 e6 Qf3": {
+  "en": "After ...e6 the g5-knight is loose on the d8–g5 diagonal: ...Qxg5.",
+  "es": "Tras ...e6 el caballo de g5 queda suelto en la diagonal d8–g5: ...Dxg5."
+ },
+ "d4 cxd4 Nxd4 Bg7 Nc3 Nc6 Be3 Nf6 f3 O-O Qd2 d5 exd5 Nxd5 Nxd5 Qxd5 O-O-O": {
+  "en": "O-O-O? drops the a2-pawn: ...Qxa2!, and the d4-knight is also under fire.",
+  "es": "¿O-O-O? pierde el peón de a2: ¡...Dxa2!, y el caballo de d4 también está bajo el fuego."
+ },
+ "Nc3 Bg7 d4 cxd4 Nxd4 Nc6 Be3 Nf6 Qd2 O-O f3 d5 O-O-O dxe4 Nxe4": {
+  "en": "...Nxe4! fxe4 Bxd4 Bxd4 Bg4: the bishop attacks the d1-rook and Black wins the exchange.",
+  "es": "¡...Cxe4! fxe4 Axd4 Axd4 Ag4: el alfil ataca la torre de d1 y las negras ganan la calidad."
+ },
+ "": {
+  "en": "The Hyperaccelerated Dragon: 2...g6 at once. Black keeps the option of ...Nc6, ...d6 or ...d5 depending on White's setup.",
+  "es": "El Dragón Hiperacelerado: 2...g6 de inmediato. Las negras mantienen la opción de ...Cc6, ...d6 o ...d5 según el esquema blanco."
+ }
+}

@@ -1114,6 +1114,10 @@ export const MORE_OPENINGS = [
       tree('eb-kings-gambit', { en: 'Against the King\'s Gambit (2.f4)', es: 'Contra el Gambito de Rey (2.f4)' }, 'e4 e5 f4'),
     
       tree('eb-ponziani', { en: 'Against the Ponziani (3.c3)', es: 'Contra la Ponziani (3.c3)' }, 'e4 e5 Nf3 Nc6 c3'),
+    
+      tree('eb-four-knights', { en: 'Against the Four Knights (3.Nc3)', es: 'Contra los Cuatro Caballos (3.Cc3)' }, 'e4 e5 Nf3 Nc6 Nc3'),
+    
+      tree('eb-danish', { en: 'Against the Centre Game and Danish Gambit (2.d4)', es: 'Contra el Centro y el Gambito Danés (2.d4)' }, 'e4 e5 d4'),
     ],
   },
   // ---- Against the London
@@ -1148,7 +1152,9 @@ export const MORE_OPENINGS = [
         es: ['e3, c3, Cd2, Ad3 y Cgf3: la pirámide sólida.', 'Db3 para contestar a ...Db6.', 'Ce5 y ataque en el flanco de rey.'],
       },
     },
-    lines: [tree('vs-london', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 Bf4')],
+    lines: [tree('vs-london', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 Bf4'),
+      tree('vs-trompowsky', { en: 'Against the Trompowsky (2.Bg5)', es: 'Contra el Trompowsky (2.Ag5)' }, 'd4 Nf6 Bg5'),
+    ],
   },
   // ---- Semi-Slav
   {
@@ -1353,5 +1359,73 @@ export const MORE_OPENINGS = [
       },
     },
     lines: [tree('reti', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'Nf3')],
+  },
+  // ---- Trompowsky
+  {
+    id: 'trompowsky', side: 'w', eco: 'A45', puzzles: 'trompowsky',
+    name: { en: 'Trompowsky Attack', es: 'Ataque Trompowsky' },
+    summary: {
+      en: '1.d4 Nf6 2.Bg5 — White threatens to double Black\'s pawns at once and avoids the big Indian theory.',
+      es: '1.d4 Cf6 2.Ag5: las blancas amenazan doblar los peones negros de inmediato y evitan la gran teoría india.',
+    },
+    intro: {
+      en: [
+        'After 2.Bg5 Black must decide at once: allow Bxf6, play ...Ne4, or ...e6 and ...d5.',
+        'White often gives the bishop for the knight to get a strong centre with e3/e4 and c3.',
+      ],
+      es: [
+        'Tras 2.Ag5 las negras deben decidir enseguida: permitir Axf6, jugar ...Ce4, o ...e6 y ...d5.',
+        'Las blancas a menudo entregan el alfil por el caballo para conseguir un centro fuerte con e3/e4 y c3.',
+      ],
+    },
+    structure: {
+      en: 'After Bxf6, Black has the bishop pair and doubled pawns; White has a lead in development and the centre.',
+      es: 'Tras Axf6, las negras tienen la pareja de alfiles y peones doblados; las blancas, ventaja en desarrollo y el centro.',
+    },
+    plans: {
+      w: {
+        en: ['Bxf6 when it damages the structure.', 'Against ...Ne4: Bf4 or Bh4 and f3.', 'e3, c3, Nd2 and a solid centre.'],
+        es: ['Axf6 cuando daña la estructura.', 'Contra ...Ce4: Af4 o Ah4 y f3.', 'e3, c3, Cd2 y un centro sólido.'],
+      },
+      b: {
+        en: ['...Ne4 hitting the bishop.', '...c5 and ...Qb6 against b2.', '...e6 and ...d5: solid.'],
+        es: ['...Ce4 atacando el alfil.', '...c5 y ...Db6 contra b2.', '...e6 y ...d5: sólido.'],
+      },
+    },
+    lines: [tree('trompowsky', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4 Nf6 Bg5')],
+  },
+  // ---- Against the Reti
+  {
+    id: 'vs-reti', side: 'b', eco: 'A04–A09', puzzles: 'vs-reti',
+    name: { en: 'Against 1.Nf3 (Réti)', es: 'Contra 1.Cf3 (Réti)' },
+    summary: {
+      en: '1.Nf3 d5 — a classical setup: ...d5, ...Nf6, ...c6 and ...Bg4 or ...Bf5, developing the light-squared bishop before ...e6.',
+      es: '1.Cf3 d5: un esquema clásico. ...d5, ...Cf6, ...c6 y ...Ag4 o ...Af5, desarrollando el alfil de casillas blancas antes de ...e6.',
+    },
+    intro: {
+      en: [
+        '1.Nf3 is flexible and can transpose to many openings. A simple, solid answer is the Slav-style setup with ...d5 and ...c6.',
+        'The key is the c8-bishop: develop it to f5 or g4 before closing it in with ...e6.',
+      ],
+      es: [
+        '1.Cf3 es flexible y puede transponer a muchas aperturas. Una respuesta sencilla y sólida es el esquema tipo Eslava con ...d5 y ...c6.',
+        'La clave es el alfil de c8: desarrollarlo a f5 o g4 antes de encerrarlo con ...e6.',
+      ],
+    },
+    structure: {
+      en: 'Black holds d5 with ...c6 and ...e6; White attacks it with c4 and a fianchetto.',
+      es: 'Las negras sostienen d5 con ...c6 y ...e6; las blancas lo atacan con c4 y un fianchetto.',
+    },
+    plans: {
+      b: {
+        en: ['...d5, ...Nf6, ...c6.', '...Bg4 or ...Bf5, then ...e6 and ...Nbd7.', 'Keep d5 solid against c4.'],
+        es: ['...d5, ...Cf6, ...c6.', '...Ag4 o ...Af5, después ...e6 y ...Cbd7.', 'Mantener d5 sólido frente a c4.'],
+      },
+      w: {
+        en: ['c4 and g3 with Bg2.', 'b3 and Bb2: a double fianchetto.', 'Transpose to a Catalan or an English.'],
+        es: ['c4 y g3 con Ag2.', 'b3 y Ab2: un doble fianchetto.', 'Transponer a una Catalana o una Inglesa.'],
+      },
+    },
+    lines: [tree('vs-reti', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'Nf3')],
   },
 ];
