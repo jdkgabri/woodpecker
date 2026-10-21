@@ -1,0 +1,26 @@
+{
+ "": {
+  "en": "The Alekhine for Black: 1...Nf6 provokes e5, and the knight jumps to d5. Black then hits the advanced centre with ...d6, ...Nb6 and ...g6 or ...Bg4.",
+  "es": "La Alekhine con negras: 1...Cf6 provoca e5, y el caballo salta a d5. Después las negras atacan el centro avanzado con ...d6, ...Cb6 y ...g6 o ...Ag4."
+ },
+ "e5 Nd5": {
+  "en": "The knight is safe on d5 for now; ...d6 next undermines e5.",
+  "es": "El caballo está seguro en d5 por ahora; ...d6 a continuación socava e5."
+ },
+ "e5 Nd5 d4 d6 c4 Nb6": {
+  "en": "The Four Pawns-style centre: White has space, Black has targets. ...dxe5, ...Nc6 and ...Bf5 or ...g6 put pressure on d4.",
+  "es": "Un centro tipo Cuatro Peones: las blancas tienen espacio y las negras objetivos. ...dxe5, ...Cc6 y ...Af5 o ...g6 presionan d4."
+ },
+ "e5 Nd5 d4 d6 Nf3 g6": {
+  "en": "The Modern Variation: ...g6 and ...Bg7 add pressure on the centre from the long diagonal.",
+  "es": "La Variante Moderna: ...g6 y ...Ag7 añaden presión sobre el centro desde la gran diagonal."
+ },
+ "e5 Nd5 Bc4 Nb6 Bxf7+": {
+  "en": "Bxf7+? is a known trick that fails: after ...Kxf7 Black has a piece for a pawn and the king tucks away on g8.",
+  "es": "Axf7+? es un truco conocido que falla: tras ...Rxf7 las negras tienen una pieza por un peón y el rey se refugia en g8."
+ },
+ "Nc3": {
+  "en": "Against 2.Nc3, ...d6 and ...g6 lead to Pirc-type positions.",
+  "es": "Contra 2.Cc3, ...d6 y ...g6 llevan a posiciones tipo Pirc."
+ }
+}

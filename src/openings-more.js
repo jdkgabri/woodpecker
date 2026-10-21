@@ -480,4 +480,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('pirc', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 d6 d4 Nf6 Nc3 g6')],
   },
+  // ---- alekhine
+  {
+    id: 'alekhine', side: 'b', eco: 'B02–B05', puzzles: 'alekhine',
+    name: { en: 'Alekhine Defence', es: 'Defensa Alekhine' },
+    summary: {
+      en: '1.e4 Nf6 — provoke White\'s pawns forward and attack them.',
+      es: '1.e4 Cf6 — provocar el avance de los peones blancos y atacarlos.',
+    },
+    intro: {
+      en: [
+        'After 1.e4 Nf6 2.e5 Nd5 the knight invites White to chase it with c4 and d4. White gains a huge centre, but it can become a target for ...d6 and pressure from Black\'s pieces.',
+        'The quiet Modern Variation (2.e5 Nd5 3.d4 d6 4.Nf3) is the most common at club level. Black usually develops with ...Bg4 or ...g6.',
+      ],
+      es: [
+        'Tras 1.e4 Cf6 2.e5 Cd5 el caballo invita a las blancas a perseguirlo con c4 y d4. Las blancas ganan un centro enorme, pero puede convertirse en un objetivo para ...d6 y la presión de las piezas negras.',
+        'La Variante Moderna, tranquila (2.e5 Cd5 3.d4 d6 4.Cf3), es la más común a nivel de club. Las negras suelen desarrollar con ...Ag4 o ...g6.',
+      ],
+    },
+    structure: {
+      en: 'White\'s pawns on d4 and e5 (sometimes c4 and f4) against Black\'s d6. Black trades on e5 and attacks d4; if White overextends, the centre collapses.',
+      es: 'Peones blancos en d4 y e5 (a veces c4 y f4) frente al d6 negro. Las negras cambian en e5 y atacan d4; si las blancas se extienden demasiado, el centro se derrumba.',
+    },
+    plans: {
+      b: {
+        en: ['...d6 to challenge e5.', '...Bg4 against the f3-knight to weaken d4.', 'Knights to b6 and c6, pressure on d4.'],
+        es: ['...d6 para discutir e5.', '...Ag4 contra el caballo de f3 para debilitar d4.', 'Caballos a b6 y c6, presión sobre d4.'],
+      },
+      w: {
+        en: ['Gain space with c4 and d4.', 'Keep the e5-pawn as a wedge.', 'Avoid overextending: develop before pushing f4.'],
+        es: ['Ganar espacio con c4 y d4.', 'Mantener el peón de e5 como cuña.', 'No extenderse demasiado: desarrollar antes de empujar f4.'],
+      },
+    },
+    lines: [tree('alekhine', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 Nf6')],
+  },
 ];
