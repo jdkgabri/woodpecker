@@ -798,7 +798,11 @@ OPENINGS.push(...MORE_OPENINGS);
 const GROUPED = [
   {
     id: 'philidor-lion', side: 'b', eco: 'C41, B07', from: ['philidor', 'black-lion'],
-    name: { en: 'Philidor and Black Lion', es: 'Philidor y Black Lion' },
+    name: { en: 'Philidor Defence', es: 'Defensa Philidor' },
+    partNames: {
+      philidor: { en: 'Classical Philidor (...exd4)', es: 'Philidor clásica (...exd4)' },
+      'black-lion': { en: 'Hanham setup / Black Lion', es: 'Esquema Hanham / Black Lion' },
+    },
     summary: {
       en: '...d6 and ...e5 against 1.e4: the classical Philidor with ...exd4, and the Black Lion setup (...Nbd7, ...e5, ...c6) with its kingside claw.',
       es: '...d6 y ...e5 contra 1.e4: la Philidor clásica con ...exd4 y el esquema Black Lion (...Cbd7, ...e5, ...c6) con su garra en el flanco de rey.',
@@ -847,17 +851,18 @@ const GROUPED = [
 ];
 export const OPENING_ALIAS = {};
 for (const g of GROUPED) {
-  const parts = g.from.map(id => OPENINGS.find(o => o.id === id)).filter(Boolean);
+  const found = g.from.map(id => OPENINGS.find(o => o.id === id)).filter(Boolean);
+  const parts = found.map(p => (g.partNames?.[p.id] ? { ...p, name: g.partNames[p.id] } : p));
   if (!parts.length) continue;
-  const at = OPENINGS.indexOf(parts[0]);
-  const { from, ...meta } = g;
+  const at = OPENINGS.indexOf(found[0]);
+  const { from, partNames, ...meta } = g;
   const merged = {
     ...meta, parts, puzzles: parts[0].puzzles,
     groupNames: Object.fromEntries(parts.filter(p => p.puzzles).map(p => [p.puzzles, p.name])),
     lines: parts.flatMap(p => p.lines.map(l => ({ ...l, puzzles: l.puzzles || p.puzzles, part: p.id }))),
     traps: parts.flatMap(p => (p.traps || []).map(l => ({ ...l, puzzles: l.puzzles || p.puzzles, part: p.id }))),
   };
-  for (const p of parts) { OPENINGS.splice(OPENINGS.indexOf(p), 1); OPENING_ALIAS[p.id] = g.id; }
+  for (const p of found) { OPENINGS.splice(OPENINGS.indexOf(p), 1); OPENING_ALIAS[p.id] = g.id; }
   OPENINGS.splice(Math.min(at, OPENINGS.length), 0, merged);
 }
 export const findOpening = id => OPENINGS.find(o => o.id === (OPENING_ALIAS[id] || id));
