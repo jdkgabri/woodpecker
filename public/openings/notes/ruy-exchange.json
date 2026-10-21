@@ -1,0 +1,34 @@
+{
+ "dxc6 O-O": {
+  "en": "White's long-term trump: 4 pawns against 3 on the kingside, while Black's queenside majority is doubled. The plan is d4 and, often, an endgame. Black has the bishop pair in return.",
+  "es": "La baza a largo plazo de las blancas: 4 peones contra 3 en el flanco de rey, mientras que la mayoría negra en el flanco de dama está doblada. El plan es d4 y, a menudo, un final. A cambio, las negras tienen la pareja de alfiles."
+ },
+ "dxc6 O-O Nf6": {
+  "en": "...Nf6? does not defend e5: Nxe5 wins a pawn.",
+  "es": "¿...Cf6? no defiende e5: Cxe5 gana un peón."
+ },
+ "dxc6 O-O Nf6 Nxe5 Bd6 Nf3": {
+  "en": "White threatens e5!, forking the bishop and the knight.",
+  "es": "Las blancas amenazan ¡e5!, atacando a la vez el alfil y el caballo."
+ },
+ "dxc6 O-O Nf6 Nxe5 Qd4 Nf3": {
+  "en": "The queen on d4 is attacked: anything else (like ...Nxe4?) loses it to Nxd4.",
+  "es": "La dama de d4 está atacada: cualquier otra cosa (como ¿...Cxe4?) la pierde por Cxd4."
+ },
+ "dxc6 O-O Bd6 d4 Bg4 dxe5 Bxe5": {
+  "en": "Without the pin on f3: Qxd8+ Rxd8 Nxe5 wins a piece.",
+  "es": "Sin la clavada en f3: Dxd8+ Txd8 Cxe5 gana una pieza."
+ },
+ "dxc6 O-O f6 d4 exd4 Nxd4 Bc5": {
+  "en": "Qh5+! g6 Qxc5: the check wins the loose bishop.",
+  "es": "¡Dh5+! g6 Dxc5: el jaque gana el alfil suelto."
+ },
+ "bxc6 d4 d6 dxe5 Bg4 O-O dxe5": {
+  "en": "Same idea: Qxd8+ Rxd8 Nxe5, and the pin on f3 is gone.",
+  "es": "La misma idea: Dxd8+ Txd8 Cxe5, y la clavada en f3 ha desaparecido."
+ },
+ "": {
+  "en": "The Exchange Variation: White gives the bishop pair to damage Black's structure and aims for a better endgame with the healthy kingside majority.",
+  "es": "La Variante del Cambio: las blancas entregan la pareja de alfiles para dañar la estructura negra y buscan un final mejor con su mayoría sana en el flanco de rey."
+ }
+}

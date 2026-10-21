@@ -1,0 +1,46 @@
+{
+ "O-O": {
+  "en": "Castle and ignore the e4-pawn for now: if ...Nxe4, Re1 wins it back with a lead in development.",
+  "es": "Enroca y no te preocupes por el peón de e4 de momento: si ...Cxe4, Te1 lo recupera con ventaja en desarrollo."
+ },
+ "O-O Bc5": {
+  "en": "Nxe5! uses a fork trick: if ...Nxe5, d4 regains the piece with a strong centre.",
+  "es": "¡Cxe5! usa un truco de horquilla: si ...Cxe5, d4 recupera la pieza con un centro fuerte."
+ },
+ "O-O Bc5 Nxe5 Nxe5 d4 Bd6": {
+  "en": "...Bd6? lets the pawns roll: dxe5 Bxe5 f4, and e5 next hits the f6-knight.",
+  "es": "¿...Ad6? deja avanzar los peones: dxe5 Axe5 f4, y luego e5 ataca el caballo de f6."
+ },
+ "O-O Bc5 Nxe5 Bxf2+": {
+  "en": "After Rxf2 Nxe5, d4! gains time on the knight and White gets a big centre and the bishop pair.",
+  "es": "Tras Txf2 Cxe5, ¡d4! gana tiempo sobre el caballo y las blancas obtienen un gran centro y la pareja de alfiles."
+ },
+ "O-O Nxe4 Re1": {
+  "en": "The e4-knight is attacked. After ...Nd6, Ba4 keeps the bishop and the pressure; the black king is still in the centre and Nxe5 comes next.",
+  "es": "El caballo de e4 está atacado. Tras ...Cd6, Aa4 conserva el alfil y la presión; el rey negro sigue en el centro y luego llega Cxe5."
+ },
+ "O-O d6 Re1": {
+  "en": "A Steinitz-style setup: White keeps the pressure with d4 and c3; the e5-pawn is under constant tension.",
+  "es": "Un esquema tipo Steinitz: las blancas mantienen la presión con d4 y c3; el peón de e5 está bajo tensión constante."
+ },
+ "O-O a6 Bxc6": {
+  "en": "...a6 wastes a tempo here: after Bxc6 and Nxe5 White simply wins a pawn.",
+  "es": "...a6 aquí pierde un tiempo: tras Axc6 y Cxe5 las blancas simplemente ganan un peón."
+ },
+ "O-O a6 Bxc6 dxc6 Nxe5 Bd6 Nf3": {
+  "en": "White threatens e5!, forking the bishop and the knight.",
+  "es": "Las blancas amenazan ¡e5!, atacando a la vez el alfil y el caballo."
+ },
+ "O-O a6 Bxc6 dxc6 Nxe5 Qd4 Nf3": {
+  "en": "The queen on d4 is attacked: anything else (like ...Nxe4?) loses it to Nxd4.",
+  "es": "La dama de d4 está atacada: cualquier otra cosa (como ¿...Cxe4?) la pierde por Cxd4."
+ },
+ "O-O a6 Bxc6 bxc6 Nxe5 Nxe4": {
+  "en": "Re1! attacks the e4-knight, and ...d5 d3 leaves it without a comfortable square: White wins material.",
+  "es": "¡Te1! ataca el caballo de e4, y tras ...d5 d3 se queda sin una casilla cómoda: las blancas ganan material."
+ },
+ "": {
+  "en": "The Berlin: Black counterattacks e4. After O-O Nxe4 d4 the famous Berlin endgame can arise.",
+  "es": "La Berlinesa: las negras contraatacan e4. Tras O-O Cxe4 d4 puede surgir el famoso final berlinés."
+ }
+}

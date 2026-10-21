@@ -1,0 +1,26 @@
+{
+ "d4 b5": {
+  "en": "The main Open Ruy: ...b5 and ...d5 keep the e4-knight. White aims for dxe5, c3 and Nbd2 to challenge it.",
+  "es": "La Española Abierta principal: ...b5 y ...d5 sostienen el caballo de e4. Las blancas buscan dxe5, c3 y Cbd2 para desafiarlo."
+ },
+ "d4 b5 Bb3 exd4 Re1 d5 Nc3": {
+  "en": "Nc3! attacks the pinned e4-knight; after ...dxc3? Bxd5 White wins it back, and the knight on e4 falls.",
+  "es": "¡Cc3! ataca el caballo clavado de e4; tras ¿...dxc3? Axd5 las blancas recuperan la pieza y el caballo de e4 cae."
+ },
+ "d4 b5 Bb3 d6 dxe5 Nxe5": {
+  "en": "Nxe5 dxe5 Bxf7+! Ke7 Qxd8+: White wins material.",
+  "es": "Cxe5 dxe5 ¡Axf7+! Re7 Dxd8+: las blancas ganan material."
+ },
+ "d4 exd4 Re1 f5 Nxd4 Nxd4": {
+  "en": "Qxd4 and the e4-knight is attacked twice.",
+  "es": "Dxd4 y el caballo de e4 está atacado dos veces."
+ },
+ "d4 exd4 Re1 f5 Nxd4 Nxd4 Qxd4 Bc5": {
+  "en": "The bishop on c5 is unprotected: Qxc5.",
+  "es": "El alfil de c5 está sin defender: Dxc5."
+ },
+ "": {
+  "en": "The Open Ruy Lopez: Black takes on e4 and gets active pieces; White hits back with d4 and Re1.",
+  "es": "La Española Abierta: las negras toman en e4 y consiguen piezas activas; las blancas contraatacan con d4 y Te1."
+ }
+}

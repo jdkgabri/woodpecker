@@ -104,7 +104,17 @@ export const MORE_OPENINGS = [
         es: ['Sostener e5 con ...d6 o contraatacar con ...Cf6 y ...d5.', 'Ganar espacio en el flanco de dama con ...a6 y ...b5, echando al alfil.', 'En la Berlinesa, cambiar damas y defender un final sólido.'],
       },
     },
-    lines: [tree('ruy', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nf3 Nc6 Bb5')],
+    lines: [tree('ruy', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nf3 Nc6 Bb5'),
+      tree('ruy-closed', { en: 'Closed Ruy Lopez', es: 'Española Cerrada' }, 'e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O'),
+    
+      tree('ruy-berlin', { en: 'Berlin Defence', es: 'Defensa Berlinesa' }, 'e4 e5 Nf3 Nc6 Bb5 Nf6'),
+    
+      tree('ruy-exchange', { en: 'Exchange Variation', es: 'Variante del Cambio' }, 'e4 e5 Nf3 Nc6 Bb5 a6 Bxc6'),
+    
+      tree('ruy-open', { en: 'Open Variation', es: 'Variante Abierta' }, 'e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4'),
+    
+      tree('ruy-marshall', { en: 'Anti-Marshall', es: 'Anti-Marshall' }, 'e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O'),
+    ],
   },
   // ---- london
   {
