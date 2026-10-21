@@ -847,5 +847,466 @@ export default {
     "es": "Las negras tienen torre y peón por dos piezas menores, y presión en la columna f. Una posición dinámica y equilibrada."
    }
   }
+ },
+ "vienna": {
+  "moves": "e4 e5 Nc3",
+  "notes": {
+   "1": {
+    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+   },
+   "2": {
+    "en": "Black claims an equal share of the centre.",
+    "es": "Las negras reclaman su parte del centro."
+   },
+   "3": {
+    "en": "The Vienna: Nc3 protects e4 and prepares f4. Against ...Nf6 the plan is the Vienna Gambit (f4); against ...Nc6, Bc4 and Nf3 with a slow kingside build-up. See the other lines.",
+    "es": "La Vienesa: Cc3 protege e4 y prepara f4. Contra ...Cf6 el plan es el Gambito Vienés (f4); contra ...Cc6, Ac4 y Cf3 con un ataque lento en el flanco de rey. Mira las otras líneas."
+   }
+  }
+ },
+ "vienna-gambit": {
+  "moves": "e4 e5 Nc3 Nf6 f4 exf4 e5 Ng8 Nf3 d6 d4 dxe5 Qe2 Nc6 Bxf4 Be7 dxe5",
+  "notes": {
+   "1": {
+    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+   },
+   "2": {
+    "en": "Black claims an equal share of the centre.",
+    "es": "Las negras reclaman su parte del centro."
+   },
+   "3": {
+    "en": "The Vienna: Nc3 protects e4 and prepares f4, keeping the f-pawn free (unlike 2.Nf3).",
+    "es": "La Vienesa: Cc3 protege e4 y prepara f4, dejando libre el peón f (a diferencia de 2.Cf3)."
+   },
+   "4": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "5": {
+    "en": "The Vienna Gambit: f4 opens the f-file and fights for e5.",
+    "es": "El Gambito Vienés: f4 abre la columna f y lucha por e5."
+   },
+   "6": {
+    "en": "Taking is natural but risky: the knight will be kicked.",
+    "es": "Tomar es natural pero arriesgado: el caballo será perseguido."
+   },
+   "7": {
+    "en": "e5 kicks the f6-knight.",
+    "es": "e5 echa al caballo de f6."
+   },
+   "8": {
+    "en": "The knight has to go back home: White gains a lot of time.",
+    "es": "El caballo tiene que volver a casa: las blancas ganan mucho tiempo."
+   },
+   "9": {
+    "en": "Development, preparing d4 and Bxf4.",
+    "es": "Desarrollo, preparando d4 y Axf4."
+   },
+   "10": {
+    "en": "...d6 strikes at e5.",
+    "es": "...d6 golpea e5."
+   },
+   "11": {
+    "en": "White builds the centre.",
+    "es": "Las blancas construyen el centro."
+   },
+   "13": {
+    "en": "Qe2 pins Black's e5-pawn against the black king: ...exd4 is not possible, and White will win the gambit pawn back.",
+    "es": "De2 clava el peón negro de e5 contra el rey negro: ...exd4 no es posible, y las blancas recuperarán el peón del gambito."
+   },
+   "14": {
+    "en": "Development, attacking d4.",
+    "es": "Desarrollo, atacando d4."
+   },
+   "15": {
+    "en": "White wins the gambit pawn back.",
+    "es": "Las blancas recuperan el peón del gambito."
+   },
+   "17": {
+    "en": "White has a big lead in development and the open lines: a clear advantage.",
+    "es": "Las blancas tienen una gran ventaja en desarrollo y las líneas abiertas: una ventaja clara."
+   }
+  }
+ },
+ "vienna-nc6": {
+  "moves": "e4 e5 Nc3 Nc6 Bc4 Nf6 Nf3 Bc5 d3 d6 h3 h6 a3 a6 Be3 Bxe3 fxe3 O-O g4",
+  "notes": {
+   "1": {
+    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+   },
+   "2": {
+    "en": "Black claims an equal share of the centre.",
+    "es": "Las negras reclaman su parte del centro."
+   },
+   "3": {
+    "en": "The Vienna: Nc3 protects e4 and prepares f4, keeping the f-pawn free (unlike 2.Nf3).",
+    "es": "La Vienesa: Cc3 protege e4 y prepara f4, dejando libre el peón f (a diferencia de 2.Cf3)."
+   },
+   "4": {
+    "en": "...Nc6 defends e5 and prepares ...Nf6 or ...Bc5.",
+    "es": "...Cc6 defiende e5 y prepara ...Cf6 o ...Ac5."
+   },
+   "5": {
+    "en": "Bc4 aims at f7.",
+    "es": "Ac4 apunta a f7."
+   },
+   "6": {
+    "en": "Development, attacking e4.",
+    "es": "Desarrollo, atacando e4."
+   },
+   "7": {
+    "en": "Nf3: a quiet Italian-style setup.",
+    "es": "Cf3: un esquema tranquilo al estilo de la Italiana."
+   },
+   "8": {
+    "en": "Black mirrors with ...Bc5.",
+    "es": "Las negras copian con ...Ac5."
+   },
+   "9": {
+    "en": "d3 protects e4 and opens the c1-bishop.",
+    "es": "d3 protege e4 y abre el alfil de c1."
+   },
+   "11": {
+    "en": "h3 stops ...Bg4 and ...Ng4 and prepares g4.",
+    "es": "h3 impide ...Ag4 y ...Cg4 y prepara g4."
+   },
+   "13": {
+    "en": "a3 gives the c4-bishop a retreat on a2.",
+    "es": "a3 da al alfil de c4 una retirada en a2."
+   },
+   "15": {
+    "en": "White offers the trade of the dark-squared bishops.",
+    "es": "Las blancas ofrecen el cambio de los alfiles de casillas negras."
+   },
+   "17": {
+    "en": "fxe3 opens the f-file for the rook and controls d4 and f4.",
+    "es": "fxe3 abre la columna f para la torre y controla d4 y f4."
+   },
+   "19": {
+    "en": "g4 starts the kingside attack (g5 next), with the king still in the centre: a typical plan in these quiet lines.",
+    "es": "g4 inicia el ataque en el flanco de rey (luego g5), con el rey aún en el centro: un plan típico en estas líneas tranquilas."
+   }
+  }
+ },
+ "london": {
+  "moves": "d4 d5 Bf4 Nf6 e3 e6 Nf3 Bd6 c3",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+   },
+   "2": {
+    "en": "Black takes his share of the centre.",
+    "es": "Las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The London System: the bishop comes out before e3 closes it in. White will build the c3–d4–e3 pyramid.",
+    "es": "El Sistema London: el alfil sale antes de que e3 lo encierre. Las blancas construirán la pirámide c3–d4–e3."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "e3 supports d4 and opens the f1-bishop.",
+    "es": "e3 apoya d4 y abre el alfil de f1."
+   },
+   "6": {
+    "en": "...e6: a solid Queen's Gambit-style setup.",
+    "es": "...e6: un esquema sólido al estilo del Gambito de Dama."
+   },
+   "8": {
+    "en": "...Bd6 offers to trade the strong London bishop.",
+    "es": "...Ad6 ofrece cambiar el fuerte alfil de la London."
+   },
+   "9": {
+    "en": "c3 completes the pyramid. If ...Bxf4, exf4 gives White control of e5 and a half-open e-file. Next: Bd3, Nbd2 and O-O.",
+    "es": "c3 completa la pirámide. Si ...Axf4, exf4 da a las blancas el control de e5 y la columna e semiabierta. Siguen Ad3, Cbd2 y O-O."
+   }
+  }
+ },
+ "london-d5": {
+  "moves": "d4 d5 Bf4 Nf6 e3 e6 Nf3 Bd6 c3 Bxf4 exf4 O-O Bd3",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+   },
+   "2": {
+    "en": "Black takes his share of the centre.",
+    "es": "Las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The London System: the bishop comes out before e3 closes it in. White will build the c3–d4–e3 pyramid.",
+    "es": "El Sistema London: el alfil sale antes de que e3 lo encierre. Las blancas construirán la pirámide c3–d4–e3."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "e3 supports d4 and opens the f1-bishop.",
+    "es": "e3 apoya d4 y abre el alfil de f1."
+   },
+   "6": {
+    "en": "...e6: a solid setup.",
+    "es": "...e6: un esquema sólido."
+   },
+   "8": {
+    "en": "...Bd6 offers to trade the London bishop.",
+    "es": "...Ad6 ofrece cambiar el alfil de la London."
+   },
+   "9": {
+    "en": "c3 keeps everything protected and allows the trade.",
+    "es": "c3 lo mantiene todo protegido y permite el cambio."
+   },
+   "11": {
+    "en": "exf4: the doubled pawns are not a weakness here. White controls e5 and gets the half-open e-file.",
+    "es": "exf4: los peones doblados no son una debilidad aquí. Las blancas controlan e5 y obtienen la columna e semiabierta."
+   },
+   "13": {
+    "en": "Bd3 aims at h7. Plans: Nbd2, O-O, Ne5 and a kingside attack with Qf3–h3 or g4.",
+    "es": "Ad3 apunta a h7. Planes: Cbd2, O-O, Ce5 y ataque en el flanco de rey con Df3–h3 o g4."
+   }
+  }
+ },
+ "london-kid": {
+  "moves": "d4 Nf6 Bf4 g6 e3 Bg7 Nf3 O-O h3 d6 c3 Nbd7 Be2 Re8 O-O e5 dxe5 dxe5 Nxe5 Nxe5 Qxd8 Rxd8 Bxe5",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+   },
+   "2": {
+    "en": "...Nf6 keeps options open.",
+    "es": "...Cf6 mantiene las opciones abiertas."
+   },
+   "3": {
+    "en": "The London System: the bishop comes out before e3 closes it in. White will build the c3–d4–e3 pyramid.",
+    "es": "El Sistema London: el alfil sale antes de que e3 lo encierre. Las blancas construirán la pirámide c3–d4–e3."
+   },
+   "4": {
+    "en": "A King's Indian setup against the London.",
+    "es": "Un esquema de India de Rey contra la London."
+   },
+   "5": {
+    "en": "The pyramid: e3, then c3, Nf3 and h3.",
+    "es": "La pirámide: e3, y después c3, Cf3 y h3."
+   },
+   "9": {
+    "en": "h3 gives the f4-bishop a retreat on h2 if Black plays ...Nh5.",
+    "es": "h3 da al alfil de f4 una retirada en h2 si las negras juegan ...Ch5."
+   },
+   "11": {
+    "en": "c3 completes the solid centre.",
+    "es": "c3 completa el centro sólido."
+   },
+   "13": {
+    "en": "Development: castling comes next.",
+    "es": "Desarrollo: luego llega el enroque."
+   },
+   "14": {
+    "en": "...Re8 prepares ...e5.",
+    "es": "...Te8 prepara ...e5."
+   },
+   "16": {
+    "en": "...e5: Black strikes in the centre, but here it is premature.",
+    "es": "...e5: las negras golpean en el centro, pero aquí es prematuro."
+   },
+   "17": {
+    "en": "dxe5 opens the d-file and the f4-bishop's diagonal.",
+    "es": "dxe5 abre la columna d y la diagonal del alfil de f4."
+   },
+   "19": {
+    "en": "Nxe5! The e5-pawn was not really protected.",
+    "es": "¡Cxe5! El peón de e5 no estaba realmente protegido."
+   },
+   "21": {
+    "en": "White trades queens first...",
+    "es": "Las blancas cambian damas primero..."
+   },
+   "23": {
+    "en": "...and Bxe5: White is a clean pawn up.",
+    "es": "...y Axe5: las blancas tienen un peón de más limpio."
+   }
+  }
+ },
+ "english": {
+  "moves": "c4 e5 Nc3 Nf6 g3 d5 cxd5 Nxd5 Bg2 Nxc3 bxc3 Nc6 Nf3",
+  "notes": {
+   "1": {
+    "en": "The English Opening: White controls d5 from the side and keeps the centre flexible.",
+    "es": "La Apertura Inglesa: las blancas controlan d5 desde el lado y mantienen el centro flexible."
+   },
+   "2": {
+    "en": "1...e5 takes the centre: a reversed Sicilian, with White a tempo up.",
+    "es": "1...e5 toma el centro: una Siciliana invertida, con un tiempo de más para las blancas."
+   },
+   "3": {
+    "en": "The knight fights for d5.",
+    "es": "El caballo lucha por d5."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "The fianchetto: the g2-bishop will be the key piece on the long diagonal.",
+    "es": "El fianchetto: el alfil de g2 será la pieza clave en la gran diagonal."
+   },
+   "6": {
+    "en": "...d5 takes space, as in an Open Sicilian with colours reversed.",
+    "es": "...d5 gana espacio, como en una Siciliana Abierta con colores invertidos."
+   },
+   "7": {
+    "en": "White exchanges to open the long diagonal.",
+    "es": "Las blancas cambian para abrir la gran diagonal."
+   },
+   "9": {
+    "en": "The bishop presses on d5 and the queenside.",
+    "es": "El alfil presiona d5 y el flanco de dama."
+   },
+   "10": {
+    "en": "Black trades knights.",
+    "es": "Las negras cambian caballos."
+   },
+   "11": {
+    "en": "bxc3 strengthens the centre (d4 later) and opens the b-file for the rook.",
+    "es": "bxc3 refuerza el centro (d4 más tarde) y abre la columna b para la torre."
+   },
+   "12": {
+    "en": "Development, defending e5.",
+    "es": "Desarrollo, defendiendo e5."
+   },
+   "13": {
+    "en": "Nf3 attacks e5. White has the long diagonal and the b-file; Black has the centre.",
+    "es": "Cf3 ataca e5. Las blancas tienen la gran diagonal y la columna b; las negras, el centro."
+   }
+  }
+ },
+ "english-e5": {
+  "moves": "c4 e5 Nc3 Nf6 g3 d5 cxd5 Nxd5 Bg2 Nxc3 bxc3 Nc6 Nf3 Bd6 d3",
+  "notes": {
+   "1": {
+    "en": "The English Opening: White controls d5 from the side and keeps the centre flexible.",
+    "es": "La Apertura Inglesa: las blancas controlan d5 desde el lado y mantienen el centro flexible."
+   },
+   "2": {
+    "en": "1...e5 takes the centre: a reversed Sicilian, with White a tempo up.",
+    "es": "1...e5 toma el centro: una Siciliana invertida, con un tiempo de más para las blancas."
+   },
+   "3": {
+    "en": "The knight fights for d5.",
+    "es": "El caballo lucha por d5."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "The fianchetto: the g2-bishop will be the key piece on the long diagonal.",
+    "es": "El fianchetto: el alfil de g2 será la pieza clave en la gran diagonal."
+   },
+   "6": {
+    "en": "...d5 takes space, as in an Open Sicilian with colours reversed.",
+    "es": "...d5 gana espacio, como en una Siciliana Abierta con colores invertidos."
+   },
+   "7": {
+    "en": "White exchanges to open the long diagonal.",
+    "es": "Las blancas cambian para abrir la gran diagonal."
+   },
+   "9": {
+    "en": "The bishop presses on d5 and the queenside.",
+    "es": "El alfil presiona d5 y el flanco de dama."
+   },
+   "10": {
+    "en": "Black trades knights.",
+    "es": "Las negras cambian caballos."
+   },
+   "11": {
+    "en": "bxc3 strengthens the centre (d4 later) and opens the b-file for the rook.",
+    "es": "bxc3 refuerza el centro (d4 más tarde) y abre la columna b para la torre."
+   },
+   "12": {
+    "en": "Development, defending e5.",
+    "es": "Desarrollo, defendiendo e5."
+   },
+   "13": {
+    "en": "Nf3 attacks e5. White has the long diagonal and the b-file; Black has the centre.",
+    "es": "Cf3 ataca e5. Las blancas tienen la gran diagonal y la columna b; las negras, el centro."
+   },
+   "14": {
+    "en": "...Bd6 defends e5.",
+    "es": "...Ad6 defiende e5."
+   },
+   "15": {
+    "en": "d3, then O-O, Rb1 and a4–a5: White plays on the queenside and the long diagonal.",
+    "es": "d3, y después O-O, Tb1 y a4–a5: las blancas juegan en el flanco de dama y en la gran diagonal."
+   }
+  }
+ },
+ "english-symmetrical": {
+  "moves": "c4 c5 Nc3 Nc6 g3 g6 Bg2 Bg7 Nf3 Nf6 O-O O-O d4 cxd4 Nxd4 Nxd4 Qxd4 d6 Qd3 Rb8 Be3",
+  "notes": {
+   "1": {
+    "en": "The English Opening: White controls d5 from the side and keeps the centre flexible.",
+    "es": "La Apertura Inglesa: las blancas controlan d5 desde el lado y mantienen el centro flexible."
+   },
+   "2": {
+    "en": "The Symmetrical English: Black copies White.",
+    "es": "La Inglesa Simétrica: las negras copian a las blancas."
+   },
+   "3": {
+    "en": "The knight controls d5.",
+    "es": "El caballo controla d5."
+   },
+   "5": {
+    "en": "The fianchetto.",
+    "es": "El fianchetto."
+   },
+   "7": {
+    "en": "The g2-bishop on the long diagonal.",
+    "es": "El alfil de g2 en la gran diagonal."
+   },
+   "9": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "11": {
+    "en": "White castles.",
+    "es": "Las blancas enrocan."
+   },
+   "13": {
+    "en": "d4: White breaks the symmetry and opens the centre.",
+    "es": "d4: las blancas rompen la simetría y abren el centro."
+   },
+   "15": {
+    "en": "The knight recaptures.",
+    "es": "El caballo recaptura."
+   },
+   "17": {
+    "en": "The queen centralises, eyeing the long diagonal.",
+    "es": "La dama se centraliza, mirando la gran diagonal."
+   },
+   "18": {
+    "en": "...d6 opens the c8-bishop.",
+    "es": "...d6 abre el alfil de c8."
+   },
+   "19": {
+    "en": "The queen steps back from the g7-bishop's diagonal.",
+    "es": "La dama se aparta de la diagonal del alfil de g7."
+   },
+   "20": {
+    "en": "...Rb8 prepares ...a6 and ...b5.",
+    "es": "...Tb8 prepara ...a6 y ...b5."
+   },
+   "21": {
+    "en": "Be3: White has more space and the d-file; Black counts on ...b5.",
+    "es": "Ae3: las blancas tienen más espacio y la columna d; las negras confían en ...b5."
+   }
+  }
  }
 };
