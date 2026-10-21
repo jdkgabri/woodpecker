@@ -5426,8 +5426,8 @@ export default {
     "es": "...y las negras vuelven a tomar."
    },
    "11": {
-    "en": "Qf3 attacks the e4-knight and b7.",
-    "es": "Df3 ataca el caballo de e4 y b7."
+    "en": "Qf3 attacks the e4-knight; once it is gone, the queen will also eye b7.",
+    "es": "Df3 ataca el caballo de e4; cuando este desaparezca, la dama apuntará también a b7."
    },
    "12": {
     "en": "Black trades.",
