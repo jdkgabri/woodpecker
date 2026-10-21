@@ -3314,5 +3314,343 @@ export default {
     "es": "Las negras enrocan: las piezas activas y la pareja de alfiles compensan el agujero de d5. Una posición rica y equilibrada."
    }
   }
+ },
+ "sicilian-all": {
+  "moves": "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Bg5 Nbd7",
+  "notes": {
+   "2": {
+    "en": "The Sicilian: Black fights for d4 from the side and creates an unbalanced game.",
+    "es": "La Siciliana: las negras luchan por d4 desde el lado y crean una partida desequilibrada."
+   },
+   "3": {
+    "en": "The knight develops and prepares d4.",
+    "es": "El caballo desarrolla y prepara d4."
+   },
+   "4": {
+    "en": "...d6 prepares ...Nf6 without allowing e5.",
+    "es": "...d6 prepara ...Cf6 sin permitir e5."
+   },
+   "5": {
+    "en": "The Open Sicilian: White opens the centre.",
+    "es": "La Siciliana Abierta: las blancas abren el centro."
+   },
+   "6": {
+    "en": "Black trades the c-pawn for White's d-pawn: two central pawns against one.",
+    "es": "Las negras cambian el peón c por el peón d blanco: dos peones centrales contra uno."
+   },
+   "7": {
+    "en": "The knight recaptures in the centre.",
+    "es": "El caballo recaptura en el centro."
+   },
+   "8": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "9": {
+    "en": "Nc3 protects e4.",
+    "es": "Cc3 protege e4."
+   },
+   "10": {
+    "en": "The Najdorf: ...a6, a flexible move that controls b5. See the Najdorf and Dragon lines for the details.",
+    "es": "La Najdorf: ...a6, una jugada flexible que controla b5. Mira las líneas de la Najdorf y el Dragón para los detalles."
+   },
+   "11": {
+    "en": "Bg5, the sharpest answer.",
+    "es": "Ag5, la respuesta más aguda."
+   },
+   "12": {
+    "en": "...Nbd7 supports the f6-knight and prepares ...e6 and ...Qc7.",
+    "es": "...Cbd7 apoya el caballo de f6 y prepara ...e6 y ...Dc7."
+   }
+  }
+ },
+ "scheveningen": {
+  "moves": "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 e6 Bg5 a6 f4 Be7 Qf3 Nc6 O-O-O Nxd4 Rxd4 Qc7",
+  "notes": {
+   "2": {
+    "en": "The Sicilian: Black fights for d4 from the side and creates an unbalanced game.",
+    "es": "La Siciliana: las negras luchan por d4 desde el lado y crean una partida desequilibrada."
+   },
+   "3": {
+    "en": "The knight develops and prepares d4.",
+    "es": "El caballo desarrolla y prepara d4."
+   },
+   "4": {
+    "en": "...d6 prepares ...Nf6.",
+    "es": "...d6 prepara ...Cf6."
+   },
+   "5": {
+    "en": "The Open Sicilian: White opens the centre.",
+    "es": "La Siciliana Abierta: las blancas abren el centro."
+   },
+   "6": {
+    "en": "Black trades the c-pawn for White's d-pawn: two central pawns against one.",
+    "es": "Las negras cambian el peón c por el peón d blanco: dos peones centrales contra uno."
+   },
+   "7": {
+    "en": "The knight recaptures in the centre.",
+    "es": "El caballo recaptura en el centro."
+   },
+   "8": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "9": {
+    "en": "Nc3 protects e4.",
+    "es": "Cc3 protege e4."
+   },
+   "10": {
+    "en": "The Scheveningen: the small centre e6–d6, solid and flexible.",
+    "es": "La Scheveningen: el pequeño centro e6–d6, sólido y flexible."
+   },
+   "11": {
+    "en": "Bg5 pins the knight.",
+    "es": "Ag5 clava el caballo."
+   },
+   "12": {
+    "en": "...a6 controls b5.",
+    "es": "...a6 controla b5."
+   },
+   "13": {
+    "en": "f4 prepares e5 and a kingside attack.",
+    "es": "f4 prepara e5 y un ataque en el flanco de rey."
+   },
+   "14": {
+    "en": "...Be7 unpins.",
+    "es": "...Ae7 deshace la clavada."
+   },
+   "15": {
+    "en": "Qf3 supports e5 and prepares long castling.",
+    "es": "Df3 apoya e5 y prepara el enroque largo."
+   },
+   "16": {
+    "en": "Development, pressing d4.",
+    "es": "Desarrollo, presionando d4."
+   },
+   "17": {
+    "en": "Opposite castling: a race of attacks is coming.",
+    "es": "Enroques opuestos: llega una carrera de ataques."
+   },
+   "18": {
+    "en": "...Nxd4 trades a pair of knights.",
+    "es": "...Cxd4 cambia un par de caballos."
+   },
+   "20": {
+    "en": "...Qc7 and ...b5 next: Black counterattacks on the queenside. White has more space; Black is solid.",
+    "es": "...Dc7 y luego ...b5: las negras contraatacan en el flanco de dama. Las blancas tienen más espacio; las negras están sólidas."
+   }
+  }
+ },
+ "vs-grand-prix": {
+  "moves": "e4 c5 Nc3 Nc6 f4 g6 Nf3 Bg7 Bb5 Nd4 O-O e6 d3 Ne7 Nxd4 Bxd4+",
+  "notes": {
+   "2": {
+    "en": "The Sicilian: Black fights for d4 from the side and creates an unbalanced game.",
+    "es": "La Siciliana: las negras luchan por d4 desde el lado y crean una partida desequilibrada."
+   },
+   "3": {
+    "en": "Nc3: the Closed or Grand Prix move order.",
+    "es": "Cc3: el orden de jugadas de la Cerrada o del Grand Prix."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "The Grand Prix Attack: f4 prepares a kingside attack.",
+    "es": "El Ataque Grand Prix: f4 prepara un ataque en el flanco de rey."
+   },
+   "6": {
+    "en": "...g6 and ...Bg7: the bishop will be strong on the long diagonal.",
+    "es": "...g6 y ...Ag7: el alfil será fuerte en la gran diagonal."
+   },
+   "8": {
+    "en": "The fianchetto.",
+    "es": "El fianchetto."
+   },
+   "9": {
+    "en": "Bb5 pins the knight.",
+    "es": "Ab5 clava el caballo."
+   },
+   "10": {
+    "en": "...Nd4 offers to trade the pinned knight and hits b5.",
+    "es": "...Cd4 ofrece cambiar el caballo clavado y ataca b5."
+   },
+   "12": {
+    "en": "...e6 controls f5 and d5.",
+    "es": "...e6 controla f5 y d5."
+   },
+   "14": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "16": {
+    "en": "...Bxd4+ with check: White's king feels the long diagonal. Black is comfortable.",
+    "es": "...Axd4+ con jaque: el rey blanco nota la gran diagonal. Las negras están cómodas."
+   }
+  }
+ },
+ "vs-moscow": {
+  "moves": "e4 c5 Nf3 d6 Bb5+ Bd7 Bxd7+ Nxd7 O-O Ngf6 Re1 g6 c3 Bg7 d4 cxd4 cxd4 e5",
+  "notes": {
+   "2": {
+    "en": "The Sicilian: Black fights for d4 from the side and creates an unbalanced game.",
+    "es": "La Siciliana: las negras luchan por d4 desde el lado y crean una partida desequilibrada."
+   },
+   "3": {
+    "en": "The knight develops.",
+    "es": "El caballo desarrolla."
+   },
+   "4": {
+    "en": "...d6 prepares ...Nf6.",
+    "es": "...d6 prepara ...Cf6."
+   },
+   "5": {
+    "en": "The Moscow: Bb5+ develops with check.",
+    "es": "La Moscú: Ab5+ desarrolla con jaque."
+   },
+   "6": {
+    "en": "...Bd7 blocks and offers the trade of light-squared bishops.",
+    "es": "...Ad7 tapa y ofrece el cambio de alfiles de casillas blancas."
+   },
+   "8": {
+    "en": "Recapture with the knight.",
+    "es": "Recaptura con el caballo."
+   },
+   "10": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "12": {
+    "en": "The fianchetto.",
+    "es": "El fianchetto."
+   },
+   "13": {
+    "en": "c3 prepares d4.",
+    "es": "c3 prepara d4."
+   },
+   "16": {
+    "en": "Black opens the c-file.",
+    "es": "Las negras abren la columna c."
+   },
+   "18": {
+    "en": "...e5 hits the centre. White has a little more space; Black is solid.",
+    "es": "...e5 golpea el centro. Las blancas tienen algo más de espacio; las negras están sólidas."
+   }
+  }
+ },
+ "vs-closed-sicilian": {
+  "moves": "e4 c5 Nc3 Nc6 g3 g6 Bg2 Bg7 d3 d6 Be3 e6 Qd2 Nge7 Bh6 Bxh6 Qxh6 Nd4",
+  "notes": {
+   "2": {
+    "en": "The Sicilian: Black fights for d4 from the side and creates an unbalanced game.",
+    "es": "La Siciliana: las negras luchan por d4 desde el lado y crean una partida desequilibrada."
+   },
+   "3": {
+    "en": "Nc3: the Closed Sicilian.",
+    "es": "Cc3: la Siciliana Cerrada."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "White fianchettoes.",
+    "es": "Las blancas hacen el fianchetto."
+   },
+   "6": {
+    "en": "Mirror the setup.",
+    "es": "Copia el esquema."
+   },
+   "8": {
+    "en": "The bishop on the long diagonal.",
+    "es": "El alfil en la gran diagonal."
+   },
+   "10": {
+    "en": "...d6 opens the c8-bishop.",
+    "es": "...d6 abre el alfil de c8."
+   },
+   "11": {
+    "en": "Be3 and Qd2 aim at Bh6.",
+    "es": "Ae3 y Dd2 buscan Ah6."
+   },
+   "12": {
+    "en": "...e6 and ...Nge7 keep the king safe.",
+    "es": "...e6 y ...Cge7 mantienen seguro al rey."
+   },
+   "14": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "15": {
+    "en": "White trades the g7-bishop.",
+    "es": "Las blancas cambian el alfil de g7."
+   },
+   "18": {
+    "en": "...Nd4 occupies the central outpost: the h6-queen is far from the queenside, where Black plays ...Rb8 and ...b5.",
+    "es": "...Cd4 ocupa el puesto central: la dama de h6 está lejos del flanco de dama, donde las negras juegan ...Tb8 y ...b5."
+   }
+  }
+ },
+ "hyper-dragon": {
+  "moves": "e4 c5 Nf3 g6 d4 cxd4 Nxd4 Bg7 Nc3 Nc6 Be3 Nf6 f3 O-O Qd2 d5 Nxc6 bxc6 e5 Ne8",
+  "notes": {
+   "2": {
+    "en": "The Sicilian: Black fights for d4 from the side and creates an unbalanced game.",
+    "es": "La Siciliana: las negras luchan por d4 desde el lado y crean una partida desequilibrada."
+   },
+   "3": {
+    "en": "The knight develops and prepares d4.",
+    "es": "El caballo desarrolla y prepara d4."
+   },
+   "4": {
+    "en": "The Hyperaccelerated Dragon: ...g6 at once.",
+    "es": "El Dragón Hiperacelerado: ...g6 de inmediato."
+   },
+   "5": {
+    "en": "The Open Sicilian: White opens the centre.",
+    "es": "La Siciliana Abierta: las blancas abren el centro."
+   },
+   "6": {
+    "en": "Black trades the c-pawn for White's d-pawn: two central pawns against one.",
+    "es": "Las negras cambian el peón c por el peón d blanco: dos peones centrales contra uno."
+   },
+   "7": {
+    "en": "The knight recaptures in the centre.",
+    "es": "El caballo recaptura en el centro."
+   },
+   "8": {
+    "en": "The dragon bishop.",
+    "es": "El alfil del dragón."
+   },
+   "10": {
+    "en": "Development, hitting d4.",
+    "es": "Desarrollo, atacando d4."
+   },
+   "12": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "14": {
+    "en": "Castle first.",
+    "es": "Primero enroca."
+   },
+   "16": {
+    "en": "...d5! in one move: the point of the early ...g6.",
+    "es": "¡...d5! de una vez: la gracia del ...g6 temprano."
+   },
+   "18": {
+    "en": "Take towards the centre.",
+    "es": "Captura hacia el centro."
+   },
+   "19": {
+    "en": "e5 kicks the knight.",
+    "es": "e5 echa al caballo."
+   },
+   "20": {
+    "en": "...Ne8 heads for c7; ...f6 next attacks the e5-pawn. Black's centre is strong.",
+    "es": "...Ce8 va hacia c7; luego ...f6 ataca el peón de e5. El centro negro es fuerte."
+   }
+  }
  }
 };
