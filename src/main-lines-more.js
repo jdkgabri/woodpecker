@@ -1638,5 +1638,251 @@ export default {
     "es": "Ag5 clava el caballo: las blancas tienen más espacio y una clara ventaja en desarrollo."
    }
   }
+ },
+ "catalan": {
+  "moves": "d4 Nf6 c4 e6 g3 d5 Bg2 c6 Nf3 Be7 O-O O-O Qc2 Nbd7 Nbd2 b6 e4 dxe4 Nxe4",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+   },
+   "2": {
+    "en": "Development, controlling e4.",
+    "es": "Desarrollo, controlando e4."
+   },
+   "3": {
+    "en": "c4 gains space and attacks d5 from the side.",
+    "es": "c4 gana espacio y ataca d5 desde el lado."
+   },
+   "4": {
+    "en": "...e6 prepares ...d5 or ...Bb4.",
+    "es": "...e6 prepara ...d5 o ...Ab4."
+   },
+   "5": {
+    "en": "The Catalan: the bishop will go to g2, aiming at d5 and the queenside.",
+    "es": "La Catalana: el alfil irá a g2, apuntando a d5 y al flanco de dama."
+   },
+   "6": {
+    "en": "...d5: a Queen's Gambit structure.",
+    "es": "...d5: una estructura de Gambito de Dama."
+   },
+   "7": {
+    "en": "The Catalan bishop on the long diagonal.",
+    "es": "El alfil catalán en la gran diagonal."
+   },
+   "8": {
+    "en": "...c6 reinforces d5 and blunts the g2-bishop.",
+    "es": "...c6 refuerza d5 y neutraliza el alfil de g2."
+   },
+   "9": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "11": {
+    "en": "White castles.",
+    "es": "Las blancas enrocan."
+   },
+   "13": {
+    "en": "Qc2 supports e4.",
+    "es": "Dc2 apoya e4."
+   },
+   "14": {
+    "en": "...Nbd7 prepares ...b6 and ...Bb7.",
+    "es": "...Cbd7 prepara ...b6 y ...Ab7."
+   },
+   "15": {
+    "en": "Nbd2 supports e4 too.",
+    "es": "Cbd2 también apoya e4."
+   },
+   "16": {
+    "en": "...b6 prepares the fianchetto of the c8-bishop.",
+    "es": "...b6 prepara el fianchetto del alfil de c8."
+   },
+   "17": {
+    "en": "e4! White takes the centre before Black has finished developing.",
+    "es": "¡e4! Las blancas toman el centro antes de que las negras terminen el desarrollo."
+   },
+   "19": {
+    "en": "Nxe4: White has a strong centre, active pieces and pressure on the long diagonal. A clear edge.",
+    "es": "Cxe4: las blancas tienen un centro fuerte, piezas activas y presión en la gran diagonal. Una ventaja clara."
+   }
+  }
+ },
+ "colle": {
+  "moves": "d4 d5 Nf3 Nf6 e3 e6 Bd3 c5 c3",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+   },
+   "2": {
+    "en": "Black takes his share of the centre.",
+    "es": "Las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "The Colle: e3 prepares Bd3 and a slow build-up.",
+    "es": "El Colle: e3 prepara Ad3 y una construcción lenta."
+   },
+   "6": {
+    "en": "...e6: a solid setup.",
+    "es": "...e6: un esquema sólido."
+   },
+   "7": {
+    "en": "The bishop aims at h7.",
+    "es": "El alfil apunta a h7."
+   },
+   "8": {
+    "en": "...c5 hits d4 before White can play e4.",
+    "es": "...c5 golpea d4 antes de que las blancas puedan jugar e4."
+   },
+   "9": {
+    "en": "c3 supports d4. Next: Nbd2, O-O, and the e4 break when it is well prepared (Re1 or Qe2 first).",
+    "es": "c3 apoya d4. Siguen: Cbd2, O-O y la ruptura e4 cuando esté bien preparada (antes Te1 o De2)."
+   }
+  }
+ },
+ "reti": {
+  "moves": "Nf3 d5 c4 dxc4 e3 b5 b3",
+  "notes": {
+   "1": {
+    "en": "1.Nf3: a flexible first move. White controls e5 and d4 and waits to see Black's setup.",
+    "es": "1.Cf3: una primera jugada flexible. Las blancas controlan e5 y d4 y esperan a ver el esquema negro."
+   },
+   "2": {
+    "en": "Black takes the centre.",
+    "es": "Las negras toman el centro."
+   },
+   "3": {
+    "en": "The Réti: c4 attacks d5 from the side.",
+    "es": "La Réti: c4 ataca d5 desde el lado."
+   },
+   "4": {
+    "en": "Black takes the pawn.",
+    "es": "Las negras toman el peón."
+   },
+   "5": {
+    "en": "e3 prepares Bxc4.",
+    "es": "e3 prepara Axc4."
+   },
+   "6": {
+    "en": "...b5 tries to keep the extra pawn.",
+    "es": "...b5 intenta conservar el peón de más."
+   },
+   "7": {
+    "en": "b3! undermines the pawn chain at once: after ...cxb3 axb3 White gets open lines and the pawn back; if ...c3, d4 or Nxc3 follows. White is better.",
+    "es": "¡b3! socava la cadena de peones de inmediato: tras ...cxb3 axb3 las blancas obtienen líneas abiertas y recuperan el peón; si ...c3, sigue d4 o Cxc3. Las blancas están mejor."
+   }
+  }
+ },
+ "trompowsky": {
+  "moves": "d4 Nf6 Bg5 e6 e3 Be7 Bxf6",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+   },
+   "2": {
+    "en": "Development, controlling e4.",
+    "es": "Desarrollo, controlando e4."
+   },
+   "3": {
+    "en": "The Trompowsky: the bishop threatens to double Black's pawns.",
+    "es": "El Trompowsky: el alfil amenaza doblar los peones negros."
+   },
+   "4": {
+    "en": "...e6 lets Black recapture with the queen.",
+    "es": "...e6 permite a las negras recapturar con la dama."
+   },
+   "5": {
+    "en": "e3 supports d4 and opens the f1-bishop.",
+    "es": "e3 apoya d4 y abre el alfil de f1."
+   },
+   "6": {
+    "en": "...Be7 unpins.",
+    "es": "...Ae7 deshace la clavada."
+   },
+   "7": {
+    "en": "Bxf6: White gives the bishop pair for a lead in development and a solid centre; c3, Nd2 and Bd3 follow. A balanced, simple game.",
+    "es": "Axf6: las blancas ceden la pareja de alfiles a cambio de desarrollo y un centro sólido; siguen c3, Cd2 y Ad3. Una partida equilibrada y sencilla."
+   }
+  }
+ },
+ "jobava": {
+  "moves": "d4 d5 Nc3 Nf6 Bf4 e6 Nb5",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+   },
+   "2": {
+    "en": "Black takes his share of the centre.",
+    "es": "Las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The Jobava London: Nc3 instead of the usual c3.",
+    "es": "La London Jobava: Cc3 en lugar del habitual c3."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "The London bishop comes out.",
+    "es": "Sale el alfil de la London."
+   },
+   "6": {
+    "en": "...e6 is natural, but it allows the typical jump.",
+    "es": "...e6 es natural, pero permite el salto típico."
+   },
+   "7": {
+    "en": "Nb5! threatens Nxc7+ with the f4-bishop's help. Black must defend with ...Na6 or ...Bd6 (Bxd6 cxd6).",
+    "es": "¡Cb5! amenaza Cxc7+ con la ayuda del alfil de f4. Las negras deben defender con ...Ca6 o ...Ad6 (Axd6 cxd6)."
+   }
+  }
+ },
+ "kia": {
+  "moves": "Nf3 d5 g3 Nc6 d4 Nf6 Bg2 Bg4 Ne5",
+  "notes": {
+   "1": {
+    "en": "1.Nf3: a flexible first move. White controls e5 and d4 and waits to see Black's setup.",
+    "es": "1.Cf3: una primera jugada flexible. Las blancas controlan e5 y d4 y esperan a ver el esquema negro."
+   },
+   "2": {
+    "en": "Black takes the centre.",
+    "es": "Las negras toman el centro."
+   },
+   "3": {
+    "en": "The KIA setup begins: the bishop goes to g2.",
+    "es": "Empieza el esquema del AIR: el alfil irá a g2."
+   },
+   "4": {
+    "en": "...Nc6 prepares ...e5.",
+    "es": "...Cc6 prepara ...e5."
+   },
+   "5": {
+    "en": "Against ...Nc6, d4 is more effective than the usual d3: it stops ...e5.",
+    "es": "Contra ...Cc6, d4 es más eficaz que el habitual d3: impide ...e5."
+   },
+   "6": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "7": {
+    "en": "The fianchetto.",
+    "es": "El fianchetto."
+   },
+   "8": {
+    "en": "...Bg4 pins the knight.",
+    "es": "...Ag4 clava el caballo."
+   },
+   "9": {
+    "en": "Ne5! hits the g4-bishop and the c6-knight: White wins time and gets a clear advantage.",
+    "es": "¡Ce5! ataca el alfil de g4 y el caballo de c6: las blancas ganan tiempo y obtienen una ventaja clara."
+   }
+  }
  }
 };
