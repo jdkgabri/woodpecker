@@ -71,6 +71,19 @@ GROUPS = {
     'albin': ('b', has('Queens_Gambit_Declined_Albin_Countergambit')),
     'colle': ('w', has('Queens_Pawn_Game_Colle_System', 'Queens_Pawn_Game_Zukertort_Variation')),
     'philidor': ('b', has('Philidor_Defense', exclude=('Philidor_Defense_Lion_Variation',))),
+    'open-games-black': ('b', has('Italian_Game', 'Ruy_Lopez', 'Scotch_Game', 'Vienna_Game', 'Vienna_Gambit', 'Kings_Gambit', 'Four_Knights_Game')),
+    'modern': ('b', has('Modern_Defense')),
+    'vs-london': ('b', has('Queens_Pawn_Game_London_System', 'Queens_Pawn_Game_Accelerated_London_System', 'London_System', 'Indian_Defense_London_System', 'Indian_Defense_Accelerated_London_System')),
+    'semi-slav': ('b', has('Semi-Slav_Defense')),
+    'benoni': ('b', has('Benoni_Defense')),
+    'bogo-indian': ('b', has('Bogo-Indian_Defense')),
+    'qga-black': ('b', has('Queens_Gambit_Accepted')),
+    'vs-english': ('b', has('English_Opening')),
+    'vs-reti': ('b', has('Zukertort_Opening', 'Reti_Opening')),
+    'kia': ('w', has('Kings_Indian_Attack', 'French_Defense_Kings_Indian_Attack')),
+    'reti': ('w', has('Reti_Opening', 'Zukertort_Opening')),
+    'trompowsky': ('w', has('Trompowsky_Attack')),
+    'jobava': ('w', has('Rapport-Jobava_System')),
 }
 
 random.seed(20261021)
