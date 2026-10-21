@@ -1,0 +1,58 @@
+{
+ "": {
+  "en": "The Ruy Lopez: 3.Bb5 attacks the defender of e5. White castles, plays Re1, c3 and d4 and keeps a lasting initiative. These are the replies club players choose and the best answer to each.",
+  "es": "La Española: 3.Ab5 ataca al defensor de e5. Las blancas enrocan, juegan Te1, c3 y d4 y mantienen una iniciativa duradera. Estas son las respuestas que eligen los jugadores de club y la mejor contestación a cada una."
+ },
+ "a6 Ba4": {
+  "en": "The bishop keeps the pin-like pressure on c6. Taking on c6 at once (the Exchange Variation) is the other option.",
+  "es": "El alfil mantiene la presión sobre c6. Tomar en c6 de inmediato (Variante del Cambio) es la otra opción."
+ },
+ "a6 Ba4 Nf6 O-O": {
+  "en": "Castle first: e4 is indirectly protected (after ...Nxe4, Re1 wins it back).",
+  "es": "Primero enrocar: e4 está protegido indirectamente (tras ...Cxe4, Te1 lo recupera)."
+ },
+ "a6 Ba4 Nf6 O-O Be7 Re1": {
+  "en": "The Closed Ruy Lopez. Re1 protects e4, and c3, h3 and d4 follow.",
+  "es": "La Española Cerrada. Te1 protege e4, y siguen c3, h3 y d4."
+ },
+ "a6 Ba4 Nf6 O-O Be7 Re1 O-O Bxc6": {
+  "en": "Castling before ...b5 drops a pawn: Bxc6 dxc6 Nxe5, because e4 is protected by the rook.",
+  "es": "Enrocar antes de ...b5 pierde un peón: Axc6 dxc6 Cxe5, porque e4 está protegido por la torre."
+ },
+ "a6 Ba4 Nf6 O-O b5 Bb3": {
+  "en": "The bishop settles on b3, aiming at f7. Re1, c3 and d4 build the ideal centre.",
+  "es": "El alfil se instala en b3, apuntando a f7. Te1, c3 y d4 montan el centro ideal."
+ },
+ "a6 Ba4 Nf6 O-O b5 Bb3 Nxe4 Re1": {
+  "en": "Re1 hits the knight on the open e-file and wins back the pawn with the better game.",
+  "es": "Te1 ataca el caballo en la columna e abierta y recupera el peón con mejor juego."
+ },
+ "a6 Ba4 Nf6 O-O b5 Bb3 d6 Re1 Na5 d4": {
+  "en": "...Na5 goes for the bishop; d4 strikes in the centre first.",
+  "es": "...Ca5 va a por el alfil; d4 golpea primero en el centro."
+ },
+ "Nf6": {
+  "en": "The Berlin Defence: Black counterattacks e4.",
+  "es": "La Defensa Berlinesa: las negras contraatacan e4."
+ },
+ "Nf6 O-O Nxe4 Re1": {
+  "en": "Re1 attacks the e4-knight and pins along the e-file; White regains the pawn.",
+  "es": "Te1 ataca el caballo de e4 y presiona en la columna e; las blancas recuperan el peón."
+ },
+ "Nf6 O-O a6 Bxc6": {
+  "en": "...a6 here is too late: Bxc6 removes the defender of e5 and Nxe5 wins a pawn.",
+  "es": "...a6 aquí llega tarde: Axc6 elimina al defensor de e5 y Cxe5 gana un peón."
+ },
+ "Nf6 O-O Bc5 c3": {
+  "en": "c3 prepares d4, gaining time on the c5-bishop.",
+  "es": "c3 prepara d4, ganando tiempo sobre el alfil de c5."
+ },
+ "d6": {
+  "en": "The Steinitz Defence: solid but passive. White keeps the pressure with Ba4, O-O and d4.",
+  "es": "La Defensa Steinitz: sólida pero pasiva. Las blancas mantienen la presión con Aa4, O-O y d4."
+ },
+ "Bc5": {
+  "en": "The Classical (Cordel) Defence. White castles and prepares c3 and d4.",
+  "es": "La Defensa Clásica (Cordel). Las blancas enrocan y preparan c3 y d4."
+ }
+}

@@ -72,4 +72,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('scotch', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nf3 Nc6 d4')],
   },
+  // ---- ruy
+  {
+    id: 'ruy-lopez', side: 'w', eco: 'C60–C99', puzzles: 'ruy-lopez',
+    name: { en: 'Ruy Lopez (Spanish Game)', es: 'Apertura Española (Ruy López)' },
+    summary: {
+      en: '1.e4 e5 2.Nf3 Nc6 3.Bb5 — slow, lasting pressure on e5 and one of the richest openings in chess.',
+      es: '1.e4 e5 2.Cf3 Cc6 3.Ab5 — presión lenta y duradera sobre e5; una de las aperturas más ricas del ajedrez.',
+    },
+    intro: {
+      en: [
+        'With 3.Bb5 White attacks the knight that defends e5. There is no immediate threat (after Bxc6 and Nxe5 Black wins the pawn back with ...Qd4), but the pressure stays for the whole game and Black has to keep an eye on the centre.',
+        'Most club players answer 3...a6 (Morphy Defence), 3...Nf6 (Berlin) or 3...Bc5. White usually castles, plays Re1, c3 and d4 and builds a big centre; the bishop retreats to a4 and b3, where it aims at f7.',
+      ],
+      es: [
+        'Con 3.Ab5 las blancas atacan el caballo que defiende e5. No hay amenaza inmediata (tras Axc6 y Cxe5 las negras recuperan el peón con ...Dd4), pero la presión dura toda la partida y las negras deben vigilar el centro.',
+        'La mayoría de jugadores de club responden 3...a6 (Defensa Morphy), 3...Cf6 (Berlinesa) o 3...Ac5. Las blancas suelen enrocar, jugar Te1, c3 y d4 y montar un gran centro; el alfil se retira a a4 y b3, desde donde apunta a f7.',
+      ],
+    },
+    structure: {
+      en: 'The typical structure is e4–d4 (supported by c3) against e5–d6. If Black keeps e5, White gains space with d5 and attacks on the kingside; if Black gives up the centre with ...exd4, White gets free piece play.',
+      es: 'La estructura típica es e4–d4 (apoyado por c3) contra e5–d6. Si las negras mantienen e5, las blancas ganan espacio con d5 y atacan en el flanco de rey; si las negras ceden el centro con ...exd4, las blancas consiguen juego libre de piezas.',
+    },
+    plans: {
+      w: {
+        en: ['Castle, Re1, c3 and d4 to build the ideal centre.', 'Keep the bishop on the a2–g8 diagonal (b3, later c2) aiming at the black king.', 'The knight goes Nbd2–f1–g3 towards the kingside.'],
+        es: ['Enrocar, Te1, c3 y d4 para montar el centro ideal.', 'Mantener el alfil en la diagonal a2–g8 (b3, más tarde c2) apuntando al rey negro.', 'El caballo va Cbd2–f1–g3 hacia el flanco de rey.'],
+      },
+      b: {
+        en: ['Hold e5 with ...d6 or counterattack with ...Nf6 and ...d5.', 'Gain queenside space with ...a6 and ...b5, kicking the bishop.', 'In the Berlin, trade queens and defend a solid endgame.'],
+        es: ['Sostener e5 con ...d6 o contraatacar con ...Cf6 y ...d5.', 'Ganar espacio en el flanco de dama con ...a6 y ...b5, echando al alfil.', 'En la Berlinesa, cambiar damas y defender un final sólido.'],
+      },
+    },
+    lines: [tree('ruy', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nf3 Nc6 Bb5')],
+  },
 ];
