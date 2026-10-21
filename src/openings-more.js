@@ -1238,4 +1238,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('qga-black', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 c4 dxc4')],
   },
+  // ---- Against the English
+  {
+    id: 'vs-english', side: 'b', eco: 'A20–A29', puzzles: 'vs-english',
+    name: { en: 'Against the English (1...e5)', es: 'Contra la Inglesa (1...e5)' },
+    summary: {
+      en: '1.c4 e5 — a reversed Sicilian: Black takes the centre and develops with ...Nf6, ...Nc6 and ...Bb4 or ...d5.',
+      es: '1.c4 e5: una Siciliana invertida. Las negras toman el centro y desarrollan con ...Cf6, ...Cc6 y ...Ab4 o ...d5.',
+    },
+    intro: {
+      en: [
+        'Against 1.c4 the simplest plan is to occupy the centre with ...e5. White usually fianchettoes (g3, Bg2) and fights for d5.',
+        'Black develops naturally and chooses between ...d5, ...Bb4 or a King\'s Indian setup with ...g6.',
+      ],
+      es: [
+        'Contra 1.c4 el plan más sencillo es ocupar el centro con ...e5. Las blancas suelen hacer el fianchetto (g3, Ag2) y luchan por d5.',
+        'Las negras desarrollan con naturalidad y eligen entre ...d5, ...Ab4 o un esquema india de rey con ...g6.',
+      ],
+    },
+    structure: {
+      en: 'Black\'s e5-pawn against White\'s c4: the fight is for d5 and d4.',
+      es: 'El peón negro de e5 contra el blanco de c4: la lucha es por d5 y d4.',
+    },
+    plans: {
+      b: {
+        en: ['...Nf6, ...Nc6, ...Bb4 or ...Bc5.', '...d5 when White allows it.', 'Kingside space with ...f5 in closed lines.'],
+        es: ['...Cf6, ...Cc6, ...Ab4 o ...Ac5.', '...d5 cuando las blancas lo permitan.', 'Espacio en el flanco de rey con ...f5 en las líneas cerradas.'],
+      },
+      w: {
+        en: ['g3, Bg2, Nc3: control of d5.', 'Queenside expansion with a3, b4.', 'd3 and a slow build-up.'],
+        es: ['g3, Ag2, Cc3: control de d5.', 'Expansión en el flanco de dama con a3, b4.', 'd3 y una construcción lenta.'],
+      },
+    },
+    lines: [tree('vs-english', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'c4')],
+  },
 ];

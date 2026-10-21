@@ -1,0 +1,18 @@
+{
+ "e5": {
+  "en": "Take the centre: 1...e5 turns the English into a reversed Sicilian. Develop with ...Nf6 and ...Nc6, then ...Bc5 or ...Bb4, or ...d5 when White allows it.",
+  "es": "Toma el centro: 1...e5 convierte la Inglesa en una Siciliana invertida. Desarrolla con ...Cf6 y ...Cc6, después ...Ac5 o ...Ab4, o ...d5 cuando las blancas lo permitan."
+ },
+ "e5 Nc3 Nf6 e4 Nc6 d3 Bc5 Nf3": {
+  "en": "...Ng4! and f2 is attacked by the knight and the c5-bishop.",
+  "es": "¡...Cg4! y f2 queda atacado por el caballo y el alfil de c5."
+ },
+ "e5 Nc3 Nf6 Nf3 Nc6 e3 Bb4 a3": {
+  "en": "...Bxc3: White's pawns are doubled, and ...e4 can kick the f3-knight next.",
+  "es": "...Axc3: los peones blancos quedan doblados, y luego ...e4 puede echar al caballo de f3."
+ },
+ "e5 g3 Nf6 Bg2 Nc6 e3": {
+  "en": "e3 is slow: ...d5! takes the whole centre.",
+  "es": "e3 es lento: ¡...d5! se queda con todo el centro."
+ }
+}
