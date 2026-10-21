@@ -1,0 +1,50 @@
+{
+ "": {
+  "en": "The King's Gambit: 2.f4 offers a pawn to deflect e5, build a centre with d4 and open the f-file. Nf3 first (to stop ...Qh4+), then d4, Bc4 and quick development.",
+  "es": "El Gambito de Rey: 2.f4 ofrece un peón para desviar e5, montar un centro con d4 y abrir la columna f. Primero Cf3 (para evitar ...Dh4+), luego d4, Ac4 y desarrollo rápido."
+ },
+ "exf4 Nf3": {
+  "en": "Nf3 stops ...Qh4+ and prepares d4.",
+  "es": "Cf3 evita ...Dh4+ y prepara d4."
+ },
+ "exf4 Nf3 g5": {
+  "en": "Black holds the f4-pawn with ...g5. White builds the centre with d4 and later undermines g5 with h4.",
+  "es": "Las negras sostienen el peón de f4 con ...g5. Las blancas montan el centro con d4 y más tarde socavan g5 con h4."
+ },
+ "exf4 Nf3 g5 d4 g4": {
+  "en": "...g4 kicks the knight; White develops with Nc3 and Bxf4 ideas, and the open lines make up for the material.",
+  "es": "...g4 echa al caballo; las blancas desarrollan con Cc3 e ideas de Axf4, y las líneas abiertas compensan el material."
+ },
+ "exf4 Nf3 d6 Bc4 Bg4 d4": {
+  "en": "Against ...Bg4, d4 and the open f-file: if ...Bxf3, Qxf3 brings the queen into the attack on f7.",
+  "es": "Contra ...Ag4, d4 y la columna f abierta: si ...Axf3, Dxf3 lleva la dama al ataque contra f7."
+ },
+ "exf4 Nf3 d6 Bc4 h6 d4 g5": {
+  "en": "Black keeps the pawn; White plays Nc3, O-O and h4 to break the chain.",
+  "es": "Las negras conservan el peón; las blancas juegan Cc3, O-O y h4 para romper la cadena."
+ },
+ "exf4 Nf3 Nc6 d4 d5 exd5 Qxd5 Nc3": {
+  "en": "Nc3 gains time on the queen; White will win back f4 with Bxf4.",
+  "es": "Cc3 gana tiempo sobre la dama; las blancas recuperarán f4 con Axf4."
+ },
+ "exf4 Nf3 Nc6 d4 d6 Bxf4": {
+  "en": "The gambit pawn is back and White has the ideal centre.",
+  "es": "El peón del gambito ha vuelto y las blancas tienen el centro ideal."
+ },
+ "Nc6 Nf3 Bc5 Nxe5": {
+  "en": "...Bc5? leaves e5 without enough protection: Nxe5 wins a pawn.",
+  "es": "...Ac5? deja e5 sin suficiente protección: Cxe5 gana un peón."
+ },
+ "d6": {
+  "en": "Declining with ...d6 is solid but passive: d4 grabs the centre.",
+  "es": "Rehusar con ...d6 es sólido pero pasivo: d4 ocupa el centro."
+ },
+ "d6 d4 exf4 Bxf4": {
+  "en": "Taking only now gives White the f4-pawn back with the bishop developed: an ideal centre.",
+  "es": "Tomar solo ahora devuelve el peón de f4 con el alfil desarrollado: un centro ideal."
+ },
+ "d5": {
+  "en": "The Falkbeer-style counter-gambit ...d5. Nf3 keeps things calm; if ...dxe4, Nxe5 regains the pawn with a good game.",
+  "es": "El contragambito ...d5 al estilo Falkbeer. Cf3 mantiene la calma; si ...dxe4, Cxe5 recupera el peón con buen juego."
+ }
+}
