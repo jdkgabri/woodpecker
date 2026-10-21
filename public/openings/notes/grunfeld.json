@@ -1,0 +1,30 @@
+{
+ "": {
+  "en": "The Grünfeld for Black: 3...d5 lets White build a big centre and then attacks it with ...Bg7, ...c5, ...Nc6 and ...Bg4. Dynamic and principled.",
+  "es": "La Grünfeld con negras: 3...d5 deja que las blancas monten un gran centro y luego lo ataca con ...Ag7, ...c5, ...Cc6 y ...Ag4. Dinámica y de principios."
+ },
+ "d5 cxd5 Nxd5 e4 Nxc3 bxc3": {
+  "en": "The Exchange Variation: White has the ideal centre c3–d4–e4. Black's targets are d4 and c3.",
+  "es": "La Variante del Cambio: las blancas tienen el centro ideal c3–d4–e4. Los objetivos negros son d4 y c3."
+ },
+ "d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7": {
+  "en": "The g7-bishop already hits c3 and d4. Next ...c5, ...O-O and ...Nc6 or ...Qa5.",
+  "es": "El alfil de g7 ya ataca c3 y d4. Después ...c5, ...O-O y ...Cc6 o ...Da5."
+ },
+ "d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7 Bc4 c5": {
+  "en": "Against Bc4 and Ne2, the usual plan is ...O-O, ...Nc6 and ...Bg4 or ...Qc7, pressing on d4.",
+  "es": "Contra Ac4 y Ce2, el plan habitual es ...O-O, ...Cc6 y ...Ag4 o ...Dc7, presionando d4."
+ },
+ "d5 Nf3 Bg7": {
+  "en": "Against quieter setups, develop and castle: ...O-O, then ...c5 or ...dxc4.",
+  "es": "Contra esquemas más tranquilos, desarrolla y enroca: ...O-O, y luego ...c5 o ...dxc4."
+ },
+ "d5 Bg5 Bg7": {
+  "en": "Against Bg5, ...Bg7 and ...c5 or ...Ne4 hit back in the centre.",
+  "es": "Contra Ag5, ...Ag7 y ...c5 o ...Ce4 contraatacan en el centro."
+ },
+ "d5 Bg5 Bg7 Bxf6 Bxf6": {
+  "en": "White gives up the bishop pair to win d5; Black keeps a strong dark-squared bishop.",
+  "es": "Las blancas entregan la pareja de alfiles para ganar d5; las negras conservan un fuerte alfil de casillas oscuras."
+ }
+}

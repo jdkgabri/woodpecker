@@ -582,4 +582,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('kings-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6')],
   },
+  // ---- grunfeld
+  {
+    id: 'grunfeld', side: 'b', eco: 'D70–D99', puzzles: 'grunfeld',
+    name: { en: 'Grünfeld Defence', es: 'Defensa Grünfeld' },
+    summary: {
+      en: '1.d4 Nf6 2.c4 g6 3.Nc3 d5 — give White the centre and destroy it with pieces and ...c5.',
+      es: '1.d4 Cf6 2.c4 g6 3.Cc3 d5 — dar el centro a las blancas y destruirlo con piezas y ...c5.',
+    },
+    intro: {
+      en: [
+        'In the Grünfeld Black lets White build a big pawn centre (Exchange Variation: cxd5 Nxd5 e4 Nxc3 bxc3) and then attacks it with ...Bg7, ...c5 and ...Nc6.',
+        'It is a dynamic and concrete defence: Black must know the key ideas, because White\'s centre can also become a powerful attacking force.',
+      ],
+      es: [
+        'En la Grünfeld las negras dejan que las blancas monten un gran centro de peones (Variante del Cambio: cxd5 Cxd5 e4 Cxc3 bxc3) y luego lo atacan con ...Ag7, ...c5 y ...Cc6.',
+        'Es una defensa dinámica y concreta: las negras deben conocer las ideas clave, porque el centro blanco también puede convertirse en una poderosa fuerza de ataque.',
+      ],
+    },
+    structure: {
+      en: 'White: c3–d4–e4 after the exchange. Black: the g7-bishop and ...c5 against d4. If White keeps d4, Black often gets a queenside pawn majority for the endgame.',
+      es: 'Blancas: c3–d4–e4 tras el cambio. Negras: el alfil de g7 y ...c5 contra d4. Si las blancas mantienen d4, las negras suelen conseguir mayoría en el flanco de dama para el final.',
+    },
+    plans: {
+      b: {
+        en: ['...d5, ...Nxd5 and ...Nxc3.', '...Bg7, ...c5 and ...Nc6 against d4.', '...Bg4 to pressure d4 through the f3-knight.'],
+        es: ['...d5, ...Cxd5 y ...Cxc3.', '...Ag7, ...c5 y ...Cc6 contra d4.', '...Ag4 para presionar d4 a través del caballo de f3.'],
+      },
+      w: {
+        en: ['Build the centre with e4 and keep d4 protected.', 'Push d5 at the right moment.', 'Attack on the kingside with h4 or f4–f5.'],
+        es: ['Montar el centro con e4 y mantener d4 protegido.', 'Empujar d5 en el momento justo.', 'Atacar en el flanco de rey con h4 o f4–f5.'],
+      },
+    },
+    lines: [tree('grunfeld', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 g6 Nc3')],
+  },
 ];
