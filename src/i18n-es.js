@@ -724,4 +724,8 @@ export const ES = {
   "The game is over.": "La partida ha terminado.",
   "Practice needs an internet connection": "Practicar necesita conexión a internet",
   "The perfect defence comes from the Lichess tablebases.": "La defensa perfecta viene de las tablas de finales de Lichess.",
+  'Repertoire trees and traps': 'Árboles de repertorio y trampas',
+  'The 100 endgames you must know': 'Los 100 finales que hay que saber',
+  'Review your Lichess games': 'Revisa tus partidas de Lichess',
+  'Your progress': 'Tu progreso',
 };

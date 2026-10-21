@@ -410,3 +410,9 @@ cg-board {
 .eg-idea p { margin: 6px 0; }
 .eg-vars { margin-top: 6px; line-height: 1.5; }
 .credit { font-style: italic; }
+
+/* home: section tiles */
+.home-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0 0 12px; }
+.home-tile { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 12px; text-decoration: none; color: inherit; }
+.home-tile .tile-icon { font-size: 1.5rem; line-height: 1.2; }
+.home-tile small { line-height: 1.25; }

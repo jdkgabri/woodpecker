@@ -87,10 +87,6 @@ function viewHome() {
       <div class="top-right">
         ${h ? `<span class="badge" title="${t('Day streak')}">🔥 ${h.streak}</span>` : ''}
         ${syncBadge()}
-        <a class="icon-btn" href="#/coach" aria-label="${t('Game review')}">🎓</a>
-        <a class="icon-btn" href="#/endgames" aria-label="${t('Endgames')}">♔</a>
-        <a class="icon-btn" href="#/openings" aria-label="${t('Openings')}">📖</a>
-        <a class="icon-btn" href="#/stats" aria-label="${t('Statistics')}">📊</a>
         <a class="icon-btn" href="#/settings" aria-label="${t('Settings')}">⚙</a>
       </div>
     </header>
@@ -98,6 +94,12 @@ function viewHome() {
       ${installEvt ? `<button class="btn ghost full" id="install">📲 ${t('Install the app')}</button>` : ''}
       ${streakCard()}
       ${gamifyOn() ? levelCard(false) : ''}
+      <nav class="home-tiles">
+        <a class="card home-tile" href="#/openings"><span class="tile-icon">📖</span><strong>${t('Openings')}</strong><small class="muted">${t('Repertoire trees and traps')}</small></a>
+        <a class="card home-tile" href="#/endgames"><span class="tile-icon">♔</span><strong>${t('Endgames')}</strong><small class="muted">${t('The 100 endgames you must know')}</small></a>
+        <a class="card home-tile" href="#/coach"><span class="tile-icon">🎓</span><strong>${t('Game review')}</strong><small class="muted">${t('Review your Lichess games')}</small></a>
+        <a class="card home-tile" href="#/stats"><span class="tile-icon">📊</span><strong>${t('Statistics')}</strong><small class="muted">${t('Your progress')}</small></a>
+      </nav>
       <a class="btn primary full" href="#/new">＋ ${t('New set')}</a>
       ${sets.length ? '' : `
         <section class="card">
