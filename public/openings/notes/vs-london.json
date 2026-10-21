@@ -1,0 +1,18 @@
+{
+ "c5": {
+  "en": "Strike at once: ...c5, ...Nf6, ...Nc6 and ...e6, then ...Bd6 to trade the strong London bishop. Watch for the moment the b2-pawn is left without protection.",
+  "es": "Golpea de inmediato: ...c5, ...Cf6, ...Cc6 y ...e6, y después ...Ad6 para cambiar el fuerte alfil de la London. Atento al momento en que el peón de b2 quede sin protección."
+ },
+ "c5 e3 Nf6 c3 Nc6 Bd3": {
+  "en": "With the bishop gone from c1, b2 is unprotected: ...Qb6! attacks b2 and adds pressure on d4.",
+  "es": "Con el alfil fuera de c1, b2 está sin defender: ¡...Db6! ataca b2 y suma presión sobre d4."
+ },
+ "c5 c3 Nf6 e3 Nc6 Bd3": {
+  "en": "With the bishop gone from c1, b2 is unprotected: ...Qb6! attacks b2 and adds pressure on d4.",
+  "es": "Con el alfil fuera de c1, b2 está sin defender: ¡...Db6! ataca b2 y suma presión sobre d4."
+ },
+ "c5 e3 Nf6 Nf3 Nc6 Bb5": {
+  "en": "...cxd4 first: after exd4, ...Qb6 attacks both the b5-bishop and d4.",
+  "es": "Primero ...cxd4: tras exd4, ...Db6 ataca a la vez el alfil de b5 y d4."
+ }
+}

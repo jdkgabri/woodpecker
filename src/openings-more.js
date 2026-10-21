@@ -1098,4 +1098,38 @@ export const MORE_OPENINGS = [
       tree('eb-kings-gambit', { en: 'Against the King\'s Gambit (2.f4)', es: 'Contra el Gambito de Rey (2.f4)' }, 'e4 e5 f4'),
     ],
   },
+  // ---- Against the London
+  {
+    id: 'vs-london', side: 'b', vs: 'd4', eco: 'D02', puzzles: 'vs-london',
+    name: { en: 'Against the London System', es: 'Contra el Sistema London' },
+    summary: {
+      en: '1.d4 d5 2.Bf4 — a concrete setup against the London: ...c5 and ...Nc6, with ...Qb6 hitting b2.',
+      es: '1.d4 d5 2.Af4: un esquema concreto contra la London: ...c5 y ...Cc6, con ...Db6 atacando b2.',
+    },
+    intro: {
+      en: [
+        'The London is very popular at club level because White plays the same moves every game. The best answer is to strike at once.',
+        'With ...c5 and ...Nc6, and ...Qb6 when the bishop has left c1, Black puts immediate pressure on d4 and b2.',
+      ],
+      es: [
+        'La London es muy popular en club porque las blancas juegan siempre las mismas jugadas. La mejor respuesta es golpear de inmediato.',
+        'Con ...c5 y ...Cc6, y ...Db6 cuando el alfil ha salido de c1, las negras presionan enseguida d4 y b2.',
+      ],
+    },
+    structure: {
+      en: 'White builds the pyramid c3–d4–e3; Black fights it with ...c5 and pressure on the dark squares.',
+      es: 'Las blancas construyen la pirámide c3–d4–e3; las negras la combaten con ...c5 y presión en las casillas negras.',
+    },
+    plans: {
+      b: {
+        en: ['...c5 and ...Nc6 against d4.', '...Qb6 when b2 is weak.', '...Bd6 to trade the strong f4-bishop.'],
+        es: ['...c5 y ...Cc6 contra d4.', '...Db6 cuando b2 esté débil.', '...Ad6 para cambiar el fuerte alfil de f4.'],
+      },
+      w: {
+        en: ['e3, c3, Nd2, Bd3 and Ngf3: the solid pyramid.', 'Qb3 to answer ...Qb6.', 'Ne5 and a kingside attack.'],
+        es: ['e3, c3, Cd2, Ad3 y Cgf3: la pirámide sólida.', 'Db3 para contestar a ...Db6.', 'Ce5 y ataque en el flanco de rey.'],
+      },
+    },
+    lines: [tree('vs-london', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 Bf4')],
+  },
 ];
