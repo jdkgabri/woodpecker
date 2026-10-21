@@ -15,6 +15,8 @@ MULTIPV = 5
 MAX_HERO_MATE = 10
 MAX_HERO_CP = 6
 MAX_NODES = 40  # cap on tree size per puzzle
+MAX_FORCED = 4  # keep the line going (accepting every good move) up to this hero move while material is still down
+VALUES = {chess.PAWN: 1, chess.KNIGHT: 3, chess.BISHOP: 3, chess.ROOK: 5, chess.QUEEN: 9}
 
 _engine = None
 import atexit
@@ -59,11 +61,30 @@ def acceptable(cands):
     return "cp", res
 
 
-def reply_for(board, pv):
+def reply_for(board, pv, hero_move=None, hero=None):
+    """Opponent reply. After a capture, prefer the natural recapture when the hero still wins
+    after it, so the puzzle shows why taking back fails (like the books do)."""
+    if hero_move is not None and hero is not None:
+        recaptures = [m for m in board.legal_moves if m.to_square == hero_move.to_square and board.is_capture(m)]
+        recaptures.sort(key=lambda m: VALUES.get(board.piece_type_at(m.from_square), 10))
+        for m in recaptures:
+            b2 = board.copy()
+            b2.push(m)
+            if b2.is_game_over():
+                continue
+            info = eng().analyse(b2, chess.engine.Limit(time=REPLY_TIME), multipv=1)
+            score = info[0]["score"].pov(hero) if info else None
+            if score is not None and ((score.mate() is not None and score.mate() > 0) or score.score(mate_score=100000) >= 200):
+                return m
     if len(pv) >= 2:
         return pv[1]
     r = eng().play(board, chess.engine.Limit(time=REPLY_TIME))
     return r.move
+
+
+def material(board, hero):
+    """Material balance from the hero's point of view."""
+    return sum(v * (len(board.pieces(p, hero)) - len(board.pieces(p, not hero))) for p, v in VALUES.items())
 
 
 class Budget:
@@ -71,20 +92,26 @@ class Budget:
         self.n = 0
 
 
-def build(board, hero, step, budget, kind_root=None):
+def build(board, hero, step, budget, kind_root=None, start_mat=None):
     """Build hero-to-move node. Returns list or None if node should not be part of puzzle."""
     budget.n += 1
+    if start_mat is None:
+        start_mat = material(board, hero)
     cands = candidates(board, hero)
     if not cands:
         return None
     kind, acc = acceptable(cands)
     if step > 1:
-        if kind == "cp" and len(acc) != 1:
+        # While the hero is behind in material (e.g. after a sacrifice or a capture that gets
+        # recaptured), the point of the combination is still to be shown: keep going and accept
+        # every good move. Once material is won, an ambiguous continuation ends the puzzle.
+        not_won_yet = material(board, hero) < start_mat and step <= MAX_FORCED
+        if kind == "cp" and len(acc) != 1 and not not_won_yet:
             return None  # ambiguous continuation -> puzzle ends before this
         if kind_root == "mate" and kind != "mate":
             return None
-        if kind == "cp" and step > MAX_HERO_CP:
-            return None
+        if (kind == "cp" or kind_root == "cp") and step > MAX_HERO_CP:
+            return None  # long lines are only kept when the whole puzzle is a forced mate
         if step > MAX_HERO_MATE:
             return None
     if not acc:
@@ -103,14 +130,14 @@ def build(board, hero, step, budget, kind_root=None):
             continue
         if budget.n >= MAX_NODES and idx > 0:
             continue
-        rep = reply_for(b, pv)
+        rep = reply_for(b, pv, mv if board.is_capture(mv) else None, hero)
         b2 = b.copy()
         b2.push(rep)
         if b2.is_game_over():
             # opponent cannot "finish" a puzzle; stop after hero move
             node.append(entry)
             continue
-        sub = build(b2, hero, step + 1, budget, kind_root or kind) if budget.n < MAX_NODES else None
+        sub = build(b2, hero, step + 1, budget, kind_root or kind, start_mat) if budget.n < MAX_NODES else None
         if sub:
             entry[1] = rep.uci()
             entry[2] = sub

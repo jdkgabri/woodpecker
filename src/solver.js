@@ -6,10 +6,18 @@ const MULTIPV = 5;
 const MAX_HERO_MATE = 10;
 const MAX_HERO_CP = 6;
 const MAX_NODES = 30;
+const MAX_FORCED = 4; // keep going (accepting every good move) up to this user move while material is down
+const VALUES = { p: 1, n: 3, b: 3, r: 5, q: 9, k: 0 };
 
 const wc = cp => 2 / (1 + Math.exp(-0.00368208 * cp)) - 1;
 const asCp = l => (l.mate != null ? (l.mate > 0 ? 100000 - l.mate : -100000 - l.mate) : l.cp);
 const posKey = fen => fen.split(' ').slice(0, 4).join(' ');
+// Material balance from the point of view of `side` ('w' | 'b')
+function material(chess, side) {
+  let m = 0;
+  for (const row of chess.board()) for (const sq of row) if (sq) m += (sq.color === side ? 1 : -1) * VALUES[sq.type];
+  return m;
+}
 
 function acceptable(lines) {
   const best = lines[0];
@@ -28,8 +36,27 @@ function acceptable(lines) {
  */
 export async function solvePosition(engine, fen, { movetime = 1500, signal } = {}) {
   const chess = new Chess(fen);
+  const hero = chess.turn();
+  const startMat = material(chess, hero);
   const seen = new Map([[posKey(fen), 1]]);
   let nodes = 0;
+
+  // After a capture, prefer the natural recapture when the user still wins after it,
+  // so the puzzle shows why taking back fails (like the books do).
+  async function naturalRecapture(square) {
+    const recaptures = chess.moves({ verbose: true }).filter(m => m.to === square && m.captured)
+      .sort((a, b) => VALUES[a.piece] - VALUES[b.piece]);
+    for (const m of recaptures) {
+      chess.move(m);
+      const over = chess.isGameOver();
+      const r = over ? null : (await engine.search(chess.fen(), { multipv: 1, movetime: Math.round(movetime / 2) }))[0];
+      chess.undo();
+      if (!r) continue;
+      // r is from the user's point of view (the user is to move after the recapture)
+      if ((r.mate != null && r.mate > 0) || (r.cp != null && r.cp >= 200)) return m.from + m.to + (m.promotion || '');
+    }
+    return null;
+  }
 
   async function build(step, kindRoot) {
     if (signal?.aborted) throw new Error('aborted');
@@ -38,9 +65,12 @@ export async function solvePosition(engine, fen, { movetime = 1500, signal } = {
     if (!lines.length) return null;
     let { kind, acc } = acceptable(lines);
     if (step > 1) {
-      if (kind === 'cp' && acc.length !== 1) return null; // ambiguous continuation: end before it
+      // While the user is behind in material (after a sacrifice, or a capture that was taken back)
+      // the point is still to be shown: keep going and accept every good move.
+      const notWonYet = material(chess, hero) < startMat && step <= MAX_FORCED;
+      if (kind === 'cp' && acc.length !== 1 && !notWonYet) return null; // ambiguous continuation: end before it
       if (kindRoot === 'mate' && kind !== 'mate') return null;
-      if (kind === 'cp' && step > MAX_HERO_CP) return null;
+      if ((kind === 'cp' || kindRoot === 'cp') && step > MAX_HERO_CP) return null;
       if (step > MAX_HERO_MATE) return null;
     }
     if (!acc.length) acc = [lines[0]];
@@ -58,7 +88,8 @@ export async function solvePosition(engine, fen, { movetime = 1500, signal } = {
         continue;
       }
       seen.set(key, 1);
-      let reply = l.pv[1];
+      let reply = mv.captured ? await naturalRecapture(mv.to) : null;
+      reply = reply || l.pv[1];
       if (!reply) reply = (await engine.search(chess.fen(), { multipv: 1, movetime: Math.round(movetime / 2) }))[0]?.move;
       if (reply) {
         const rmv = chess.move({ from: reply.slice(0, 2), to: reply.slice(2, 4), promotion: reply[4] });
@@ -71,7 +102,6 @@ export async function solvePosition(engine, fen, { movetime = 1500, signal } = {
       seen.delete(key);
       node.push(entry);
       chess.undo();
-      void mv;
     }
     return node;
   }
