@@ -1204,4 +1204,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('modern', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 g6')],
   },
+  // ---- QGA for Black
+  {
+    id: 'qga-black', side: 'b', vs: 'd4', eco: 'D20–D29', puzzles: 'qga-black',
+    name: { en: 'Queen\'s Gambit Accepted', es: 'Gambito de Dama Aceptado' },
+    summary: {
+      en: '1.d4 d5 2.c4 dxc4 — Black takes the pawn, does not try to keep it, and uses the time for ...Nf6, ...e6 and ...c5.',
+      es: '1.d4 d5 2.c4 dxc4: las negras toman el peón, no intentan conservarlo, y usan el tiempo para ...Cf6, ...e6 y ...c5.',
+    },
+    intro: {
+      en: [
+        'The classical idea: give back the pawn and attack White\'s centre with ...c5. White gets an isolated d-pawn in many lines.',
+        'Trying to keep the pawn with ...b5 is the classic beginner\'s mistake: a4 and Qf3 or Qa4+ punish it.',
+      ],
+      es: [
+        'La idea clásica: devolver el peón y atacar el centro blanco con ...c5. En muchas líneas las blancas se quedan con el peón d aislado.',
+        'Intentar conservar el peón con ...b5 es el error clásico del principiante: a4 y Df3 o Da4+ lo castigan.',
+      ],
+    },
+    structure: {
+      en: 'After ...c5 and cxd4 exd4, White often has an isolated d4-pawn: Black blockades on d5 and trades pieces.',
+      es: 'Tras ...c5 y cxd4 exd4, las blancas suelen tener un peón aislado en d4: las negras bloquean en d5 y cambian piezas.',
+    },
+    plans: {
+      b: {
+        en: ['...Nf6, ...e6, ...c5 and ...a6.', 'Blockade an isolated pawn on d5.', 'Do not cling to the c4-pawn.'],
+        es: ['...Cf6, ...e6, ...c5 y ...a6.', 'Bloquear un peón aislado en d5.', 'No aferrarse al peón de c4.'],
+      },
+      w: {
+        en: ['e3 and Bxc4, or e4 at once.', 'Use the extra space and the centre.', 'Play for d5 with an isolated pawn.'],
+        es: ['e3 y Axc4, o e4 de inmediato.', 'Aprovechar el espacio extra y el centro.', 'Buscar d5 con el peón aislado.'],
+      },
+    },
+    lines: [tree('qga-black', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 c4 dxc4')],
+  },
 ];
