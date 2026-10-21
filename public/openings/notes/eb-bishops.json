@@ -1,0 +1,30 @@
+{
+ "Nf6": {
+  "en": "...Nf6 attacks e4 at once. After d3, ...c6 and ...d5 take the centre; after Nf3, ...Nxe4 is possible.",
+  "es": "...Cf6 ataca e4 de inmediato. Tras d3, ...c6 y ...d5 toman el centro; tras Cf3, ...Cxe4 es posible."
+ },
+ "Nf6 Nf3 Nxe4 Nxe5 d5 Qf3 Be6 Bd3": {
+  "en": "...Qg5! hits the e5-knight and g2.",
+  "es": "¡...Dg5! ataca el caballo de e5 y g2."
+ },
+ "Nf6 Nf3 Nxe4 Nxe5 d5 Qf3 Be6 Bb3": {
+  "en": "...Qg5! hits the e5-knight and g2.",
+  "es": "¡...Dg5! ataca el caballo de e5 y g2."
+ },
+ "Nf6 Nf3 Nxe4 d3 Nf6 Ng5": {
+  "en": "...d5! shuts the c4-bishop out: Black keeps the extra pawn.",
+  "es": "¡...d5! cierra el paso al alfil de c4: las negras conservan el peón de más."
+ },
+ "Nf6 d4 exd4 e5 d5 exf6": {
+  "en": "exf6? dxc4: Black wins a piece.",
+  "es": "¿exf6? dxc4: las negras ganan una pieza."
+ },
+ "Nf6 Nc3 Bc5 Nf3 Nc6 Ng5 O-O O-O h6 Nxf7": {
+  "en": "Nxf7? Rxf7 Bxf7+ Kxf7: two pieces for a rook and a pawn is bad for White.",
+  "es": "¿Cxf7? Txf7 Axf7+ Rxf7: dos piezas por torre y peón es malo para las blancas."
+ },
+ "": {
+  "en": "The Bishop's Opening: ...Nf6 attacks e4 at once and keeps the option of ...c6 and ...d5.",
+  "es": "La Apertura de Alfil: ...Cf6 ataca e4 de inmediato y mantiene la opción de ...c6 y ...d5."
+ }
+}

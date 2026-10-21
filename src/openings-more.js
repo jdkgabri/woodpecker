@@ -936,7 +936,11 @@ export const MORE_OPENINGS = [
         es: ['Evitar los peones doblados con Dc2.', 'Aprovechar la pareja de alfiles y abrir la posición.', 'Montar el centro con f3 y e4.'],
       },
     },
-    lines: [tree('nimzo-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 e6 Nc3')],
+    lines: [tree('nimzo-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 e6 Nc3'),
+      tree('nimzo-qc2', { en: 'Classical (4.Qc2)', es: 'Clásica (4.Dc2)' }, 'd4 Nf6 c4 e6 Nc3 Bb4 Qc2'),
+    
+      tree('nimzo-samisch', { en: 'Sämisch (4.a3)', es: 'Sämisch (4.a3)' }, 'd4 Nf6 c4 e6 Nc3 Bb4 a3'),
+    ],
   },
   // ---- catalan
   {
@@ -1118,6 +1122,8 @@ export const MORE_OPENINGS = [
       tree('eb-four-knights', { en: 'Against the Four Knights (3.Nc3)', es: 'Contra los Cuatro Caballos (3.Cc3)' }, 'e4 e5 Nf3 Nc6 Nc3'),
     
       tree('eb-danish', { en: 'Against the Centre Game and Danish Gambit (2.d4)', es: 'Contra el Centro y el Gambito Danés (2.d4)' }, 'e4 e5 d4'),
+    
+      tree('eb-bishops', { en: 'Against the Bishop\'s Opening (2.Bc4)', es: 'Contra la Apertura de Alfil (2.Ac4)' }, 'e4 e5 Bc4'),
     ],
   },
   // ---- Against the London

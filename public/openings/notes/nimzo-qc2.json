@@ -1,0 +1,26 @@
+{
+ "O-O": {
+  "en": "Against 4.Qc2 Black castles and strikes with ...c5 or ...d5; the queen on c2 avoids doubled pawns but costs White time.",
+  "es": "Contra 4.Dc2 las negras enrocan y golpean con ...c5 o ...d5; la dama en c2 evita los peones doblados pero le cuesta tiempo a las blancas."
+ },
+ "O-O Nf3 c5 e3 d5 Bd3 Nc6 cxd5 exd5 O-O": {
+  "en": "...c4! gains time on the d3-bishop and space on the queenside.",
+  "es": "¡...c4! gana tiempo sobre el alfil de d3 y espacio en el flanco de dama."
+ },
+ "O-O Nf3 c5 e3 d5 a3 Bxc3+ bxc3 Nc6 cxd5 exd5 Bd3": {
+  "en": "...c4! gains time on the d3-bishop and space on the queenside.",
+  "es": "¡...c4! gana tiempo sobre el alfil de d3 y espacio en el flanco de dama."
+ },
+ "O-O Nf3 c5 e3 d5 cxd5 exd5 Bd3": {
+  "en": "...c4! gains time on the d3-bishop and space on the queenside.",
+  "es": "¡...c4! gana tiempo sobre el alfil de d3 y espacio en el flanco de dama."
+ },
+ "O-O e4 c5 d5": {
+  "en": "...exd5 exd5 and the e-file opens against White's uncastled king.",
+  "es": "...exd5 exd5 y la columna e se abre contra el rey blanco sin enrocar."
+ },
+ "": {
+  "en": "Against 4.Qc2: ...O-O and ...d5 or ...c5.",
+  "es": "Contra 4.Dc2: ...O-O y ...d5 o ...c5."
+ }
+}

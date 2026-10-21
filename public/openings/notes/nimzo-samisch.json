@@ -1,0 +1,14 @@
+{
+ "Bxc3+ bxc3 c5": {
+  "en": "The Sämisch: Black attacks the doubled c4-pawn with ...Nc6, ...b6, ...Ba6 and ...Na5. White wants the centre with e4 and f4–f5.",
+  "es": "La Sämisch: las negras atacan el peón doblado de c4 con ...Cc6, ...b6, ...Aa6 y ...Ca5. Las blancas buscan el centro con e4 y f4–f5."
+ },
+ "Bxc3+ bxc3 c5 e3 O-O Nf3 Nc6 Be2 b6 d5": {
+  "en": "...Na5! and ...Ba6: the c4-pawn falls.",
+  "es": "¡...Ca5! y ...Aa6: el peón de c4 cae."
+ },
+ "": {
+  "en": "Against 4.a3: ...Bxc3+ and play against the doubled c-pawns.",
+  "es": "Contra 4.a3: ...Axc3+ y juego contra los peones c doblados."
+ }
+}
