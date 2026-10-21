@@ -1,0 +1,42 @@
+{
+ "": {
+  "en": "The Alapin (2.c3) against the Sicilian: White prepares d4 so that, after ...cxd4, the c3-pawn recaptures and White keeps two central pawns.",
+  "es": "La Alapin (2.c3) contra la Siciliana: las blancas preparan d4 para que, tras ...cxd4, el peón de c3 recapture y mantengan dos peones centrales."
+ },
+ "c3 Nc6 d4 cxd4 cxd4": {
+  "en": "The ideal centre: pawns on e4 and d4. Black must hit it at once with ...d5 or ...e6 and ...d5.",
+  "es": "El centro ideal: peones en e4 y d4. Las negras deben atacarlo de inmediato con ...d5 o ...e6 y ...d5."
+ },
+ "c3 Nc6 d4 cxd4 cxd4 d5 e5": {
+  "en": "e5 gains space and leads to a French-like structure where White has extra room on the kingside.",
+  "es": "e5 gana espacio y lleva a una estructura tipo Francesa en la que las blancas tienen más espacio en el flanco de rey."
+ },
+ "c3 Nc6 d4 cxd4 cxd4 d6 d5": {
+  "en": "Slow moves let White gain space with tempo: d5 kicks the knight.",
+  "es": "Las jugadas lentas permiten a las blancas ganar espacio con tiempo: d5 echa al caballo."
+ },
+ "c3 Nc6 d4 cxd4 cxd4 g6 d5": {
+  "en": "The same idea: d5 drives the knight back and White dominates the centre.",
+  "es": "La misma idea: d5 hace retroceder al caballo y las blancas dominan el centro."
+ },
+ "c3 d6 d4 cxd4 cxd4": {
+  "en": "Again the big centre. Nc3, Nf3 and Bd3 or Be2 follow.",
+  "es": "De nuevo el gran centro. Siguen Cc3, Cf3 y Ad3 o Ae2."
+ },
+ "c3 d5 e5": {
+  "en": "Against 2...d5, e5 closes the centre: a French Advance where Black's light-squared bishop is free but White has space.",
+  "es": "Contra 2...d5, e5 cierra el centro: un Avance de la Francesa en el que el alfil negro de casillas blancas está libre pero las blancas tienen espacio."
+ },
+ "c3 e6": {
+  "en": "2...e6 prepares ...d5. White simply takes the centre with d4.",
+  "es": "2...e6 prepara ...d5. Las blancas simplemente ocupan el centro con d4."
+ },
+ "c3 Nf6": {
+  "en": "2...Nf6 hits e4. White pushes e5 and then plays d4: the knight on d5 is active, but White gets space.",
+  "es": "2...Cf6 ataca e4. Las blancas avanzan e5 y luego juegan d4: el caballo de d5 es activo, pero las blancas ganan espacio."
+ },
+ "c3 Nf6 e5 Nd5 d4 cxd4 Nf3 Nc6 cxd4 d6 Bc4 Nb6 Bb3 dxe5 d5": {
+  "en": "d5! hits the c6-knight; after ...Na5 Nc3 the position is balanced and sharp.",
+  "es": "¡d5! ataca el caballo de c6; tras ...Ca5 Cc3 la posición está equilibrada y es aguda."
+ }
+}

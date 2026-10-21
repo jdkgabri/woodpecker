@@ -174,4 +174,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('morra', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 c5')],
   },
+  // ---- alapin
+  {
+    id: 'alapin', side: 'w', vs: 'e4', eco: 'B22', puzzles: 'alapin',
+    name: { en: 'Alapin Sicilian (2.c3)', es: 'Siciliana Alapin (2.c3)' },
+    summary: {
+      en: '1.e4 c5 2.c3 — prepares d4 to get the full centre and avoid the Open Sicilian theory.',
+      es: '1.e4 c5 2.c3 — prepara d4 para tener todo el centro y evitar la teoría de la Siciliana abierta.',
+    },
+    intro: {
+      en: [
+        'The Alapin is a practical weapon against the Sicilian: White prepares d4 so that after ...cxd4 the c3-pawn recaptures and keeps two central pawns.',
+        'Black\'s best answers strike at once: 2...d5 (the queen recaptures on d5 because c3 has taken the knight\'s square) or 2...Nf6, hitting e4. Slow replies give White the ideal centre.',
+      ],
+      es: [
+        'La Alapin es un arma práctica contra la Siciliana: las blancas preparan d4 para que, tras ...cxd4, el peón de c3 recapture y mantengan dos peones centrales.',
+        'Las mejores respuestas negras golpean de inmediato: 2...d5 (la dama recaptura en d5 porque c3 ha quitado la casilla al caballo) o 2...Cf6, atacando e4. Las respuestas lentas dan a las blancas el centro ideal.',
+      ],
+    },
+    structure: {
+      en: 'Often an isolated d-pawn for White after ...d5 and an exchange on d4, with active pieces; or after 2...Nf6 3.e5 a pawn on e5 that gains space.',
+      es: 'A menudo un peón aislado en d4 para las blancas tras ...d5 y un cambio en d4, con piezas activas; o, tras 2...Cf6 3.e5, un peón en e5 que gana espacio.',
+    },
+    plans: {
+      w: {
+        en: ['d4 to build the centre.', 'Against ...Nf6, push e5 and chase the knight.', 'With an isolated d-pawn, attack on the kingside with active pieces.'],
+        es: ['d4 para montar el centro.', 'Contra ...Cf6, avanzar e5 y perseguir al caballo.', 'Con peón aislado, atacar en el flanco de rey con piezas activas.'],
+      },
+      b: {
+        en: ['Strike at once with ...d5 or ...Nf6.', 'Blockade an isolated pawn on d5.', 'Undermine e5 with ...d6.'],
+        es: ['Golpear de inmediato con ...d5 o ...Cf6.', 'Bloquear el peón aislado en d5.', 'Socavar e5 con ...d6.'],
+      },
+    },
+    lines: [tree('alapin', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 c5')],
+  },
 ];
