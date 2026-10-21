@@ -1,0 +1,30 @@
+{
+ "Nf3 e6": {
+  "en": "Against the short system, ...e6 and ...c5 attack the chain at its base; ...Nc6, ...Qb6 and ...Ne7 follow.",
+  "es": "Contra el sistema corto, ...e6 y ...c5 atacan la cadena por la base; siguen ...Cc6, ...Db6 y ...Ce7."
+ },
+ "Bd3 Bxd3": {
+  "en": "Trade the bishops: Black's light-squared bishop is already outside the pawn chain, and swapping it for White's attacking bishop makes Black's game easy. Qxd3 e6 and ...c5 follow.",
+  "es": "Cambia los alfiles: el alfil negro de casillas blancas ya está fuera de la cadena de peones, y cambiarlo por el alfil atacante blanco facilita el juego negro. Siguen Dxd3 e6 y ...c5."
+ },
+ "h4 h6": {
+  "en": "...h6 keeps the h7 retreat for the bishop, so g4 does not trap it.",
+  "es": "...h6 conserva la retirada a h7 para el alfil, así que g4 no lo atrapa."
+ },
+ "Nf3 e6 Nc3 c5 dxc5 Bxc5 Be3": {
+  "en": "...Bxe3 fxe3: White's pawns are damaged and e3 becomes a target.",
+  "es": "...Axe3 fxe3: los peones blancos quedan dañados y e3 se convierte en un objetivo."
+ },
+ "f4 e6 Bd3 Ne7 g4": {
+  "en": "g4 weakens everything: ...Bxd3 Qxd3 h5! undermines White's pawns and opens f5 for the knight.",
+  "es": "g4 lo debilita todo: ...Axd3 Dxd3 ¡h5! socava los peones blancos y abre f5 para el caballo."
+ },
+ "f4 e6 Bd3 Ne7 Bxf5": {
+  "en": "...Nxf5: the knight is excellent on f5 and ...c5 comes next.",
+  "es": "...Cxf5: el caballo es excelente en f5 y luego llega ...c5."
+ },
+ "": {
+  "en": "Against the Advance: ...e6, ...c5 and ...Nc6.",
+  "es": "Contra el Avance: ...e6, ...c5 y ...Cc6."
+ }
+}

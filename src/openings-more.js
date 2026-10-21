@@ -438,6 +438,8 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('caro-kann', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 c6'),
       tree('caro-classical', { en: 'Classical (4...Bf5)', es: 'Clásica (4...Af5)' }, 'e4 c6 d4 d5 Nc3 dxe4 Nxe4 Bf5'),
+    
+      tree('caro-advance-black', { en: 'Against the Advance', es: 'Contra el Avance' }, 'e4 c6 d4 d5 e5 Bf5'),
     ],
   },
   // ---- scandinavian
@@ -506,7 +508,9 @@ export const MORE_OPENINGS = [
         es: ['Gran centro con f4 (Ataque Austriaco).', 'Ae3, Dd2 y Ah6 para cambiar el alfil de g7.', 'Ataque en el flanco de rey con h4–h5.'],
       },
     },
-    lines: [tree('pirc', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 d6 d4 Nf6 Nc3 g6')],
+    lines: [tree('pirc', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 d6 d4 Nf6 Nc3 g6'),
+      tree('pirc-austrian', { en: 'Against the Austrian Attack (f4)', es: 'Contra el Ataque Austriaco (f4)' }, 'e4 d6 d4 Nf6 Nc3 g6 f4'),
+    ],
   },
   // ---- alekhine
   {

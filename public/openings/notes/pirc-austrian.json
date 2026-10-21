@@ -1,0 +1,30 @@
+{
+ "Bg7 Nf3 O-O": {
+  "en": "Castle first, then strike at the big centre with ...c5 (or ...Na6 and ...c5). Waiting lets White push e5 with an attack.",
+  "es": "Enroca primero y después golpea el gran centro con ...c5 (o ...Ca6 y ...c5). Esperar permite a las blancas avanzar e5 con ataque."
+ },
+ "Bg7 Nf3 O-O Be3 c5 e5": {
+  "en": "...Ng4! attacks the e3-bishop, which has to retreat to g1.",
+  "es": "¡...Cg4! ataca el alfil de e3, que tiene que retirarse a g1."
+ },
+ "Bg7 Nf3 O-O Be3 c5 d5": {
+  "en": "...b5! and if Bxb5, ...Nxe4! Nxe4 Qa5+ wins the material back with interest.",
+  "es": "¡...b5! y si Axb5, ¡...Cxe4! Cxe4 Da5+ recupera el material con creces."
+ },
+ "Bg7 Nf3 O-O Bd3 c5 e5": {
+  "en": "...Nfd7: the knight steps aside and both ...cxd4 and ...dxe5 hit White's centre.",
+  "es": "...Cfd7: el caballo se aparta y tanto ...cxd4 como ...dxe5 golpean el centro blanco."
+ },
+ "Bg7 Nf3 O-O Bd3 c5 e5 Nfd7 Be3": {
+  "en": "...cxd4 Bxd4 Nc6: the d4-bishop and the e5-pawn come under fire.",
+  "es": "...cxd4 Axd4 Cc6: el alfil de d4 y el peón de e5 quedan bajo el fuego."
+ },
+ "Bg7 Nf3 O-O e5 dxe5 fxe5 Nd5 Bd3 c5 dxc5": {
+  "en": "...Nxc3 bxc3 Nc6 and ...Nxe5: White's centre falls apart.",
+  "es": "...Cxc3 bxc3 Cc6 y ...Cxe5: el centro blanco se desmorona."
+ },
+ "": {
+  "en": "Against f4: ...Bg7, ...O-O and ...c5.",
+  "es": "Contra f4: ...Ag7, ...O-O y ...c5."
+ }
+}
