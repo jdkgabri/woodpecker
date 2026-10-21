@@ -1,0 +1,38 @@
+{
+ "": {
+  "en": "The Budapest Gambit for Black: 2...e5 gives a pawn, then ...Ng4, ...Nc6 and ...Bb4+ win it back with active pieces. Objectively White is a little better, but the traps make it a great surprise weapon.",
+  "es": "El Gambito Budapest con negras: 2...e5 entrega un peón, y luego ...Cg4, ...Cc6 y ...Ab4+ lo recuperan con piezas activas. Objetivamente las blancas están algo mejor, pero las trampas lo convierten en una gran arma sorpresa."
+ },
+ "dxe5 Ng4": {
+  "en": "The knight attacks e5; ...Nc6 and ...Bb4+ will add pressure.",
+  "es": "El caballo ataca e5; ...Cc6 y ...Ab4+ añadirán presión."
+ },
+ "dxe5 Ng4 Nf3 Nc6": {
+  "en": "Three attackers on e5 soon: Black usually regains the pawn.",
+  "es": "Pronto habrá tres atacantes sobre e5: las negras suelen recuperar el peón."
+ },
+ "dxe5 Ng4 Bf4 Nc6 Nf3 Bb4+": {
+  "en": "The check disturbs White's development; if Nbd2, ...Qe7 piles up on e5.",
+  "es": "El jaque molesta el desarrollo blanco; si Cbd2, ...De7 suma presión sobre e5."
+ },
+ "dxe5 Ng4 e4 Nxe5": {
+  "en": "The Alekhine line: White grabs the centre, but the e5-knight is strong and ...Bb4+ is coming.",
+  "es": "La línea Alekhine: las blancas ocupan el centro, pero el caballo de e5 es fuerte y llega ...Ab4+."
+ },
+ "dxe5 Ng4 f4 Bc5": {
+  "en": "f4? weakens the king: ...Bc5 hits g1 and stops castling.",
+  "es": "f4? debilita al rey: ...Ac5 ataca g1 e impide el enroque."
+ },
+ "dxe5 Ng4 f4 Bc5 Nf3 Bf2+": {
+  "en": "...Bf2+! drives the king forward: after Kd2 d5 Black has a huge attack.",
+  "es": "¡...Af2+! obliga al rey a avanzar: tras Rd2 d5 las negras tienen un ataque enorme."
+ },
+ "d5 Bb4+": {
+  "en": "If White ignores the gambit with d5, ...Bb4+ and ...Qe7 give Black easy development.",
+  "es": "Si las blancas ignoran el gambito con d5, ...Ab4+ y ...De7 dan a las negras un desarrollo fácil."
+ },
+ "Nc3 exd4 Qxd4 Nc6": {
+  "en": "The queen is chased with tempo; Black develops quickly.",
+  "es": "La dama es perseguida ganando tiempo; las negras desarrollan rápido."
+ }
+}

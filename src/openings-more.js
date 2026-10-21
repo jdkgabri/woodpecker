@@ -786,4 +786,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('benko', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 c5 d5')],
   },
+  // ---- budapest
+  {
+    id: 'budapest', side: 'b', vs: 'd4', eco: 'A51–A52', puzzles: 'budapest',
+    name: { en: 'Budapest Gambit', es: 'Gambito Budapest' },
+    summary: {
+      en: '1.d4 Nf6 2.c4 e5 — a surprise gambit where Black usually wins the pawn back.',
+      es: '1.d4 Cf6 2.c4 e5 — un gambito sorpresa en el que las negras suelen recuperar el peón.',
+    },
+    intro: {
+      en: [
+        'After 3.dxe5 Ng4 Black attacks the e5-pawn with ...Nc6 and ...Bb4+, and normally wins it back with active pieces. White must be careful: there are several traps on the e1–h4 and a5–e1 diagonals.',
+        'It is a good practical weapon at club level, where many players do not know the right setup.',
+      ],
+      es: [
+        'Tras 3.dxe5 Cg4 las negras atacan el peón de e5 con ...Cc6 y ...Ab4+, y normalmente lo recuperan con piezas activas. Las blancas deben tener cuidado: hay varias trampas en las diagonales e1–h4 y a5–e1.',
+        'Es un arma práctica buena a nivel de club, donde muchos jugadores no conocen la estructura correcta.',
+      ],
+    },
+    structure: {
+      en: 'Once Black regains the pawn, material is level: White keeps the c4-pawn and some space, Black has quick development and a strong knight on e5.',
+      es: 'Cuando las negras recuperan el peón, el material queda igualado: las blancas conservan el peón de c4 y algo de espacio; las negras tienen desarrollo rápido y un caballo fuerte en e5.',
+    },
+    plans: {
+      b: {
+        en: ['...Ng4, ...Nc6 and ...Bb4+ to win back e5.', '...Qe7 to add pressure.', 'Use the active pieces against White\'s king.'],
+        es: ['...Cg4, ...Cc6 y ...Ab4+ para recuperar e5.', '...De7 para añadir presión.', 'Aprovechar las piezas activas contra el rey blanco.'],
+      },
+      w: {
+        en: ['Defend e5 with Bf4 and Nf3.', 'Give the pawn back at the right moment for a lead in space.', 'Watch out for ...Bb4+ and ...Qh4 tricks.'],
+        es: ['Defender e5 con Af4 y Cf3.', 'Devolver el peón en el momento justo a cambio de espacio.', 'Cuidado con los trucos ...Ab4+ y ...Dh4.'],
+      },
+    },
+    lines: [tree('budapest', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 e5')],
+  },
 ];
