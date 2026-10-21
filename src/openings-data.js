@@ -228,7 +228,7 @@ export const OPENINGS = [
           13: { en: 'Check, and pressure on the pinned d5-knight.', es: 'Jaque, y presión sobre el caballo de d5.' },
           14: { en: 'The only way to keep the knight: the king walks into the centre.', es: 'La única forma de conservar el caballo: el rey se va al centro.' },
           15: { en: 'More attackers come in; d5 is attacked three times.', es: 'Entran más atacantes; d5 está atacado tres veces.' },
-          16: { en: 'Black defends d5 and threatens ...Nxc2+. White continues with a3, O-O, d4 and Re1: the black king stuck in the centre rarely survives in practice.', es: 'Las negras defienden d5 y amenazan ...Cxc2+. Las blancas siguen con a3, O-O, d4 y Te1: en la práctica, el rey negro atrapado en el centro rara vez sobrevive.' },
+          16: { en: 'Black defends d5 and threatens ...Nxc2+. Best is 9.Bb3 (or 9.O-O): keep the pressure on d5 and follow with d4 and Re1. Beware of 9.a3?!: after 9...Nxc2+ 10.Kd1 Nxa1 11.Nxd5 Black is objectively better. 9.d4 is also fine.', es: 'Las negras defienden d5 y amenazan ...Cxc2+. Lo mejor es 9.Ab3 (o 9.O-O): mantener la presión sobre d5 y seguir con d4 y Te1. Cuidado con 9.a3?!: tras 9...Cxc2+ 10.Rd1 Cxa1 11.Cxd5 las negras están objetivamente mejor. 9.d4 también es correcta.' },
         },
       },
     ],
