@@ -208,4 +208,72 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('alapin', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 c5')],
   },
+  // ---- caro advance
+  {
+    id: 'caro-advance', side: 'w', vs: 'e4', eco: 'B12', puzzles: 'caro-advance',
+    name: { en: 'Against the Caro-Kann: Advance', es: 'Contra la Caro-Kann: Avance' },
+    summary: {
+      en: '1.e4 c6 2.d4 d5 3.e5 — space and a quiet plan against Black\'s solid setup.',
+      es: '1.e4 c6 2.d4 d5 3.e5 — espacio y un plan tranquilo contra la estructura sólida negra.',
+    },
+    intro: {
+      en: [
+        'In the Advance Caro-Kann White gains space with e5. Unlike in the French, Black\'s light-squared bishop comes out to f5 before ...e6, so White aims to chase it or to play c4 to open the centre.',
+        'The quiet Short system (Nf3, Be2, O-O, c3) is easy to learn and leads to positions where White\'s space counts for a long time.',
+      ],
+      es: [
+        'En el Avance de la Caro-Kann las blancas ganan espacio con e5. A diferencia de la Francesa, el alfil negro de casillas blancas sale a f5 antes de ...e6, así que las blancas intentan perseguirlo o jugar c4 para abrir el centro.',
+        'El sistema tranquilo de Short (Cf3, Ae2, O-O, c3) es fácil de aprender y lleva a posiciones en las que el espacio blanco pesa durante mucho tiempo.',
+      ],
+    },
+    structure: {
+      en: 'Chain d4–e5 against c6–d5–e6, with Black\'s bishop outside the chain. Black usually breaks with ...c5; White may play c4 or keep the centre with c3.',
+      es: 'Cadena d4–e5 contra c6–d5–e6, con el alfil negro fuera de la cadena. Las negras suelen romper con ...c5; las blancas pueden jugar c4 o mantener el centro con c3.',
+    },
+    plans: {
+      w: {
+        en: ['Nf3, Be2, O-O and c3 or Nbd2.', 'Chase the f5-bishop with Nh4 or g4 when it is safe.', 'Open the centre with c4 at the right moment.'],
+        es: ['Cf3, Ae2, O-O y c3 o Cbd2.', 'Perseguir el alfil de f5 con Ch4 o g4 cuando sea seguro.', 'Abrir el centro con c4 en el momento justo.'],
+      },
+      b: {
+        en: ['...Bf5 and ...e6, then ...c5.', '...Nd7, ...Ne7 and ...Nf5 or ...Ng6.', '...Qb6 against b2 and d4.'],
+        es: ['...Af5 y ...e6, luego ...c5.', '...Cd7, ...Ce7 y ...Cf5 o ...Cg6.', '...Db6 contra b2 y d4.'],
+      },
+    },
+    lines: [tree('caro-advance', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 c6')],
+  },
+  // ---- french advance
+  {
+    id: 'french-advance', side: 'w', vs: 'e4', eco: 'C02', puzzles: 'french-advance',
+    name: { en: 'Against the French: Advance', es: 'Contra la Francesa: Avance' },
+    summary: {
+      en: '1.e4 e6 2.d4 d5 3.e5 — space with a pawn chain and play on the kingside.',
+      es: '1.e4 e6 2.d4 d5 3.e5 — espacio con una cadena de peones y juego en el flanco de rey.',
+    },
+    intro: {
+      en: [
+        'With 3.e5 White closes the centre and gains space. The pawn chain d4–e5 cramps Black\'s kingside; Black attacks its base with ...c5 and ...Qb6, and later ...f6.',
+        'This tree also covers Black\'s second-move alternatives after 1...e6, so you know what to do if the opponent avoids the French main lines.',
+      ],
+      es: [
+        'Con 3.e5 las blancas cierran el centro y ganan espacio. La cadena d4–e5 encoge el flanco de rey negro; las negras atacan su base con ...c5 y ...Db6, y más tarde ...f6.',
+        'Este árbol también cubre las alternativas negras en la segunda jugada tras 1...e6, para que sepas qué hacer si el rival evita las líneas principales de la Francesa.',
+      ],
+    },
+    structure: {
+      en: 'Chain d4–e5 against e6–d5. White keeps d4 with c3 and Nf3; Black pressures it with ...c5, ...Nc6, ...Qb6 and ...Nge7–f5.',
+      es: 'Cadena d4–e5 contra e6–d5. Las blancas sostienen d4 con c3 y Cf3; las negras lo presionan con ...c5, ...Cc6, ...Db6 y ...Cge7–f5.',
+    },
+    plans: {
+      w: {
+        en: ['c3, Nf3 and Be2 or Bd3 to support d4.', 'a3 and b4 to gain queenside space.', 'Kingside attack based on the e5-pawn.'],
+        es: ['c3, Cf3 y Ae2 o Ad3 para sostener d4.', 'a3 y b4 para ganar espacio en el flanco de dama.', 'Ataque en el flanco de rey basado en el peón de e5.'],
+      },
+      b: {
+        en: ['Hit d4 with ...c5, ...Nc6 and ...Qb6.', 'Undermine e5 with ...f6.', 'Bring the knight to f5.'],
+        es: ['Atacar d4 con ...c5, ...Cc6 y ...Db6.', 'Socavar e5 con ...f6.', 'Llevar el caballo a f5.'],
+      },
+    },
+    lines: [tree('french-advance', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e6')],
+  },
 ];

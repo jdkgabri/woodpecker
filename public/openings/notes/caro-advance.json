@@ -1,0 +1,26 @@
+{
+ "": {
+  "en": "Against the Caro-Kann with the Advance Variation: 3.e5 gains space, and the quiet Short system (Nf3, Be2, O-O) keeps a lasting edge without forcing theory.",
+  "es": "Contra la Caro-Kann con la Variante del Avance: 3.e5 gana espacio, y el tranquilo sistema de Short (Cf3, Ae2, O-O) mantiene una ventaja duradera sin teoría forzada."
+ },
+ "d4 d5 e5": {
+  "en": "e5 closes the centre and takes away f6 from Black's knight.",
+  "es": "e5 cierra el centro y quita la casilla f6 al caballo negro."
+ },
+ "d4 d5 e5 Bf5 Nf3 e6 Be2": {
+  "en": "The Short system: Be2, O-O and c3 or Nbd2. Black's play comes with ...c5; White keeps the e5 wedge.",
+  "es": "El sistema de Short: Ae2, O-O y c3 o Cbd2. El juego negro llega con ...c5; las blancas mantienen la cuña de e5."
+ },
+ "d4 d5 e5 Bf5 Nf3 e6 Be2 c5 O-O": {
+  "en": "Castle and meet ...c5 calmly: after ...Nc6 White plays c3 or Be3 and keeps the centre.",
+  "es": "Enroca y responde a ...c5 con calma: tras ...Cc6 las blancas juegan c3 o Ae3 y mantienen el centro."
+ },
+ "d4 d5 e5 c5 Nf3": {
+  "en": "Against the immediate ...c5, Nf3 and c3 support d4; dxc5 is also possible when it wins time.",
+  "es": "Contra el ...c5 inmediato, Cf3 y c3 apoyan d4; dxc5 también es posible cuando gana tiempo."
+ },
+ "d4 d5 e5 e6": {
+  "en": "...e6 before ...Bf5 shuts in Black's bishop: it is a French where Black has lost a tempo with ...c6.",
+  "es": "...e6 antes de ...Af5 encierra al alfil negro: es una Francesa en la que las negras han perdido un tiempo con ...c6."
+ }
+}

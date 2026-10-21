@@ -1,0 +1,30 @@
+{
+ "": {
+  "en": "Against the French with the Advance Variation: 3.e5 gains space and cramps Black. White supports d4 with c3 and Nf3, and keeps the e5 wedge.",
+  "es": "Contra la Francesa con la Variante del Avance: 3.e5 gana espacio y encoge a las negras. Las blancas apoyan d4 con c3 y Cf3, y mantienen la cuña de e5."
+ },
+ "d4 d5 e5 c5 c3": {
+  "en": "c3 supports d4 so that a pawn recapture keeps the chain intact.",
+  "es": "c3 apoya d4 para que una recaptura con peón mantenga la cadena intacta."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Qb6": {
+  "en": "Black piles up on d4 and b2. Be2 keeps everything solid. Bd3 is a trap: after ...cxd4 cxd4 Nxd4? Nxd4 Qxd4, Bb5+ wins the queen.",
+  "es": "Las negras presionan d4 y b2. Ae2 lo mantiene todo sólido. Ad3 es una trampa: tras ...cxd4 cxd4 Cxd4? Cxd4 Dxd4, Ab5+ gana la dama."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Nge7 Bd3": {
+  "en": "The knight heads for f5 to hit d4; if ...Ng6, Bxg6 damages Black's structure.",
+  "es": "El caballo se dirige a f5 para atacar d4; si ...Cg6, Axg6 daña la estructura negra."
+ },
+ "d4 d5 e5 c5 c3 cxd4 cxd4": {
+  "en": "The chain is intact. Nf3, Nc3 and Bd3 follow, and White's space counts.",
+  "es": "La cadena está intacta. Siguen Cf3, Cc3 y Ad3, y el espacio blanco cuenta."
+ },
+ "d4 d5 e5 Nc6 c3": {
+  "en": "...Nc6 before ...c5 blocks Black's own c-pawn; White simply keeps the centre.",
+  "es": "...Cc6 antes de ...c5 bloquea el propio peón c negro; las blancas simplemente mantienen el centro."
+ },
+ "d4 c5": {
+  "en": "An early ...c5 transposes to a Sicilian or a French depending on White's choice.",
+  "es": "Un ...c5 temprano transpone a una Siciliana o a una Francesa según elijan las blancas."
+ }
+}
