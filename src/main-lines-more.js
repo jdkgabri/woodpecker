@@ -4863,5 +4863,209 @@ export default {
     "es": "...d5 toma el centro: las negras conservan el peón de más con una posición sólida."
    }
   }
+ },
+ "eb-ponziani": {
+  "moves": "e4 e5 Nf3 Nc6 c3 Nf6 d4 Nxe4 d5 Bc5 Be3 Bxe3 fxe3 Ne7",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5: Black takes his share of the centre.",
+    "es": "1...e5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The knight attacks e5.",
+    "es": "El caballo ataca e5."
+   },
+   "4": {
+    "en": "...Nc6 defends e5 and develops.",
+    "es": "...Cc6 defiende e5 y desarrolla."
+   },
+   "5": {
+    "en": "The Ponziani: c3 prepares d4, but takes c3 away from White's knight.",
+    "es": "La Ponziani: c3 prepara d4, pero le quita c3 al caballo blanco."
+   },
+   "6": {
+    "en": "...Nf6 hits e4, which no knight can defend from c3.",
+    "es": "...Cf6 ataca e4, que ningún caballo puede defender desde c3."
+   },
+   "7": {
+    "en": "d4 counterattacks.",
+    "es": "d4 contraataca."
+   },
+   "8": {
+    "en": "Take the e4-pawn.",
+    "es": "Toma el peón de e4."
+   },
+   "9": {
+    "en": "d5 kicks the c6-knight.",
+    "es": "d5 echa al caballo de c6."
+   },
+   "10": {
+    "en": "...Bc5 develops with a threat on f2.",
+    "es": "...Ac5 desarrolla con amenaza sobre f2."
+   },
+   "11": {
+    "en": "Be3 offers the trade.",
+    "es": "Ae3 ofrece el cambio."
+   },
+   "13": {
+    "en": "White's pawns are damaged.",
+    "es": "Los peones blancos quedan dañados."
+   },
+   "14": {
+    "en": "...Ne7, then ...d6 or ...O-O: the e4-knight is strong and e3 is weak. Black is clearly better.",
+    "es": "...Ce7, y después ...d6 o ...O-O: el caballo de e4 es fuerte y e3 es débil. Las negras están claramente mejor."
+   }
+  }
+ },
+ "eb-four-knights": {
+  "moves": "e4 e5 Nf3 Nc6 Nc3 Nf6 Bc4 Bc5 d3 Bb4",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5: Black takes his share of the centre.",
+    "es": "1...e5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The knight attacks e5.",
+    "es": "El caballo ataca e5."
+   },
+   "4": {
+    "en": "...Nc6 defends e5 and develops.",
+    "es": "...Cc6 defiende e5 y desarrolla."
+   },
+   "5": {
+    "en": "The Four Knights (Italian style): calm development.",
+    "es": "Los Cuatro Caballos (al estilo italiano): desarrollo tranquilo."
+   },
+   "6": {
+    "en": "Symmetrical development.",
+    "es": "Desarrollo simétrico."
+   },
+   "7": {
+    "en": "Bc4 aims at f7.",
+    "es": "Ac4 apunta a f7."
+   },
+   "8": {
+    "en": "Mirror: ...Bc5.",
+    "es": "Copia: ...Ac5."
+   },
+   "9": {
+    "en": "d3 protects e4.",
+    "es": "d3 protege e4."
+   },
+   "10": {
+    "en": "...Bb4 pins the c3-knight, preparing ...d5. A balanced, quiet game; castle soon.",
+    "es": "...Ab4 clava el caballo de c3, preparando ...d5. Una partida equilibrada y tranquila; enroca pronto."
+   }
+  }
+ },
+ "eb-danish": {
+  "moves": "e4 e5 d4 exd4 c3 Nc6 cxd4 d5 e5 Bb4+ Nc3 Nge7",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5: Black takes his share of the centre.",
+    "es": "1...e5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "2.d4 opens the centre at once.",
+    "es": "2.d4 abre el centro de inmediato."
+   },
+   "4": {
+    "en": "Take.",
+    "es": "Toma."
+   },
+   "5": {
+    "en": "The Danish Gambit: c3 offers another pawn.",
+    "es": "El Gambito Danés: c3 ofrece otro peón."
+   },
+   "6": {
+    "en": "...Nc6 develops and keeps the pressure on d4.",
+    "es": "...Cc6 desarrolla y mantiene la presión sobre d4."
+   },
+   "7": {
+    "en": "White takes back.",
+    "es": "Las blancas recapturan."
+   },
+   "8": {
+    "en": "...d5 hits e4 at once.",
+    "es": "...d5 golpea e4 de inmediato."
+   },
+   "9": {
+    "en": "e5 gains space.",
+    "es": "e5 gana espacio."
+   },
+   "10": {
+    "en": "...Bb4+ develops with check.",
+    "es": "...Ab4+ desarrolla con jaque."
+   },
+   "12": {
+    "en": "...Nge7 heads for f5, hitting d4. A French-like position where Black is comfortable.",
+    "es": "...Cge7 va hacia f5, atacando d4. Una posición de tipo francés en la que las negras están cómodas."
+   }
+  }
+ },
+ "eb-bishops": {
+  "moves": "e4 e5 Bc4 Nf6 d3 Bc5 Nf3 Nc6 O-O O-O c3 d5 exd5 Nxd5 Re1 Nf6",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5: Black takes his share of the centre.",
+    "es": "1...e5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The Bishop's Opening: the bishop aims at f7.",
+    "es": "La Apertura de Alfil: el alfil apunta a f7."
+   },
+   "4": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "5": {
+    "en": "d3 protects e4.",
+    "es": "d3 protege e4."
+   },
+   "6": {
+    "en": "Active development.",
+    "es": "Desarrollo activo."
+   },
+   "8": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "10": {
+    "en": "Castle.",
+    "es": "Enroque."
+   },
+   "11": {
+    "en": "c3 prepares d4.",
+    "es": "c3 prepara d4."
+   },
+   "12": {
+    "en": "...d5 takes the centre first.",
+    "es": "...d5 toma el centro primero."
+   },
+   "14": {
+    "en": "The knight recaptures.",
+    "es": "El caballo recaptura."
+   },
+   "16": {
+    "en": "...Nf6 protects the king and keeps e5 solid. A balanced Italian-type position.",
+    "es": "...Cf6 protege al rey y mantiene e5 sólido. Una posición equilibrada de tipo italiano."
+   }
+  }
  }
 };
