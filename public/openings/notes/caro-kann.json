@@ -1,0 +1,38 @@
+{
+ "": {
+  "en": "The Caro-Kann for Black: ...c6 and ...d5, then the light-squared bishop comes out to f5 before ...e6. Solid against everything, with clear plans.",
+  "es": "La Caro-Kann con negras: ...c6 y ...d5, y el alfil de casillas blancas sale a f5 antes de ...e6. Sólida contra todo, con planes claros."
+ },
+ "d4 d5 e5 Bf5": {
+  "en": "Against the Advance, the bishop comes out first, then ...e6, ...c5 and ...Nc6 attack the centre.",
+  "es": "Contra el Avance, el alfil sale primero, y luego ...e6, ...c5 y ...Cc6 atacan el centro."
+ },
+ "d4 d5 e5 Bf5 Bd3 Bxd3 Qxd3": {
+  "en": "Trading the bishops is fine for Black: the problem bishop is gone. Next ...e6, ...c5 and ...Nc6.",
+  "es": "Cambiar los alfiles es bueno para las negras: el alfil problemático desaparece. Después ...e6, ...c5 y ...Cc6."
+ },
+ "d4 d5 e5 Bf5 h4 h5": {
+  "en": "Against h4, ...h5 stops h5 from trapping or chasing the bishop.",
+  "es": "Contra h4, ...h5 impide que h5 atrape o persiga al alfil."
+ },
+ "d4 d5 exd5 cxd5": {
+  "en": "The Exchange Variation: a symmetrical structure; ...Nc6, ...Bf5 or ...Bg4 and ...e6 give Black a comfortable game.",
+  "es": "La Variante del Cambio: una estructura simétrica; ...Cc6, ...Af5 o ...Ag4 y ...e6 dan a las negras un juego cómodo."
+ },
+ "d4 d5 exd5 cxd5 c4": {
+  "en": "The Panov Attack: White accepts an isolated pawn for active play. ...e6 and ...Nf6 are solid.",
+  "es": "El Ataque Panov: las blancas aceptan un peón aislado a cambio de juego activo. ...e6 y ...Cf6 son sólidas."
+ },
+ "d4 d5 Nc3 dxe4 Nxe4 Bf5": {
+  "en": "The Classical: the bishop develops with tempo; after Ng3 it retreats to g6.",
+  "es": "La Clásica: el alfil se desarrolla ganando tiempo; tras Cg3 se retira a g6."
+ },
+ "d4 d5 Nc3 dxe4 f3": {
+  "en": "The Fantasy-style gambit with f3: ...Nf6 and if fxe4, ...e5! hits back in the centre.",
+  "es": "El gambito tipo Fantasía con f3: ...Cf6 y si fxe4, ¡...e5! contraataca en el centro."
+ },
+ "Nf3 d5": {
+  "en": "Against the Two Knights setups, the same ...d5 and ...Bf5 or ...Bg4 ideas work.",
+  "es": "Contra los esquemas con Cf3, funcionan las mismas ideas: ...d5 y ...Af5 o ...Ag4."
+ }
+}

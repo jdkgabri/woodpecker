@@ -378,4 +378,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('english', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'c4')],
   },
+  // ---- caro-kann
+  {
+    id: 'caro-kann', side: 'b', eco: 'B10–B19', puzzles: 'caro-kann',
+    name: { en: 'Caro-Kann Defence', es: 'Defensa Caro-Kann' },
+    summary: {
+      en: '1.e4 c6 — prepare ...d5 with a sound structure and develop the bishop outside the chain.',
+      es: '1.e4 c6 — preparar ...d5 con una estructura sana y desarrollar el alfil fuera de la cadena.',
+    },
+    intro: {
+      en: [
+        'The Caro-Kann prepares 2...d5 with the c-pawn instead of the e-pawn, so the light-squared bishop can come out to f5 or g4 before ...e6.',
+        'Black gets one of the most solid positions in chess. White\'s main tries are the Advance (3.e5), the Classical (3.Nc3 dxe4 4.Nxe4) and the Exchange (3.exd5).',
+      ],
+      es: [
+        'La Caro-Kann prepara 2...d5 con el peón c en lugar del peón e, para que el alfil de casillas blancas salga a f5 o g4 antes de ...e6.',
+        'Las negras consiguen una de las posiciones más sólidas del ajedrez. Los intentos principales de las blancas son el Avance (3.e5), la Clásica (3.Cc3 dxe4 4.Cxe4) y el Cambio (3.exd5).',
+      ],
+    },
+    structure: {
+      en: 'Pawns on c6 and e6 with the bishop on f5 or g4 outside the chain. After ...dxe4 Black has a sound queenside majority; against e5, Black plays ...c5 later.',
+      es: 'Peones en c6 y e6 con el alfil en f5 o g4 fuera de la cadena. Tras ...dxe4 las negras tienen una mayoría sana en el flanco de dama; contra e5, juegan ...c5 más tarde.',
+    },
+    plans: {
+      b: {
+        en: ['...d5, ...Bf5, ...e6 and ...Nd7.', 'Break with ...c5 against the Advance.', 'Trade pieces and use the better structure in the endgame.'],
+        es: ['...d5, ...Af5, ...e6 y ...Cd7.', 'Romper con ...c5 contra el Avance.', 'Cambiar piezas y aprovechar la mejor estructura en el final.'],
+      },
+      w: {
+        en: ['Gain space with e5.', 'Chase the bishop with h4–h5 or Nh4.', 'Attack the kingside before Black is fully developed.'],
+        es: ['Ganar espacio con e5.', 'Perseguir el alfil con h4–h5 o Ch4.', 'Atacar en el flanco de rey antes de que las negras completen su desarrollo.'],
+      },
+    },
+    lines: [tree('caro-kann', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 c6')],
+  },
 ];
