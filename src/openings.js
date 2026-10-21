@@ -1,7 +1,7 @@
 // Opening courses: catalogue, opening page, step-by-step study and move drill.
 import { Chessground } from 'chessground';
 import { Chess } from 'chess.js';
-import { OPENINGS } from './openings-data.js';
+import { OPENINGS, findOpening } from './openings-data.js';
 import * as store from './store.js';
 import { pickPuzzlesFromFile } from './puzzles.js';
 import { openAnalysis } from './analysis.js';
@@ -12,7 +12,6 @@ import { treeMemory } from './opening-tree.js';
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const tx = obj => (obj ? obj[lang()] ?? obj.en : '');
 const toColor = c => (c === 'w' ? 'white' : 'black');
-const findOpening = id => OPENINGS.find(o => o.id === id);
 const allLines = o => [...o.lines, ...(o.traps || [])];
 
 // Puzzle groups (files in public/openings/puzzles/) offered for training sets
@@ -111,12 +110,29 @@ export function viewOpening(app, id, go) {
         ${treeBox}
       </div>`;
   };
-  const plans = side => o.plans[side] ? `
+  const plans = (op, side) => op.plans?.[side] ? `
     <h3>${side === o.side ? t('Your plans') : t("The opponent's plans")}</h3>
-    <ul class="plans">${tx(o.plans[side]).map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : '';
-  app.innerHTML = `
-    <header class="top"><a class="icon-btn" href="#/openings">‹</a><h1 class="ellipsis">${esc(tx(o.name))}</h1><span></span></header>
-    <main class="wrap">
+    <ul class="plans">${tx(op.plans[side]).map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : '';
+  const ideas = op => `
+      <section class="card">
+        ${tx(op.intro).map(p => `<p>${esc(p)}</p>`).join('')}
+        ${op.structure ? `<h3>${t('Pawn structure')}</h3><p>${esc(tx(op.structure))}</p>` : ''}
+        ${plans(op, o.side)}${plans(op, other)}
+      </section>`;
+  const linesOf = (lines, traps) => `
+      ${lines.map(l => lineCard(l, false)).join('')}
+      ${traps.length ? `<h3 class="section-title">${t('Traps')}</h3>${traps.map(l => lineCard(l, true)).join('')}` : ''}`;
+  // grouped openings: a general intro, then each part with its ideas and lines
+  const body = o.parts ? `
+      <section class="card">
+        <div class="row small muted"><span>${o.side === 'w' ? t('You play White') : t('You play Black')}</span><span>ECO ${o.eco}</span></div>
+        ${tx(o.intro).map(p => `<p>${esc(p)}</p>`).join('')}
+        <p class="small">${o.parts.map(p => `<a href="" data-part="${p.id}">${esc(tx(p.name))}</a>`).join(' · ')}</p>
+      </section>
+      ${o.parts.map(p => `
+      <h2 class="section-title" id="part-${p.id}">${esc(tx(p.name))}</h2>
+      ${ideas(p)}
+      ${linesOf(o.lines.filter(l => l.part === p.id), (o.traps || []).filter(l => l.part === p.id))}`).join('')}` : `
       <section class="card">
         <div class="row small muted"><span>${o.side === 'w' ? t('You play White') : t('You play Black')}</span><span>ECO ${o.eco}</span></div>
         ${tx(o.intro).map(p => `<p>${esc(p)}</p>`).join('')}
@@ -124,17 +140,21 @@ export function viewOpening(app, id, go) {
       <section class="card">
         <h2>${t('Pawn structure')}</h2>
         <p>${esc(tx(o.structure))}</p>
-        ${plans(o.side)}${plans(other)}
+        ${plans(o, o.side)}${plans(o, other)}
       </section>
       <h2 class="section-title">${t('Main lines')}</h2>
       ${o.lines.map(l => lineCard(l, false)).join('')}
-      ${o.traps?.length ? `<h2 class="section-title">${t('Traps')}</h2>${o.traps.map(l => lineCard(l, true)).join('')}` : ''}
+      ${o.traps?.length ? `<h2 class="section-title">${t('Traps')}</h2>${o.traps.map(l => lineCard(l, true)).join('')}` : ''}`;
+  app.innerHTML = `
+    <header class="top"><a class="icon-btn" href="#/openings">‹</a><h1 class="ellipsis">${esc(tx(o.name))}</h1><span></span></header>
+    <main class="wrap">
+      ${body}
       ${o.puzzles ? `
       <h2 class="section-title">${t('Tactics from this opening')}</h2>
       <section class="card form">
         <p class="small muted">${t('Puzzles from real games that started with this opening, where you play your side. Train them in cycles like any other set.')}</p>
         <label for="ogGroup">${t('Lines')}</label>
-        <select id="ogGroup">${groupsOf(o).map(g => `<option value="${g}">${esc(tx(GROUPS[g]) || tx(o.name))}</option>`).join('')}</select>
+        <select id="ogGroup">${groupsOf(o).map(g => `<option value="${g}">${esc(tx(GROUPS[g]) || tx(o.groupNames?.[g]) || tx(o.name))}</option>`).join('')}</select>
         <div class="grid2">
           <div><label for="ogMin">${t('Min rating')}</label><input id="ogMin" type="number" min="400" max="3200" step="50" value="1000" inputmode="numeric"></div>
           <div><label for="ogMax">${t('Max rating')}</label><input id="ogMax" type="number" min="400" max="3200" step="50" value="2200" inputmode="numeric"></div>
@@ -145,6 +165,7 @@ export function viewOpening(app, id, go) {
         <p class="small muted" id="ogStatus"></p>
       </section>` : ''}
     </main>`;
+  app.querySelectorAll('[data-part]').forEach(el => el.addEventListener('click', e => { e.preventDefault(); app.querySelector('#part-' + el.dataset.part)?.scrollIntoView({ behavior: 'smooth' }); }));
   if (!o.puzzles) return;
   app.querySelector('#ogCreate').onclick = async e => {
     const btn = e.currentTarget;
@@ -162,7 +183,7 @@ export function viewOpening(app, id, go) {
       if (r.items.length < count && !confirm(t('Only {n} puzzles in that range. Create the set with {n}?', { n: r.items.length }))) { btn.disabled = false; return status(''); }
       const ratings = r.items.map(x => x.rating);
       const set = store.addSet({
-        id: store.uid(), name: `${tx(o.name)} · ${tx(GROUPS[group]) || t('All lines')} (${min}–${max})`, source: 'opening', order: 'random', targetCycles: 5,
+        id: store.uid(), name: `${tx(o.name)} · ${tx(GROUPS[group]) || tx(o.groupNames?.[group]) || t('All lines')} (${min}–${max})`, source: 'opening', order: 'random', targetCycles: 5,
         createdAt: Date.now(), opening: { id: o.id, group, eloMin: Math.min(...ratings), eloMax: Math.max(...ratings) }, items: r.items, cycles: [],
       });
       go('#/set/' + set.id);

@@ -6,7 +6,7 @@
 // Opponent nodes have p; our nodes do not.
 import { Chessground } from 'chessground';
 import { Chess } from 'chess.js';
-import { OPENINGS } from './openings-data.js';
+import { OPENINGS, findOpening } from './openings-data.js';
 import { openAnalysis } from './analysis.js';
 import { sound } from './sound.js';
 import { t, tn, lang, san } from './i18n.js';
@@ -93,7 +93,7 @@ function pickBranch(id, list, avoid) {
  * In study mode `start` is an optional branch index to open at its end.
  */
 export function viewOpeningTree(app, id, lineId, mode, go, start) {
-  const o = OPENINGS.find(x => x.id === id);
+  const o = findOpening(id);
   const line = o?.lines.find(l => l.id === lineId);
   if (!line?.tree) { go('#/opening/' + id); return () => {}; }
   const drill = mode === 'drill';

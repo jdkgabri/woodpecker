@@ -791,3 +791,91 @@ export const OPENINGS = [
   },
 ];
 OPENINGS.push(...MORE_OPENINGS);
+
+// ---------- grouped openings ----------
+// Openings that belong together are shown as one opening made of parts. The parts keep their own ideas,
+// plans and lines; old links and progress keys ('opening/line') of the parts point to the group.
+const GROUPED = [
+  {
+    id: 'philidor-lion', side: 'b', eco: 'C41, B07', from: ['philidor', 'black-lion'],
+    name: { en: 'Philidor and Black Lion', es: 'Philidor y Black Lion' },
+    summary: {
+      en: '...d6 and ...e5 against 1.e4: the classical Philidor with ...exd4, and the Black Lion setup (...Nbd7, ...e5, ...c6) with its kingside claw.',
+      es: '...d6 y ...e5 contra 1.e4: la Philidor clásica con ...exd4 y el esquema Black Lion (...Cbd7, ...e5, ...c6) con su garra en el flanco de rey.',
+    },
+    intro: {
+      en: ['Two ways of playing the same idea: Black defends e5 with the d-pawn. In the Philidor Black usually gives up the centre with ...exd4 and develops fast; in the Black Lion Black keeps the pawn wall d6–e5–c6 and attacks later with ...h6 and ...g5.'],
+      es: ['Dos formas de jugar la misma idea: las negras defienden e5 con el peón d. En la Philidor las negras suelen ceder el centro con ...exd4 y desarrollar rápido; en el Black Lion mantienen el muro de peones d6–e5–c6 y atacan más tarde con ...h6 y ...g5.'],
+    },
+  },
+  {
+    id: 'vs-queens-gambit', side: 'b', vs: 'd4', eco: 'D06–D69', from: ['qgd-black', 'slav-black', 'semi-slav', 'qga-black', 'albin'],
+    name: { en: 'Against the Queen\'s Gambit', es: 'Contra el Gambito de Dama' },
+    summary: {
+      en: '1.d4 d5 2.c4 with Black: the Declined, the Slav, the Semi-Slav, the Accepted and the Albin Countergambit.',
+      es: '1.d4 d5 2.c4 con negras: el Rehusado, la Eslava, la Semieslava, el Aceptado y el Contragambito Albin.',
+    },
+    intro: {
+      en: ['Five answers to the Queen\'s Gambit, from the most solid to the sharpest. Choose one as your main weapon and keep another as a surprise: the Declined and the Slav hold d5, the Accepted takes the pawn and hits back with ...c5, and the Albin counterattacks at once.'],
+      es: ['Cinco respuestas al Gambito de Dama, de la más sólida a la más aguda. Elige una como arma principal y guarda otra como sorpresa: el Rehusado y la Eslava sostienen d5, el Aceptado toma el peón y contraataca con ...c5, y el Albin contraataca de inmediato.'],
+    },
+  },
+  {
+    id: 'anti-sicilian', side: 'w', vs: 'e4', eco: 'B21–B22', from: ['morra', 'alapin'],
+    name: { en: 'Against the Sicilian: Morra and Alapin', es: 'Contra la Siciliana: Morra y Alapin' },
+    summary: {
+      en: 'Two practical weapons against 1...c5: the Smith-Morra Gambit for fast development, and the Alapin (2.c3) for a classical centre.',
+      es: 'Dos armas prácticas contra 1...c5: el Gambito Smith-Morra para un desarrollo rápido, y la Alapin (2.c3) para un centro clásico.',
+    },
+    intro: {
+      en: ['Instead of the Open Sicilian and its huge theory, White chooses the type of game: the Morra gives a pawn for open lines and attack, the Alapin builds the centre with c3 and d4 and leads to calmer positions.'],
+      es: ['En lugar de la Siciliana Abierta y su enorme teoría, las blancas eligen el tipo de partida: la Morra da un peón a cambio de líneas abiertas y ataque, la Alapin construye el centro con c3 y d4 y lleva a posiciones más tranquilas.'],
+    },
+  },
+  {
+    id: 'vs-semi-open', side: 'w', vs: 'e4', eco: 'B01, B12, C02', from: ['french-advance', 'caro-advance', 'vs-scandinavian'],
+    name: { en: 'Against the French, Caro-Kann and Scandinavian', es: 'Contra la Francesa, Caro-Kann y Escandinava' },
+    summary: {
+      en: 'With White against the semi-open defences: the Advance Variation against the French and the Caro-Kann, and a simple system against the Scandinavian.',
+      es: 'Con blancas contra las defensas semiabiertas: la variante del avance contra la Francesa y la Caro-Kann, y un sistema sencillo contra la Escandinava.',
+    },
+    intro: {
+      en: ['One idea against two defences: push e5, gain space and cramp Black\'s pieces. Against the Scandinavian, develop quickly while chasing the black queen.'],
+      es: ['Una idea contra dos defensas: avanzar e5, ganar espacio y encerrar las piezas negras. Contra la Escandinava, desarrollar rápido mientras persigues la dama negra.'],
+    },
+  },
+];
+export const OPENING_ALIAS = {};
+for (const g of GROUPED) {
+  const parts = g.from.map(id => OPENINGS.find(o => o.id === id)).filter(Boolean);
+  if (!parts.length) continue;
+  const at = OPENINGS.indexOf(parts[0]);
+  const { from, ...meta } = g;
+  const merged = {
+    ...meta, parts, puzzles: parts[0].puzzles,
+    groupNames: Object.fromEntries(parts.filter(p => p.puzzles).map(p => [p.puzzles, p.name])),
+    lines: parts.flatMap(p => p.lines.map(l => ({ ...l, puzzles: l.puzzles || p.puzzles, part: p.id }))),
+    traps: parts.flatMap(p => (p.traps || []).map(l => ({ ...l, puzzles: l.puzzles || p.puzzles, part: p.id }))),
+  };
+  for (const p of parts) { OPENINGS.splice(OPENINGS.indexOf(p), 1); OPENING_ALIAS[p.id] = g.id; }
+  OPENINGS.splice(Math.min(at, OPENINGS.length), 0, merged);
+}
+export const findOpening = id => OPENINGS.find(o => o.id === (OPENING_ALIAS[id] || id));
+
+// Progress stored under a part's id moves to its group (once, on this device)
+try {
+  for (const key of ['wp:drill:v1', 'wp:tree:v1']) {
+    const all = JSON.parse(localStorage.getItem(key) || '{}');
+    let changed = false;
+    for (const k of Object.keys(all)) {
+      const [oid, ...rest] = k.split('/');
+      const to = OPENING_ALIAS[oid];
+      if (!to) continue;
+      const nk = `${to}/${rest.join('/')}`;
+      if (!(nk in all)) all[nk] = all[k];
+      delete all[k];
+      changed = true;
+    }
+    if (changed) localStorage.setItem(key, JSON.stringify(all));
+  }
+} catch { /* no storage (tests, private mode) */ }
