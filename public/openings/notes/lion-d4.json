@@ -1,0 +1,30 @@
+{
+ "": {
+  "en": "The Lion against 1.d4: 1...d6 and ...Nf6, ...Nbd7, ...e5. It reaches the same setup against c4, Nf3, the London (Bf4) and even 2.e4, which transposes to the main Black Lion.",
+  "es": "El León contra 1.d4: 1...d6 y ...Cf6, ...Cbd7, ...e5. Llega a la misma estructura contra c4, Cf3, la Londres (Af4) e incluso 2.e4, que transpone al Black Lion principal."
+ },
+ "c4 Nf6 Nc3 Nbd7 e4 e5": {
+  "en": "The Old Indian: Black stakes a claim in the centre. If White closes it with d5, ...c6 and ...Be7 follow, with play on both wings.",
+  "es": "La India Antigua: las negras reclaman su parte del centro. Si las blancas lo cierran con d5, siguen ...c6 y ...Ae7, con juego en ambos flancos."
+ },
+ "c4 Nf6 Nc3 Nbd7 e4 e5 d5 c6": {
+  "en": "...c6 challenges the d5-pawn; later ...cxd5 opens the c-file for Black's pieces.",
+  "es": "...c6 discute el peón de d5; más tarde ...cxd5 abre la columna c para las piezas negras."
+ },
+ "c4 Nf6 Nc3 Nbd7 Nf3 e5 dxe5 dxe5": {
+  "en": "After the exchange the position is equal; ...c6, ...Bb4 or ...Bc5 and ...O-O are natural.",
+  "es": "Tras el cambio la posición está igualada; ...c6, ...Ab4 o ...Ac5 y ...O-O son naturales."
+ },
+ "c4 Nf6 Nc3 Nbd7 Nf3 e5 d5 Nc5": {
+  "en": "With the centre closed, the knight finds a great square on c5.",
+  "es": "Con el centro cerrado, el caballo encuentra una gran casilla en c5."
+ },
+ "Bf4": {
+  "en": "Against the London, the same setup works: ...Nf6, ...Nbd7 and ...e5 challenge the f4-bishop.",
+  "es": "Contra la Londres funciona la misma estructura: ...Cf6, ...Cbd7 y ...e5 desafían al alfil de f4."
+ },
+ "e4": {
+  "en": "2.e4 transposes to the main Black Lion: see the Lion tree against 1.e4.",
+  "es": "2.e4 transpone al Black Lion principal: mira el árbol del León contra 1.e4."
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "": {
+  "en": "The Black Lion against everything after 1.e4 d6: ...Nf6, ...Nbd7, ...e5, ...Be7, ...c6 and ...O-O, a solid Philidor-type structure that later strikes with ...h6–g5 (the Lion's Claw) or ...exd4 and ...d5.",
+  "es": "El Black Lion contra todo tras 1.e4 d6: ...Cf6, ...Cbd7, ...e5, ...Ae7, ...c6 y ...O-O, una estructura sólida tipo Philidor que más tarde golpea con ...h6–g5 (la Garra del León) o ...exd4 y ...d5."
+ },
+ "d4 Nf6 Nc3 Nbd7": {
+  "en": "The Lion setup: the knight on d7 supports ...e5 and keeps the c-pawn free for ...c6.",
+  "es": "La estructura del León: el caballo de d7 apoya ...e5 y deja libre el peón c para ...c6."
+ },
+ "d4 Nf6 Nc3 Nbd7 Nf3 e5": {
+  "en": "...e5 claims the centre. White's main tries: dxe5 (simplifying), Bc4 (pressure on f7) and d5 (closing the centre).",
+  "es": "...e5 reclama el centro. Los intentos principales de las blancas: dxe5 (simplificar), Ac4 (presión sobre f7) y d5 (cerrar el centro)."
+ },
+ "d4 Nf6 Nc3 Nbd7 Nf3 e5 dxe5 dxe5": {
+  "en": "Take back with the pawn: the structure is balanced and ...Be7, ...c6 and ...O-O follow.",
+  "es": "Recaptura con el peón: la estructura está equilibrada y siguen ...Ae7, ...c6 y ...O-O."
+ },
+ "d4 Nf6 Nc3 Nbd7 Nf3 e5 Bc4 Be7": {
+  "en": "Important: ...Be7 before ...c6, so that Ng5 can be met calmly by ...O-O.",
+  "es": "Importante: ...Ae7 antes de ...c6, para que Cg5 se pueda responder con calma con ...O-O."
+ },
+ "d4 Nf6 Nc3 Nbd7 Nf3 e5 d5 Be7": {
+  "en": "With the centre closed, Black plays ...O-O, ...Nc5 and ...a5, or the kingside expansion ...h6 and ...g5.",
+  "es": "Con el centro cerrado, las negras juegan ...O-O, ...Cc5 y ...a5, o la expansión en el flanco de rey con ...h6 y ...g5."
+ },
+ "d4 Nf6 Nc3 Nbd7 f4 e5": {
+  "en": "Against the aggressive f4, hit back at once with ...e5.",
+  "es": "Contra el agresivo f4, contraataca de inmediato con ...e5."
+ },
+ "Nf3 Nf6 Bc4 Nxe4": {
+  "en": "White forgot that e4 needs protection: ...Nxe4 wins a pawn.",
+  "es": "Las blancas olvidaron que e4 necesita protección: ...Cxe4 gana un peón."
+ },
+ "Bc4 Nf6 Nf3 Nxe4": {
+  "en": "Again e4 is undefended: ...Nxe4 wins a pawn.",
+  "es": "Otra vez e4 está sin defensa: ...Cxe4 gana un peón."
+ },
+ "f4 Nf6 Nf3 Nxe4": {
+  "en": "After f4 and Nf3, e4 is loose: ...Nxe4.",
+  "es": "Tras f4 y Cf3, e4 está suelto: ...Cxe4."
+ },
+ "Nf3 Nf6 e5 dxe5 Nxe5 Nbd7": {
+  "en": "Challenge the e5-knight right away and develop normally.",
+  "es": "Discute el caballo de e5 de inmediato y desarrolla con normalidad."
+ },
+ "d4 Nf6 Nc3 Nbd7 Nf3 e5 Bc4 Be7 Bxf7+": {
+  "en": "Bxf7+? Kxf7 Ng5+ Kg8! keeps the extra piece: White's knight raids (Ne6, Nxc7) only lead into Black's counterattack.",
+  "es": "Axf7+? Rxf7 Cg5+ ¡Rg8! conserva la pieza de más: las incursiones del caballo blanco (Ce6, Cxc7) solo llevan al contraataque negro."
+ },
+ "Nf3 Nf6 Nc3 Nbd7 d4 e5 Bc4 Be7 Bxf7+": {
+  "en": "Bxf7+? Kxf7 Ng5+ Kg8! keeps the extra piece: White's knight raids (Ne6, Nxc7) only lead into Black's counterattack.",
+  "es": "Axf7+? Rxf7 Cg5+ ¡Rg8! conserva la pieza de más: las incursiones del caballo blanco (Ce6, Cxc7) solo llevan al contraataque negro."
+ },
+ "Bc4 Nf6 Nc3 e5 Nf3 Be7 d4 Nbd7 Bxf7+": {
+  "en": "Bxf7+? Kxf7 Ng5+ Kg8! keeps the extra piece: White's knight raids (Ne6, Nxc7) only lead into Black's counterattack.",
+  "es": "Axf7+? Rxf7 Cg5+ ¡Rg8! conserva la pieza de más: las incursiones del caballo blanco (Ce6, Cxc7) solo llevan al contraataque negro."
+ }
+}

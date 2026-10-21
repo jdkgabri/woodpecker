@@ -626,6 +626,13 @@ export const OPENINGS = [
     puzzles: 'black-lion',
     lines: [
       {
+        id: 'lion-all',
+        name: { en: "All of White's tries after 1.e4 d6", es: 'Todos los intentos blancos tras 1.e4 d6' },
+        moves: 'e4 d6',
+        treeOnly: true,
+        tree: { file: 'lion-all' },
+      },
+      {
         id: 'lion-claw',
         name: { en: 'Main setup against 1.e4: the Lion\'s Claw', es: 'Formación principal contra 1.e4: la garra del león' },
         moves: 'e4 d6 d4 Nf6 Nc3 Nbd7 Nf3 e5 Bc4 Be7 O-O c6 a4 Qc7 h3 h6 Re1 g5',
@@ -652,6 +659,7 @@ export const OPENINGS = [
       },
       {
         id: 'lion-d4',
+        tree: { file: 'lion-d4' },
         name: { en: 'The same setup against 1.d4 (Old Indian style)', es: 'La misma formación contra 1.d4 (estilo India Antigua)' },
         moves: 'd4 Nf6 c4 d6 Nc3 Nbd7 e4 e5 Nf3 c6 Be2 Be7 O-O O-O Re1 a6 Bf1 b5',
         notes: {
