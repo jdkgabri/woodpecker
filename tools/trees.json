@@ -1625,7 +1625,8 @@
    "Qh4",
    "f5",
    "Bxc6"
-  ]
+  ],
+  "prefer_tol": 90
  },
  {
   "file": "eb-four-knights",

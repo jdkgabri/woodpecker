@@ -120,9 +120,10 @@ def total(m):
 
 
 class Builder:
-    def __init__(self, side, prefer):
+    def __init__(self, side, prefer, prefer_tol=PREFER_TOL):
         self.us = chess.WHITE if side == 'w' else chess.BLACK
         self.prefer = prefer
+        self.prefer_tol = prefer_tol  # per spec: systems like the Grand Prix keep their moves even if slightly worse
         self.engine = chess.engine.SimpleEngine.popen_uci(os.environ.get('STOCKFISH', 'stockfish'))
         self.engine.configure({'Threads': THREADS, 'Hash': 512})
         self.nodes = 0
@@ -158,7 +159,7 @@ class Builder:
             score = ev.get(move.uci())
             if score is None:
                 score = self.eval_move(board, move)
-            if score >= best - PREFER_TOL:
+            if score >= best - self.prefer_tol:
                 return move, score, data
         if data is None and explore_fn:
             data = explore_fn()
@@ -226,7 +227,7 @@ def build_one(spec):
     board = chess.Board()
     for s in spec['root']:
         board.push_san(s)
-    b = Builder(spec['side'], spec.get('prefer', []))
+    b = Builder(spec['side'], spec.get('prefer', []), spec.get('prefer_tol', PREFER_TOL))
     b.root_ply = board.ply()
     t0 = time.time()
     try:

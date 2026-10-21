@@ -1308,5 +1308,335 @@ export default {
     "es": "Ae3: las blancas tienen más espacio y la columna d; las negras confían en ...b5."
    }
   }
+ },
+ "morra": {
+  "moves": "e4 c5 d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 e6 Bc4 a6 O-O",
+  "notes": {
+   "1": {
+    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+   },
+   "2": {
+    "en": "The Sicilian: Black fights for d4 from the side and avoids symmetrical positions.",
+    "es": "La Siciliana: las negras luchan por d4 desde el lado y evitan las posiciones simétricas."
+   },
+   "3": {
+    "en": "White offers to open the centre at once.",
+    "es": "Las blancas ofrecen abrir el centro de inmediato."
+   },
+   "4": {
+    "en": "Black takes.",
+    "es": "Las negras toman."
+   },
+   "5": {
+    "en": "The Smith-Morra Gambit: White offers a pawn for fast development and open lines.",
+    "es": "El Gambito Smith-Morra: las blancas ofrecen un peón a cambio de un desarrollo rápido y líneas abiertas."
+   },
+   "6": {
+    "en": "Accepting is the most testing answer.",
+    "es": "Aceptar es la respuesta más exigente."
+   },
+   "7": {
+    "en": "The knight recaptures: White is a pawn down but well ahead in development, with the c- and d-files open.",
+    "es": "El caballo recaptura: las blancas tienen un peón de menos pero mucho más desarrollo, con las columnas c y d abiertas."
+   },
+   "8": {
+    "en": "Development, controlling d4 and e5.",
+    "es": "Desarrollo, controlando d4 y e5."
+   },
+   "9": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "10": {
+    "en": "...e6 controls d5 and prepares ...Bc5 or ...Be7.",
+    "es": "...e6 controla d5 y prepara ...Ac5 o ...Ae7."
+   },
+   "11": {
+    "en": "The bishop aims at f7 and e6: typical Morra pressure.",
+    "es": "El alfil apunta a f7 y e6: la presión típica de la Morra."
+   },
+   "12": {
+    "en": "...a6 stops Nb5 and prepares ...b5.",
+    "es": "...a6 impide Cb5 y prepara ...b5."
+   },
+   "13": {
+    "en": "White castles: next Qe2, Rd1 and e5 or Nd5 tricks. Objectively Black is fine, but has to defend accurately: that is the point of the gambit.",
+    "es": "Las blancas enrocan: siguen De2, Td1 y trucos con e5 o Cd5. Objetivamente las negras están bien, pero tienen que defender con precisión: esa es la gracia del gambito."
+   }
+  }
+ },
+ "alapin": {
+  "moves": "e4 c5 c3 Nc6 d4 cxd4 cxd4 d5 e5 Bf5 Nf3",
+  "notes": {
+   "1": {
+    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+   },
+   "2": {
+    "en": "The Sicilian: Black fights for d4 from the side and avoids symmetrical positions.",
+    "es": "La Siciliana: las negras luchan por d4 desde el lado y evitan las posiciones simétricas."
+   },
+   "3": {
+    "en": "The Alapin: c3 prepares d4 to build a classical pawn centre.",
+    "es": "La Alapin: c3 prepara d4 para construir un centro de peones clásico."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "White builds the centre.",
+    "es": "Las blancas construyen el centro."
+   },
+   "8": {
+    "en": "...d5 strikes at e4 at once.",
+    "es": "...d5 golpea e4 de inmediato."
+   },
+   "9": {
+    "en": "e5 gains space, French-style.",
+    "es": "e5 gana espacio, al estilo de la Francesa."
+   },
+   "10": {
+    "en": "The bishop comes out before ...e6.",
+    "es": "El alfil sale antes de ...e6."
+   },
+   "11": {
+    "en": "Development, protecting d4. White has more space; Black will play ...e6 and pressure d4.",
+    "es": "Desarrollo, protegiendo d4. Las blancas tienen más espacio; las negras jugarán ...e6 y presionarán d4."
+   }
+  }
+ },
+ "alapin-d5": {
+  "moves": "e4 c5 c3 d5 exd5 Qxd5 d4 cxd4 Nf3 Nc6 cxd4 Bg4 Be2 e6 Be3 Nf6 Nc3 Bb4 h3",
+  "notes": {
+   "1": {
+    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+   },
+   "2": {
+    "en": "The Sicilian: Black fights for d4 from the side and avoids symmetrical positions.",
+    "es": "La Siciliana: las negras luchan por d4 desde el lado y evitan las posiciones simétricas."
+   },
+   "3": {
+    "en": "The Alapin: c3 prepares d4.",
+    "es": "La Alapin: c3 prepara d4."
+   },
+   "4": {
+    "en": "...d5: Black opens the centre before White can play d4.",
+    "es": "...d5: las negras abren el centro antes de que las blancas jueguen d4."
+   },
+   "5": {
+    "en": "White takes.",
+    "es": "Las blancas toman."
+   },
+   "6": {
+    "en": "The queen recaptures: Nc3 is not possible to chase it, because c3 is occupied by a pawn.",
+    "es": "La dama recaptura: no se la puede perseguir con Cc3, porque c3 está ocupada por un peón."
+   },
+   "7": {
+    "en": "d4 builds the centre with tempo.",
+    "es": "d4 construye el centro ganando tiempo."
+   },
+   "9": {
+    "en": "Development first; cxd4 comes next.",
+    "es": "Primero desarrollo; luego llega cxd4."
+   },
+   "10": {
+    "en": "Development, attacking d4.",
+    "es": "Desarrollo, atacando d4."
+   },
+   "11": {
+    "en": "White recaptures: an isolated d-pawn can arise later, in exchange for active pieces.",
+    "es": "Las blancas recapturan: más adelante puede surgir un peón d aislado, a cambio de piezas activas."
+   },
+   "12": {
+    "en": "...Bg4 pins the knight that defends d4.",
+    "es": "...Ag4 clava el caballo que defiende d4."
+   },
+   "13": {
+    "en": "Be2 breaks the pin.",
+    "es": "Ae2 rompe la clavada."
+   },
+   "15": {
+    "en": "Be3 protects d4.",
+    "es": "Ae3 protege d4."
+   },
+   "17": {
+    "en": "Nc3 gains time on the queen.",
+    "es": "Cc3 gana tiempo sobre la dama."
+   },
+   "18": {
+    "en": "...Bb4 pins the knight.",
+    "es": "...Ab4 clava el caballo."
+   },
+   "19": {
+    "en": "h3 questions the g4-bishop. A balanced position: White's pieces are active, Black presses on d4.",
+    "es": "h3 pregunta al alfil de g4. Una posición equilibrada: las piezas blancas están activas y las negras presionan d4."
+   }
+  }
+ },
+ "french-advance": {
+  "moves": "e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 cxd4 cxd4 Nge7 Na3",
+  "notes": {
+   "1": {
+    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+   },
+   "2": {
+    "en": "The French: Black prepares ...d5 with a solid pawn chain.",
+    "es": "La Francesa: las negras preparan ...d5 con una cadena de peones sólida."
+   },
+   "3": {
+    "en": "White takes the whole centre.",
+    "es": "Las blancas ocupan todo el centro."
+   },
+   "4": {
+    "en": "Black strikes at e4.",
+    "es": "Las negras golpean e4."
+   },
+   "5": {
+    "en": "The Advance Variation: e5 gains space and takes the f6-square away from Black's knight.",
+    "es": "La Variante del Avance: e5 gana espacio y le quita la casilla f6 al caballo negro."
+   },
+   "6": {
+    "en": "...c5 attacks the base of White's chain at once.",
+    "es": "...c5 ataca de inmediato la base de la cadena blanca."
+   },
+   "7": {
+    "en": "c3 supports d4.",
+    "es": "c3 apoya d4."
+   },
+   "8": {
+    "en": "More pressure on d4.",
+    "es": "Más presión sobre d4."
+   },
+   "9": {
+    "en": "Nf3 protects d4.",
+    "es": "Cf3 protege d4."
+   },
+   "10": {
+    "en": "...Qb6 adds a third attacker on d4 and hits b2.",
+    "es": "...Db6 suma un tercer atacante sobre d4 y ataca b2."
+   },
+   "11": {
+    "en": "Be2 prepares castling and keeps everything protected.",
+    "es": "Ae2 prepara el enroque y lo mantiene todo protegido."
+   },
+   "13": {
+    "en": "White recaptures: d4 is now defended by the knight and the queen.",
+    "es": "Las blancas recapturan: d4 está ahora defendido por el caballo y la dama."
+   },
+   "14": {
+    "en": "The knight heads for f5 to attack d4 once more.",
+    "es": "El caballo va hacia f5 para atacar d4 una vez más."
+   },
+   "15": {
+    "en": "Na3–c2: the knight comes to protect d4. White keeps the space advantage.",
+    "es": "Ca3–c2: el caballo viene a proteger d4. Las blancas mantienen la ventaja de espacio."
+   }
+  }
+ },
+ "caro-advance": {
+  "moves": "e4 c6 d4 d5 e5 Bf5 Nf3 e6 Be2 c5 O-O",
+  "notes": {
+   "1": {
+    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+   },
+   "2": {
+    "en": "The Caro-Kann: Black prepares ...d5 with the c-pawn behind it.",
+    "es": "La Caro-Kann: las negras preparan ...d5 con el peón c detrás."
+   },
+   "3": {
+    "en": "White takes the whole centre.",
+    "es": "Las blancas ocupan todo el centro."
+   },
+   "4": {
+    "en": "Black strikes at e4.",
+    "es": "Las negras golpean e4."
+   },
+   "5": {
+    "en": "The Advance Variation: e5 gains space and takes the f6-square away from Black's knight.",
+    "es": "La Variante del Avance: e5 gana espacio y le quita la casilla f6 al caballo negro."
+   },
+   "6": {
+    "en": "Unlike in the French, the light-squared bishop comes out before ...e6.",
+    "es": "A diferencia de la Francesa, el alfil de casillas blancas sale antes de ...e6."
+   },
+   "7": {
+    "en": "The short system: calm development.",
+    "es": "El sistema corto: desarrollo tranquilo."
+   },
+   "8": {
+    "en": "...e6 opens the f8-bishop.",
+    "es": "...e6 abre el alfil de f8."
+   },
+   "9": {
+    "en": "Be2 prepares castling (Bd3 would allow the trade of Black's good bishop).",
+    "es": "Ae2 prepara el enroque (Ad3 permitiría el cambio del alfil bueno negro)."
+   },
+   "10": {
+    "en": "...c5 attacks the chain: Black spends a second tempo with the c-pawn, but it is worth it.",
+    "es": "...c5 ataca la cadena: las negras gastan un segundo tiempo con el peón c, pero merece la pena."
+   },
+   "11": {
+    "en": "White castles; c3, Be3 and Nbd2 follow. White has more space.",
+    "es": "Las blancas enrocan; siguen c3, Ae3 y Cbd2. Las blancas tienen más espacio."
+   }
+  }
+ },
+ "vs-scandinavian": {
+  "moves": "e4 d5 exd5 Qxd5 Nc3 Qd8 d4 Nf6 Nf3 e6 Bc4 Be7 Bg5",
+  "notes": {
+   "1": {
+    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+   },
+   "2": {
+    "en": "The Scandinavian: Black attacks e4 at once.",
+    "es": "La Escandinava: las negras atacan e4 de inmediato."
+   },
+   "3": {
+    "en": "Take the pawn.",
+    "es": "Toma el peón."
+   },
+   "4": {
+    "en": "The queen recaptures early...",
+    "es": "La dama recaptura pronto..."
+   },
+   "5": {
+    "en": "...and Nc3 gains time on it.",
+    "es": "...y Cc3 gana tiempo sobre ella."
+   },
+   "6": {
+    "en": "The queen goes back home: solid, but Black has lost time.",
+    "es": "La dama vuelve a casa: sólido, pero las negras han perdido tiempo."
+   },
+   "7": {
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
+   },
+   "9": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "10": {
+    "en": "...e6 is solid, but it closes the c8-bishop.",
+    "es": "...e6 es sólido, pero encierra el alfil de c8."
+   },
+   "11": {
+    "en": "Active development.",
+    "es": "Desarrollo activo."
+   },
+   "12": {
+    "en": "Black prepares to castle.",
+    "es": "Las negras preparan el enroque."
+   },
+   "13": {
+    "en": "Bg5 pins the knight: White has more space and a clear lead in development.",
+    "es": "Ag5 clava el caballo: las blancas tienen más espacio y una clara ventaja en desarrollo."
+   }
+  }
  }
 };
