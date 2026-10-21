@@ -1,0 +1,30 @@
+{
+ "": {
+  "en": "The Slav for Black: ...c6 supports d5, ...Nf6 and, when White has developed both knights, ...dxc4 followed by ...Bf5 and ...e6.",
+  "es": "La Eslava con negras: ...c6 apoya d5, ...Cf6 y, cuando las blancas han desarrollado ambos caballos, ...dxc4 seguido de ...Af5 y ...e6."
+ },
+ "Nc3 Nf6 Nf3 dxc4": {
+  "en": "Take on c4: White must spend time (a4, e3, Bxc4) to win the pawn back, and Black develops ...Bf5 in the meantime.",
+  "es": "Toma en c4: las blancas deben gastar tiempo (a4, e3, Axc4) para recuperar el peón, y mientras las negras desarrollan ...Af5."
+ },
+ "Nc3 Nf6 Nf3 dxc4 e3": {
+  "en": "Without a4, ...b5 keeps the pawn: e3 is a mistake here.",
+  "es": "Sin a4, ...b5 conserva el peón: e3 es un error aquí."
+ },
+ "Nc3 Nf6 Nf3 dxc4 Bg5": {
+  "en": "Bg5 ignores the c4-pawn; ...Nbd7 develops and Black keeps the extra pawn for now.",
+  "es": "Ag5 ignora el peón de c4; ...Cbd7 desarrolla y las negras conservan de momento el peón de más."
+ },
+ "Nc3 Nf6 e3 Bf5": {
+  "en": "Against the quiet e3, the bishop comes out before ...e6: the main idea of the Slav.",
+  "es": "Contra el tranquilo e3, el alfil sale antes de ...e6: la idea principal de la Eslava."
+ },
+ "cxd5 cxd5": {
+  "en": "The Exchange Slav: symmetrical and solid. ...Nc6, ...Nf6 and ...Bf5 equalise comfortably.",
+  "es": "La Eslava del Cambio: simétrica y sólida. ...Cc6, ...Cf6 y ...Af5 igualan con comodidad."
+ },
+ "Nc3 Nf6 Nf3 dxc4 e4": {
+  "en": "e4 grabs the centre but allows ...b5, holding the c4-pawn.",
+  "es": "e4 ocupa el centro pero permite ...b5, sosteniendo el peón de c4."
+ }
+}

@@ -684,4 +684,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('dutch', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 f5')],
   },
+  // ---- slav (black)
+  {
+    id: 'slav-black', side: 'b', vs: 'd4', eco: 'D10–D19', puzzles: 'slav-black',
+    name: { en: 'Slav Defence (as Black)', es: 'Defensa Eslava (con negras)' },
+    summary: {
+      en: '1.d4 d5 2.c4 c6 — hold d5 with the c-pawn and develop the bishop outside the chain.',
+      es: '1.d4 d5 2.c4 c6 — sostener d5 con el peón c y desarrollar el alfil fuera de la cadena.',
+    },
+    intro: {
+      en: [
+        'The Slav defends d5 with ...c6 instead of ...e6, so the c8-bishop can come out to f5 or g4. After ...dxc4 Black can try to keep the pawn with ...b5 if White is careless.',
+        'It is one of the most reliable answers to the Queen\'s Gambit, with clear plans and a sound structure.',
+      ],
+      es: [
+        'La Eslava defiende d5 con ...c6 en lugar de ...e6, para que el alfil de c8 salga a f5 o g4. Tras ...dxc4 las negras pueden intentar conservar el peón con ...b5 si las blancas se descuidan.',
+        'Es una de las respuestas más fiables al Gambito de Dama, con planes claros y una estructura sana.',
+      ],
+    },
+    structure: {
+      en: 'Pawns on c6–d5 (later e6) with the bishop on f5 or g4. Black often takes on c4 and frees the game with ...c5 or ...e5.',
+      es: 'Peones en c6–d5 (más tarde e6) con el alfil en f5 o g4. Las negras suelen tomar en c4 y liberar el juego con ...c5 o ...e5.',
+    },
+    plans: {
+      b: {
+        en: ['...Nf6, ...dxc4 and ...Bf5.', '...e6, ...Bb4 and ...O-O.', 'Break with ...c5 or ...e5.'],
+        es: ['...Cf6, ...dxc4 y ...Af5.', '...e6, ...Ab4 y ...O-O.', 'Romper con ...c5 o ...e5.'],
+      },
+      w: {
+        en: ['a4 to stop ...b5, then win back c4.', 'Build the centre with e4.', 'Exchange on d5 for a symmetrical but slightly better position.'],
+        es: ['a4 para evitar ...b5 y recuperar c4.', 'Montar el centro con e4.', 'Cambiar en d5 para una posición simétrica pero algo mejor.'],
+      },
+    },
+    lines: [tree('slav-black', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 d5 c4 c6')],
+  },
 ];
