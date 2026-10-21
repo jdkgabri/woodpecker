@@ -1,0 +1,38 @@
+{
+ "": {
+  "en": "The Sveshnikov: ...e5 gains time on the knight and accepts a hole on d5 for active piece play and the bishop pair.",
+  "es": "La Sveshnikov: ...e5 gana tiempo sobre el caballo y acepta un agujero en d5 a cambio de piezas activas y la pareja de alfiles."
+ },
+ "Ndb5 d6": {
+  "en": "...d6 stops Nd6+. The main line goes Bg5 a6 Na3 b5: Black gets the bishop pair and activity in return for the d5 hole.",
+  "es": "...d6 impide Cd6+. La línea principal sigue Ag5 a6 Ca3 b5: las negras obtienen la pareja de alfiles y actividad a cambio del agujero de d5."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5": {
+  "en": "...b5 keeps the a3-knight out of c4: it stays offside for a long time.",
+  "es": "...b5 impide que el caballo de a3 vaya a c4: se queda fuera de juego mucho tiempo."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5 Nd5 Be7 Nxe7 Nxe7 c4": {
+  "en": "c4? forgets the e4-pawn: ...Nxe4.",
+  "es": "¿c4? se olvida del peón de e4: ...Cxe4."
+ },
+ "Nf3 Bb4": {
+  "en": "...Bb4 pins the c3-knight and threatens ...Nxe4.",
+  "es": "...Ab4 clava el caballo de c3 y amenaza ...Cxe4."
+ },
+ "Nf3 Bb4 Bd2 Bxc3 Bxc3 Nxe4 Bxe5": {
+  "en": "After ...Nxe5 Nxe5, ...Qa5+! checks and wins the knight on e5.",
+  "es": "Tras ...Cxe5 Cxe5, ¡...Da5+! da jaque y gana el caballo de e5."
+ },
+ "Nf3 Bb4 Bd2 Bxc3 Bxc3 Nxe4 Nxe5 Nxc3 bxc3": {
+  "en": "...Qe7! pins the e5-knight against the king.",
+  "es": "¡...De7! clava el caballo de e5 contra el rey."
+ },
+ "Nxc6 bxc6": {
+  "en": "Take towards the centre: ...d5 follows, and Black gets a strong pawn centre.",
+  "es": "Captura hacia el centro: sigue ...d5 y las negras obtienen un fuerte centro de peones."
+ },
+ "Nxc6 bxc6 Be3 Bb4 Qd2": {
+  "en": "The c3-knight is pinned against the queen on d2: ...Nxe4!",
+  "es": "El caballo de c3 está clavado contra la dama de d2: ¡...Cxe4!"
+ }
+}

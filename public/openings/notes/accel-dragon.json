@@ -1,0 +1,42 @@
+{
+ "": {
+  "en": "The Accelerated Dragon: ...g6 before ...d6, so Black can later play ...d5 in one move. White's main tries are the Maróczy Bind (c4) and Nc3 with Be3.",
+  "es": "El Dragón Acelerado: ...g6 antes de ...d6, para poder jugar más tarde ...d5 de una vez. Los intentos principales de las blancas son el Bind de Maróczy (c4) y Cc3 con Ae3."
+ },
+ "Nc3 Bg7 Be3 Nf6": {
+  "en": "...Nf6 and ...O-O. The point of the Accelerated Dragon: without ...d6, Black can answer the Yugoslav setup (f3, Qd2) with ...d5 in one move.",
+  "es": "...Cf6 y ...O-O. La gracia del Dragón Acelerado: sin ...d6, las negras pueden contestar al esquema yugoslavo (f3, Dd2) con ...d5 de una vez."
+ },
+ "Nc3 Bg7 Be3 Nf6 f3 O-O Qd2 d5": {
+  "en": "...d5! in one go: the centre opens before White's attack starts, and the long diagonal comes alive.",
+  "es": "¡...d5! de una vez: el centro se abre antes de que empiece el ataque blanco, y la gran diagonal cobra vida."
+ },
+ "Nc3 Bg7 Be3 Nf6 Qd2 O-O f3 d5": {
+  "en": "...d5! in one go: the centre opens before White's attack starts, and the long diagonal comes alive.",
+  "es": "¡...d5! de una vez: el centro se abre antes de que empiece el ataque blanco, y la gran diagonal cobra vida."
+ },
+ "Nc3 Bg7 Be3 Nf6 f3 O-O Qd2 d5 exd5 Nxd5 Nxd5 Qxd5 O-O-O": {
+  "en": "O-O-O? drops the a2-pawn with check threats: ...Qxa2!, and the d4-knight is also under fire.",
+  "es": "¿O-O-O? pierde el peón de a2 con amenazas al rey: ¡...Dxa2!, y el caballo de d4 también está bajo el fuego."
+ },
+ "Nc3 Bg7 Be3 Nf6 Qd2 O-O f3 d5 exd5 Nxd5 Nxd5 Qxd5 O-O-O": {
+  "en": "O-O-O? drops the a2-pawn with check threats: ...Qxa2!, and the d4-knight is also under fire.",
+  "es": "¿O-O-O? pierde el peón de a2 con amenazas al rey: ¡...Dxa2!, y el caballo de d4 también está bajo el fuego."
+ },
+ "Nxc6 bxc6": {
+  "en": "Take towards the centre: the b-file opens for the rook, ...d5 or ...d6 follow, and the g7-bishop hits the queenside.",
+  "es": "Captura hacia el centro: la columna b se abre para la torre, siguen ...d5 o ...d6, y el alfil de g7 apunta al flanco de dama."
+ },
+ "Nxc6 bxc6 Nc3 Bg7 Be3 Nf6 Qd2 O-O Bh6": {
+  "en": "After ...Bxh6 Qxh6, ...Qb6! attacks b2: White's queen is far from the queenside.",
+  "es": "Tras ...Axh6 Dxh6, ¡...Db6! ataca b2: la dama blanca está lejos del flanco de dama."
+ },
+ "Nxc6 bxc6 Nc3 Bg7 Bc4 d6 Qf3 Nf6 Bg5 O-O O-O-O": {
+  "en": "...Bg4! skewers the queen on f3 and the rook on d1.",
+  "es": "¡...Ag4! ensarta la dama de f3 y la torre de d1."
+ },
+ "Be3 Bg7 Nxc6 bxc6 Nc3 Nf6 Bd3 O-O O-O d6 f4 Ng4 Bd2": {
+  "en": "Bd2 opens the g1–a7 diagonal: ...Qb6+ Kh1 Nf2+ wins the exchange.",
+  "es": "Ad2 abre la diagonal g1–a7: ...Db6+ Rh1 Cf2+ gana la calidad."
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "": {
+  "en": "The Scheveningen: the small centre e6–d6 is solid and flexible. Watch out for the Keres Attack (g4).",
+  "es": "La Scheveningen: el pequeño centro e6–d6 es sólido y flexible. Cuidado con el Ataque Keres (g4)."
+ },
+ "Bg5 a6": {
+  "en": "...a6 first, keeping b5 under control; ...Be7, ...Qc7 and ...Nbd7 or ...Nc6 follow.",
+  "es": "Primero ...a6, controlando b5; siguen ...Ae7, ...Dc7 y ...Cbd7 o ...Cc6."
+ },
+ "Be3 a6": {
+  "en": "Against the English Attack (Be3, f3, Qd2, g4) Black castles and counter-attacks fast with ...b5–b4.",
+  "es": "Contra el Ataque Inglés (Ae3, f3, Dd2, g4) las negras enrocan y contraatacan rápido con ...b5–b4."
+ },
+ "Be3 a6 Qd2 Be7 f3 Nc6 Be2 Qc7 O-O-O O-O g4 b5 h4": {
+  "en": "...b4! kicks the c3-knight first: in opposite-castling races, the faster attack wins.",
+  "es": "¡...b4! echa primero al caballo de c3: en las carreras con enroques opuestos gana el ataque más rápido."
+ },
+ "Bg5 a6 Bc4 Be7 f4 O-O O-O Qc7 Bd3": {
+  "en": "With the king on g1 and f4 played, ...Qb6! pins the d4-knight against the king: it cannot be defended enough.",
+  "es": "Con el rey en g1 y f4 jugado, ¡...Db6! clava el caballo de d4 contra el rey: no se puede defender lo suficiente."
+ },
+ "Bg5 a6 Bc4 Be7 f4 O-O O-O Qc7 Bb3 Nc6 f5": {
+  "en": "With the king on g1 and f4 played, ...Qb6! pins the d4-knight against the king: it cannot be defended enough.",
+  "es": "Con el rey en g1 y f4 jugado, ¡...Db6! clava el caballo de d4 contra el rey: no se puede defender lo suficiente."
+ },
+ "Be2 a6 O-O Be7 Bg5 Nc6 f4": {
+  "en": "With the king on g1 and f4 played, ...Qb6! pins the d4-knight against the king: it cannot be defended enough.",
+  "es": "Con el rey en g1 y f4 jugado, ¡...Db6! clava el caballo de d4 contra el rey: no se puede defender lo suficiente."
+ },
+ "Bd3 a6 O-O Be7 Bg5": {
+  "en": "Bg5? leaves e4 loose: ...Nxe4!, and if a piece takes on e4, ...Bxg5. Black wins a pawn.",
+  "es": "¿Ag5? deja suelto e4: ¡...Cxe4!, y si una pieza toma en e4, ...Axg5. Las negras ganan un peón."
+ }
+}

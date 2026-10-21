@@ -1,0 +1,22 @@
+{
+ "": {
+  "en": "The Moscow Variation: White trades the light-squared bishops. ...Bd7 is simple and solid.",
+  "es": "La Variante Moscú: las blancas cambian los alfiles de casillas blancas. ...Ad7 es sencilla y sólida."
+ },
+ "Bd7": {
+  "en": "...Bd7 is simple: Black offers the trade of the light-squared bishops. After Bxd7+ Nxd7 (or ...Qxd7), Black develops with ...Ngf6, ...g6 or ...e6.",
+  "es": "...Ad7 es sencilla: las negras ofrecen el cambio de los alfiles de casillas blancas. Tras Axd7+ Cxd7 (o ...Dxd7), las negras desarrollan con ...Cgf6, ...g6 o ...e6."
+ },
+ "Bd7 Bxd7+ Nxd7 c4": {
+  "en": "The Maróczy-style bind with c4. Black plays ...Ngf6, ...g6, ...Bg7 and pressures d4 and c4.",
+  "es": "El esquema tipo Maróczy con c4. Las negras juegan ...Cgf6, ...g6, ...Ag7 y presionan d4 y c4."
+ },
+ "Bd7 Bxd7+ Nxd7 c4 Ngf6 Nc3 g6 d4 cxd4 Nxd4 Bg7 f3": {
+  "en": "...Qa5! pins the c3-knight and eyes the dark squares; ...Rc8 and ...Ne5 add pressure on c4.",
+  "es": "¡...Da5! clava el caballo de c3 y apunta a las casillas negras; ...Tc8 y ...Ce5 aumentan la presión sobre c4."
+ },
+ "Bd7 Nc3 Nf6 Qe2 a6 Ba4": {
+  "en": "The Noah's Ark trap: ...b5 Bb3 c4 and the bishop is lost for a couple of pawns.",
+  "es": "La trampa del Arca de Noé: ...b5 Ab3 c4 y el alfil se pierde a cambio de un par de peones."
+ }
+}

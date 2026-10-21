@@ -1,0 +1,26 @@
+{
+ "g6": {
+  "en": "...g6 and ...Bg7 put the bishop on the long diagonal, where it presses on d4 and b2 and helps defend the king against White's f4–f5 attack.",
+  "es": "...g6 y ...Ag7 colocan el alfil en la gran diagonal, donde presiona d4 y b2 y ayuda a defender al rey contra el ataque blanco f4–f5."
+ },
+ "g6 Nf3 Bg7": {
+  "en": "Typical plans: ...d6 or ...e6 with ...Nge7. Against Bc4, ...e6 blunts the bishop; against Bb5, ...Nd4 offers a trade of the knights.",
+  "es": "Planes típicos: ...d6 o ...e6 con ...Cge7. Contra Ac4, ...e6 neutraliza el alfil; contra Ab5, ...Cd4 ofrece cambiar caballos."
+ },
+ "g6 Nf3 Bg7 Bb5 Nd4 Nxd4 cxd4 Nd5": {
+  "en": "Nd5? walks into ...e6: the knight is attacked and the d4-pawn covers c3 and e3. White gets only a couple of pawns for it.",
+  "es": "¿Cd5? cae en ...e6: el caballo queda atacado y el peón de d4 controla c3 y e3. Las blancas solo obtienen un par de peones a cambio."
+ },
+ "g6 Bc4 Bg7 d3 e6 Nf3 Nge7 Be3": {
+  "en": "Be3? allows ...d5!: the c4-bishop is attacked and Bxc5 dxc4 leaves Black a piece up.",
+  "es": "¿Ae3? permite ¡...d5!: el alfil de c4 queda atacado y tras Axc5 dxc4 las negras tienen una pieza de más."
+ },
+ "g6 Bc4 Bg7 d3 e6 Nf3 Nge7 O-O d5 exd5 exd5 Bb5 O-O": {
+  "en": "Black's plan is ...Nd4!: it attacks the b5-bishop, which gets chased by ...a6 and ...b5, and adds pressure on the f3-knight with ...Bg4.",
+  "es": "El plan negro es ¡...Cd4!: ataca el alfil de b5, que será perseguido con ...a6 y ...b5, y presiona el caballo de f3 con ...Ag4."
+ },
+ "": {
+  "en": "The Grand Prix Attack: White plays f4 and Bc4 or Bb5 and attacks on the kingside. ...g6, ...Bg7, ...d6 and ...e6 keep Black solid.",
+  "es": "El Ataque Grand Prix: las blancas juegan f4 y Ac4 o Ab5 y atacan en el flanco de rey. ...g6, ...Ag7, ...d6 y ...e6 mantienen sólidas a las negras."
+ }
+}

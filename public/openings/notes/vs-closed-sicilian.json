@@ -1,0 +1,18 @@
+{
+ "": {
+  "en": "The Closed Sicilian: White fianchettoes and plays slowly. Mirror the setup with ...g6 and ...Bg7 and play on the queenside with ...Rb8 and ...b5.",
+  "es": "La Siciliana Cerrada: las blancas hacen el fianchetto y juegan con calma. Copia la estructura con ...g6 y ...Ag7 y juega en el flanco de dama con ...Tb8 y ...b5."
+ },
+ "g6 Bg2 Bg7": {
+  "en": "Mirror White's fianchetto. The g7-bishop and the c5-pawn control d4; ...d6, ...e6 and ...Nge7 complete a flexible setup.",
+  "es": "Copia el fianchetto blanco. El alfil de g7 y el peón de c5 controlan d4; ...d6, ...e6 y ...Cge7 completan un esquema flexible."
+ },
+ "g6 Bg2 Bg7 d3 d6": {
+  "en": "Against Be3 and Qd2 (aiming for Bh6), ...e6 and ...Nge7 keep the king safe; against f4, ...e6 and ...Nge7 stop f5. Queenside play comes with ...Rb8 and ...b5.",
+  "es": "Contra Ae3 y Dd2 (buscando Ah6), ...e6 y ...Cge7 mantienen seguro al rey; contra f4, ...e6 y ...Cge7 impiden f5. El juego en el flanco de dama llega con ...Tb8 y ...b5."
+ },
+ "g6 Bg2 Bg7 f4 d6": {
+  "en": "With f4 White plans f5 and a kingside attack. ...e6 and ...Nge7 keep f5 under control.",
+  "es": "Con f4 las blancas planean f5 y un ataque en el flanco de rey. ...e6 y ...Cge7 mantienen controlada f5."
+ }
+}
