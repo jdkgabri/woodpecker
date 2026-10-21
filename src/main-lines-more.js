@@ -5067,5 +5067,376 @@ export default {
     "es": "...Cf6 protege al rey y mantiene e5 sólido. Una posición equilibrada de tipo italiano."
    }
   }
+ },
+ "philidor": {
+  "moves": "e4 e5 Nf3 d6 Bc4 Nf6 d3 Be7 O-O O-O h3 Re8",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "1...e5: Black takes his share.",
+    "es": "1...e5: las negras toman su parte."
+   },
+   "3": {
+    "en": "The knight attacks e5.",
+    "es": "El caballo ataca e5."
+   },
+   "4": {
+    "en": "The Philidor: e5 is defended with the d-pawn, solid but a bit passive.",
+    "es": "La Philidor: e5 se defiende con el peón d, sólido pero algo pasivo."
+   },
+   "5": {
+    "en": "Bc4 aims at f7.",
+    "es": "Ac4 apunta a f7."
+   },
+   "6": {
+    "en": "Development, attacking e4.",
+    "es": "Desarrollo, atacando e4."
+   },
+   "7": {
+    "en": "d3: a quiet setup.",
+    "es": "d3: un esquema tranquilo."
+   },
+   "8": {
+    "en": "...Be7 prepares castling (careful with Ng5 ideas against f7).",
+    "es": "...Ae7 prepara el enroque (cuidado con las ideas de Cg5 contra f7)."
+   },
+   "10": {
+    "en": "Castle: the king is safe and f7 is covered by the rook.",
+    "es": "Enroca: el rey queda a salvo y la torre cubre f7."
+   },
+   "11": {
+    "en": "h3 stops ...Bg4.",
+    "es": "h3 impide ...Ag4."
+   },
+   "12": {
+    "en": "...Re8 and ...Bf8: a solid, flexible setup. Plans: ...c6 and ...d5, or ...Nbd7–f8–g6.",
+    "es": "...Te8 y ...Af8: un esquema sólido y flexible. Planes: ...c6 y ...d5, o ...Cbd7–f8–g6."
+   }
+  }
+ },
+ "lion-all": {
+  "moves": "e4 d6 d4 Nf6 Nc3 Nbd7 Nf3 e5 dxe5 dxe5 Bc4 Be7 O-O c6",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "...d6: the Lion move order, starting like a Pirc.",
+    "es": "...d6: el orden de jugadas del León, que empieza como una Pirc."
+   },
+   "3": {
+    "en": "White takes the whole centre.",
+    "es": "Las blancas ocupan todo el centro."
+   },
+   "4": {
+    "en": "...Nf6 attacks e4.",
+    "es": "...Cf6 ataca e4."
+   },
+   "5": {
+    "en": "Nc3 protects e4.",
+    "es": "Cc3 protege e4."
+   },
+   "6": {
+    "en": "...Nbd7: the Lion! The knight supports ...e5.",
+    "es": "...Cbd7: ¡el León! El caballo apoya ...e5."
+   },
+   "8": {
+    "en": "...e5: the pawn wall d6–e5 is ready.",
+    "es": "...e5: el muro de peones d6–e5 está listo."
+   },
+   "9": {
+    "en": "dxe5 opens the d-file.",
+    "es": "dxe5 abre la columna d."
+   },
+   "10": {
+    "en": "Recapture with the pawn: the centre is balanced.",
+    "es": "Recaptura con el peón: el centro queda equilibrado."
+   },
+   "11": {
+    "en": "Bc4 aims at f7.",
+    "es": "Ac4 apunta a f7."
+   },
+   "12": {
+    "en": "...Be7 first (before ...c6) to be ready to castle.",
+    "es": "Primero ...Ae7 (antes de ...c6) para estar listo para enrocar."
+   },
+   "13": {
+    "en": "White castles.",
+    "es": "Las blancas enrocan."
+   },
+   "14": {
+    "en": "...c6 prepares ...b5 and ...Qc7: the Lion's typical queenside setup. Balanced.",
+    "es": "...c6 prepara ...b5 y ...Dc7: el esquema típico del León en el flanco de dama. Equilibrio."
+   }
+  }
+ },
+ "vs-london": {
+  "moves": "d4 d5 Bf4 c5 e3 Nf6 c3 Nc6 Nf3 e6 Nbd2 Qb6 Qb3 cxd4",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5: Black takes his share of the centre.",
+    "es": "...d5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The London.",
+    "es": "La London."
+   },
+   "4": {
+    "en": "...c5 strikes at d4 at once.",
+    "es": "...c5 golpea d4 de inmediato."
+   },
+   "5": {
+    "en": "e3 supports d4.",
+    "es": "e3 apoya d4."
+   },
+   "6": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "7": {
+    "en": "c3 completes the pyramid.",
+    "es": "c3 completa la pirámide."
+   },
+   "8": {
+    "en": "More pressure on d4.",
+    "es": "Más presión sobre d4."
+   },
+   "10": {
+    "en": "...e6 opens the f8-bishop.",
+    "es": "...e6 abre el alfil de f8."
+   },
+   "12": {
+    "en": "...Qb6: with the bishop on f4, b2 is weak.",
+    "es": "...Db6: con el alfil en f4, b2 está débil."
+   },
+   "13": {
+    "en": "Qb3 offers the queen trade.",
+    "es": "Db3 ofrece el cambio de damas."
+   },
+   "14": {
+    "en": "...cxd4 first: after exd4, ...Be7 and ...Nh5 to trade the f4-bishop. Balanced.",
+    "es": "Primero ...cxd4: tras exd4, ...Ae7 y ...Ch5 para cambiar el alfil de f4. Equilibrio."
+   }
+  }
+ },
+ "vs-trompowsky": {
+  "moves": "d4 Nf6 Bg5 Ne4 Bf4 e6 f3 Nf6",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "3": {
+    "en": "The Trompowsky.",
+    "es": "El Trompowsky."
+   },
+   "4": {
+    "en": "...Ne4 hits the bishop at once.",
+    "es": "...Ce4 ataca el alfil de inmediato."
+   },
+   "5": {
+    "en": "The bishop retreats to f4.",
+    "es": "El alfil se retira a f4."
+   },
+   "6": {
+    "en": "...e6: solid development.",
+    "es": "...e6: desarrollo sólido."
+   },
+   "7": {
+    "en": "f3 kicks the knight.",
+    "es": "f3 echa al caballo."
+   },
+   "8": {
+    "en": "The knight returns to f6: White has spent moves on f3, Black is solid. Next ...c5 or ...d5.",
+    "es": "El caballo vuelve a f6: las blancas han gastado jugadas en f3 y las negras están sólidas. Después ...c5 o ...d5."
+   }
+  }
+ },
+ "vs-colle": {
+  "moves": "d4 d5 Nf3 Nf6 e3 c5 c3 e6 Bd3 Nc6 Nbd2 Bd6 O-O O-O Re1 e5",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5: Black takes his share of the centre.",
+    "es": "...d5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "The Colle: e3 and a slow build-up.",
+    "es": "El Colle: e3 y una construcción lenta."
+   },
+   "6": {
+    "en": "...c5 hits d4 before e4 comes.",
+    "es": "...c5 golpea d4 antes de que llegue e4."
+   },
+   "7": {
+    "en": "c3 supports d4.",
+    "es": "c3 apoya d4."
+   },
+   "8": {
+    "en": "...e6 opens the f8-bishop.",
+    "es": "...e6 abre el alfil de f8."
+   },
+   "10": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "12": {
+    "en": "...Bd6 controls e5.",
+    "es": "...Ad6 controla e5."
+   },
+   "14": {
+    "en": "Castle.",
+    "es": "Enroque."
+   },
+   "15": {
+    "en": "Re1 prepares e4.",
+    "es": "Te1 prepara e4."
+   },
+   "16": {
+    "en": "...e5! Black breaks first in the centre: equal and active.",
+    "es": "¡...e5! Las negras rompen primero en el centro: igualdad y actividad."
+   }
+  }
+ },
+ "vs-jobava": {
+  "moves": "d4 d5 Nc3 Nf6 Bf4 Bf5 e3 c6 f3 e6 g4 Bg6 h4 h6 Bd3 Bxd3 Qxd3 a6",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5: Black takes his share of the centre.",
+    "es": "...d5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The Jobava London: Nc3 and Bf4.",
+    "es": "La London Jobava: Cc3 y Af4."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "The bishop comes out.",
+    "es": "Sale el alfil."
+   },
+   "6": {
+    "en": "...Bf5: Black's bishop comes out too.",
+    "es": "...Af5: el alfil negro también sale."
+   },
+   "8": {
+    "en": "...c6 covers b5 against Nb5.",
+    "es": "...c6 cubre b5 contra Cb5."
+   },
+   "9": {
+    "en": "f3 prepares g4.",
+    "es": "f3 prepara g4."
+   },
+   "10": {
+    "en": "...e6 opens the f8-bishop.",
+    "es": "...e6 abre el alfil de f8."
+   },
+   "11": {
+    "en": "g4 chases the bishop.",
+    "es": "g4 persigue al alfil."
+   },
+   "12": {
+    "en": "The bishop retreats to g6.",
+    "es": "El alfil se retira a g6."
+   },
+   "13": {
+    "en": "h4 threatens h5, trapping the bishop.",
+    "es": "h4 amenaza h5, atrapando al alfil."
+   },
+   "14": {
+    "en": "...h6 gives the bishop h7.",
+    "es": "...h6 da al alfil la casilla h7."
+   },
+   "16": {
+    "en": "Black trades the bishops.",
+    "es": "Las negras cambian los alfiles."
+   },
+   "18": {
+    "en": "...a6 and ...c5 next. White has space on the kingside; Black is solid.",
+    "es": "...a6 y luego ...c5. Las blancas tienen espacio en el flanco de rey; las negras están sólidas."
+   }
+  }
+ },
+ "vs-bdg": {
+  "moves": "d4 d5 e4 dxe4 Nc3 Nf6 f3 Bf5 fxe4 Nxe4 Qf3 Nxc3 bxc3 e6",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5: Black takes his share of the centre.",
+    "es": "...d5: las negras toman su parte del centro."
+   },
+   "3": {
+    "en": "The Blackmar-Diemer Gambit: e4 offers a pawn.",
+    "es": "El Gambito Blackmar-Diemer: e4 ofrece un peón."
+   },
+   "4": {
+    "en": "Take.",
+    "es": "Toma."
+   },
+   "5": {
+    "en": "Nc3 attacks e4.",
+    "es": "Cc3 ataca e4."
+   },
+   "6": {
+    "en": "...Nf6 protects e4.",
+    "es": "...Cf6 protege e4."
+   },
+   "7": {
+    "en": "f3 offers another pawn.",
+    "es": "f3 ofrece otro peón."
+   },
+   "8": {
+    "en": "...Bf5 holds e4 for now.",
+    "es": "...Af5 sostiene e4 de momento."
+   },
+   "9": {
+    "en": "White takes back...",
+    "es": "Las blancas recuperan..."
+   },
+   "10": {
+    "en": "...and Black takes again.",
+    "es": "...y las negras vuelven a tomar."
+   },
+   "11": {
+    "en": "Qf3 attacks the e4-knight and b7.",
+    "es": "Df3 ataca el caballo de e4 y b7."
+   },
+   "12": {
+    "en": "Black trades.",
+    "es": "Las negras cambian."
+   },
+   "14": {
+    "en": "...e6: Black is a sound pawn up; if Qxb7, ...Nd7 and ...Rb8 with good play.",
+    "es": "...e6: las negras tienen un peón de más sano; si Dxb7, ...Cd7 y ...Tb8 con buen juego."
+   }
+  }
  }
 };
