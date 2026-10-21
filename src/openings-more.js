@@ -70,7 +70,11 @@ export const MORE_OPENINGS = [
         es: ['Atacar e4 con ...Cf6 y el caballo de d4 con ...Ac5.', 'Romper con ...d5 para liberar el juego.', 'Aprovechar la pareja de alfiles tras Cxc6.'],
       },
     },
-    lines: [tree('scotch', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nf3 Nc6 d4')],
+    lines: [tree('scotch', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'e4 e5 Nf3 Nc6 d4'),
+      tree('scotch-classical', { en: 'Classical (4...Bc5)', es: 'Clásica (4...Ac5)' }, 'e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Bc5'),
+    
+      tree('scotch-mieses', { en: 'Mieses (4...Nf6)', es: 'Mieses (4...Cf6)' }, 'e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Nf6'),
+    ],
   },
   // ---- ruy
   {

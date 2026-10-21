@@ -1,0 +1,14 @@
+{
+ "Nxc6 bxc6": {
+  "en": "The Mieses: e5 drives the f6-knight away and gains space. Black's usual answer is ...Qe7, pinning the e5-pawn.",
+  "es": "La Mieses: e5 echa al caballo de f6 y gana espacio. La respuesta habitual de las negras es ...De7, clavando el peón de e5."
+ },
+ "Nxc6 dxc6 Qxd8+ Kxd8 Nc3 Bb4 Bg5 Bxc3+ bxc3 Ke7": {
+  "en": "...Ke7? walks into the pin: e5! attacks the pinned f6-knight.",
+  "es": "¿...Re7? se mete en la clavada: ¡e5! ataca el caballo clavado de f6."
+ },
+ "": {
+  "en": "Against 4...Nf6, Nxc6 and e5 gain space.",
+  "es": "Contra 4...Cf6, Cxc6 y e5 ganan espacio."
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "Nxc6": {
+  "en": "Nxc6 removes the knight before ...Bc5 can put pressure on d4; Black's pawns get damaged if they recapture with the b-pawn.",
+  "es": "Cxc6 elimina el caballo antes de que ...Ac5 presione d4; los peones negros quedan dañados si recapturan con el peón b."
+ },
+ "Nxc6 Qf6 Qf3 Qxc6 Nc3 d6": {
+  "en": "...d6? opens the a4–e8 diagonal: Bb5! pins the queen to the king.",
+  "es": "¿...d6? abre la diagonal a4–e8: ¡Ab5! clava la dama contra el rey."
+ },
+ "Nxc6 bxc6 Bc4 Ne7": {
+  "en": "Bxf7+! Kxf7 Qh5+ and Qxc5: the check wins back the bishop with a pawn more.",
+  "es": "¡Axf7+! Rxf7 Dh5+ y Dxc5: el jaque recupera el alfil con un peón de más."
+ },
+ "Nxc6 bxc6 Bc4 Nf6 e5 Nd5": {
+  "en": "Bxd5 cxd5 Qxd5 hits both the rook on a8 and the bishop on c5.",
+  "es": "Axd5 cxd5 Dxd5 ataca a la vez la torre de a8 y el alfil de c5."
+ },
+ "": {
+  "en": "Against 4...Bc5, trade on c6 or play Be3 and c3.",
+  "es": "Contra 4...Ac5, cambia en c6 o juega Ae3 y c3."
+ }
+}
