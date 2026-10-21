@@ -131,7 +131,7 @@ function pinBy(chess, square) {
       if (!p) continue;
       if (p.color === me.color) break;
       if (!first) { first = { square: sq, type: p.type }; continue; }
-      if (first.type !== 'k' && (p.type === 'k' || VALUES[p.type] > VALUES[first.type])) return { ...first, behind: p.type };
+      if (first.type !== 'k' && (p.type === 'k' || (first.type !== 'p' && VALUES[p.type] >= 5 && VALUES[p.type] > VALUES[first.type]))) return { ...first, behind: p.type };
       break;
     }
   }
@@ -221,7 +221,11 @@ export function quietReason(fen, uci) {
     if (pawnsOnFile === 1) return t('The rook goes to the half-open file.');
   }
   if (hangingPieces(new Chess(fen), m.color).some(h => h.square === m.from)) return t('It saves a piece that was in danger.');
-  return t('It improves {piece} and keeps the position under control.', { piece: thePiece(m.piece) });
+  if (c.inCheck()) return t('The check gains time.');
+  if (m.captured) return t('The exchange removes an active enemy piece.');
+  if (m.piece === 'p') return t('The pawn gains space and takes squares away from the enemy pieces.');
+  if (m.piece === 'k') return t('The king steps away from future checks and pins.');
+  return t('It improves {piece}: compare where it stands before and after, and what it controls now.', { piece: thePiece(m.piece) });
 }
 
 // ---------- choosing the moments ----------

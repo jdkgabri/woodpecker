@@ -39,8 +39,9 @@ const KIND_CLASS = { blunder: 'bad', mistake: 'bad', inaccuracy: 'warn', missed:
 
 // ---------- Lichess ----------
 async function fetchGame(id) {
-  const res = await fetch(`${LICHESS}/game/export/${id}?moves=true&clocks=false&evals=false&opening=true`, { headers: { Accept: 'application/json' } });
+  const res = await fetch(`${LICHESS}/game/export/${id}?moves=true&clocks=false&evals=false&opening=true`, { headers: { Accept: 'application/json', ...authHeaders() } });
   if (res.status === 404) throw new Error(t('Game not found on Lichess.'));
+  if (res.status === 401) throw new Error(t('Lichess only shares this game with logged-in users. Connect your Lichess account in Settings and try again.'));
   if (!res.ok) throw new Error(t('Lichess responded {s}', { s: res.status }));
   return slimGame(await res.json());
 }
@@ -480,6 +481,24 @@ async function deepMoment(engine, fens, moves, p0, color) {
       }
     }
   }
+  // quiet moments: what did the game move allow, and does the best move prevent it?
+  let prevents = '';
+  if (p.kind !== 'book' && refute.uci && refuteOut.kind === 'none') {
+    const afterBest = new Chess(fen);
+    afterBest.move({ from: bestUci.slice(0, 2), to: bestUci.slice(2, 4), promotion: bestUci[4] });
+    if (!afterBest.isGameOver()) {
+      const rb = (await engine.search(afterBest.fen(), { multipv: 1, movetime: TRY_MS }))[0];
+      const legal = afterBest.moves({ verbose: true }).some(m => m.from + m.to + (m.promotion || '') === refute.uci);
+      if (rb?.pv?.[0] && rb.pv[0] !== refute.uci) {
+        prevents = legal
+          ? t('Your move allowed {m}; after {b}, that idea no longer works so well.', { m: san(refute.san), b: san(bestSan) })
+          : t('Your move allowed {m}; after {b}, it is not even possible.', { m: san(refute.san), b: san(bestSan) });
+      }
+    }
+    // a big swing without material: an attack or a strong initiative
+    const swing = p.loss;
+    if (swing >= 15) refute.text = t('After {m} your opponent gets a very strong attack or initiative, even without winning material at once.', { m: san(refute.san) });
+  }
   const hang = hangingPieces(new Chess(fen), color);
   const hanging = hang.find(h => refute.uci && refute.uci.slice(2, 4) === h.square) || null;
   if (p.kind === 'strategy' && (threat || refuteOut.kind !== 'none')) p = { ...p, kind: 'inaccuracy' }; // not a quiet position after all
@@ -497,7 +516,7 @@ async function deepMoment(engine, fens, moves, p0, color) {
     bestWp, good: [...new Set(good)], refute, threat,
     hanging: hanging ? { square: hanging.square, typeName: { p: 'pawn', n: 'knight', b: 'bishop', r: 'rook', q: 'queen' }[hanging.type] } : null,
     target, ideaHint,
-    damage: p.kind === 'book' ? [] : strategicDamage(fen, moves[p.ply].uci).map(d => d.text),
+    damage: p.kind === 'book' ? [] : [prevents, ...strategicDamage(fen, moves[p.ply].uci).map(d => d.text)].filter(Boolean),
     book: p.book ? { opening: p.book.opening, href: p.book.href } : null,
   };
 }
