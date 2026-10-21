@@ -2377,8 +2377,8 @@ export default {
     "es": "Las negras cambian primero..."
    },
    "14": {
-    "en": "...and ...Bd7 prepares ...Nxd4: the d4-pawn is attacked three times.",
-    "es": "...y ...Ad7 prepara ...Cxd4: el peón de d4 está atacado tres veces."
+    "en": "...and ...Bd7 prepares ...Nxd4. Taking at once would be a mistake: ...Nxd4 Nxd4 Qxd4?? Bb5+ and the queen on d1 wins Black's queen. With the bishop on d7, b5 is covered.",
+    "es": "...y ...Ad7 prepara ...Cxd4. Tomar ya sería un error: ...Cxd4 Cxd4 ¿¿Dxd4?? Ab5+ y la dama de d1 gana la dama negra. Con el alfil en d7, b5 queda cubierta."
    },
    "15": {
     "en": "White castles and gives up d4: the Milner-Barry Gambit.",
