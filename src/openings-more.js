@@ -514,4 +514,38 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('alekhine', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 Nf6')],
   },
+  // ---- petrov
+  {
+    id: 'petrov', side: 'b', eco: 'C42–C43', puzzles: 'petrov',
+    name: { en: 'Petrov Defence', es: 'Defensa Petrov' },
+    summary: {
+      en: '1.e4 e5 2.Nf3 Nf6 — counterattack e4 instead of defending e5; very solid.',
+      es: '1.e4 e5 2.Cf3 Cf6 — contraatacar e4 en vez de defender e5; muy sólida.',
+    },
+    intro: {
+      en: [
+        'In the Petrov Black copies White\'s attack. The main line is 3.Nxe5 d6! (not 3...Nxe4? 4.Qe2) 4.Nf3 Nxe4, with a symmetrical and very solid position.',
+        'It is known as a drawish opening at top level, but at club level it is full of traps for both sides, starting with the famous 3...Nxe4? 4.Qe2 and the Stafford Gambit (3...Nc6).',
+      ],
+      es: [
+        'En la Petrov las negras copian el ataque blanco. La línea principal es 3.Cxe5 d6! (no 3...Cxe4? 4.De2) 4.Cf3 Cxe4, con una posición simétrica y muy sólida.',
+        'Tiene fama de tablista a nivel de élite, pero a nivel de club está llena de trampas para ambos bandos, empezando por la famosa 3...Cxe4? 4.De2 y el Gambito Stafford (3...Cc6).',
+      ],
+    },
+    structure: {
+      en: 'Symmetrical structures with open e-file. Black keeps a knight on e4 supported by ...d5 and develops harmoniously.',
+      es: 'Estructuras simétricas con la columna e abierta. Las negras mantienen un caballo en e4 apoyado por ...d5 y desarrollan con armonía.',
+    },
+    plans: {
+      b: {
+        en: ['3...d6 first, then ...Nxe4.', 'Support the e4-knight with ...d5 and ...Bd6.', 'Castle and contest the e-file.'],
+        es: ['Primero 3...d6, luego ...Cxe4.', 'Apoyar el caballo de e4 con ...d5 y ...Ad6.', 'Enrocar y disputar la columna e.'],
+      },
+      w: {
+        en: ['Chase the e4-knight with Nc3 or c4.', 'Pin on the e-file with Qe2 and Re1.', 'Castle long for an attack.'],
+        es: ['Perseguir el caballo de e4 con Cc3 o c4.', 'Clavar en la columna e con De2 y Te1.', 'Enroque largo para atacar.'],
+      },
+    },
+    lines: [tree('petrov', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 e5 Nf3 Nf6')],
+  },
 ];

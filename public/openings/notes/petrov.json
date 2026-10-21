@@ -1,0 +1,34 @@
+{
+ "": {
+  "en": "The Petrov for Black: 2...Nf6 counterattacks e4. The golden rule: after 3.Nxe5 play 3...d6 first, and only take on e4 when the knight has retreated.",
+  "es": "La Petrov con negras: 2...Cf6 contraataca e4. La regla de oro: tras 3.Cxe5 juega primero 3...d6, y toma en e4 solo cuando el caballo se haya retirado."
+ },
+ "Nxe5 d6": {
+  "en": "3...d6! kicks the knight. Taking at once (3...Nxe4?) runs into Qe2 and trouble on the e-file.",
+  "es": "¡3...d6! echa al caballo. Tomar de inmediato (3...Cxe4?) choca con De2 y problemas en la columna e."
+ },
+ "Nxe5 d6 Nf3 Nxe4": {
+  "en": "Now ...Nxe4 is safe: material is level and Black has a solid, active position.",
+  "es": "Ahora ...Cxe4 es seguro: el material está igualado y las negras tienen una posición sólida y activa."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Qe2 Qe7": {
+  "en": "Against Qe2, block the e-file with ...Qe7; the queens often come off with an equal endgame.",
+  "es": "Contra De2, tapa la columna e con ...De7; las damas suelen cambiarse con un final igualado."
+ },
+ "Nxe5 d6 Nxf7": {
+  "en": "The Cochrane Gambit: a knight for two pawns and attacking chances, but after ...Kxf7 Black should be better.",
+  "es": "El Gambito Cochrane: un caballo por dos peones y posibilidades de ataque, pero tras ...Rxf7 las negras deberían estar mejor."
+ },
+ "Nc3 Nc6": {
+  "en": "Against 3.Nc3, the Four Knights: ...Nc6 and ...Bb4 or ...Nxe4 tricks are standard.",
+  "es": "Contra 3.Cc3, los Cuatro Caballos: ...Cc6 y ...Ab4 o los trucos con ...Cxe4 son habituales."
+ },
+ "Nc3 Nc6 Bc4 Nxe4": {
+  "en": "The fork trick: ...Nxe4! and if Nxe4, ...d5 regains the piece with a great centre.",
+  "es": "El truco de la horquilla: ¡...Cxe4! y si Cxe4, ...d5 recupera la pieza con un gran centro."
+ },
+ "Bc4 Nxe4": {
+  "en": "Bc4 leaves e4 undefended: ...Nxe4 wins a pawn.",
+  "es": "Ac4 deja e4 sin defensa: ...Cxe4 gana un peón."
+ }
+}
