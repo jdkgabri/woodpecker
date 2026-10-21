@@ -28,8 +28,8 @@
   "es": "Si las negras no toman, las blancas consiguen gratis todo el centro."
  },
  "d4 cxd4 c3 Nf6 e5 Nd5": {
-  "en": "This transposes to an Alapin with an extra tempo for White.",
-  "es": "Esto transpone a una Alapin con un tiempo extra para las blancas."
+  "en": "This transposes to the main line of the Alapin (2.c3 Nf6 3.e5 Nd5 4.d4 cxd4).",
+  "es": "Esto transpone a la línea principal de la Alapin (2.c3 Cf6 3.e5 Cd5 4.d4 cxd4)."
  },
  "d4 Nc6 d5": {
   "en": "...Nc6? lets d5 gain space with tempo.",

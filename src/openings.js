@@ -134,7 +134,7 @@ export function viewOpening(app, id, go) {
       <section class="card form">
         <p class="small muted">${t('Puzzles from real games that started with this opening, where you play your side. Train them in cycles like any other set.')}</p>
         <label for="ogGroup">${t('Lines')}</label>
-        <select id="ogGroup">${groupsOf(o).map(g => `<option value="${g}">${esc(tx(GROUPS[g]) || g)}</option>`).join('')}</select>
+        <select id="ogGroup">${groupsOf(o).map(g => `<option value="${g}">${esc(tx(GROUPS[g]) || tx(o.name))}</option>`).join('')}</select>
         <div class="grid2">
           <div><label for="ogMin">${t('Min rating')}</label><input id="ogMin" type="number" min="400" max="3200" step="50" value="1000" inputmode="numeric"></div>
           <div><label for="ogMax">${t('Max rating')}</label><input id="ogMax" type="number" min="400" max="3200" step="50" value="2200" inputmode="numeric"></div>
@@ -162,7 +162,7 @@ export function viewOpening(app, id, go) {
       if (r.items.length < count && !confirm(t('Only {n} puzzles in that range. Create the set with {n}?', { n: r.items.length }))) { btn.disabled = false; return status(''); }
       const ratings = r.items.map(x => x.rating);
       const set = store.addSet({
-        id: store.uid(), name: `${tx(o.name)} · ${tx(GROUPS[group])} (${min}–${max})`, source: 'opening', order: 'random', targetCycles: 5,
+        id: store.uid(), name: `${tx(o.name)} · ${tx(GROUPS[group]) || t('All lines')} (${min}–${max})`, source: 'opening', order: 'random', targetCycles: 5,
         createdAt: Date.now(), opening: { id: o.id, group, eloMin: Math.min(...ratings), eloMax: Math.max(...ratings) }, items: r.items, cycles: [],
       });
       go('#/set/' + set.id);

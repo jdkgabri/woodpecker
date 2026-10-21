@@ -495,4 +495,5 @@ export const ES = {
   '1.d4 and others': '1.d4 y otras',
   'against 1.e4': 'contra 1.e4',
   'against 1.d4 and others': 'contra 1.d4 y otras',
+  'All lines': 'Todas las líneas',
 };
