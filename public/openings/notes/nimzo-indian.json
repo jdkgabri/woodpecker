@@ -1,0 +1,42 @@
+{
+ "": {
+  "en": "The Nimzo-Indian for Black: 3...Bb4 pins the knight and fights for e4. Castle, then ...c5, ...d5 or ...b6, and take on c3 when it doubles White's pawns.",
+  "es": "La Nimzoindia con negras: 3...Ab4 clava el caballo y lucha por e4. Enroca, y luego ...c5, ...d5 o ...b6, y toma en c3 cuando doble los peones blancos."
+ },
+ "Bb4 Qc2 O-O": {
+  "en": "Against the Classical Qc2 (avoiding doubled pawns), castle and strike with ...c5 or ...d5.",
+  "es": "Contra la Clásica Dc2 (que evita los peones doblados), enroca y golpea con ...c5 o ...d5."
+ },
+ "Bb4 Qc2 O-O a3 Bxc3+": {
+  "en": "a3 forces the bishop to decide: Black takes on c3 and plays ...b6, ...Bb7 and ...d6 or ...d5.",
+  "es": "a3 obliga al alfil a decidir: las negras toman en c3 y juegan ...b6, ...Ab7 y ...d6 o ...d5."
+ },
+ "Bb4 Nf3 O-O Bg5 c5": {
+  "en": "Against Nf3 and Bg5, ...c5 and ...h6 put pressure on the centre and the bishop.",
+  "es": "Contra Cf3 y Ag5, ...c5 y ...h6 presionan el centro y el alfil."
+ },
+ "Bb4 Bd2 O-O": {
+  "en": "Bd2 is passive: Black castles and plays ...d5 or ...c5 comfortably.",
+  "es": "Ad2 es pasiva: las negras enrocan y juegan ...d5 o ...c5 con comodidad."
+ },
+ "Bb4 Bd2 O-O e4 Bxc3": {
+  "en": "e4? ignores the pin: after ...Bxc3 Bxc3, ...Nxe4 wins a pawn.",
+  "es": "e4? ignora la clavada: tras ...Axc3 Axc3, ...Cxe4 gana un peón."
+ },
+ "Bb4 Bg5": {
+  "en": "The Leningrad (Bg5): ...h6 and ...c5 are the usual answers.",
+  "es": "La Leningrado (Ag5): ...h6 y ...c5 son las respuestas habituales."
+ },
+ "Bb4 e3": {
+  "en": "The Rubinstein (4.e3): White develops calmly and accepts doubled pawns if Black takes on c3.",
+  "es": "La Rubinstein (4.e3): las blancas desarrollan con calma y aceptan peones doblados si las negras toman en c3."
+ },
+ "Bb4 e3 O-O Bd3 c5": {
+  "en": "The main line: ...O-O, ...c5 and ...d5 strike in the centre; ...Nc6 follows.",
+  "es": "La línea principal: ...O-O, ...c5 y ...d5 golpean en el centro; sigue ...Cc6."
+ },
+ "Bb4 e3 O-O Ne2 c5 a3 Bxc3+": {
+  "en": "Against Ne2 (avoiding doubled pawns), take on c3 when a3 asks; ...cxd4 and ...d5 follow.",
+  "es": "Contra Ce2 (para evitar peones doblados), toma en c3 cuando a3 lo pregunte; siguen ...cxd4 y ...d5."
+ }
+}

@@ -820,4 +820,72 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('budapest', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 e5')],
   },
+  // ---- french
+  {
+    id: 'french', side: 'b', eco: 'C00–C19', puzzles: 'french',
+    name: { en: 'French Defence', es: 'Defensa Francesa' },
+    summary: {
+      en: '1.e4 e6 — a solid pawn chain and counterattack against White\'s centre.',
+      es: '1.e4 e6 — una cadena de peones sólida y contraataque contra el centro blanco.',
+    },
+    intro: {
+      en: [
+        'After 1.e4 e6 2.d4 d5 Black challenges e4 at once. White must decide: advance with e5, defend with Nc3 or Nd2, or exchange on d5.',
+        'The French is a fighting defence: Black accepts a little less space in exchange for a solid position and clear targets, mainly the d4-pawn, attacked with ...c5.',
+      ],
+      es: [
+        'Tras 1.e4 e6 2.d4 d5 las negras discuten e4 de inmediato. Las blancas deben decidir: avanzar con e5, defender con Cc3 o Cd2, o cambiar en d5.',
+        'La Francesa es una defensa combativa: las negras aceptan un poco menos de espacio a cambio de una posición sólida y objetivos claros, sobre todo el peón de d4, atacado con ...c5.',
+      ],
+    },
+    structure: {
+      en: 'Black\'s chain e6–d5 against White\'s d4–e5. Black attacks the base (d4) with ...c5 and the head (e5) with ...f6. The light-squared bishop is the "bad" piece; trading it or freeing it with ...b6 and ...Ba6 is a typical aim.',
+      es: 'La cadena negra e6–d5 contra d4–e5 blanca. Las negras atacan la base (d4) con ...c5 y la cabeza (e5) con ...f6. El alfil de casillas blancas es la pieza "mala"; cambiarlo o liberarlo con ...b6 y ...Aa6 es un objetivo típico.',
+    },
+    plans: {
+      b: {
+        en: ['...c5, ...Nc6 and ...Qb6 against d4.', '...f6 to break the e5-pawn.', 'Against Nc3, pin it with ...Bb4 or take on e4.'],
+        es: ['...c5, ...Cc6 y ...Db6 contra d4.', '...f6 para romper el peón de e5.', 'Contra Cc3, clavarlo con ...Ab4 o tomar en e4.'],
+      },
+      w: {
+        en: ['Gain space with e5 and attack on the kingside.', 'Keep d4 with c3 and Nf3.', 'Use the bad French bishop as a target.'],
+        es: ['Ganar espacio con e5 y atacar en el flanco de rey.', 'Sostener d4 con c3 y Cf3.', 'Aprovechar el mal alfil francés.'],
+      },
+    },
+    lines: [tree('french', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 e6')],
+  },
+  // ---- nimzo-indian
+  {
+    id: 'nimzo-indian', side: 'b', eco: 'E20–E59', puzzles: 'nimzo-indian',
+    name: { en: 'Nimzo-Indian Defence', es: 'Defensa Nimzoindia' },
+    summary: {
+      en: '1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 — pin the knight and fight for e4.',
+      es: '1.d4 Cf6 2.c4 e6 3.Cc3 Ab4 — clavar el caballo y luchar por e4.',
+    },
+    intro: {
+      en: [
+        'The Nimzo-Indian stops e4 by pinning the c3-knight. Black is often willing to give the bishop for the knight (...Bxc3) to double White\'s c-pawns.',
+        'White\'s main options are 4.e3 (Rubinstein), 4.Qc2 (Classical) and 4.a3 (Sämisch). Black has flexible plans with ...O-O, ...d5, ...c5 or ...b6.',
+      ],
+      es: [
+        'La Nimzoindia impide e4 clavando el caballo de c3. Las negras suelen estar dispuestas a dar el alfil por el caballo (...Axc3) para doblar los peones c blancos.',
+        'Las opciones principales de las blancas son 4.e3 (Rubinstein), 4.Dc2 (Clásica) y 4.a3 (Sämisch). Las negras tienen planes flexibles con ...O-O, ...d5, ...c5 o ...b6.',
+      ],
+    },
+    structure: {
+      en: 'After ...Bxc3 bxc3 White has the bishop pair and doubled c-pawns; Black blockades with ...c5, ...d6 and ...e5 and targets c4.',
+      es: 'Tras ...Axc3 bxc3 las blancas tienen la pareja de alfiles y peones c doblados; las negras bloquean con ...c5, ...d6 y ...e5 y atacan c4.',
+    },
+    plans: {
+      b: {
+        en: ['...Bb4 and ...O-O, then ...d5 or ...c5.', 'Take on c3 when it doubles the pawns.', 'Control e4 with ...b6 and ...Bb7.'],
+        es: ['...Ab4 y ...O-O, luego ...d5 o ...c5.', 'Tomar en c3 cuando doble los peones.', 'Controlar e4 con ...b6 y ...Ab7.'],
+      },
+      w: {
+        en: ['Avoid doubled pawns with Qc2.', 'Use the bishop pair and open the position.', 'Build the centre with f3 and e4.'],
+        es: ['Evitar los peones doblados con Dc2.', 'Aprovechar la pareja de alfiles y abrir la posición.', 'Montar el centro con f3 y e4.'],
+      },
+    },
+    lines: [tree('nimzo-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 e6 Nc3')],
+  },
 ];

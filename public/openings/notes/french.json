@@ -1,0 +1,46 @@
+{
+ "": {
+  "en": "The French for Black: 1...e6 and 2...d5. Against the Advance, ...c5, ...Nc6 and ...Qb6 attack d4; against the Exchange, develop freely; against 3.Nc3, the classical ...Nf6 or ...Bb4.",
+  "es": "La Francesa con negras: 1...e6 y 2...d5. Contra el Avance, ...c5, ...Cc6 y ...Db6 atacan d4; contra el Cambio, desarrolla con libertad; contra 3.Cc3, las clásicas ...Cf6 o ...Ab4."
+ },
+ "d4 d5 e5 c5": {
+  "en": "Against the Advance, hit the base of the chain at once with ...c5.",
+  "es": "Contra el Avance, ataca de inmediato la base de la cadena con ...c5."
+ },
+ "d4 d5 e5 c5 c3 Nc6": {
+  "en": "...Nc6, ...Qb6 and ...Nge7–f5 all aim at d4.",
+  "es": "...Cc6, ...Db6 y ...Cge7–f5 apuntan todos a d4."
+ },
+ "d4 d5 exd5 exd5": {
+  "en": "The Exchange French: symmetrical; Black's light-squared bishop is free and the game is equal.",
+  "es": "La Francesa del Cambio: simétrica; el alfil negro de casillas blancas está libre y la partida está igualada."
+ },
+ "d4 d5 Nd2 c5": {
+  "en": "Against the Tarrasch (3.Nd2), ...c5 strikes at once.",
+  "es": "Contra la Tarrasch (3.Cd2), ...c5 golpea de inmediato."
+ },
+ "Nf3 d5": {
+  "en": "Against the King's Indian Attack setups, ...d5 and ...c5 take the centre.",
+  "es": "Contra los esquemas de Ataque Indio de Rey, ...d5 y ...c5 ocupan el centro."
+ },
+ "d4 d5 Nc3 Nf6": {
+  "en": "The Classical French: ...Nf6 attacks e4 again. White chooses between e5 (Steinitz) and Bg5.",
+  "es": "La Francesa Clásica: ...Cf6 vuelve a atacar e4. Las blancas eligen entre e5 (Steinitz) y Ag5."
+ },
+ "d4 d5 Nc3 Nf6 e5 Nfd7": {
+  "en": "The Steinitz: the knight retreats and ...c5, ...Nc6 and ...Qb6 attack the d4–e5 chain.",
+  "es": "La Steinitz: el caballo se retira y ...c5, ...Cc6 y ...Db6 atacan la cadena d4–e5."
+ },
+ "d4 d5 Nc3 Nf6 e5 Nfd7 f4 Be7": {
+  "en": "Against the big f4 centre, ...Be7, ...c5 and ...Nc6 prepare to undermine d4.",
+  "es": "Contra el gran centro con f4, ...Ae7, ...c5 y ...Cc6 preparan socavar d4."
+ },
+ "d4 d5 Nc3 Nf6 Bg5 Bb4": {
+  "en": "The McCutcheon: a counter-pin. After e5 h6, White must decide what to do with the g5-bishop.",
+  "es": "La McCutcheon: una contraclavada. Tras e5 h6, las blancas deben decidir qué hacer con el alfil de g5."
+ },
+ "d4 d5 Nc3 Nf6 exd5 exd5": {
+  "en": "The Exchange with Nc3: ...Bb4 pins the knight and Black develops easily.",
+  "es": "El Cambio con Cc3: ...Ab4 clava el caballo y las negras desarrollan con facilidad."
+ }
+}
