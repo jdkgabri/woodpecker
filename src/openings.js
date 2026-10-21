@@ -6,7 +6,7 @@ import * as store from './store.js';
 import { pickPuzzlesFromFile } from './puzzles.js';
 import { openAnalysis } from './analysis.js';
 import { sound } from './sound.js';
-import { t, tn, lang } from './i18n.js';
+import { t, tn, lang, san } from './i18n.js';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const tx = obj => (obj ? obj[lang()] ?? obj.en : '');
@@ -36,8 +36,8 @@ const groupsOf = o => [o.puzzles, ...new Set(o.lines.map(l => l.puzzles).filter(
 function numbered(sans, from = 0) {
   return sans.map((s, i) => {
     const ply = from + i;
-    if (ply % 2 === 0) return `${ply / 2 + 1}.${s}`;
-    return i === 0 ? `${(ply + 1) / 2}...${s}` : s;
+    if (ply % 2 === 0) return `${ply / 2 + 1}.${san(s)}`;
+    return i === 0 ? `${(ply + 1) / 2}...${san(s)}` : san(s);
   });
 }
 

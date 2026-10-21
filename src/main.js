@@ -13,7 +13,7 @@ import { viewAnalysis, openAnalysis, mainLine } from './analysis.js';
 import { habitOn, gamifyOn, levelCard, progressSnapshot, notifyProgress, streakCard, bindStreakCard, celebrate, habitSettings, bindHabitSettings } from './ui-habit.js';
 import { viewStats } from './stats.js';
 import { viewOpenings, viewOpening, viewOpeningLine } from './openings.js';
-import { t, tn, locale, LANGS, langSetting, applyDocumentLang } from './i18n.js';
+import { t, tn, locale, san, LANGS, langSetting, applyDocumentLang } from './i18n.js';
 
 const app = document.getElementById('app');
 let cleanup = null; // exit function of the current view
@@ -653,7 +653,7 @@ async function viewTrain(id) {
     if (type === 'wrong') {
       cycle.curFailed = true; store.save();
       if (!wrongMoves.includes(info.uci)) wrongMoves.push(info.uci);
-      feedback('bad', undefined, t('{m} is not the solution. Try something else.', { m: esc(info.san) }));
+      feedback('bad', undefined, t('{m} is not the solution. Try something else.', { m: esc(san(info.san)) }));
     } else if (type === 'good') {
       feedback('good');
     } else if (type === 'progress') {
@@ -830,7 +830,7 @@ async function viewReview(id) {
   const board = new PuzzleBoard($('#board'), {
     coords: settings.coords,
     onEvent: (ev, info) => {
-      if (ev === 'wrong') { fb('bad', undefined, t('{m} is not the solution. Try something else.', { m: esc(info.san) })); if (!wrong.includes(info.uci)) wrong.push(info.uci); }
+      if (ev === 'wrong') { fb('bad', undefined, t('{m} is not the solution. Try something else.', { m: esc(san(info.san)) })); if (!wrong.includes(info.uci)) wrong.push(info.uci); }
       if (ev === 'good' || ev === 'progress') fb('good');
       if (ev === 'solved') fb(info.ok ? 'ok' : 'failed', info.ok ? undefined : t('Solution shown'), info.ok ? undefined : t('You can retry it with ↺'));
     },

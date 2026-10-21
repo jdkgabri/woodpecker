@@ -5,7 +5,7 @@ import { Engine } from './engine.js';
 import * as store from './store.js';
 import { askPromotion } from './puzzleboard.js';
 import { sound } from './sound.js';
-import { t } from './i18n.js';
+import { t, san } from './i18n.js';
 
 const KEY = 'wp:analysis';
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -39,9 +39,9 @@ function sanLine(fen, ucis, numbered = true) {
     try { mv = c.move({ from: u.slice(0, 2), to: u.slice(2, 4), promotion: u[4] || undefined }); } catch { break; }
     const n = mv.before.split(' ')[5];
     if (numbered) {
-      if (mv.color === 'w') parts.push(`${n}. ${mv.san}`);
-      else parts.push(parts.length ? mv.san : `${n}… ${mv.san}`);
-    } else parts.push(mv.san);
+      if (mv.color === 'w') parts.push(`${n}. ${san(mv.san)}`);
+      else parts.push(parts.length ? san(mv.san) : `${n}… ${san(mv.san)}`);
+    } else parts.push(san(mv.san));
   }
   return parts;
 }

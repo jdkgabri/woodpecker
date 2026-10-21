@@ -26,6 +26,11 @@ export function t(text, params = {}) {
   return out.replace(/\{(\w+)\}/g, (m, k) => (k in params ? params[k] : m));
 }
 
+// Move notation in the current language: Spanish uses R D T A C for K Q R B N
+// (pawn moves and castling are the same). Only display text goes through here, never parsed moves.
+const ES_PIECES = { K: 'R', Q: 'D', R: 'T', B: 'A', N: 'C' };
+export const san = s => (lang() === 'es' ? String(s).replace(/[KQRBN]/g, c => ES_PIECES[c]) : s);
+
 // Simple plural: tn(n, '{n} day', '{n} days')
 export const tn = (n, one, many, params = {}) => t(n === 1 ? one : many, { n, ...params });
 
