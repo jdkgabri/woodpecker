@@ -1,0 +1,14 @@
+{
+ "exf4": {
+  "en": "Accept the gambit: Black is a pawn up and White must prove the attack. ...Nf6 or ...d5 develop and return the pawn when it suits.",
+  "es": "Acepta el gambito: las negras tienen un peón de más y las blancas deben demostrar el ataque. ...Cf6 o ...d5 desarrollan y devuelven el peón cuando conviene."
+ },
+ "exf4 Nf3 Nf6 Bc4 Nxe4 Bxf7+": {
+  "en": "Bxf7+? Kxf7 and the e4-knight is safe: White has given a bishop for a pawn.",
+  "es": "¿Axf7+? Rxf7 y el caballo de e4 está a salvo: las blancas han dado un alfil por un peón."
+ },
+ "exf4 Bc4 Nf6 e5": {
+  "en": "...d5! attacks the bishop and opens the game for Black's pieces.",
+  "es": "¡...d5! ataca el alfil y abre el juego para las piezas negras."
+ }
+}

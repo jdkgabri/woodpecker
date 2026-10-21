@@ -1,0 +1,30 @@
+{
+ "Bc5": {
+  "en": "The Giuoco Piano: ...Bc5 develops and eyes f2. Then ...Nf6, ...d6, ...O-O and often ...a6 with ...Ba7 to keep the bishop safe from d4 and Na4.",
+  "es": "El Giuoco Piano: ...Ac5 desarrolla y apunta a f2. Siguen ...Cf6, ...d6, ...O-O y a menudo ...a6 con ...Aa7 para proteger el alfil de d4 y Ca4."
+ },
+ "Bc5 c3 Nf6": {
+  "en": "Against c3 and d4, ...Nf6 hits e4 at once: White must decide before building the centre.",
+  "es": "Contra c3 y d4, ...Cf6 ataca e4 de inmediato: las blancas tienen que decidir antes de construir el centro."
+ },
+ "Bc5 c3 Nf6 O-O Nxe4 Re1": {
+  "en": "Re1? allows ...Bxf2+!: the king cannot take (the e4-knight covers f2), so Kh1 Bxe1 and Black wins the exchange and a pawn.",
+  "es": "¿Te1? permite ¡...Axf2+!: el rey no puede capturar (el caballo de e4 controla f2), así que Rh1 Axe1 y las negras ganan la calidad y un peón."
+ },
+ "Bc5 Nc3 Nf6 Ng5 O-O Nxf7": {
+  "en": "Nxf7? Rxf7 Bxf7+ Kxf7: White gave two pieces for a rook and a pawn. Two minor pieces are usually stronger in the middlegame.",
+  "es": "¿Cxf7? Txf7 Axf7+ Rxf7: las blancas han dado dos piezas por torre y peón. Dos piezas menores suelen ser más fuertes en el medio juego."
+ },
+ "Bc5 Nc3 Nf6 Ng5 O-O Bxf7+": {
+  "en": "Bxf7+? Rxf7 Nxf7 Kxf7: the same bad trade, two pieces for a rook and a pawn.",
+  "es": "¿Axf7+? Txf7 Cxf7 Rxf7: el mismo mal cambio, dos piezas por torre y peón."
+ },
+ "Bc5 Nc3 Nf6 Ng5 O-O d3 d6 O-O": {
+  "en": "...Bg4! hits the queen and takes f3 and h3 away from the g5-knight; ...h6 next can trap it.",
+  "es": "¡...Ag4! ataca la dama y le quita f3 y h3 al caballo de g5; luego ...h6 puede atraparlo."
+ },
+ "Bc5 c3 Nf6 d4 exd4 e5 d5 exf6": {
+  "en": "exf6? dxc4: Black wins the bishop on c4 and the pawn on f6 will fall too.",
+  "es": "¿exf6? dxc4: las negras ganan el alfil de c4 y el peón de f6 también caerá."
+ }
+}

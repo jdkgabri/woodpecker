@@ -1052,4 +1052,44 @@ export const MORE_OPENINGS = [
     },
     lines: [tree('philidor', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'e4 e5 Nf3 d6')],
   },
+  // ---- Open Games for Black (1...e5)
+  {
+    id: 'open-games-black', side: 'b', eco: 'C20–C99', puzzles: 'open-games-black',
+    name: { en: 'Open Games with Black (1...e5)', es: 'Juegos abiertos con negras (1...e5)' },
+    summary: {
+      en: '1.e4 e5 — the classical answer: a repertoire against the Italian, the Ruy Lopez, the Scotch, the Vienna and the King\'s Gambit.',
+      es: '1.e4 e5: la respuesta clásica. Un repertorio contra la Italiana, la Española, la Escocesa, la Viena y el Gambito de Rey.',
+    },
+    intro: {
+      en: [
+        '1...e5 fights for the centre directly and leads to open positions where development and king safety matter most.',
+        'The repertoire: the Giuoco Piano (...Bc5) against the Italian, the Morphy Defence (...a6) against the Ruy Lopez, ...exd4 and quick development against the Scotch, ...Nf6 against the Vienna and accepting the King\'s Gambit.',
+      ],
+      es: [
+        '1...e5 lucha por el centro directamente y lleva a posiciones abiertas donde lo más importante es el desarrollo y la seguridad del rey.',
+        'El repertorio: el Giuoco Piano (...Ac5) contra la Italiana, la Defensa Morphy (...a6) contra la Española, ...exd4 y desarrollo rápido contra la Escocesa, ...Cf6 contra la Viena y aceptar el Gambito de Rey.',
+      ],
+    },
+    structure: {
+      en: 'Symmetrical or semi-open centre. Black keeps the e5-pawn as long as possible (...d6, ...Nc6) or exchanges it to free the pieces.',
+      es: 'Centro simétrico o semiabierto. Las negras mantienen el peón de e5 todo lo posible (...d6, ...Cc6) o lo cambian para liberar las piezas.',
+    },
+    plans: {
+      b: {
+        en: ['Develop quickly and castle: knights before bishops, no early queen moves.', 'Hold e5 with ...d6 or ...Nc6; strike with ...d5 when it is safe.', 'Watch f7 (and f2 tricks) in the first moves.'],
+        es: ['Desarrollar rápido y enrocar: caballos antes que alfiles, sin sacar la dama pronto.', 'Sostener e5 con ...d6 o ...Cc6; golpear con ...d5 cuando sea seguro.', 'Vigilar f7 (y los trucos sobre f2) en las primeras jugadas.'],
+      },
+      w: {
+        en: ['Build the centre with c3 and d4.', 'Pressure f7 and e5.', 'Gain space with a4, b4 or f4 depending on the line.'],
+        es: ['Construir el centro con c3 y d4.', 'Presionar f7 y e5.', 'Ganar espacio con a4, b4 o f4 según la línea.'],
+      },
+    },
+    lines: [
+      tree('eb-italian', { en: 'Against the Italian (3.Bc4)', es: 'Contra la Italiana (3.Ac4)' }, 'e4 e5 Nf3 Nc6 Bc4'),
+      tree('eb-ruy', { en: 'Against the Ruy Lopez (3.Bb5)', es: 'Contra la Española (3.Ab5)' }, 'e4 e5 Nf3 Nc6 Bb5'),
+      tree('eb-scotch', { en: 'Against the Scotch (3.d4)', es: 'Contra la Escocesa (3.d4)' }, 'e4 e5 Nf3 Nc6 d4'),
+      tree('eb-vienna', { en: 'Against the Vienna (2.Nc3)', es: 'Contra la Viena (2.Cc3)' }, 'e4 e5 Nc3'),
+      tree('eb-kings-gambit', { en: 'Against the King\'s Gambit (2.f4)', es: 'Contra el Gambito de Rey (2.f4)' }, 'e4 e5 f4'),
+    ],
+  },
 ];

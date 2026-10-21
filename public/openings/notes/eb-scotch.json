@@ -1,0 +1,26 @@
+{
+ "exd4 Bc4 Nf6": {
+  "en": "Against the Scotch Gambit, ...Nf6 attacks e4 and leads to Two Knights positions. After e5, ...d5! is the key answer.",
+  "es": "Contra el Gambito Escocés, ...Cf6 ataca e4 y lleva a posiciones de los Dos Caballos. Tras e5, ¡...d5! es la respuesta clave."
+ },
+ "exd4 Bc4 Nf6 e5 d5 exf6": {
+  "en": "exf6? dxc4: Black wins a piece.",
+  "es": "¿exf6? dxc4: las negras ganan una pieza."
+ },
+ "exd4 Bc4 Nf6 e5 d5 exf6 dxc4 fxg7": {
+  "en": "...Qe7+! forces the queens off, then ...Bxg7: Black stays a piece up.",
+  "es": "¡...De7+! fuerza el cambio de damas y luego ...Axg7: las negras siguen con una pieza de más."
+ },
+ "exd4 Bc4 Nf6 e5 d5 exd6 Bxd6 Nxd4": {
+  "en": "...Nxd4! Bxf7+ Kxf7 Qxd4 only gives White two pawns for the piece.",
+  "es": "¡...Cxd4! Axf7+ Rxf7 Dxd4 solo da a las blancas dos peones por la pieza."
+ },
+ "exd4 c3 Nf6 e5 Nd5 cxd4 Bb4+ Nc3": {
+  "en": "...Nxc3 bxc3 Bxc3+ forks king and rook: Black wins the exchange.",
+  "es": "...Cxc3 bxc3 Axc3+ ataca rey y torre: las negras ganan la calidad."
+ },
+ "exd4 Nxd4 Nf6": {
+  "en": "...Nf6 attacks e4 at once. After Nxc6 bxc6 e5, ...Qe7 pins the pawn (the Mieses).",
+  "es": "...Cf6 ataca e4 de inmediato. Tras Cxc6 bxc6 e5, ...De7 clava el peón (la Mieses)."
+ }
+}

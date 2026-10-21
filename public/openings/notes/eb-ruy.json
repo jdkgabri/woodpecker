@@ -1,0 +1,18 @@
+{
+ "a6": {
+  "en": "The Morphy Defence: ...a6 asks the bishop at once. After Ba4, ...Nf6, ...Be7, ...b5 and ...d6 build the solid Closed Ruy.",
+  "es": "La Defensa Morphy: ...a6 pregunta al alfil de inmediato. Tras Aa4, ...Cf6, ...Ae7, ...b5 y ...d6 forman la sólida Española Cerrada."
+ },
+ "a6 Bxc6 dxc6": {
+  "en": "Take with the d-pawn: the queen and the c8-bishop come out quickly. Nxe5? is not a threat yet because of ...Qd4.",
+  "es": "Toma con el peón d: la dama y el alfil de c8 salen enseguida. ¿Cxe5? todavía no es una amenaza por ...Dd4."
+ },
+ "a6 Bxc6 dxc6 Nxe5": {
+  "en": "...Qd4! attacks the knight and the e4-pawn: Black wins the pawn back with the better game.",
+  "es": "¡...Dd4! ataca el caballo y el peón de e4: las negras recuperan el peón con mejor juego."
+ },
+ "a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 d4": {
+  "en": "d4? allows ...Nxd4!, and if Nxd4 exd4 Qxd4??, ...c5 and ...c4 trap the b3-bishop (the Noah's Ark trap).",
+  "es": "¿d4? permite ¡...Cxd4!, y si Cxd4 exd4 ¿¿Dxd4??, ...c5 y ...c4 atrapan el alfil de b3 (la trampa del Arca de Noé)."
+ }
+}

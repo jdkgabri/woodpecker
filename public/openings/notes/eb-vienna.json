@@ -1,0 +1,26 @@
+{
+ "Nf6": {
+  "en": "...Nf6 develops and attacks e4. Against f4, the answer is ...d5!, opening the centre while White's king is still there.",
+  "es": "...Cf6 desarrolla y ataca e4. Contra f4, la respuesta es ¡...d5!, abriendo el centro con el rey blanco todavía allí."
+ },
+ "Nf6 f4 d5 fxe5 Nxe4 Nxe4 dxe4 Bc4": {
+  "en": "...Nc6! attacks e5; if d4, ...Qxd4 wins a pawn because the queen trade leaves the knight on d4.",
+  "es": "¡...Cc6! ataca e5; si d4, ...Dxd4 gana un peón porque tras el cambio de damas el caballo queda en d4."
+ },
+ "Nf6 f4 d5 fxe5 Nxe4 Nxe4 dxe4 Qe2": {
+  "en": "Qe2 attacks e4 but blocks the f1-bishop: ...Bf5 defends the pawn and Black develops comfortably.",
+  "es": "De2 ataca e4 pero tapa el alfil de f1: ...Af5 defiende el peón y las negras desarrollan con comodidad."
+ },
+ "Nf6 Bc4 Bb4 Nf3 Nc6 Ng5 O-O Nd5": {
+  "en": "...Nxd5! The f7 tricks do not work: after Nxf7 Kxf7 White is simply a piece down.",
+  "es": "¡...Cxd5! Los trucos sobre f7 no funcionan: tras Cxf7 Rxf7 las blancas tienen simplemente una pieza de menos."
+ },
+ "Nf6 Nf3 Bb4 Bc4 Nc6 d3 d5 exd5 Nxd5 Bxd5": {
+  "en": "White gave up the Italian bishop: after ...Qxd5 Black has the bishop pair and a strong queen in the centre.",
+  "es": "Las blancas han entregado el alfil italiano: tras ...Dxd5 las negras tienen la pareja de alfiles y una dama fuerte en el centro."
+ },
+ "Nf6 Bc4 Bb4 Nf3 Nc6 d3 d5 exd5 Nxd5 Bxd5": {
+  "en": "White gave up the Italian bishop: ...Bxc3+ bxc3 Qxd5 and the queen is strong in the centre against White's broken pawns.",
+  "es": "Las blancas han entregado el alfil italiano: ...Axc3+ bxc3 Dxd5 y la dama es fuerte en el centro frente a los peones blancos rotos."
+ }
+}
