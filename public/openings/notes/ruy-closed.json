@@ -16,8 +16,8 @@
   "es": "Cxc4 bxc4 dxe5 gana un peón."
  },
  "h3 Bb7 d4 exd4 cxd4 d5 e5 Nd7": {
-  "en": "The d5-pawn is attacked twice and defended once (the c6-knight blocks the b7-bishop): Bxd5.",
-  "es": "El peón de d5 está atacado dos veces y defendido una (el caballo de c6 tapa al alfil de b7): Axd5."
+  "en": "...Nd7? leaves d5 undefended: the knight blocks the queen and the c6-knight blocks the b7-bishop. Bxd5.",
+  "es": "¿...Cd7? deja d5 sin defensa: el caballo tapa a la dama y el caballo de c6 tapa al alfil de b7. Axd5."
  },
  "h3 Be6 d4 Bxb3 axb3": {
   "en": "Black has traded the strong Ruy Lopez bishop, but the a-file is now open for White's rook and the centre is White's.",
