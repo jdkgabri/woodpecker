@@ -1,0 +1,54 @@
+{
+ "": {
+  "en": "The Scotch Game: 3.d4 opens the centre at once. After 3...exd4 4.Nxd4 White has free development and the e4-pawn; Black's main answers are 4...Bc5 and 4...Nf6.",
+  "es": "La Escocesa: 3.d4 abre el centro de inmediato. Tras 3...exd4 4.Cxd4 las blancas tienen desarrollo libre y el peón de e4; las respuestas principales negras son 4...Ac5 y 4...Cf6."
+ },
+ "exd4 Nxd4": {
+  "en": "White's knight is centralised and e4 is free to advance.",
+  "es": "El caballo blanco está centralizado y e4 puede avanzar."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4": {
+  "en": "Trading knights brings White's queen to a strong central square; Black has lost time.",
+  "es": "Cambiar caballos lleva la dama blanca a una casilla central fuerte; las negras han perdido tiempo."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 Nf6 e5": {
+  "en": "e5 kicks the knight: Black has no good square, and White is clearly better.",
+  "es": "e5 echa al caballo: no tiene una buena casilla, y las blancas están claramente mejor."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 c5 Qe5+": {
+  "en": "...c5? weakens d5 and d6; Qe5+ forces the queens off or wins material (if ...Be7, Qxg7).",
+  "es": "...c5? debilita d5 y d6; De5+ fuerza el cambio de damas o gana material (si ...Ae7, Dxg7)."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 Qf6 e5": {
+  "en": "Against ...Qf6, e5 gains time on the queen.",
+  "es": "Contra ...Df6, e5 gana tiempo sobre la dama."
+ },
+ "exd4 Nxd4 Bc5": {
+  "en": "The Classical: the bishop hits the d4-knight. White trades on c6 first.",
+  "es": "La Clásica: el alfil ataca el caballo de d4. Las blancas cambian primero en c6."
+ },
+ "exd4 Nxd4 Bc5 Nxc6 Qf6 Qf3": {
+  "en": "...Qf6 threatens mate on f2; Qf3 covers it and offers a queen trade.",
+  "es": "...Df6 amenaza mate en f2; Df3 lo cubre y ofrece el cambio de damas."
+ },
+ "exd4 Nxd4 Bc5 Nxc6 bxc6 Nc3": {
+  "en": "Develop and castle: Bd3, O-O and later Qh5 or e5 ideas.",
+  "es": "Desarrollar y enrocar: Ad3, O-O y más tarde ideas con Dh5 o e5."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5": {
+  "en": "The Mieses Variation: e5 kicks the knight to d5 and gains space.",
+  "es": "La Variante Mieses: e5 lleva el caballo a d5 y gana espacio."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4": {
+  "en": "The main line: c4 chases the knight away from the centre.",
+  "es": "La línea principal: c4 aleja al caballo del centro."
+ },
+ "exd4 Nxd4 Qf6 Nxc6 Qxc6 Nc3": {
+  "en": "Black's queen came out early; White develops with tempo and builds a big lead.",
+  "es": "La dama negra salió pronto; las blancas desarrollan ganando tiempos y consiguen una gran ventaja."
+ },
+ "d6": {
+  "en": "...d6 holds e5 but is passive; Nc3 develops and keeps the pressure.",
+  "es": "...d6 sostiene e5 pero es pasiva; Cc3 desarrolla y mantiene la presión."
+ }
+}
