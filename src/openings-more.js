@@ -444,6 +444,8 @@ export const MORE_OPENINGS = [
       tree('caro-classical', { en: 'Classical (4...Bf5)', es: 'Clásica (4...Af5)' }, 'e4 c6 d4 d5 Nc3 dxe4 Nxe4 Bf5'),
     
       tree('caro-advance-black', { en: 'Against the Advance', es: 'Contra el Avance' }, 'e4 c6 d4 d5 e5 Bf5'),
+    
+      tree('caro-panov', { en: 'Against the Panov Attack', es: 'Contra el Ataque Panov' }, 'e4 c6 d4 d5 exd5 cxd5 c4'),
     ],
   },
   // ---- scandinavian
@@ -1311,5 +1313,39 @@ export const MORE_OPENINGS = [
       },
     },
     lines: [tree('bogo-indian', { en: 'All of White\'s tries', es: 'Todos los intentos blancos' }, 'd4 Nf6 c4 e6 Nf3 Bb4+')],
+  },
+  // ---- Reti
+  {
+    id: 'reti', side: 'w', eco: 'A04–A09', puzzles: 'reti',
+    name: { en: 'Réti Opening', es: 'Apertura Réti' },
+    summary: {
+      en: '1.Nf3 and c4 — a hypermodern opening: White attacks the centre from the flanks with c4 and fianchettoed bishops.',
+      es: '1.Cf3 y c4: una apertura hipermoderna. Las blancas atacan el centro desde los flancos con c4 y alfiles en fianchetto.',
+    },
+    intro: {
+      en: [
+        'Richard Réti\'s idea: do not occupy the centre with pawns at once; control it with pieces and strike at it with c4.',
+        'Flexible and positional: it often transposes to the English, the Catalan or the Queen\'s Gambit.',
+      ],
+      es: [
+        'La idea de Richard Réti: no ocupar el centro con peones de inmediato; controlarlo con piezas y golpearlo con c4.',
+        'Flexible y posicional: a menudo transpone a la Inglesa, la Catalana o el Gambito de Dama.',
+      ],
+    },
+    structure: {
+      en: 'White\'s c4 against Black\'s d5; the bishops on g2 (and b2) aim at the centre.',
+      es: 'El c4 blanco contra el d5 negro; los alfiles de g2 (y b2) apuntan al centro.',
+    },
+    plans: {
+      w: {
+        en: ['Nf3, c4, g3, Bg2 and O-O.', 'b3 and Bb2 for a double fianchetto.', 'Pressure d5; play d4 at the right moment.'],
+        es: ['Cf3, c4, g3, Ag2 y O-O.', 'b3 y Ab2 para un doble fianchetto.', 'Presionar d5; jugar d4 en el momento oportuno.'],
+      },
+      b: {
+        en: ['A solid ...d5–c6 setup.', '...d4 to gain space.', 'Develop the c8-bishop early.'],
+        es: ['Un esquema sólido ...d5–c6.', '...d4 para ganar espacio.', 'Desarrollar pronto el alfil de c8.'],
+      },
+    },
+    lines: [tree('reti', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'Nf3')],
   },
 ];

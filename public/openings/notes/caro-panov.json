@@ -1,0 +1,26 @@
+{
+ "Nf6 Nc3": {
+  "en": "The Panov: White accepts an isolated d-pawn for active pieces. Black plays ...e6 or ...Nc6, blockades d5 and trades pieces.",
+  "es": "La Panov: las blancas aceptan un peón d aislado a cambio de piezas activas. Las negras juegan ...e6 o ...Cc6, bloquean d5 y cambian piezas."
+ },
+ "Nf6 cxd5 Nxd5 Nc3 e6 Nxd5 Qxd5 Nf3 Nc6 b3": {
+  "en": "...Bb4+ with tempo: White's king is still in the centre and the queen on d5 is very active.",
+  "es": "...Ab4+ ganando tiempo: el rey blanco sigue en el centro y la dama de d5 está muy activa."
+ },
+ "Nf6 Nc3 e6 cxd5 Nxd5 Bb5+ Nc6 Nxd5": {
+  "en": "...Qxd5! and after Bxc6+ bxc6 the queen eyes g2: Black is better.",
+  "es": "¡...Dxd5! y tras Axc6+ bxc6 la dama apunta a g2: las negras están mejor."
+ },
+ "Nf6 c5": {
+  "en": "c5 releases the tension in the centre: ...e6 and ...b6 attack the chain at once.",
+  "es": "c5 libera la tensión en el centro: ...e6 y ...b6 atacan la cadena de inmediato."
+ },
+ "Nf6 Nc3 e6 cxd5 Nxd5 Nxd5 Qxd5 Be3": {
+  "en": "...Bb4+! and White has no comfortable way to meet the check.",
+  "es": "¡...Ab4+! y las blancas no tienen una forma cómoda de tapar el jaque."
+ },
+ "": {
+  "en": "Against the Panov: ...Nf6, ...e6 and play against the isolated pawn.",
+  "es": "Contra el Panov: ...Cf6, ...e6 y juego contra el peón aislado."
+ }
+}

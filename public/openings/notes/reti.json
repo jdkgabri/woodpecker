@@ -1,0 +1,14 @@
+{
+ "d5 c4": {
+  "en": "Réti's idea: attack d5 from the side with c4 instead of occupying the centre. g3, Bg2 and O-O follow.",
+  "es": "La idea de Réti: atacar d5 de lado con c4 en vez de ocupar el centro. Siguen g3, Ag2 y O-O."
+ },
+ "Nf6 c4": {
+  "en": "Flexible: depending on Black's setup, White chooses an English, a Catalan or a double fianchetto.",
+  "es": "Flexible: según el esquema negro, las blancas eligen una Inglesa, una Catalana o un doble fianchetto."
+ },
+ "d5 c4 dxc4 e3 Nf6 Bxc4 Bg4": {
+  "en": "Bxf7+! Kxf7 Ne5+ and Nxg4: White wins a pawn and Black's king has lost castling.",
+  "es": "¡Axf7+! Rxf7 Ce5+ y Cxg4: las blancas ganan un peón y el rey negro ha perdido el enroque."
+ }
+}
