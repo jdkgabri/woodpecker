@@ -34,5 +34,101 @@
  "d4 Nc6 d5": {
   "en": "...Nc6? lets d5 gain space with tempo.",
   "es": "...Cc6? permite a d5 ganar espacio con tiempo."
+ },
+ "d4 cxd4": {
+  "en": "c3: offer the gambit.",
+  "es": "c3: ofrece el gambito."
+ },
+ "d4 cxd4 c3 dxc3": {
+  "en": "Nxc3: develop with tempo.",
+  "es": "Cxc3: desarrolla ganando tiempo."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6": {
+  "en": "Nf3, Bc4, O-O, Qe2 and Rd1.",
+  "es": "Cf3, Ac4, O-O, De2 y Td1."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 e6": {
+  "en": "Bc4 and O-O; watch for ...a6 and ...b5.",
+  "es": "Ac4 y O-O; atento a ...a6 y ...b5."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 e6 Bc4 a6 O-O": {
+  "en": "If ...b5, Bd3 (or Bb3) and Qe2, Rd1: Black is solid. Black slightly better objectively.",
+  "es": "Si ...b5, Ad3 (o Ab3) y De2, Td1: las negras están sólidas. Objetivamente algo mejor para las negras."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 d6": {
+  "en": "Bc4, O-O, Qe2 and Rd1: the classical setup.",
+  "es": "Ac4, O-O, De2 y Td1: el esquema clásico."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O": {
+  "en": "Qe2, Rd1 and Bf4: pressure on d6. Black is a pawn up and solid. Black slightly better.",
+  "es": "De2, Td1 y Af4: presión sobre d6. Las negras tienen un peón de más y están sólidas. Algo mejor para las negras."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 g6": {
+  "en": "Bc4 and e5 ideas: the fianchetto leaves f7 weak.",
+  "es": "Ac4 e ideas con e5: el fianchetto deja f7 débil."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 g6 Bc4": {
+  "en": "After ...Bg7 e5 Nh6 O-O: full compensation. Equal.",
+  "es": "Tras ...Ag7 e5 Ch6 O-O: compensación completa. Igualdad."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 e5 Bc4": {
+  "en": "Ng5 hits f7: after ...Nf6 Ng5 d5 Bxd5, White is better.",
+  "es": "Cg5 ataca f7: tras ...Cf6 Cg5 d5 Axd5, las blancas están mejor."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 e6": {
+  "en": "Nf3 and Bc4.",
+  "es": "Cf3 y Ac4."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 e6 Nf3 Nc6 Bc4": {
+  "en": "Castle, Qe2 and Rd1. Black slightly better objectively.",
+  "es": "Enroque, De2 y Td1. Objetivamente algo mejor para las negras."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 e6 Nf3 a6 Bc4": {
+  "en": "If ...b5, Bd3 and O-O, Qe2. Black slightly better.",
+  "es": "Si ...b5, Ad3 y O-O, De2. Algo mejor para las negras."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 e6 Nf3 Bb4 Qd4": {
+  "en": "Qd4 hits b4 and g7: ...Bf8 retreats. Equal.",
+  "es": "Dd4 ataca b4 y g7: ...Af8 se retira. Igualdad."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 d6": {
+  "en": "Nf3 and Bc4.",
+  "es": "Cf3 y Ac4."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 d6 Nf3 Nf6 Bc4": {
+  "en": "If ...e6, e5! dxe5 Qxd8+ Kxd8 Nxe5: White regains the pawn. Equal.",
+  "es": "Si ...e6, ¡e5! dxe5 Dxd8+ Rxd8 Cxe5: las blancas recuperan el peón. Igualdad."
+ },
+ "d4 cxd4 c3 dxc3 Nxc3 g6 Nf3": {
+  "en": "Bc4 and e5: f7 and the dark squares. Equal.",
+  "es": "Ac4 y e5: f7 y las casillas oscuras. Igualdad."
+ },
+ "d4 cxd4 c3 d3 Nf3": {
+  "en": "Bxd3 (or Qxd3): White has a lead in development. Slightly better.",
+  "es": "Axd3 (o Dxd3): las blancas van adelantadas en desarrollo. Algo mejor."
+ },
+ "d4 cxd4 c3 Nc6 cxd4 d5 Nc3": {
+  "en": "If ...Nf6, e5 and the centre is White's. Slightly better.",
+  "es": "Si ...Cf6, e5 y el centro es de las blancas. Algo mejor."
+ },
+ "d4 cxd4 c3 Nf6 e5 Nd5 Nf3": {
+  "en": "An Alapin structure: cxd4 next. Equal.",
+  "es": "Una estructura de Alapin: después cxd4. Igualdad."
+ },
+ "d4 e6 Nf3 cxd4": {
+  "en": "Nxd4: an Open Sicilian. Equal.",
+  "es": "Cxd4: una Siciliana Abierta. Igualdad."
+ },
+ "d4 Nc6": {
+  "en": "d5! gains space with tempo.",
+  "es": "¡d5! gana espacio con tiempo."
+ },
+ "d4 Nc6 d5 Ne5": {
+  "en": "f4! kicks the knight again. White is clearly better.",
+  "es": "¡f4! vuelve a echar al caballo. Las blancas están claramente mejor."
+ },
+ "d4 Nc6 d5 Ne5 f4": {
+  "en": "After ...Ng6 Nc3, Nf3 and a4: a big centre. White is clearly better.",
+  "es": "Tras ...Cg6 Cc3, Cf3 y a4: un gran centro. Las blancas están claramente mejor."
  }
 }

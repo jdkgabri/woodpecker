@@ -26,5 +26,101 @@
  "": {
   "en": "Against f4: ...Bg7, ...O-O and ...c5.",
   "es": "Contra f4: ...Ag7, ...O-O y ...c5."
+ },
+ "Bg7 Nf3": {
+  "en": "Castle, then ...c5 or ...Na6.",
+  "es": "Enroca, y después ...c5 o ...Ca6."
+ },
+ "Bg7 Nf3 O-O Bd3": {
+  "en": "...c5 is the sharp try; ...Na6 (heading for c5 or b4) is calmer.",
+  "es": "...c5 es el intento agudo; ...Ca6 (camino de c5 o b4) es más tranquila."
+ },
+ "Bg7 Nf3 O-O Bd3 c5 dxc5": {
+  "en": "...Na6 (or ...dxc5): Black regains the pawn but White keeps a strong centre. White is better.",
+  "es": "...Ca6 (o ...dxc5): las negras recuperan el peón pero las blancas mantienen un centro fuerte. Las blancas están mejor."
+ },
+ "Bg7 Nf3 O-O Bd3 c5 dxc5 Na6": {
+  "en": "After cxd6 exd6 Be3: ...b5! is the trick (Bxb5 Nxe4). White is better.",
+  "es": "Tras cxd6 exd6 Ae3: ¡...b5! es el truco (Axb5 Cxe4). Las blancas están mejor."
+ },
+ "Bg7 Nf3 O-O Bd3 c5 d5": {
+  "en": "...e6 opens the e-file against White's centre.",
+  "es": "...e6 abre la columna e contra el centro blanco."
+ },
+ "Bg7 Nf3 O-O Bd3 c5 d5 e6 O-O exd5 exd5 Na6": {
+  "en": "...Nc7 and ...Rb8, ...b5: Black is active. Slightly better for Black.",
+  "es": "...Cc7 y ...Tb8, ...b5: las negras están activas. Algo mejor para las negras."
+ },
+ "Bg7 Nf3 O-O Bd3 c5 d5 e6 dxe6 Bxe6 O-O Nc6": {
+  "en": "If f5, ...c4! hits the bishop. Equal.",
+  "es": "Si f5, ¡...c4! ataca al alfil. Igualdad."
+ },
+ "Bg7 Nf3 O-O Bd3 c5 Be3": {
+  "en": "...Ng4! hits the e3-bishop: Black is better.",
+  "es": "¡...Cg4! ataca al alfil de e3: las negras están mejor."
+ },
+ "Bg7 Nf3 O-O Bd3 c5 Be3 Ng4": {
+  "en": "After Bg1 cxd4 Nxd4 e5!: White's centre falls apart. Black is clearly better.",
+  "es": "Tras Ag1 cxd4 Cxd4 ¡e5!: el centro blanco se deshace. Las negras están claramente mejor."
+ },
+ "Bg7 Nf3 O-O e5": {
+  "en": "...dxe5 fxe5 Nd5: hit the centre.",
+  "es": "...dxe5 fxe5 Cd5: golpea el centro."
+ },
+ "Bg7 Nf3 O-O e5 dxe5 fxe5": {
+  "en": "...Nd5: the knight is strong.",
+  "es": "...Cd5: el caballo es fuerte."
+ },
+ "Bg7 Nf3 O-O e5 dxe5 fxe5 Nd5 Bc4": {
+  "en": "...Nxc3: trade and play ...c5.",
+  "es": "...Cxc3: cambia y juega ...c5."
+ },
+ "Bg7 Nf3 O-O e5 dxe5 fxe5 Nd5 Bc4 Nxc3 bxc3": {
+  "en": "...c5: the centre is attacked.",
+  "es": "...c5: el centro es atacado."
+ },
+ "Bg7 Nf3 O-O e5 dxe5 fxe5 Nd5 Bc4 Nxc3 bxc3 c5 O-O": {
+  "en": "...Bg4 and ...Nc6: pressure on e5 and d4. Equal.",
+  "es": "...Ag4 y ...Cc6: presión sobre e5 y d4. Igualdad."
+ },
+ "Bg7 Nf3 O-O Bc4": {
+  "en": "...Nxe4! the fork trick.",
+  "es": "¡...Cxe4! el truco de la horquilla."
+ },
+ "Bg7 Nf3 O-O Bc4 Nxe4 Nxe4": {
+  "en": "...d5 forks bishop and knight.",
+  "es": "...d5 ataca alfil y caballo."
+ },
+ "Bg7 Nf3 O-O Bc4 Nxe4 Nxe4 d5 Bd3 dxe4 Bxe4 c5": {
+  "en": "The centre opens with Black's bishops strong. Slightly better for Black.",
+  "es": "El centro se abre con los alfiles negros fuertes. Algo mejor para las negras."
+ },
+ "Bg7 Nf3 O-O Bc4 Nxe4 Bxf7+ Rxf7 Nxe4 c5": {
+  "en": "...c5 hits d4: equal; Black has the bishop pair.",
+  "es": "...c5 ataca d4: igualdad; las negras tienen la pareja de alfiles."
+ },
+ "Bg7 Nf3 O-O Be3": {
+  "en": "...c5 (or ...b6, ...Na6).",
+  "es": "...c5 (o ...b6, ...Ca6)."
+ },
+ "Bg7 Nf3 O-O Be3 c5 dxc5 Nc6": {
+  "en": "...Ng4 is the stronger reply here. After Qd2 Ng4: equal-ish; White slightly better.",
+  "es": "...Cg4 es aquí la respuesta más fuerte. Tras Dd2 Cg4: más o menos igualdad; las blancas algo mejor."
+ },
+ "Bg7 Nf3 O-O Be3 c5 Qd2": {
+  "en": "...cxd4 and ...Ng4: Black is fine.",
+  "es": "...cxd4 y ...Cg4: las negras están bien."
+ },
+ "Bg7 e5": {
+  "en": "...Nfd7, then ...c5.",
+  "es": "...Cfd7, y después ...c5."
+ },
+ "Bg7 e5 Nfd7 Nf3": {
+  "en": "...c5 (or ...O-O): hit the centre.",
+  "es": "...c5 (u ...O-O): golpea el centro."
+ },
+ "Bg7 e5 Nfd7 Bc4 c5": {
+  "en": "After exd6 O-O: Black regains material with activity. Slightly better for Black.",
+  "es": "Tras exd6 O-O: las negras recuperan material con actividad. Algo mejor para las negras."
  }
 }
