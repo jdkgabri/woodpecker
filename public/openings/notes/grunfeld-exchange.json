@@ -14,5 +14,97 @@
  "": {
   "en": "The Exchange main line: ...c5, ...O-O, ...Nc6 and pressure on d4.",
   "es": "La línea principal del Cambio: ...c5, ...O-O, ...Cc6 y presión sobre d4."
+ },
+ "Bc4": {
+  "en": "Bc4: the Classical Exchange. ...c5 hits d4 at once; then ...O-O, ...Nc6 and ...Bg4.",
+  "es": "Ac4: el Cambio Clásico. ...c5 golpea d4 de inmediato; después ...O-O, ...Cc6 y ...Ag4."
+ },
+ "Bc4 c5 Ne2": {
+  "en": "Ne2 (not Nf3) keeps the f-pawn free and avoids a pin on f3. Castle.",
+  "es": "Ce2 (no Cf3) deja libre el peón f y evita una clavada en f3. Enroque."
+ },
+ "Bc4 c5 Ne2 O-O O-O": {
+  "en": "...Nc6: more pressure on d4.",
+  "es": "...Cc6: más presión sobre d4."
+ },
+ "Bc4 c5 Ne2 O-O O-O Nc6 Be3": {
+  "en": "...cxd4 cxd4, then ...Bg4: the main line.",
+  "es": "...cxd4 cxd4, y después ...Ag4: la línea principal."
+ },
+ "Bc4 c5 Ne2 O-O O-O Nc6 Be3 cxd4 cxd4": {
+  "en": "...Bg4 pins the e2-knight and adds pressure on d4.",
+  "es": "...Ag4 clava el caballo de e2 y aumenta la presión sobre d4."
+ },
+ "Bc4 c5 Ne2 O-O O-O Nc6 Be3 cxd4 cxd4 Bg4 f3": {
+  "en": "...Na5 hits the c4-bishop. If Bxf7+, the Seville variation: ...Rxf7 fxg4 Rxf1+ Kxf1.",
+  "es": "...Ca5 ataca al alfil de c4. Si Axf7+, la variante Sevilla: ...Txf7 fxg4 Txf1+ Rxf1."
+ },
+ "Bc4 c5 Ne2 O-O O-O Nc6 Be3 cxd4 cxd4 Bg4 f3 Na5 Bd3": {
+  "en": "...Be6 and, after d5, ...Bxa1 Qxa1 f6: White gives the exchange for an attack on the dark squares.",
+  "es": "...Ae6 y, tras d5, ...Axa1 Dxa1 f6: las blancas entregan la calidad a cambio de un ataque en las casillas oscuras."
+ },
+ "Bc4 c5 Ne2 O-O O-O Nc6 Be3 cxd4 cxd4 Bg4 f3 Na5 Bd3 Be6 d5 Bxa1 Qxa1 f6": {
+  "en": "Black is an exchange up; ...Bf7, ...Qd6 or ...Qb6 and ...Rac8 consolidate. White has dark-square compensation. Balanced.",
+  "es": "Las negras tienen una calidad de más; ...Af7, ...Dd6 o ...Db6 y ...Tac8 consolidan. Las blancas tienen compensación en las casillas oscuras. Equilibrio."
+ },
+ "Bc4 c5 Ne2 O-O O-O Nc6 Be3 cxd4 cxd4 Bg4 f3 Na5 Bxf7+ Rxf7 fxg4 Rxf1+ Kxf1 Qd7": {
+  "en": "The Seville: ...Qd7 hits g4; then ...Qe6 or ...Nc4 against e3 and the light squares. White is slightly better, Black has play.",
+  "es": "La Sevilla: ...Dd7 ataca g4; después ...De6 o ...Cc4 contra e3 y las casillas blancas. Las blancas algo mejor, las negras tienen juego."
+ },
+ "Bc4 c5 Ne2 O-O Be3": {
+  "en": "...Nc6 and the same ideas.",
+  "es": "...Cc6 y las mismas ideas."
+ },
+ "Bc4 c5 Ne2 O-O Be3 Nc6 O-O": {
+  "en": "...cxd4 and ...Bg4: back to the main line.",
+  "es": "...cxd4 y ...Ag4: de vuelta a la línea principal."
+ },
+ "Bc4 c5 Ne2 O-O Be3 Nc6 O-O cxd4 cxd4": {
+  "en": "...Bg4 is the main move. ...Qa5 Rb1 leaves White comfortably better.",
+  "es": "...Ag4 es la jugada principal. ...Da5 Tb1 deja a las blancas cómodamente mejor."
+ },
+ "Bc4 c5 Ne2 O-O Be3 Nc6 O-O cxd4 cxd4 Qa5 Rb1 Bg4": {
+  "en": "After f3 the bishop must go back: White has a strong centre and Black lacks counterplay. White is clearly better.",
+  "es": "Tras f3 el alfil tiene que retroceder: las blancas tienen un centro fuerte y las negras carecen de contrajuego. Las blancas están claramente mejor."
+ },
+ "Bc4 c5 Be3": {
+  "en": "...O-O, ...Nc6 and ...Bg4.",
+  "es": "...O-O, ...Cc6 y ...Ag4."
+ },
+ "Bc4 c5 Be3 O-O Ne2": {
+  "en": "...Nc6 and ...cxd4: the same structure.",
+  "es": "...Cc6 y ...cxd4: la misma estructura."
+ },
+ "Bc4 c5 Be3 O-O Ne2 Nc6 O-O": {
+  "en": "...cxd4 cxd4 and ...Bg4.",
+  "es": "...cxd4 cxd4 y ...Ag4."
+ },
+ "Bc4 c5 Be3 O-O Ne2 Nc6 O-O cxd4 cxd4": {
+  "en": "...Bg4 pins the knight.",
+  "es": "...Ag4 clava el caballo."
+ },
+ "Bc4 c5 Be3 O-O Ne2 Nc6 O-O cxd4 cxd4 Bg4 f3": {
+  "en": "...Na5: the main line.",
+  "es": "...Ca5: la línea principal."
+ },
+ "Nf3": {
+  "en": "Nf3: the Modern Exchange. ...c5, ...O-O and pressure on d4; Rb1 and Be2 or Be3 are White's ideas.",
+  "es": "Cf3: el Cambio Moderno. ...c5, ...O-O y presión sobre d4; Tb1 y Ae2 o Ae3 son las ideas blancas."
+ },
+ "Nf3 c5 Be3": {
+  "en": "Castle; ...Qa5 and ...Bg4 or ...Nc6 hit the centre.",
+  "es": "Enroque; ...Da5 y ...Ag4 o ...Cc6 atacan el centro."
+ },
+ "Nf3 c5 Be3 O-O Be2": {
+  "en": "...Nc6 (or ...Qa5): steady pressure on d4 and c3.",
+  "es": "...Cc6 (o ...Da5): presión constante sobre d4 y c3."
+ },
+ "Nf3 c5 Bb5+": {
+  "en": "...Nc6 blocks; if Bxc6+ bxc6, Black has the bishop pair and open b-file.",
+  "es": "...Cc6 tapa; si Axc6+ bxc6, las negras tienen la pareja de alfiles y la columna b abierta."
+ },
+ "Be3": {
+  "en": "Be3: ...c5 and ...Qa5, pressing c3 and d4.",
+  "es": "Ae3: ...c5 y ...Da5, presionando c3 y d4."
  }
 }

@@ -14,5 +14,133 @@
  "": {
   "en": "Against 3.Nd2: ...c5 or ...Nf6.",
   "es": "Contra 3.Cd2: ...c5 o ...Cf6."
+ },
+ "c5 c3": {
+  "en": "c3 supports d4. ...Nc6 adds pressure; Black is ready for ...cxd4 and ...Qb6.",
+  "es": "c3 apoya d4. ...Cc6 añade presión; las negras están listas para ...cxd4 y ...Db6."
+ },
+ "c5 c3 Nc6 Ngf3": {
+  "en": "...Nf6: if e5, the knight goes to d7 and Black attacks the chain with ...cxd4, ...Qb6 and ...f6.",
+  "es": "...Cf6: si e5, el caballo va a d7 y las negras atacan la cadena con ...cxd4, ...Db6 y ...f6."
+ },
+ "c5 c3 Nc6 Ngf3 Nf6 e5": {
+  "en": "...Nd7: a French chain. Black's targets are d4 (...cxd4, ...Qb6) and e5 (...f6).",
+  "es": "...Cd7: una cadena francesa. Los objetivos negros son d4 (...cxd4, ...Db6) y e5 (...f6)."
+ },
+ "c5 c3 Nc6 Ngf3 Nf6 e5 Nd7 Bd3": {
+  "en": "...cxd4 first, then ...Be7 and ...f6 or ...Qb6.",
+  "es": "Primero ...cxd4, y después ...Ae7 y ...f6 o ...Db6."
+ },
+ "c5 c3 Nc6 Ngf3 Nf6 e5 Nd7 Bd3 cxd4 cxd4": {
+  "en": "...Be7 and castle; ...f6 to break the chain.",
+  "es": "...Ae7 y enroque; ...f6 para romper la cadena."
+ },
+ "c5 c3 Nc6 Ngf3 Nf6 e5 Nd7 Bd3 cxd4 cxd4 Be7 O-O": {
+  "en": "...f6 hits e5 at once (...Qb6 is the other plan).",
+  "es": "...f6 ataca e5 de inmediato (...Db6 es el otro plan)."
+ },
+ "c5 c3 Nc6 Ngf3 Nf6 e5 Nd7 Bd3 cxd4 cxd4 Be7 O-O f6": {
+  "en": "After exf6 Nxf6: Black has free pieces and the f-file, but the e6-pawn is a weakness. White slightly better; Black plays ...O-O, ...Bd6 and ...Qc7.",
+  "es": "Tras exf6 Cxf6: las negras tienen piezas libres y la columna f, pero el peón de e6 es una debilidad. Las blancas algo mejor; las negras juegan ...O-O, ...Ad6 y ...Dc7."
+ },
+ "c5 c3 Nc6 Ngf3 Nf6 e5 Nd7 Bb5": {
+  "en": "Bb5 doesn't help d4: ...Qb6! (or ...cxd4) and the pressure on d4 and b2 grows. Black is fine.",
+  "es": "Ab5 no ayuda a d4: ¡...Db6! (o ...cxd4) y la presión sobre d4 y b2 aumenta. Las negras están bien."
+ },
+ "c5 c3 Nc6 Ngf3 Nf6 Bd3 cxd4": {
+  "en": "After cxd4 dxe4 Nxe4 Be7 and O-O: White has an isolated d4-pawn. Equal; Black blockades on d5.",
+  "es": "Tras cxd4 dxe4 Cxe4 Ae7 y O-O: las blancas tienen un peón aislado en d4. Igualdad; las negras bloquean en d5."
+ },
+ "c5 c3 Nc6 Bb5": {
+  "en": "Bb5 pins the knight. ...Nf6 develops and hits e4.",
+  "es": "Ab5 clava el caballo. ...Cf6 desarrolla y ataca e4."
+ },
+ "c5 c3 Nc6 Bb5 Nf6": {
+  "en": "If e5, ...Nd7 and ...Qb6: Black is comfortable.",
+  "es": "Si e5, ...Cd7 y ...Db6: las negras están cómodas."
+ },
+ "c5 c3 Nc6 exd5": {
+  "en": "...Qxd5: the queen is safe on d5, and Black avoids an isolated pawn.",
+  "es": "...Dxd5: la dama está segura en d5, y las negras evitan el peón aislado."
+ },
+ "c5 c3 Nc6 exd5 Qxd5": {
+  "en": "Ngf3, then ...cxd4, ...Nf6 and ...Be7. Equal.",
+  "es": "Cgf3, y después ...cxd4, ...Cf6 y ...Ae7. Igualdad."
+ },
+ "c5 c3 Nc6 Ne2 cxd4": {
+  "en": "After Nxd4 (or cxd4), ...Nf6 and ...Bd6 or ...Be7. Equal.",
+  "es": "Tras Cxd4 (o cxd4), ...Cf6 y ...Ad6 o ...Ae7. Igualdad."
+ },
+ "c5 exd5": {
+  "en": "exd5: ...Qxd5! (the knight on d2 can't attack the queen with Nc3).",
+  "es": "exd5: ¡...Dxd5! (el caballo de d2 no puede atacar a la dama con Cc3)."
+ },
+ "c5 exd5 Qxd5 Ngf3": {
+  "en": "...Nf6 and ...cxd4; the queen goes back to d8 or d6 when chased.",
+  "es": "...Cf6 y ...cxd4; la dama vuelve a d8 o d6 cuando la persigan."
+ },
+ "c5 exd5 Qxd5 Ngf3 Nf6 Bc4": {
+  "en": "Bc4 hits the queen: ...Qd8 (or ...Qd6).",
+  "es": "Ac4 ataca a la dama: ...Dd8 (o ...Dd6)."
+ },
+ "c5 exd5 Qxd5 Ngf3 Nf6 Bc4 Qd8": {
+  "en": "Then ...cxd4, ...Be7, ...O-O and ...Nc6. White is a little ahead in development; Black is solid.",
+  "es": "Después ...cxd4, ...Ae7, ...O-O y ...Cc6. Las blancas van algo adelantadas en desarrollo; las negras están sólidas."
+ },
+ "c5 exd5 Qxd5 dxc5": {
+  "en": "...Nf6 first; ...Bxc5 next regains the pawn.",
+  "es": "Primero ...Cf6; después ...Axc5 recupera el peón."
+ },
+ "c5 exd5 Qxd5 dxc5 Nf6": {
+  "en": "If Nb3, ...Qxd1+ Kxd1 and ...Be7, ...O-O and ...Nbd7xc5: an equal endgame.",
+  "es": "Si Cb3, ...Dxd1+ Rxd1 y ...Ae7, ...O-O y ...Cbd7xc5: un final igualado."
+ },
+ "c5 Ngf3": {
+  "en": "...Nf6: if e5, ...Nfd7 and the same chain play.",
+  "es": "...Cf6: si e5, ...Cfd7 y el mismo juego contra la cadena."
+ },
+ "c5 Ngf3 Nf6 e5": {
+  "en": "...Nfd7, then ...Nc6 and ...cxd4.",
+  "es": "...Cfd7, y después ...Cc6 y ...cxd4."
+ },
+ "c5 Ngf3 Nf6 e5 Nfd7 c3": {
+  "en": "...Nc6: more pressure on d4.",
+  "es": "...Cc6: más presión sobre d4."
+ },
+ "c5 Ngf3 Nf6 e5 Nfd7 c3 Nc6 Bd3": {
+  "en": "...cxd4 cxd4, then ...Be7 and ...Qb6 or ...f6.",
+  "es": "...cxd4 cxd4, y después ...Ae7 y ...Db6 o ...f6."
+ },
+ "c5 Ngf3 Nf6 e5 Nfd7 c3 Nc6 Bd3 cxd4 cxd4": {
+  "en": "...Be7 and castle.",
+  "es": "...Ae7 y enroque."
+ },
+ "c5 Ngf3 Nf6 e5 Nfd7 c3 Nc6 Bd3 cxd4 cxd4 Be7 O-O": {
+  "en": "...Qb6 hits d4 and b2.",
+  "es": "...Db6 ataca d4 y b2."
+ },
+ "c5 Ngf3 Nf6 e5 Nfd7 c3 Nc6 Bd3 cxd4 cxd4 Be7 O-O Qb6": {
+  "en": "After Nb3, ...Nb4 trades White's good bishop, or ...a5–a4 kicks the knight. White is better; Black still needs ...f6.",
+  "es": "Tras Cb3, ...Cb4 cambia el alfil bueno de las blancas, o ...a5–a4 echa al caballo. Las blancas están mejor; las negras todavía necesitan ...f6."
+ },
+ "c5 Ngf3 Nf6 e5 Nfd7 c3 Nc6 Bb5 cxd4 cxd4 Be7": {
+  "en": "...Qb6 and ...O-O next; Nb3 holds d4. Slightly better for White.",
+  "es": "Después ...Db6 y ...O-O; Cb3 sostiene d4. Algo mejor para las blancas."
+ },
+ "c5 Ngf3 Nf6 e5 Nfd7 c3 Nc6 Nb3 c4": {
+  "en": "...c4 kicks the knight and gains queenside space; ...b5–b4 follows. Black is fine.",
+  "es": "...c4 echa al caballo y gana espacio en el flanco de dama; siguen ...b5–b4. Las negras están bien."
+ },
+ "c5 Ngf3 Nf6 exd5": {
+  "en": "...exd5 (or ...Nxd5) is simplest: after ...exd5 Bb5+ Black is fine.",
+  "es": "Lo más sencillo es ...exd5 (o ...Cxd5): tras ...exd5 Ab5+ las negras están bien."
+ },
+ "c5 Ngf3 Nf6 exd5 cxd4": {
+  "en": "...cxd4 is a bit loose: dxe6! and after ...Bxe6 (not ...fxe6?, Bc4), Nb3 regains d4 with a better position for White.",
+  "es": "...cxd4 es algo descuidada: ¡dxe6! y tras ...Axe6 (no ¿...fxe6?, Ac4), Cb3 recupera d4 con mejor posición para las blancas."
+ },
+ "c5 dxc5 Nf6": {
+  "en": "After exd5 Qxd5 Nb3 Qxd1+ Kxd1: Black regains the c5-pawn with ...Be7 and ...Nbd7. Equal.",
+  "es": "Tras exd5 Dxd5 Cb3 Dxd1+ Rxd1: las negras recuperan el peón de c5 con ...Ae7 y ...Cbd7. Igualdad."
  }
 }

@@ -10,5 +10,149 @@
  "cxb5 a6 bxa6 g6 Nc3 Bxa6 e4 Bxf1 Kxf1 Bg7": {
   "en": "e5! kicks the f6-knight back to g8 before Black has castled.",
   "es": "¡e5! devuelve el caballo de f6 a g8 antes de que las negras hayan enrocado."
+ },
+ "": {
+  "en": "Against the Benko, take the pawn and keep it. White's plan: Nc3, e4, Kxf1 after the bishop trade, g3 and Kg2 (an artificial castle), then a4, Nd2–c4 and Nb5. Black's compensation is pressure on the a- and b-files.",
+  "es": "Contra la Benko, toma el peón y consérvalo. Plan blanco: Cc3, e4, Rxf1 tras el cambio de alfiles, g3 y Rg2 (un enroque artificial), y después a4, Cd2–c4 y Cb5. La compensación negra es la presión en las columnas a y b."
+ },
+ "cxb5 a6 bxa6 Bxa6": {
+  "en": "...Bxa6 at once. Nc3 and e4: Black will trade bishops on f1.",
+  "es": "...Axa6 de inmediato. Cc3 y e4: las negras cambiarán los alfiles en f1."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6": {
+  "en": "e4: the bishop trade on f1 costs White castling, but the king will be safe on g2.",
+  "es": "e4: el cambio de alfiles en f1 cuesta el enroque a las blancas, pero el rey estará seguro en g2."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1": {
+  "en": "Kxf1: the king recaptures. Nf3, g3 and Kg2 follow.",
+  "es": "Rxf1: el rey recaptura. Siguen Cf3, g3 y Rg2."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 g6": {
+  "en": "Nf3, g3 and Kg2: the artificial castle.",
+  "es": "Cf3, g3 y Rg2: el enroque artificial."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 g6 Nf3 Bg7": {
+  "en": "g3 and Kg2. The g7-bishop presses the long diagonal: keep the c3-knight well protected.",
+  "es": "g3 y Rg2. El alfil de g7 presiona la gran diagonal: mantén bien protegido el caballo de c3."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 g6 Nf3 Bg7 g3 O-O": {
+  "en": "Kg2: the king is safe and the h1-rook can come out.",
+  "es": "Rg2: el rey está seguro y la torre de h1 puede salir."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 g6 Nf3 Bg7 g3 O-O Kg2 Nbd7": {
+  "en": "a4! fixes the queenside and gives the c3-knight the b5 square. Then Ra3 or Re1, and Nd2–c4.",
+  "es": "¡a4! fija el flanco de dama y da al caballo de c3 la casilla b5. Después Ta3 o Te1, y Cd2–c4."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 g6 Nf3 Bg7 g3 O-O Kg2 Nbd7 a4 Qb6 Ra3": {
+  "en": "Ra3 defends along the third rank. Nd2 and Nb5 next: White keeps the extra pawn and is better.",
+  "es": "Ta3 defiende por la tercera fila. Después Cd2 y Cb5: las blancas conservan el peón de más y están mejor."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 g6 Nf3 Bg7 g3 O-O Kg2 Nbd7 a4 Qa5 Re1": {
+  "en": "Re1 supports e4 (and e5 later). Bd2 and Nb5 hit d6. White is clearly better.",
+  "es": "Te1 apoya e4 (y más tarde e5). Ad2 y Cb5 atacan d6. Las blancas están claramente mejor."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 Nbd7": {
+  "en": "The same plan: Nf3, g3 and Kg2.",
+  "es": "El mismo plan: Cf3, g3 y Rg2."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 Nbd7 Nf3 g6": {
+  "en": "g3, then Kg2.",
+  "es": "g3, y después Rg2."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 Nbd7 Nf3 g6 g3 Bg7": {
+  "en": "Kg2: the king is safe.",
+  "es": "Rg2: el rey está a salvo."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 Nbd7 Nf3 g6 g3 Bg7 Kg2 O-O": {
+  "en": "a4, then Ra3 or Re1 and Nd2–c4: the usual plan.",
+  "es": "a4, y después Ta3 o Te1 y Cd2–c4: el plan habitual."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Nbd7": {
+  "en": "...Nbd7? lets White avoid the bishop trade: Bxa6! Rxa6 and White keeps castling rights, then Nf3 and O-O (or f4 and e5). Clearly better for White.",
+  "es": "¿...Cbd7? permite a las blancas evitar el cambio en f1: ¡Axa6! Txa6 y las blancas conservan el enroque, y después Cf3 y O-O (o f4 y e5). Claramente mejor para las blancas."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 g6": {
+  "en": "e4: Black trades on f1 and the usual structure arises.",
+  "es": "e4: las negras cambian en f1 y surge la estructura habitual."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 g6 e4 Bxf1": {
+  "en": "Kxf1, then Nf3, g3 and Kg2.",
+  "es": "Rxf1, y después Cf3, g3 y Rg2."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 g6 e4 Bxf1 Kxf1 d6": {
+  "en": "Nf3, g3, Kg2.",
+  "es": "Cf3, g3, Rg2."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 g6 e4 Bxf1 Kxf1 d6 Nf3 Bg7": {
+  "en": "g3 and Kg2.",
+  "es": "g3 y Rg2."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 g6 e4 Bxf1 Kxf1 d6 Nf3 Bg7 g3 O-O": {
+  "en": "Kg2, then a4.",
+  "es": "Rg2, y después a4."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 g6 e4 Bxf1 Kxf1 d6 Nf3 Bg7 g3 O-O Kg2 Nbd7": {
+  "en": "a4: fix the queenside and prepare Nb5.",
+  "es": "a4: fija el flanco de dama y prepara Cb5."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 g6 e4 Bxf1 Kxf1 d6 Nf3 Bg7 g3 O-O Kg2 Nbd7 a4 Qb6 Ra3": {
+  "en": "Ra3, Nd2 and Nb5: White keeps the extra pawn and is better.",
+  "es": "Ta3, Cd2 y Cb5: las blancas conservan el peón de más y están mejor."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 g6 e4 Bxf1 Kxf1 d6 Nf3 Bg7 g3 O-O Kg2 Nbd7 a4 Qa5 Re1": {
+  "en": "Re1 and Nb5: the knight is excellent on b5 and d6 is weak. White is clearly better.",
+  "es": "Te1 y Cb5: el caballo es excelente en b5 y d6 está débil. Las blancas están claramente mejor."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 g6 e4 Bxf1 Kxf1 Bg7": {
+  "en": "...Bg7? before ...d6: e5! kicks the f6-knight back to g8.",
+  "es": "¿...Ag7? antes de ...d6: ¡e5! devuelve el caballo de f6 a g8."
+ },
+ "cxb5 a6 bxa6 Bxa6 Nc3 g6 e4 Bxf1 Kxf1 Bg7 e5": {
+  "en": "After ...Ng8, Nf3 and h4–h5: White has space and attacking chances. Clearly better.",
+  "es": "Tras ...Cg8, Cf3 y h4–h5: las blancas tienen espacio y opciones de ataque. Claramente mejor."
+ },
+ "cxb5 a6 bxa6 g6": {
+  "en": "...g6 delays ...Bxa6. Nc3 and e4.",
+  "es": "...g6 retrasa ...Axa6. Cc3 y e4."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bg7": {
+  "en": "e4 and Nf3. If the f1-bishop is still there when Black takes on a6, decide between Bxa6 and keeping it.",
+  "es": "e4 y Cf3. Si el alfil de f1 sigue allí cuando las negras tomen en a6, decide entre Axa6 o conservarlo."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bg7 e4 O-O": {
+  "en": "Nf3: develop. Black's ...Qa5 and ...Bxa6 come next.",
+  "es": "Cf3: desarrolla. Después llegan ...Da5 y ...Axa6."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bg7 e4 O-O Nf3 Qa5": {
+  "en": "...Qa5 pins the c3-knight: Bd2 unpins.",
+  "es": "...Da5 clava el caballo de c3: Ad2 deshace la clavada."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bg7 e4 O-O Nf3 Qa5 Bd2 Bxa6 g3": {
+  "en": "g3: the bishop trade on f1 then lets White recapture and castle by hand with Kg2. Black has pressure, White the pawn: about equal.",
+  "es": "g3: tras el cambio de alfiles en f1, las blancas recapturan y enrocan a mano con Rg2. Las negras tienen presión y las blancas el peón: más o menos igualdad."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bg7 e4 d6": {
+  "en": "Nf3, and the usual setup.",
+  "es": "Cf3, y el esquema habitual."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bxa6": {
+  "en": "e4: Black trades on f1.",
+  "es": "e4: las negras cambian en f1."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bxa6 e4 Bxf1": {
+  "en": "Kxf1 and the artificial castle.",
+  "es": "Rxf1 y el enroque artificial."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bxa6 e4 Bxf1 Kxf1 d6": {
+  "en": "Nf3, g3 and Kg2.",
+  "es": "Cf3, g3 y Rg2."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bxa6 e4 Bxf1 Kxf1 d6 Nf3 Bg7": {
+  "en": "g3, Kg2.",
+  "es": "g3, Rg2."
+ },
+ "cxb5 a6 bxa6 g6 Nc3 Bxa6 e4 Bxf1 Kxf1 d6 Nf3 Bg7 g3 O-O": {
+  "en": "Kg2 and a4.",
+  "es": "Rg2 y a4."
  }
 }

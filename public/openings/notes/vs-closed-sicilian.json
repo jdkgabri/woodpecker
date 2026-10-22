@@ -14,5 +14,125 @@
  "g6 Bg2 Bg7 f4 d6": {
   "en": "With f4 White plans f5 and a kingside attack. ...e6 and ...Nge7 keep f5 under control.",
   "es": "Con f4 las blancas planean f5 y un ataque en el flanco de rey. ...e6 y ...Cge7 mantienen controlada f5."
+ },
+ "g6 Bg2": {
+  "en": "...Bg7: both sides fianchetto.",
+  "es": "...Ag7: ambos bandos hacen el fianchetto."
+ },
+ "g6 Bg2 Bg7 d3": {
+  "en": "...d6 and then ...e6, ...Nge7: the flexible setup that covers d5 and f5.",
+  "es": "...d6 y después ...e6, ...Cge7: el esquema flexible que cubre d5 y f5."
+ },
+ "g6 Bg2 Bg7 d3 d6 Be3": {
+  "en": "Be3 and Qd2 aim for Bh6 to trade the g7-bishop. ...e6 and ...Nge7 first.",
+  "es": "Ae3 y Dd2 buscan Ah6 para cambiar el alfil de g7. Primero ...e6 y ...Cge7."
+ },
+ "g6 Bg2 Bg7 d3 d6 Be3 e6 Qd2": {
+  "en": "...Nge7: the knight protects the king and can go to d4 or f5.",
+  "es": "...Cge7: el caballo protege al rey y puede ir a d4 o f5."
+ },
+ "g6 Bg2 Bg7 d3 d6 Be3 e6 Qd2 Nge7 Bh6": {
+  "en": "...Bxh6: trade the bishops; Black's king can stay in the centre for now.",
+  "es": "...Axh6: cambia los alfiles; el rey negro puede quedarse de momento en el centro."
+ },
+ "g6 Bg2 Bg7 d3 d6 Be3 e6 Qd2 Nge7 Bh6 Bxh6 Qxh6": {
+  "en": "...Nd4: the knight jumps to the hole on d4.",
+  "es": "...Cd4: el caballo salta al agujero de d4."
+ },
+ "g6 Bg2 Bg7 d3 d6 Be3 e6 Qd2 Nge7 Bh6 Bxh6 Qxh6 Nd4": {
+  "en": "The queen on h6 is far from the queenside. Black plays ...Rb8, ...b5 and ...Bd7, and decides later where the king goes. Equal.",
+  "es": "La dama de h6 está lejos del flanco de dama. Las negras juegan ...Tb8, ...b5 y ...Ad7, y deciden más tarde dónde va el rey. Igualdad."
+ },
+ "g6 Bg2 Bg7 d3 d6 Be3 e6 Qd2 Nge7 Nge2 Rb8": {
+  "en": "...Rb8 prepares ...b5. If Bh6, ...O-O (or ...Bxh6 Qxh6 Nd4). Equal.",
+  "es": "...Tb8 prepara ...b5. Si Ah6, ...O-O (o ...Axh6 Dxh6 Cd4). Igualdad."
+ },
+ "g6 Bg2 Bg7 d3 d6 f4": {
+  "en": "f4: White wants f5. ...e6 and ...Nge7 keep f5 under control.",
+  "es": "f4: las blancas quieren f5. ...e6 y ...Cge7 mantienen f5 bajo control."
+ },
+ "g6 Bg2 Bg7 d3 d6 f4 e6 Nf3": {
+  "en": "...Nge7, then castle and ...Rb8, ...b5.",
+  "es": "...Cge7, y después enroque y ...Tb8, ...b5."
+ },
+ "g6 Bg2 Bg7 d3 d6 f4 e6 Nf3 Nge7 O-O": {
+  "en": "...Rb8 and ...b5: the queenside is Black's side of the board.",
+  "es": "...Tb8 y ...b5: el flanco de dama es el terreno de las negras."
+ },
+ "g6 Bg2 Bg7 d3 d6 f4 e6 Nf3 Nge7 O-O Rb8 Be3 O-O": {
+  "en": "...Nd4 and ...b5 next; if Bf2, ...Nxf3+ and ...Nc6–d4 again. Black is comfortable.",
+  "es": "Después ...Cd4 y ...b5; si Af2, ...Cxf3+ y otra vez ...Cc6–d4. Las negras están cómodas."
+ },
+ "g6 Bg2 Bg7 d3 d6 Nge2": {
+  "en": "Nge2 keeps f4 free. ...e6 and ...Nge7.",
+  "es": "Cge2 deja libre f4. ...e6 y ...Cge7."
+ },
+ "g6 Bg2 Bg7 d3 d6 Nge2 e6 O-O": {
+  "en": "...Nge7, ...O-O and ...Rb8: the standard setup.",
+  "es": "...Cge7, ...O-O y ...Tb8: el esquema estándar."
+ },
+ "g6 Bg2 Bg7 d3 d6 Nge2 e6 O-O Nge7 f4 Rb8": {
+  "en": "After Be3, ...b5 and ...b4, or ...Nd4. Black's queenside play comes fast. Slightly better for Black.",
+  "es": "Tras Ae3, ...b5 y ...b4, o ...Cd4. El juego negro en el flanco de dama llega rápido. Algo mejor para las negras."
+ },
+ "g6 Bg2 Bg7 d3 d6 Nge2 e6 O-O Nge7 Be3 Rb8": {
+  "en": "If d4, ...b6 (or ...cxd4) holds; if d5, ...exd5 opens the e-file. Equal.",
+  "es": "Si d4, ...b6 (o ...cxd4) aguanta; si d5, ...exd5 abre la columna e. Igualdad."
+ },
+ "g6 Bg2 Bg7 d3 d6 Nge2 e6 Be3 Nge7 Qd2 Rb8": {
+  "en": "Against Bh6, ...O-O and after Bxg7 Kxg7, ...b5 and ...e5 or ...f6. Equal.",
+  "es": "Contra Ah6, ...O-O y tras Axg7 Rxg7, ...b5 y ...e5 o ...f6. Igualdad."
+ },
+ "g6 Bg2 Bg7 Nge2": {
+  "en": "...d6, ...e6 and ...Nge7.",
+  "es": "...d6, ...e6 y ...Cge7."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 O-O": {
+  "en": "...e6, then ...Nge7 and ...O-O.",
+  "es": "...e6, y después ...Cge7 y ...O-O."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 O-O e6 d3": {
+  "en": "...Nge7: the setup is complete. ...Rb8 and ...b5 next.",
+  "es": "...Cge7: el esquema está completo. Después ...Tb8 y ...b5."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 O-O e6 d3 Nge7 f4": {
+  "en": "...Rb8 and ...b5; ...O-O when needed.",
+  "es": "...Tb8 y ...b5; ...O-O cuando haga falta."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 O-O e6 d3 Nge7 f4 Rb8": {
+  "en": "...b5–b4 kicks the c3-knight. Black's play is quicker. Slightly better for Black.",
+  "es": "...b5–b4 echa al caballo de c3. El juego negro es más rápido. Algo mejor para las negras."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 O-O e6 d3 Nge7 Be3": {
+  "en": "...Rb8 (or ...Nd4). Watch d4 from White.",
+  "es": "...Tb8 (o ...Cd4). Atento a d4 de las blancas."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 O-O e6 d3 Nge7 Be3 Rb8": {
+  "en": "If d4, ...b6 keeps the c5-pawn; Black is solid. Equal.",
+  "es": "Si d4, ...b6 sostiene el peón de c5; las negras están sólidas. Igualdad."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 O-O e6 d3 Nge7 h3 Rb8": {
+  "en": "If a4, ...a6 and ...b5 anyway. Black is comfortable.",
+  "es": "Si a4, ...a6 y ...b5 de todos modos. Las negras están cómodas."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 d3": {
+  "en": "...e6 and ...Nge7.",
+  "es": "...e6 y ...Cge7."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 d3 e6 O-O": {
+  "en": "...Nge7 and ...Rb8.",
+  "es": "...Cge7 y ...Tb8."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 d3 e6 O-O Nge7 f4 Rb8": {
+  "en": "After Be3 b6 d4 O-O, the centre opens with ...d5. Black is fine.",
+  "es": "Tras Ae3 b6 d4 O-O, el centro se abre con ...d5. Las negras están bien."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 d3 e6 O-O Nge7 Be3 Rb8": {
+  "en": "Against d4: ...b6 or ...cxd4. Equal.",
+  "es": "Contra d4: ...b6 o ...cxd4. Igualdad."
+ },
+ "g6 Bg2 Bg7 Nge2 d6 d3 e6 Be3 Nge7 Qd2 Rb8": {
+  "en": "After Bh6 O-O Bxg7 Kxg7, ...e5 and ...f5 or ...b5. Equal.",
+  "es": "Tras Ah6 O-O Axg7 Rxg7, ...e5 y ...f5 o ...b5. Igualdad."
  }
 }

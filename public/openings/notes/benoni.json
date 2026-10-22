@@ -14,5 +14,81 @@
  "Nc3 exd5 cxd5 d6 e4 g6 f4 Bg7 Nf3 O-O Be2 Re8 Qc2": {
   "en": "...c4! frees c5 for a knight and prepares ...b5: the queenside majority moves.",
   "es": "¡...c4! libera c5 para un caballo y prepara ...b5: la mayoría del flanco de dama se pone en marcha."
+ },
+ "": {
+  "en": "The Modern Benoni: Black gives White a central pawn majority (d5 and e4) in exchange for a queenside majority, the long diagonal for the g7-bishop and active piece play. Plans: ...g6, ...Bg7, ...O-O, ...Re8, ...a6 and ...b5 or ...c4.",
+  "es": "La Benoni Moderna: las negras ceden a las blancas una mayoría central (d5 y e4) a cambio de una mayoría en el flanco de dama, la gran diagonal para el alfil de g7 y juego activo de piezas. Planes: ...g6, ...Ag7, ...O-O, ...Te8, ...a6 y ...b5 o ...c4."
+ },
+ "Nc3": {
+  "en": "Nc3 supports d5. ...exd5 now, before White can play e4.",
+  "es": "Cc3 apoya d5. Ahora ...exd5, antes de que las blancas puedan jugar e4."
+ },
+ "Nc3 exd5 cxd5": {
+  "en": "The Benoni structure. ...d6, then ...g6 and ...Bg7.",
+  "es": "La estructura Benoni. ...d6, y después ...g6 y ...Ag7."
+ },
+ "Nc3 exd5 cxd5 d6 e4": {
+  "en": "e4: the main line. ...g6 and ...Bg7; Black's pieces will press e4 and the long diagonal.",
+  "es": "e4: la línea principal. ...g6 y ...Ag7; las piezas negras presionarán e4 y la gran diagonal."
+ },
+ "Nc3 exd5 cxd5 d6 e4 g6 Nf3": {
+  "en": "The Classical: ...Bg7 and ...O-O, then ...Re8 against e4 and ...a6, ...b5.",
+  "es": "La Clásica: ...Ag7 y ...O-O, y después ...Te8 contra e4 y ...a6, ...b5."
+ },
+ "Nc3 exd5 cxd5 d6 e4 g6 f4": {
+  "en": "f4: the aggressive Four Pawns setup. White wants e5. ...Bg7, castle quickly and ...Re8 to hold back e5.",
+  "es": "f4: el agresivo esquema de los Cuatro Peones. Las blancas quieren e5. ...Ag7, enroque rápido y ...Te8 para frenar e5."
+ },
+ "Nc3 exd5 cxd5 d6 e4 g6 f4 Bg7 Nf3": {
+  "en": "Nf3 lets Black castle (Bb5+ was the most dangerous move). After ...O-O Be2 Re8, the e5-break is White's idea: ...dxe5 fxe5 Ng4 hits e5.",
+  "es": "Cf3 permite enrocar a las negras (Ab5+ era la jugada más peligrosa). Tras ...O-O Ae2 Te8, la ruptura e5 es la idea blanca: ...dxe5 fxe5 Cg4 ataca e5."
+ },
+ "Nc3 exd5 cxd5 d6 e4 g6 Bd3": {
+  "en": "Bd3 and Nge2: a solid setup. ...Bg7, ...O-O, then ...a6 and ...Na6–c7 or ...b5.",
+  "es": "Ad3 y Cge2: un esquema sólido. ...Ag7, ...O-O, y después ...a6 y ...Ca6–c7 o ...b5."
+ },
+ "Nc3 exd5 cxd5 d6 e4 g6 Bd3 Bg7 Nge2": {
+  "en": "Castle. White will play O-O, h3 and f4 or a4; Black ...a6, ...b5 and ...Re8.",
+  "es": "Enroque. Las blancas jugarán O-O, h3 y f4 o a4; las negras ...a6, ...b5 y ...Te8."
+ },
+ "Nc3 exd5 cxd5 d6 e4 g6 Bd3 Bg7 Nge2 O-O O-O": {
+  "en": "...a6 prepares ...b5; if a4, ...Nbd7–e5 or ...Na6–b4 use the holes. Balanced.",
+  "es": "...a6 prepara ...b5; si a4, ...Cbd7–e5 o ...Ca6–b4 aprovechan las casillas débiles. Equilibrio."
+ },
+ "Nc3 exd5 cxd5 d6 e4 g6 Bg5": {
+  "en": "Bg5 pins. ...Bg7 (or ...h6 first) and castle; ...h6 later asks the bishop.",
+  "es": "Ag5 clava. ...Ag7 (o primero ...h6) y enroque; más tarde ...h6 pregunta al alfil."
+ },
+ "Nc3 exd5 cxd5 d6 Nf3": {
+  "en": "Nf3 before e4: the Fianchetto or Knight's Tour lines. ...g6 and ...Bg7.",
+  "es": "Cf3 antes de e4: las líneas del Fianchetto o del Recorrido del Caballo. ...g6 y ...Ag7."
+ },
+ "Nc3 exd5 cxd5 d6 Nf3 g6 e4": {
+  "en": "Back in the Classical: ...Bg7 and ...O-O.",
+  "es": "De vuelta a la Clásica: ...Ag7 y ...O-O."
+ },
+ "Nc3 exd5 cxd5 d6 Bg5": {
+  "en": "Bg5 early. ...g6 and ...Bg7; ...h6 when useful.",
+  "es": "Ag5 pronto. ...g6 y ...Ag7; ...h6 cuando convenga."
+ },
+ "Nc3 exd5 Nxd5": {
+  "en": "Nxd5 is harmless: ...d6 (or ...Nxd5 cxd5) and Black develops easily. Equal.",
+  "es": "Cxd5 es inofensiva: ...d6 (o ...Cxd5 cxd5) y las negras desarrollan fácilmente. Igualdad."
+ },
+ "Nc3 exd5 Nxd5 d6 Bg5": {
+  "en": "...Be7 breaks the pin; the d5-knight can be traded with ...Nxd5. Equal.",
+  "es": "...Ae7 deshace la clavada; el caballo de d5 puede cambiarse con ...Cxd5. Igualdad."
+ },
+ "dxe6": {
+  "en": "dxe6? gives up the space: ...fxe6 and ...d5 give Black a strong centre.",
+  "es": "¿dxe6? cede el espacio: ...fxe6 y ...d5 dan a las negras un centro fuerte."
+ },
+ "dxe6 fxe6 Nc3": {
+  "en": "...d5! takes the whole centre.",
+  "es": "¡...d5! ocupa todo el centro."
+ },
+ "dxe6 fxe6 Nc3 d5 cxd5": {
+  "en": "...exd5: Black has a big centre and quick development (...Nc6, ...Bd6, ...O-O). Black is better.",
+  "es": "...exd5: las negras tienen un gran centro y un desarrollo rápido (...Cc6, ...Ad6, ...O-O). Las negras están mejor."
  }
 }

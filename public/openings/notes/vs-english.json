@@ -14,5 +14,69 @@
  "e5 g3 Nf6 Bg2 Nc6 e3": {
   "en": "e3 is slow: ...d5! takes the whole centre.",
   "es": "e3 es lento: ¡...d5! se queda con todo el centro."
+ },
+ "e5 Nc3": {
+  "en": "...Nf6 and ...Nc6: the Four Knights setups or the Closed English.",
+  "es": "...Cf6 y ...Cc6: los esquemas de los Cuatro Caballos o la Inglesa Cerrada."
+ },
+ "e5 Nc3 Nf6 g3": {
+  "en": "...Nc6 and then ...g6 (mirror) or ...Bb4 (pin).",
+  "es": "...Cc6 y después ...g6 (copiar) o ...Ab4 (clavar)."
+ },
+ "e5 Nc3 Nf6 g3 Nc6 Bg2": {
+  "en": "...g6 and ...Bg7: the Closed English, with ...d6 and ...f5 or ...Be6 to come.",
+  "es": "...g6 y ...Ag7: la Inglesa Cerrada, con ...d6 y ...f5 o ...Ae6 por venir."
+ },
+ "e5 Nc3 Nf6 g3 Nc6 Bg2 g6": {
+  "en": "If Nf3 Bg7 d4, ...exd4 Nxd4 O-O and ...Re8: Black is active. Slightly better for White, but easy to play for Black.",
+  "es": "Si Cf3 Ag7 d4, ...exd4 Cxd4 O-O y ...Te8: las negras están activas. Algo mejor para las blancas, pero fácil de jugar para las negras."
+ },
+ "e5 Nc3 Nf6 Nf3": {
+  "en": "Four Knights setup: ...Nc6, then ...Bb4 or ...g6.",
+  "es": "Esquema de los Cuatro Caballos: ...Cc6, y después ...Ab4 o ...g6."
+ },
+ "e5 Nc3 Nf6 Nf3 Nc6 g3": {
+  "en": "...g6 (or ...Bb4, or ...d5!?): Black keeps a solid centre.",
+  "es": "...g6 (o ...Ab4, o ¡?...d5): las negras mantienen un centro sólido."
+ },
+ "e5 Nc3 Nf6 Nf3 Nc6 g3 g6": {
+  "en": "After d4 exd4 Nxd4 Bg7 Bg2 O-O and ...Re8: active pieces for Black. Slightly better for White.",
+  "es": "Tras d4 exd4 Cxd4 Ag7 Ag2 O-O y ...Te8: piezas activas para las negras. Algo mejor para las blancas."
+ },
+ "e5 Nc3 Nf6 Nf3 Nc6 d4 exd4 Nxd4 Bb4": {
+  "en": "...Bb4 pins and threatens ...Ne4. After Nxc6 bxc6 g3 O-O Bg2, ...Bxc3+ and ...Re8. Equal.",
+  "es": "...Ab4 clava y amenaza ...Ce4. Tras Cxc6 bxc6 g3 O-O Ag2, ...Axc3+ y ...Te8. Igualdad."
+ },
+ "e5 Nc3 Nf6 e4": {
+  "en": "e4: the Botvinnik-style setup. ...Nc6 and ...Bc5 or ...Bb4: the d4 square is the key.",
+  "es": "e4: el esquema tipo Botvinnik. ...Cc6 y ...Ac5 o ...Ab4: la casilla d4 es la clave."
+ },
+ "e5 Nc3 Nf6 e4 Nc6 Nf3 g6": {
+  "en": "...g6 is a little slow here: d4! exd4 Nxd4 opens the game, and after ...Bg7 Nxc6 dxc6 Qxd8+ White has a slightly better endgame. ...Bc5 or ...Bb4 is more active.",
+  "es": "...g6 es algo lenta aquí: ¡d4! exd4 Cxd4 abre el juego, y tras ...Ag7 Cxc6 dxc6 Dxd8+ las blancas tienen un final algo mejor. ...Ac5 o ...Ab4 es más activo."
+ },
+ "e5 Nc3 Nf6 d3": {
+  "en": "d3 is slow: ...Nc6, ...d5 is possible, or ...g6 and ...Bg7.",
+  "es": "d3 es lenta: ...Cc6, es posible ...d5, o ...g6 y ...Ag7."
+ },
+ "e5 Nc3 Nf6 d3 Nc6 g3 g6": {
+  "en": "After Bg2 d6: a Closed English. ...Bg7, ...O-O and ...Be6 or ...f5. Slightly better for White.",
+  "es": "Tras Ag2 d6: una Inglesa Cerrada. ...Ag7, ...O-O y ...Ae6 o ...f5. Algo mejor para las blancas."
+ },
+ "e5 g3": {
+  "en": "g3 first: ...Nf6 and ...Nc6; ...d5 if White plays slowly.",
+  "es": "Primero g3: ...Cf6 y ...Cc6; ...d5 si las blancas juegan lento."
+ },
+ "e5 g3 Nf6 Bg2": {
+  "en": "...Nc6, then ...g6 or ...d5.",
+  "es": "...Cc6, y después ...g6 o ...d5."
+ },
+ "e5 g3 Nf6 Bg2 Nc6 Nc3": {
+  "en": "...g6 and ...Bg7: the Closed English.",
+  "es": "...g6 y ...Ag7: la Inglesa Cerrada."
+ },
+ "e5 g3 Nf6 Bg2 Nc6 Nc3 g6": {
+  "en": "If e4, ...Bg7 and ...d6, ...O-O: a Botvinnik setup for White, a King's Indian one for Black. Slightly better for White.",
+  "es": "Si e4, ...Ag7 y ...d6, ...O-O: un esquema Botvinnik para las blancas y uno de India de Rey para las negras. Algo mejor para las blancas."
  }
 }

@@ -14,5 +14,89 @@
  "c5 e3 Nf6 Nf3 Nc6 Bb5": {
   "en": "...cxd4 first: after exd4, ...Qb6 attacks both the b5-bishop and d4.",
   "es": "Primero ...cxd4: tras exd4, ...Db6 ataca a la vez el alfil de b5 y d4."
+ },
+ "c5 e3": {
+  "en": "e3 supports d4. ...Nf6 and ...Nc6, with ...Qb6 ready when b2 is weak.",
+  "es": "e3 apoya d4. ...Cf6 y ...Cc6, con ...Db6 lista cuando b2 esté débil."
+ },
+ "c5 e3 Nf6 c3": {
+  "en": "The pyramid c3–d4–e3. ...Nc6, ...e6 and ...Qb6 or ...Bd6.",
+  "es": "La pirámide c3–d4–e3. ...Cc6, ...e6 y ...Db6 o ...Ad6."
+ },
+ "c5 e3 Nf6 c3 Nc6 Nf3": {
+  "en": "...e6, then ...Qb6 or ...Bd6 to trade the London bishop.",
+  "es": "...e6, y después ...Db6 o ...Ad6 para cambiar el alfil de la London."
+ },
+ "c5 e3 Nf6 c3 Nc6 Nf3 e6 Nbd2": {
+  "en": "...Qb6 hits b2. Qb3 offers the queen trade; ...cxd4 first is the right reply.",
+  "es": "...Db6 ataca b2. Db3 ofrece el cambio de damas; primero ...cxd4 es la respuesta correcta."
+ },
+ "c5 e3 Nf6 c3 Nc6 Nf3 e6 Bd3": {
+  "en": "Bd3 leaves b2 loose: ...Qb6! After Qc2 or b3, ...Nh5 goes after the f4-bishop. Black is fine.",
+  "es": "Ad3 deja b2 desprotegido: ¡...Db6! Tras Dc2 o b3, ...Ch5 va a por el alfil de f4. Las negras están bien."
+ },
+ "c5 e3 Nf6 c3 Nc6 Nd2": {
+  "en": "...e6 and ...Qb6 or ...Bd6.",
+  "es": "...e6 y ...Db6 o ...Ad6."
+ },
+ "c5 e3 Nf6 c3 Nc6 Nd2 e6 Ngf3": {
+  "en": "...Qb6: b2 is the target.",
+  "es": "...Db6: b2 es el objetivo."
+ },
+ "c5 e3 Nf6 c3 Nc6 Nd2 e6 Ngf3 Qb6 Qb3 cxd4": {
+  "en": "After exd4, ...Be7 (or ...Bd6) and ...Nh5 against the f4-bishop; ...Bd7 and castle. White slightly better, Black solid.",
+  "es": "Tras exd4, ...Ae7 (o ...Ad6) y ...Ch5 contra el alfil de f4; ...Ad7 y enroque. Las blancas algo mejor, las negras sólidas."
+ },
+ "c5 e3 Nf6 c3 Nc6 Nd2 e6 Bd3 Bd6 Bg3 cxd4": {
+  "en": "After cxd4, ...e5! frees the game: dxe5 Nxe5 and Black's pieces are active. Equal.",
+  "es": "Tras cxd4, ¡...e5! libera el juego: dxe5 Cxe5 y las piezas negras están activas. Igualdad."
+ },
+ "c5 e3 Nf6 c3 Nc6 Bd3 Qb6 Qb3 c4": {
+  "en": "...c4! hits the queen and the d3-bishop at once. After Qxb6 axb6 Be2 b5, Black has queenside space and the open a-file. Black is better.",
+  "es": "¡...c4! ataca a la vez a la dama y al alfil de d3. Tras Dxb6 axb6 Ae2 b5, las negras tienen espacio en el flanco de dama y la columna a abierta. Las negras están mejor."
+ },
+ "c5 e3 Nf6 Nf3": {
+  "en": "...Nc6, then ...e6 or ...Bg4.",
+  "es": "...Cc6, y después ...e6 o ...Ag4."
+ },
+ "c5 e3 Nf6 Nf3 Nc6 c3": {
+  "en": "...e6 and ...Qb6: the usual pressure on b2 and d4.",
+  "es": "...e6 y ...Db6: la presión habitual sobre b2 y d4."
+ },
+ "c5 e3 Nf6 dxc5 Nc6": {
+  "en": "...Nc6 and ...e6 regain the c5-pawn; if Bb5, ...a6 and ...Qa5. Equal.",
+  "es": "...Cc6 y ...e6 recuperan el peón de c5; si Ab5, ...a6 y ...Da5. Igualdad."
+ },
+ "c5 c3": {
+  "en": "c3 first: ...Nf6 and ...Nc6.",
+  "es": "Primero c3: ...Cf6 y ...Cc6."
+ },
+ "c5 c3 Nf6 e3": {
+  "en": "...Nc6, ...e6 and ...Qb6 or ...Bd6.",
+  "es": "...Cc6, ...e6 y ...Db6 o ...Ad6."
+ },
+ "c5 c3 Nf6 e3 Nc6 Nf3": {
+  "en": "...e6 and the standard plan.",
+  "es": "...e6 y el plan estándar."
+ },
+ "c5 c3 Nf6 Nf3 Nc6": {
+  "en": "After e3, ...Nh5!? chases the f4-bishop at once; after Bg3 Qb6 Black is comfortable.",
+  "es": "Tras e3, ¡?...Ch5 persigue de inmediato al alfil de f4; tras Ag3 Db6 las negras están cómodas."
+ },
+ "c5 Nf3": {
+  "en": "...Nf6 and ...Nc6.",
+  "es": "...Cf6 y ...Cc6."
+ },
+ "c5 Nf3 Nf6 e3": {
+  "en": "...Nc6, then ...e6 and ...Qb6.",
+  "es": "...Cc6, y después ...e6 y ...Db6."
+ },
+ "c5 Nf3 Nf6 e3 Nc6 c3": {
+  "en": "...e6 and ...Qb6 or ...Bd6.",
+  "es": "...e6 y ...Db6 o ...Ad6."
+ },
+ "c5 dxc5 Nf6": {
+  "en": "...e6 and ...Bxc5 regain the pawn. If b4, ...a5! undermines it. Equal.",
+  "es": "...e6 y ...Axc5 recuperan el peón. Si b4, ¡...a5! lo socava. Igualdad."
  }
 }

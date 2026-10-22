@@ -10,5 +10,73 @@
  "d5 e4 dxe4 Ng5 e6 Nc3": {
   "en": "After ...e6 the g5-knight is loose: ...Qxg5.",
   "es": "Tras ...e6 el caballo de g5 queda suelto: ...Dxg5."
+ },
+ "d5 d4": {
+  "en": "2.d4: a Queen's pawn game. ...Nf6, then ...c6 and the bishop to f5 or g4 before ...e6.",
+  "es": "2.d4: una partida de peón de dama. ...Cf6, y después ...c6 y el alfil a f5 o g4 antes de ...e6."
+ },
+ "d5 d4 Nf6 Bf4": {
+  "en": "The London. ...c6, ...Bg4 (or ...Bf5) and ...e6: a solid Slav setup.",
+  "es": "La London. ...c6, ...Ag4 (o ...Af5) y ...e6: un sólido esquema Eslavo."
+ },
+ "d5 d4 Nf6 Bf4 c6 e3": {
+  "en": "...Bg4 pins the f3-knight before ...e6. Then ...e6, ...Nbd7 and ...Bd6 to trade the f4-bishop.",
+  "es": "...Ag4 clava el caballo de f3 antes de ...e6. Después ...e6, ...Cbd7 y ...Ad6 para cambiar el alfil de f4."
+ },
+ "d5 d4 Nf6 e3": {
+  "en": "A Colle setup. ...c6 and ...Bg4 or ...Bf5: develop the bishop before ...e6.",
+  "es": "Un esquema Colle. ...c6 y ...Ag4 o ...Af5: desarrolla el alfil antes de ...e6."
+ },
+ "d5 d4 Nf6 c4": {
+  "en": "A Queen's Gambit. ...c6: the Slav, solid and with the c8-bishop free.",
+  "es": "Un Gambito de Dama. ...c6: la Eslava, sólida y con el alfil de c8 libre."
+ },
+ "d5 g3": {
+  "en": "The fianchetto. ...Nf6, ...c6 and ...Bg4: the bishop goes outside the pawn chain before ...e6.",
+  "es": "El fianchetto. ...Cf6, ...c6 y ...Ag4: el alfil sale fuera de la cadena de peones antes de ...e6."
+ },
+ "d5 g3 Nf6 Bg2": {
+  "en": "...c6 and ...Bg4 next.",
+  "es": "Después ...c6 y ...Ag4."
+ },
+ "d5 g3 Nf6 Bg2 c6 O-O": {
+  "en": "...Bg4 pins the knight; then ...e6, ...Nbd7 and ...Be7 or ...Bd6.",
+  "es": "...Ag4 clava el caballo; después ...e6, ...Cbd7 y ...Ae7 o ...Ad6."
+ },
+ "d5 g3 Nf6 Bg2 c6 O-O Bg4 d3": {
+  "en": "d3 prepares e4 (the King's Indian Attack). ...e6 and ...Nbd7; then ...Bc5 or ...Be7 and castle.",
+  "es": "d3 prepara e4 (el Ataque Indio de Rey). ...e6 y ...Cbd7; después ...Ac5 o ...Ae7 y enroque."
+ },
+ "d5 g3 Nf6 Bg2 c6 O-O Bg4 d3 e6": {
+  "en": "Against Nbd2 or Qe1 and e4: ...Nbd7, ...Bc5 (or ...Be7) and O-O; ...e5 later takes the centre. Equal.",
+  "es": "Contra Cbd2 o De1 y e4: ...Cbd7, ...Ac5 (o ...Ae7) y O-O; más tarde ...e5 ocupa el centro. Igualdad."
+ },
+ "d5 g3 Nf6 Bg2 c6 O-O Bg4 d4 e6": {
+  "en": "If h3, ...Bxf3 Bxf3 Nbd7: Black gives the bishop pair but is very solid. White slightly better.",
+  "es": "Si h3, ...Axf3 Axf3 Cbd7: las negras ceden la pareja de alfiles pero están muy sólidas. Las blancas algo mejor."
+ },
+ "d5 c4": {
+  "en": "c4: the Réti proper, attacking d5 from the side. ...c6 holds it (...d4 is the space-grabbing alternative).",
+  "es": "c4: la Réti propiamente dicha, que ataca d5 desde el lado. ...c6 lo sostiene (...d4 es la alternativa que gana espacio)."
+ },
+ "d5 c4 c6 g3 Nf6 Bg2 Bg4": {
+  "en": "The bishop comes out. If Ne5, ...Bf5 or ...Be6; then ...e6 and ...Nbd7. Equal.",
+  "es": "Sale el alfil. Si Ce5, ...Af5 o ...Ae6; después ...e6 y ...Cbd7. Igualdad."
+ },
+ "d5 e4 dxe4 Ng5": {
+  "en": "Ng5 attacks e4. ...e6 opens the d8–g5 diagonal: the knight on g5 can become a target.",
+  "es": "Cg5 ataca e4. ...e6 abre la diagonal d8–g5: el caballo de g5 puede convertirse en un objetivo."
+ },
+ "d5 e4 dxe4 Ng5 e6 Nxe4": {
+  "en": "White wins the pawn back. ...f5 kicks the knight and takes space.",
+  "es": "Las blancas recuperan el peón. ...f5 echa al caballo y gana espacio."
+ },
+ "d5 e4 dxe4 Ng5 e6 Nxe4 f5": {
+  "en": "After Nec3 or Ng3: ...Nc6, ...Nf6 and ...e5. Black has the better centre.",
+  "es": "Tras Cec3 o Cg3: ...Cc6, ...Cf6 y ...e5. Las negras tienen mejor centro."
+ },
+ "d5 e4 dxe4 Ng5 e6 d3 exd3": {
+  "en": "After Bxd3, ...Be7 (it also eyes g5): Black is a pawn up and solid.",
+  "es": "Tras Axd3, ...Ae7 (que también apunta a g5): las negras tienen un peón de más y están sólidas."
  }
 }

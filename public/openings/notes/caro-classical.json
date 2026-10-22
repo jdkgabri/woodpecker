@@ -14,5 +14,85 @@
  "": {
   "en": "The Classical: ...Bf5–g6, ...Nd7 and ...Ngf6.",
   "es": "La Clásica: ...Af5–g6, ...Cd7 y ...Cgf6."
+ },
+ "Ng3": {
+  "en": "Ng3 attacks the f5-bishop. ...Bg6 keeps it on the b1–h7 diagonal.",
+  "es": "Cg3 ataca al alfil de f5. ...Ag6 lo mantiene en la diagonal b1–h7."
+ },
+ "Ng3 Bg6 Nf3": {
+  "en": "...Nd7 controls e5 and prepares ...Ngf6 (without allowing Ne5 hitting g6).",
+  "es": "...Cd7 controla e5 y prepara ...Cgf6 (sin permitir Ce5 contra g6)."
+ },
+ "Ng3 Bg6 Nf3 Nd7 h4": {
+  "en": "h4 threatens h5 trapping the bishop: ...h6 gives it h7.",
+  "es": "h4 amenaza h5 atrapando al alfil: ...h6 le da la casilla h7."
+ },
+ "Ng3 Bg6 Nf3 Nd7 h4 h6 h5": {
+  "en": "...Bh7: the bishop is safe there.",
+  "es": "...Ah7: el alfil está seguro ahí."
+ },
+ "Ng3 Bg6 Nf3 Nd7 h4 h6 h5 Bh7 Bd3": {
+  "en": "Bd3 offers the bishop trade. ...Ngf6 develops; after Bxh7 Nxh7 the h5-pawn can become weak.",
+  "es": "Ad3 ofrece el cambio de alfiles. ...Cgf6 desarrolla; tras Axh7 Cxh7 el peón de h5 puede quedar débil."
+ },
+ "Ng3 Bg6 Nf3 Nd7 h4 h6 h5 Bh7 Bd3 Ngf6 Bxh7": {
+  "en": "Nxh7: the knight recaptures and will come back via f6 or f8. Next ...e6 and ...Qc7 or ...Qa5+.",
+  "es": "Cxh7: el caballo recaptura y volverá por f6 o f8. Después ...e6 y ...Dc7 o ...Da5+."
+ },
+ "Ng3 Bg6 Nf3 Nd7 h4 h6 h5 Bh7 Bd3 Ngf6 Bxh7 Nxh7 Bf4 e6": {
+  "en": "After Qe2, ...Qa5+ c3 and ...Be7, ...O-O (or ...O-O-O). Solid; White has a little more space.",
+  "es": "Tras De2, ...Da5+ c3 y ...Ae7, ...O-O (o ...O-O-O). Sólido; las blancas tienen algo más de espacio."
+ },
+ "Ng3 Bg6 Nf3 Nd7 Bd3": {
+  "en": "Bd3 offers the trade at once. ...Ngf6; after Bxg6 hxg6 the h-file is half-open for Black.",
+  "es": "Ad3 ofrece el cambio enseguida. ...Cgf6; tras Axg6 hxg6 la columna h queda semiabierta para las negras."
+ },
+ "Ng3 Bg6 Nf3 Nd7 Bd3 Ngf6 O-O": {
+  "en": "...e6, then ...Be7 or ...Bd6 and castle; ...Qc7 is useful. Equal.",
+  "es": "...e6, y después ...Ae7 o ...Ad6 y enroque; ...Dc7 es útil. Igualdad."
+ },
+ "Ng3 Bg6 Nf3 Nd7 Bc4": {
+  "en": "Bc4 aims at e6 and f7. ...Ngf6 (or ...e6 first): watch Ne5 tricks, but Black is solid.",
+  "es": "Ac4 apunta a e6 y f7. ...Cgf6 (o primero ...e6): cuidado con los trucos de Ce5, pero las negras están sólidas."
+ },
+ "Ng3 Bg6 h4": {
+  "en": "h4 at once: ...h6, and the bishop can go to h7 if h5 comes.",
+  "es": "h4 de inmediato: ...h6, y el alfil puede ir a h7 si llega h5."
+ },
+ "Ng3 Bg6 h4 h6 Nf3": {
+  "en": "...Nd7: the main line by another move order.",
+  "es": "...Cd7: la línea principal por otro orden de jugadas."
+ },
+ "Ng3 Bg6 h4 h6 Nf3 Nd7 h5": {
+  "en": "...Bh7.",
+  "es": "...Ah7."
+ },
+ "Ng3 Bg6 h4 h6 Nf3 Nd7 h5 Bh7 Bd3": {
+  "en": "...Ngf6, and after the trade on h7, ...Nxh7.",
+  "es": "...Cgf6, y tras el cambio en h7, ...Cxh7."
+ },
+ "Ng3 Bg6 h4 h6 Nf3 Nd7 h5 Bh7 Bd3 Ngf6 Bxh7": {
+  "en": "Nxh7, then ...e6 and ...Qc7: the standard setup.",
+  "es": "Cxh7, y después ...e6 y ...Dc7: el esquema estándar."
+ },
+ "Ng3 Bg6 h4 h6 h5": {
+  "en": "...Bh7: White's h-pawn has gained space but may become a target.",
+  "es": "...Ah7: el peón h blanco ha ganado espacio pero puede convertirse en un objetivo."
+ },
+ "Ng3 Bg6 h4 h6 h5 Bh7 Nf3": {
+  "en": "...Nd7 and ...Ngf6 as usual.",
+  "es": "...Cd7 y ...Cgf6 como siempre."
+ },
+ "Ng3 Bg6 h4 h6 h5 Bh7 Nf3 Nd7 Bd3": {
+  "en": "...Ngf6; Bxh7 Nxh7 is the main line.",
+  "es": "...Cgf6; Axh7 Cxh7 es la línea principal."
+ },
+ "Ng3 Bg6 h4 h6 h5 Bh7 Nf3 Nd7 Bd3 Ngf6 Bxh7": {
+  "en": "Nxh7, ...e6, ...Qc7 and castling long or short.",
+  "es": "Cxh7, ...e6, ...Dc7 y enroque largo o corto."
+ },
+ "Bd3 Qxd4 Nf3 Qd8 O-O Bxe4": {
+  "en": "Black keeps the extra pawn: after Bxe4 Qxd1 Rxd1 Nf6, the endgame is better for Black.",
+  "es": "Las negras conservan el peón de más: tras Axe4 Dxd1 Txd1 Cf6, el final es mejor para las negras."
  }
 }

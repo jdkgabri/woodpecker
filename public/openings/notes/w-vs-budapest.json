@@ -14,5 +14,93 @@
  "dxe5 Ng4 Nf3 d6 Bf4 Be7": {
   "en": "exd6 and White stays a pawn up.",
   "es": "exd6 y las blancas siguen con un peón de más."
+ },
+ "": {
+  "en": "Against the Budapest, take the pawn and develop: Nf3, Bf4, e3 and Nbd2. Black usually wins the pawn back; White keeps a small edge with the bishop pair or a better structure.",
+  "es": "Contra la Budapest, toma el peón y desarrolla: Cf3, Af4, e3 y Cbd2. Las negras suelen recuperar el peón; las blancas mantienen una pequeña ventaja con la pareja de alfiles o una mejor estructura."
+ },
+ "dxe5 Ng4 Nf3 Nc6": {
+  "en": "Bf4: a second defender of e5.",
+  "es": "Af4: un segundo defensor de e5."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bb4+": {
+  "en": "Nbd2 blocks: the knight can't be pinned to the king for long.",
+  "es": "Cbd2 tapa: el caballo no estará clavado mucho tiempo."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bb4+ Nbd2 Qe7": {
+  "en": "e3: Black regains e5, but White gets time.",
+  "es": "e3: las negras recuperan e5, pero las blancas ganan tiempo."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bb4+ Nbd2 Qe7 e3 Ngxe5": {
+  "en": "a3 asks the bishop: after ...Bxd2+ White gets the bishop pair.",
+  "es": "a3 pregunta al alfil: tras ...Axd2+ las blancas obtienen la pareja de alfiles."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bb4+ Nbd2 Qe7 e3 Ngxe5 a3": {
+  "en": "After ...Bxd2+ Qxd2 (or Nxd2): Be2, O-O and b4. White's two bishops give a small edge.",
+  "es": "Tras ...Axd2+ Dxd2 (o Cxd2): Ae2, O-O y b4. Los dos alfiles blancos dan una pequeña ventaja."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bc5": {
+  "en": "...Bc5 aims at f2. e3 shuts it out.",
+  "es": "...Ac5 apunta a f2. e3 lo neutraliza."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bc5 e3 Qe7 a3": {
+  "en": "a3 prepares b4 against the c5-bishop. After ...Ngxe5 Nc3 d6 Nd5 Qd8 b4, White wins time and keeps the edge. Clearly better for White.",
+  "es": "a3 prepara b4 contra el alfil de c5. Tras ...Cgxe5 Cc3 d6 Cd5 Dd8 b4, las blancas ganan tiempo y mantienen la ventaja. Claramente mejor para las blancas."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bc5 e3 f6": {
+  "en": "...f6? exf6 and White stays a clean pawn up: Qd2, Nc3 and O-O-O.",
+  "es": "¿...f6? exf6 y las blancas siguen con un peón limpio de más: Dd2, Cc3 y O-O-O."
+ },
+ "dxe5 Ng4 Nf3 Bc5": {
+  "en": "...Bc5 first: e3 blocks the diagonal.",
+  "es": "Primero ...Ac5: e3 tapa la diagonal."
+ },
+ "dxe5 Ng4 Nf3 Bc5 e3 Nc6": {
+  "en": "Nbd2 (not Bf4 yet): the knight can go to e4 or b3 later.",
+  "es": "Cbd2 (todavía no Af4): el caballo puede ir más tarde a e4 o b3."
+ },
+ "dxe5 Ng4 Nf3 Bc5 e3 Nc6 Nbd2 Ngxe5": {
+  "en": "a3 and b4 kick the bishop; Ne4 or Be2 and O-O.",
+  "es": "a3 y b4 echan al alfil; Ce4 o Ae2 y O-O."
+ },
+ "dxe5 Ng4 Nf3 Bc5 e3 Nc6 Nbd2 Ngxe5 a3": {
+  "en": "After ...O-O, Ne4 hits the bishop; then b4 and Bb2. White has more space; slightly better.",
+  "es": "Tras ...O-O, Ce4 ataca al alfil; después b4 y Ab2. Las blancas tienen más espacio; algo mejor."
+ },
+ "dxe5 Ng4 Nf3 Bc5 e3 Nc6 Nbd2 O-O": {
+  "en": "a3 and b4 before Black regains the pawn.",
+  "es": "a3 y b4 antes de que las negras recuperen el peón."
+ },
+ "dxe5 Ng4 Nf3 Bc5 e3 Nc6 Nbd2 O-O a3": {
+  "en": "After ...Ngxe5 Ne4, the c5-bishop is chased and White has the better game.",
+  "es": "Tras ...Cgxe5 Ce4, el alfil de c5 es perseguido y las blancas tienen mejor juego."
+ },
+ "dxe5 Ng4 Nf3 d6 Bf4 Nc6": {
+  "en": "...Nc6? exd6! and Black can't regain the pawn: after ...Bxd6 Bxd6 cxd6, White is a clean pawn up.",
+  "es": "¿...Cc6? ¡exd6! y las negras no recuperan el peón: tras ...Axd6 Axd6 cxd6, las blancas tienen un peón limpio de más."
+ },
+ "dxe5 Ng4 Nf3 d6 Bf4 Nc6 exd6 Bxd6 Bxd6": {
+  "en": "After ...cxd6: e3, Nc3 and Be2. A sound extra pawn: White is clearly better.",
+  "es": "Tras ...cxd6: e3, Cc3 y Ae2. Un peón de más sano: las blancas están claramente mejor."
+ },
+ "dxe5 Ne4": {
+  "en": "The Fajarowicz: ...Ne4. a3! stops ...Bb4+; Qc2 or Nf3 next.",
+  "es": "La Fajarowicz: ...Ce4. ¡a3! impide ...Ab4+; después Dc2 o Cf3."
+ },
+ "dxe5 Ne4 a3 d6": {
+  "en": "Qc2 hits the knight. After ...Nc5 exd6 Bxd6, White is a pawn up.",
+  "es": "Dc2 ataca al caballo. Tras ...Cc5 exd6 Axd6, las blancas tienen un peón de más."
+ },
+ "dxe5 Ne4 a3 d6 Qc2": {
+  "en": "Nc3, Nf3 and Bg5 or e3: White keeps the extra pawn. Clearly better.",
+  "es": "Cc3, Cf3 y Ag5 o e3: las blancas conservan el peón de más. Claramente mejor."
+ },
+ "dxe5 Ne4 a3 b6 Nf3": {
+  "en": "g3, Bg2 and O-O: Black has no compensation for the pawn. Clearly better for White.",
+  "es": "g3, Ag2 y O-O: las negras no tienen compensación por el peón. Claramente mejor para las blancas."
+ },
+ "dxe5 Ne4 a3 Bc5": {
+  "en": "...Bc5? e3! shuts the bishop out; Qc2 and Nd2 will drive the e4-knight away. White is a pawn up and clearly better.",
+  "es": "¿...Ac5? ¡e3! deja al alfil sin juego; Dc2 y Cd2 echarán al caballo de e4. Las blancas tienen un peón de más y están claramente mejor."
  }
 }

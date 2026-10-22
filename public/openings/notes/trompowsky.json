@@ -14,5 +14,85 @@
  "d5 Bxf6": {
   "en": "Bxf6 doubles Black's pawns; e3, c4 or Nd2 and f4 follow with a solid centre.",
   "es": "Axf6 dobla los peones negros; siguen e3, c4 o Cd2 y f4 con un centro sólido."
+ },
+ "": {
+  "en": "The Trompowsky: 2.Bg5 threatens Bxf6, doubling Black's pawns. Simple plans: e3, Nd2, c3 or c4, and often Bxf6 to fight against the bishop pair with a solid centre.",
+  "es": "El Trompowsky: 2.Ag5 amenaza Axf6, doblando los peones negros. Planes sencillos: e3, Cd2, c3 o c4, y a menudo Axf6 para luchar contra la pareja de alfiles con un centro sólido."
+ },
+ "e6": {
+  "en": "...e6: if Bxf6, Black recaptures with the queen. e3 and Nd2 or c4 next.",
+  "es": "...e6: si Axf6, las negras recapturan con la dama. Después e3 y Cd2 o c4."
+ },
+ "e6 e3 Be7": {
+  "en": "...Be7 unpins; Bxf6 Bxf6 gives Black the bishop pair but White has a free hand in the centre: Nd2, c3 or c4, f4.",
+  "es": "...Ae7 deshace la clavada; Axf6 Axf6 da a las negras la pareja de alfiles pero las blancas tienen manos libres en el centro: Cd2, c3 o c4, f4."
+ },
+ "e6 e3 Be7 Bxf6": {
+  "en": "After ...Bxf6: c4, Nc3 and Nf3. Equal; White's lead in space against Black's bishops.",
+  "es": "Tras ...Axf6: c4, Cc3 y Cf3. Igualdad; espacio blanco contra los alfiles negros."
+ },
+ "e6 e3 d5": {
+  "en": "...d5: Bxf6 Qxf6 and then c4, attacking d5.",
+  "es": "...d5: Axf6 Dxf6 y después c4, atacando d5."
+ },
+ "e6 e3 d5 Bxf6": {
+  "en": "After ...Qxf6, c4! hits d5; if ...Bb4+ Nc3 c5 cxd5 exd5, Bb5+ develops with tempo. Equal.",
+  "es": "Tras ...Dxf6, ¡c4! ataca d5; si ...Ab4+ Cc3 c5 cxd5 exd5, Ab5+ desarrolla ganando tiempo. Igualdad."
+ },
+ "e6 e3 h6 Bxf6": {
+  "en": "...Qxf6: Nd2, Bd3, f4 and Ngf3: a Stonewall-like grip on e5. Equal.",
+  "es": "...Dxf6: Cd2, Ad3, f4 y Cgf3: un control tipo Stonewall sobre e5. Igualdad."
+ },
+ "e6 e3 c5 Bxf6": {
+  "en": "...Qxf6; then c3 or Nd2 and Ngf3. Equal.",
+  "es": "...Dxf6; después c3 o Cd2 y Cgf3. Igualdad."
+ },
+ "Ne4": {
+  "en": "...Ne4 hits the bishop at once. Bf4: the bishop stays active, and f3 will kick the knight.",
+  "es": "...Ce4 ataca al alfil de inmediato. Af4: el alfil sigue activo, y f3 echará al caballo."
+ },
+ "Ne4 Bf4 d5": {
+  "en": "...d5 supports the knight. e3, Bd3 and Nd2: the knight on e4 will be challenged.",
+  "es": "...d5 apoya al caballo. e3, Ad3 y Cd2: el caballo de e4 será desafiado."
+ },
+ "Ne4 Bf4 g5 Be5 f6 e3 h5 Be2": {
+  "en": "Be2 hits h5 (after ...g4, Bf4). Black has weakened his kingside badly. White is better.",
+  "es": "Ae2 ataca h5 (tras ...g4, Af4). Las negras han debilitado mucho su flanco de rey. Las blancas están mejor."
+ },
+ "d5": {
+  "en": "...d5: Bxf6 doubles the pawns.",
+  "es": "...d5: Axf6 dobla los peones."
+ },
+ "d5 Bxf6 exf6": {
+  "en": "...exf6: Black's structure is solid but the kingside majority is crippled. e3, c4 or Nd2, Bd3 and Ne2.",
+  "es": "...exf6: la estructura negra es sólida pero la mayoría del flanco de rey queda lisiada. e3, c4 o Cd2, Ad3 y Ce2."
+ },
+ "d5 Bxf6 exf6 e3 Bd6": {
+  "en": "Nd2, then c4 or Ngf3 and Bd3. Equal; White's healthier pawns against Black's bishops.",
+  "es": "Cd2, y después c4 o Cgf3 y Ad3. Igualdad; peones más sanos para las blancas frente a los alfiles negros."
+ },
+ "d5 Bxf6 exf6 e3 Bd6 Nd2": {
+  "en": "After ...O-O: Ngf3, Bd3, c4. Equal, with long-term pluses in White's structure.",
+  "es": "Tras ...O-O: Cgf3, Ad3, c4. Igualdad, con ventajas a largo plazo en la estructura blanca."
+ },
+ "d5 Bxf6 gxf6": {
+  "en": "...gxf6: Black's king will have no safe home on the kingside. c4 and e3, Nc3: hit the centre.",
+  "es": "...gxf6: el rey negro no tendrá un refugio seguro en el flanco de rey. c4 y e3, Cc3: ataca el centro."
+ },
+ "g6": {
+  "en": "...g6: Bxf6 exf6 damages the pawns before the g7-bishop arrives.",
+  "es": "...g6: Axf6 exf6 daña los peones antes de que llegue el alfil de g7."
+ },
+ "g6 Bxf6 exf6": {
+  "en": "e3 and Nd2: Black's doubled f-pawns limit the g7-bishop.",
+  "es": "e3 y Cd2: los peones f doblados de las negras limitan al alfil de g7."
+ },
+ "g6 Bxf6 exf6 e3 Bg7": {
+  "en": "Nd2, then c3 or c4, Bd3 and Ne2: solid. Black will try ...f5 and ...d5. Equal.",
+  "es": "Cd2, y después c3 o c4, Ad3 y Ce2: sólido. Las negras intentarán ...f5 y ...d5. Igualdad."
+ },
+ "g6 Bxf6 exf6 e3 Bg7 Nd2": {
+  "en": "After ...d5: c4 or Ngf3 and Bd3. A balanced game where White's better structure matters in the endgame.",
+  "es": "Tras ...d5: c4 o Cgf3 y Ad3. Una partida equilibrada en la que la mejor estructura blanca cuenta en el final."
  }
 }

@@ -4,11 +4,67 @@
   "es": "Cxd4, y después Cc3, Af4 o Ae3, Dd2 y O-O-O: las blancas tienen más espacio y posibilidades de ataque."
  },
  "d4 Bg4": {
-  "en": "dxe5 Bxf3 Qxf3 dxe5 Bc4: the queen and bishop aim at f7.",
-  "es": "dxe5 Axf3 Dxf3 dxe5 Ac4: la dama y el alfil apuntan a f7."
+  "en": "...Bg4 pins the knight. Nc3 develops and keeps a clear edge; dxe5 Bxf3 Qxf3 dxe5 Bc4 is a strong alternative, with the queen and bishop on f7.",
+  "es": "...Ag4 clava el caballo. Cc3 desarrolla y mantiene una ventaja clara; dxe5 Axf3 Dxf3 dxe5 Ac4 es una alternativa fuerte, con dama y alfil sobre f7."
  },
  "d4 Nc6 Nc3 exd4 Nxd4 Nxd4 Qxd4 c5": {
   "en": "Qa4+! Bd7 Qb3: the queen hits b7 and f7.",
   "es": "¡Da4+! Ad7 Db3: la dama ataca b7 y f7."
+ },
+ "": {
+  "en": "Against the Philidor, 3.d4 challenges e5 at once. White gets more space and quick development; Black's position is solid but cramped.",
+  "es": "Contra la Philidor, 3.d4 desafía e5 de inmediato. Las blancas obtienen más espacio y un desarrollo rápido; la posición negra es sólida pero estrecha."
+ },
+ "d4 exd4 Bc4 Be7": {
+  "en": "...Be7. Castle: no hurry to take back on d4. Then Nxd4 or c3, and Re1 against e-file targets.",
+  "es": "...Ae7. Enroca: no hay prisa por recuperar en d4. Después Cxd4 o c3, y Te1 contra los objetivos de la columna e."
+ },
+ "d4 exd4 Bc4 Be7 O-O": {
+  "en": "After ...Nf6, Re1 and Nxd4 (or c3): White has the centre and more space. Small edge.",
+  "es": "Tras ...Cf6, Te1 y Cxd4 (o c3): las blancas tienen el centro y más espacio. Pequeña ventaja."
+ },
+ "d4 exd4 Bc4 h6": {
+  "en": "...h6 stops Ng5 but is slow. Castle and take back on d4: White is ahead in development.",
+  "es": "...h6 impide Cg5 pero es lenta. Enroca y recupera en d4: las blancas van por delante en desarrollo."
+ },
+ "d4 exd4 Bc4 h6 O-O": {
+  "en": "If ...Nc6, Nxd4 Nf6 Nxc6 bxc6 e5! and Black's knight is pushed back. White is clearly better.",
+  "es": "Si ...Cc6, Cxd4 Cf6 Cxc6 bxc6 ¡e5! y el caballo negro es rechazado. Las blancas están claramente mejor."
+ },
+ "d4 exd4 Bc4 c5": {
+  "en": "...c5 holds d4 but weakens d5 and d6. Castle and play c3 to open lines.",
+  "es": "...c5 sostiene d4 pero debilita d5 y d6. Enroca y juega c3 para abrir líneas."
+ },
+ "d4 exd4 Bc4 c5 O-O": {
+  "en": "c3! breaks the chain. If ...dxc3, Nxc3 and White has a big lead in development; Re1 and Qb3 against f7 follow.",
+  "es": "¡c3! rompe la cadena. Si ...dxc3, Cxc3 y las blancas tienen una gran ventaja de desarrollo; siguen Te1 y Db3 contra f7."
+ },
+ "d4 exd4 Bc4 Nf6": {
+  "en": "...Nf6 attacks e4. Castle: if ...Nxe4?, Re1 d5 Bxd5! Qxd5 Nc3 and White wins material on the e-file.",
+  "es": "...Cf6 ataca e4. Enroca: si ¿...Cxe4?, Te1 d5 ¡Axd5! Dxd5 Cc3 y las blancas ganan material en la columna e."
+ },
+ "d4 exd4 Bc4 Nf6 O-O": {
+  "en": "After ...Be7, Re1 and Qxd4 (or Nxd4): White regains the pawn with a nice position.",
+  "es": "Tras ...Ae7, Te1 y Dxd4 (o Cxd4): las blancas recuperan el peón con una buena posición."
+ },
+ "d4 Bg4 Nc3 exd4": {
+  "en": "Qxd4: the queen is central and can't be harassed easily. If ...Nc6, Bb5 pins; if ...Bxf3, gxf3 keeps the bishop pair.",
+  "es": "Dxd4: la dama está centralizada y es difícil molestarla. Si ...Cc6, Ab5 clava; si ...Axf3, gxf3 conserva la pareja de alfiles."
+ },
+ "d4 Bg4 Nc3 exd4 Qxd4": {
+  "en": "After ...Nc6 Bb5 Qd7 Qa4, Be3 and O-O-O: White is clearly better.",
+  "es": "Tras ...Cc6 Ab5 Dd7 Da4, Ae3 y O-O-O: las blancas están claramente mejor."
+ },
+ "d4 Bg4 Nc3 Bxf3": {
+  "en": "...Bxf3 gives up the bishop. gxf3! opens the g-file and keeps the bishop pair; f4 comes later.",
+  "es": "...Axf3 entrega el alfil. ¡gxf3! abre la columna g y conserva la pareja de alfiles; más tarde llega f4."
+ },
+ "d4 Bg4 Nc3 Bxf3 gxf3": {
+  "en": "h4, f4 and the g-file against Black's king, plus the bishop pair: White is clearly better.",
+  "es": "h4, f4 y la columna g contra el rey negro, además de la pareja de alfiles: las blancas están claramente mejor."
+ },
+ "d4 Bg4 Nc3 Nc6 Bb5": {
+  "en": "Bb5 pins the c6-knight. After ...exd4 Qxd4 the queen is strong; d5 is also a threat. White is clearly better.",
+  "es": "Ab5 clava el caballo de c6. Tras ...exd4 Dxd4 la dama es fuerte; d5 también es una amenaza. Las blancas están claramente mejor."
  }
 }
