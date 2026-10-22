@@ -30,5 +30,105 @@
  "Nc3 exd4 Qxd4 Nc6 Qd1 d4": {
   "en": "After Qd1?, ...d4 kicks the knight and Black has a big space advantage.",
   "es": "Tras Dd1?, ...d4 echa al caballo y las negras tienen una gran ventaja de espacio."
+ },
+ "dxe5": {
+  "en": "...d4! the gambit.",
+  "es": "¡...d4! el gambito."
+ },
+ "dxe5 d4 Nf3": {
+  "en": "...Nc6: hit e5 and support d4.",
+  "es": "...Cc6: ataca e5 y apoya d4."
+ },
+ "dxe5 d4 Nf3 Nc6 e3": {
+  "en": "...Bg4 (or ...Bb4+): pin and keep d4 strong.",
+  "es": "...Ag4 (o ...Ab4+): clava y mantén fuerte d4."
+ },
+ "dxe5 d4 Nf3 Nc6 e3 Bg4 Be2": {
+  "en": "...Bb4+ and ...dxe3: open lines. Equal.",
+  "es": "...Ab4+ y ...dxe3: abre líneas. Igualdad."
+ },
+ "dxe5 d4 Nf3 Nc6 e3 Bg4 Be2 Bb4+ Bd2 dxe3": {
+  "en": "After fxe3: ...Qe7 and ...O-O-O against the weakened e3. Equal.",
+  "es": "Tras fxe3: ...De7 y ...O-O-O contra el débil e3. Igualdad."
+ },
+ "dxe5 d4 Nf3 Nc6 e3 Bg4 exd4 Bxf3 Qxf3 Qxd4": {
+  "en": "...O-O-O and ...Qxe5: material is level and Black is active. Equal.",
+  "es": "...O-O-O y ...Dxe5: el material está igualado y las negras están activas. Igualdad."
+ },
+ "dxe5 d4 Nf3 Nc6 a3": {
+  "en": "...Nge7 and ...Ng6 to win back e5.",
+  "es": "...Cge7 y ...Cg6 para recuperar e5."
+ },
+ "dxe5 d4 Nf3 Nc6 a3 Nge7 b4 Bg4": {
+  "en": "...Bg4 is slow here: b5 and Nxd4 win time. White is better; ...Ng6 at once was more accurate.",
+  "es": "...Ag4 es lenta aquí: b5 y Cxd4 ganan tiempo. Las blancas están mejor; ...Cg6 de inmediato era más preciso."
+ },
+ "dxe5 d4 Nf3 Nc6 g3": {
+  "en": "...Nge7 and ...Ng6.",
+  "es": "...Cge7 y ...Cg6."
+ },
+ "dxe5 d4 Nf3 Nc6 g3 Nge7 Bg2": {
+  "en": "...Ng6: the e5-pawn falls.",
+  "es": "...Cg6: el peón de e5 cae."
+ },
+ "dxe5 d4 Nf3 Nc6 g3 Nge7 Bg2 Ng6 O-O": {
+  "en": "...Ngxe5 (or ...Be7): material is level. Slightly better for White.",
+  "es": "...Cgxe5 (o ...Ae7): el material está igualado. Algo mejor para las blancas."
+ },
+ "Nc3": {
+  "en": "...exd4: then ...Nc6 hits the queen.",
+  "es": "...exd4: después ...Cc6 ataca a la dama."
+ },
+ "Nc3 exd4 Qxd4": {
+  "en": "...Nc6 gains time.",
+  "es": "...Cc6 gana tiempo."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qxd5": {
+  "en": "...Be6! and White's queen and king are in trouble.",
+  "es": "¡...Ae6! y la dama y el rey blancos están en apuros."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qxd5 Be6 Qxd8+": {
+  "en": "...Rxd8: Black is far ahead in development.",
+  "es": "...Txd8: las negras van muy por delante en desarrollo."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qxd5 Be6 Qxd8+ Rxd8 e3": {
+  "en": "...Nb4! threatens ...Nc2+. Black is winning.",
+  "es": "¡...Cb4! amenaza ...Cc2+. Las negras van ganando."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qxd5 Be6 Qxd8+ Rxd8 e3 Nb4 Rb1": {
+  "en": "...Nc2+ and ...Bxc4+: Black is winning.",
+  "es": "...Cc2+ y ...Axc4+: las negras van ganando."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qxd5 Be6 Qxd8+ Rxd8 e3 Nb4 Rb1 Nc2+ Ke2 Bxc4+": {
+  "en": "Black wins material with a raging attack. Winning.",
+  "es": "Las negras ganan material con un ataque fulminante. Ganando."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qd1": {
+  "en": "...d4! kicks the knight. Black is clearly better.",
+  "es": "¡...d4! echa al caballo. Las negras están claramente mejor."
+ },
+ "e3": {
+  "en": "...exd4: equal.",
+  "es": "...exd4: igualdad."
+ },
+ "e3 exd4 exd4": {
+  "en": "...Nc6 (or ...Bb4+, ...Nf6): an isolated-pawn position. Equal.",
+  "es": "...Cc6 (o ...Ab4+, ...Cf6): una posición de peón aislado. Igualdad."
+ },
+ "e3 exd4 exd4 Nc6 Nc3 Be6": {
+  "en": "...Nf6 and ...Bb4: pressure on d4. Equal.",
+  "es": "...Cf6 y ...Ab4: presión sobre d4. Igualdad."
+ },
+ "e3 exd4 Qxd4 Nc6 Qxd5 Qxd5 cxd5 Nb4": {
+  "en": "...Nxd5 next: equal.",
+  "es": "Después ...Cxd5: igualdad."
+ },
+ "cxd5": {
+  "en": "...Bb4+ (or ...Qxd5): regain the pawn.",
+  "es": "...Ab4+ (o ...Dxd5): recupera el peón."
+ },
+ "cxd5 Bb4+": {
+  "en": "After Bd2 Bxd2+ Qxd2 Qxd5: material level; White's centre gives a small edge.",
+  "es": "Tras Ad2 Axd2+ Dxd2 Dxd5: material igualado; el centro blanco da una pequeña ventaja."
  }
 }

@@ -26,5 +26,105 @@
  "": {
   "en": "The Ponziani: c3 prepares d4 but takes c3 from the knight. ...Nf6 or ...d5 strike before White's centre is ready.",
   "es": "La Ponziani: c3 prepara d4 pero le quita c3 al caballo. ...Cf6 o ...d5 golpean antes de que el centro blanco esté listo."
+ },
+ "Nf6 d4": {
+  "en": "...Nxe4: take the pawn.",
+  "es": "...Cxe4: toma el peón."
+ },
+ "Nf6 d4 Nxe4 d5": {
+  "en": "...Bc5! hits f2.",
+  "es": "¡...Ac5! ataca f2."
+ },
+ "Nf6 d4 Nxe4 d5 Bc5 Be3 Bxe3 fxe3": {
+  "en": "...Ne7: the knight steps aside; White's e3-pawn is weak.",
+  "es": "...Ce7: el caballo se aparta; el peón de e3 blanco es débil."
+ },
+ "Nf6 d4 Nxe4 d5 Bc5 Be3 Bxe3 fxe3 Ne7": {
+  "en": "After Nxe5 O-O: ...d6 and ...Nf6–f5: Black is clearly better.",
+  "es": "Tras Cxe5 O-O: ...d6 y ...Cf6–f5: las negras están claramente mejor."
+ },
+ "Nf6 d4 Nxe4 d5 Bc5 dxc6": {
+  "en": "...Bxf2+! Ke2 and the king is exposed.",
+  "es": "¡...Axf2+! Re2 y el rey queda expuesto."
+ },
+ "Nf6 d4 Nxe4 d5 Bc5 dxc6 Bxf2+": {
+  "en": "After Ke2 Bb6 Qd5 Nf2: Black's attack balances the piece. Slightly better for Black.",
+  "es": "Tras Re2 Ab6 Dd5 Cf2: el ataque negro compensa la pieza. Algo mejor para las negras."
+ },
+ "Nf6 d4 Nxe4 dxe5": {
+  "en": "...Bc5: develop and hit f2. Black is better.",
+  "es": "...Ac5: desarrolla y ataca f2. Las negras están mejor."
+ },
+ "Nf6 d4 Nxe4 dxe5 Bc5 Be3": {
+  "en": "...Bxe3 fxe3 and ...O-O: Black is better.",
+  "es": "...Axe3 fxe3 y ...O-O: las negras están mejor."
+ },
+ "Nf6 d4 Nxe4 dxe5 Bc5 Be3 Bxe3": {
+  "en": "After fxe3 O-O Qd5 Ng5: White's pawns are weak. Black is clearly better.",
+  "es": "Tras fxe3 O-O Dd5 Cg5: los peones blancos son débiles. Las negras están claramente mejor."
+ },
+ "Nf6 d4 Nxe4 Bd3 d5": {
+  "en": "After Nxe5 Bd6: equal.",
+  "es": "Tras Cxe5 Ad6: igualdad."
+ },
+ "Nf6 d4 Nxe4 Qe2 d5": {
+  "en": "After Nxe5: ...Bd7 or ...Qe7. Slightly better for Black.",
+  "es": "Tras Cxe5: ...Ad7 o ...De7. Algo mejor para las negras."
+ },
+ "Nf6 d3": {
+  "en": "d3: ...d5 takes the centre.",
+  "es": "d3: ...d5 toma el centro."
+ },
+ "Nf6 d3 d5 exd5": {
+  "en": "...Nxd5: free development.",
+  "es": "...Cxd5: desarrollo libre."
+ },
+ "Nf6 d3 d5 exd5 Nxd5 Be2": {
+  "en": "...Be7, ...O-O and ...Bf5.",
+  "es": "...Ae7, ...O-O y ...Af5."
+ },
+ "Nf6 d3 d5 exd5 Nxd5 Be2 Be7 O-O": {
+  "en": "...Bf5 (or ...O-O): a reversed Philidor where Black is comfortable.",
+  "es": "...Af5 (u ...O-O): una Philidor invertida en la que las negras están cómodas."
+ },
+ "Nf6 d3 d5 exd5 Nxd5 Be2 Be7 O-O Bf5": {
+  "en": "...Qd7 and ...O-O-O or ...O-O. Equal.",
+  "es": "...Dd7 y ...O-O-O u ...O-O. Igualdad."
+ },
+ "Nf6 d3 d5 exd5 Nxd5 c4": {
+  "en": "...Bb4+! and ...Nf4: the d3-square is weak. Black is clearly better.",
+  "es": "¡...Ab4+! y ...Cf4: la casilla d3 está débil. Las negras están claramente mejor."
+ },
+ "Nf6 d3 d5 Bg5": {
+  "en": "...dxe4: open the centre.",
+  "es": "...dxe4: abre el centro."
+ },
+ "Nf6 d3 d5 Bg5 dxe4 Bxf6 Qxf6": {
+  "en": "After dxe4 g5: Black has the bishop pair and play on the dark squares. Black is better.",
+  "es": "Tras dxe4 g5: las negras tienen la pareja de alfiles y juego en las casillas oscuras. Las negras están mejor."
+ },
+ "Nf6 d3 d5 Nbd2 Be7": {
+  "en": "...O-O and ...Bd6 or ...a5. Equal.",
+  "es": "...O-O y ...Ad6 o ...a5. Igualdad."
+ },
+ "Nf6 d3 d5 Qc2 Be7": {
+  "en": "...O-O and ...Bd6. Equal.",
+  "es": "...O-O y ...Ad6. Igualdad."
+ },
+ "Nf6 Qc2 d5 exd5": {
+  "en": "...Qxd5: the queen is safe in the centre. Black is better.",
+  "es": "...Dxd5: la dama está segura en el centro. Las negras están mejor."
+ },
+ "Nf6 Qc2 d5 d3 Be7": {
+  "en": "...O-O and ...Bd6. Equal.",
+  "es": "...O-O y ...Ad6. Igualdad."
+ },
+ "Nf6 Bd3": {
+  "en": "...d5! hits e4.",
+  "es": "¡...d5! ataca e4."
+ },
+ "Nf6 Bd3 d5 exd5 Qxd5 Bc2 e4": {
+  "en": "...e4 hits the f3-knight: Black is much better.",
+  "es": "...e4 ataca al caballo de f3: las negras están mucho mejor."
  }
 }
