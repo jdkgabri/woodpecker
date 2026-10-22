@@ -22,5 +22,73 @@
  "": {
   "en": "Against Be3 and Qd2: ...c6 and ...b5.",
   "es": "Contra Ae3 y Dd2: ...c6 y ...b5."
+ },
+ "c6 f3": {
+  "en": "f3 supports e4 and prepares g4. ...Bg7 and ...b5.",
+  "es": "f3 apoya e4 y prepara g4. ...Ag7 y ...b5."
+ },
+ "c6 f3 Bg7 Qd2": {
+  "en": "...b5! queenside play first; the king can wait in the centre.",
+  "es": "¡...b5! primero el juego en el flanco de dama; el rey puede esperar en el centro."
+ },
+ "c6 f3 Bg7 Qd2 b5 O-O-O": {
+  "en": "...Nbd7 (or ...Qa5) and ...b4: the attack starts.",
+  "es": "...Cbd7 (o ...Da5) y ...b4: empieza el ataque."
+ },
+ "c6 f3 Bg7 Qd2 b5 O-O-O Nbd7 g4": {
+  "en": "...Qa5! and ...b4: Black's attack is faster.",
+  "es": "¡...Da5! y ...b4: el ataque negro es más rápido."
+ },
+ "c6 f3 Bg7 Qd2 b5 O-O-O Nbd7 g4 Qa5 Kb1 Nb6": {
+  "en": "...Nc4 and ...b4 follow. Watch Nc7+ tricks after e5. Equal.",
+  "es": "Siguen ...Cc4 y ...b4. Cuidado con los trucos de Cc7+ tras e5. Igualdad."
+ },
+ "c6 f3 Bg7 Qd2 b5 O-O-O Nbd7 Kb1 Nb6": {
+  "en": "If Bh6, ...Bxh6 Qxh6 and ...a5–b4. Slightly better for White.",
+  "es": "Si Ah6, ...Axh6 Dxh6 y ...a5–b4. Algo mejor para las blancas."
+ },
+ "c6 f3 Bg7 Qd2 b5 a3": {
+  "en": "...Nbd7 and ...a5: open the queenside anyway.",
+  "es": "...Cbd7 y ...a5: abre el flanco de dama igualmente."
+ },
+ "c6 f3 Bg7 Qd2 b5 Bh6": {
+  "en": "...Bxh6: trade the bishops.",
+  "es": "...Axh6: cambia los alfiles."
+ },
+ "c6 f3 Bg7 Qd2 b5 Bh6 Bxh6 Qxh6": {
+  "en": "...Nbd7 and ...Bb7 or ...b4; the king can stay in the centre or go long.",
+  "es": "...Cbd7 y ...Ab7 o ...b4; el rey puede quedarse en el centro o enrocar largo."
+ },
+ "c6 Qd2": {
+  "en": "...Bg7 and ...b5.",
+  "es": "...Ag7 y ...b5."
+ },
+ "c6 Qd2 Bg7 f3": {
+  "en": "...b5: the standard plan.",
+  "es": "...b5: el plan estándar."
+ },
+ "c6 Qd2 Bg7 f3 b5 O-O-O": {
+  "en": "...Nbd7 and ...b4 (or ...Qa5).",
+  "es": "...Cbd7 y ...b4 (o ...Da5)."
+ },
+ "c6 Qd2 Bg7 O-O-O": {
+  "en": "...b5! the race begins.",
+  "es": "¡...b5! empieza la carrera."
+ },
+ "c6 Qd2 Bg7 O-O-O b5 f3": {
+  "en": "...Nbd7 and ...b4.",
+  "es": "...Cbd7 y ...b4."
+ },
+ "c6 Qd2 Bg7 Bh6": {
+  "en": "...Bxh6 Qxh6, then ...b5 and ...Bb7.",
+  "es": "...Axh6 Dxh6, y después ...b5 y ...Ab7."
+ },
+ "c6 Qd2 Bg7 Bh6 Bxh6 Qxh6": {
+  "en": "...b5: queenside space; ...Qa5 and ...Nbd7.",
+  "es": "...b5: espacio en el flanco de dama; ...Da5 y ...Cbd7."
+ },
+ "c6 Bd3 Bg7 Qd2": {
+  "en": "...Ng4! hits the e3-bishop: Black gets the bishop pair. Slightly better for Black.",
+  "es": "¡...Cg4! ataca al alfil de e3: las negras obtienen la pareja de alfiles. Algo mejor para las negras."
  }
 }

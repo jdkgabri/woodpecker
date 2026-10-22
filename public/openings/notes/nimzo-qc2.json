@@ -22,5 +22,85 @@
  "": {
   "en": "Against 4.Qc2: ...O-O and ...d5 or ...c5.",
   "es": "Contra 4.Dc2: ...O-O y ...d5 o ...c5."
+ },
+ "O-O Nf3": {
+  "en": "...c5 hits d4 at once.",
+  "es": "...c5 golpea d4 de inmediato."
+ },
+ "O-O Nf3 c5 e3": {
+  "en": "...d5: a solid central setup; ...Nc6 next.",
+  "es": "...d5: un esquema central sólido; después ...Cc6."
+ },
+ "O-O Nf3 c5 Bg5": {
+  "en": "...h6 asks the bishop; then ...cxd4 or ...Qa5.",
+  "es": "...h6 pregunta al alfil; después ...cxd4 o ...Da5."
+ },
+ "O-O Nf3 c5 dxc5": {
+  "en": "...Nc6 (or ...Na6) and ...Bxc5: Black regains the pawn with quick development.",
+  "es": "...Cc6 (o ...Ca6) y ...Axc5: las negras recuperan el peón con un desarrollo rápido."
+ },
+ "O-O a3": {
+  "en": "...Bxc3+ gives up the bishop but White's queen recaptures and has spent time.",
+  "es": "...Axc3+ cede el alfil, pero la dama blanca recaptura y ha perdido tiempo."
+ },
+ "O-O a3 Bxc3+ Qxc3": {
+  "en": "...d5 (or ...b6 and ...Bb7): fight for the light squares.",
+  "es": "...d5 (o ...b6 y ...Ab7): lucha por las casillas blancas."
+ },
+ "O-O a3 Bxc3+ Qxc3 d5 Bg5": {
+  "en": "...c5! hits the centre.",
+  "es": "¡...c5! golpea el centro."
+ },
+ "O-O a3 Bxc3+ Qxc3 d5 Bg5 c5": {
+  "en": "After e3 cxd4 Qxd4 Nc6, ...dxc4 and ...Bd7: Black is active. Equal.",
+  "es": "Tras e3 cxd4 Dxd4 Cc6, ...dxc4 y ...Ad7: las negras están activas. Igualdad."
+ },
+ "O-O a3 Bxc3+ Qxc3 d5 Nf3": {
+  "en": "...b6 and ...Bb7 (or ...dxc4). Equal.",
+  "es": "...b6 y ...Ab7 (o ...dxc4). Igualdad."
+ },
+ "O-O a3 Bxc3+ Qxc3 d5 Nf3 b6 Bg5 Nbd7": {
+  "en": "After cxd5 exd5 e3 c5: a solid hanging-pawn or isolated-pawn game. Equal.",
+  "es": "Tras cxd5 exd5 e3 c5: una partida sólida de peones colgantes o de peón aislado. Igualdad."
+ },
+ "O-O e4": {
+  "en": "e4 grabs the centre: ...c5! (or ...d5) hits it before White develops.",
+  "es": "e4 ocupa el centro: ¡...c5! (o ...d5) lo golpea antes de que las blancas desarrollen."
+ },
+ "O-O e4 c5 d5 Bxc3+": {
+  "en": "After bxc3, ...exd5 and ...Re8: e4 is the target. Black is slightly better.",
+  "es": "Tras bxc3, ...exd5 y ...Te8: e4 es el objetivo. Las negras algo mejor."
+ },
+ "O-O e4 c5 e5": {
+  "en": "e5 kicks the knight. ...cxd4 is sharp: after a3 Ba5 exf6 dxc3 b4, White is better. Next time ...d5 at move 5 is a calmer choice.",
+  "es": "e5 echa al caballo. ...cxd4 es agudo: tras a3 Aa5 exf6 dxc3 b4, las blancas están mejor. La próxima vez, ...d5 en la jugada 5 es una opción más tranquila."
+ },
+ "O-O e4 c5 e5 cxd4": {
+  "en": "a3 Ba5 and the complications favour White a little. Keep the bishop and look for ...Nc6 and ...d6.",
+  "es": "a3 Aa5 y las complicaciones favorecen un poco a las blancas. Conserva el alfil y busca ...Cc6 y ...d6."
+ },
+ "O-O e4 c5 Nf3": {
+  "en": "...cxd4 (or ...d5): White's centre is under fire. Black is better.",
+  "es": "...cxd4 (o ...d5): el centro blanco está bajo fuego. Las negras están mejor."
+ },
+ "O-O e4 c5 Nf3 d5": {
+  "en": "If e5, ...cxd4 a3 Bxc3+ bxc3 Ne4: Black's pieces are active. Slightly better for Black.",
+  "es": "Si e5, ...cxd4 a3 Axc3+ bxc3 Ce4: las piezas negras están activas. Algo mejor para las negras."
+ },
+ "O-O e4 c5 a3 Bxc3+": {
+  "en": "After bxc3, ...d5! hits e4 and c4. Equal.",
+  "es": "Tras bxc3, ¡...d5! ataca e4 y c4. Igualdad."
+ },
+ "O-O Bg5": {
+  "en": "...c5 (or ...h6): hit the centre.",
+  "es": "...c5 (o ...h6): golpea el centro."
+ },
+ "O-O Bg5 c5 e3": {
+  "en": "...d5 or ...h6 and ...cxd4. Equal.",
+  "es": "...d5 o ...h6 y ...cxd4. Igualdad."
+ },
+ "O-O Bg5 c5 dxc5 Na6": {
+  "en": "After a3 Bxc3+ Qxc3 Nxc5: Black has regained the pawn with good play. Equal.",
+  "es": "Tras a3 Axc3+ Dxc3 Cxc5: las negras han recuperado el peón con buen juego. Igualdad."
  }
 }

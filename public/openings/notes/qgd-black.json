@@ -22,5 +22,61 @@
  "Nf3 e6": {
   "en": "Against slow Nf3 setups (Colle, Torre), the same structure works; ...c5 is the key break.",
   "es": "Contra esquemas lentos con Cf3 (Colle, Torre), funciona la misma estructura; ...c5 es la ruptura clave."
+ },
+ "c4": {
+  "en": "The Queen's Gambit: ...e6, the Declined.",
+  "es": "El Gambito de Dama: ...e6, el Rehusado."
+ },
+ "c4 e6 Nc3": {
+  "en": "...Nf6 and ...Be7.",
+  "es": "...Cf6 y ...Ae7."
+ },
+ "c4 e6 Nc3 Nf6 Bg5": {
+  "en": "...Be7 unpins, then ...O-O and ...h6.",
+  "es": "...Ae7 deshace la clavada, y después ...O-O y ...h6."
+ },
+ "c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 h6 Bh4 b6": {
+  "en": "The Tartakower: ...b6 and ...Bb7. After Bxf6 Bxf6 cxd5 exd5, ...c6 or ...c5. Equal.",
+  "es": "La Tartakower: ...b6 y ...Ab7. Tras Axf6 Axf6 cxd5 exd5, ...c6 o ...c5. Igualdad."
+ },
+ "c4 e6 Nc3 Nf6 Nf3": {
+  "en": "...Be7 (or ...Bb4, the Ragozin) and castle.",
+  "es": "...Ae7 (o ...Ab4, la Ragozin) y enroque."
+ },
+ "c4 e6 Nf3": {
+  "en": "...Nf6, ...Be7 and ...O-O.",
+  "es": "...Cf6, ...Ae7 y ...O-O."
+ },
+ "Bf4": {
+  "en": "The London: ...e6, ...Nf6 and ...c5.",
+  "es": "La London: ...e6, ...Cf6 y ...c5."
+ },
+ "Bf4 e6 e3": {
+  "en": "...Nf6 and ...c5 or ...Bd6.",
+  "es": "...Cf6 y ...c5 o ...Ad6."
+ },
+ "Bf4 e6 e3 Nf6 Nf3": {
+  "en": "...Be7 (or ...Bd6) and castle; ...c5 later.",
+  "es": "...Ae7 (o ...Ad6) y enroque; más tarde ...c5."
+ },
+ "Bf4 e6 e3 Nf6 Nf3 Be7 Bd3 O-O": {
+  "en": "After c3: ...c5, ...Nc6 and ...b6. Slightly better for White, but very solid.",
+  "es": "Tras c3: ...c5, ...Cc6 y ...b6. Algo mejor para las blancas, pero muy sólido."
+ },
+ "Bf4 e6 Nf3": {
+  "en": "...Nf6, then ...c5.",
+  "es": "...Cf6, y después ...c5."
+ },
+ "Bf4 e6 Nf3 Nf6 e3": {
+  "en": "...Be7 or ...c5: the same structure.",
+  "es": "...Ae7 o ...c5: la misma estructura."
+ },
+ "Nf3": {
+  "en": "...e6, ...Nf6 and ...c5.",
+  "es": "...e6, ...Cf6 y ...c5."
+ },
+ "Nf3 e6 Bf4": {
+  "en": "...Nf6 and ...c5 (or ...Bd6).",
+  "es": "...Cf6 y ...c5 (o ...Ad6)."
  }
 }

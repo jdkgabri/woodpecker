@@ -22,5 +22,169 @@
  "": {
   "en": "The Open Ruy Lopez: Black takes on e4 and gets active pieces; White hits back with d4 and Re1.",
   "es": "La Española Abierta: las negras toman en e4 y consiguen piezas activas; las blancas contraatacan con d4 y Te1."
+ },
+ "d4 b5 Bb3 d5": {
+  "en": "dxe5: the main line. Then c3 and Nbd2 to challenge the e4-knight.",
+  "es": "dxe5: la línea principal. Después c3 y Cbd2 para desafiar al caballo de e4."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6": {
+  "en": "c3 gives the bishop c2 and prepares Nbd2.",
+  "es": "c3 da al alfil la casilla c2 y prepara Cbd2."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5": {
+  "en": "...Bc5: the most active setup. Nbd2 challenges the e4-knight.",
+  "es": "...Ac5: el esquema más activo. Cbd2 desafía al caballo de e4."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O": {
+  "en": "Bc2 hits e4; Black's sharpest reply is ...Nxf2 (the Dilworth).",
+  "es": "Ac2 ataca e4; la respuesta más aguda de las negras es ...Cxf2 (la Dilworth)."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O Bc2 Nxf2": {
+  "en": "Rxf2: take the knight; ...f6 opens the f-file.",
+  "es": "Txf2: toma el caballo; ...f6 abre la columna f."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O Bc2 Nxf2 Rxf2 f6": {
+  "en": "exf6: open the position before Black's pieces take over.",
+  "es": "exf6: abre la posición antes de que las piezas negras se impongan."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O Bc2 Nxf2 Rxf2 f6 exf6 Bxf2+": {
+  "en": "Kxf2: White has two minor pieces for rook and pawn.",
+  "es": "Rxf2: las blancas tienen dos piezas menores por torre y peón."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O Bc2 Nxf2 Rxf2 f6 exf6 Bxf2+ Kxf2 Qxf6": {
+  "en": "Nf1: the knight heads for g3 and the king tucks in. Then Be3 and Qd2.",
+  "es": "Cf1: el caballo va hacia g3 y el rey se resguarda. Después Ae3 y Dd2."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O Bc2 Nxf2 Rxf2 f6 exf6 Bxf2+ Kxf2 Qxf6 Nf1": {
+  "en": "After ...Ne5 Be3 Rae8 Bc5: White's pieces untangle. The two pieces are slightly better than rook and pawn.",
+  "es": "Tras ...Ce5 Ae3 Tae8 Ac5: las piezas blancas se desenredan. Las dos piezas son algo mejores que torre y peón."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O Bc2 Nxf2 Rxf2 f6 exf6 Qxf6 Qf1": {
+  "en": "Qf1 covers f2 and the f-file. White is better.",
+  "es": "Df1 cubre f2 y la columna f. Las blancas están mejor."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O Bc2 Nxf2 Rxf2 Bxf2+ Kxf2 f6 exf6 Qxf6 Nf1": {
+  "en": "The same Dilworth structure: Be3, Ng3 and Qd2. Slightly better for White.",
+  "es": "La misma estructura Dilworth: Ae3, Cg3 y Dd2. Algo mejor para las blancas."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O Bc2 f5 Nb3": {
+  "en": "Nb3 hits the c5-bishop; after ...Ba7, Nfd4 blockades. White is better.",
+  "es": "Cb3 ataca al alfil de c5; tras ...Aa7, Cfd4 bloquea. Las blancas están mejor."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 Nxd2 Bxd2 O-O Re1": {
+  "en": "The e4-knight is gone; Bc2 and Qd3 aim at the king. White is better.",
+  "es": "El caballo de e4 ha desaparecido; Ac2 y Dd3 apuntan al rey. Las blancas están mejor."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 Nxf2": {
+  "en": "...Nxf2 before castling is premature: Rxf2 Bxf2+ Kxf2 and Black lacks the usual play. White is clearly better.",
+  "es": "...Cxf2 antes de enrocar es prematuro: Txf2 Axf2+ Rxf2 y a las negras les falta el juego habitual. Las blancas están claramente mejor."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Be7": {
+  "en": "...Be7: the solid main line. Nbd2 challenges e4.",
+  "es": "...Ae7: la línea principal sólida. Cbd2 desafía e4."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Be7 Nbd2 Nc5": {
+  "en": "Bc2: keep the bishop; ...d4 is Black's active reply.",
+  "es": "Ac2: conserva el alfil; ...d4 es la respuesta activa de las negras."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Be7 Nbd2 Nc5 Bc2 d4": {
+  "en": "Nb3 hits the c5-knight and d4.",
+  "es": "Cb3 ataca al caballo de c5 y a d4."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Be7 Nbd2 Nc5 Bc2 d4 Nb3 d3 Bb1": {
+  "en": "After ...Nxb3 axb3: the d3-pawn is advanced but will be a target. Slightly better for White.",
+  "es": "Tras ...Cxb3 axb3: el peón de d3 está avanzado pero será un objetivo. Algo mejor para las blancas."
+ },
+ "d4 b5 Bb3 d5 dxe5 Be6 c3 Be7 Nbd2 O-O Bc2 f5 Nb3": {
+  "en": "Nfd4 (or Nbd4) blockades on d4. White is better.",
+  "es": "Cfd4 (o Cbd4) bloquea en d4. Las blancas están mejor."
+ },
+ "d4 b5 Bb3 exd4": {
+  "en": "Re1 pins the e4-knight.",
+  "es": "Te1 clava el caballo de e4."
+ },
+ "d4 b5 Bb3 exd4 Re1 d5": {
+  "en": "Nc3! hits the pinned knight a second time.",
+  "es": "¡Cc3! ataca por segunda vez al caballo clavado."
+ },
+ "d4 b5 Bb3 exd4 Re1 d5 Nc3 dxc3": {
+  "en": "Bxd5: the e4-knight falls next. White is winning.",
+  "es": "Axd5: después cae el caballo de e4. Las blancas van ganando."
+ },
+ "d4 b5 Bb3 exd4 Re1 d5 Nc3 dxc3 Bxd5": {
+  "en": "After ...Bb7 Bxe4 Be7 Qe2, Black's king is stuck in the centre. White is winning.",
+  "es": "Tras ...Ab7 Axe4 Ae7 De2, el rey negro queda atrapado en el centro. Las blancas van ganando."
+ },
+ "d4 b5 Bb3 exd4 Re1 f5": {
+  "en": "Bd5! hits c6 and e4; Nxd4 follows. White is winning.",
+  "es": "¡Ad5! ataca c6 y e4; sigue Cxd4. Las blancas van ganando."
+ },
+ "d4 b5 Bb3 d6": {
+  "en": "...d6? Bd5! and the e4-knight is in trouble. White is winning.",
+  "es": "¿...d6? ¡Ad5! y el caballo de e4 está en apuros. Las blancas van ganando."
+ },
+ "d4 b5 Bb3 d6 dxe5 dxe5": {
+  "en": "Qd5! threatens Qxf7# and Qxe4. White is winning.",
+  "es": "¡Dd5! amenaza Dxf7# y Dxe4. Las blancas van ganando."
+ },
+ "d4 exd4": {
+  "en": "...exd4? Re1! pins the e4-knight.",
+  "es": "¿...exd4? ¡Te1! clava el caballo de e4."
+ },
+ "d4 exd4 Re1 d5": {
+  "en": "Nxd4: White's pieces pour in.",
+  "es": "Cxd4: las piezas blancas entran en juego."
+ },
+ "d4 exd4 Re1 d5 Nxd4 Bd6": {
+  "en": "Nxc6: the Riga variation, sharp but forced.",
+  "es": "Cxc6: la variante Riga, aguda pero forzada."
+ },
+ "d4 exd4 Re1 d5 Nxd4 Bd6 Nxc6 Bxh2+": {
+  "en": "Kh1 (not Kxh2?, Qh4+): keep calm.",
+  "es": "Rh1 (no ¿Rxh2?, Dh4+): mantén la calma."
+ },
+ "d4 exd4 Re1 d5 Nxd4 Bd6 Nxc6 Bxh2+ Kh1 Qh4": {
+  "en": "Rxe4+! breaks the attack.",
+  "es": "¡Txe4+! rompe el ataque."
+ },
+ "d4 exd4 Re1 d5 Nxd4 Bd6 Nxc6 Bxh2+ Kh1 Qh4 Rxe4+ dxe4": {
+  "en": "Qd8+! forces the queens off.",
+  "es": "¡Dd8+! fuerza el cambio de damas."
+ },
+ "d4 exd4 Re1 d5 Nxd4 Bd6 Nxc6 Bxh2+ Kh1 Qh4 Rxe4+ dxe4 Qd8+ Qxd8": {
+  "en": "Nxd8+ and then Kxh2.",
+  "es": "Cxd8+ y después Rxh2."
+ },
+ "d4 exd4 Re1 d5 Nxd4 Bd6 Nxc6 Bxh2+ Kh1 Qh4 Rxe4+ dxe4 Qd8+ Qxd8 Nxd8+ Kxd8": {
+  "en": "Kxh2: White comes out with the better endgame.",
+  "es": "Rxh2: las blancas salen con el mejor final."
+ },
+ "d4 exd4 Re1 d5 Nxd4 Bd6 Nxc6 Bxh2+ Kh1 Qh4 Rxe4+ dxe4 Qd8+ Qxd8 Nxd8+ Kxd8 Kxh2 Be6": {
+  "en": "c3, Be3 and Nd2: White's pieces are better. Clearly better for White.",
+  "es": "c3, Ae3 y Cd2: las piezas blancas son mejores. Claramente mejor para las blancas."
+ },
+ "d4 exd4 Re1 d5 Nxd4 Bd6 Nxc6 Bxh2+ Kh1 Qh4 Rxe4+ dxe4 Qd8+ Qxd8 Nxd8+ Kxd8 Kxh2 Be6 c3": {
+  "en": "Be3, Nd2–b3 and Bxe6: Black's e4-pawn is weak. White is clearly better.",
+  "es": "Ae3, Cd2–b3 y Axe6: el peón negro de e4 es débil. Las blancas están claramente mejor."
+ },
+ "d4 exd4 Re1 d5 Nxd4 Bd7": {
+  "en": "Bxc6! Bxc6 Nxc6 and the e4-knight is lost after f3. White is winning.",
+  "es": "¡Axc6! Axc6 Cxc6 y el caballo de e4 se pierde tras f3. Las blancas van ganando."
+ },
+ "d4 exd4 Re1 d5 Nxd4 Bc5 Bxc6+ bxc6 f3 Qf6": {
+  "en": "c3 (or fxe4): the e4-knight falls. White is winning.",
+  "es": "c3 (o fxe4): cae el caballo de e4. Las blancas van ganando."
+ },
+ "d4 d5": {
+  "en": "...d5? Nxe5! and Nxf7 tricks.",
+  "es": "¿...d5? ¡Cxe5! y trucos con Cxf7."
+ },
+ "d4 d5 Nxe5 Bd7 Nxf7": {
+  "en": "...Kxf7 Qh5+ g6 Qxd5+: White wins material. White is winning.",
+  "es": "...Rxf7 Dh5+ g6 Dxd5+: las blancas ganan material. Las blancas van ganando."
+ },
+ "d4 Be7 Re1 d5": {
+  "en": "Nxe5: the e4-knight is pinned and e5 falls. White is clearly better.",
+  "es": "Cxe5: el caballo de e4 está clavado y e5 cae. Las blancas están claramente mejor."
  }
 }
