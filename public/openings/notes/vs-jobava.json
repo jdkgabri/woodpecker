@@ -18,5 +18,145 @@
  "": {
   "en": "Against 2.Nc3 and Bf4, cover b5 and c7: ...Nf6 with ...c6 or ...a6, and ...Bf5 or ...e6.",
   "es": "Contra 2.Cc3 y Af4, cubre b5 y c7: ...Cf6 con ...c6 o ...a6, y ...Af5 o ...e6."
+ },
+ "Nf6 Bf4": {
+  "en": "The Jobava setup. ...Bf5 develops; ...c6 or ...a6 will cover b5.",
+  "es": "El esquema Jobava. ...Af5 desarrolla; ...c6 o ...a6 cubrirán b5."
+ },
+ "Nf6 Bf4 Bf5 e3": {
+  "en": "...c6 covers b5 and d5.",
+  "es": "...c6 cubre b5 y d5."
+ },
+ "Nf6 Bf4 Bf5 e3 c6 f3": {
+  "en": "f3 prepares g4 against the f5-bishop. ...e6 gives it a retreat to g6.",
+  "es": "f3 prepara g4 contra el alfil de f5. ...e6 le da una retirada a g6."
+ },
+ "Nf6 Bf4 Bf5 e3 c6 f3 e6 g4": {
+  "en": "...Bg6.",
+  "es": "...Ag6."
+ },
+ "Nf6 Bf4 Bf5 e3 c6 f3 e6 g4 Bg6 h4": {
+  "en": "h4 threatens h5 trapping the bishop: ...h6 gives it h7.",
+  "es": "h4 amenaza h5 atrapando al alfil: ...h6 le da h7."
+ },
+ "Nf6 Bf4 Bf5 e3 c6 f3 e6 g4 Bg6 h4 h6 Bd3": {
+  "en": "...Bxd3 trades the bishops.",
+  "es": "...Axd3 cambia los alfiles."
+ },
+ "Nf6 Bf4 Bf5 e3 c6 f3 e6 g4 Bg6 h4 h6 Bd3 Bxd3 Qxd3": {
+  "en": "...a6, then ...c5 and ...Nc6: queenside play while White castles long.",
+  "es": "...a6, y después ...c5 y ...Cc6: juego en el flanco de dama mientras las blancas enrocan largo."
+ },
+ "Nf6 Bf4 Bf5 e3 c6 f3 e6 g4 Bg6 h4 h6 Bd3 Bxd3 Qxd3 a6": {
+  "en": "After Nge2 c5 O-O-O Nc6, ...c4 and ...b5: a race. White has kingside space and is a bit better.",
+  "es": "Tras Cge2 c5 O-O-O Cc6, ...c4 y ...b5: una carrera. Las blancas tienen espacio en el flanco de rey y están algo mejor."
+ },
+ "Nf6 Bf4 Bf5 e3 c6 Bd3": {
+  "en": "...e6: if Bxf5 exf5, Black's structure is solid and e4 is controlled. Equal.",
+  "es": "...e6: si Axf5 exf5, la estructura negra es sólida y controla e4. Igualdad."
+ },
+ "Nf6 Bf4 Bf5 e3 c6 Bd3 e6": {
+  "en": "After Bxf5 exf5: ...g6, ...Bg7 and ...O-O, or ...Bd6. Equal.",
+  "es": "Tras Axf5 exf5: ...g6, ...Ag7 y ...O-O, o ...Ad6. Igualdad."
+ },
+ "Nf6 Bf4 Bf5 e3 c6 Nf3": {
+  "en": "...e6 and ...Bd6 or ...Nbd7.",
+  "es": "...e6 y ...Ad6 o ...Cbd7."
+ },
+ "Nf6 Bf4 Bf5 e3 c6 Nf3 e6 Bd3 a6": {
+  "en": "If Bxf5 exf5: ...Bd6 trades the f4-bishop. Equal.",
+  "es": "Si Axf5 exf5: ...Ad6 cambia el alfil de f4. Igualdad."
+ },
+ "Nf6 Bf4 Bf5 f3": {
+  "en": "f3 and g4 at once: ...e6 so the bishop can go to g6.",
+  "es": "f3 y g4 de inmediato: ...e6 para que el alfil pueda ir a g6."
+ },
+ "Nf6 Bf4 Bf5 f3 e6 g4": {
+  "en": "...Bg6.",
+  "es": "...Ag6."
+ },
+ "Nf6 Bf4 Bf5 f3 e6 g4 Bg6 h4": {
+  "en": "...h6.",
+  "es": "...h6."
+ },
+ "Nf6 Bf4 Bf5 f3 e6 g4 Bg6 h4 h6 e3": {
+  "en": "...a6 (stopping Nb5) and ...c5.",
+  "es": "...a6 (impidiendo Cb5) y ...c5."
+ },
+ "Nf6 Bf4 Bf5 f3 e6 g4 Bg6 h4 h6 e3 a6 Bd3 Bxd3 Qxd3 c5": {
+  "en": "...Nc6 and ...c4 or ...Qb6: Black's queenside play is fast and White's kingside is loose. Slightly better for Black.",
+  "es": "...Cc6 y ...c4 o ...Db6: el juego negro en el flanco de dama es rápido y el flanco de rey blanco está suelto. Algo mejor para las negras."
+ },
+ "Nf6 Bf4 Bf5 Nb5": {
+  "en": "Nb5 threatens Nxc7+: ...Na6 covers c7.",
+  "es": "Cb5 amenaza Cxc7+: ...Ca6 cubre c7."
+ },
+ "Nf6 Bf4 Bf5 Nb5 Na6 e3": {
+  "en": "...c6 kicks the knight back.",
+  "es": "...c6 devuelve al caballo."
+ },
+ "Nf6 Bf4 Bf5 Nb5 Na6 e3 c6 Nc3": {
+  "en": "...e6; the knight on a6 returns via c7 or b4. Equal.",
+  "es": "...e6; el caballo de a6 vuelve por c7 o b4. Igualdad."
+ },
+ "Nf6 Bf4 Bf5 Nb5 Na6 e3 c6 Nc3 e6 Bxa6 bxa6": {
+  "en": "...Qb6 and ...c5 use the open b-file; the doubled a-pawns don't matter much. Equal.",
+  "es": "...Db6 y ...c5 aprovechan la columna b abierta; los peones a doblados no importan mucho. Igualdad."
+ },
+ "Nf6 Bf4 Bf5 Nf3": {
+  "en": "...c6 and ...e6: a solid Slav setup.",
+  "es": "...c6 y ...e6: un sólido esquema Eslavo."
+ },
+ "Nf6 Bf4 Bf5 Nf3 c6 e3": {
+  "en": "...e6, then ...Bd6 or ...Nbd7.",
+  "es": "...e6, y después ...Ad6 o ...Cbd7."
+ },
+ "Nf6 Bf4 Bf5 Nf3 c6 e3 e6 Bd3 a6": {
+  "en": "If Bxf5 exf5, ...Bd6 trades bishops and ...O-O. Equal.",
+  "es": "Si Axf5 exf5, ...Ad6 cambia alfiles y ...O-O. Igualdad."
+ },
+ "Nf6 Bg5": {
+  "en": "Bg5: ...Bf5 (or ...Ne4).",
+  "es": "Ag5: ...Af5 (o ...Ce4)."
+ },
+ "Nf6 Bg5 Bf5 Bxf6": {
+  "en": "...exf6: the bishop pair and an easy game.",
+  "es": "...exf6: la pareja de alfiles y un juego fácil."
+ },
+ "Nf6 Bg5 Bf5 Bxf6 exf6 e3 c6": {
+  "en": "...Bd6 and ...O-O: Black's bishops are good. Equal.",
+  "es": "...Ad6 y ...O-O: los alfiles negros son buenos. Igualdad."
+ },
+ "Nf6 Bg5 Bf5 f3": {
+  "en": "f3 prepares e4: ...c6 and ...Nbd7, ...h6.",
+  "es": "f3 prepara e4: ...c6 y ...Cbd7, ...h6."
+ },
+ "Nf6 Bg5 Bf5 e3 c6": {
+  "en": "...Nbd7 and ...e6; ...Qb6 against b2. Equal.",
+  "es": "...Cbd7 y ...e6; ...Db6 contra b2. Igualdad."
+ },
+ "Nf6 Nf3": {
+  "en": "Nf3: ...Bf5 and ...c6, ...e6.",
+  "es": "Cf3: ...Af5 y ...c6, ...e6."
+ },
+ "Nf6 Nf3 Bf5 Bf4": {
+  "en": "...c6 and ...e6: the solid setup.",
+  "es": "...c6 y ...e6: el esquema sólido."
+ },
+ "Nf6 Nf3 Bf5 Bg5": {
+  "en": "...c6 and ...Nbd7; ...Ne4 can trade a minor piece.",
+  "es": "...c6 y ...Cbd7; ...Ce4 puede cambiar una pieza menor."
+ },
+ "Nf6 Nf3 Bf5 e3 c6 Bd3 e6": {
+  "en": "...Bxd3 or ...Bg6; ...Bd6 and ...O-O. Equal.",
+  "es": "...Axd3 o ...Ag6; ...Ad6 y ...O-O. Igualdad."
+ },
+ "Nf6 e4": {
+  "en": "e4: a Blackmar-Diemer by transposition. ...dxe4 and keep the pawn with ...Bf5.",
+  "es": "e4: un Blackmar-Diemer por transposición. ...dxe4 y conserva el peón con ...Af5."
+ },
+ "Nf6 e4 dxe4 f3": {
+  "en": "...Bf5: the same as in the BDG lines.",
+  "es": "...Af5: lo mismo que en las líneas del Blackmar-Diemer."
  }
 }

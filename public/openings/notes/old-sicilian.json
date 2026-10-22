@@ -18,5 +18,89 @@
  "": {
   "en": "The Old Sicilian (Löwenthal-style): ...e5 kicks the knight at once. Black must be careful about the d5-square and the b5-knight jump.",
   "es": "La Siciliana Antigua (estilo Löwenthal): ...e5 echa al caballo de inmediato. Las negras deben cuidar la casilla d5 y el salto del caballo a b5."
+ },
+ "Nb5": {
+  "en": "Nb5 eyes d6: ...a6 kicks it at once.",
+  "es": "Cb5 apunta a d6: ...a6 lo echa de inmediato."
+ },
+ "Nb5 a6 Nd6+": {
+  "en": "...Bxd6: Black gives the bishop pair but gains time with ...Qe7.",
+  "es": "...Axd6: las negras ceden la pareja de alfiles pero ganan tiempo con ...De7."
+ },
+ "Nb5 a6 Nd6+ Bxd6 Qxd6 Qe7 Qxe7+": {
+  "en": "...Ngxe7: queens off, and Black's development is easy. ...d5 is the freeing move.",
+  "es": "...Cgxe7: sin damas, y el desarrollo negro es fácil. ...d5 es la jugada liberadora."
+ },
+ "Nb5 a6 Nd6+ Bxd6 Qxd6 Qe7 Qxe7+ Ngxe7 Nc3": {
+  "en": "...d5! breaks open the centre before White's bishops come to life.",
+  "es": "¡...d5! abre el centro antes de que los alfiles blancos cobren vida."
+ },
+ "Nb5 a6 Nd6+ Bxd6 Qxd6 Qe7 Qxe7+ Ngxe7 Nc3 d5": {
+  "en": "After Bd2 Be6 exd5 Nxd5: active pieces against the bishop pair. White slightly better.",
+  "es": "Tras Ad2 Ae6 exd5 Cxd5: piezas activas contra la pareja de alfiles. Las blancas algo mejor."
+ },
+ "Nb5 a6 Nd6+ Bxd6 Qxd6 Qe7 Qd1": {
+  "en": "Qd1 keeps the queens: ...d6, ...Nf6 and ...Be6. Watch the d5-square.",
+  "es": "Dd1 mantiene las damas: ...d6, ...Cf6 y ...Ae6. Vigila la casilla d5."
+ },
+ "Nb5 a6 Nd6+ Bxd6 Qxd6 Qe7 Qd1 d6": {
+  "en": "After Nc3 Be6 Nd5 Qd8, c4 and Be3: White's bishops and the d5-outpost give an edge.",
+  "es": "Tras Cc3 Ae6 Cd5 Dd8, c4 y Ae3: los alfiles blancos y el puesto avanzado de d5 dan ventaja."
+ },
+ "Nb5 a6 Nd6+ Bxd6 Qxd6 Qe7 Qc7": {
+  "en": "Qc7 looks active but hits nothing important: ...d5! and after Qxe7+ Ngxe7 Black is comfortable. Equal.",
+  "es": "Dc7 parece activa pero no ataca nada importante: ¡...d5! y tras Dxe7+ Cgxe7 las negras están cómodas. Igualdad."
+ },
+ "Nb5 a6 Nd6+ Bxd6 Qxd6 Qe7 Qc7 d5 Qxe7+": {
+  "en": "...Ngxe7: the same endgame idea, and Black's centre is fine.",
+  "es": "...Cgxe7: la misma idea de final, y el centro negro está bien."
+ },
+ "Nb5 a6 Nd6+ Bxd6 Qxd6 Qe7 Qc7 d5 Qxe7+ Ngxe7": {
+  "en": "Castle, ...Be6 and ...Rfd8: Black's development makes up for the bishop pair. Equal.",
+  "es": "Enroque, ...Ae6 y ...Tfd8: el desarrollo negro compensa la pareja de alfiles. Igualdad."
+ },
+ "Nxc6": {
+  "en": "Nxc6: ...bxc6 builds a solid centre that controls d5.",
+  "es": "Cxc6: ...bxc6 levanta un centro sólido que controla d5."
+ },
+ "Nxc6 bxc6 Nc3": {
+  "en": "...d6, ...Nf6 and ...Be7.",
+  "es": "...d6, ...Cf6 y ...Ae7."
+ },
+ "Nxc6 bxc6 Nc3 d6 Bc4": {
+  "en": "Bc4 eyes f7: ...Nf6 and ...Be7, then castle.",
+  "es": "Ac4 apunta a f7: ...Cf6 y ...Ae7, y después enroque."
+ },
+ "Nxc6 bxc6 Bc4": {
+  "en": "...d6 and ...Nf6; ...Be6 can trade the c4-bishop.",
+  "es": "...d6 y ...Cf6; ...Ae6 puede cambiar el alfil de c4."
+ },
+ "Nxc6 bxc6 Bd3 d6 O-O a6": {
+  "en": "Against f4: ...Nf6 and ...Be7. White has a small edge with the f-file pressure.",
+  "es": "Contra f4: ...Cf6 y ...Ae7. Las blancas tienen una pequeña ventaja con la presión en la columna f."
+ },
+ "Nb3": {
+  "en": "Nb3 retreats: ...a6 (stopping Bb5) and ...Nf6.",
+  "es": "Cb3 se retira: ...a6 (impidiendo Ab5) y ...Cf6."
+ },
+ "Nb3 a6 Nc3": {
+  "en": "...Nf6, ...Bb4 or ...d6: comfortable development.",
+  "es": "...Cf6, ...Ab4 o ...d6: desarrollo cómodo."
+ },
+ "Nf3": {
+  "en": "Nf3 retreats: ...Nf6 hits e4.",
+  "es": "Cf3 se retira: ...Cf6 ataca e4."
+ },
+ "Nf3 Nf6 Nc3": {
+  "en": "...a6 stops Bb5, then ...Bc5 or ...Bb4.",
+  "es": "...a6 impide Ab5, y después ...Ac5 o ...Ab4."
+ },
+ "Nf3 Nf6 Nc3 a6 Bg5 Bc5": {
+  "en": "After Bc4 d6 O-O h6 Bxf6 Qxf6 Nd5 Qd8: the d5-knight is strong, but Black is solid. Equal.",
+  "es": "Tras Ac4 d6 O-O h6 Axf6 Dxf6 Cd5 Dd8: el caballo de d5 es fuerte, pero las negras están sólidas. Igualdad."
+ },
+ "Nf3 Nf6 Nc3 a6 Bc4 Bc5": {
+  "en": "...d6 and ...h6; the d5-square is the battleground. Equal.",
+  "es": "...d6 y ...h6; la casilla d5 es el campo de batalla. Igualdad."
  }
 }

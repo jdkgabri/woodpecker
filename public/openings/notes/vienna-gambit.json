@@ -18,5 +18,101 @@
  "": {
   "en": "The Vienna Gambit proper: f4 against ...Nf6.",
   "es": "El Gambito Vienés propiamente dicho: f4 contra ...Cf6."
+ },
+ "exf4": {
+  "en": "...exf4? e5! kicks the knight and White gets a big centre. White is clearly better.",
+  "es": "¿...exf4? ¡e5! echa al caballo y las blancas obtienen un gran centro. Las blancas están claramente mejor."
+ },
+ "exf4 e5 Ng8": {
+  "en": "Nf3, d4 and Bxf4: White wins the pawn back with a huge lead in development.",
+  "es": "Cf3, d4 y Axf4: las blancas recuperan el peón con una enorme ventaja de desarrollo."
+ },
+ "exf4 e5 Ng8 Nf3 d6": {
+  "en": "d4 builds the centre; Bxf4 later.",
+  "es": "d4 construye el centro; más tarde Axf4."
+ },
+ "exf4 e5 Ng8 Nf3 d6 d4 dxe5": {
+  "en": "Qe2! (or dxe5 Qxd1+) and Bxf4: White regains the pawn and leads in development.",
+  "es": "¡De2! (o dxe5 Dxd1+) y Axf4: las blancas recuperan el peón y van adelantadas en desarrollo."
+ },
+ "exf4 e5 Ng8 Nf3 d6 d4 Bg4": {
+  "en": "Bxf4: White has the pawn back, the centre and quick development. Clearly better.",
+  "es": "Axf4: las blancas han recuperado el peón y tienen el centro y un desarrollo rápido. Claramente mejor."
+ },
+ "exf4 e5 Qe7 Qe2 Ng8": {
+  "en": "d4, Nf3 and Bxf4: White is far ahead.",
+  "es": "d4, Cf3 y Axf4: las blancas van muy por delante."
+ },
+ "exf4 e5 Qe7 Qe2 Ng8 d4 d6 Bxf4": {
+  "en": "Nf3, Ne4 and O-O-O: Black is badly behind in development. White is winning.",
+  "es": "Cf3, Ce4 y O-O-O: las negras van muy retrasadas en desarrollo. Las blancas van ganando."
+ },
+ "exf4 e5 Qe7 Qe2 Ng8 d4 Nc6 Nf3 d6": {
+  "en": "Nd5! hits the queen and c7. White is winning.",
+  "es": "¡Cd5! ataca a la dama y c7. Las blancas van ganando."
+ },
+ "exf4 e5 Qe7 Qe2 Ng8 d4 g5": {
+  "en": "Nd5! Qd8 Nf6+: the knight dominates and h4 opens the kingside. White is winning.",
+  "es": "¡Cd5! Dd8 Cf6+: el caballo domina y h4 abre el flanco de rey. Las blancas van ganando."
+ },
+ "d6": {
+  "en": "...d6: Nf3, then fxe5 opens the f-file.",
+  "es": "...d6: Cf3, y después fxe5 abre la columna f."
+ },
+ "d6 Nf3 Nc6": {
+  "en": "fxe5 dxe5 and Bb5 or Bc4: active pieces for White.",
+  "es": "fxe5 dxe5 y Ab5 o Ac4: piezas activas para las blancas."
+ },
+ "d6 Nf3 Nc6 fxe5 dxe5": {
+  "en": "Bb5 pins and hits e5; O-O and d3. White is better.",
+  "es": "Ab5 clava y ataca e5; O-O y d3. Las blancas están mejor."
+ },
+ "d6 Nf3 Bg4": {
+  "en": "d3 (or h3), then Be2 and O-O. White has more space.",
+  "es": "d3 (o h3), y después Ae2 y O-O. Las blancas tienen más espacio."
+ },
+ "d5 fxe5 Nxe4": {
+  "en": "Nf3: Qe2 and d3 to chase the e4-knight.",
+  "es": "Cf3: De2 y d3 para perseguir al caballo de e4."
+ },
+ "d5 fxe5 Nxe4 Nf3 Bg4": {
+  "en": "Qe2 hits the knight; after ...Nxc3 dxc3, Bf4 and O-O-O. White is slightly better.",
+  "es": "De2 ataca al caballo; tras ...Cxc3 dxc3, Af4 y O-O-O. Las blancas algo mejor."
+ },
+ "d5 fxe5 Nxe4 Nf3 Nxc3": {
+  "en": "bxc3: a strong centre with d4 next. White is better.",
+  "es": "bxc3: un centro fuerte con d4 después. Las blancas están mejor."
+ },
+ "Nc6 fxe5 Nxe5": {
+  "en": "d4 drives the knight back.",
+  "es": "d4 echa al caballo."
+ },
+ "Nc6 fxe5 Nxe5 d4 Nc6": {
+  "en": "e5! kicks the other knight too.",
+  "es": "¡e5! echa también al otro caballo."
+ },
+ "Nc6 fxe5 Nxe5 d4 Nc6 e5 Ng8": {
+  "en": "Nf3, Bc4 and O-O: a huge lead in development.",
+  "es": "Cf3, Ac4 y O-O: una enorme ventaja de desarrollo."
+ },
+ "Nc6 fxe5 Nxe5 d4 Nc6 e5 Ng8 Nf3 Bb4": {
+  "en": "d5! hits the knight. If ...Nxe5 Nxe5 Qh4+ g3 Qe4+ Qe2 Qxh1, Ng6+ wins: White is winning.",
+  "es": "¡d5! ataca al caballo. Si ...Cxe5 Cxe5 Dh4+ g3 De4+ De2 Dxh1, Cg6+ gana: las blancas van ganando."
+ },
+ "Nc6 fxe5 Nxe5 d4 Nc6 e5 Qe7": {
+  "en": "Be2 blocks the pin and renews e5xf6. After ...Ng8 Nf3, White is winning.",
+  "es": "Ae2 tapa la clavada y renueva la amenaza exf6. Tras ...Cg8 Cf3, las blancas van ganando."
+ },
+ "Nc6 fxe5 Nxe5 d4 Ng6": {
+  "en": "e5 kicks the f6-knight.",
+  "es": "e5 echa al caballo de f6."
+ },
+ "Nc6 fxe5 Nxe5 d4 Ng6 e5 Ng8": {
+  "en": "Nf3, Bc4 and O-O: White is clearly better.",
+  "es": "Cf3, Ac4 y O-O: las blancas están claramente mejor."
+ },
+ "Nc6 fxe5 Nxe5 d4 Ng6 e5 Qe7": {
+  "en": "Qe2 breaks the pin; after ...Ng8 Nf3 d5 Nxd5, White is winning.",
+  "es": "De2 deshace la clavada; tras ...Cg8 Cf3 d5 Cxd5, las blancas van ganando."
  }
 }

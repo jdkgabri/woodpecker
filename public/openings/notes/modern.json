@@ -18,5 +18,41 @@
  "d4 Bg7 e5 d6 Bf4": {
   "en": "...dxe5 Bxe5 Bxe5 dxe5 Qxd1+: the queens come off, White can no longer castle and the e5-pawn is weak.",
   "es": "...dxe5 Axe5 Axe5 dxe5 Dxd1+: salen las damas, las blancas ya no pueden enrocar y el peón de e5 es débil."
+ },
+ "d4": {
+  "en": "2.d4: ...Bg7 at once, pressing d4.",
+  "es": "2.d4: ...Ag7 de inmediato, presionando d4."
+ },
+ "d4 Bg7 Nf3": {
+  "en": "Nf3: ...d6, then ...a6 or ...c6 and the flexible setup.",
+  "es": "Cf3: ...d6, y después ...a6 o ...c6 y el esquema flexible."
+ },
+ "d4 Bg7 Nf3 d6 Nc3": {
+  "en": "...c6 (or ...a6) and ...b5: queenside space first, the king's home later.",
+  "es": "...c6 (o ...a6) y ...b5: primero espacio en el flanco de dama, el refugio del rey después."
+ },
+ "d4 Bg7 e5": {
+  "en": "e5 grabs space but blocks nothing: ...d6 hits the pawn at once.",
+  "es": "e5 gana espacio pero no bloquea nada: ...d6 ataca el peón de inmediato."
+ },
+ "d4 Bg7 e5 d6 f4 dxe5 fxe5 c5 c3 a6": {
+  "en": "...c5 undermines d4 and ...a6 stops Bb5+. Black has the better game: White's centre is overextended.",
+  "es": "...c5 socava d4 y ...a6 impide Ab5+. Las negras tienen mejor juego: el centro blanco está sobreextendido."
+ },
+ "d4 Bg7 Nc3": {
+  "en": "Nc3: ...d6, with ...c6 or ...a6 next.",
+  "es": "Cc3: ...d6, con ...c6 o ...a6 después."
+ },
+ "Nf3": {
+  "en": "2.Nf3: ...Bg7; ...d6 next.",
+  "es": "2.Cf3: ...Ag7; después ...d6."
+ },
+ "Nf3 Bg7 d4": {
+  "en": "Back to the main lines: ...d6.",
+  "es": "De vuelta a las líneas principales: ...d6."
+ },
+ "Nf3 Bg7 Bc4": {
+  "en": "Bc4 aims at f7: ...d6 and ...e6 shut the diagonal.",
+  "es": "Ac4 apunta a f7: ...d6 y ...e6 cierran la diagonal."
  }
 }

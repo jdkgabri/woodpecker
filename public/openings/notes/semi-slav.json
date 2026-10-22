@@ -18,5 +18,69 @@
  "cxd5 exd5": {
   "en": "The exchange frees the c8-bishop: ...Bd6, ...O-O and ...Bf5 or ...Re8 give Black an easy, symmetrical game.",
   "es": "El cambio libera el alfil de c8: ...Ad6, ...O-O y ...Af5 o ...Te8 dan a las negras un juego fácil y simétrico."
+ },
+ "Bg5": {
+  "en": "Bg5 pins the f6-knight. ...Nbd7 is solid (...h6 and ...dxc4, the Moscow and Anti-Moscow, are sharper).",
+  "es": "Ag5 clava el caballo de f6. ...Cbd7 es sólida (...h6 y ...dxc4, la Moscú y la Anti-Moscú, son más agudas)."
+ },
+ "Bg5 Nbd7 e3": {
+  "en": "...dxc4 Bxc4 b5: a Meran structure, but with White's bishop already on g5. ...Be7 is a calmer alternative.",
+  "es": "...dxc4 Axc4 b5: una estructura Merano, pero con el alfil blanco ya en g5. ...Ae7 es una alternativa más tranquila."
+ },
+ "Bg5 Nbd7 e3 dxc4 Bxc4": {
+  "en": "...b5 gains time on the bishop.",
+  "es": "...b5 gana tiempo sobre el alfil."
+ },
+ "Bg5 Nbd7 e3 dxc4 Bxc4 b5 Bd3": {
+  "en": "...Be7 is the safest (it breaks the pin); then ...Bb7, ...a6 and ...c5.",
+  "es": "...Ae7 es lo más seguro (deshace la clavada); después ...Ab7, ...a6 y ...c5."
+ },
+ "Bg5 Nbd7 e3 dxc4 Bxc4 b5 Bd3 Bd6": {
+  "en": "...Bd6 leaves the f6-knight pinned: O-O, Rc1 and e4 give White a clear edge. Next time prefer ...Be7.",
+  "es": "...Ad6 deja clavado el caballo de f6: O-O, Tc1 y e4 dan a las blancas una ventaja clara. La próxima vez, mejor ...Ae7."
+ },
+ "Bg5 Nbd7 e3 dxc4 Bxc4 b5 Bb3": {
+  "en": "...a6 and ...c5, or ...Be7 first. White is a little better.",
+  "es": "...a6 y ...c5, o primero ...Ae7. Las blancas algo mejor."
+ },
+ "Bg5 Nbd7 e3 dxc4 Bxc4 b5 Bb3 a6": {
+  "en": "After O-O, ...c5 frees the game; ...Bb7 and ...Be7 follow. White is slightly better.",
+  "es": "Tras O-O, ...c5 libera el juego; siguen ...Ab7 y ...Ae7. Las blancas algo mejor."
+ },
+ "Bg5 Nbd7 e3 dxc4 Bxc4 b5 Be2 a6": {
+  "en": "...Bb7 and ...c5 against Rc1. Slightly better for White.",
+  "es": "...Ab7 y ...c5 contra Tc1. Algo mejor para las blancas."
+ },
+ "Bg5 Nbd7 cxd5 exd5 e3 Bd6 Bd3 a6": {
+  "en": "If Qc2 h6 Bh4, ...Be7 and ...Nb6–e4 (White may castle long). Slightly better for White.",
+  "es": "Si Dc2 h6 Ah4, ...Ae7 y ...Cb6–e4 (las blancas pueden enrocar largo). Algo mejor para las blancas."
+ },
+ "e3": {
+  "en": "e3: ...Nbd7, and after Bd3, ...dxc4 Bxc4 b5: the Meran.",
+  "es": "e3: ...Cbd7, y tras Ad3, ...dxc4 Axc4 b5: la Merano."
+ },
+ "e3 Nbd7 Bd3": {
+  "en": "...dxc4: the Meran starts.",
+  "es": "...dxc4: empieza la Merano."
+ },
+ "e3 Nbd7 Bd3 dxc4 Bxc4": {
+  "en": "...b5 with tempo.",
+  "es": "...b5 ganando tiempo."
+ },
+ "e3 Nbd7 Bd3 dxc4 Bxc4 b5 Bd3": {
+  "en": "...Bd6 (or ...Bb7, ...a6) and then ...c5.",
+  "es": "...Ad6 (o ...Ab7, ...a6) y después ...c5."
+ },
+ "e3 Nbd7 Bd3 dxc4 Bxc4 b5 Bd3 Bd6 O-O a6": {
+  "en": "If e4, ...e5! or ...c5: Black must hit the centre at once. White is slightly better.",
+  "es": "Si e4, ¡...e5! o ...c5: las negras deben golpear el centro de inmediato. Las blancas algo mejor."
+ },
+ "Bf4 dxc4 a4 Nbd7": {
+  "en": "...b5 next; after e3 b5 axb5 cxb5 Nxb5 Bb4+ Black has counterplay. Equal.",
+  "es": "Después ...b5; tras e3 b5 axb5 cxb5 Cxb5 Ab4+ las negras tienen contrajuego. Igualdad."
+ },
+ "cxd5 exd5 Bg5 Nbd7 e3 Bd6 Bd3 a6": {
+  "en": "Against Qc2 and O-O-O: ...h6, ...Be7 and ...Nb6–e4. Slightly better for White.",
+  "es": "Contra Dc2 y O-O-O: ...h6, ...Ae7 y ...Cb6–e4. Algo mejor para las blancas."
  }
 }

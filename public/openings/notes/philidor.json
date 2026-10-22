@@ -18,5 +18,57 @@
  "h3 Nf6 Bc4": {
   "en": "Without Nc3, e4 is unprotected: ...Nxe4!",
   "es": "Sin Cc3, e4 está sin defender: ¡...Cxe4!"
+ },
+ "Bc4": {
+  "en": "Bc4 aims at f7. ...Nf6 develops and hits e4; ...Be7 and ...O-O follow.",
+  "es": "Ac4 apunta a f7. ...Cf6 desarrolla y ataca e4; siguen ...Ae7 y ...O-O."
+ },
+ "Bc4 Nf6 d3": {
+  "en": "d3: quiet. ...Be7, ...O-O, ...c6 and ...d5 or ...Re8 and ...Bf8.",
+  "es": "d3: tranquilo. ...Ae7, ...O-O, ...c6 y ...d5 o ...Te8 y ...Af8."
+ },
+ "Bc4 Nf6 Ng5": {
+  "en": "Ng5 hits f7: ...d5! blocks the bishop's diagonal and opens lines.",
+  "es": "Cg5 ataca f7: ¡...d5! corta la diagonal del alfil y abre líneas."
+ },
+ "Bc4 Nf6 Ng5 d5 exd5": {
+  "en": "...h6 kicks the knight; Black gets quick development for the pawn.",
+  "es": "...h6 echa al caballo; las negras obtienen un desarrollo rápido a cambio del peón."
+ },
+ "Bc4 Nf6 Ng5 d5 exd5 h6": {
+  "en": "After Nf3 e4 Ne5 Bd6 and d4 exd3: Black regains the pawn with active pieces. Equal.",
+  "es": "Tras Cf3 e4 Ce5 Ad6 y d4 exd3: las negras recuperan el peón con piezas activas. Igualdad."
+ },
+ "Bc4 Nf6 Nc3": {
+  "en": "Nc3 defends e4. ...Be7 and ...O-O; ...c6 and ...b5 can chase the bishop.",
+  "es": "Cc3 defiende e4. ...Ae7 y ...O-O; ...c6 y ...b5 pueden perseguir al alfil."
+ },
+ "d4": {
+  "en": "3.d4: ...exd4 releases the tension and frees the pieces.",
+  "es": "3.d4: ...exd4 libera la tensión y las piezas."
+ },
+ "d4 exd4 Nxd4": {
+  "en": "...Nf6 hits e4.",
+  "es": "...Cf6 ataca e4."
+ },
+ "d4 exd4 Nxd4 Nf6 Nc3": {
+  "en": "...Be7 and ...O-O; watch for the ...Nxe4 trick if White plays Bg5.",
+  "es": "...Ae7 y ...O-O; atención al truco ...Cxe4 si las blancas juegan Ag5."
+ },
+ "d4 exd4 Nxd4 Nf6 Nc3 Be7 Bc4": {
+  "en": "Castle, then ...Re8, ...Bf8 and ...Nc6 or ...c6: pressure on e4.",
+  "es": "Enroque, y después ...Te8, ...Af8 y ...Cc6 o ...c6: presión sobre e4."
+ },
+ "d4 exd4 Nxd4 Nf6 Nc3 Be7 Bc4 O-O O-O Re8": {
+  "en": "After Bf4, ...Nc6 and ...Ng4 or ...Bf8. White is a bit better, Black solid.",
+  "es": "Tras Af4, ...Cc6 y ...Cg4 o ...Af8. Las blancas algo mejor, las negras sólidas."
+ },
+ "d4 exd4 Nxd4 Nf6 Nc3 Be7 Bg5 Nxe4": {
+  "en": "If Bxe7 Qxe7 Nd5, ...Qe5 and ...Qxb2: Black wins material. Black is better.",
+  "es": "Si Axe7 Dxe7 Cd5, ...De5 y ...Dxb2: las negras ganan material. Las negras están mejor."
+ },
+ "d4 exd4 Qxd4": {
+  "en": "...Nf6 or ...Nc6 gains time on the queen.",
+  "es": "...Cf6 o ...Cc6 gana tiempo sobre la dama."
  }
 }

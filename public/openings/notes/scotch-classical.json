@@ -18,5 +18,113 @@
  "": {
   "en": "Against 4...Bc5, trade on c6 or play Be3 and c3.",
   "es": "Contra 4...Ac5, cambia en c6 o juega Ae3 y c3."
+ },
+ "Nxc6 bxc6": {
+  "en": "...bxc6: Bc4 and O-O, with e5 to kick a knight from f6.",
+  "es": "...bxc6: Ac4 y O-O, con e5 para echar a un caballo de f6."
+ },
+ "Nxc6 bxc6 Bc4 Nf6": {
+  "en": "e5! kicks the knight: it has no good square.",
+  "es": "¡e5! echa al caballo: no tiene buena casilla."
+ },
+ "Nxc6 bxc6 Bc4 Nf6 e5 Ne4": {
+  "en": "Qf3! hits e4 and f7 together.",
+  "es": "¡Df3! ataca e4 y f7 a la vez."
+ },
+ "Nxc6 bxc6 Bc4 Nf6 e5 Ne4 Qf3": {
+  "en": "If ...d5 exd6 Bxf2+ Kf1 Nxd6, Bxf7+! Nxf7 Qxc6+ wins material back with interest. Equal at best for Black.",
+  "es": "Si ...d5 exd6 Axf2+ Rf1 Cxd6, ¡Axf7+! Cxf7 Dxc6+ recupera material con creces. Como mucho, igualdad para las negras."
+ },
+ "Nxc6 bxc6 Bc4 Nf6 e5 Qe7": {
+  "en": "Qe2 holds e5; O-O and Re1 next.",
+  "es": "De2 sostiene e5; después O-O y Te1."
+ },
+ "Nxc6 bxc6 Bc4 Nf6 e5 Qe7 Qe2": {
+  "en": "After ...Nd5 O-O O-O Re1: Black's pawns are weak but the pieces are active. Equal.",
+  "es": "Tras ...Cd5 O-O O-O Te1: los peones negros son débiles pero las piezas están activas. Igualdad."
+ },
+ "Nxc6 bxc6 Bc4 Nf6 e5 Nd5 Bxd5": {
+  "en": "After ...cxd5 Qxd5 the queen hits a8 and c5. White wins a pawn and is clearly better.",
+  "es": "Tras ...cxd5 Dxd5 la dama ataca a8 y c5. Las blancas ganan un peón y están claramente mejor."
+ },
+ "Nxc6 bxc6 Bc4 Nf6 e5 d5": {
+  "en": "...d5? exf6! dxc4 Qxd8+ Kxd8 fxg7: White wins material.",
+  "es": "¿...d5? ¡exf6! dxc4 Dxd8+ Rxd8 fxg7: las blancas ganan material."
+ },
+ "Nxc6 bxc6 Bc4 d6": {
+  "en": "...d6 keeps the e5-square: Qf3 hits f7 and c6.",
+  "es": "...d6 controla e5: Df3 ataca f7 y c6."
+ },
+ "Nxc6 bxc6 Bc4 d6 Qf3 Nf6": {
+  "en": "Be3 offers the trade of dark-squared bishops; Nd2 and O-O. Equal.",
+  "es": "Ae3 ofrece el cambio de alfiles de casillas oscuras; Cd2 y O-O. Igualdad."
+ },
+ "Nxc6 bxc6 Bc4 d6 Qf3 Nf6 Be3": {
+  "en": "After ...Bg4 Qf4 Bxe3 Qxe3 O-O: equal; White's structure is healthier.",
+  "es": "Tras ...Ag4 Df4 Axe3 Dxe3 O-O: igualdad; la estructura blanca es más sana."
+ },
+ "Nxc6 bxc6 Bc4 d6 Qf3 Qf6 c3": {
+  "en": "c3 covers d4 and b4. Be3 and Nd2 next. Equal.",
+  "es": "c3 cubre d4 y b4. Después Ae3 y Cd2. Igualdad."
+ },
+ "Nxc6 bxc6 Bc4 Ne7 Bxf7+": {
+  "en": "Kxf7 Qh5+ and Qxc5: White wins a pawn. Clearly better.",
+  "es": "Rxf7 Dh5+ y Dxc5: las blancas ganan un peón. Claramente mejor."
+ },
+ "Nxc6 bxc6 Bc4 Qf6": {
+  "en": "...Qf6 eyes f2: Qe2 defends and keeps e4.",
+  "es": "...Df6 apunta a f2: De2 defiende y mantiene e4."
+ },
+ "Nxc6 bxc6 Bc4 Qf6 Qe2": {
+  "en": "Then Nc3, Be3 and O-O. Slightly better for White.",
+  "es": "Después Cc3, Ae3 y O-O. Algo mejor para las blancas."
+ },
+ "Nxc6 Qf6": {
+  "en": "...Qf6 threatens ...Qxf2#! Qf3 defends and offers the queen trade.",
+  "es": "¡...Df6 amenaza ...Dxf2 mate! Df3 defiende y ofrece el cambio de damas."
+ },
+ "Nxc6 Qf6 Qf3 Qxc6": {
+  "en": "Nc3: develop and watch the e-file pins.",
+  "es": "Cc3: desarrolla y vigila las clavadas en la columna e."
+ },
+ "Nxc6 Qf6 Qf3 Qxc6 Nc3 Nf6": {
+  "en": "e5! kicks the knight.",
+  "es": "¡e5! echa al caballo."
+ },
+ "Nxc6 Qf6 Qf3 Qxc6 Nc3 Nf6 e5": {
+  "en": "After ...Qxf3 gxf3 Nh5 Nd5, Black's king is stuck. White is better.",
+  "es": "Tras ...Dxf3 gxf3 Ch5 Cd5, el rey negro está atrapado. Las blancas están mejor."
+ },
+ "Nxc6 Qf6 Qf3 Qxc6 Nc3 Bb4": {
+  "en": "Bd2 and O-O-O with h4–h5: White's development lead is big. Clearly better.",
+  "es": "Ad2 y O-O-O con h4–h5: la ventaja de desarrollo blanca es grande. Claramente mejor."
+ },
+ "Nxc6 Qf6 Qf3 dxc6": {
+  "en": "Bc4 and Be3, Nd2: White keeps the better pawn structure.",
+  "es": "Ac4 y Ae3, Cd2: las blancas mantienen la mejor estructura de peones."
+ },
+ "Nxc6 Qf6 Qf3 dxc6 Bc4": {
+  "en": "After ...Qe7 Be3 Nf6 Nd2: slightly better for White.",
+  "es": "Tras ...De7 Ae3 Cf6 Cd2: algo mejor para las blancas."
+ },
+ "Nxc6 Qf6 Qf3 Qxf3": {
+  "en": "gxf3: the doubled f-pawns are not a problem; the g-file opens.",
+  "es": "gxf3: los peones f doblados no son un problema; se abre la columna g."
+ },
+ "Nxc6 Qf6 Qf3 Qxf3 gxf3 dxc6": {
+  "en": "Be3 trades the active c5-bishop.",
+  "es": "Ae3 cambia el activo alfil de c5."
+ },
+ "Nxc6 Qf6 Qf3 Qxf3 gxf3 dxc6 Be3 Bxe3 fxe3": {
+  "en": "The endgame favours White slightly: Nd2, Bc4 and Ke2. Black's c-pawns are doubled.",
+  "es": "El final favorece ligeramente a las blancas: Cd2, Ac4 y Re2. Los peones c negros están doblados."
+ },
+ "Nxc6 dxc6 Qxd8+ Kxd8": {
+  "en": "Bc4 and Be3: the king on d8 has lost castling.",
+  "es": "Ac4 y Ae3: el rey de d8 ha perdido el enroque."
+ },
+ "Nxc6 dxc6 Qxd8+ Kxd8 Bc4 Be6 Bxe6 fxe6 c3": {
+  "en": "Nd2, Ke2 and f4: Black's e-pawns are weak. White is better.",
+  "es": "Cd2, Re2 y f4: los peones e negros son débiles. Las blancas están mejor."
  }
 }

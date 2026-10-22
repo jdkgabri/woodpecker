@@ -18,5 +18,53 @@
  "Nxd5": {
   "en": "Recapturing with the knight gives up the centre. e3, Bd3 and Nf3, followed by e4 at the right moment, give White a free and comfortable game.",
   "es": "Recapturar con el caballo cede el centro. e3, Ad3 y Cf3, seguidos de e4 en el momento justo, dan a las blancas un juego libre y cómodo."
+ },
+ "exd5": {
+  "en": "...exd5: the Carlsbad structure. Bg5 pins the d5-defender.",
+  "es": "...exd5: la estructura Carlsbad. Ag5 clava al defensor de d5."
+ },
+ "exd5 Bg5 Be7": {
+  "en": "e3, Bd3, Qc2 and Nf3 or Nge2: the standard setup.",
+  "es": "e3, Ad3, Dc2 y Cf3 o Cge2: el esquema estándar."
+ },
+ "exd5 Bg5 Be7 e3 O-O": {
+  "en": "Bd3: the bishop aims at h7.",
+  "es": "Ad3: el alfil apunta a h7."
+ },
+ "exd5 Bg5 Be7 e3 O-O Bd3 c6": {
+  "en": "Qc2 stops ...Bf5 and eyes h7. Then Nf3 or Nge2, O-O and the minority attack.",
+  "es": "Dc2 impide ...Af5 y apunta a h7. Después Cf3 o Cge2, O-O y el ataque de minorías."
+ },
+ "exd5 Bg5 Be7 e3 O-O Bd3 h6": {
+  "en": "Bh4 keeps the pin. Qc2, Nge2 and O-O.",
+  "es": "Ah4 mantiene la clavada. Dc2, Cge2 y O-O."
+ },
+ "exd5 Bg5 Be7 e3 c6": {
+  "en": "Bd3, Qc2 and Nf3 or Nge2; Black's ...Bf5 is prevented by Qc2.",
+  "es": "Ad3, Dc2 y Cf3 o Cge2; Dc2 impide ...Af5."
+ },
+ "exd5 Bg5 c6": {
+  "en": "e3 and Bd3, Qc2: same plans.",
+  "es": "e3 y Ad3, Dc2: los mismos planes."
+ },
+ "exd5 Bg5 c6 e3 Be7": {
+  "en": "Bd3, Qc2, Nge2 (or Nf3), O-O; then Rab1 and b4–b5.",
+  "es": "Ad3, Dc2, Cge2 (o Cf3), O-O; después Tab1 y b4–b5."
+ },
+ "Nxd5 e3 Bb4": {
+  "en": "...Bb4 pins: Qc2 unpins and keeps e4 in mind.",
+  "es": "...Ab4 clava: Dc2 deshace la clavada y piensa en e4."
+ },
+ "Nxd5 e3 Bb4 Qc2 O-O": {
+  "en": "Bd3, Nf3 and O-O, then e4 when ready.",
+  "es": "Ad3, Cf3 y O-O, y después e4 cuando esté listo."
+ },
+ "Nxd5 e3 Bb4 Qc2 O-O Bd3": {
+  "en": "If ...h6, a3 asks the bishop; Nge2 or Nf3 and e4. White is better.",
+  "es": "Si ...h6, a3 pregunta al alfil; Cge2 o Cf3 y e4. Las blancas están mejor."
+ },
+ "Nxd5 e3 Nxc3": {
+  "en": "bxc3: White gets a strong centre with c3, d4 and later e4.",
+  "es": "bxc3: las blancas obtienen un centro fuerte con c3, d4 y más tarde e4."
  }
 }

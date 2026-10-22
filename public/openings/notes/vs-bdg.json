@@ -18,5 +18,93 @@
  "": {
   "en": "The Blackmar-Diemer: take the pawn and develop. White's attack is dangerous only if Black ignores development and king safety.",
   "es": "El Blackmar-Diemer: toma el peón y desarrolla. El ataque blanco solo es peligroso si las negras descuidan el desarrollo y la seguridad del rey."
+ },
+ "dxe4 Nc3": {
+  "en": "...Nf6 defends e4.",
+  "es": "...Cf6 defiende e4."
+ },
+ "dxe4 Nc3 Nf6 f3": {
+  "en": "...Bf5: hold e4 with the bishop and develop.",
+  "es": "...Af5: sostén e4 con el alfil y desarrolla."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 fxe4": {
+  "en": "...Nxe4: Black takes back and stays a pawn up.",
+  "es": "...Cxe4: las negras recapturan y siguen con un peón de más."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 fxe4 Nxe4 Qf3": {
+  "en": "Qf3 hits e4 and f5: ...Nxc3 trades and keeps everything.",
+  "es": "Df3 ataca e4 y f5: ...Cxc3 cambia y lo conserva todo."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 fxe4 Nxe4 Qf3 Nxc3 bxc3": {
+  "en": "...e6: the bishop on f5 is defended and Black is a pawn up.",
+  "es": "...e6: el alfil de f5 queda defendido y las negras tienen un peón de más."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 fxe4 Nxe4 Qf3 Nxc3 bxc3 e6": {
+  "en": "If Qxb7, ...Nd7 and ...Rb8 or ...Bd6: Black's development is excellent. Black is better.",
+  "es": "Si Dxb7, ...Cd7 y ...Tb8 o ...Ad6: el desarrollo negro es excelente. Las negras están mejor."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 fxe4 Nxe4 Qf3 Nxc3 Qxf5 e6": {
+  "en": "The knight on c3 is attacked but ...e6 hits the queen first; after Qh3 (or Qf3) Nd5, Black is a pawn up. Better for Black.",
+  "es": "El caballo de c3 está atacado, pero ...e6 ataca antes a la dama; tras Dh3 (o Df3) Cd5, las negras tienen un peón de más. Mejor para las negras."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 fxe4 Nxe4 Nxe4": {
+  "en": "...Bxe4: the bishop is centralised.",
+  "es": "...Axe4: el alfil queda centralizado."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 fxe4 Nxe4 Nxe4 Bxe4 Nf3 e6": {
+  "en": "If Bc4, ...Bd5; ...Be7, ...O-O and ...Nd7. Black is a pawn up and clearly better.",
+  "es": "Si Ac4, ...Ad5; ...Ae7, ...O-O y ...Cd7. Las negras tienen un peón de más y están claramente mejor."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 fxe4 Nxe4 Nf3 e6": {
+  "en": "After Bd3 Nxc3 bxc3 Bxd3 Qxd3: ...Nc6, ...Be7 and ...O-O. Black is a pawn up and better.",
+  "es": "Tras Ad3 Cxc3 bxc3 Axd3 Dxd3: ...Cc6, ...Ae7 y ...O-O. Las negras tienen un peón de más y están mejor."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 Bg5": {
+  "en": "Bg5 pins: ...Nbd7 (or ...e6) defends.",
+  "es": "Ag5 clava: ...Cbd7 (o ...e6) defiende."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 Bg5 Nbd7 Bc4 c6": {
+  "en": "If Qe2, ...exf3 Nxf3 e6: Black is a pawn up and solid. Better for Black.",
+  "es": "Si De2, ...exf3 Cxf3 e6: las negras tienen un peón de más y están sólidas. Mejor para las negras."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 Bg5 Nbd7 Bb5": {
+  "en": "...c6 kicks the bishop, then ...Qb6 hits b2 and d4. Black is clearly better.",
+  "es": "...c6 echa al alfil, y después ...Db6 ataca b2 y d4. Las negras están claramente mejor."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 g4": {
+  "en": "g4 chases the bishop: ...Bg6.",
+  "es": "g4 persigue al alfil: ...Ag6."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 g4 Bg6 g5": {
+  "en": "...Nd5! the knight is fine in the centre.",
+  "es": "¡...Cd5! el caballo está bien en el centro."
+ },
+ "dxe4 Nc3 Nf6 f3 Bf5 g4 Bg6 g5 Nd5 Nxe4 e6": {
+  "en": "...Nc6 and ...Bb4+ or ...Be7: White's pawns on g5 and f3 are loose. Black is better.",
+  "es": "...Cc6 y ...Ab4+ o ...Ae7: los peones blancos de g5 y f3 están sueltos. Las negras están mejor."
+ },
+ "dxe4 Nc3 Nf6 Bg5": {
+  "en": "Bg5 without f3: ...Bf5 and ...Nbd7 or ...e6.",
+  "es": "Ag5 sin f3: ...Af5 y ...Cbd7 o ...e6."
+ },
+ "dxe4 Nc3 Nf6 Bg5 Bf5 Qe2 Nbd7": {
+  "en": "If Qb5, ...e6! and the queen hits nothing. Black is clearly better.",
+  "es": "Si Db5, ¡...e6! y la dama no ataca nada. Las negras están claramente mejor."
+ },
+ "dxe4 f3": {
+  "en": "f3 at once: ...Nf6 (or ...e5!?) and develop.",
+  "es": "f3 de inmediato: ...Cf6 (o ¡?...e5) y desarrolla."
+ },
+ "dxe4 f3 Nf6 Nc3": {
+  "en": "...Bf5: back to the main lines.",
+  "es": "...Af5: de vuelta a las líneas principales."
+ },
+ "dxe4 f3 Nf6 Nc3 Bf5 fxe4": {
+  "en": "...Nxe4 and the usual play.",
+  "es": "...Cxe4 y el juego habitual."
+ },
+ "dxe4 f3 Nf6 Bc4": {
+  "en": "...Nc6! hits d4; after c3 e5, Black takes the centre. Clearly better for Black.",
+  "es": "¡...Cc6! ataca d4; tras c3 e5, las negras toman el centro. Claramente mejor para las negras."
  }
 }
