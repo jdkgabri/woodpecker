@@ -30,5 +30,57 @@
  "Bd3 a6 O-O Be7 Bg5": {
   "en": "Bg5? leaves e4 loose: ...Nxe4!, and if a piece takes on e4, ...Bxg5. Black wins a pawn.",
   "es": "¿Ag5? deja suelto e4: ¡...Cxe4!, y si una pieza toma en e4, ...Axg5. Las negras ganan un peón."
+ },
+ "Bg5": {
+  "en": "...a6 (or ...Be7): control b5.",
+  "es": "...a6 (o ...Ae7): controla b5."
+ },
+ "Bg5 a6 f4": {
+  "en": "...Be7 (or ...Qb6!?).",
+  "es": "...Ae7 (o ¡?...Db6)."
+ },
+ "Bg5 a6 f4 Be7 Qf3": {
+  "en": "...Nc6 (or ...Qc7 and ...Nbd7).",
+  "es": "...Cc6 (o ...Dc7 y ...Cbd7)."
+ },
+ "Bg5 a6 f4 Be7 Qf3 Nc6 O-O-O": {
+  "en": "...Nxd4 and ...Qc7: simplify and counterattack.",
+  "es": "...Cxd4 y ...Dc7: simplifica y contraataca."
+ },
+ "Bg5 a6 f4 Be7 Qf3 Nc6 O-O-O Nxd4 Rxd4": {
+  "en": "...Qc7 and ...h6, ...b5.",
+  "es": "...Dc7 y ...h6, ...b5."
+ },
+ "Bg5 a6 f4 Be7 Qf3 Nc6 O-O-O Nxd4 Rxd4 Qc7": {
+  "en": "After Be2 h6 Bh4: ...b5 and ...Bb7. White is better.",
+  "es": "Tras Ae2 h6 Ah4: ...b5 y ...Ab7. Las blancas están mejor."
+ },
+ "Be3": {
+  "en": "...a6 and ...Be7, ...Nc6.",
+  "es": "...a6 y ...Ae7, ...Cc6."
+ },
+ "Be3 a6 f3": {
+  "en": "...Be7 (or ...b5): the English Attack.",
+  "es": "...Ae7 (o ...b5): el Ataque Inglés."
+ },
+ "Be3 a6 f3 Be7 Qd2": {
+  "en": "...Nc6 (or ...b5) and ...O-O.",
+  "es": "...Cc6 (o ...b5) y ...O-O."
+ },
+ "Be3 a6 f3 Be7 Qd2 Nc6 O-O-O O-O g4 Nxd4 Bxd4 Qc7": {
+  "en": "After h4: ...Nd7, ...b5 and ...Bb7. White's attack is fast: White is better.",
+  "es": "Tras h4: ...Cd7, ...b5 y ...Ab7. El ataque blanco es rápido: las blancas están mejor."
+ },
+ "Be2": {
+  "en": "...a6 and ...Be7.",
+  "es": "...a6 y ...Ae7."
+ },
+ "Be2 a6 O-O": {
+  "en": "...Be7, ...O-O and ...Qc7.",
+  "es": "...Ae7, ...O-O y ...Dc7."
+ },
+ "Bd3 a6 O-O": {
+  "en": "...Be7 (watch for ...Nxe4 tricks if White plays Bg5).",
+  "es": "...Ae7 (atento a los trucos con ...Cxe4 si las blancas juegan Ag5)."
  }
 }
