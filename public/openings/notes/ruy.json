@@ -54,5 +54,69 @@
  "Bc5": {
   "en": "The Classical (Cordel) Defence. White castles and prepares c3 and d4.",
   "es": "La Defensa Clásica (Cordel). Las blancas enrocan y preparan c3 y d4."
+ },
+ "a6": {
+  "en": "Ba4 (or Bxc6, the Exchange).",
+  "es": "Aa4 (o Axc6, el Cambio)."
+ },
+ "a6 Ba4 Nf6": {
+  "en": "Castle: e4 is indirectly protected.",
+  "es": "Enroca: e4 está protegido indirectamente."
+ },
+ "a6 Ba4 Nf6 O-O b5": {
+  "en": "Bb3: the bishop aims at f7.",
+  "es": "Ab3: el alfil apunta a f7."
+ },
+ "a6 Ba4 Nf6 O-O Be7": {
+  "en": "Re1: the Closed Ruy.",
+  "es": "Te1: la Ruy López Cerrada."
+ },
+ "a6 Ba4 Nf6 O-O Be7 Re1 b5": {
+  "en": "Bb3, then c3 and h3, d4.",
+  "es": "Ab3, y después c3 y h3, d4."
+ },
+ "a6 Ba4 b5": {
+  "en": "Bb3: then O-O, c3 and d4 (or a4).",
+  "es": "Ab3: después O-O, c3 y d4 (o a4)."
+ },
+ "d6 Ba4": {
+  "en": "O-O, c3 and d4: more space. White is better.",
+  "es": "O-O, c3 y d4: más espacio. Las blancas están mejor."
+ },
+ "Nf6 O-O Bc5": {
+  "en": "c3! (or Nxe5): d4 is coming.",
+  "es": "¡c3! (o Cxe5): llega d4."
+ },
+ "Nf6 O-O Bc5 c3 d6": {
+  "en": "d4! and d5: the centre rolls. White is winning.",
+  "es": "¡d4! y d5: el centro avanza. Las blancas van ganando."
+ },
+ "Nf6 O-O Nxe4": {
+  "en": "Re1: hit the knight.",
+  "es": "Te1: ataca al caballo."
+ },
+ "Nf6 O-O Nxe4 Re1 Nd6 Ba4": {
+  "en": "After ...Be7 Nxe5 Nxe5 Rxe5 O-O: equal.",
+  "es": "Tras ...Ae7 Cxe5 Cxe5 Txe5 O-O: igualdad."
+ },
+ "Nf6 O-O d6": {
+  "en": "Ba4 (or d4): keep the pressure.",
+  "es": "Aa4 (o d4): mantén la presión."
+ },
+ "Nf6 O-O d6 Ba4": {
+  "en": "Re1, c3 and d4: White is better.",
+  "es": "Te1, c3 y d4: las blancas están mejor."
+ },
+ "Nf6 O-O a6": {
+  "en": "Bxc6! and Nxe5 wins a pawn.",
+  "es": "¡Axc6! y Cxe5 gana un peón."
+ },
+ "Bc5 O-O d6": {
+  "en": "Re1 (or c3) and d4.",
+  "es": "Te1 (o c3) y d4."
+ },
+ "Bc5 O-O d6 Re1": {
+  "en": "After ...Ne7 d4 exd4 Nxd4: slightly better for White.",
+  "es": "Tras ...Ce7 d4 exd4 Cxd4: algo mejor para las blancas."
  }
 }

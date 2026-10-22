@@ -26,5 +26,73 @@
  "": {
   "en": "The Bishop's Opening: ...Nf6 attacks e4 at once and keeps the option of ...c6 and ...d5.",
   "es": "La Apertura de Alfil: ...Cf6 ataca e4 de inmediato y mantiene la opción de ...c6 y ...d5."
+ },
+ "Nf6 d3": {
+  "en": "...Bc5 (or ...c6 and ...d5).",
+  "es": "...Ac5 (o ...c6 y ...d5)."
+ },
+ "Nf6 d3 Bc5 Nf3": {
+  "en": "...Nc6 (or ...d6): an Italian by transposition.",
+  "es": "...Cc6 (o ...d6): una Italiana por transposición."
+ },
+ "Nf6 d3 Bc5 h3": {
+  "en": "...c6 and ...d5: take the centre.",
+  "es": "...c6 y ...d5: toma el centro."
+ },
+ "Nf6 d3 Bc5 h3 c6": {
+  "en": "...d5 next. Equal.",
+  "es": "Después ...d5. Igualdad."
+ },
+ "Nf6 d3 Bc5 Bg5": {
+  "en": "...c6 (or ...h6).",
+  "es": "...c6 (o ...h6)."
+ },
+ "Nf6 d3 Bc5 Bg5 c6": {
+  "en": "After Nf3 d5 exd5 cxd5: Black has the centre. Equal.",
+  "es": "Tras Cf3 d5 exd5 cxd5: las negras tienen el centro. Igualdad."
+ },
+ "Nf6 Nf3": {
+  "en": "...Nxe4! wins a pawn.",
+  "es": "¡...Cxe4! gana un peón."
+ },
+ "Nf6 Nf3 Nxe4 Nxe5": {
+  "en": "...d5: hit the bishop.",
+  "es": "...d5: ataca al alfil."
+ },
+ "Nf6 Nf3 Nxe4 Nxe5 d5 Bb3": {
+  "en": "...Qg5! hits e5 and g2. Black is clearly better.",
+  "es": "¡...Dg5! ataca e5 y g2. Las negras están claramente mejor."
+ },
+ "Nf6 Nf3 Nxe4 Nxe5 d5 Bb3 Qg5": {
+  "en": "If Qe2, ...Qxg2 Rf1 Be6: Black is a pawn up. Black is better.",
+  "es": "Si De2, ...Dxg2 Tf1 Ae6: las negras tienen un peón de más. Las negras están mejor."
+ },
+ "Nf6 Nf3 Nxe4 O-O d5 Bb3 Nc6": {
+  "en": "...Nc5 and ...Be6: Black keeps the extra pawn. Black is better.",
+  "es": "...Cc5 y ...Ae6: las negras conservan el peón de más. Las negras están mejor."
+ },
+ "Nf6 Nc3": {
+  "en": "...Bc5 (or ...Nc6).",
+  "es": "...Ac5 (o ...Cc6)."
+ },
+ "Nf6 Nc3 Bc5 d3": {
+  "en": "...c6 and ...d5 (or ...d6).",
+  "es": "...c6 y ...d5 (o ...d6)."
+ },
+ "Nf6 Nc3 Bc5 d3 c6 Bg5 O-O": {
+  "en": "...h6 and ...d5. Slightly better for Black.",
+  "es": "...h6 y ...d5. Algo mejor para las negras."
+ },
+ "Nf6 Nc3 Bc5 Nf3": {
+  "en": "...Nc6 (or ...d6): the Italian by transposition.",
+  "es": "...Cc6 (o ...d6): la Italiana por transposición."
+ },
+ "Nf6 Nc3 Bc5 h3 c6": {
+  "en": "...d6 or ...d5. Equal.",
+  "es": "...d6 o ...d5. Igualdad."
+ },
+ "Nf6 d4 exd4 Nf3": {
+  "en": "...Bc5 (or ...Nxe4): Black is fine.",
+  "es": "...Ac5 (o ...Cxe4): las negras están bien."
  }
 }
