@@ -26,5 +26,53 @@
  "c5": {
   "en": "...c5 aims for a Benoni; Nf3 and the g2-bishop keep White comfortable.",
   "es": "...c5 busca una Benoni; Cf3 y el alfil de g2 mantienen a las blancas cómodas."
+ },
+ "d5": {
+  "en": "Bg2: the Catalan bishop.",
+  "es": "Ag2: el alfil de la Catalana."
+ },
+ "d5 Bg2 c6": {
+  "en": "Nf3, O-O and Qc2: a solid Slav-like structure.",
+  "es": "Cf3, O-O y Dc2: una estructura sólida tipo Eslava."
+ },
+ "d5 Bg2 Be7": {
+  "en": "Nf3 and O-O.",
+  "es": "Cf3 y O-O."
+ },
+ "d5 Bg2 Be7 Nf3 O-O": {
+  "en": "Castle; then Qc2 or Nbd2.",
+  "es": "Enroca; después Dc2 o Cbd2."
+ },
+ "d5 Bg2 Bb4+": {
+  "en": "Bd2: offer the trade.",
+  "es": "Ad2: ofrece el cambio."
+ },
+ "d5 Bg2 Bb4+ Bd2 Bxd2+ Nxd2 O-O Qc2": {
+  "en": "Ngf3 and O-O: pressure on d5 and the long diagonal. Slightly better for White.",
+  "es": "Cgf3 y O-O: presión sobre d5 y la gran diagonal. Algo mejor para las blancas."
+ },
+ "d5 Bg2 c5": {
+  "en": "Nf3 and O-O: the isolated pawn may come.",
+  "es": "Cf3 y O-O: puede aparecer el peón aislado."
+ },
+ "Bb4+": {
+  "en": "Bd2 (or Nd2): block.",
+  "es": "Ad2 (o Cd2): tapa."
+ },
+ "Bb4+ Bd2 Bxd2+": {
+  "en": "Nxd2 (or Qxd2): Bg2 and Ngf3.",
+  "es": "Cxd2 (o Dxd2): Ag2 y Cgf3."
+ },
+ "Bb4+ Bd2 Qe7": {
+  "en": "Bg2 and Nf3: develop. Slightly better for White.",
+  "es": "Ag2 y Cf3: desarrolla. Algo mejor para las blancas."
+ },
+ "c5 Nf3 cxd4": {
+  "en": "Nxd4: an English/Catalan hybrid. Equal-ish.",
+  "es": "Cxd4: un híbrido Inglesa/Catalana. Más o menos igualdad."
+ },
+ "c5 Nf3 Nc6": {
+  "en": "d5! gains space with tempo. White is clearly better.",
+  "es": "¡d5! gana espacio con tiempo. Las blancas están claramente mejor."
  }
 }

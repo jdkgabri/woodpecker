@@ -94,5 +94,49 @@
  "c4 e5 dxe5 d4 Nf3 Nc6 g3 Bg4 Bg2 Bxf3 Bxf3 Nxe5 Bxb7": {
   "en": "Giving up the bishop on f3 lets White's bishop take b7 and hit the a8-rook.",
   "es": "Entregar el alfil en f3 permite al alfil blanco tomar b7 y atacar la torre de a8."
+ },
+ "c4 e6 Nc3 Nf6": {
+  "en": "Nf3 (or Bg5): develop.",
+  "es": "Cf3 (o Ag5): desarrolla."
+ },
+ "c4 e6 Nc3 Nf6 Nf3 Bb4": {
+  "en": "Bg5: the Ragozin main line.",
+  "es": "Ag5: la línea principal de la Ragozin."
+ },
+ "c4 e6 Nc3 Nf6 Nf3 Be7": {
+  "en": "Bg5 (or Bf4): the classical setup.",
+  "es": "Ag5 (o Af4): el esquema clásico."
+ },
+ "c4 dxc4 Nc3 Nf6": {
+  "en": "Nf3 and e4 or e3: win back c4.",
+  "es": "Cf3 y e4 o e3: recupera c4."
+ },
+ "c4 dxc4 Nc3 e6": {
+  "en": "e4: take the centre.",
+  "es": "e4: toma el centro."
+ },
+ "c4 dxc4 Nc3 c6 Nf3": {
+  "en": "If ...b5, a4! breaks the chain. Slightly better for White.",
+  "es": "Si ...b5, ¡a4! rompe la cadena. Algo mejor para las blancas."
+ },
+ "c4 c6 Nc3 Nf6": {
+  "en": "Nf3, then e3 or a4 against ...dxc4.",
+  "es": "Cf3, y después e3 o a4 contra ...dxc4."
+ },
+ "c4 c6 Nc3 Nf6 Nf3 Bg4 cxd5": {
+  "en": "After ...Bxf3 gxf3 cxd5 Qb3: b7 and d5. White is better.",
+  "es": "Tras ...Axf3 gxf3 cxd5 Db3: b7 y d5. Las blancas están mejor."
+ },
+ "c4 c6 Nc3 Bf5": {
+  "en": "Qb3! hits b7. White is clearly better.",
+  "es": "¡Db3! ataca b7. Las blancas están claramente mejor."
+ },
+ "c4 Nf6 Nf3 e6": {
+  "en": "Nc3 and Bg5: a normal QGD.",
+  "es": "Cc3 y Ag5: un Gambito de Dama Rehusado normal."
+ },
+ "c4 Nf6 Nf3 Bg4": {
+  "en": "cxd5 and e4: White is clearly better.",
+  "es": "cxd5 y e4: las blancas están claramente mejor."
  }
 }

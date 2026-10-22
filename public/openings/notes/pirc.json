@@ -26,5 +26,49 @@
  "Be3 Bg7 Qd2": {
   "en": "The 150 Attack: Qd2, Bh6 and h4–h5. Castle and counter on the queenside with ...c6 and ...b5.",
   "es": "El Ataque 150: Dd2, Ah6 y h4–h5. Enroca y contraataca en el flanco de dama con ...c6 y ...b5."
+ },
+ "Nf3": {
+  "en": "...Bg7 and castle.",
+  "es": "...Ag7 y enroque."
+ },
+ "Nf3 Bg7 Bc4": {
+  "en": "Castle; ...c6 and ...b5 or ...Nxe4 tricks.",
+  "es": "Enroca; ...c6 y ...b5 o trucos con ...Cxe4."
+ },
+ "Nf3 Bg7 Bd3": {
+  "en": "Castle; ...Nc6 and ...e5 or ...c5.",
+  "es": "Enroca; ...Cc6 y ...e5 o ...c5."
+ },
+ "Nf3 Bg7 Be3": {
+  "en": "Castle; ...c6 and ...b5, or ...Ng4.",
+  "es": "Enroca; ...c6 y ...b5, o ...Cg4."
+ },
+ "Nf3 Bg7 Bg5": {
+  "en": "Castle; ...c6 or ...h6.",
+  "es": "Enroca; ...c6 o ...h6."
+ },
+ "Bg5": {
+  "en": "...Bg7, then ...c6 and ...b5.",
+  "es": "...Ag7, y después ...c6 y ...b5."
+ },
+ "Bg5 Bg7 e5": {
+  "en": "...dxe5: trade.",
+  "es": "...dxe5: cambia."
+ },
+ "Bg5 Bg7 e5 dxe5 dxe5": {
+  "en": "...Qxd1+ and ...Nfd7 (or ...Ng4): equal.",
+  "es": "...Dxd1+ y ...Cfd7 (o ...Cg4): igualdad."
+ },
+ "f4": {
+  "en": "...Bg7 and castle; ...c5 next.",
+  "es": "...Ag7 y enroque; después ...c5."
+ },
+ "f4 Bg7 Nf3": {
+  "en": "Castle, then ...c5 or ...Na6.",
+  "es": "Enroca, y después ...c5 o ...Ca6."
+ },
+ "Be3": {
+  "en": "...Bg7 (or ...c6), ...O-O and ...b5.",
+  "es": "...Ag7 (o ...c6), ...O-O y ...b5."
  }
 }
