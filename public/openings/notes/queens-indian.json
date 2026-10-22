@@ -30,5 +30,77 @@
  "b6 a3 Bb7 Nc3 d5": {
   "en": "Against the Petrosian (a3), ...d5 takes the centre at once.",
   "es": "Contra la Petrosian (a3), ...d5 ocupa el centro de inmediato."
+ },
+ "b6 Nc3": {
+  "en": "...Bb7 (or ...Bb4): control e4.",
+  "es": "...Ab7 (o ...Ab4): controla e4."
+ },
+ "b6 Nc3 Bb7 Bg5": {
+  "en": "...Be7 (or ...h6): break the pin.",
+  "es": "...Ae7 (o ...h6): rompe la clavada."
+ },
+ "b6 Nc3 Bb7 Bg5 Be7 e3": {
+  "en": "Castle; ...d5 or ...h6 and ...Ne4.",
+  "es": "Enroca; ...d5 o ...h6 y ...Ce4."
+ },
+ "b6 Nc3 Bb7 Bg5 Be7 e3 O-O Bd3": {
+  "en": "...d5 (or ...c5): hit the centre. Equal.",
+  "es": "...d5 (o ...c5): golpea el centro. Igualdad."
+ },
+ "b6 Nc3 Bb7 e3": {
+  "en": "...Be7 and ...O-O, ...d5.",
+  "es": "...Ae7 y ...O-O, ...d5."
+ },
+ "b6 Nc3 Bb7 g3": {
+  "en": "...Be7 (or ...Bb4) and ...O-O.",
+  "es": "...Ae7 (o ...Ab4) y ...O-O."
+ },
+ "b6 Nc3 Bb7 g3 Be7 Bg2": {
+  "en": "Castle; ...Ne4 or ...d5. Equal.",
+  "es": "Enroca; ...Ce4 o ...d5. Igualdad."
+ },
+ "b6 g3": {
+  "en": "...Bb7 (or ...Ba6): the long diagonal.",
+  "es": "...Ab7 (o ...Aa6): la gran diagonal."
+ },
+ "b6 g3 Bb7 Bg2": {
+  "en": "...Be7 and ...O-O.",
+  "es": "...Ae7 y ...O-O."
+ },
+ "b6 g3 Bb7 Bg2 Be7 O-O": {
+  "en": "Castle; ...d5 or ...Ne4.",
+  "es": "Enroca; ...d5 o ...Ce4."
+ },
+ "b6 g3 Bb7 Bg2 Be7 O-O O-O Nc3": {
+  "en": "...d5 (or ...Ne4): fight for e4.",
+  "es": "...d5 (o ...Ce4): lucha por e4."
+ },
+ "b6 g3 Bb7 Bg2 Be7 O-O O-O Nc3 d5 Ne5": {
+  "en": "...Nbd7 (or ...c6): challenge the knight. Equal.",
+  "es": "...Cbd7 (o ...c6): desafía al caballo. Igualdad."
+ },
+ "b6 g3 Bb7 Bg2 Be7 O-O O-O Nc3 d5 cxd5": {
+  "en": "...Nxd5 (or ...exd5): equal.",
+  "es": "...Cxd5 (o ...exd5): igualdad."
+ },
+ "b6 g3 Bb7 Bg2 Be7 O-O O-O Nc3 d5 cxd5 Nxd5 Re1 Nd7": {
+  "en": "If e4, ...Nxc3 bxc3 and ...c5: Black hits the centre. Slightly better for White.",
+  "es": "Si e4, ...Cxc3 bxc3 y ...c5: las negras golpean el centro. Algo mejor para las blancas."
+ },
+ "b6 g3 Bb7 Bg2 Be7 O-O O-O Nc3 d5 b3 Bb4": {
+  "en": "...Nbd7, ...Re8 and ...c5. Equal.",
+  "es": "...Cbd7, ...Te8 y ...c5. Igualdad."
+ },
+ "b6 g3 Bb7 Bg2 Be7 Nc3": {
+  "en": "Castle, then ...Ne4 or ...d5.",
+  "es": "Enroca, y después ...Ce4 o ...d5."
+ },
+ "b6 Bg5 Bb7 e3": {
+  "en": "...Be7 (or ...h6): solid.",
+  "es": "...Ae7 (o ...h6): sólido."
+ },
+ "b6 a3 Bb7 Nc3": {
+  "en": "...d5: take the centre.",
+  "es": "...d5: toma el centro."
  }
 }
