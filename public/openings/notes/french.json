@@ -42,5 +42,65 @@
  "d4 d5 Nc3 Nf6 exd5 exd5": {
   "en": "The Exchange with Nc3: ...Bb4 pins the knight and Black develops easily.",
   "es": "El Cambio con Cc3: ...Ab4 clava el caballo y las negras desarrollan con facilidad."
+ },
+ "d4": {
+  "en": "...d5: the French.",
+  "es": "...d5: la Francesa."
+ },
+ "d4 d5 e5": {
+  "en": "...c5! hit the chain.",
+  "es": "¡...c5! golpea la cadena."
+ },
+ "d4 d5 e5 c5 c3": {
+  "en": "...Nc6 and ...Qb6.",
+  "es": "...Cc6 y ...Db6."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3": {
+  "en": "...Qb6: pressure on d4 and b2.",
+  "es": "...Db6: presión sobre d4 y b2."
+ },
+ "d4 d5 exd5": {
+  "en": "...exd5: the Exchange.",
+  "es": "...exd5: el Cambio."
+ },
+ "d4 d5 exd5 exd5 Nf3": {
+  "en": "...Nc6 (or ...Bd6, ...Nf6) and ...Bg4. Equal.",
+  "es": "...Cc6 (o ...Ad6, ...Cf6) y ...Ag4. Igualdad."
+ },
+ "d4 d5 exd5 exd5 c4 Nc6": {
+  "en": "If c5, ...Bxc5! dxc5 d4: active play. Equal.",
+  "es": "Si c5, ¡...Axc5! dxc5 d4: juego activo. Igualdad."
+ },
+ "d4 d5 Nc3": {
+  "en": "...Nf6 (or ...Bb4).",
+  "es": "...Cf6 (o ...Ab4)."
+ },
+ "d4 d5 Nc3 Nf6 e5": {
+  "en": "...Nfd7, then ...c5.",
+  "es": "...Cfd7, y después ...c5."
+ },
+ "Nf3": {
+  "en": "...d5: take the centre.",
+  "es": "...d5: toma el centro."
+ },
+ "Nf3 d5 exd5": {
+  "en": "...exd5: equal.",
+  "es": "...exd5: igualdad."
+ },
+ "Nf3 d5 exd5 exd5 d4": {
+  "en": "...Nc6 (or ...Nf6, ...Bd6).",
+  "es": "...Cc6 (o ...Cf6, ...Ad6)."
+ },
+ "Nf3 d5 exd5 exd5 d4 Nc6 Bb5 Nf6": {
+  "en": "...Be7 and ...O-O; ...Bg4. Slightly better for White.",
+  "es": "...Ae7 y ...O-O; ...Ag4. Algo mejor para las blancas."
+ },
+ "Nf3 d5 exd5 exd5 d4 Nc6 Bd3 Nf6": {
+  "en": "...Be7, ...O-O and ...Bg4 or ...Nb4. Slightly better for White.",
+  "es": "...Ae7, ...O-O y ...Ag4 o ...Cb4. Algo mejor para las blancas."
+ },
+ "Nf3 d5 e5": {
+  "en": "...c5 and ...Nc6: the usual plan.",
+  "es": "...c5 y ...Cc6: el plan habitual."
  }
 }
