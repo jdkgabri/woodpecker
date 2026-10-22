@@ -18,5 +18,69 @@
  "Nc3 Nf6": {
   "en": "Against 2.Nc3 (preparing e4), ...Nf6 keeps control of e4.",
   "es": "Contra 2.Cc3 (preparando e4), ...Cf6 mantiene el control de e4."
+ },
+ "c4": {
+  "en": "2.c4: ...Nf6 and ...e6, keeping control of e4.",
+  "es": "2.c4: ...Cf6 y ...e6, manteniendo el control de e4."
+ },
+ "c4 Nf6 Nc3": {
+  "en": "Nc3 prepares e4. ...e6 (then ...Bb4 or ...Be7).",
+  "es": "Cc3 prepara e4. ...e6 (y después ...Ab4 o ...Ae7)."
+ },
+ "c4 Nf6 Nc3 e6 Bg5": {
+  "en": "Bg5 pins and aims to remove the f6-knight that guards e4. ...d6 prepares ...e5; ...Be7 next.",
+  "es": "Ag5 clava y busca eliminar el caballo de f6 que vigila e4. ...d6 prepara ...e5; después ...Ae7."
+ },
+ "c4 Nf6 Nc3 e6 Bg5 d6 e3 Be7": {
+  "en": "After Qc2 O-O, ...Qe8–h5 or ...e5 follow. White is a bit better, Black has kingside play.",
+  "es": "Tras Dc2 O-O, siguen ...De8–h5 o ...e5. Las blancas algo mejor, las negras tienen juego en el flanco de rey."
+ },
+ "c4 Nf6 Nc3 e6 Bg5 d6 e4 fxe4": {
+  "en": "After Nxe4, ...Be7 and ...O-O: Black is solid, and the f-file is open for the rook.",
+  "es": "Tras Cxe4, ...Ae7 y ...O-O: las negras están sólidas, y la columna f está abierta para la torre."
+ },
+ "c4 Nf6 Nc3 e6 Nf3": {
+  "en": "...Be7 (or ...Bb4) and castle; then ...d6 and ...Qe8.",
+  "es": "...Ae7 (o ...Ab4) y enroque; después ...d6 y ...De8."
+ },
+ "c4 Nf6 Nc3 e6 e3 g6": {
+  "en": "A hybrid setup: ...g6 with ...e6. Watch h4–h5 ideas against g6; ...Qe7 and ...Bg7 or ...Bh6.",
+  "es": "Un esquema híbrido: ...g6 con ...e6. Cuidado con las ideas h4–h5 contra g6; ...De7 y ...Ag7 o ...Ah6."
+ },
+ "c4 Nf6 Nc3 e6 g3 g6": {
+  "en": "...Bg7 and ...O-O, then ...Ne4 and ...d5 or ...d6. White is a bit better.",
+  "es": "...Ag7 y ...O-O, y después ...Ce4 y ...d5 o ...d6. Las blancas algo mejor."
+ },
+ "Bf4": {
+  "en": "The London against the Dutch. ...Nf6 and ...e6; ...b6 and ...Bb7 are also good.",
+  "es": "La London contra la Holandesa. ...Cf6 y ...e6; ...b6 y ...Ab7 también son buenas."
+ },
+ "Bf4 Nf6 e3": {
+  "en": "...e6, then ...Be7 or ...g6 and ...Bg7.",
+  "es": "...e6, y después ...Ae7 o ...g6 y ...Ag7."
+ },
+ "Bf4 Nf6 e3 e6 Nf3": {
+  "en": "...g6 and ...Bg7: the bishop on the long diagonal; or ...b6 and ...Bb7.",
+  "es": "...g6 y ...Ag7: el alfil en la gran diagonal; o ...b6 y ...Ab7."
+ },
+ "Bf4 Nf6 e3 e6 Nf3 g6": {
+  "en": "After c4 Bg7 Nc3 O-O, ...d6 and ...Nc6 or ...Qe7 with ...e5. Slightly better for White.",
+  "es": "Tras c4 Ag7 Cc3 O-O, ...d6 y ...Cc6 o ...De7 con ...e5. Algo mejor para las blancas."
+ },
+ "Bf4 Nf6 Nf3 e6 e3 g6": {
+  "en": "The same setup: ...Bg7, ...O-O, ...d6 and ...e5. Slightly better for White.",
+  "es": "El mismo esquema: ...Ag7, ...O-O, ...d6 y ...e5. Algo mejor para las blancas."
+ },
+ "Nf3": {
+  "en": "2.Nf3: ...Nf6 and ...e6; Black chooses later between ...Be7, ...g6 or ...d5.",
+  "es": "2.Cf3: ...Cf6 y ...e6; las negras eligen más tarde entre ...Ae7, ...g6 o ...d5."
+ },
+ "Nf3 Nf6 Bf4 e6 e3 g6": {
+  "en": "...Bg7, ...O-O and ...d6. Slightly better for White.",
+  "es": "...Ag7, ...O-O y ...d6. Algo mejor para las blancas."
+ },
+ "Nf3 Nf6 g3 e6 Bg2 g6": {
+  "en": "...Bg7 and ...O-O; then ...d6 and ...Nc6 or ...Qe7 to play ...e5. White is a bit better.",
+  "es": "...Ag7 y ...O-O; después ...d6 y ...Cc6 o ...De7 para jugar ...e5. Las blancas algo mejor."
  }
 }

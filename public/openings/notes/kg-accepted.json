@@ -18,5 +18,73 @@
  "": {
   "en": "Gambit accepted: Nf3 first, then d4, Bc4 and h4 against ...g5.",
   "es": "Gambito aceptado: primero Cf3, luego d4, Ac4 y h4 contra ...g5."
+ },
+ "Nf3 g5": {
+  "en": "...g5 defends the f4-pawn. The engine prefers Black here: White plays for the attack, with d4 and h4 to undermine the chain.",
+  "es": "...g5 defiende el peón de f4. El motor prefiere a las negras aquí: las blancas juegan por el ataque, con d4 y h4 para socavar la cadena."
+ },
+ "Nf3 g5 d4 g4": {
+  "en": "...g4 kicks the knight: Ne5 (the Kieseritzky idea) keeps it in the centre.",
+  "es": "...g4 echa al caballo: Ce5 (la idea Kieseritzky) lo mantiene en el centro."
+ },
+ "Nf3 g5 d4 g4 Ne5 Qh4+": {
+  "en": "g3 blocks: after ...fxg3 Qxg4, the queens come off. Black is better but White has chances in the endgame.",
+  "es": "g3 tapa: tras ...fxg3 Dxg4, se cambian las damas. Las negras están mejor, pero las blancas tienen opciones en el final."
+ },
+ "Nf3 g5 d4 g4 Ne5 Qh4+ g3": {
+  "en": "After ...fxg3 Qxg4 Qxg4 Nxg4, hxg3 follows: White is a pawn down but active. Black is better.",
+  "es": "Tras ...fxg3 Dxg4 Dxg4 Cxg4, sigue hxg3: las blancas tienen un peón menos pero están activas. Las negras están mejor."
+ },
+ "Nf3 d6": {
+  "en": "...d6: the Fischer-style defence. d4, then Bxf4 or h4 against ...g5.",
+  "es": "...d6: la defensa al estilo Fischer. d4, y después Axf4 o h4 contra ...g5."
+ },
+ "Nf3 d6 d4 g5": {
+  "en": "h4 hits g5: White undermines the chain.",
+  "es": "h4 ataca g5: las blancas socavan la cadena."
+ },
+ "Nf3 d6 d4 g5 h4 g4 Ng1": {
+  "en": "The knight goes back but White has a big centre; Nc3, Nge2 and Nxf4 follow. Black is better objectively, White has play.",
+  "es": "El caballo retrocede pero las blancas tienen un gran centro; siguen Cc3, Cge2 y Cxf4. Objetivamente las negras están mejor, las blancas tienen juego."
+ },
+ "Nf3 d6 d4 g5 h4 f6": {
+  "en": "...f6? is too slow: Nc3 and hxg5 fxg5, then g3 breaks the chain. White is better.",
+  "es": "¿...f6? es demasiado lenta: Cc3 y hxg5 fxg5, y después g3 rompe la cadena. Las blancas están mejor."
+ },
+ "Nf3 d6 d4 Bg4": {
+  "en": "...Bg4 lets White recover the pawn: Nc3 (or Bxf4 at once) with a big centre. White is clearly better.",
+  "es": "...Ag4 permite a las blancas recuperar el peón: Cc3 (o Axf4 de inmediato) con un gran centro. Las blancas están claramente mejor."
+ },
+ "Nf3 d6 d4 Nf6": {
+  "en": "...Nf6: Nc3 and Bxf4. White wins the pawn back with the better centre.",
+  "es": "...Cf6: Cc3 y Axf4. Las blancas recuperan el peón con mejor centro."
+ },
+ "Nf3 d6 d4 Be7": {
+  "en": "...Be7 is slow: Bxf4 and White has the pawn back and a free hand. Better for White.",
+  "es": "...Ae7 es lenta: Axf4 y las blancas recuperan el peón y tienen las manos libres. Mejor para las blancas."
+ },
+ "Nf3 Nc6": {
+  "en": "...Nc6: d4, and if ...g5, d5! kicks the knight and Qd4 can follow.",
+  "es": "...Cc6: d4, y si ...g5, ¡d5! echa al caballo y puede seguir Dd4."
+ },
+ "Nf3 Nc6 d4 d5": {
+  "en": "...d5 gives the pawn back: exd5 Qxd5 Nc3 and White develops with tempo.",
+  "es": "...d5 devuelve el peón: exd5 Dxd5 Cc3 y las blancas desarrollan ganando tiempos."
+ },
+ "Nf3 Nc6 d4 d5 exd5 Qxd5": {
+  "en": "Nc3 hits the queen, then Bxf4: White is better developed.",
+  "es": "Cc3 ataca a la dama, y después Axf4: las blancas están mejor desarrolladas."
+ },
+ "Nf3 Be7": {
+  "en": "The Cunningham: ...Be7 threatens ...Bh4+. d4 and if ...Bh4+, the king steps up.",
+  "es": "La Cunningham: ...Ae7 amenaza ...Ah4+. d4 y si ...Ah4+, el rey avanza."
+ },
+ "Nf3 Be7 d4 Bh4+": {
+  "en": "Kd2!? keeps the f4-pawn under attack; g3 is impossible because of ...fxg3. The engine likes Black, but the black bishop on h4 is offside.",
+  "es": "¡?Rd2 mantiene atacado el peón de f4; g3 no es posible por ...fxg3. Al motor le gustan las negras, pero el alfil de h4 está fuera de juego."
+ },
+ "Nf3 Be7 d4 Bh4+ Kd2": {
+  "en": "Bd3, c3 and Kc2 hide the king; Nxh4 and Bxf4 regain material later. Black is better, but the position is hard to play for both sides.",
+  "es": "Ad3, c3 y Rc2 esconden el rey; Cxh4 y Axf4 recuperan material más tarde. Las negras están mejor, pero la posición es difícil para ambos bandos."
  }
 }

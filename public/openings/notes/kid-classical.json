@@ -18,5 +18,89 @@
  "": {
   "en": "The Classical: ...Nc6 and, after d5, ...Ne7, ...Ne8 and ...f5.",
   "es": "La Clásica: ...Cc6 y, tras d5, ...Ce7, ...Ce8 y ...f5."
+ },
+ "O-O": {
+  "en": "White castles: ...Nc6 hits d4 and forces White to decide.",
+  "es": "Las blancas enrocan: ...Cc6 ataca d4 y obliga a las blancas a decidir."
+ },
+ "O-O Nc6 d5": {
+  "en": "d5 closes the centre. ...Ne7, then ...Ne8 (or ...Nd7) and ...f5: the race begins, White on the queenside, Black on the kingside.",
+  "es": "d5 cierra el centro. ...Ce7, y después ...Ce8 (o ...Cd7) y ...f5: empieza la carrera, las blancas en el flanco de dama y las negras en el de rey."
+ },
+ "O-O Nc6 d5 Ne7 Ne1": {
+  "en": "Ne1 heads for d3 to support c5. ...Ne8 (or ...Nd7) prepares ...f5.",
+  "es": "Ce1 va hacia d3 para apoyar c5. ...Ce8 (o ...Cd7) prepara ...f5."
+ },
+ "O-O Nc6 d5 Ne7 Ne1 Ne8 Be3": {
+  "en": "...f5: the key break.",
+  "es": "...f5: la ruptura clave."
+ },
+ "O-O Nc6 d5 Ne7 Ne1 Ne8 Be3 f5 f3": {
+  "en": "...b6 slows down c5; then ...f4 and ...g5–g4 for the attack.",
+  "es": "...b6 frena c5; después ...f4 y ...g5–g4 para el ataque."
+ },
+ "O-O Nc6 d5 Ne7 Ne1 Ne8 Be3 f5 f3 b6": {
+  "en": "After b4 a5 a3, ...Kh8 or ...h6 and ...f4: White is better on the queenside, but Black's kingside attack is real.",
+  "es": "Tras b4 a5 a3, ...Rh8 o ...h6 y ...f4: las blancas están mejor en el flanco de dama, pero el ataque negro en el flanco de rey es real."
+ },
+ "O-O Nc6 d5 Ne7 b4": {
+  "en": "The Bayonet: b4 prepares c5 fast. ...Ne8 (or ...Nh5) and ...f5.",
+  "es": "La Bayoneta: b4 prepara c5 rápidamente. ...Ce8 (o ...Ch5) y ...f5."
+ },
+ "O-O Nc6 d5 Ne7 b4 Ne8 c5": {
+  "en": "...f5 at once: speed matters more than anything here.",
+  "es": "...f5 de inmediato: aquí la velocidad importa más que nada."
+ },
+ "O-O Nc6 dxe5": {
+  "en": "dxe5 dxe5 Qxd8 Nxd8: equal; ...Bg4 and ...Ne6 give Black easy play.",
+  "es": "dxe5 dxe5 Dxd8 Cxd8: igualdad; ...Ag4 y ...Ce6 dan a las negras un juego fácil."
+ },
+ "d5": {
+  "en": "The Petrosian: d5 before castling. ...Nbd7 (or ...a5) and ...Nc5 or ...Ne8 and ...f5.",
+  "es": "La Petrosian: d5 antes de enrocar. ...Cbd7 (o ...a5) y ...Cc5 o ...Ce8 y ...f5."
+ },
+ "d5 Nbd7 O-O": {
+  "en": "...Ne8 (or ...Nc5) and ...f5.",
+  "es": "...Ce8 (o ...Cc5) y ...f5."
+ },
+ "d5 Nbd7 O-O Ne8 b4 a5": {
+  "en": "...a5 slows down the queenside attack; after bxa5 Rxa5 the rook is active. Equal.",
+  "es": "...a5 frena el ataque en el flanco de dama; tras bxa5 Txa5 la torre está activa. Igualdad."
+ },
+ "d5 Nbd7 Bg5": {
+  "en": "Bg5 pins: ...h6 asks it, then ...Nc5 or ...a5.",
+  "es": "Ag5 clava: ...h6 le pregunta, y después ...Cc5 o ...a5."
+ },
+ "d5 Nbd7 b4": {
+  "en": "b4 before castling is loose: ...Nh5! and ...f5, or ...a5 first. Black is fine.",
+  "es": "b4 antes de enrocar es descuidada: ¡...Ch5! y ...f5, o primero ...a5. Las negras están bien."
+ },
+ "d5 Nbd7 b4 Nh5": {
+  "en": "After g3, ...a5 and ...f5: Black is active. Slightly better for Black.",
+  "es": "Tras g3, ...a5 y ...f5: las negras están activas. Algo mejor para las negras."
+ },
+ "dxe5": {
+  "en": "The Exchange: ...dxe5 and the queens come off. Equal; the d4-square is Black's.",
+  "es": "El Cambio: ...dxe5 y salen las damas. Igualdad; la casilla d4 es de las negras."
+ },
+ "dxe5 dxe5 Qxd8": {
+  "en": "...Rxd8: the rook takes the d-file.",
+  "es": "...Txd8: la torre toma la columna d."
+ },
+ "dxe5 dxe5 Qxd8 Rxd8 Bg5": {
+  "en": "Bg5 pins and hits the rook: ...Re8 (or ...Rf8) and ...c6 or ...Nc6.",
+  "es": "Ag5 clava y ataca a la torre: ...Te8 (o ...Tf8) y ...c6 o ...Cc6."
+ },
+ "dxe5 dxe5 Qxd8 Rxd8 Bg5 Re8 O-O-O Nc6": {
+  "en": "After Nd5 Nxd5 cxd5 Nd4: the knight on d4 is excellent. Equal.",
+  "es": "Tras Cd5 Cxd5 cxd5 Cd4: el caballo de d4 es excelente. Igualdad."
+ },
+ "Be3 Nbd7 d5": {
+  "en": "d5: ...Ng4! hits the e3-bishop, then ...f5.",
+  "es": "d5: ¡...Cg4! ataca al alfil de e3, y después ...f5."
+ },
+ "Be3 Nbd7 d5 Ng4 Bg5 f6 Bh4 g5 Bg3 f5": {
+  "en": "Black gains kingside space but loosens his king. After exf5, the e4-square is White's: slightly better for White.",
+  "es": "Las negras ganan espacio en el flanco de rey pero debilitan al rey. Tras exf5, la casilla e4 es de las blancas: algo mejor para las blancas."
  }
 }

@@ -14,5 +14,69 @@
  "d4 d6 Nc3 Bg7 Be3 Nf6 Qd2 O-O f3 Re8": {
   "en": "...Re8 is slow: O-O-O and the attack with g4, h4–h5 and Bh6.",
   "es": "...Te8 es lento: O-O-O y el ataque con g4, h4–h5 y Ah6."
+ },
+ "": {
+  "en": "Against the Modern, White takes the full centre (d4 and e4) and develops with Nc3, Be3 and Qd2: the 150 Attack plan with Bh6, f3, O-O-O and h4–h5.",
+  "es": "Contra la Moderna, las blancas ocupan todo el centro (d4 y e4) y desarrollan con Cc3, Ae3 y Dd2: el plan del Ataque 150 con Ah6, f3, O-O-O y h4–h5."
+ },
+ "d4 Bg7 Nc3 d6": {
+  "en": "Be3 and Qd2: the bishop will trade itself for the g7-bishop with Bh6.",
+  "es": "Ae3 y Dd2: el alfil se cambiará por el de g7 con Ah6."
+ },
+ "d4 Bg7 Nc3 d6 Be3 Nf6": {
+  "en": "Qd2, then Bh6 or f3 and O-O-O.",
+  "es": "Dd2, y después Ah6 o f3 y O-O-O."
+ },
+ "d4 Bg7 Nc3 d6 Be3 Nf6 Qd2 O-O": {
+  "en": "Black has castled: Bh6 trades the defender of the king, then f3, O-O-O, h4–h5. White is better.",
+  "es": "Las negras han enrocado: Ah6 cambia el defensor del rey, y después f3, O-O-O, h4–h5. Las blancas están mejor."
+ },
+ "d4 Bg7 Nc3 d6 Be3 Nf6 Qd2 Ng4 Bg5": {
+  "en": "The bishop steps aside; f3 next kicks the knight, and White gains time. Clearly better for White.",
+  "es": "El alfil se aparta; después f3 echa al caballo, y las blancas ganan tiempo. Claramente mejor para las blancas."
+ },
+ "d4 Bg7 Nc3 d6 Be3 Nc6": {
+  "en": "...Nc6 prepares ...e5. Qd2 and O-O-O; if ...e5, d5 gains space with tempo.",
+  "es": "...Cc6 prepara ...e5. Dd2 y O-O-O; si ...e5, d5 gana espacio con tiempo."
+ },
+ "d4 Bg7 Nc3 d6 Be3 Nc6 Qd2 e5 d5": {
+  "en": "The knight must retreat (...Nce7). f4 and O-O-O follow: White has space and the initiative. Clearly better.",
+  "es": "El caballo tiene que retirarse (...Cce7). Siguen f4 y O-O-O: las blancas tienen espacio e iniciativa. Claramente mejor."
+ },
+ "d4 Bg7 Nc3 d6 Be3 Nd7": {
+  "en": "...Nd7 keeps ...e5 or ...c5 in reserve. Qd2, f3 or Nf3, and O-O-O.",
+  "es": "...Cd7 mantiene en reserva ...e5 o ...c5. Dd2, f3 o Cf3, y O-O-O."
+ },
+ "d4 Bg7 Nc3 d6 Be3 a6": {
+  "en": "...a6 prepares ...b5. Qd2, f3 and h4: attack on the kingside while Black expands on the queenside.",
+  "es": "...a6 prepara ...b5. Dd2, f3 y h4: ataque en el flanco de rey mientras las negras se expanden en el de dama."
+ },
+ "d4 Bg7 Nc3 d6 Be3 a6 Qd2 b5 f3": {
+  "en": "Then h4, g4 and Nge2, with O-O-O. White has the centre and an attack. Better for White.",
+  "es": "Después h4, g4 y Cge2, con O-O-O. Las blancas tienen el centro y un ataque. Mejor para las blancas."
+ },
+ "d4 Bg7 Nc3 e6": {
+  "en": "...e6 is slow. h4! threatens h5 and the attack starts at once (Nf3 or Be3 are also good).",
+  "es": "...e6 es lenta. ¡h4! amenaza h5 y el ataque empieza de inmediato (Cf3 o Ae3 también son buenas)."
+ },
+ "d4 Bg7 Nc3 e6 h4": {
+  "en": "If ...d5, Nf3 and after ...dxe4 Nxe4 White has a big lead in development. Clearly better.",
+  "es": "Si ...d5, Cf3 y tras ...dxe4 Cxe4 las blancas tienen una gran ventaja de desarrollo. Claramente mejor."
+ },
+ "d4 Bg7 Nc3 c5 Be3 cxd4": {
+  "en": "Bxd4: the bishop is strong in the centre and the g7-bishop is blunted.",
+  "es": "Axd4: el alfil es fuerte en el centro y el de g7 queda neutralizado."
+ },
+ "d4 Bg7 Nc3 c5 Be3 cxd4 Bxd4 Nf6 e5": {
+  "en": "e5 kicks the knight back to g8. Bc4, Nf3 and Qe2: White is well ahead in development.",
+  "es": "e5 devuelve el caballo a g8. Ac4, Cf3 y De2: las blancas van muy por delante en desarrollo."
+ },
+ "d4 Bg7 Nc3 c6 Be3 d5 e5": {
+  "en": "A Caro-Kann/Gurgenidze structure. f4, Nf3 and Qd2: White has space; Black's knights lack squares. White is better.",
+  "es": "Una estructura Caro-Kann/Gurgenidze. f4, Cf3 y Dd2: las blancas tienen espacio; los caballos negros no tienen casillas. Las blancas están mejor."
+ },
+ "d4 Bg7 Nc3 c6 Be3 d6 Qd2": {
+  "en": "f3 or Nf3, O-O-O and h4: the same attacking scheme. Better for White.",
+  "es": "f3 o Cf3, O-O-O y h4: el mismo esquema de ataque. Mejor para las blancas."
  }
 }

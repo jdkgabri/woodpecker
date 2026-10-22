@@ -18,5 +18,49 @@
  "Nc6 e4 e5 Bc4 h6 O-O Bc5 c3 Nf6 d4 exd4": {
   "en": "cxd4 Bb6 d5 and e5: White's centre rolls forward.",
   "es": "cxd4 Ab6 d5 y e5: el centro blanco avanza."
+ },
+ "d5": {
+  "en": "1...d5: g3, Bg2, O-O, d3, Nbd2 and e4: the King's Indian Attack.",
+  "es": "1...d5: g3, Ag2, O-O, d3, Cbd2 y e4: el Ataque Indio de Rey."
+ },
+ "d5 g3 Nc6": {
+  "en": "...Nc6 prepares ...e5. d4 (or Bg2 and d3) keeps the centre under control.",
+  "es": "...Cc6 prepara ...e5. d4 (o Ag2 y d3) mantiene el centro bajo control."
+ },
+ "d5 g3 Nf6": {
+  "en": "Bg2, O-O and d3, then Nbd2 and e4.",
+  "es": "Ag2, O-O y d3, y después Cbd2 y e4."
+ },
+ "d5 g3 c5": {
+  "en": "...c5: a reversed King's Indian. Bg2, O-O, d3 and e4 or c4.",
+  "es": "...c5: una India de Rey invertida. Ag2, O-O, d3 y e4 o c4."
+ },
+ "d5 g3 c5 Bg2 Nc6": {
+  "en": "d4 (or O-O, d3 and e4). White's g2-bishop presses d5.",
+  "es": "d4 (o O-O, d3 y e4). El alfil de g2 presiona d5."
+ },
+ "Nf6": {
+  "en": "1...Nf6: g3, Bg2 and O-O.",
+  "es": "1...Cf6: g3, Ag2 y O-O."
+ },
+ "Nf6 g3 g6": {
+  "en": "...g6: a mirror setup. Bg2, O-O and d3, then e4 or c4.",
+  "es": "...g6: un esquema espejo. Ag2, O-O y d3, y después e4 o c4."
+ },
+ "Nf6 g3 g6 Bg2 Bg7": {
+  "en": "Castle and play d3; e4 later.",
+  "es": "Enroca y juega d3; e4 más tarde."
+ },
+ "Nf6 g3 g6 Bg2 Bg7 O-O O-O": {
+  "en": "d3, then e4 or c4: a slow, flexible game.",
+  "es": "d3, y después e4 o c4: una partida lenta y flexible."
+ },
+ "c5": {
+  "en": "1...c5: g3 and Bg2; e4 can turn it into a Closed Sicilian setup.",
+  "es": "1...c5: g3 y Ag2; e4 puede convertirlo en un esquema de Siciliana Cerrada."
+ },
+ "c5 g3 Nc6": {
+  "en": "Bg2, O-O, then d3 and e4 or c4.",
+  "es": "Ag2, O-O, y después d3 y e4 o c4."
  }
 }

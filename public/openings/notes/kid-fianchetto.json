@@ -18,5 +18,85 @@
  "": {
   "en": "Against the fianchetto: ...O-O, ...d6 and ...Nc6 or ...Nbd7 with ...e5.",
   "es": "Contra el fianchetto: ...O-O, ...d6 y ...Cc6 o ...Cbd7 con ...e5."
+ },
+ "O-O Bg2 d6 O-O": {
+  "en": "...Nc6: hits d4 and prepares ...e5 (or ...a6 and ...Rb8, the Panno).",
+  "es": "...Cc6: ataca d4 y prepara ...e5 (o ...a6 y ...Tb8, la Panno)."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3": {
+  "en": "...e5: the most direct; White must choose between d5, dxe5 and e4.",
+  "es": "...e5: lo más directo; las blancas deben elegir entre d5, dxe5 y e4."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 d5": {
+  "en": "...Ne7: then ...Nd7 and ...f5, as in the Classical.",
+  "es": "...Ce7: después ...Cd7 y ...f5, como en la Clásica."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 d5 Ne7 e4": {
+  "en": "...Nd7 and ...f5: the kingside break. White will play b4 and c5.",
+  "es": "...Cd7 y ...f5: la ruptura en el flanco de rey. Las blancas jugarán b4 y c5."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 d5 Ne7 e4 Nd7 b4 a5": {
+  "en": "...a5 slows the queenside; after bxa5 Rxa5 a4, ...Nc5 and ...Bd7. Slightly better for White.",
+  "es": "...a5 frena el flanco de dama; tras bxa5 Txa5 a4, ...Cc5 y ...Ad7. Algo mejor para las blancas."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 dxe5": {
+  "en": "...dxe5: the queens may come off. Black is fine.",
+  "es": "...dxe5: puede que salgan las damas. Las negras están bien."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 dxe5 dxe5 Qxd8": {
+  "en": "...Rxd8: then ...Be6 or ...h6; watch the Ne4 and Nb5 tricks (see the notes ahead).",
+  "es": "...Txd8: después ...Ae6 o ...h6; atención a los trucos con Ce4 y Cb5 (ver las notas siguientes)."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 dxe5 dxe5 Qxd8 Rxd8 Bg5": {
+  "en": "...Be6 develops and hits c4. Equal.",
+  "es": "...Ae6 desarrolla y ataca c4. Igualdad."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 dxe5 dxe5 Bg5": {
+  "en": "...h6 asks the bishop; after Bxf6 Qxf6, Black has the bishop pair.",
+  "es": "...h6 pregunta al alfil; tras Axf6 Dxf6, las negras tienen la pareja de alfiles."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 dxe5 dxe5 Bg5 h6 Bxf6 Qxf6": {
+  "en": "...Nd4 next: the knight is excellent there. Black is comfortable.",
+  "es": "Después ...Cd4: el caballo es excelente ahí. Las negras están cómodas."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 e4": {
+  "en": "e4 is premature: ...exd4 (or ...Bg4!) and d4 falls into Black's hands.",
+  "es": "e4 es prematura: ...exd4 (o ¡...Ag4!) y d4 cae en manos negras."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 e4 exd4 Nxd4": {
+  "en": "...Nxd4 trades and Qxd4 follows.",
+  "es": "...Cxd4 cambia y sigue Dxd4."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 e4 exd4 Nxd4 Nxd4 Qxd4": {
+  "en": "...c6, ...Re8 and ...a5–a4: pressure on e4 and the queenside.",
+  "es": "...c6, ...Te8 y ...a5–a4: presión sobre e4 y el flanco de dama."
+ },
+ "O-O Bg2 d6 O-O Nc6 Nc3 e5 e4 exd4 Nxd4 Nxd4 Qxd4 c6": {
+  "en": "...Re8 hits e4; ...a5 and ...Be6 follow. Equal.",
+  "es": "...Te8 ataca e4; siguen ...a5 y ...Ae6. Igualdad."
+ },
+ "O-O Bg2 d6 Nc3": {
+  "en": "...Nc6 and ...e5, as usual.",
+  "es": "...Cc6 y ...e5, como siempre."
+ },
+ "O-O Bg2 d6 Nc3 Nc6 O-O": {
+  "en": "...e5.",
+  "es": "...e5."
+ },
+ "O-O Bg2 d6 Nc3 Nc6 O-O e5 d5": {
+  "en": "...Ne7, ...Nd7 and ...f5.",
+  "es": "...Ce7, ...Cd7 y ...f5."
+ },
+ "O-O Bg2 d6 Nc3 Nc6 O-O e5 d5 Ne7 e4": {
+  "en": "...Nd7 and ...f5: the standard plan.",
+  "es": "...Cd7 y ...f5: el plan estándar."
+ },
+ "O-O Bg2 d6 Nc3 Nc6 O-O e5 dxe5": {
+  "en": "...dxe5: equal.",
+  "es": "...dxe5: igualdad."
+ },
+ "O-O Bg2 d6 Nc3 Nc6 O-O e5 e4": {
+  "en": "e4 is premature: ...Bg4! hits the f3-knight that guards d4. Black is better.",
+  "es": "e4 es prematura: ¡...Ag4! ataca al caballo de f3 que guarda d4. Las negras están mejor."
  }
 }

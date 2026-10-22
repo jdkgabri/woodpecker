@@ -18,5 +18,89 @@
  "": {
   "en": "The Winawer: ...Bb4 pins the knight; after e5, ...c5 and often ...Bxc3+.",
   "es": "La Winawer: ...Ab4 clava el caballo; tras e5, ...c5 y a menudo ...Axc3+."
+ },
+ "e5": {
+  "en": "e5 closes the centre. ...c5! hits the base of the chain at once.",
+  "es": "e5 cierra el centro. ¡...c5! golpea la base de la cadena de inmediato."
+ },
+ "e5 c5 a3": {
+  "en": "a3 asks the bishop: ...Bxc3+ gives up the bishop pair but doubles White's c-pawns.",
+  "es": "a3 pregunta al alfil: ...Axc3+ cede la pareja de alfiles pero dobla los peones c blancos."
+ },
+ "e5 c5 a3 Bxc3+ bxc3": {
+  "en": "...Ne7: the knight heads for f5 or c6, and defends g6 against Qg4.",
+  "es": "...Ce7: el caballo va hacia f5 o c6, y defiende g6 frente a Dg4."
+ },
+ "e5 c5 a3 Bxc3+ bxc3 Ne7 Qg4": {
+  "en": "Qg4 hits g7. ...Qc7 counterattacks c3 and e5: the Poisoned Pawn variation.",
+  "es": "Dg4 ataca g7. ...Dc7 contraataca c3 y e5: la variante del Peón Envenenado."
+ },
+ "e5 c5 a3 Bxc3+ bxc3 Ne7 Qg4 Qc7 Qxg7": {
+  "en": "...Rg8 and ...cxd4: Black gives the kingside pawns to destroy White's centre.",
+  "es": "...Tg8 y ...cxd4: las negras entregan los peones del flanco de rey para destruir el centro blanco."
+ },
+ "e5 c5 a3 Bxc3+ bxc3 Ne7 Qg4 Qc7 Qxg7 Rg8 Qxh7": {
+  "en": "...cxd4: now c3 and e5 are under fire.",
+  "es": "...cxd4: ahora c3 y e5 están bajo fuego."
+ },
+ "e5 c5 a3 Bxc3+ bxc3 Ne7 Qg4 Qc7 Qxg7 Rg8 Qxh7 cxd4 Ne2": {
+  "en": "...Nbc6: more pressure on e5, and ...Bd7 with ...O-O-O to come.",
+  "es": "...Cbc6: más presión sobre e5, y vendrán ...Ad7 con ...O-O-O."
+ },
+ "e5 c5 a3 Bxc3+ bxc3 Ne7 Qg4 Qc7 Qxg7 Rg8 Qxh7 cxd4 Ne2 Nbc6 f4": {
+  "en": "f4 holds e5. ...dxc3: the pawn on c3 will be a thorn in White's side.",
+  "es": "f4 sostiene e5. ...dxc3: el peón de c3 será una espina clavada para las blancas."
+ },
+ "e5 c5 a3 Bxc3+ bxc3 Ne7 Qg4 Qc7 Qxg7 Rg8 Qxh7 cxd4 Ne2 Nbc6 f4 dxc3 Qd3": {
+  "en": "...d4! protects the c3-pawn and opens the d5 square for a knight.",
+  "es": "¡...d4! protege el peón de c3 y abre la casilla d5 para un caballo."
+ },
+ "e5 c5 a3 Bxc3+ bxc3 Ne7 Qg4 Qc7 Qxg7 Rg8 Qxh7 cxd4 Ne2 Nbc6 f4 dxc3 Qd3 d4": {
+  "en": "After Nxd4 Nxd4 Qxd4, ...Bd7 and ...O-O-O, with ...Nf5 and the g-file. White has the passed h-pawn and is a bit better; Black has strong activity.",
+  "es": "Tras Cxd4 Cxd4 Dxd4, ...Ad7 y ...O-O-O, con ...Cf5 y la columna g. Las blancas tienen el peón h pasado y están algo mejor; las negras tienen mucha actividad."
+ },
+ "e5 c5 a3 Bxc3+ bxc3 Ne7 Nf3": {
+  "en": "Nf3: positional play. ...Qc7 or ...Qa5, ...Nbc6 and ...Bd7; ...c4 can lock the queenside.",
+  "es": "Cf3: juego posicional. ...Dc7 o ...Da5, ...Cbc6 y ...Ad7; ...c4 puede bloquear el flanco de dama."
+ },
+ "e5 c5 a3 Bxc3+ bxc3 Ne7 Nf3 Qc7 Bd3 Nbc6 O-O c4": {
+  "en": "...c4 locks the queenside and kicks the bishop. After Be2, ...Qa5 hits c3; ...Bd7 and ...O-O-O. Slightly better for White.",
+  "es": "...c4 bloquea el flanco de dama y echa al alfil. Tras Ae2, ...Da5 ataca c3; ...Ad7 y ...O-O-O. Algo mejor para las blancas."
+ },
+ "e5 c5 a3 Bxc3+ bxc3 Ne7 f4 Qa5": {
+  "en": "...Qa5 hits c3. After Bd2, ...Qa4 or ...Nbc6 and ...Bd7. Equal.",
+  "es": "...Da5 ataca c3. Tras Ad2, ...Da4 o ...Cbc6 y ...Ad7. Igualdad."
+ },
+ "exd5": {
+  "en": "The Exchange: ...exd5. Symmetrical and quiet; Black's bishop on b4 is already active.",
+  "es": "El Cambio: ...exd5. Simétrico y tranquilo; el alfil negro de b4 ya está activo."
+ },
+ "exd5 exd5 Bd2": {
+  "en": "...Ne7 and ...c5 or ...O-O.",
+  "es": "...Ce7 y ...c5 o ...O-O."
+ },
+ "exd5 exd5 Bd2 Ne7 Nf3 c5": {
+  "en": "After Bb5+ Bd7, Black has an active game. Equal.",
+  "es": "Tras Ab5+ Ad7, las negras tienen un juego activo. Igualdad."
+ },
+ "exd5 exd5 Nf3": {
+  "en": "...Ne7, ...O-O and ...Bg4 or ...c5.",
+  "es": "...Ce7, ...O-O y ...Ag4 o ...c5."
+ },
+ "exd5 exd5 Nf3 Ne7 Bd3 c5": {
+  "en": "If dxc5, ...Nd7 and ...Nxc5; after Bb5+ Bd7 the position is level.",
+  "es": "Si dxc5, ...Cd7 y ...Cxc5; tras Ab5+ Ad7 la posición está igualada."
+ },
+ "Bd3 c5 dxc5 dxe4": {
+  "en": "After Bxe4 Qxd1+ Kxd1 Nf6: an endgame where White's king has lost castling and c5 is weak. Black is a bit better.",
+  "es": "Tras Axe4 Dxd1+ Rxd1 Cf6: un final en el que el rey blanco ha perdido el enroque y c5 está débil. Las negras están algo mejor."
+ },
+ "Bd3 c5 a3 Bxc3+ bxc3 Qa5": {
+  "en": "...Qa5 hits c3; after Bd2, ...c4 kicks the bishop. Equal.",
+  "es": "...Da5 ataca c3; tras Ad2, ...c4 echa al alfil. Igualdad."
+ },
+ "Bd2 Nc6 exd5 exd5": {
+  "en": "After a3, ...Bxc3 Bxc3 Nf6 and ...O-O. Solid and equal.",
+  "es": "Tras a3, ...Axc3 Axc3 Cf6 y ...O-O. Sólido e igualado."
  }
 }

@@ -18,5 +18,93 @@
  "": {
   "en": "Against the Advance: ...c5, ...Nc6, ...Qb6 and ...Nge7–f5.",
   "es": "Contra el Avance: ...c5, ...Cc6, ...Db6 y ...Cge7–f5."
+ },
+ "c5 c3": {
+  "en": "c3 supports d4. ...Nc6 adds pressure: the whole game revolves around d4.",
+  "es": "c3 apoya d4. ...Cc6 añade presión: toda la partida gira en torno a d4."
+ },
+ "c5 c3 Nc6 Nf3": {
+  "en": "...Qb6: the third attacker on d4, also eyeing b2.",
+  "es": "...Db6: el tercer atacante sobre d4, que además apunta a b2."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 Bd3": {
+  "en": "Bd3 leaves d4 short of defenders: ...Bd7 first, then ...cxd4.",
+  "es": "Ad3 deja a d4 con pocos defensores: primero ...Ad7, y después ...cxd4."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 Bd3 Bd7 O-O": {
+  "en": "White offers the Milner-Barry Gambit: ...cxd4 cxd4 Nxd4! wins a pawn.",
+  "es": "Las blancas ofrecen el Gambito Milner-Barry: ...cxd4 cxd4 ¡Cxd4! gana un peón."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 Bd3 Bd7 O-O cxd4 cxd4": {
+  "en": "...Nxd4 Nxd4 Qxd4: Black is a pawn up. After Nc3, ...a6! stops Nb5, and ...Qxe5 can follow.",
+  "es": "...Cxd4 Cxd4 Dxd4: las negras tienen un peón de más. Tras Cc3, ¡...a6! impide Cb5, y puede seguir ...Dxe5."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 Bd3 Bd7 Bc2": {
+  "en": "...cxd4 cxd4 Nb4! trades off White's best attacking bishop. Black is fine.",
+  "es": "...cxd4 cxd4 ¡Cb4! cambia el mejor alfil atacante de las blancas. Las negras están bien."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 Be2": {
+  "en": "Be2 defends calmly. ...Bd7, ...Nge7–f5 and ...cxd4: pressure on d4.",
+  "es": "Ae2 defiende con calma. ...Ad7, ...Cge7–f5 y ...cxd4: presión sobre d4."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 Be2 Bd7 O-O": {
+  "en": "...Nge7, then ...Nf5 and ...cxd4. Black's pieces press d4 and the king is safe after ...Be7 and ...O-O.",
+  "es": "...Cge7, y después ...Cf5 y ...cxd4. Las piezas negras presionan d4 y el rey queda seguro tras ...Ae7 y ...O-O."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 a3": {
+  "en": "a3 prepares b4 to gain queenside space. ...Bd7 (or ...c4) first.",
+  "es": "a3 prepara b4 para ganar espacio en el flanco de dama. Primero ...Ad7 (o ...c4)."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 a3 Bd7 b4": {
+  "en": "...cxd4 cxd4, then ...Nge7–f5 and ...Rc8: play on the c-file and against d4.",
+  "es": "...cxd4 cxd4, y después ...Cge7–f5 y ...Tc8: juego en la columna c y contra d4."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 a3 Bd7 b4 cxd4 cxd4": {
+  "en": "...Nge7–f5: the knight hits d4.",
+  "es": "...Cge7–f5: el caballo ataca d4."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 a3 Bd7 b4 cxd4 cxd4 Nge7 Bb2 Nf5": {
+  "en": "If g4, ...Nfe7 (or ...Nh6) and the knight returns later; ...Rc8 and ...Na5–c4. Equal.",
+  "es": "Si g4, ...Cfe7 (o ...Ch6) y el caballo vuelve más tarde; ...Tc8 y ...Ca5–c4. Igualdad."
+ },
+ "c5 c3 Nc6 Nf3 Qb6 b3 Bd7 Be3": {
+  "en": "Be3? ...cxd4 cxd4 Bb4+! and White's king is in trouble: Black wins material or a big edge.",
+  "es": "¿Ae3? ...cxd4 cxd4 ¡Ab4+! y el rey blanco está en apuros: las negras ganan material o una gran ventaja."
+ },
+ "c5 c3 Nc6 Bb5": {
+  "en": "Bb5 pins the knight. ...Qb6 hits the bishop and d4.",
+  "es": "Ab5 clava el caballo. ...Db6 ataca al alfil y d4."
+ },
+ "c5 c3 Nc6 Bb5 Qb6 Bxc6+": {
+  "en": "...bxc6: the b-file opens and the c8-bishop will go to a6, where it becomes a good piece.",
+  "es": "...bxc6: se abre la columna b y el alfil de c8 irá a a6, donde será una buena pieza."
+ },
+ "c5 c3 Nc6 Bb5 Qb6 Bxc6+ bxc6 Nf3 cxd4 cxd4 Ba6": {
+  "en": "...Ba6 stops White from castling short. ...Ne7–f5 next. Black is better.",
+  "es": "...Aa6 impide el enroque corto blanco. Después ...Ce7–f5. Las negras están mejor."
+ },
+ "c5 c3 Nc6 f4": {
+  "en": "f4 weakens e3 and the dark squares. ...Nh6–f5 and ...Qb6 hit d4; Black is better.",
+  "es": "f4 debilita e3 y las casillas oscuras. ...Ch6–f5 y ...Db6 atacan d4; las negras están mejor."
+ },
+ "c5 c3 Nc6 Be3 Qb6 b3": {
+  "en": "b3? ...cxd4 cxd4 Bb4+! Nd2 Bc3 and the a1-rook is in trouble. Black is clearly better.",
+  "es": "¿b3? ...cxd4 cxd4 ¡Ab4+! Cd2 Ac3 y la torre de a1 está en apuros. Las negras están claramente mejor."
+ },
+ "c5 Nf3": {
+  "en": "Nf3 without c3: ...cxd4 at once.",
+  "es": "Cf3 sin c3: ...cxd4 de inmediato."
+ },
+ "c5 Nf3 cxd4 Nxd4": {
+  "en": "...Nc6 hits the knight and e5.",
+  "es": "...Cc6 ataca al caballo y a e5."
+ },
+ "c5 Nf3 cxd4 Nxd4 Nc6 Nxc6": {
+  "en": "...bxc6: Black gets a strong centre (c6, d5, e6) and ...c5 later. Equal.",
+  "es": "...bxc6: las negras obtienen un centro fuerte (c6, d5, e6) y más tarde ...c5. Igualdad."
+ },
+ "c5 Nf3 cxd4 Qxd4": {
+  "en": "...Nc6 gains time on the queen; ...Nge7 and ...Ng6 hit e5. Black is comfortable.",
+  "es": "...Cc6 gana tiempo sobre la dama; ...Cge7 y ...Cg6 atacan e5. Las negras están cómodas."
  }
 }

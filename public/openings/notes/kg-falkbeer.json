@@ -18,5 +18,181 @@
  "": {
   "en": "The Falkbeer: take on d5 and keep the extra pawn safely.",
   "es": "El Falkbeer: toma en d5 y conserva el peón de más con seguridad."
+ },
+ "exd5 e4": {
+  "en": "The Falkbeer proper: ...e4 cramps White's kingside. d3! breaks the wedge at once.",
+  "es": "La Falkbeer propiamente dicha: ...e4 encierra el flanco de rey blanco. ¡d3! rompe la cuña de inmediato."
+ },
+ "exd5 e4 d3 Nf6": {
+  "en": "dxe4 Nxe4, then Nf3 and Qe2: White is a pawn up.",
+  "es": "dxe4 Cxe4, y después Cf3 y De2: las blancas tienen un peón de más."
+ },
+ "exd5 e4 d3 Nf6 dxe4 Nxe4": {
+  "en": "Nf3, then Qe2 pins the knight on the e-file.",
+  "es": "Cf3, y después De2 clava el caballo en la columna e."
+ },
+ "exd5 e4 d3 Nf6 dxe4 Nxe4 Nf3 Bc5": {
+  "en": "Qe2! pins the e4-knight and attacks it.",
+  "es": "¡De2! clava el caballo de e4 y lo ataca."
+ },
+ "exd5 e4 d3 Nf6 dxe4 Nxe4 Nf3 Bc5 Qe2 O-O": {
+  "en": "...O-O? just loses the knight: Qxe4.",
+  "es": "¿...O-O? simplemente pierde el caballo: Dxe4."
+ },
+ "exd5 e4 d3 Nf6 dxe4 Nxe4 Nf3 Bc5 Qe2 O-O Qxe4 Re8": {
+  "en": "Ne5 keeps the piece. If ...f6, Nc3 and Bd3: White is a piece up.",
+  "es": "Ce5 conserva la pieza. Si ...f6, Cc3 y Ad3: las blancas tienen una pieza de más."
+ },
+ "exd5 e4 d3 Nf6 dxe4 Nxe4 Nf3 Bc5 Qe2 O-O Qxe4 Re8 Ne5 f6 Nc3": {
+  "en": "Bd3 and O-O next; Black's attack on the e-file is not enough for the piece. White is winning.",
+  "es": "Después Ad3 y O-O; el ataque negro por la columna e no compensa la pieza. Las blancas van ganando."
+ },
+ "exd5 e4 d3 Nf6 dxe4 Nxe4 Nf3 Bc5 Qe2 Qe7 Be3": {
+  "en": "Be3 challenges the c5-bishop. White keeps the d5-pawn: clearly better.",
+  "es": "Ae3 desafía al alfil de c5. Las blancas conservan el peón de d5: claramente mejor."
+ },
+ "exd5 e4 d3 Nf6 dxe4 Nxe4 Nf3 Bc5 Qe2 f5": {
+  "en": "...f5 holds the knight, but Be3! trades the c5-bishop; White stays a pawn up.",
+  "es": "...f5 sostiene el caballo, pero ¡Ae3! cambia el alfil de c5; las blancas siguen con un peón de más."
+ },
+ "exd5 e4 d3 Nf6 dxe4 Nxe4 Nf3 Bc5 Qe2 f5 Be3": {
+  "en": "After ...Qxd5 Bxc5 Qxc5 Nc3, the e4-knight falls: White is clearly better.",
+  "es": "Tras ...Dxd5 Axc5 Dxc5 Cc3, cae el caballo de e4: las blancas están claramente mejor."
+ },
+ "exd5 e4 d3 Nf6 dxe4 Nxe4 Nf3 Bc5 Qe2 Bf5 Nc3": {
+  "en": "Nc3 challenges the e4-knight; after the trades White keeps the extra pawn. Better for White.",
+  "es": "Cc3 desafía al caballo de e4; tras los cambios las blancas conservan el peón de más. Mejor para las blancas."
+ },
+ "exd5 e4 d3 Nf6 dxe4 Bc5": {
+  "en": "...Bc5? leaves Black two pawns down: Nc3 and Nf3, with no real compensation.",
+  "es": "¿...Ac5? deja a las negras con dos peones menos: Cc3 y Cf3, sin compensación real."
+ },
+ "exd5 e4 d3 Qxd5": {
+  "en": "...Qxd5: Nc3 hits the queen.",
+  "es": "...Dxd5: Cc3 ataca a la dama."
+ },
+ "exd5 e4 d3 Qxd5 Nc3 Bb4": {
+  "en": "Bd2 unpins.",
+  "es": "Ad2 deshace la clavada."
+ },
+ "exd5 e4 d3 Qxd5 Nc3 Bb4 Bd2 Bxc3": {
+  "en": "Bxc3: the bishop now eyes g7 and f6.",
+  "es": "Axc3: el alfil apunta ahora a g7 y f6."
+ },
+ "exd5 e4 d3 Qxd5 Nc3 Bb4 Bd2 Bxc3 Bxc3 Nf6": {
+  "en": "Bxf6! gxf6 wrecks Black's kingside, and then dxe4.",
+  "es": "¡Axf6! gxf6 destroza el flanco de rey negro, y después dxe4."
+ },
+ "exd5 e4 d3 Qxd5 Nc3 Bb4 Bd2 Bxc3 Bxc3 Nf6 Bxf6 gxf6": {
+  "en": "dxe4: the pawn comes back.",
+  "es": "dxe4: el peón se recupera."
+ },
+ "exd5 e4 d3 Qxd5 Nc3 Bb4 Bd2 Bxc3 Bxc3 Nf6 Bxf6 gxf6 dxe4 Qxe4+": {
+  "en": "Qe2: offer the queen trade.",
+  "es": "De2: ofrece el cambio de damas."
+ },
+ "exd5 e4 d3 Qxd5 Nc3 Bb4 Bd2 Bxc3 Bxc3 Nf6 Bxf6 gxf6 dxe4 Qxe4+ Qe2 f5 Nf3": {
+  "en": "After ...O-O Qxe4 fxe4 Nd4: Black's pawns are weak (e4, f-pawns). A better endgame for White.",
+  "es": "Tras ...O-O Dxe4 fxe4 Cd4: los peones negros son débiles (e4 y los peones f). Un final mejor para las blancas."
+ },
+ "exd5 e4 d3 Qxd5 Nc3 Bb4 Bd2 Bxc3 Bxc3 f6": {
+  "en": "...f6? Qe2! hits e4: after ...e3 Qxe3+ White is a pawn up with check. Clearly better.",
+  "es": "¿...f6? ¡De2! ataca e4: tras ...e3 Dxe3+ las blancas tienen un peón de más con jaque. Claramente mejor."
+ },
+ "exd5 e4 d3 exd3": {
+  "en": "Bxd3: White develops and keeps the d5-pawn.",
+  "es": "Axd3: las blancas desarrollan y conservan el peón de d5."
+ },
+ "exd5 e4 d3 exd3 Bxd3 Nf6": {
+  "en": "Nf3, then O-O and c4 to protect d5.",
+  "es": "Cf3, y después O-O y c4 para proteger d5."
+ },
+ "exd5 e4 d3 exd3 Bxd3 Nf6 Nf3 Bc5": {
+  "en": "Qe2+! Black must block with ...Qe7 or give up castling.",
+  "es": "¡De2+! Las negras deben tapar con ...De7 o renunciar al enroque."
+ },
+ "exd5 e4 d3 exd3 Bxd3 Nf6 Nf3 Bc5 Qe2+ Kf8": {
+  "en": "...Kf8 loses castling: Bd2, c4 and Nc3. White is a pawn up and clearly better.",
+  "es": "...Rf8 pierde el enroque: Ad2, c4 y Cc3. Las blancas tienen un peón de más y están claramente mejor."
+ },
+ "exd5 e4 d3 f5": {
+  "en": "...f5 holds e4 but loosens the king: dxe4 and the d5-pawn is strong.",
+  "es": "...f5 sostiene e4 pero debilita al rey: dxe4 y el peón de d5 es fuerte."
+ },
+ "exd5 e4 d3 f5 dxe4 fxe4": {
+  "en": "Qh5+! The king must move (...Kd7) or ...g6 loses more. White is winning.",
+  "es": "¡Dh5+! El rey tiene que moverse (...Rd7), y ...g6 pierde más. Las blancas van ganando."
+ },
+ "exd5 exf4": {
+  "en": "...exf4: Nf3 stops ...Qh4+; d4 and Bxf4 follow.",
+  "es": "...exf4: Cf3 impide ...Dh4+; siguen d4 y Axf4."
+ },
+ "exd5 exf4 Nf3 Qxd5": {
+  "en": "Nc3 gains time on the queen.",
+  "es": "Cc3 gana tiempo sobre la dama."
+ },
+ "exd5 exf4 Nf3 Qxd5 Nc3 Qe6+": {
+  "en": "Be2: block and castle next; the e-file pin with Bb5+ and Re1 becomes a weapon.",
+  "es": "Ae2: tapa y enroca después; la clavada en la columna e con Ab5+ y Te1 se convierte en un arma."
+ },
+ "exd5 exf4 Nf3 Qxd5 Nc3 Qe6+ Be2 Bc5": {
+  "en": "...Bc5? d4! gains time on the bishop; then O-O and Bxf4. White is clearly better.",
+  "es": "¿...Ac5? ¡d4! gana tiempo sobre el alfil; después O-O y Axf4. Las blancas están claramente mejor."
+ },
+ "exd5 exf4 Nf3 Qxd5 Nc3 Qd8": {
+  "en": "Bc4 and d4, O-O and Bxf4: a big lead in development.",
+  "es": "Ac4 y d4, O-O y Axf4: una gran ventaja de desarrollo."
+ },
+ "exd5 exf4 Nf3 Nf6": {
+  "en": "Nc3 (or c4) keeps d5; Bc4 next.",
+  "es": "Cc3 (o c4) conserva d5; después Ac4."
+ },
+ "exd5 exf4 Nf3 Nf6 Nc3 Nxd5": {
+  "en": "Bc4 attacks the knight.",
+  "es": "Ac4 ataca al caballo."
+ },
+ "exd5 exf4 Nf3 Nf6 Nc3 Nxd5 Bc4 Nxc3": {
+  "en": "bxc3: the b-file and centre open; O-O and d4 next.",
+  "es": "bxc3: se abren la columna b y el centro; después O-O y d4."
+ },
+ "exd5 exf4 Nf3 Nf6 Nc3 Nxd5 Bc4 Nxc3 bxc3 Bd6 Qe2+": {
+  "en": "After ...Qe7, Black keeps the f4-pawn and is slightly better; White has open lines for the pieces.",
+  "es": "Tras ...De7, las negras conservan el peón de f4 y están algo mejor; las blancas tienen líneas abiertas para las piezas."
+ },
+ "exd5 exf4 Nf3 Bg4 Nc3 Bxf3": {
+  "en": "Qxf3: the queen is active. If ...Qh4+, g3 fxg3 hxg3 and the h-file opens for White. Clearly better.",
+  "es": "Dxf3: la dama está activa. Si ...Dh4+, g3 fxg3 hxg3 y la columna h se abre para las blancas. Claramente mejor."
+ },
+ "exd5 Qxd5": {
+  "en": "...Qxd5: Nf3 (or Nc3) attacks e5 and gains time.",
+  "es": "...Dxd5: Cf3 (o Cc3) ataca e5 y gana tiempo."
+ },
+ "exd5 Qxd5 Nf3 e4": {
+  "en": "Nc3 hits the queen.",
+  "es": "Cc3 ataca a la dama."
+ },
+ "exd5 Qxd5 Nf3 e4 Nc3 Qe6 Ne5": {
+  "en": "Ne5, then d3 or d4: White is far ahead in development. Clearly better.",
+  "es": "Ce5, y después d3 o d4: las blancas van muy por delante en desarrollo. Claramente mejor."
+ },
+ "exd5 Qxd5 Nf3 e4 Nc3 Qc6": {
+  "en": "...Qc6? Bb5! skewers the queen: after ...exf3 Qxf3 White wins material.",
+  "es": "¿...Dc6? ¡Ab5! ataca a la dama: tras ...exf3 Dxf3 las blancas ganan material."
+ },
+ "exd5 Qxd5 Nf3 exf4": {
+  "en": "Nc3 gains time; d4 and Bxf4 follow.",
+  "es": "Cc3 gana tiempo; siguen d4 y Axf4."
+ },
+ "exd5 Qxd5 Nf3 Qe4+": {
+  "en": "Be2, then Nc3 and fxe5: the queen gets chased. White is better.",
+  "es": "Ae2, y después Cc3 y fxe5: la dama es perseguida. Las blancas están mejor."
+ },
+ "exd5 c6 Nc3 cxd5": {
+  "en": "fxe5: White wins the e5-pawn.",
+  "es": "fxe5: las blancas ganan el peón de e5."
+ },
+ "exd5 c6 Nc3 cxd5 fxe5": {
+  "en": "If ...d4, Ne4 and Nf3: White keeps a pawn more and good development. Better for White.",
+  "es": "Si ...d4, Ce4 y Cf3: las blancas conservan un peón de más y buen desarrollo. Mejor para las blancas."
  }
 }

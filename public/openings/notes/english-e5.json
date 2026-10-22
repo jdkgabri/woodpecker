@@ -18,5 +18,49 @@
  "": {
   "en": "1...e5: a Sicilian with colours reversed and an extra tempo for White.",
   "es": "1...e5: una Siciliana con colores invertidos y un tiempo de más para las blancas."
+ },
+ "Nc3 Nf6": {
+  "en": "g3 and Bg2: the bishop controls d5 and the long diagonal.",
+  "es": "g3 y Ag2: el alfil controla d5 y la gran diagonal."
+ },
+ "Nc3 Nf6 g3 d5": {
+  "en": "...d5: a reversed Dragon. cxd5 Nxd5 and Bg2: the d5-knight becomes a target.",
+  "es": "...d5: un Dragón invertido. cxd5 Cxd5 y Ag2: el caballo de d5 se convierte en objetivo."
+ },
+ "Nc3 Nf6 g3 d5 cxd5 Nxd5": {
+  "en": "Bg2 hits the d5-knight; Nf3, O-O, a3 and b4 for queenside play. Slightly better for White.",
+  "es": "Ag2 ataca el caballo de d5; Cf3, O-O, a3 y b4 para jugar en el flanco de dama. Algo mejor para las blancas."
+ },
+ "Nc3 Nf6 g3 Bc5": {
+  "en": "...Bc5: Bg2, then e3 (blunting the bishop) or Nf3 with tricks on e5.",
+  "es": "...Ac5: Ag2, y después e3 (neutralizando el alfil) o Cf3 con trucos sobre e5."
+ },
+ "Nc3 Nf6 g3 Bb4": {
+  "en": "...Bb4 pins. Bg2, Nf3 and O-O; e4 by Black can kick the f3-knight.",
+  "es": "...Ab4 clava. Ag2, Cf3 y O-O; ...e4 de las negras puede echar al caballo de f3."
+ },
+ "Nc3 Nf6 g3 Bb4 Bg2 O-O Nf3": {
+  "en": "If ...Re8 O-O e4, Nd4 (or Ne1) and the knight is fine; after ...Bxc3 dxc3 White has the bishop pair. Equal.",
+  "es": "Si ...Te8 O-O e4, Cd4 (o Ce1) y el caballo está bien; tras ...Axc3 dxc3 las blancas tienen la pareja de alfiles. Igualdad."
+ },
+ "Nc3 Nf6 g3 c6": {
+  "en": "...c6 prepares ...d5. Bg2, then d4 to fight for the centre.",
+  "es": "...c6 prepara ...d5. Ag2, y después d4 para luchar por el centro."
+ },
+ "Nc3 Nf6 g3 c6 Bg2 d5 d4": {
+  "en": "d4 hits the centre; after ...exd4 Qxd4, cxd5 and Qa4+ ideas. Equal.",
+  "es": "d4 golpea el centro; tras ...exd4 Dxd4, cxd5 e ideas con Da4+. Igualdad."
+ },
+ "Nc3 Nc6": {
+  "en": "g3 and Bg2, then Nf3 or e3 and Nge2.",
+  "es": "g3 y Ag2, y después Cf3 o e3 y Cge2."
+ },
+ "Nc3 Nc6 g3 Nf6": {
+  "en": "Bg2 and the Four Knights / Closed English plans: Nf3, O-O, d3, Rb1 and b4.",
+  "es": "Ag2 y los planes de los Cuatro Caballos / Inglesa Cerrada: Cf3, O-O, d3, Tb1 y b4."
+ },
+ "Nc3 Bc5": {
+  "en": "...Bc5 early: g3 and Bg2, or e3 and d4 to blunt the bishop. White is better.",
+  "es": "...Ac5 pronto: g3 y Ag2, o e3 y d4 para neutralizar el alfil. Las blancas están mejor."
  }
 }
