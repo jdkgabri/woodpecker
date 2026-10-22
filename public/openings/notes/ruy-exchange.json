@@ -30,5 +30,125 @@
  "": {
   "en": "The Exchange Variation: White gives the bishop pair to damage Black's structure and aims for a better endgame with the healthy kingside majority.",
   "es": "La Variante del Cambio: las blancas entregan la pareja de alfiles para dañar la estructura negra y buscan un final mejor con su mayoría sana en el flanco de rey."
+ },
+ "dxc6": {
+  "en": "O-O: now Nxe5 is a real threat (the ...Qd4 trick no longer works so easily).",
+  "es": "O-O: ahora Cxe5 es una amenaza real (el truco ...Dd4 ya no funciona tan fácilmente)."
+ },
+ "dxc6 O-O Bd6": {
+  "en": "...Bd6 defends e5. d4! opens the centre.",
+  "es": "...Ad6 defiende e5. ¡d4! abre el centro."
+ },
+ "dxc6 O-O Bd6 d4 exd4": {
+  "en": "Nxd4 (or Qxd4): an open, slightly better position for White.",
+  "es": "Cxd4 (o Dxd4): una posición abierta, algo mejor para las blancas."
+ },
+ "dxc6 O-O Bd6 d4 exd4 Nxd4 Nf6": {
+  "en": "Nc3, Re1 and Bg5: develop and use the healthy kingside majority.",
+  "es": "Cc3, Te1 y Ag5: desarrolla y aprovecha la sana mayoría del flanco de rey."
+ },
+ "dxc6 O-O Bd6 d4 exd4 Nxd4 Nf6 Nc3 O-O": {
+  "en": "Re1 and Bg5: equal, with long-term pluses for White.",
+  "es": "Te1 y Ag5: igualdad, con ventajas a largo plazo para las blancas."
+ },
+ "dxc6 O-O Bd6 d4 exd4 Nxd4 Nf6 Nc3 O-O Re1": {
+  "en": "After ...Re8 Bg5 h6 Bh4: equal; White's structure is better in an endgame.",
+  "es": "Tras ...Te8 Ag5 h6 Ah4: igualdad; la estructura blanca es mejor en un final."
+ },
+ "dxc6 O-O Bd6 d4 exd4 Nxd4 Ne7": {
+  "en": "Nc3 and Be3 or f4. Equal.",
+  "es": "Cc3 y Ae3 o f4. Igualdad."
+ },
+ "dxc6 O-O Bd6 d4 exd4 Nxd4 Ne7 Nc3": {
+  "en": "After ...O-O f4: White has a kingside majority; Black has the bishops. Equal.",
+  "es": "Tras ...O-O f4: las blancas tienen mayoría en el flanco de rey y las negras los alfiles. Igualdad."
+ },
+ "dxc6 O-O Bd6 d4 Bg4": {
+  "en": "dxe5: if ...Bxe5?, Qxd8+ and Nxe5 wins a piece.",
+  "es": "dxe5: si ¿...Axe5?, Dxd8+ y Cxe5 gana una pieza."
+ },
+ "dxc6 O-O Bd6 d4 Bg4 dxe5 Bxf3": {
+  "en": "Qxf3: White gets the bishop back on e5 later; the queen is active.",
+  "es": "Dxf3: la dama está activa."
+ },
+ "dxc6 O-O Bd6 d4 Bg4 dxe5 Bxf3 Qxf3 Bxe5": {
+  "en": "Nd2 and Nc4 (or Rd1): White is better developed and has the better structure.",
+  "es": "Cd2 y Cc4 (o Td1): las blancas están mejor desarrolladas y tienen mejor estructura."
+ },
+ "dxc6 O-O Bd6 d4 Bg4 dxe5 Bxf3 Qxf3 Bxe5 Nd2": {
+  "en": "If ...Qh4, g3: the queen gets chased. White is better.",
+  "es": "Si ...Dh4, g3: la dama es perseguida. Las blancas están mejor."
+ },
+ "dxc6 O-O Bd6 d4 Qe7": {
+  "en": "dxe5 Bxe5 Nxe5 Qxe5 Qf3: White is ahead in development. Clearly better.",
+  "es": "dxe5 Axe5 Cxe5 Dxe5 Df3: las blancas van adelantadas en desarrollo. Claramente mejor."
+ },
+ "dxc6 O-O Bd6 d4 f6": {
+  "en": "dxe5 fxe5 Nxe5! wins a pawn. Clearly better for White.",
+  "es": "dxe5 fxe5 ¡Cxe5! gana un peón. Claramente mejor para las blancas."
+ },
+ "dxc6 O-O Bg4": {
+  "en": "...Bg4 pins the knight: d3 (or h3) and Be3.",
+  "es": "...Ag4 clava el caballo: d3 (o h3) y Ae3."
+ },
+ "dxc6 O-O Bg4 d3 Qf6": {
+  "en": "Be3 and Nbd2; if ...Bxf3 Qxf3, the endgame suits White. Equal.",
+  "es": "Ae3 y Cbd2; si ...Axf3 Dxf3, el final favorece a las blancas. Igualdad."
+ },
+ "dxc6 O-O Bg4 d3 Qf6 Be3": {
+  "en": "After ...Bxf3 Qxf3 Qxf3 gxf3: White's structure is still the better one. Equal.",
+  "es": "Tras ...Axf3 Dxf3 Dxf3 gxf3: la estructura blanca sigue siendo mejor. Igualdad."
+ },
+ "dxc6 O-O Bg4 d3 Nf6": {
+  "en": "Be3 and Nbd2, h3. Slightly better for White.",
+  "es": "Ae3 y Cbd2, h3. Algo mejor para las blancas."
+ },
+ "dxc6 O-O Bg4 d3 Nf6 Be3": {
+  "en": "After ...Bh5 Nbd2 Bd6 h3: White keeps a small plus.",
+  "es": "Tras ...Ah5 Cbd2 Ad6 h3: las blancas mantienen una pequeña ventaja."
+ },
+ "dxc6 O-O Bg4 d3 Bc5": {
+  "en": "Be3: trade the active bishop.",
+  "es": "Ae3: cambia el alfil activo."
+ },
+ "dxc6 O-O Bg4 d3 Bd6": {
+  "en": "Be3 and Nbd2, h3.",
+  "es": "Ae3 y Cbd2, h3."
+ },
+ "dxc6 O-O f6": {
+  "en": "...f6 defends e5: d4 opens the centre.",
+  "es": "...f6 defiende e5: d4 abre el centro."
+ },
+ "dxc6 O-O f6 d4 exd4": {
+  "en": "Nxd4: the endgame-like structure favours White.",
+  "es": "Cxd4: la estructura casi de final favorece a las blancas."
+ },
+ "dxc6 O-O f6 d4 Bd6": {
+  "en": "dxe5 fxe5 Nxe5: White wins a pawn. Clearly better.",
+  "es": "dxe5 fxe5 Cxe5: las blancas ganan un peón. Claramente mejor."
+ },
+ "dxc6 O-O Nf6 Nxe5 Nxe4": {
+  "en": "Re1! and the e4-knight is in trouble. White is winning.",
+  "es": "¡Te1! y el caballo de e4 está en apuros. Las blancas van ganando."
+ },
+ "bxc6": {
+  "en": "...bxc6 keeps the centre pawns: d4 opens the game.",
+  "es": "...bxc6 conserva los peones centrales: d4 abre el juego."
+ },
+ "bxc6 d4 exd4": {
+  "en": "Nxd4 (or Qxd4): White has the better structure.",
+  "es": "Cxd4 (o Dxd4): las blancas tienen mejor estructura."
+ },
+ "bxc6 d4 exd4 Nxd4 Bc5 Nc3": {
+  "en": "Be3, Qd2 and O-O-O: White is better.",
+  "es": "Ae3, Dd2 y O-O-O: las blancas están mejor."
+ },
+ "bxc6 d4 exd4 Nxd4 Nf6": {
+  "en": "e5! kicks the knight. White is clearly better.",
+  "es": "¡e5! echa al caballo. Las blancas están claramente mejor."
+ },
+ "bxc6 d4 d6": {
+  "en": "dxe5 and the d6-pawn falls. White is clearly better.",
+  "es": "dxe5 y cae el peón de d6. Las blancas están claramente mejor."
  }
 }

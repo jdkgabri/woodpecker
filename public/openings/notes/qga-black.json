@@ -26,5 +26,133 @@
  "e4 Nf6 e5 Nd5 Bxc4 e6 Bxd5": {
   "en": "White gives up the bishop pair: ...Qxd5 and the queen is strong in the centre.",
   "es": "Las blancas entregan la pareja de alfiles: ...Dxd5 y la dama es fuerte en el centro."
+ },
+ "": {
+  "en": "The Queen's Gambit Accepted: Black takes on c4 and gives it back later in exchange for free development. Plans: ...Nf6, ...e6, ...c5 and ...a6; against e4, hit the centre with ...e5.",
+  "es": "El Gambito de Dama Aceptado: las negras toman en c4 y lo devuelven más tarde a cambio de un desarrollo libre. Planes: ...Cf6, ...e6, ...c5 y ...a6; contra e4, golpea el centro con ...e5."
+ },
+ "Nc3": {
+  "en": "...Nf6 controls e4.",
+  "es": "...Cf6 controla e4."
+ },
+ "Nc3 Nf6 e4": {
+  "en": "...e5! hits the centre.",
+  "es": "¡...e5! golpea el centro."
+ },
+ "Nc3 Nf6 e4 e5 d5": {
+  "en": "...b5! holds the c4-pawn.",
+  "es": "¡...b5! sostiene el peón de c4."
+ },
+ "Nc3 Nf6 e4 e5 d5 b5 Nxb5": {
+  "en": "...Nxe4: Black wins the e-pawn back with the better game.",
+  "es": "...Cxe4: las negras recuperan el peón e con mejor juego."
+ },
+ "Nc3 Nf6 e4 e5 d5 b5 Nxb5 Nxe4": {
+  "en": "After Nc3 Nxc3 bxc3 Bd6: Black is a pawn up. Black is better.",
+  "es": "Tras Cc3 Cxc3 bxc3 Ad6: las negras tienen un peón de más. Las negras están mejor."
+ },
+ "Nc3 Nf6 e4 e5 d5 b5 Bg5": {
+  "en": "...Bc5! hits f2: if Nxb5, ...Bxf2+ and ...Nxe4+. Black is better.",
+  "es": "¡...Ac5! ataca f2: si Cxb5, ...Axf2+ y ...Cxe4+. Las negras están mejor."
+ },
+ "Nc3 Nf6 e4 e5 d5 b5 Bg5 Bc5": {
+  "en": "After Nxb5 Bxf2+ Kxf2 Nxe4+, Black regains the piece with a pawn more. Black is better.",
+  "es": "Tras Cxb5 Axf2+ Rxf2 Cxe4+, las negras recuperan la pieza con un peón de más. Las negras están mejor."
+ },
+ "Nc3 Nf6 e3": {
+  "en": "...e6, then ...c5 after Bxc4.",
+  "es": "...e6, y después ...c5 tras Axc4."
+ },
+ "Nc3 Nf6 e3 e6 Bxc4": {
+  "en": "...c5 hits d4.",
+  "es": "...c5 golpea d4."
+ },
+ "Nc3 Nf6 e3 e6 Bxc4 c5 Nf3": {
+  "en": "...a6 and ...b5: gain time on the bishop.",
+  "es": "...a6 y ...b5: gana tiempo sobre el alfil."
+ },
+ "Nc3 Nf6 e3 e6 Bxc4 c5 Nf3 a6 O-O b5": {
+  "en": "After Bb3 Bb7: ...cxd4 and ...Nbd7. Equal.",
+  "es": "Tras Ab3 Ab7: ...cxd4 y ...Cbd7. Igualdad."
+ },
+ "Nc3 Nf6 Nf3": {
+  "en": "...e6 (or ...a6 and ...b5).",
+  "es": "...e6 (o ...a6 y ...b5)."
+ },
+ "Nc3 Nf6 Bg5 a6": {
+  "en": "...a6 and ...b5 keep the pawn for now. Slightly better for Black.",
+  "es": "...a6 y ...b5 conservan el peón de momento. Algo mejor para las negras."
+ },
+ "e3": {
+  "en": "...Nf6: let White take back, then ...e6 and ...c5.",
+  "es": "...Cf6: deja que las blancas recuperen, y después ...e6 y ...c5."
+ },
+ "e3 Nf6 Bxc4": {
+  "en": "...e6 and ...c5.",
+  "es": "...e6 y ...c5."
+ },
+ "e3 Nf6 Bxc4 e6 Nf3": {
+  "en": "...c5: the classical break.",
+  "es": "...c5: la ruptura clásica."
+ },
+ "e3 Nf6 Bxc4 e6 Nf3 c5 O-O": {
+  "en": "...a6 and ...b5, or ...Nc6.",
+  "es": "...a6 y ...b5, o ...Cc6."
+ },
+ "e3 Nf6 Bxc4 e6 Nf3 c5 O-O a6 a4 Nc6": {
+  "en": "...Qc7, ...Be7 and ...Rd8: pressure on d4. Equal.",
+  "es": "...Dc7, ...Ae7 y ...Td8: presión sobre d4. Igualdad."
+ },
+ "e3 Nf6 Bxc4 e6 Nc3": {
+  "en": "...c5 and ...a6.",
+  "es": "...c5 y ...a6."
+ },
+ "e3 Nf6 Bxc4 e6 Nc3 c5 Nf3": {
+  "en": "...a6 and ...b5.",
+  "es": "...a6 y ...b5."
+ },
+ "e3 Nf6 Bxc4 e6 Nc3 c5 Nf3 a6 O-O b5": {
+  "en": "After Bb3 Bb7: equal.",
+  "es": "Tras Ab3 Ab7: igualdad."
+ },
+ "e4": {
+  "en": "3.e4: ...Nf6 hits e4.",
+  "es": "3.e4: ...Cf6 ataca e4."
+ },
+ "e4 Nf6 Nc3": {
+  "en": "...e5! hits d4.",
+  "es": "¡...e5! ataca d4."
+ },
+ "e4 Nf6 Nc3 e5 d5": {
+  "en": "...b5! keeps c4.",
+  "es": "¡...b5! conserva c4."
+ },
+ "e4 Nf6 Nc3 e5 d5 b5 Nxb5": {
+  "en": "...Nxe4: Black is better.",
+  "es": "...Cxe4: las negras están mejor."
+ },
+ "e4 Nf6 Nc3 e5 d5 b5 Nxb5 Nxe4": {
+  "en": "After Nc3 Nxc3 bxc3 Bd6: a pawn up. Black is better.",
+  "es": "Tras Cc3 Cxc3 bxc3 Ad6: un peón de más. Las negras están mejor."
+ },
+ "e4 Nf6 Nc3 e5 d5 b5 Bg5 a6": {
+  "en": "If a4, ...b4 and ...Bc5: Black keeps the extra pawn. Black is better.",
+  "es": "Si a4, ...b4 y ...Ac5: las negras conservan el peón de más. Las negras están mejor."
+ },
+ "e4 Nf6 e5": {
+  "en": "...Nd5: the knight is fine there.",
+  "es": "...Cd5: el caballo está bien ahí."
+ },
+ "e4 Nf6 e5 Nd5 Bxc4": {
+  "en": "...e6 (or ...Nb6) and ...c5.",
+  "es": "...e6 (o ...Cb6) y ...c5."
+ },
+ "e4 Nf6 e5 Nd5 Bxc4 e6 Nf3 c5": {
+  "en": "After O-O Nc6: White's space gives a small edge; Black hits d4.",
+  "es": "Tras O-O Cc6: el espacio blanco da una pequeña ventaja; las negras atacan d4."
+ },
+ "e4 Nf6 e5 Nd5 Bxc4 e6 Nc3 c5": {
+  "en": "After Nf3 Nc6 O-O cxd4: a French-like position. Slightly better for White.",
+  "es": "Tras Cf3 Cc6 O-O cxd4: una posición tipo Francesa. Algo mejor para las blancas."
  }
 }

@@ -26,5 +26,125 @@
  "": {
   "en": "Against the Sämisch: ...O-O and ...c5 or ...e5.",
   "es": "Contra la Sämisch: ...O-O y ...c5 o ...e5."
+ },
+ "O-O Be3": {
+  "en": "...c5! the Benoni-style gambit approach: hit d4 before White castles.",
+  "es": "¡...c5! el enfoque tipo Benoni: golpea d4 antes de que las blancas enroquen."
+ },
+ "O-O Be3 c5 d5": {
+  "en": "...a6 and ...b5: queenside play.",
+  "es": "...a6 y ...b5: juego en el flanco de dama."
+ },
+ "O-O Be3 c5 d5 a6 Qd2": {
+  "en": "...Nbd7 and ...Ne5, ...b5.",
+  "es": "...Cbd7 y ...Ce5, ...b5."
+ },
+ "O-O Be3 c5 d5 a6 Qd2 Nbd7 Bh6 Bxh6": {
+  "en": "After Qxh6: ...b5 and ...Ne5; Black's king is fine. Equal.",
+  "es": "Tras Dxh6: ...b5 y ...Ce5; el rey negro está bien. Igualdad."
+ },
+ "O-O Be3 c5 d5 a6 Qd2 Nbd7 Bd3": {
+  "en": "...Ne5 hits the d3-bishop and c4. Black is better.",
+  "es": "...Ce5 ataca al alfil de d3 y c4. Las negras están mejor."
+ },
+ "O-O Be3 c5 d5 a6 Qd2 Nbd7 g4": {
+  "en": "...b5! (or ...Ne5): open the queenside. Black is better.",
+  "es": "¡...b5! (o ...Ce5): abre el flanco de dama. Las negras están mejor."
+ },
+ "O-O Be3 c5 d5 a6 Qd2 Nbd7 g4 Ne5": {
+  "en": "...Rb8 and ...b5 next. Black is better.",
+  "es": "Después ...Tb8 y ...b5. Las negras están mejor."
+ },
+ "O-O Be3 c5 d5 a6 Qd2 Nbd7 O-O-O b5": {
+  "en": "After Bh6 Bxh6 Qxh6 Qa5: Black's attack is faster. Black is clearly better.",
+  "es": "Tras Ah6 Axh6 Dxh6 Da5: el ataque negro es más rápido. Las negras están claramente mejor."
+ },
+ "O-O Be3 c5 d5 a6 Bd3": {
+  "en": "...Nbd7 and ...Ne5.",
+  "es": "...Cbd7 y ...Ce5."
+ },
+ "O-O Be3 c5 d5 a6 Bd3 Nbd7 Nge2": {
+  "en": "...Ne5 hits the d3-bishop.",
+  "es": "...Ce5 ataca al alfil de d3."
+ },
+ "O-O Be3 c5 d5 a6 a4": {
+  "en": "a4 stops ...b5: ...Nbd7 and ...Ne5, or ...e6.",
+  "es": "a4 impide ...b5: ...Cbd7 y ...Ce5, o ...e6."
+ },
+ "O-O Be3 c5 d5 a6 a4 Nbd7": {
+  "en": "...Ne5 or ...e6 and ...exd5. Slightly better for White.",
+  "es": "...Ce5 o ...e6 y ...exd5. Algo mejor para las blancas."
+ },
+ "O-O Be3 c5 Nge2": {
+  "en": "...Nc6: pressure on d4.",
+  "es": "...Cc6: presión sobre d4."
+ },
+ "O-O Be3 c5 Nge2 Nc6 Qd2": {
+  "en": "...a6 and ...Rb8, ...b5.",
+  "es": "...a6 y ...Tb8, ...b5."
+ },
+ "O-O Be3 c5 Nge2 Nc6 Qd2 a6 O-O-O": {
+  "en": "...Na5! hits c4; ...b5 next.",
+  "es": "¡...Ca5! ataca c4; después ...b5."
+ },
+ "O-O Be3 c5 Nge2 Nc6 Qd2 a6 O-O-O Na5": {
+  "en": "After Nf4 cxd4 Bxd4 e5!: Black's tactics in the centre work. Slightly better for Black.",
+  "es": "Tras Cf4 cxd4 Axd4 ¡e5!: la táctica negra en el centro funciona. Algo mejor para las negras."
+ },
+ "O-O Be3 c5 Nge2 Nc6 Qd2 a6 d5 Ne5": {
+  "en": "...b5 next. Equal.",
+  "es": "Después ...b5. Igualdad."
+ },
+ "O-O Be3 c5 Nge2 Nc6 d5": {
+  "en": "...Ne5 and ...a6, ...b5.",
+  "es": "...Ce5 y ...a6, ...b5."
+ },
+ "O-O Be3 c5 Nge2 Nc6 d5 Ne5 Ng3": {
+  "en": "...a6 (or ...h5 and ...e6).",
+  "es": "...a6 (o ...h5 y ...e6)."
+ },
+ "O-O Be3 c5 Nge2 Nc6 d5 Ne5 Ng3 a6": {
+  "en": "After a4: ...e6 and ...exd5, or ...h5. Slightly better for White.",
+  "es": "Tras a4: ...e6 y ...exd5, o ...h5. Algo mejor para las blancas."
+ },
+ "O-O Be3 c5 Nge2 Nc6 d5 Ne5 Nc1": {
+  "en": "...e6 and ...exd5: Black is comfortable.",
+  "es": "...e6 y ...exd5: las negras están cómodas."
+ },
+ "O-O Be3 c5 dxc5": {
+  "en": "...dxc5: queens off.",
+  "es": "...dxc5: salen las damas."
+ },
+ "O-O Be3 c5 dxc5 dxc5 Qxd8": {
+  "en": "...Rxd8.",
+  "es": "...Txd8."
+ },
+ "O-O Be3 c5 dxc5 dxc5 Qxd8 Rxd8 Bxc5": {
+  "en": "...Nc6: the pawn is gone, but Black's development is great. Equal.",
+  "es": "...Cc6: el peón se ha perdido, pero el desarrollo negro es excelente. Igualdad."
+ },
+ "O-O Be3 c5 dxc5 dxc5 Qxd8 Rxd8 Bxc5 Nc6 Rd1 Rxd1+ Kxd1 Nd7": {
+  "en": "...Nde5 and ...f5: active play for the pawn. Equal.",
+  "es": "...Cde5 y ...f5: juego activo por el peón. Igualdad."
+ },
+ "O-O Be3 c5 dxc5 dxc5 Qxd8 Rxd8 Bxc5 Nc6 Nd5 Nd7": {
+  "en": "After Nxe7+ Nxe7 Bxe7: material is level. Equal.",
+  "es": "Tras Cxe7+ Cxe7 Axe7: el material está igualado. Igualdad."
+ },
+ "O-O Be3 c5 dxc5 dxc5 Qxd8 Rxd8 Bxc5 Nc6 Nge2 Nd7": {
+  "en": "...Nxc5 or ...Nde5: Black regains the pawn soon. Equal.",
+  "es": "...Cxc5 o ...Cde5: las negras recuperan pronto el peón. Igualdad."
+ },
+ "O-O Be3 c5 Qd2 cxd4 Bxd4 Nc6 Be3 a6": {
+  "en": "...b5 and ...Rb8: queenside play. Equal.",
+  "es": "...b5 y ...Tb8: juego en el flanco de dama. Igualdad."
+ },
+ "O-O Bd3 c5 d5": {
+  "en": "...a6 and ...b5 or ...e6.",
+  "es": "...a6 y ...b5 o ...e6."
+ },
+ "O-O Bg5 c5 d5": {
+  "en": "...a6 and ...Nbd7, ...b5.",
+  "es": "...a6 y ...Cbd7, ...b5."
  }
 }
