@@ -1,0 +1,74 @@
+{
+ "Bxb4 c3 Ba5 d4 exd4 Qb3 Qe7 O-O Nf6 cxd4": {
+  "en": "If ...Nxe4, Re1 (or d5) and the e-file opens against Black's king: White has strong play for the pawn.",
+  "es": "Si ...Cxe4, Te1 (o d5) y la columna e se abre contra el rey negro: las blancas tienen mucho juego por el peón."
+ },
+ "Bxb4 c3 Ba5 d4 exd4 Qb3 Qe7 O-O Bb6 cxd4": {
+  "en": "If ...Nxd4 Nxd4 Bxd4, Nc3 and Ba3: White's development is huge. White is better.",
+  "es": "Si ...Cxd4 Cxd4 Axd4, Cc3 y Aa3: el desarrollo blanco es enorme. Las blancas están mejor."
+ },
+ "Bxb4 c3 Ba5 d4 exd4 Qb3 dxc3": {
+  "en": "Bxf7+! Kf8 and Bd5, O-O, Nxc3: Black's king is stuck. White is clearly better.",
+  "es": "¡Axf7+! Rf8 y Ad5, O-O, Cxc3: el rey negro queda atrapado. Las blancas están claramente mejor."
+ },
+ "Bxb4 c3 Bc5 d4 exd4": {
+  "en": "cxd4: the full centre, and the bishop must move again.",
+  "es": "cxd4: el centro completo, y el alfil tiene que volver a moverse."
+ },
+ "Bxb4 c3 Bc5 d4 exd4 cxd4 Bb4+": {
+  "en": "Nbd2 (or Kf1, Bd2): keep the centre.",
+  "es": "Cbd2 (o Rf1, Ad2): mantén el centro."
+ },
+ "Bxb4 c3 Bc5 d4 exd4 cxd4 Bb4+ Nbd2 d6": {
+  "en": "Qb3! hits b4 and f7 together. White is clearly better.",
+  "es": "¡Db3! ataca b4 y f7 a la vez. Las blancas están claramente mejor."
+ },
+ "Bxb4 c3 Bc5 d4 exd4 cxd4 Bb4+ Nbd2 d6 Qb3 Bxd2+ Bxd2": {
+  "en": "O-O, e5 and d5: White's centre and development are crushing. White is clearly better.",
+  "es": "O-O, e5 y d5: el centro y el desarrollo blancos son aplastantes. Las blancas están claramente mejor."
+ },
+ "Bxb4 c3 Bc5 d4 exd4 cxd4 Bb4+ Nbd2 Nf6": {
+  "en": "d5! (or e5) kicks the knights; O-O and e5 next. White is better.",
+  "es": "¡d5! (o e5) echa a los caballos; después O-O y e5. Las blancas están mejor."
+ },
+ "Bxb4 c3 Bc5 d4 exd4 cxd4 Bb4+ Nbd2 Bxd2+": {
+  "en": "Qxd2 (or Bxd2): White has the centre and the bishop pair for the pawn.",
+  "es": "Dxd2 (o Axd2): las blancas tienen el centro y la pareja de alfiles por el peón."
+ },
+ "Bxb4 c3 Bc5 d4 exd4 cxd4 Bb4+ Nbd2 Bxd2+ Qxd2": {
+  "en": "Ng5, O-O and f4: a strong attack. White is clearly better.",
+  "es": "Cg5, O-O y f4: un ataque fuerte. Las blancas están claramente mejor."
+ },
+ "Bxb4 c3 Bc5 d4 exd4 cxd4 Bb4+ Nbd2 Nge7": {
+  "en": "Qb3 hits b4 and f7. White is clearly better.",
+  "es": "Db3 ataca b4 y f7. Las blancas están claramente mejor."
+ },
+ "Bxb4 c3 Bc5 d4 exd4 cxd4 Bb4+ Nbd2 Nge7 Qb3": {
+  "en": "After ...Bxd2+ Bxd2 O-O d5: White gains space and attacks with h4–h5. Clearly better.",
+  "es": "Tras ...Axd2+ Axd2 O-O d5: las blancas ganan espacio y atacan con h4–h5. Claramente mejor."
+ },
+ "Bxb4 c3 Bc5 d4 exd4 cxd4 Bb6": {
+  "en": "d5! kicks the knight: ...Na5 Bd3 and White has a big centre.",
+  "es": "¡d5! echa al caballo: ...Ca5 Ad3 y las blancas tienen un gran centro."
+ },
+ "Bxb4 c3 Be7 d4 exd4": {
+  "en": "cxd4 (or Qb3): the centre and quick development.",
+  "es": "cxd4 (o Db3): el centro y un desarrollo rápido."
+ },
+ "Bxb4 c3 Be7 d4 exd4 cxd4 d6": {
+  "en": "Qb3: hit f7; watch the ...Na5 trick (Bxf7+! first).",
+  "es": "Db3: ataca f7; atento al truco ...Ca5 (¡primero Axf7+!)."
+ },
+ "Bb6 c3 d6": {
+  "en": "a4! threatens a5 trapping the bishop.",
+  "es": "¡a4! amenaza a5 atrapando al alfil."
+ },
+ "Bb6 c3 Nf6": {
+  "en": "d3 (or d4): a solid centre; a4–a5 kicks the bishop.",
+  "es": "d3 (o d4): un centro sólido; a4–a5 echa al alfil."
+ },
+ "Nxb4 c3 Nc6 d4 exd4": {
+  "en": "cxd4 (or O-O): the open centre gives White play for the pawn.",
+  "es": "cxd4 (u O-O): el centro abierto da a las blancas juego por el peón."
+ }
+}

@@ -1,16 +1,186 @@
 {
-  "": { "en": "The Fried Liver Attack: White sacrifices a knight on f7 to drag the black king into the open. Objectively 6.d4 is stronger, but at club level the attack scores very well. These branches show how to keep it going against every defence.", "es": "El ataque Fegatello: las blancas sacrifican un caballo en f7 para sacar al rey negro al descubierto. Objetivamente 6.d4 es más fuerte, pero a nivel de club el ataque puntúa muy bien. Estas ramas muestran cómo mantenerlo contra todas las defensas." },
-  "Kxf7 Qf3+": { "en": "Check, and the queen joins the bishop against the d5-knight. The king has to step forward to protect it.", "es": "Jaque, y la dama se une al alfil contra el caballo de d5. El rey tiene que adelantarse para protegerlo." },
-  "Kxf7 Qf3+ Ke6 Nc3": { "en": "Nc3 adds a third attacker on d5.", "es": "Cc3 añade un tercer atacante sobre d5." },
-  "Kxf7 Qf3+ Ke6 Nc3 Nb4": { "en": "The best defence: the knight protects d5 and threatens ...Nxc2+, forking king and rook.", "es": "La mejor defensa: el caballo protege d5 y amenaza ...Cxc2+, atacando rey y torre." },
-  "Kxf7 Qf3+ Ke6 Nc3 Nb4 d4": { "en": "d4! opens lines towards the king. If ...Nxc2+ Kd1 Nxa1?, Bxd5+ leads to mate: Black must not grab the rook.", "es": "¡d4! abre líneas hacia el rey. Si ...Cxc2+ Rd1 Cxa1?, Axd5+ lleva al mate: las negras no deben comerse la torre." },
-  "Kxf7 Qf3+ Ke6 Nc3 Nb4 d4 Nxc2+ Kd1 Nxd4 Bxd5+": { "en": "The most accurate defence: the position is roughly balanced, with both kings exposed.", "es": "La defensa más precisa: la posición está más o menos equilibrada, con ambos reyes expuestos." },
-  "Kxf7 Qf3+ Ke6 Nc3 Ne7 d4": { "en": "...Ne7 defends d5 but blocks the king's escape route; d4 opens the centre.", "es": "...Ce7 defiende d5 pero tapa la huida del rey; d4 abre el centro." },
-  "Kxf7 Qf3+ Ke6 Nc3 Nd4 Bxd5+": { "en": "...Nd4? hits the queen, but Bxd5+ comes first, with check.", "es": "...Cd4? ataca la dama, pero Axd5+ llega antes, con jaque." },
-  "Kxf7 Qf3+ Ke6 Nc3 Nd4 Bxd5+ Ke7 Qf7+ Kd6 Ne4#": { "en": "Checkmate! The king wandered forward and the knight finishes it on e4.", "es": "¡Jaque mate! El rey se adelantó y el caballo remata en e4." },
-  "Kxf7 Qf3+ Ke8 Bxd5": { "en": "...Ke8 goes back, but the d5-knight falls and Qf7# is threatened.", "es": "...Re8 vuelve, pero cae el caballo de d5 y amenaza Df7#." },
-  "Kxf7 Qf3+ Ke8 Bxd5 Qe7 Bxc6+": { "en": "Bxc6+ and Qxc6+: the queen goes on to win the rook on a8.", "es": "Axc6+ y Dxc6+: la dama sigue hasta ganar la torre de a8." },
-  "Kxf7 Qf3+ Qf6 Bxd5+": { "en": "...Qf6 offers a queen trade, but Bxd5+ wins the knight with check: White has the piece back and an extra pawn.", "es": "...Df6 ofrece cambiar damas, pero Axd5+ gana el caballo con jaque: las blancas recuperan la pieza y tienen un peón de más." },
-  "Kxf7 Qf3+ Kg8": { "en": "...Kg8?? walks into mate.", "es": "...Rg8?? entra en un mate." },
-  "Kxf7 Qf3+ Kg8 Bxd5+": { "en": "Bxd5+ and the queen or the bishop mates on e6.", "es": "Axd5+ y la dama o el alfil dan mate en e6." }
+ "": {
+  "en": "The Fried Liver Attack: White sacrifices a knight on f7 to drag the black king into the open. Objectively 6.d4 is stronger, but at club level the attack scores very well. These branches show how to keep it going against every defence.",
+  "es": "El ataque Fegatello: las blancas sacrifican un caballo en f7 para sacar al rey negro al descubierto. Objetivamente 6.d4 es más fuerte, pero a nivel de club el ataque puntúa muy bien. Estas ramas muestran cómo mantenerlo contra todas las defensas."
+ },
+ "Kxf7 Qf3+": {
+  "en": "Check, and the queen joins the bishop against the d5-knight. The king has to step forward to protect it.",
+  "es": "Jaque, y la dama se une al alfil contra el caballo de d5. El rey tiene que adelantarse para protegerlo."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3": {
+  "en": "Nc3 adds a third attacker on d5.",
+  "es": "Cc3 añade un tercer atacante sobre d5."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nb4": {
+  "en": "The best defence: the knight protects d5 and threatens ...Nxc2+, forking king and rook.",
+  "es": "La mejor defensa: el caballo protege d5 y amenaza ...Cxc2+, atacando rey y torre."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nb4 d4": {
+  "en": "d4! opens lines towards the king. If ...Nxc2+ Kd1 Nxa1?, Bxd5+ leads to mate: Black must not grab the rook.",
+  "es": "¡d4! abre líneas hacia el rey. Si ...Cxc2+ Rd1 Cxa1?, Axd5+ lleva al mate: las negras no deben comerse la torre."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nb4 d4 Nxc2+ Kd1 Nxd4 Bxd5+": {
+  "en": "The most accurate defence: the position is roughly balanced, with both kings exposed.",
+  "es": "La defensa más precisa: la posición está más o menos equilibrada, con ambos reyes expuestos."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Ne7 d4": {
+  "en": "...Ne7 defends d5 but blocks the king's escape route; d4 opens the centre.",
+  "es": "...Ce7 defiende d5 pero tapa la huida del rey; d4 abre el centro."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nd4 Bxd5+": {
+  "en": "...Nd4? hits the queen, but Bxd5+ comes first, with check.",
+  "es": "...Cd4? ataca la dama, pero Axd5+ llega antes, con jaque."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nd4 Bxd5+ Ke7 Qf7+ Kd6 Ne4#": {
+  "en": "Checkmate! The king wandered forward and the knight finishes it on e4.",
+  "es": "¡Jaque mate! El rey se adelantó y el caballo remata en e4."
+ },
+ "Kxf7 Qf3+ Ke8 Bxd5": {
+  "en": "...Ke8 goes back, but the d5-knight falls and Qf7# is threatened.",
+  "es": "...Re8 vuelve, pero cae el caballo de d5 y amenaza Df7#."
+ },
+ "Kxf7 Qf3+ Ke8 Bxd5 Qe7 Bxc6+": {
+  "en": "Bxc6+ and Qxc6+: the queen goes on to win the rook on a8.",
+  "es": "Axc6+ y Dxc6+: la dama sigue hasta ganar la torre de a8."
+ },
+ "Kxf7 Qf3+ Qf6 Bxd5+": {
+  "en": "...Qf6 offers a queen trade, but Bxd5+ wins the knight with check: White has the piece back and an extra pawn.",
+  "es": "...Df6 ofrece cambiar damas, pero Axd5+ gana el caballo con jaque: las blancas recuperan la pieza y tienen un peón de más."
+ },
+ "Kxf7 Qf3+ Kg8": {
+  "en": "...Kg8?? walks into mate.",
+  "es": "...Rg8?? entra en un mate."
+ },
+ "Kxf7 Qf3+ Kg8 Bxd5+": {
+  "en": "Bxd5+ and the queen or the bishop mates on e6.",
+  "es": "Axd5+ y la dama o el alfil dan mate en e6."
+ },
+ "Kxf7": {
+  "en": "Qf3+: check, and the queen joins the attack on d5.",
+  "es": "Df3+: jaque, y la dama se une al ataque sobre d5."
+ },
+ "Kxf7 Qf3+ Ke6": {
+  "en": "Nc3: a third attacker on the pinned d5-knight.",
+  "es": "Cc3: un tercer atacante sobre el caballo clavado de d5."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nb4 d4 Nxc2+": {
+  "en": "Kd1: the king steps aside; if ...Nxa1?, Bxd5+ wins.",
+  "es": "Rd1: el rey se aparta; si ¿...Cxa1?, Axd5+ gana."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nb4 d4 Nxc2+ Kd1 Nxa1": {
+  "en": "Bxd5+! Qxd5 Qxd5+ and dxe5+: White wins.",
+  "es": "¡Axd5+! Dxd5 Dxd5+ y dxe5+: las blancas ganan."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nb4 d4 Nxc2+ Kd1 Nxa1 Bxd5+": {
+  "en": "After ...Qxd5 Qxd5+ Kf6 dxe5+ Ke7 Bg5+: the king is hunted down. White is winning.",
+  "es": "Tras ...Dxd5 Dxd5+ Rf6 dxe5+ Re7 Ag5+: el rey es cazado. Las blancas van ganando."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nb4 d4 Nxc2+ Kd1 Nxd4": {
+  "en": "Bxd5+: the correct defence; both kings are exposed. Roughly balanced.",
+  "es": "Axd5+: la defensa correcta; ambos reyes están expuestos. Más o menos equilibrado."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nb4 d4 c6 O-O": {
+  "en": "Re1 and Nxd5: White's attack continues. White is better.",
+  "es": "Te1 y Cxd5: el ataque blanco continúa. Las blancas están mejor."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Ne7": {
+  "en": "d4! opens the centre against the king.",
+  "es": "¡d4! abre el centro contra el rey."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Ne7 d4 c6": {
+  "en": "dxe5 (or Bg5): more lines open. White is clearly better.",
+  "es": "dxe5 (o Ag5): se abren más líneas. Las blancas están claramente mejor."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Ne7 d4 c6 dxe5 Kd7": {
+  "en": "Bg5! and Bxd5: the pins win material. White is winning.",
+  "es": "¡Ag5! y Axd5: las clavadas ganan material. Las blancas van ganando."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Ne7 d4 Qd6": {
+  "en": "O-O and Ne4: the queen and king are targets. White is winning.",
+  "es": "O-O y Ce4: la dama y el rey son objetivos. Las blancas van ganando."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nd4": {
+  "en": "Bxd5+! with check first.",
+  "es": "¡Axd5+! primero con jaque."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nd4 Bxd5+ Kd6": {
+  "en": "Qd3 (or Qg3): the queen escapes and keeps the attack.",
+  "es": "Dd3 (o Dg3): la dama escapa y mantiene el ataque."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nd4 Bxd5+ Kd6 Qd3 Bf5": {
+  "en": "Be4! trades the defender; O-O and Ne2 follow. White is clearly better.",
+  "es": "¡Ae4! cambia al defensor; siguen O-O y Ce2. Las blancas están claramente mejor."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nd4 Bxd5+ Kd6 Qd3 Bf5 Be4 Bxe4": {
+  "en": "Nxe4+ and c3: the d4-knight is kicked and e5 falls. White is winning.",
+  "es": "Cxe4+ y c3: el caballo de d4 es expulsado y e5 cae. Las blancas van ganando."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nd4 Bxd5+ Ke7": {
+  "en": "Qf7+ Kd6 Ne4#.",
+  "es": "Df7+ Rd6 Ce4#."
+ },
+ "Kxf7 Qf3+ Ke6 Nc3 Nd4 Bxd5+ Qxd5": {
+  "en": "Qxd5+: White is a queen for a bishop up. Winning.",
+  "es": "Dxd5+: las blancas ganan dama por alfil. Ganando."
+ },
+ "Kxf7 Qf3+ Ke8": {
+  "en": "Bxd5: the knight falls and Qf7# is threatened.",
+  "es": "Axd5: cae el caballo y amenaza Df7#."
+ },
+ "Kxf7 Qf3+ Ke8 Bxd5 Nd4": {
+  "en": "Qf7#.",
+  "es": "Df7#."
+ },
+ "Kxf7 Qf3+ Ke8 Bxd5 Nd4 Qf7#": {
+  "en": "Checkmate.",
+  "es": "Jaque mate."
+ },
+ "Kxf7 Qf3+ Ke8 Bxd5 Qf6": {
+  "en": "Bxc6+ bxc6 Qh5+: White is two pawns up. Winning.",
+  "es": "Axc6+ bxc6 Dh5+: las blancas tienen dos peones de más. Ganando."
+ },
+ "Kxf7 Qf3+ Ke8 Bxd5 Qf6 Bxc6+ bxc6 Qh5+": {
+  "en": "After ...Qf7 Qxf7+ Kxf7: a pawn-up endgame with Black's pawns broken. White is winning.",
+  "es": "Tras ...Df7 Dxf7+ Rxf7: un final con un peón de más y los peones negros rotos. Las blancas van ganando."
+ },
+ "Kxf7 Qf3+ Ke8 Bxd5 Qe7": {
+  "en": "Bxc6+ wins a piece. White is winning.",
+  "es": "Axc6+ gana una pieza. Las blancas van ganando."
+ },
+ "Kxf7 Qf3+ Ke8 Bxd5 Bd7": {
+  "en": "Qf7#.",
+  "es": "Df7#."
+ },
+ "Kxf7 Qf3+ Qf6": {
+  "en": "Bxd5+: the knight falls with check.",
+  "es": "Axd5+: cae el caballo con jaque."
+ },
+ "Kxf7 Qf3+ Qf6 Bxd5+ Be6": {
+  "en": "Bxc6: take another piece.",
+  "es": "Axc6: toma otra pieza."
+ },
+ "Kxf7 Qf3+ Qf6 Bxd5+ Be6 Bxc6 bxc6": {
+  "en": "Qxc6: White is two pawns up.",
+  "es": "Dxc6: las blancas tienen dos peones de más."
+ },
+ "Kxf7 Qf3+ Qf6 Bxd5+ Be6 Bxc6 bxc6 Qxc6 Bd6": {
+  "en": "Nc3 and O-O (or d3): White is two pawns up. Winning.",
+  "es": "Cc3 y O-O (o d3): las blancas tienen dos peones de más. Ganando."
+ },
+ "Kxf7 Qf3+ Qf6 Bxd5+ Be6 Bxc6 Qxf3": {
+  "en": "Bxf3: White has a piece and pawns more. Winning.",
+  "es": "Axf3: las blancas tienen una pieza y peones de más. Ganando."
+ },
+ "Kxf7 Qf3+ Qf6 Bxd5+ Ke7 O-O": {
+  "en": "Re1 and d3: White is a pawn up and Black's king is in the centre. Clearly better.",
+  "es": "Te1 y d3: las blancas tienen un peón de más y el rey negro está en el centro. Claramente mejor."
+ },
+ "Kxf7 Qf3+ Kg8 Bxd5+ Qxd5 Qxd5+ Be6 Qxe6#": {
+  "en": "Checkmate.",
+  "es": "Jaque mate."
+ },
+ "Kxf7 Qf3+ Kg8 Bxd5+ Be6 Bxe6#": {
+  "en": "Checkmate.",
+  "es": "Jaque mate."
+ }
 }

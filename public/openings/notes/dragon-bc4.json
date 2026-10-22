@@ -34,5 +34,153 @@
  "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 g4 a5 Nd5 a4": {
   "en": "Nd5? blocks the bishop's retreat: ...a4 traps it on b3.",
   "es": "Cd5? bloquea la retirada del alfil: ...a4 lo atrapa en b3."
+ },
+ "Bd7 O-O-O": {
+  "en": "...Rc8: the rook goes to the c-file against White's king.",
+  "es": "...Tc8: la torre va a la columna c contra el rey blanco."
+ },
+ "Bd7 O-O-O Rc8 Bb3": {
+  "en": "...Nxd4 and ...b5: the modern plan.",
+  "es": "...Cxd4 y ...b5: el plan moderno."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4": {
+  "en": "...b5! the pawn storm starts at once.",
+  "es": "¡...b5! el ataque de peones empieza de inmediato."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4": {
+  "en": "...a5: race on the queenside.",
+  "es": "...a5: carrera en el flanco de dama."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 h5": {
+  "en": "...a4! chases the b3-bishop first.",
+  "es": "¡...a4! persigue primero al alfil de b3."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 h5 a4 Bd5": {
+  "en": "...e5! closes the long diagonal and the d5-bishop gets lost: ...Nxd5 next. Black is better.",
+  "es": "¡...e5! cierra la gran diagonal y el alfil de d5 se queda sin salida: después ...Cxd5. Las negras están mejor."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 h5 a4 Bd5 e5": {
+  "en": "After Be3 b4: Black's attack arrives first and the d5-bishop will be traded. Black is better.",
+  "es": "Tras Ae3 b4: el ataque negro llega primero y el alfil de d5 será cambiado. Las negras están mejor."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 h5 a4 hxg6": {
+  "en": "...axb3! takes the bishop; after Bxf6 exf6 Qxd6 bxa2, Black's attack is decisive.",
+  "es": "¡...axb3! toma el alfil; tras Axf6 exf6 Dxd6 bxa2, el ataque negro es decisivo."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 a4": {
+  "en": "...bxa4: the b-file opens.",
+  "es": "...bxa4: se abre la columna b."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 a4 bxa4 Nxa4": {
+  "en": "...Bxa4 Bxa4 Rc4! and ...Nxe4: the exchange sacrifice wins the centre. Black is winning.",
+  "es": "...Axa4 Axa4 ¡Tc4! y ...Cxe4: el sacrificio de calidad gana el centro. Las negras van ganando."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 h4 a5 Nd5": {
+  "en": "...a4! hits the bishop; it has no good retreat. Black is clearly better.",
+  "es": "¡...a4! ataca al alfil; no tiene buena retirada. Las negras están claramente mejor."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Kb1": {
+  "en": "...a5 and ...a4: the same race.",
+  "es": "...a5 y ...a4: la misma carrera."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Kb1 a5 a4": {
+  "en": "...bxa4 opens lines.",
+  "es": "...bxa4 abre líneas."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Kb1 a5 a4 bxa4 Nxa4": {
+  "en": "...Bxa4 Bxa4 Rc4! and ...Nxe4: Black is winning.",
+  "es": "...Axa4 Axa4 ¡Tc4! y ...Cxe4: las negras van ganando."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Kb1 a5 a4 bxa4 Nxa4 Bxa4 Bxa4": {
+  "en": "...Rc4! hits d4 and prepares ...Nxe4.",
+  "es": "¡...Tc4! ataca d4 y prepara ...Cxe4."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Kb1 a5 a4 bxa4 Nxa4 Bxa4 Bxa4 Rc4 Bb3 Nxe4 fxe4": {
+  "en": "...Rxd4! Qxd4 Bxd4 Rxd4: Black wins material.",
+  "es": "¡...Txd4! Dxd4 Axd4 Txd4: las negras ganan material."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Kb1 a5 Nd5": {
+  "en": "...a4! and the bishop is lost or badly placed. Black is clearly better.",
+  "es": "¡...a4! y el alfil se pierde o queda muy mal. Las negras están claramente mejor."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 g4": {
+  "en": "...a5: the race; after e5 dxe5 Bxe5 Bc6, Black is fine.",
+  "es": "...a5: la carrera; tras e5 dxe5 Axe5 Ac6, las negras están bien."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 g4 a5 a4": {
+  "en": "...bxa4 Ba2 a3: the b-file opens. Black is better.",
+  "es": "...bxa4 Aa2 a3: se abre la columna b. Las negras están mejor."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 g4 a5 a4 bxa4 Nxa4 Bxa4 Bxa4 Rc4 Bb3": {
+  "en": "...Nxe4! and ...Rxd4: Black is winning.",
+  "es": "¡...Cxe4! y ...Txd4: las negras van ganando."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 g4 a5 a4 bxa4 Nxa4 Bxa4 Bxa4 Rc4 Bb3 Nxe4": {
+  "en": "After Qe3 Rxd4 Rxd4 Nc5: Black is a pawn up with a strong attack. Black is winning.",
+  "es": "Tras De3 Txd4 Txd4 Cc5: las negras tienen un peón de más y un ataque fuerte. Las negras van ganando."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 g4 a5 g5 Nh5 Bxg7 Nxg7": {
+  "en": "...b4 and ...a4 next: Black's attack is faster. Black is better.",
+  "es": "Después ...b4 y ...a4: el ataque negro es más rápido. Las negras están mejor."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 g4 a5 Nd5": {
+  "en": "...a4! and the bishop is trapped-ish. Black is clearly better.",
+  "es": "¡...a4! y el alfil queda casi atrapado. Las negras están claramente mejor."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Nd5": {
+  "en": "...Nxd5: trade and keep the race simple.",
+  "es": "...Cxd5: cambia y mantén la carrera simple."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Nd5 Nxd5 Bxg7": {
+  "en": "...Kxg7: the dark-squared bishops are off.",
+  "es": "...Rxg7: salen los alfiles de casillas oscuras."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Nd5 Nxd5 Bxg7 Kxg7 exd5 a5 a3 Kg8": {
+  "en": "A calmer position: ...Qb6, ...Rc5 and ...a4. Slightly better for White.",
+  "es": "Una posición más tranquila: ...Db6, ...Tc5 y ...a4. Algo mejor para las blancas."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Nd5 Nxd5 Bxg7 Kxg7 Qxd5": {
+  "en": "...a5 and ...Rc5: the queen gets chased. Slightly better for Black.",
+  "es": "...a5 y ...Tc5: la dama es perseguida. Algo mejor para las negras."
+ },
+ "Bd7 O-O-O Rc8 Bb3 Nxd4 Bxd4 b5 Nd5 Nxd5 Bxd5": {
+  "en": "...Bxd4 Qxd4 a5: Black's queenside play is fast. Slightly better for Black.",
+  "es": "...Axd4 Dxd4 a5: el juego negro en el flanco de dama es rápido. Algo mejor para las negras."
+ },
+ "Bd7 O-O-O Rc8 Kb1": {
+  "en": "Kb1? leaves the bishop on c4: ...Nxd4 Qxd4 Ng4! and ...Bxd4 wins.",
+  "es": "¿Rb1? deja el alfil en c4: ...Cxd4 Dxd4 ¡Cg4! y ...Axd4 gana."
+ },
+ "Bd7 O-O-O Rc8 Kb1 Nxd4 Qxd4 Ng4 Bxf7+": {
+  "en": "...Rxf7 Qxg7+ Kxg7 fxg4: Black is a piece up.",
+  "es": "...Txf7 Dxg7+ Rxg7 fxg4: las negras tienen una pieza de más."
+ },
+ "Bd7 Bb3": {
+  "en": "...Rc8 and ...Ne5.",
+  "es": "...Tc8 y ...Ce5."
+ },
+ "Bd7 Bb3 Rc8 O-O-O": {
+  "en": "...Ne5: the knight eyes c4.",
+  "es": "...Ce5: el caballo apunta a c4."
+ },
+ "Bd7 Bb3 Rc8 O-O-O Ne5 g4": {
+  "en": "...b5! and ...a5: Black is faster. Black is better.",
+  "es": "¡...b5! y ...a5: las negras son más rápidas. Las negras están mejor."
+ },
+ "Bd7 h4 Rc8 Bb3": {
+  "en": "...Ne5 and ...Rc4 or ...h5 to slow White's attack.",
+  "es": "...Ce5 y ...Tc4 o ...h5 para frenar el ataque blanco."
+ },
+ "Bd7 g4 Rc8 Bb3": {
+  "en": "...Ne5, then ...Rc4 or ...b5.",
+  "es": "...Ce5, y después ...Tc4 o ...b5."
+ },
+ "Bd7 g4 Rc8 Bb3 Ne5 h4 Rc4": {
+  "en": "White's attack is fast here (h5, g5): ...Qa5 and ...Rfc8 are needed. White is better.",
+  "es": "El ataque blanco es rápido aquí (h5, g5): hacen falta ...Da5 y ...Tfc8. Las blancas están mejor."
+ },
+ "Bd7 g4 Rc8 Bb3 Ne5 O-O-O": {
+  "en": "...b5! and the race favours Black.",
+  "es": "¡...b5! y la carrera favorece a las negras."
  }
 }
