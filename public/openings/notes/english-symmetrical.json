@@ -22,5 +22,65 @@
  "": {
   "en": "1...c5: fight for d5 and the long diagonal.",
   "es": "1...c5: lucha por d5 y la gran diagonal."
+ },
+ "Nc3 Nc6": {
+  "en": "g3 and Bg2: the bishop fights for d5.",
+  "es": "g3 y Ag2: el alfil lucha por d5."
+ },
+ "Nc3 Nc6 g3 g6": {
+  "en": "Bg2: full symmetry for now.",
+  "es": "Ag2: simetría total de momento."
+ },
+ "Nc3 Nc6 g3 g6 Bg2 Bg7": {
+  "en": "Nf3 and O-O, then d4 or a3, Rb1 and b4.",
+  "es": "Cf3 y O-O, y después d4 o a3, Tb1 y b4."
+ },
+ "Nc3 Nc6 g3 g6 Bg2 Bg7 Nf3 Nf6": {
+  "en": "Castle, then d4 to open the centre.",
+  "es": "Enroca, y después d4 para abrir el centro."
+ },
+ "Nc3 Nc6 g3 g6 Bg2 Bg7 Nf3 Nf6 O-O O-O": {
+  "en": "d4! opens the long diagonal; after ...cxd4 Nxd4 White's pieces are more active.",
+  "es": "¡d4! abre la gran diagonal; tras ...cxd4 Cxd4 las piezas blancas están más activas."
+ },
+ "Nc3 Nc6 g3 g6 Bg2 Bg7 Nf3 Nf6 O-O O-O d4 cxd4": {
+  "en": "Nxd4: if ...Nxd4 Qxd4, the queen is strong and the a7-pawn can become a target.",
+  "es": "Cxd4: si ...Cxd4 Dxd4, la dama es fuerte y el peón de a7 puede convertirse en objetivo."
+ },
+ "Nc3 Nc6 g3 g6 Bg2 Bg7 Nf3 e6": {
+  "en": "Castle, then d4: hit the centre while Black's knight is on e7.",
+  "es": "Enroca, y después d4: golpea el centro mientras el caballo negro está en e7."
+ },
+ "Nc3 Nc6 g3 g6 Bg2 Bg7 Nf3 e6 O-O Nge7": {
+  "en": "d4: open the position.",
+  "es": "d4: abre la posición."
+ },
+ "Nc3 Nc6 g3 g6 Bg2 Bg7 Nf3 e6 O-O Nge7 d4": {
+  "en": "After ...Nxd4 Nxd4 cxd4 Nb5: d4 will fall. Equal.",
+  "es": "Tras ...Cxd4 Cxd4 cxd4 Cb5: d4 caerá. Igualdad."
+ },
+ "Nc3 Nc6 g3 Nf6": {
+  "en": "Bg2 and Nf3; d4 when it suits.",
+  "es": "Ag2 y Cf3; d4 cuando convenga."
+ },
+ "Nc3 Nc6 g3 e6": {
+  "en": "Bg2, Nf3 and O-O; d4 to open lines.",
+  "es": "Ag2, Cf3 y O-O; d4 para abrir líneas."
+ },
+ "Nc3 Nc6 g3 e6 Bg2 Nf6": {
+  "en": "Nf3, O-O and d4.",
+  "es": "Cf3, O-O y d4."
+ },
+ "Nc3 Nc6 g3 d6": {
+  "en": "Bg2 and Nf3; against ...e5, d3 and Rb1, b4.",
+  "es": "Ag2 y Cf3; contra ...e5, d3 y Tb1, b4."
+ },
+ "Nc3 Nf6": {
+  "en": "g3 and Bg2: control d5.",
+  "es": "g3 y Ag2: controla d5."
+ },
+ "Nc3 e6": {
+  "en": "Nf3 and d4 (or g3): if ...d5, open the centre fast.",
+  "es": "Cf3 y d4 (o g3): si ...d5, abre el centro rápido."
  }
 }

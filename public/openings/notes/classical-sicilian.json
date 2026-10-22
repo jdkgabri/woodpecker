@@ -22,5 +22,53 @@
  "": {
   "en": "The Classical Sicilian: ...d6, ...Nf6 and ...Nc6. Against the Richter-Rauzer (Bg5), ...e6 and ...Bd7 are the usual answers.",
   "es": "La Siciliana Clásica: ...d6, ...Cf6 y ...Cc6. Contra la Richter-Rauzer (Ag5), ...e6 y ...Ad7 son las respuestas habituales."
+ },
+ "Be3": {
+  "en": "Be3 prepares the English Attack: ...Ng4! hits the bishop.",
+  "es": "Ae3 prepara el Ataque Inglés: ¡...Cg4! ataca al alfil."
+ },
+ "Be3 Ng4 Nxc6": {
+  "en": "...bxc6: the knight on g4 still hits e3; ...Nxe3 later gets the bishop pair.",
+  "es": "...bxc6: el caballo de g4 sigue atacando e3; más tarde ...Cxe3 consigue la pareja de alfiles."
+ },
+ "Be3 Ng4 Bg5": {
+  "en": "...Qb6! hits d4, b2 and f2.",
+  "es": "¡...Db6! ataca d4, b2 y f2."
+ },
+ "Be3 Ng4 Bg5 Qb6 Be3": {
+  "en": "...Nxe3 fxe3: Black gets the bishop pair and White's pawns are weak. Black is clearly better.",
+  "es": "...Cxe3 fxe3: las negras obtienen la pareja de alfiles y los peones blancos quedan débiles. Las negras están claramente mejor."
+ },
+ "Be3 Ng4 Qd2 Bd7": {
+  "en": "...Nxe3 next (or after Nxc6, ...Bxc6). Equal.",
+  "es": "Después ...Cxe3 (o tras Cxc6, ...Axc6). Igualdad."
+ },
+ "Bg5": {
+  "en": "The Richter-Rauzer: ...e6 and ...Be7 or ...Qb6, ...Bd7.",
+  "es": "La Richter-Rauzer: ...e6 y ...Ae7 o ...Db6, ...Ad7."
+ },
+ "Bg5 e6 Qd2": {
+  "en": "...Qb6 hits d4 and b2, forcing White to decide.",
+  "es": "...Db6 ataca d4 y b2, obligando a las blancas a decidir."
+ },
+ "Bg5 e6 Qd2 Qb6": {
+  "en": "After Nb3 Be7, ...a6, ...Qc7 and ...Bd7. White slightly better, Black solid.",
+  "es": "Tras Cb3 Ae7, ...a6, ...Dc7 y ...Ad7. Las blancas algo mejor, las negras sólidas."
+ },
+ "Bg5 e6 f4 Bd7": {
+  "en": "After Qd3 Qb6 O-O-O Qxd4: queens off and an equal endgame.",
+  "es": "Tras Dd3 Db6 O-O-O Dxd4: sin damas y un final igualado."
+ },
+ "Bb5": {
+  "en": "Bb5 pins: ...Bd7.",
+  "es": "Ab5 clava: ...Ad7."
+ },
+ "Bb5 Bd7 O-O": {
+  "en": "...e6 and ...Be7; ...a6 asks the bishop.",
+  "es": "...e6 y ...Ae7; ...a6 pregunta al alfil."
+ },
+ "Bc4": {
+  "en": "The Sozin: ...e6 blunts the bishop; ...Be7, ...a6 and ...Qc7.",
+  "es": "La Sozin: ...e6 neutraliza el alfil; ...Ae7, ...a6 y ...Dc7."
  }
 }

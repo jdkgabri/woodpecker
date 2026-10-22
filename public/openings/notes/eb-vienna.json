@@ -22,5 +22,101 @@
  "Nf6 Bc4 Bb4 Nf3 Nc6 d3 d5 exd5 Nxd5 Bxd5": {
   "en": "White gave up the Italian bishop: ...Bxc3+ bxc3 Qxd5 and the queen is strong in the centre against White's broken pawns.",
   "es": "Las blancas han entregado el alfil italiano: ...Axc3+ bxc3 Dxd5 y la dama es fuerte en el centro frente a los peones blancos rotos."
+ },
+ "Nf6 Nf3": {
+  "en": "...Bb4 pins the c3-knight and makes ...Nxe4 a threat.",
+  "es": "...Ab4 clava el caballo de c3 y hace de ...Cxe4 una amenaza."
+ },
+ "Nf6 Nf3 Bb4 d3": {
+  "en": "...d5! takes the centre.",
+  "es": "¡...d5! toma el centro."
+ },
+ "Nf6 Nf3 Bb4 d3 d5 exd5": {
+  "en": "...Nxd5, then ...Nc6 and ...O-O.",
+  "es": "...Cxd5, y después ...Cc6 y ...O-O."
+ },
+ "Nf6 Nf3 Bb4 d3 d5 exd5 Nxd5 Bd2": {
+  "en": "...Nc6: develop; if Nxd5 Qxd5 Black's queen is strong.",
+  "es": "...Cc6: desarrolla; si Cxd5 Dxd5 la dama negra es fuerte."
+ },
+ "Nf6 Nf3 Bb4 d3 d5 exd5 Nxd5 Bd2 Nc6 Nxd5": {
+  "en": "...Qxd5: the queen centralises with tempo on nothing to fear.",
+  "es": "...Dxd5: la dama se centraliza sin nada que temer."
+ },
+ "Nf6 Nf3 Bb4 d3 d5 exd5 Nxd5 Bd2 Nc6 Nxd5 Qxd5": {
+  "en": "After Bxb4 Nxb4, ...Nxc2+ ideas and ...O-O: Black is slightly better.",
+  "es": "Tras Axb4 Cxb4, ideas de ...Cxc2+ y ...O-O: las negras están algo mejor."
+ },
+ "Nf6 Nf3 Bb4 d3 d5 Bd2 Nc6": {
+  "en": "If exd5 Nxd5 Be2, ...Nxc3 and ...O-O: Black is comfortable.",
+  "es": "Si exd5 Cxd5 Ae2, ...Cxc3 y ...O-O: las negras están cómodas."
+ },
+ "Nf6 Nf3 Bb4 Bc4": {
+  "en": "...Nc6 (or ...O-O): don't take on e4 too early.",
+  "es": "...Cc6 (o ...O-O): no tomes en e4 demasiado pronto."
+ },
+ "Nf6 Nf3 Bb4 Bc4 Nc6 d3 d5 exd5 Nxd5 Bd2 Nf6": {
+  "en": "The knight retreats; ...O-O and ...Bg4. Slightly better for White.",
+  "es": "El caballo retrocede; ...O-O y ...Ag4. Algo mejor para las blancas."
+ },
+ "Nf6 Nf3 Bb4 Nxe5": {
+  "en": "...Bxc3 dxc3 and ...Nxe4 or ...d6: Black regains the pawn.",
+  "es": "...Axc3 dxc3 y ...Cxe4 o ...d6: las negras recuperan el peón."
+ },
+ "Nf6 Nf3 Bb4 Nxe5 Bxc3 dxc3 d6": {
+  "en": "After Nc4 Nxe4: material is level, White has the bishop pair. Slightly better for White.",
+  "es": "Tras Cc4 Cxe4: el material está igualado y las blancas tienen la pareja de alfiles. Algo mejor para las blancas."
+ },
+ "Nf6 f4": {
+  "en": "The Vienna Gambit: ...d5! opens the centre.",
+  "es": "El Gambito Vienés: ¡...d5! abre el centro."
+ },
+ "Nf6 f4 d5 fxe5": {
+  "en": "...Nxe4: the knight is strong in the centre.",
+  "es": "...Cxe4: el caballo es fuerte en el centro."
+ },
+ "Nf6 f4 d5 fxe5 Nxe4 Qf3": {
+  "en": "...Nc6! hits e5 and d4.",
+  "es": "¡...Cc6! ataca e5 y d4."
+ },
+ "Nf6 f4 d5 fxe5 Nxe4 Qf3 Nc6": {
+  "en": "If Bb5, ...Nxc3 dxc3 Qh4+ g3 Qe4+ and the queens come off. Equal.",
+  "es": "Si Ab5, ...Cxc3 dxc3 Dh4+ g3 De4+ y salen las damas. Igualdad."
+ },
+ "Nf6 f4 d5 fxe5 Nxe4 Nf3": {
+  "en": "...Bb4 (or ...Be7, ...Nc6). Equal.",
+  "es": "...Ab4 (o ...Ae7, ...Cc6). Igualdad."
+ },
+ "Nf6 f4 d5 fxe5 Nxe4 Nf3 Bb4": {
+  "en": "After Bd3, ...f5 supports the knight. Equal.",
+  "es": "Tras Ad3, ...f5 apoya al caballo. Igualdad."
+ },
+ "Nf6 f4 d5 fxe5 Nxe4 Nxe4": {
+  "en": "...dxe4: the pawn on e4 cramps White.",
+  "es": "...dxe4: el peón de e4 estorba a las blancas."
+ },
+ "Nf6 f4 d5 exd5": {
+  "en": "...exf4: grab the f-pawn and develop.",
+  "es": "...exf4: toma el peón f y desarrolla."
+ },
+ "Nf6 f4 d5 exd5 exf4 Nf3 Nxd5": {
+  "en": "After Nxd5 Qxd5 d4, ...g5 holds f4 or ...Be7 and ...O-O. Black is better.",
+  "es": "Tras Cxd5 Dxd5 d4, ...g5 sostiene f4 o ...Ae7 y ...O-O. Las negras están mejor."
+ },
+ "Nf6 Bc4": {
+  "en": "...Bb4 (or ...Nxe4 tricks); develop and castle.",
+  "es": "...Ab4 (o trucos con ...Cxe4); desarrolla y enroca."
+ },
+ "Nf6 Bc4 Bb4 d3": {
+  "en": "...d5! hits the bishop.",
+  "es": "¡...d5! ataca al alfil."
+ },
+ "Nf6 Bc4 Bb4 d3 d5": {
+  "en": "After exd5 Nxd5 Qf3, ...Be6 and ...O-O. Slightly better for White.",
+  "es": "Tras exd5 Cxd5 Df3, ...Ae6 y ...O-O. Algo mejor para las blancas."
+ },
+ "Nf6 d3 d5 exd5 Bb4": {
+  "en": "...Bb4 and ...O-O, then ...Nxd5. Equal.",
+  "es": "...Ab4 y ...O-O, y después ...Cxd5. Igualdad."
  }
 }

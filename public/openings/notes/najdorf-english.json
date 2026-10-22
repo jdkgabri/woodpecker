@@ -22,5 +22,117 @@
  "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4 b5 g5 b4": {
   "en": "...b4 kicks the c3-knight, which defends e4 and controls d5. Wherever it goes, Black's queenside attack gains time.",
   "es": "...b4 echa al caballo de c3, que defiende e4 y controla d5. Vaya donde vaya, el ataque negro en el flanco de dama gana tiempo."
+ },
+ "e5 Nb3": {
+  "en": "...Be6: control d5.",
+  "es": "...Ae6: controla d5."
+ },
+ "e5 Nb3 Be6 f3": {
+  "en": "The English Attack setup. ...Be7, ...O-O and ...Nbd7.",
+  "es": "El esquema del Ataque Inglés. ...Ae7, ...O-O y ...Cbd7."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2": {
+  "en": "Castle: if White castles long, ...Nbd7 and ...b5.",
+  "es": "Enroca: si las blancas enrocan largo, ...Cbd7 y ...b5."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O": {
+  "en": "...Nbd7, then ...b5–b4.",
+  "es": "...Cbd7, y después ...b5–b4."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4": {
+  "en": "...b5! the race is on.",
+  "es": "¡...b5! empieza la carrera."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4 b5 g5": {
+  "en": "...b4 kicks the c3-knight.",
+  "es": "...b4 echa al caballo de c3."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4 b5 g5 b4 Nd5": {
+  "en": "...Nxd5 exd5 Bf5: the bishop escapes, and ...a5–a4 continues. Equal.",
+  "es": "...Cxd5 exd5 Af5: el alfil escapa, y continúa ...a5–a4. Igualdad."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4 b5 h4": {
+  "en": "...b4 and ...a5–a4: Black's attack is fast.",
+  "es": "...b4 y ...a5–a4: el ataque negro es rápido."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4 b5 h4 b4 Nd5 Bxd5 exd5 a5 Kb1": {
+  "en": "...a4! drives the b3-knight away; ...Nb6 and ...Qb6 follow. Black is clearly better.",
+  "es": "¡...a4! echa al caballo de b3; siguen ...Cb6 y ...Db6. Las negras están claramente mejor."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4 b5 h4 b4 Nd5 Bxd5 exd5 a5 h5": {
+  "en": "...a4! and the knight has nowhere good to go: Black's attack arrives first. Black is winning.",
+  "es": "¡...a4! y el caballo no tiene buena casilla: el ataque negro llega primero. Las negras van ganando."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 g4 b5 h4 b4 Ne2": {
+  "en": "...a5–a4 and ...Qc7: Black's attack is faster. Black is better.",
+  "es": "...a5–a4 y ...Dc7: el ataque negro es más rápido. Las negras están mejor."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 Kb1": {
+  "en": "...b5 and ...b4 anyway.",
+  "es": "...b5 y ...b4 igualmente."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O O-O-O Nbd7 Kb1 b5 g4 b4 Nd5 Bxd5 exd5 Nb6": {
+  "en": "If Qxb4, ...Nfxd5 and the centre opens for Black's pieces. Equal.",
+  "es": "Si Dxb4, ...Cfxd5 y el centro se abre para las piezas negras. Igualdad."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O g4": {
+  "en": "g4 before castling: ...d5! hits the centre.",
+  "es": "g4 antes de enrocar: ¡...d5! golpea el centro."
+ },
+ "e5 Nb3 Be6 f3 Be7 Qd2 O-O g4 d5 exd5 Nxd5 Nxd5 Bh4+": {
+  "en": "...Bh4+ first, then ...Bxd5: Black's pieces are very active. Black is better.",
+  "es": "Primero ...Ah4+, y después ...Axd5: las piezas negras están muy activas. Las negras están mejor."
+ },
+ "e5 Nb3 Be6 Be2": {
+  "en": "Be2: quiet. ...Be7 and ...O-O, then ...Nbd7 and ...Qc7.",
+  "es": "Ae2: tranquilo. ...Ae7 y ...O-O, y después ...Cbd7 y ...Dc7."
+ },
+ "e5 Nb3 Be6 Be2 Be7 O-O": {
+  "en": "Castle; ...Nbd7, ...Qc7 and ...Rc8 or ...b5. Equal.",
+  "es": "Enroca; ...Cbd7, ...Dc7 y ...Tc8 o ...b5. Igualdad."
+ },
+ "e5 Nb3 Be6 Qd2": {
+  "en": "...Be7 and castle.",
+  "es": "...Ae7 y enroque."
+ },
+ "e5 Nb3 Be6 Qd2 Be7 f3": {
+  "en": "Castle, then ...Nbd7 and ...b5.",
+  "es": "Enroca, y después ...Cbd7 y ...b5."
+ },
+ "e5 Nb3 Be6 Qd2 Be7 O-O-O": {
+  "en": "Castle and race with ...b5–b4.",
+  "es": "Enroca y corre con ...b5–b4."
+ },
+ "e5 Nf3": {
+  "en": "Nf3: ...Be7 and ...Be6, ...O-O.",
+  "es": "Cf3: ...Ae7 y ...Ae6, ...O-O."
+ },
+ "e5 Nf3 Be7 Bc4": {
+  "en": "...Be6 challenges the bishop.",
+  "es": "...Ae6 desafía al alfil."
+ },
+ "e5 Nf3 Be7 Bc4 Be6 Bxe6": {
+  "en": "...fxe6: the f-file opens and the e6/e5 pawns control d5. Slightly better for White.",
+  "es": "...fxe6: se abre la columna f y los peones de e6/e5 controlan d5. Algo mejor para las blancas."
+ },
+ "e5 Nf3 Be7 Bc4 Be6 Bxe6 fxe6": {
+  "en": "If Ng5, ...Qd7 (or ...Qc8): e6 is safe. Then ...O-O and ...Nc6. Slightly better for White.",
+  "es": "Si Cg5, ...Dd7 (o ...Dc8): e6 está seguro. Después ...O-O y ...Cc6. Algo mejor para las blancas."
+ },
+ "e5 Nf3 Be7 Bc4 Be6 Bb3 O-O": {
+  "en": "...Nc6 and ...Na5 or ...b5. Equal.",
+  "es": "...Cc6 y ...Ca5 o ...b5. Igualdad."
+ },
+ "e5 Nf5": {
+  "en": "Nf5? ...d5! and the knight on f5 becomes a target.",
+  "es": "¿Cf5? ¡...d5! y el caballo de f5 se convierte en objetivo."
+ },
+ "e5 Nf5 d5 Bg5 d4 Nd5": {
+  "en": "...Bxf5! White has lost a piece.",
+  "es": "¡...Axf5! Las blancas han perdido una pieza."
+ },
+ "e5 Nf5 d5 Nxd5": {
+  "en": "...Nxd5 Qxd5 Qxd5 Nxg7+ Bxg7 exd5: Black has a piece for two pawns. Black is winning.",
+  "es": "...Cxd5 Dxd5 Dxd5 Cxg7+ Axg7 exd5: las negras tienen una pieza por dos peones. Las negras van ganando."
  }
 }

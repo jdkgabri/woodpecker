@@ -22,5 +22,141 @@
  "exd4 Nxd4 Nf6": {
   "en": "...Nf6 attacks e4 at once. After Nxc6 bxc6 e5, ...Qe7 pins the pawn (the Mieses).",
   "es": "...Cf6 ataca e4 de inmediato. Tras Cxc6 bxc6 e5, ...De7 clava el peón (la Mieses)."
+ },
+ "exd4 Nxd4": {
+  "en": "...Nf6 attacks e4 at once.",
+  "es": "...Cf6 ataca e4 de inmediato."
+ },
+ "exd4 Nxd4 Nf6 Nxc6": {
+  "en": "...bxc6: the pawn heads to the centre; ...d5 or ...Qe7 next.",
+  "es": "...bxc6: el peón va hacia el centro; después ...d5 o ...De7."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5": {
+  "en": "The Mieses: ...Qe7 pins the e5-pawn.",
+  "es": "La Mieses: ...De7 clava el peón de e5."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7 Qe2": {
+  "en": "...Nd5, then ...Ba6 pins the c4-pawn when it arrives.",
+  "es": "...Cd5, y después ...Aa6 clava el peón de c4 cuando llegue."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4": {
+  "en": "...Ba6: the pawn on c4 is pinned to the queen.",
+  "es": "...Aa6: el peón de c4 queda clavado contra la dama."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6 b3": {
+  "en": "...g6 and ...Bg7 hit e5; ...O-O-O or ...O-O. Sharp and equal.",
+  "es": "...g6 y ...Ag7 atacan e5; ...O-O-O o ...O-O. Agudo e igualado."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6 b3 g6": {
+  "en": "If f4, ...g5! hits the chain; ...Bg7 and ...O-O-O. Equal.",
+  "es": "Si f4, ¡...g5! golpea la cadena; ...Ag7 y ...O-O-O. Igualdad."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7 Bf4": {
+  "en": "Bf4 leaves b2 loose: ...Nd5 Bg3 Qb4+! and ...Qxb2. Black is better.",
+  "es": "Af4 deja b2 desprotegido: ...Cd5 Ag3 ¡Db4+! y ...Dxb2. Las negras están mejor."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 Bd3": {
+  "en": "...d5! takes the centre.",
+  "es": "¡...d5! toma el centro."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 Bd3 d5 exd5": {
+  "en": "...cxd5: a strong pawn centre; ...Be7 and ...O-O.",
+  "es": "...cxd5: un fuerte centro de peones; ...Ae7 y ...O-O."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 Bd3 d5 exd5 cxd5 O-O Be7": {
+  "en": "Castle, then ...Rb8 and ...c5 or ...c6. Equal.",
+  "es": "Enroque, y después ...Tb8 y ...c5 o ...c6. Igualdad."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 Bd3 d5 e5 Ng4": {
+  "en": "...Bc5 hits f2 and the e5-pawn will fall. Black is better.",
+  "es": "...Ac5 ataca f2 y el peón de e5 caerá. Las negras están mejor."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 Nc3": {
+  "en": "...Bc5 (or ...Bb4): quick development.",
+  "es": "...Ac5 (o ...Ab4): desarrollo rápido."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 Nc3 Bc5 Bd3 d5": {
+  "en": "Castle, ...Rb8 and ...Bd4 or ...dxe4. Equal.",
+  "es": "Enroque, ...Tb8 y ...Ad4 o ...dxe4. Igualdad."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 Nc3 Bc5 Bg5 h6": {
+  "en": "After Bh4, ...d6 and ...g5 or ...O-O. Equal.",
+  "es": "Tras Ah4, ...d6 y ...g5 o ...O-O. Igualdad."
+ },
+ "exd4 Nxd4 Nf6 Nc3": {
+  "en": "The Scotch Four Knights: ...Bb4 pins and hits e4.",
+  "es": "Los Cuatro Caballos Escoceses: ...Ab4 clava y ataca e4."
+ },
+ "exd4 Nxd4 Nf6 Nc3 Bb4 Nxc6": {
+  "en": "...bxc6, then ...d5.",
+  "es": "...bxc6, y después ...d5."
+ },
+ "exd4 Nxd4 Nf6 Nc3 Bb4 Nxc6 bxc6 Bd3": {
+  "en": "...d5: the standard reply.",
+  "es": "...d5: la respuesta estándar."
+ },
+ "exd4 Nxd4 Nf6 Nc3 Bb4 Nxc6 bxc6 Bd3 d5 exd5": {
+  "en": "...cxd5 and castle.",
+  "es": "...cxd5 y enroque."
+ },
+ "exd4 Nxd4 Nf6 Nc3 Bb4 Nxc6 bxc6 Bd3 d5 exd5 cxd5 O-O": {
+  "en": "...O-O and ...c6 or ...Bg4. Equal.",
+  "es": "...O-O y ...c6 o ...Ag4. Igualdad."
+ },
+ "exd4 Nxd4 Nf6 Nc3 Bb4 Nxc6 bxc6 Bd3 d5 exd5 cxd5 O-O c6": {
+  "en": "...O-O, ...Re8 and ...Bd6: a solid, equal position.",
+  "es": "...O-O, ...Te8 y ...Ad6: una posición sólida e igualada."
+ },
+ "exd4 Nxd4 Nf6 Nc3 Bb4 Nxc6 bxc6 Bd2 d5": {
+  "en": "Castle; ...Bxc3 and ...dxe4 when they help. Equal.",
+  "es": "Enroque; ...Axc3 y ...dxe4 cuando convengan. Igualdad."
+ },
+ "exd4 Bc4": {
+  "en": "The Scotch Gambit: ...Nf6 hits e4.",
+  "es": "El Gambito Escocés: ...Cf6 ataca e4."
+ },
+ "exd4 Bc4 Nf6 e5": {
+  "en": "...d5! hits the bishop.",
+  "es": "¡...d5! ataca al alfil."
+ },
+ "exd4 Bc4 Nf6 e5 d5 Bb5": {
+  "en": "...Ne4: the knight is strong in the centre.",
+  "es": "...Ce4: el caballo es fuerte en el centro."
+ },
+ "exd4 Bc4 Nf6 e5 d5 Bb5 Ne4 Nxd4": {
+  "en": "...Bc5 (or ...Bd7): develop and hit d4. Equal.",
+  "es": "...Ac5 (o ...Ad7): desarrolla y ataca d4. Igualdad."
+ },
+ "exd4 Bc4 Nf6 O-O": {
+  "en": "...Nxe4: take the pawn; after Re1, ...d5.",
+  "es": "...Cxe4: toma el peón; tras Te1, ...d5."
+ },
+ "exd4 Bc4 Nf6 O-O Nxe4 Re1": {
+  "en": "...d5! defends the knight and blocks the bishop.",
+  "es": "¡...d5! defiende al caballo y corta al alfil."
+ },
+ "exd4 Bc4 Nf6 O-O Nxe4 Re1 d5 Bxd5": {
+  "en": "...Qxd5 and after Nc3, ...Qh5 (or ...Qa5).",
+  "es": "...Dxd5 y tras Cc3, ...Dh5 (o ...Da5)."
+ },
+ "exd4 Bc4 Nf6 O-O Nxe4 Re1 d5 Bxd5 Qxd5 Nc3": {
+  "en": "...Qh5: the queen escapes the e-file and keeps the knight.",
+  "es": "...Dh5: la dama sale de la columna e y conserva el caballo."
+ },
+ "exd4 Bc4 Nf6 O-O Nxe4 Re1 d5 Bxd5 Qxd5 Nc3 Qh5 Nxe4 Be6": {
+  "en": "After Bg5 Bd6 Nxd6+ cxd6, Black's king is safe enough. Equal.",
+  "es": "Tras Ag5 Ad6 Cxd6+ cxd6, el rey negro está suficientemente seguro. Igualdad."
+ },
+ "exd4 Bc4 Nf6 Ng5": {
+  "en": "Ng5 hits f7: ...d5! and after exd5, ...Qe7+! Black is better.",
+  "es": "Cg5 ataca f7: ¡...d5! y tras exd5, ¡...De7+! las negras están mejor."
+ },
+ "exd4 c3 Nf6 e5 Nd5 cxd4 Bb4+ Bd2 Bxd2+": {
+  "en": "Nbxd2: then ...O-O and ...d6. Equal.",
+  "es": "Cbxd2: después ...O-O y ...d6. Igualdad."
+ },
+ "exd4 c3 Nf6 cxd4": {
+  "en": "cxd4? leaves e4 hanging: ...Nxe4 (or ...Bb4+ first). Black is better.",
+  "es": "¿cxd4? deja e4 colgando: ...Cxe4 (o primero ...Ab4+). Las negras están mejor."
  }
 }

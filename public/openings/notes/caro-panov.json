@@ -22,5 +22,61 @@
  "": {
   "en": "Against the Panov: ...Nf6, ...e6 and play against the isolated pawn.",
   "es": "Contra el Panov: ...Cf6, ...e6 y juego contra el peón aislado."
+ },
+ "Nf6 Nc3 e6 Nf3": {
+  "en": "...Be7 and ...O-O; ...dxc4 when White's bishop has moved, then ...Nc6 and play against d4.",
+  "es": "...Ae7 y ...O-O; ...dxc4 cuando el alfil blanco se haya movido, y después ...Cc6 y juego contra d4."
+ },
+ "Nf6 Nc3 e6 Nf3 Be7 cxd5": {
+  "en": "...Nxd5: the knight blockades d5 and trades are welcome.",
+  "es": "...Cxd5: el caballo bloquea d5 y los cambios son bienvenidos."
+ },
+ "Nf6 Nc3 e6 Nf3 Be7 Bd3": {
+  "en": "...Nc6 (or ...dxc4 Bxc4 and ...O-O): pressure on d4.",
+  "es": "...Cc6 (o ...dxc4 Axc4 y ...O-O): presión sobre d4."
+ },
+ "Nf6 Nc3 e6 Nf3 Be7 Bd3 Nc6 O-O": {
+  "en": "...dxc4: White's bishop must move again (Bxc4), and Black castles. An isolated-pawn game.",
+  "es": "...dxc4: el alfil blanco tiene que volver a moverse (Axc4), y las negras enrocan. Una partida de peón aislado."
+ },
+ "Nf6 Nc3 e6 Nf3 Be7 Bd3 Nc6 O-O dxc4": {
+  "en": "After Bxc4 O-O: ...b6, ...Bb7 and ...Nb4 or ...Nd5 blockade the isolated pawn. Equal.",
+  "es": "Tras Axc4 O-O: ...b6, ...Ab7 y ...Cb4 o ...Cd5 bloquean el peón aislado. Igualdad."
+ },
+ "Nf6 Nc3 e6 Nf3 Be7 Bg5": {
+  "en": "...Nc6 or ...O-O; ...Ne4 can trade the pinned knight. Equal.",
+  "es": "...Cc6 o ...O-O; ...Ce4 puede cambiar el caballo clavado. Igualdad."
+ },
+ "Nf6 Nc3 e6 Nf3 Be7 Bf4": {
+  "en": "Castle, then ...Nc6 and ...dxc4 or ...Bd6 to trade the f4-bishop.",
+  "es": "Enroque, y después ...Cc6 y ...dxc4 o ...Ad6 para cambiar el alfil de f4."
+ },
+ "Nf6 Nc3 e6 Bg5": {
+  "en": "...Nc6 (or ...Be7): develop and pressure d4.",
+  "es": "...Cc6 (o ...Ae7): desarrolla y presiona d4."
+ },
+ "Nf6 Nc3 e6 Bg5 Nc6 Nf3": {
+  "en": "...Be7, ...O-O and ...dxc4. Equal.",
+  "es": "...Ae7, ...O-O y ...dxc4. Igualdad."
+ },
+ "Nf6 Nc3 e6 c5 Be7 Nf3 b6": {
+  "en": "...b6 breaks the chain: after cxb6 Qxb6, ...O-O and ...Ba6. Equal.",
+  "es": "...b6 rompe la cadena: tras cxb6 Dxb6, ...O-O y ...Aa6. Igualdad."
+ },
+ "Nf6 Nf3": {
+  "en": "...e6 and the same plans.",
+  "es": "...e6 y los mismos planes."
+ },
+ "Nf6 Nf3 e6 Nc3": {
+  "en": "...Nc6 or ...Be7: the main lines.",
+  "es": "...Cc6 o ...Ae7: las líneas principales."
+ },
+ "Nf6 Nf3 e6 cxd5 Bb4+": {
+  "en": "After Nc3 exd5 Bd3 O-O O-O: a symmetrical isolated-pawn position. Slightly better for White.",
+  "es": "Tras Cc3 exd5 Ad3 O-O O-O: una posición simétrica de peón aislado. Algo mejor para las blancas."
+ },
+ "Nf6 cxd5 Nxd5 Nc3": {
+  "en": "...e6 (or ...Nc6): blockade and develop.",
+  "es": "...e6 (o ...Cc6): bloquea y desarrolla."
  }
 }
