@@ -2,5 +2,109 @@
  "g3 Nf6": {
   "en": "The fianchetto: Bg2, Nf3, O-O, c4 and Nc3, then d5 or e4. White's bishop on g2 and the e4-break are the keys against the f5-pawn.",
   "es": "El fianchetto: Ag2, Cf3, O-O, c4 y Cc3, y después d5 o e4. El alfil de g2 y la ruptura e4 son las claves contra el peón de f5."
+ },
+ "": {
+  "en": "Against the Dutch, the g2-bishop is White's best piece: it fights for e4, the square Black's f5-pawn controls. Plan: g3, Bg2, Nf3, O-O, c4 and Nc3, then d5 or the e4-break.",
+  "es": "Contra la Holandesa, el alfil de g2 es la mejor pieza blanca: lucha por e4, la casilla que controla el peón de f5. Plan: g3, Ag2, Cf3, O-O, c4 y Cc3, y después d5 o la ruptura e4."
+ },
+ "g3 Nf6 Bg2 e6": {
+  "en": "...e6: the classical setups. Black chooses later between ...Be7 with ...d6 (the Classical) and ...d5 (the Stonewall).",
+  "es": "...e6: los esquemas clásicos. Las negras eligen más tarde entre ...Ae7 con ...d6 (la Clásica) y ...d5 (el Stonewall)."
+ },
+ "g3 Nf6 Bg2 e6 Nf3 Be7": {
+  "en": "...Be7: the Classical Dutch. White completes development with c4, O-O and Nc3 and then prepares e4 with Qc2.",
+  "es": "...Ae7: la Holandesa Clásica. Las blancas completan el desarrollo con c4, O-O y Cc3 y después preparan e4 con Dc2."
+ },
+ "g3 Nf6 Bg2 e6 Nf3 Be7 c4 O-O": {
+  "en": "Black castles. Typical ideas now: ...d6 with ...Qe8–h5 and ...e5, or ...Ne4 to hold e4 with a piece.",
+  "es": "Las negras enrocan. Ideas típicas ahora: ...d6 con ...De8–h5 y ...e5, o ...Ce4 para sostener e4 con una pieza."
+ },
+ "g3 Nf6 Bg2 e6 Nf3 Be7 c4 O-O O-O d6": {
+  "en": "...d6 prepares ...e5. After Nc3, White meets ...Qe8 with Qc2 or Re1 and e4, or with b3 and Bb2: the fight is about e4 and e5.",
+  "es": "...d6 prepara ...e5. Tras Cc3, las blancas responden a ...De8 con Dc2 o Te1 y e4, o con b3 y Ab2: la lucha gira en torno a e4 y e5."
+ },
+ "g3 Nf6 Bg2 e6 Nf3 d5": {
+  "en": "...d5: the Stonewall (pawns d5–e6–f5, soon ...c6). Black gets a strong knight on e4, but the e5-square is weak and the c8-bishop is shut in.",
+  "es": "...d5: el Stonewall (peones d5–e6–f5, enseguida ...c6). Las negras tienen un caballo fuerte en e4, pero la casilla e5 queda débil y el alfil de c8 encerrado."
+ },
+ "g3 Nf6 Bg2 e6 Nf3 d5 c4 c6": {
+  "en": "...c6 completes the Stonewall. White's plans: trade Black's good dark-squared bishop (b3 and Ba3, or Bf4) and put a knight on e5.",
+  "es": "...c6 completa el Stonewall. Planes blancos: cambiar el alfil bueno de casillas oscuras de las negras (b3 y Aa3, o Af4) y poner un caballo en e5."
+ },
+ "g3 Nf6 Bg2 e6 Nf3 d5 c4 c6 O-O Bd6": {
+  "en": "...Bd6: Black's best bishop, controlling e5. That is exactly the piece White wants to trade.",
+  "es": "...Ad6: el mejor alfil negro, que controla e5. Es justo la pieza que las blancas quieren cambiar."
+ },
+ "g3 Nf6 Bg2 e6 Nf3 d5 c4 c6 O-O Bd6 Nc3 O-O": {
+  "en": "Now b3 and Ba3 offer the trade of dark-squared bishops; then Ne5 and, at the right moment, f3 to kick a knight from e4.",
+  "es": "Ahora b3 y Aa3 ofrecen el cambio de alfiles de casillas oscuras; después Ce5 y, en el momento justo, f3 para echar a un caballo de e4."
+ },
+ "g3 Nf6 Bg2 e6 Nf3 c6 c4": {
+  "en": "After ...d5 this is a Stonewall. Bf4 (or Qc2 and Bf4) trades the dark-squared bishops, leaving Black with the bad c8-bishop. White is a little better.",
+  "es": "Tras ...d5 es un Stonewall. Af4 (o Dc2 y Af4) cambia los alfiles de casillas oscuras y deja a las negras con el alfil malo de c8. Las blancas están algo mejor."
+ },
+ "g3 Nf6 Bg2 g6": {
+  "en": "...g6: the Leningrad Dutch. Black fianchettoes too, then ...d6, ...O-O and ...e5 or ...Qe8.",
+  "es": "...g6: la Holandesa Leningrado. Las negras también hacen el fianchetto, y después ...d6, ...O-O y ...e5 o ...De8."
+ },
+ "g3 Nf6 Bg2 g6 Nf3 Bg7": {
+  "en": "Both bishops on the long diagonal. White continues c4, O-O and Nc3.",
+  "es": "Los dos alfiles en la gran diagonal. Las blancas siguen con c4, O-O y Cc3."
+ },
+ "g3 Nf6 Bg2 g6 Nf3 Bg7 c4 O-O": {
+  "en": "Black castles. Nothing forced yet: White castles too.",
+  "es": "Las negras enrocan. Todavía nada forzado: las blancas enrocan también."
+ },
+ "g3 Nf6 Bg2 g6 Nf3 Bg7 c4 O-O O-O d6": {
+  "en": "The Leningrad main line. After Nc3, d5 gains space and takes away e6 and c6 from Black's pieces; Black answers with ...c6, ...Nc6, ...Qe8 or ...Na6.",
+  "es": "La línea principal de la Leningrado. Tras Cc3, d5 gana espacio y quita e6 y c6 a las piezas negras; las negras responden con ...c6, ...Cc6, ...De8 o ...Ca6."
+ },
+ "g3 Nf6 Bg2 g6 Nf3 Bg7 c4 O-O O-O d6 Nc3 c6 d5": {
+  "en": "d5 clamps the centre. If ...e5, dxe6 Bxe6 and the d6-pawn and d5-square become targets; White keeps a small edge.",
+  "es": "d5 aprieta el centro. Si ...e5, dxe6 Axe6 y el peón de d6 y la casilla d5 se convierten en objetivos; las blancas mantienen una pequeña ventaja."
+ },
+ "g3 Nf6 Bg2 g6 Nf3 Bg7 c4 O-O O-O d6 Nc3 Nc6 d5": {
+  "en": "d5 kicks the knight. After ...Ne5 Nxe5 dxe5, White has more space and the long diagonal is blocked by Black's own pawn: White is better.",
+  "es": "d5 echa al caballo. Tras ...Ce5 Cxe5 dxe5, las blancas tienen más espacio y el propio peón negro tapa la gran diagonal: las blancas están mejor."
+ },
+ "g3 Nf6 Bg2 g6 Nf3 Bg7 c4 O-O O-O d6 Nc3 Qe8 d5": {
+  "en": "d5 against ...Qe8: the queen wanted to support ...e5. Black usually goes ...Na6–c5; Be3 and b4 chase the knight away.",
+  "es": "d5 contra ...De8: la dama quería apoyar ...e5. Las negras suelen jugar ...Ca6–c5; Ae3 y b4 echan al caballo."
+ },
+ "g3 Nf6 Bg2 g6 Nf3 Bg7 c4 d6": {
+  "en": "...d6 before castling: the same ideas. White castles and plays Nc3; Black's ...e5 and ...Qe8 come next.",
+  "es": "...d6 antes de enrocar: las mismas ideas. Las blancas enrocan y juegan Cc3; después llegan ...e5 y ...De8."
+ },
+ "g3 Nf6 Bg2 g6 Nf3 Bg7 c4 d6 O-O": {
+  "en": "White has completed the setup. Next Nc3 and, depending on Black, d5, Re1 with e4, or Qb3 against the b7-pawn.",
+  "es": "Las blancas han completado el esquema. Después Cc3 y, según lo que hagan las negras, d5, Te1 con e4, o Db3 contra el peón de b7."
+ },
+ "g3 Nf6 Bg2 d5": {
+  "en": "...d5 first: a Stonewall without ...e6 yet. White plays Nf3, c4 and O-O; Bf4 is a useful move here.",
+  "es": "Primero ...d5: un Stonewall todavía sin ...e6. Las blancas juegan Cf3, c4 y O-O; Af4 es una jugada útil aquí."
+ },
+ "g3 Nf6 Bg2 d5 Nf3 e6": {
+  "en": "Now it is a normal Stonewall. c4 next, and later the trade of dark-squared bishops and Ne5.",
+  "es": "Ahora es un Stonewall normal. Después c4, y más tarde el cambio de alfiles de casillas oscuras y Ce5."
+ },
+ "g3 Nf6 Bg2 d5 Nf3 e6 c4 c6": {
+  "en": "The full Stonewall again. Castle, then b3/Ba3 or Bf4 against the d6-bishop, and Ne5.",
+  "es": "Otra vez el Stonewall completo. Enroque, después b3/Aa3 o Af4 contra el alfil de d6, y Ce5."
+ },
+ "g3 Nf6 Bg2 c6 Nf3": {
+  "en": "...c6 keeps options open, usually heading for a Stonewall with ...e6 and ...d5. Qc2 and Bf4 are good answers to it.",
+  "es": "...c6 mantiene las opciones abiertas, normalmente camino de un Stonewall con ...e6 y ...d5. Dc2 y Af4 son buenas respuestas."
+ },
+ "g3 e6": {
+  "en": "...e6 before ...Nf6. After Bg2 Nf6 and Nf3 it transposes to the classical lines.",
+  "es": "...e6 antes de ...Cf6. Tras Ag2 Cf6 y Cf3 se transpone a las líneas clásicas."
+ },
+ "g3 e6 Bg2 Nf6": {
+  "en": "Back in the main lines: Nf3, c4 and O-O.",
+  "es": "De vuelta a las líneas principales: Cf3, c4 y O-O."
+ },
+ "g3 g6 Bg2": {
+  "en": "A Leningrad without ...Nf6. White plays c4, Nf3 (or Nh3–f4) and O-O, with the same plans: d5 for space or the e4-break.",
+  "es": "Una Leningrado sin ...Cf6. Las blancas juegan c4, Cf3 (o Ch3–f4) y O-O, con los mismos planes: d5 para ganar espacio o la ruptura e4."
  }
 }

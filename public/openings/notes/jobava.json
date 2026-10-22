@@ -10,5 +10,85 @@
  "Nf6 Nc3 g6 e4 Bg7": {
   "en": "e5! drives the knight back and White gets a big centre.",
   "es": "¡e5! hace retroceder al caballo y las blancas obtienen un gran centro."
+ },
+ "": {
+  "en": "The Jobava London: Nc3 and Bf4, with Nb5 ideas against c7. White plays e3, Qd2 or Bd3 and often castles long for a kingside attack with h4 or g4.",
+  "es": "La London Jobava: Cc3 y Af4, con ideas de Cb5 contra c7. Las blancas juegan e3, Dd2 o Ad3 y a menudo enrocan largo para atacar en el flanco de rey con h4 o g4."
+ },
+ "d5": {
+  "en": "1...d5: Nc3 and Bf4, the Jobava setup.",
+  "es": "1...d5: Cc3 y Af4, el esquema Jobava."
+ },
+ "d5 Nc3 Nf6": {
+  "en": "Bf4: now Nb5 threatens c7 in many lines, so Black must watch that square.",
+  "es": "Af4: ahora en muchas líneas Cb5 amenaza c7, así que las negras deben vigilar esa casilla."
+ },
+ "d5 Nc3 Nf6 Bf4 e6": {
+  "en": "Nb5 hits c7 at once. After ...Bb4+ c3 Ba5, e3, a4 or Na3 and Nf3: White keeps a small, flexible edge.",
+  "es": "Cb5 ataca c7 de inmediato. Tras ...Ab4+ c3 Aa5, e3, a4 o Ca3 y Cf3: las blancas mantienen una ventaja pequeña y flexible."
+ },
+ "d5 Nc3 Nf6 Bf4 e6 Nb5": {
+  "en": "Black must defend c7: ...Na6, ...Bd6 or ...Bb4+. Then e3, Nf3 and c4 or a quick c3. About equal.",
+  "es": "Las negras deben defender c7: ...Ca6, ...Ad6 o ...Ab4+. Después e3, Cf3 y c4 o un rápido c3. Más o menos igualdad."
+ },
+ "d5 Nc3 Nf6 Bf4 Bf5 e3": {
+  "en": "After ...e6, Bd3 offers to trade bishops, or f3 and g4 chase the f5-bishop. Equal, but full of ideas.",
+  "es": "Tras ...e6, Ad3 ofrece cambiar alfiles, o f3 y g4 persiguen al alfil de f5. Igualdad, pero llena de ideas."
+ },
+ "d5 Nc3 Nf6 Bf4 a6 e3": {
+  "en": "...a6 stops Nb5. Develop with Nf3, Bd3 and Qd2 or Ne5. Equal.",
+  "es": "...a6 impide Cb5. Desarrolla con Cf3, Ad3 y Dd2 o Ce5. Igualdad."
+ },
+ "d5 Nc3 Nf6 Bf4 Nc6 Nb5": {
+  "en": "Nb5 threatens Nxc7+. ...e5 is Black's best try, but after Bxe5 Nxe5 dxe5 White wins a pawn. White is better.",
+  "es": "Cb5 amenaza Cxc7+. ...e5 es el mejor intento de las negras, pero tras Axe5 Cxe5 dxe5 las blancas ganan un peón. Las blancas están mejor."
+ },
+ "d5 Nc3 e6": {
+  "en": "...e6: e4! turns it into a French with White's knight already on c3.",
+  "es": "...e6: ¡e4! lo convierte en una Francesa con el caballo blanco ya en c3."
+ },
+ "d5 Nc3 e6 e4 c5": {
+  "en": "...c5? is too loose. Bb5+ or exd5 exd5 Bb5+ and dxc5: Black's centre falls apart. White is clearly better.",
+  "es": "¿...c5? es demasiado descuidada. Ab5+ o exd5 exd5 Ab5+ y dxc5: el centro negro se deshace. Las blancas están claramente mejor."
+ },
+ "d5 Nc3 c6": {
+  "en": "...c6 covers b5. Bf4, e3 and Nf3; if ...Qb6, e4 or Rb1.",
+  "es": "...c6 cubre b5. Af4, e3 y Cf3; si ...Db6, e4 o Tb1."
+ },
+ "Nf6": {
+  "en": "1...Nf6: Nc3 again, ready for e4 against many setups.",
+  "es": "1...Cf6: otra vez Cc3, listo para e4 contra muchos esquemas."
+ },
+ "Nf6 Nc3 d5": {
+  "en": "Bf4 and the normal Jobava setup.",
+  "es": "Af4 y el esquema Jobava normal."
+ },
+ "Nf6 Nc3 g6": {
+  "en": "...g6: e4! and it becomes a Pirc or a Modern where White has a big centre.",
+  "es": "...g6: ¡e4! y se convierte en una Pirc o una Moderna con un gran centro blanco."
+ },
+ "Nf6 Nc3 g6 e4 d6 Bf4": {
+  "en": "Bf4, Qd2 and O-O-O with Bh6 and h4: a dangerous attacking setup against the Pirc. White is better.",
+  "es": "Af4, Dd2 y O-O-O con Ah6 y h4: un esquema de ataque peligroso contra la Pirc. Las blancas están mejor."
+ },
+ "Nf6 Nc3 e6": {
+  "en": "...e6: e4! and the centre is White's.",
+  "es": "...e6: ¡e4! y el centro es de las blancas."
+ },
+ "Nf6 Nc3 e6 e4 Bb4 e5": {
+  "en": "After ...Nd5, Qg4! hits g7: ...Kf8 is ugly, and Bg5 or a3 follow. White is clearly better.",
+  "es": "Tras ...Cd5, ¡Dg4! ataca g7: ...Rf8 es feo, y siguen Ag5 o a3. Las blancas están claramente mejor."
+ },
+ "e6 Nc3 d5": {
+  "en": "e4: a French where White has already chosen Nc3.",
+  "es": "e4: una Francesa en la que las blancas ya han elegido Cc3."
+ },
+ "e5": {
+  "en": "The Englund Gambit: take with dxe5 and keep the pawn; don't be greedy later.",
+  "es": "El Gambito Englund: toma con dxe5 y conserva el peón; no seas ambicioso después."
+ },
+ "e5 dxe5 Nc6 Bf4": {
+  "en": "Bf4 defends e5. If ...d6 Nf3 Bg4 exd6 Qf6, d7+! Bxd7 Qc1 and White stays a pawn up. Clearly better for White.",
+  "es": "Af4 defiende e5. Si ...d6 Cf3 Ag4 exd6 Df6, ¡d7+! Axd7 Dc1 y las blancas siguen con un peón de más. Claramente mejor para las blancas."
  }
 }

@@ -6,5 +6,97 @@
  "e5 Nd5 d4 e6 Nf3 c5 c4 Nb4": {
   "en": "d5! and the b4-knight is short of squares; a3 comes next.",
   "es": "¡d5! y el caballo de b4 se queda sin casillas; luego llega a3."
+ },
+ "": {
+  "en": "Against the Alekhine, White chases the knight and takes space, but without overextending: the Modern Variation (e5, d4, Nf3) keeps a solid centre and quick development.",
+  "es": "Contra la Alekhine, las blancas persiguen al caballo y ganan espacio, pero sin sobreextenderse: la Variante Moderna (e5, d4, Cf3) mantiene un centro sólido y un desarrollo rápido."
+ },
+ "e5 Nd5 d4 d6": {
+  "en": "...d6 attacks e5, the main line. Nf3 defends calmly; c4 can wait until the knight is chased at the right moment.",
+  "es": "...d6 ataca e5, la línea principal. Cf3 defiende con calma; c4 puede esperar hasta el momento justo de perseguir al caballo."
+ },
+ "e5 Nd5 d4 d6 Nf3 Bg4": {
+  "en": "...Bg4 pins the knight that defends e5. Be2 unpins; then c4 kicks the d5-knight and h3 asks the bishop.",
+  "es": "...Ag4 clava el caballo que defiende e5. Ae2 deshace la clavada; después c4 echa al caballo de d5 y h3 pregunta al alfil."
+ },
+ "e5 Nd5 d4 d6 Nf3 Bg4 Be2 e6": {
+  "en": "...e6: the solid main line. c4, O-O, h3 and Nc3 give White a big centre and more space.",
+  "es": "...e6: la línea principal sólida. c4, O-O, h3 y Cc3 dan a las blancas un gran centro y más espacio."
+ },
+ "e5 Nd5 d4 d6 Nf3 Bg4 Be2 e6 c4": {
+  "en": "After ...Nb6, O-O, h3 and Nc3, with Be3 and often exd6: White has space and a comfortable edge.",
+  "es": "Tras ...Cb6, O-O, h3 y Cc3, con Ae3 y a menudo exd6: las blancas tienen espacio y una ventaja cómoda."
+ },
+ "e5 Nd5 d4 d6 Nf3 Bg4 Be2 Nc6": {
+  "en": "...Nc6 piles up on e5. c4 kicks the knight first, keeping the initiative.",
+  "es": "...Cc6 acumula presión sobre e5. c4 echa primero al caballo y mantiene la iniciativa."
+ },
+ "e5 Nd5 d4 d6 Nf3 Bg4 Be2 Nc6 c4": {
+  "en": "After ...Nb6, the pawn sacrifice e6! fxe6 is a strong idea: Black's structure is wrecked and the light squares are weak. Otherwise exd6 is solid.",
+  "es": "Tras ...Cb6, el sacrificio de peón ¡e6! fxe6 es una idea fuerte: la estructura negra queda destrozada y las casillas blancas, débiles. Si no, exd6 es sólido."
+ },
+ "e5 Nd5 d4 d6 Nf3 Bg4 Be2 dxe5 Nxe5": {
+  "en": "Nxe5 offers the trade of bishops. After ...Bxe2 Qxe2, c4 and O-O follow: White has the better centre and development.",
+  "es": "Cxe5 ofrece el cambio de alfiles. Tras ...Axe2 Dxe2, siguen c4 y O-O: las blancas tienen mejor centro y desarrollo."
+ },
+ "e5 Nd5 d4 d6 Nf3 Bg4 Be2 c6 c4": {
+  "en": "...c6 is slow. After ...Nb6, Ng5! hits the g4-bishop and f7: White is clearly better.",
+  "es": "...c6 es lenta. Tras ...Cb6, ¡Cg5! ataca el alfil de g4 y f7: las blancas están claramente mejor."
+ },
+ "e5 Nd5 d4 d6 Nf3 dxe5": {
+  "en": "...dxe5 releases the tension. c4 first kicks the knight, then Nxe5 regains the pawn.",
+  "es": "...dxe5 libera la tensión. Primero c4 echa al caballo y después Cxe5 recupera el peón."
+ },
+ "e5 Nd5 d4 d6 Nf3 dxe5 c4": {
+  "en": "After ...Nb6 Nxe5: White has a pawn more in the centre (d4 against e7) and an active knight. ...g6 and ...Bg7 put pressure on d4.",
+  "es": "Tras ...Cb6 Cxe5: las blancas tienen un peón más en el centro (d4 contra e7) y un caballo activo. ...g6 y ...Ag7 presionan d4."
+ },
+ "e5 Nd5 d4 d6 Nf3 g6": {
+  "en": "...g6: the Alburt Variation. c4 and exd6 open the position before the g7-bishop comes to life.",
+  "es": "...g6: la Variante Alburt. c4 y exd6 abren la posición antes de que el alfil de g7 cobre vida."
+ },
+ "e5 Nd5 d4 d6 Nf3 g6 c4 Nb6": {
+  "en": "The knight goes to b6. exd6 removes the target from the centre.",
+  "es": "El caballo va a b6. exd6 retira el objetivo del centro."
+ },
+ "e5 Nd5 d4 d6 Nf3 g6 c4 Nb6 exd6": {
+  "en": "After ...cxd6, h3 (stopping ...Bg4), Be2, Nc3 and O-O: White's space gives a small edge; Black hopes for pressure on d4.",
+  "es": "Tras ...cxd6, h3 (impidiendo ...Ag4), Ae2, Cc3 y O-O: el espacio de las blancas da una pequeña ventaja; las negras confían en la presión sobre d4."
+ },
+ "e5 Nd5 d4 d6 Nf3 Nc6": {
+  "en": "...Nc6 pressures e5 and d4. c4 and Nb6 first, then exd6 or the sharp d5.",
+  "es": "...Cc6 presiona e5 y d4. Primero c4 y Cb6, y después exd6 o el agudo d5."
+ },
+ "e5 Nd5 d4 d6 Nf3 Nc6 c4 Nb6": {
+  "en": "exd6: now Black must choose between ...exd6 and ...cxd6.",
+  "es": "exd6: ahora las negras deben elegir entre ...exd6 y ...cxd6."
+ },
+ "e5 Nd5 d4 d6 Nf3 Nc6 c4 Nb6 exd6 exd6": {
+  "en": "...exd6 gives a symmetrical, solid structure. White has more space; Be2, O-O and Nc3 follow.",
+  "es": "...exd6 da una estructura simétrica y sólida. Las blancas tienen más espacio; siguen Ae2, O-O y Cc3."
+ },
+ "e5 Nd5 d4 d6 Nf3 Nc6 c4 Nb6 exd6 exd6 Be2": {
+  "en": "After ...Be7, h3, O-O and Nc3: a calm position where White's extra space is a lasting edge.",
+  "es": "Tras ...Ae7, h3, O-O y Cc3: una posición tranquila en la que el espacio extra de las blancas es una ventaja duradera."
+ },
+ "e5 Nd5 d4 d6 Nf3 Nc6 c4 Nb6 exd6 cxd6 d5": {
+  "en": "d5! kicks the c6-knight, and it has no good square: ...Ne5 Nxe5 dxe5 leaves Black passive, and ...Nb4 runs into a3. White is clearly better.",
+  "es": "¡d5! echa al caballo de c6, y no tiene buena casilla: ...Ce5 Cxe5 dxe5 deja a las negras pasivas, y ...Cb4 choca con a3. Las blancas están claramente mejor."
+ },
+ "e5 Nd5 d4 e6": {
+  "en": "...e6 is passive: the c8-bishop gets shut in. Nf3, c4 and Be2 give White a big space advantage.",
+  "es": "...e6 es pasiva: el alfil de c8 queda encerrado. Cf3, c4 y Ae2 dan a las blancas una gran ventaja de espacio."
+ },
+ "e5 Nd5 d4 e6 Nf3 d6 Be2": {
+  "en": "If ...dxe5 dxe5, White's e5-pawn cramps Black; c4 and O-O follow. White is clearly better.",
+  "es": "Si ...dxe5 dxe5, el peón de e5 encierra a las negras; siguen c4 y O-O. Las blancas están claramente mejor."
+ },
+ "e5 Nd5 d4 Nb6 Nf3 d6": {
+  "en": "The same ideas: Be2 and O-O. After ...dxe5 Nxe5 the knight is strong; a4–a5 can harass the b6-knight.",
+  "es": "Las mismas ideas: Ae2 y O-O. Tras ...dxe5 Cxe5 el caballo es fuerte; a4–a5 puede molestar al caballo de b6."
+ },
+ "e5 Nd5 d4 Nb6 Nf3 d6 Be2": {
+  "en": "White develops calmly: O-O, and c4 when convenient. Small, stable edge.",
+  "es": "Las blancas desarrollan con calma: O-O, y c4 cuando convenga. Ventaja pequeña y estable."
  }
 }

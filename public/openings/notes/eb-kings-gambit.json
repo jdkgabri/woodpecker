@@ -10,5 +10,81 @@
  "exf4 Bc4 Nf6 e5": {
   "en": "...d5! attacks the bishop and opens the game for Black's pieces.",
   "es": "¡...d5! ataca el alfil y abre el juego para las piezas negras."
+ },
+ "": {
+  "en": "The King's Gambit: White offers the f-pawn to open the f-file and build a big centre. Take it, develop fast and give the pawn back with ...d5 when that opens lines for your pieces.",
+  "es": "El Gambito de Rey: las blancas ofrecen el peón f para abrir la columna f y levantar un gran centro. Tómalo, desarrolla rápido y devuelve el peón con ...d5 cuando eso abra líneas para tus piezas."
+ },
+ "exf4 Nf3": {
+  "en": "Nf3, the King's Knight's Gambit, stops ...Qh4+. ...Nf6 attacks e4 at once.",
+  "es": "Cf3, el Gambito de Caballo de Rey, impide ...Dh4+. ...Cf6 ataca e4 de inmediato."
+ },
+ "exf4 Nf3 Nf6 e5": {
+  "en": "e5 kicks the knight: ...Nh5 keeps guarding the f4-pawn (and g3).",
+  "es": "e5 echa al caballo: ...Ch5 sigue defendiendo el peón de f4 (y g3)."
+ },
+ "exf4 Nf3 Nf6 e5 Nh5 d4": {
+  "en": "d4 builds the centre. ...d5! strikes back and opens the c8-bishop.",
+  "es": "d4 construye el centro. ¡...d5! contraataca y abre el alfil de c8."
+ },
+ "exf4 Nf3 Nf6 e5 Nh5 d4 d5": {
+  "en": "After Be2 (hitting h5), ...g5 keeps the extra pawn; or ...g6. Black is a pawn up and better.",
+  "es": "Tras Ae2 (que ataca h5), ...g5 mantiene el peón de más; o ...g6. Las negras tienen un peón de más y están mejor."
+ },
+ "exf4 Nf3 Nf6 e5 Nh5 Bc4": {
+  "en": "Bc4 aims at f7, but ...d5! hits the bishop and gains time.",
+  "es": "Ac4 apunta a f7, pero ¡...d5! ataca el alfil y gana tiempo."
+ },
+ "exf4 Nf3 Nf6 e5 Nh5 Bc4 d5": {
+  "en": "If exd6 (en passant) Bxd6, Black develops quickly and keeps the f4-pawn; Qe2+ is answered by ...Qe7. Black is clearly better.",
+  "es": "Si exd6 (al paso) Axd6, las negras desarrollan rápido y mantienen el peón de f4; a De2+ se responde ...De7. Las negras están claramente mejor."
+ },
+ "exf4 Nf3 Nf6 Nc3": {
+  "en": "Nc3 defends e4. ...d5! hits the centre anyway.",
+  "es": "Cc3 defiende e4. ¡...d5! golpea el centro de todos modos."
+ },
+ "exf4 Nf3 Nf6 Nc3 d5 e5": {
+  "en": "e5 kicks the knight: ...Nh5 again, defending f4.",
+  "es": "e5 echa al caballo: otra vez ...Ch5, defendiendo f4."
+ },
+ "exf4 Nf3 Nf6 Nc3 d5 e5 Nh5": {
+  "en": "After d4, ...Nc6 or ...g5 hold the pawn; if g3, ...g5! keeps the chain f4–g5. Black is a pawn up and clearly better.",
+  "es": "Tras d4, ...Cc6 o ...g5 sostienen el peón; si g3, ¡...g5! mantiene la cadena f4–g5. Las negras tienen un peón de más y están claramente mejor."
+ },
+ "exf4 Nf3 Nf6 Nc3 d5 exd5": {
+  "en": "exd5: recapture with the knight. Black is a pawn up with easy development.",
+  "es": "exd5: recaptura con el caballo. Las negras tienen un peón de más y un desarrollo fácil."
+ },
+ "exf4 Nf3 Nf6 Nc3 d5 exd5 Nxd5": {
+  "en": "Careful with Bb5+ c6 and Qe2+: answer with ...Be6 or ...Be7. Then ...Bd6 and ...O-O; Black is a pawn up.",
+  "es": "Cuidado con Ab5+ c6 y De2+: responde con ...Ae6 o ...Ae7. Después ...Ad6 y ...O-O; las negras tienen un peón de más."
+ },
+ "exf4 Nf3 Nf6 Bc4": {
+  "en": "Bc4 leaves e4 undefended: ...Nxe4! takes a second pawn.",
+  "es": "Ac4 deja e4 sin defensa: ¡...Cxe4! toma un segundo peón."
+ },
+ "exf4 Nf3 Nf6 Bc4 Nxe4 O-O": {
+  "en": "White castles for an attack on the f-file, but ...d5! hits the bishop and blocks the c4–f7 diagonal. Black is two pawns up.",
+  "es": "Las blancas enrocan para atacar por la columna f, pero ¡...d5! ataca el alfil y corta la diagonal c4–f7. Las negras tienen dos peones de más."
+ },
+ "exf4 Nf3 Nf6 Bc4 Nxe4 O-O d5": {
+  "en": "After Bb3, ...Be6 and ...Bd6, then castle. Watch the e-file (Re1, Qe1): finish development before anything else.",
+  "es": "Tras Ab3, ...Ae6 y ...Ad6, y después enroque. Vigila la columna e (Te1, De1): termina el desarrollo antes de nada."
+ },
+ "exf4 Nf3 Nf6 Bc4 Nxe4 d3 Nf6": {
+  "en": "The knight retreats safely. ...d5 and ...Bd6 next: two pawns up.",
+  "es": "El caballo se retira a salvo. Después ...d5 y ...Ad6: dos peones de más."
+ },
+ "exf4 Nf3 Nf6 Bc4 Nxe4 Qe2 d5": {
+  "en": "...d5 defends the pinned knight. If Bxd5 Qxd5 Nc3, Black keeps a pawn more after ...Qe6 or ...Qe5.",
+  "es": "...d5 defiende el caballo clavado. Si Axd5 Dxd5 Cc3, las negras conservan un peón de más tras ...De6 o ...De5."
+ },
+ "exf4 Nf3 Nf6 d3 d5": {
+  "en": "...d5 opens the centre. After Bxf4, ...dxe4 or ...Nc6 with comfortable development. Black is better.",
+  "es": "...d5 abre el centro. Tras Axf4, ...dxe4 o ...Cc6 con un desarrollo cómodo. Las negras están mejor."
+ },
+ "exf4 Bc4 Nf6 Nc3 d5": {
+  "en": "...d5! hits the bishop. After Bxd5 Nxd5 Nxd5, ...Qh4+! and White's king must move. Black is fine.",
+  "es": "¡...d5! ataca el alfil. Tras Axd5 Cxd5 Cxd5, ¡...Dh4+! y el rey blanco tiene que moverse. Las negras están bien."
  }
 }

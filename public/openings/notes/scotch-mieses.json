@@ -10,5 +10,121 @@
  "": {
   "en": "Against 4...Nf6, Nxc6 and e5 gain space.",
   "es": "Contra 4...Cf6, Cxc6 y e5 ganan espacio."
+ },
+ "Nxc6 bxc6 e5 Nd5": {
+  "en": "...Nd5: the knight is centralised, but c4 kicks it again.",
+  "es": "...Cd5: el caballo está centralizado, pero c4 vuelve a echarlo."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Nb6": {
+  "en": "The knight goes to b6, offside. Nc3, Bd3 and O-O: White has space and the e5-pawn.",
+  "es": "El caballo va a b6, fuera de juego. Cc3, Ad3 y O-O: las blancas tienen espacio y el peón de e5."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Nb6 Nc3 Bb4": {
+  "en": "...Bb4 pins the knight. Bd3 and O-O; the bishop on b4 is not doing much.",
+  "es": "...Ab4 clava el caballo. Ad3 y O-O; el alfil de b4 no hace gran cosa."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Nb6 Nc3 Bb4 Bd3": {
+  "en": "After ...d5 cxd5 cxd5 and O-O, Qc2 and Nb5 or Be3: White has the better structure and pressure on c7 and h7. White is better.",
+  "es": "Tras ...d5 cxd5 cxd5 y O-O, Dc2 y Cb5 o Ae3: las blancas tienen mejor estructura y presión sobre c7 y h7. Las blancas están mejor."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Nb6 Nc3 Bc5": {
+  "en": "...Bc5 leaves g7 undefended: Qg4! hits it at once.",
+  "es": "...Ac5 deja g7 sin defensa: ¡Dg4! lo ataca de inmediato."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Nb6 Nc3 Bc5 Qg4": {
+  "en": "...Kf8 is sad (castling is gone), and ...O-O runs into Bh6. White is clearly better.",
+  "es": "...Rf8 es triste (se pierde el enroque), y ...O-O choca con Ah6. Las blancas están claramente mejor."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Nb6 Nc3 d6": {
+  "en": "...d6 attacks e5: c5! hits the b6-knight's support and the d6-pawn.",
+  "es": "...d6 ataca e5: ¡c5! ataca el apoyo del caballo de b6 y el peón de d6."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Nb6 Nc3 d6 c5": {
+  "en": "After ...dxc5, Qf3 hits c6 and f7-related squares; Bd3 and O-O follow. Black's pawns are a mess. White is better.",
+  "es": "Tras ...dxc5, Df3 ataca c6; siguen Ad3 y O-O. Los peones negros son un desastre. Las blancas están mejor."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Nb6 Nc3 d5 cxd5": {
+  "en": "After ...cxd5, Bb5+! Black must play ...Bd7; ...Nd7? loses to Qxd5. White is better.",
+  "es": "Tras ...cxd5, ¡Ab5+! Las negras deben jugar ...Ad7; ¿...Cd7? pierde por Dxd5. Las blancas están mejor."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Bb4+": {
+  "en": "...Bb4+: Bd2 offers the trade of dark-squared bishops.",
+  "es": "...Ab4+: Ad2 ofrece el cambio de alfiles de casillas oscuras."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Bb4+ Bd2 Bxd2+": {
+  "en": "Qxd2: the queen recaptures and the knight on d5 must move.",
+  "es": "Dxd2: la dama recaptura y el caballo de d5 tiene que moverse."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Bb4+ Bd2 Bxd2+ Qxd2 Nb6 Nc3": {
+  "en": "Castle long (or short) and Qd4: White's space and Black's weak pawns give a lasting edge.",
+  "es": "Enroque largo (o corto) y Dd4: el espacio blanco y los peones débiles de las negras dan una ventaja duradera."
+ },
+ "Nxc6 bxc6 e5 Nd5 c4 Ne7 Qe2": {
+  "en": "Qe2 defends e5. After ...Ng6, h4! chases the knight; Nc3 and Be3 follow. White is better.",
+  "es": "De2 defiende e5. Tras ...Cg6, ¡h4! persigue al caballo; siguen Cc3 y Ae3. Las blancas están mejor."
+ },
+ "Nxc6 bxc6 e5 Qe7": {
+  "en": "...Qe7 pins the e5-pawn against the e1-king. Qe2 unpins and keeps the pawn.",
+  "es": "...De7 clava el peón de e5 contra el rey de e1. De2 deshace la clavada y conserva el peón."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5": {
+  "en": "...Nd5, and c4 kicks it. The f1-bishop is blocked by the queen for now: b3 and Bb2 develop the other bishop.",
+  "es": "...Cd5, y c4 lo echa. De momento la dama tapa al alfil de f1: b3 y Ab2 desarrollan el otro alfil."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6": {
+  "en": "...Ba6 pins the c4-pawn against the queen. b3 defends it.",
+  "es": "...Aa6 clava el peón de c4 contra la dama. b3 lo defiende."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6 b3 g6": {
+  "en": "...g6 and ...Bg7 hit e5. Bb2 defends it.",
+  "es": "...g6 y ...Ag7 atacan e5. Ab2 lo defiende."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6 b3 g6 Bb2 Bg7": {
+  "en": "Nd2 adds a defender (Nf3 or Ne4 later). Castling long is the main plan.",
+  "es": "Cd2 añade un defensor (más tarde Cf3 o Ce4). El enroque largo es el plan principal."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6 b3 g6 Bb2 Bg7 Nd2 O-O": {
+  "en": "O-O-O: the king goes long and the d1-rook supports the centre. Black hits e5 with ...Rfe8 and ...Nb6.",
+  "es": "O-O-O: el rey enroca largo y la torre de d1 apoya el centro. Las negras atacan e5 con ...Tfe8 y ...Cb6."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6 b3 g6 Bb2 Bg7 Nd2 O-O O-O-O": {
+  "en": "A sharp, balanced position. Watch the tactic Ne4 and Nf6+ if Black grabs on e5: after ...Bxe5 Bxe5 Qxe5, Nf6+ forks king and rook.",
+  "es": "Una posición aguda y equilibrada. Atención a la táctica Ce4 y Cf6+ si las negras toman en e5: tras ...Axe5 Axe5 Dxe5, Cf6+ ataca rey y torre a la vez."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6 b3 O-O-O Bb2": {
+  "en": "Both sides castle long. White plays g3, Bg2 or Qd2 to free the f1-bishop: a small edge for White.",
+  "es": "Ambos bandos enrocan largo. Las blancas juegan g3, Ag2 o Dd2 para liberar el alfil de f1: pequeña ventaja blanca."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Nb6": {
+  "en": "...Nb6 first. Nc3 develops and covers e4 and d5.",
+  "es": "Primero ...Cb6. Cc3 desarrolla y cubre e4 y d5."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Nb6 Nc3 Ba6 Qe4": {
+  "en": "Qe4 unblocks the f1-bishop and keeps e5. Against ...f6, c5! hits the b6-knight. Equal.",
+  "es": "De4 libera el alfil de f1 y mantiene e5. Contra ...f6, ¡c5! ataca al caballo de b6. Igualdad."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Nb6 Nc3 Qe6 Qe4": {
+  "en": "If ...d5, exd6 Qxe4+ Nxe4 cxd6: an equal endgame where Black's pawns are a little weaker.",
+  "es": "Si ...d5, exd6 Dxe4+ Cxe4 cxd6: un final igualado en el que los peones negros son algo más débiles."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Nb6 Nc3 d6 exd6": {
+  "en": "After ...cxd6, Be3, Qc2 and Ne4: Black's d6 and c6 pawns are targets. White is slightly better.",
+  "es": "Tras ...cxd6, Ae3, Dc2 y Ce4: los peones de d6 y c6 son objetivos. Las blancas están algo mejor."
+ },
+ "Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Nb6 Nc3 g6 Ne4": {
+  "en": "Ne4 eyes f6 and d6. If ...Bg7, Bg5 hits the queen. Slightly better for White.",
+  "es": "Ce4 apunta a f6 y d6. Si ...Ag7, Ag5 ataca a la dama. Algo mejor para las blancas."
+ },
+ "Nxc6 dxc6": {
+  "en": "...dxc6 offers a queen trade. Qxd8+ Kxd8 and Black has lost castling.",
+  "es": "...dxc6 ofrece el cambio de damas. Dxd8+ Rxd8 y las negras han perdido el enroque."
+ },
+ "Nxc6 dxc6 Qxd8+ Kxd8": {
+  "en": "Nc3 and Bg5: develop fast and use the king on d8 as a target.",
+  "es": "Cc3 y Ag5: desarrolla rápido y aprovecha el rey de d8 como objetivo."
+ },
+ "Nxc6 dxc6 Qxd8+ Kxd8 Nc3 Bb4": {
+  "en": "Bg5 pins the f6-knight; after ...Bxc3+ bxc3, e5 can win material if Black's king steps onto the pin.",
+  "es": "Ag5 clava el caballo de f6; tras ...Axc3+ bxc3, e5 puede ganar material si el rey negro se mete en la clavada."
  }
 }

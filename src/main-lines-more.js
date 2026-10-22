@@ -6189,5 +6189,86 @@ export default {
     "es": "Ah4 mantiene la clavada. Las blancas tienen una ventaja pequeña y cómoda."
    }
   }
+ },
+ "colle-zukertort": {
+  "moves": "d4 d5 Nf3 Nf6 e3 e6 Bd3 c5 b3 Nc6 Bb2 Be7 Nbd2 O-O O-O b6 Ne5 Bb7 f4",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5.",
+    "es": "...d5."
+   },
+   "3": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "e3 supports d4: the Colle family of systems.",
+    "es": "e3 apoya d4: la familia de sistemas Colle."
+   },
+   "6": {
+    "en": "...e6 opens the f8-bishop.",
+    "es": "...e6 abre el alfil de f8."
+   },
+   "7": {
+    "en": "Bd3: the bishop aims at h7.",
+    "es": "Ad3: el alfil apunta a h7."
+   },
+   "8": {
+    "en": "...c5 hits d4.",
+    "es": "...c5 golpea d4."
+   },
+   "9": {
+    "en": "b3: the Zukertort. Instead of c3, the bishop goes to b2.",
+    "es": "b3: el Zukertort. En lugar de c3, el alfil va a b2."
+   },
+   "10": {
+    "en": "Development, more pressure on d4.",
+    "es": "Desarrollo, más presión sobre d4."
+   },
+   "11": {
+    "en": "Bb2: with Bd3 too, both bishops point at Black's kingside.",
+    "es": "Ab2: junto con Ad3, los dos alfiles apuntan al flanco de rey negro."
+   },
+   "12": {
+    "en": "...Be7 prepares castling.",
+    "es": "...Ae7 prepara el enroque."
+   },
+   "13": {
+    "en": "Nbd2 supports e4 and can later reroute to f3 or join the attack.",
+    "es": "Cbd2 apoya e4 y más tarde puede volver a f3 o unirse al ataque."
+   },
+   "14": {
+    "en": "Black castles.",
+    "es": "Las negras enrocan."
+   },
+   "15": {
+    "en": "White castles too.",
+    "es": "Las blancas también enrocan."
+   },
+   "16": {
+    "en": "...b6 and ...Bb7: Black copies the idea on the long diagonal.",
+    "es": "...b6 y ...Ab7: las negras copian la idea en la gran diagonal."
+   },
+   "17": {
+    "en": "Ne5: the knight takes the key square.",
+    "es": "Ce5: el caballo ocupa la casilla clave."
+   },
+   "18": {
+    "en": "...Bb7 completes development.",
+    "es": "...Ab7 completa el desarrollo."
+   },
+   "19": {
+    "en": "f4 supports the knight: next Qf3 and Rf3–h3 for the attack. Black counters in the centre with ...Rc8, ...cxd4 or ...Ne4. A sharp, balanced fight.",
+    "es": "f4 apoya al caballo: después Df3 y Tf3–h3 para el ataque. Las negras contraatacan en el centro con ...Tc8, ...cxd4 o ...Ce4. Una lucha aguda y equilibrada."
+   }
+  }
  }
 };

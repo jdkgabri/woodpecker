@@ -1,0 +1,66 @@
+{
+ "": {
+  "en": "The Colle-Zukertort: e3, Bd3, b3 and Bb2, then Ne5 and f4. Both bishops aim at Black's castled king.",
+  "es": "El Colle-Zukertort: e3, Ad3, b3 y Ab2, y después Ce5 y f4. Los dos alfiles apuntan al rey enrocado negro."
+ },
+ "Bd3 c5": {
+  "en": "...c5: the main reply. b3 and Bb2: the bishop goes to the long diagonal instead of supporting d4 with c3.",
+  "es": "...c5: la respuesta principal. b3 y Ab2: el alfil va a la gran diagonal en lugar de apoyar d4 con c3."
+ },
+ "Bd3 c5 b3 Nc6": {
+  "en": "Bb2, Nbd2 and O-O. Then Ne5 and f4: the Zukertort attack, with both bishops aimed at Black's king.",
+  "es": "Ab2, Cbd2 y O-O. Después Ce5 y f4: el ataque Zukertort, con los dos alfiles apuntando al rey negro."
+ },
+ "Bd3 c5 b3 Nc6 Bb2 Be7": {
+  "en": "...Be7: solid. Nbd2 and O-O; after Black castles, Ne5 and f4.",
+  "es": "...Ae7: sólido. Cbd2 y O-O; cuando las negras enroquen, Ce5 y f4."
+ },
+ "Bd3 c5 b3 Nc6 Bb2 cxd4": {
+  "en": "...cxd4: exd4 opens the e-file and gives the d3-bishop and the knights the e5 square. Nbd2, O-O and Ne5.",
+  "es": "...cxd4: exd4 abre la columna e y da al alfil de d3 y a los caballos la casilla e5. Cbd2, O-O y Ce5."
+ },
+ "Bd3 c5 b3 Nc6 Bb2 Bd6": {
+  "en": "...Bd6 fights for e5. Nbd2 and O-O; if Black castles, Ne5 is still the plan, and after ...Bxe5 dxe5 the b2-bishop is very strong.",
+  "es": "...Ad6 lucha por e5. Cbd2 y O-O; si las negras enrocan, Ce5 sigue siendo el plan, y tras ...Axe5 dxe5 el alfil de b2 es muy fuerte."
+ },
+ "Bd3 c5 b3 cxd4": {
+  "en": "...cxd4 early: exd4, and the structure is the same; Bb2, O-O, Nbd2 and Ne5.",
+  "es": "...cxd4 pronto: exd4, y la estructura es la misma; Ab2, O-O, Cbd2 y Ce5."
+ },
+ "Bd3 Bd6": {
+  "en": "...Bd6 without ...c5. b3, Bb2, O-O and Nbd2; then Ne5 or c4.",
+  "es": "...Ad6 sin ...c5. b3, Ab2, O-O y Cbd2; después Ce5 o c4."
+ },
+ "Bd3 Bd6 b3 O-O": {
+  "en": "Bb2 and O-O. Against ...b6 and ...Bb7, Ne5 and f4 keep the initiative.",
+  "es": "Ab2 y O-O. Contra ...b6 y ...Ab7, Ce5 y f4 mantienen la iniciativa."
+ },
+ "Bd3 Be7": {
+  "en": "...Be7: b3 and Bb2, the same setup.",
+  "es": "...Ae7: b3 y Ab2, el mismo esquema."
+ },
+ "Bd3 Be7 b3 O-O": {
+  "en": "Bb2, O-O and Nbd2, then Ne5 and f4. If the f6-knight is ever driven away, watch for Bxh7+ ideas.",
+  "es": "Ab2, O-O y Cbd2, y después Ce5 y f4. Si alguna vez echan al caballo de f6, atención a las ideas de Axh7+."
+ },
+ "Bd3 c5 b3 Nc6 Bb2 Be7 Nbd2 O-O O-O b6 Ne5": {
+  "en": "Ne5: the key square. f4 follows to support the knight and prepare Rf3 and Qf3 or Qh5 against the king.",
+  "es": "Ce5: la casilla clave. Sigue f4 para apoyar al caballo y preparar Tf3 y Df3 o Dh5 contra el rey."
+ },
+ "Bd3 c5 b3 Nc6 Bb2 Be7 Nbd2 O-O O-O b6 Ne5 Nxe5": {
+  "en": "...Nxe5? dxe5 kicks the f6-knight and the b2-bishop gets the long diagonal. After ...Ne8 f4, White has a strong kingside attack.",
+  "es": "¿...Cxe5? dxe5 echa al caballo de f6 y el alfil de b2 se queda con la gran diagonal. Tras ...Ce8 f4, las blancas tienen un fuerte ataque en el flanco de rey."
+ },
+ "Bd3 c5 b3 Nc6 Bb2 Be7 Nbd2 O-O O-O b6 Ne5 Bb7": {
+  "en": "f4 supports e5. Next Qf3 and Rf3–h3, or Qe2 and Rf3. Black counters with ...Rc8 and ...cxd4 or ...Ne4. Balanced but very sharp.",
+  "es": "f4 apoya e5. Después Df3 y Tf3–h3, o De2 y Tf3. Las negras responden con ...Tc8 y ...cxd4 o ...Ce4. Equilibrado pero muy agudo."
+ },
+ "Bd3 c5 b3 Nc6 Bb2 Be7 Nbd2 O-O O-O a6": {
+  "en": "...a6 prepares ...b5. Ne5 anyway: the attack comes first.",
+  "es": "...a6 prepara ...b5. Ce5 de todos modos: el ataque va primero."
+ },
+ "Bd3 c5 b3 Nc6 Bb2 Be7 Nbd2 O-O O-O cxd4": {
+  "en": "exd4: the e5 square is White's. Ne5, f4 and Qf3 next.",
+  "es": "exd4: la casilla e5 es de las blancas. Después Ce5, f4 y Df3."
+ }
+}

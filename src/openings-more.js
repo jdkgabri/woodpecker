@@ -1048,7 +1048,9 @@ export const MORE_OPENINGS = [
         es: ['Desarrollar el alfil de c8 antes de ...e6 (...Af5 o ...Ag4).', 'Golpear con ...c5 y ...Cc6.', 'Responder a e4 cambiando en el centro.'],
       },
     },
-    lines: [tree('colle', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4')],
+    lines: [tree('colle', { en: 'All of Black\'s replies', es: 'Todas las respuestas negras' }, 'd4'),
+      tree('colle-zukertort', { en: 'Colle-Zukertort (b3 and Bb2)', es: 'Colle-Zukertort (b3 y Ab2)' }, 'd4 d5 Nf3 Nf6 e3 e6'),
+    ],
   },
   // ---- philidor
   {

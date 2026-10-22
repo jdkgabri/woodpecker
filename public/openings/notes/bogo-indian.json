@@ -10,5 +10,113 @@
  "Bd2 Be7 Nc3 O-O Bg5 d5 cxd5 exd5 Bxf6 Bxf6 e4": {
   "en": "e4 opens the centre with White's king still on e1: ...dxe4 and ...Re8 put pressure on the e-file.",
   "es": "e4 abre el centro con el rey blanco todavía en e1: ...dxe4 y ...Te8 presionan la columna e."
+ },
+ "": {
+  "en": "The Bogo-Indian: ...Bb4+ develops with check and asks White how to block. Black's plans: ...Be7 or ...a5, ...d5 (or ...d6 and ...e5) and ...Ne4 to trade the d2-bishop.",
+  "es": "La Bogo-India: ...Ab4+ desarrolla con jaque y pregunta a las blancas cómo tapar. Planes negros: ...Ae7 o ...a5, ...d5 (o ...d6 y ...e5) y ...Ce4 para cambiar el alfil de d2."
+ },
+ "Bd2": {
+  "en": "Bd2, the main move, offers the trade of bishops. Black retreats ...Be7: the d2-bishop has nothing to do there.",
+  "es": "Ad2, la jugada principal, ofrece el cambio de alfiles. Las negras se retiran con ...Ae7: el alfil de d2 no tiene nada que hacer allí."
+ },
+ "Bd2 Be7 Nc3": {
+  "en": "Nc3 prepares e4. Castle; if e4, ...d5! hits the centre.",
+  "es": "Cc3 prepara e4. Enroque; si e4, ¡...d5! golpea el centro."
+ },
+ "Bd2 Be7 Nc3 O-O e4": {
+  "en": "e4: the big centre. ...d5! strikes before White can finish development.",
+  "es": "e4: el gran centro. ¡...d5! golpea antes de que las blancas terminen el desarrollo."
+ },
+ "Bd2 Be7 Nc3 O-O e4 d5 e5": {
+  "en": "e5 kicks the knight: ...Ne4! jumps forward and aims to take the d2-bishop.",
+  "es": "e5 echa al caballo: ¡...Ce4! salta adelante y apunta a tomar el alfil de d2."
+ },
+ "Bd2 Be7 Nc3 O-O e4 d5 e5 Ne4 Bd3": {
+  "en": "Bd3 attacks the knight: ...Nxd2 gets the bishop pair.",
+  "es": "Ad3 ataca al caballo: ...Cxd2 consigue la pareja de alfiles."
+ },
+ "Bd2 Be7 Nc3 O-O e4 d5 e5 Ne4 Bd3 Nxd2": {
+  "en": "After Qxd2 dxc4 Bxc4 c5!, Black hits the centre with the bishop pair. Equal.",
+  "es": "Tras Dxd2 dxc4 Axc4 ¡c5!, las negras golpean el centro con la pareja de alfiles. Igualdad."
+ },
+ "Bd2 Be7 Nc3 O-O e4 d5 e5 Ne4 cxd5 exd5": {
+  "en": "The d5-pawn defends the knight. After Bd3, ...c5! counterattacks d4; if Nxe4 dxe4 Bxe4 cxd4, Black's pieces are active.",
+  "es": "El peón de d5 defiende al caballo. Tras Ad3, ¡...c5! contraataca d4; si Cxe4 dxe4 Axe4 cxd4, las piezas negras están activas."
+ },
+ "Bd2 Be7 Nc3 O-O e4 d5 cxd5": {
+  "en": "cxd5 exd5: a solid d5-pawn, and the c8-bishop is free.",
+  "es": "cxd5 exd5: un peón de d5 sólido, y el alfil de c8 queda libre."
+ },
+ "Bd2 Be7 Nc3 O-O e4 d5 cxd5 exd5 e5": {
+  "en": "e5 kicks the knight again: ...Ne4, well supported by the d5-pawn.",
+  "es": "e5 vuelve a echar al caballo: ...Ce4, bien apoyado por el peón de d5."
+ },
+ "Bd2 Be7 Nc3 O-O e4 d5 cxd5 exd5 e5 Ne4 Bd3": {
+  "en": "Bd3: ...Nxd2 takes the bishop pair.",
+  "es": "Ad3: ...Cxd2 se queda con la pareja de alfiles."
+ },
+ "Bd2 Be7 Nc3 O-O e4 d5 cxd5 exd5 e5 Ne4 Bd3 Nxd2": {
+  "en": "After Qxd2: ...Nc6 and ...f6 (or ...c5) attack White's centre. Watch out for h4 and O-O-O: White may attack. Slightly better for White, but Black has counterplay.",
+  "es": "Tras Dxd2: ...Cc6 y ...f6 (o ...c5) atacan el centro blanco. Atención a h4 y O-O-O: las blancas pueden atacar. Algo mejor para las blancas, pero las negras tienen contrajuego."
+ },
+ "Bd2 Be7 Nc3 O-O e3 a5": {
+  "en": "...a5 gains space and prepares ...Na6–b4. Next ...d5 (and against e4, ...d5 as usual). Solid, near equality.",
+  "es": "...a5 gana espacio y prepara ...Ca6–b4. Después ...d5 (y contra e4, ...d5 como siempre). Sólido, casi igualdad."
+ },
+ "Bd2 Be7 Nc3 O-O g3 d5 Bg2 a5": {
+  "en": "A Catalan setup. ...c6, ...Nbd7 and ...Ne4 to trade the d2-bishop. Balanced.",
+  "es": "Un esquema Catalán. ...c6, ...Cbd7 y ...Ce4 para cambiar el alfil de d2. Equilibrio."
+ },
+ "Bd2 Be7 g3": {
+  "en": "g3: a Catalan setup. ...a5, ...d5 and ...O-O: Black is solid.",
+  "es": "g3: un esquema Catalán. ...a5, ...d5 y ...O-O: las negras están sólidas."
+ },
+ "Bd2 Be7 g3 a5": {
+  "en": "After Bg2, ...d5, ...O-O and ...c6 (or ...b6). The d2-bishop still looks odd. Nearly equal.",
+  "es": "Tras Ag2, ...d5, ...O-O y ...c6 (o ...b6). El alfil de d2 sigue mal colocado. Casi igualdad."
+ },
+ "Bd2 Be7 e3 a5": {
+  "en": "Quiet: ...d5, ...O-O and ...c5 later. Equal.",
+  "es": "Tranquilo: ...d5, ...O-O y más tarde ...c5. Igualdad."
+ },
+ "Nc3": {
+  "en": "Nc3 turns it into a Nimzo-Indian. ...Qe7 keeps options open: ...Bxc3 with ...d6 and ...e5, or ...b6 and ...Bb7.",
+  "es": "Cc3 lo convierte en una Nimzoindia. ...De7 mantiene las opciones: ...Axc3 con ...d6 y ...e5, o ...b6 y ...Ab7."
+ },
+ "Nc3 Qe7 Bg5": {
+  "en": "Bg5 pins the knight. ...b6 and ...Bb7 control e4; ...h6 and ...Bxc3 when useful.",
+  "es": "Ag5 clava el caballo. ...b6 y ...Ab7 controlan e4; ...h6 y ...Axc3 cuando convenga."
+ },
+ "Nc3 Qe7 Bg5 b6": {
+  "en": "Next ...Bb7 and ...h6. If White allows ...Bxc3+ bxc3, the doubled c-pawns are a long-term target. Nearly equal.",
+  "es": "Después ...Ab7 y ...h6. Si las blancas permiten ...Axc3+ bxc3, los peones c doblados son un objetivo a largo plazo. Casi igualdad."
+ },
+ "Nc3 Qe7 e3": {
+  "en": "e3: quiet. Castle, then ...d5 and ...c5: a Nimzo-Indian-type position.",
+  "es": "e3: tranquilo. Enroque, y después ...d5 y ...c5: una posición tipo Nimzoindia."
+ },
+ "Nc3 Qe7 e3 O-O Bd3 d5 O-O c5": {
+  "en": "If a3 Bxc3 bxc3 dxc4 Bxc4, Black answers with ...b6 and ...Bb7: solid against the bishop pair.",
+  "es": "Si a3 Axc3 bxc3 dxc4 Axc4, las negras responden con ...b6 y ...Ab7: sólidas frente a la pareja de alfiles."
+ },
+ "Nbd2": {
+  "en": "Nbd2 avoids doubled pawns but is less active. ...Be7 and then ...d5.",
+  "es": "Cbd2 evita los peones doblados pero es menos activa. ...Ae7 y después ...d5."
+ },
+ "Nbd2 Be7 e4": {
+  "en": "e4: ...d5! hits the centre at once.",
+  "es": "e4: ¡...d5! golpea el centro de inmediato."
+ },
+ "Nbd2 Be7 e4 d5": {
+  "en": "After e5 Nfd7, a French-type structure: ...c5 hits d4 next. White is slightly better, Black solid.",
+  "es": "Tras e5 Cfd7, una estructura tipo Francesa: después ...c5 golpea d4. Las blancas algo mejor, las negras sólidas."
+ },
+ "Nbd2 Be7 g3": {
+  "en": "Catalan-style. ...a5 (or ...d5) and castle.",
+  "es": "Al estilo Catalán. ...a5 (o ...d5) y enroque."
+ },
+ "Nbd2 Be7 g3 a5": {
+  "en": "After Bg2 O-O, Black plays ...d5, ...c6 and ...Nbd7. Solid, nearly equal.",
+  "es": "Tras Ag2 O-O, las negras juegan ...d5, ...c6 y ...Cbd7. Sólido, casi igualdad."
  }
 }

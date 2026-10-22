@@ -6,5 +6,29 @@
  "": {
   "en": "Against ...O-O (inviting the Marshall Gambit), a4 or h3 avoid the sharpest theory.",
   "es": "Contra ...O-O (que invita al Gambito Marshall), a4 o h3 evitan la teoría más aguda."
+ },
+ "a4 b4": {
+  "en": "...b4 keeps the queenside closed instead of allowing axb5. White plays h3 and d3; a5 later fixes the a6-pawn.",
+  "es": "...b4 mantiene cerrado el flanco de dama en lugar de permitir axb5. Las blancas juegan h3 y d3; más tarde a5 fija el peón de a6."
+ },
+ "a4 b4 h3": {
+  "en": "h3 stops ...Bg4. Black's usual idea is ...Na5 against the b3-bishop and then ...d5; Ba2 keeps the bishop on its diagonal. Equal: a slow, manoeuvring game.",
+  "es": "h3 impide ...Ag4. La idea habitual de las negras es ...Ca5 contra el alfil de b3 y después ...d5; Aa2 mantiene el alfil en su diagonal. Igualdad: una partida lenta y de maniobras."
+ },
+ "a4 Bb7": {
+  "en": "...Bb7 defends b5 by developing. White keeps the tension with h3 and d3 rather than trading on b5 at once.",
+  "es": "...Ab7 defiende b5 desarrollando. Las blancas mantienen la tensión con h3 y d3 en lugar de cambiar en b5 de inmediato."
+ },
+ "a4 Bb7 h3": {
+  "en": "h3 prevents ...Bg4 and ...Ng4. If ...Na5, Ba2 keeps the bishop; d3, c3 and Nbd2 follow. Roughly equal.",
+  "es": "h3 evita ...Ag4 y ...Cg4. Si ...Ca5, Aa2 conserva el alfil; siguen d3, c3 y Cbd2. Más o menos igualdad."
+ },
+ "a4 Rb8": {
+  "en": "...Rb8 defends b5 with the rook. White can open the a-file with axb5 axb5 and then play c3 and d3.",
+  "es": "...Tb8 defiende b5 con la torre. Las blancas pueden abrir la columna a con axb5 axb5 y después jugar c3 y d3."
+ },
+ "a4 Rb8 h3": {
+  "en": "h3 first. After ...d6, axb5 axb5, c3 and d3 with Be3: the rook on b8 is a bit passive, and White has a small edge.",
+  "es": "Primero h3. Tras ...d6, axb5 axb5, c3 y d3 con Ae3: la torre de b8 está algo pasiva y las blancas tienen una pequeña ventaja."
  }
 }

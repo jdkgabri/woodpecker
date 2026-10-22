@@ -10,5 +10,81 @@
  "e5": {
   "en": "The Englund Gambit: take the pawn (dxe5) and keep it simply with Nf3 and Bf4. Beware of ...Qe7 tricks on the e-file.",
   "es": "El Gambito Englund: toma el peón (dxe5) y consérvalo con sencillez con Cf3 y Af4. Cuidado con los trucos de ...De7 en la columna e."
+ },
+ "": {
+  "en": "The Colle System: the same setup against almost everything (Nf3, e3, Bd3, Nbd2, c3, O-O), then the e4 break. Easy to learn and solid.",
+  "es": "El Sistema Colle: el mismo esquema contra casi todo (Cf3, e3, Ad3, Cbd2, c3, O-O), y después la ruptura e4. Fácil de aprender y sólido."
+ },
+ "d5": {
+  "en": "1...d5: the Colle's main battleground. Nf3 and e3 come first.",
+  "es": "1...d5: el terreno principal del Colle. Primero Cf3 y e3."
+ },
+ "d5 Nf3 Nf6": {
+  "en": "e3 next, then Bd3, Nbd2, c3 and O-O. Only after that, e4.",
+  "es": "Después e3, y luego Ad3, Cbd2, c3 y O-O. Solo entonces, e4."
+ },
+ "d5 Nf3 Nf6 e3 Bg4 Nbd2": {
+  "en": "Against ...Bg4, h3 asks the bishop; after ...Bxf3 Nxf3 White has the bishop pair, and c4 is a good plan. Roughly equal.",
+  "es": "Contra ...Ag4, h3 pregunta al alfil; tras ...Axf3 Cxf3 las blancas tienen la pareja de alfiles, y c4 es un buen plan. Más o menos igualdad."
+ },
+ "d5 Nf3 Nf6 e3 Bf5 Bd3": {
+  "en": "Bd3 offers to trade Black's good bishop. If ...e6, castle and play c4: with the bishop on f5, the c4 push is the best plan. Equal.",
+  "es": "Ad3 ofrece cambiar el alfil bueno de las negras. Si ...e6, enrocar y jugar c4: con el alfil en f5, el avance c4 es el mejor plan. Igualdad."
+ },
+ "d5 Nf3 Nc6": {
+  "en": "...Nc6 blocks the c-pawn. e3, then c3 (or c4) and Bd3: Black can no longer hit d4 with ...c5.",
+  "es": "...Cc6 tapa el peón c. e3, y después c3 (o c4) y Ad3: las negras ya no pueden golpear d4 con ...c5."
+ },
+ "d5 Nf3 Nc6 e3 Bg4 c3": {
+  "en": "c3 prepares Qb3 against b7. After ...a6 Qb3 Rb8, Nbd2 and Qc2 with e4: White has a small edge.",
+  "es": "c3 prepara Db3 contra b7. Tras ...a6 Db3 Tb8, Cbd2 y Dc2 con e4: las blancas tienen una pequeña ventaja."
+ },
+ "d5 Nf3 Nc6 e3 Nf6 c3": {
+  "en": "Bd3, Nbd2 and O-O follow. If Black plays ...Bg4, Qb3 hits b7.",
+  "es": "Siguen Ad3, Cbd2 y O-O. Si las negras juegan ...Ag4, Db3 ataca b7."
+ },
+ "d5 Nf3 e6": {
+  "en": "...e6: a solid setup. e3, Bd3 and c3; Black's c8-bishop is shut in.",
+  "es": "...e6: un esquema sólido. e3, Ad3 y c3; el alfil de c8 de las negras queda encerrado."
+ },
+ "d5 Nf3 e6 e3 c5 Bd3": {
+  "en": "...c4!? chases the bishop and gains queenside space; after Be2 and b3 White undermines the c4-pawn. Equal.",
+  "es": "¡?...c4 persigue al alfil y gana espacio en el flanco de dama; tras Ae2 y b3 las blancas socavan el peón de c4. Igualdad."
+ },
+ "d5 Nf3 Bf5": {
+  "en": "...Bf5: the bishop comes out before ...e6. e3 and Bd3 offer the trade.",
+  "es": "...Af5: el alfil sale antes de ...e6. e3 y Ad3 ofrecen el cambio."
+ },
+ "d5 Nf3 Bf5 e3 e6 Bd3": {
+  "en": "After ...Nf6 and O-O, c4 is the active plan. Equal.",
+  "es": "Tras ...Cf6 y O-O, c4 es el plan activo. Igualdad."
+ },
+ "Nf6": {
+  "en": "1...Nf6: Nf3 and the same setup.",
+  "es": "1...Cf6: Cf3 y el mismo esquema."
+ },
+ "Nf6 Nf3 g6": {
+  "en": "...g6: the King's Indian setup. The Colle is less sharp here: e3, Bd3, O-O, and then c4 or c3 with e4.",
+  "es": "...g6: el esquema de la India de Rey. El Colle es menos incisivo aquí: e3, Ad3, O-O, y después c4 o c3 con e4."
+ },
+ "Nf6 Nf3 g6 e3 Bg7": {
+  "en": "The g7-bishop hits d4. Bd3, O-O and c3 keep the centre solid.",
+  "es": "El alfil de g7 ataca d4. Ad3, O-O y c3 mantienen el centro sólido."
+ },
+ "Nf6 Nf3 g6 e3 Bg7 Bd3": {
+  "en": "Black can strike with ...c5 and ...d5. Keep it simple with O-O, c3 and Nbd2. Equal.",
+  "es": "Las negras pueden golpear con ...c5 y ...d5. Mantenlo simple con O-O, c3 y Cbd2. Igualdad."
+ },
+ "Nf6 Nf3 e6": {
+  "en": "...e6: e3 and the usual setup; Bd3, O-O, Nbd2 and c3.",
+  "es": "...e6: e3 y el esquema habitual; Ad3, O-O, Cbd2 y c3."
+ },
+ "Nf6 Nf3 d5": {
+  "en": "Back to the main Colle: e3, Bd3, Nbd2, c3 and O-O.",
+  "es": "De vuelta al Colle principal: e3, Ad3, Cbd2, c3 y O-O."
+ },
+ "e6 Nf3 d5": {
+  "en": "A normal Colle: e3, Bd3, Nbd2, c3, O-O and e4.",
+  "es": "Un Colle normal: e3, Ad3, Cbd2, c3, O-O y e4."
  }
 }

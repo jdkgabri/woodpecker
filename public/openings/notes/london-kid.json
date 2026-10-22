@@ -10,5 +10,57 @@
  "": {
   "en": "Against ...g6, keep the pyramid and add h3 to save the bishop.",
   "es": "Contra ...g6, mantén la pirámide y añade h3 para conservar el alfil."
+ },
+ "e3 Bg7 Nf3 O-O": {
+  "en": "Black castles. h3 now: it gives the f4-bishop the h2 square if ...Nh5 comes.",
+  "es": "Las negras enrocan. Ahora h3: da al alfil de f4 la casilla h2 si llega ...Ch5."
+ },
+ "e3 Bg7 Nf3 O-O h3 d6": {
+  "en": "...d6 prepares ...e5. c3, Be2 and O-O: when ...e5 comes, dxe5 and the d-file opens with the queens facing each other.",
+  "es": "...d6 prepara ...e5. c3, Ae2 y O-O: cuando llegue ...e5, dxe5 y se abre la columna d con las damas enfrentadas."
+ },
+ "e3 Bg7 Nf3 O-O h3 d6 c3 Nbd7": {
+  "en": "...Nbd7 supports ...e5. Be2 and O-O; keep the knight on b1 for now (Nbd2 or Na3 later).",
+  "es": "...Cbd7 apoya ...e5. Ae2 y O-O; deja de momento el caballo en b1 (más tarde Cbd2 o Ca3)."
+ },
+ "e3 Bg7 Nf3 O-O h3 d6 c3 Nbd7 Be2 Re8 O-O e5": {
+  "en": "...e5? too early: dxe5 dxe5 Nxe5! Nxe5 Qxd8 Rxd8 Bxe5 wins a pawn, because the queens trade on the open d-file.",
+  "es": "¿...e5? demasiado pronto: dxe5 dxe5 ¡Cxe5! Cxe5 Dxd8 Txd8 Axe5 gana un peón, porque las damas se cambian en la columna d abierta."
+ },
+ "e3 Bg7 Nf3 O-O h3 d6 c3 Nc6": {
+  "en": "...Nc6 prepares ...e5 too. Be2 and O-O; if ...e5, dxe5 and the e5-pawn may become weak.",
+  "es": "...Cc6 también prepara ...e5. Ae2 y O-O; si ...e5, dxe5 y el peón de e5 puede quedar débil."
+ },
+ "e3 Bg7 Nf3 O-O h3 d6 c3 c5": {
+  "en": "...c5 hits d4. Be2 and O-O; Nbd2 later. No need to rush dxc5: it only frees Black's game. Equal.",
+  "es": "...c5 golpea d4. Ae2 y O-O; más tarde Cbd2. No hay prisa por dxc5: solo libera el juego negro. Igualdad."
+ },
+ "e3 Bg7 Nf3 O-O h3 d5": {
+  "en": "...d5: a Grünfeld-style setup. c3, Be2 (or Bd3) and Nbd2: solid.",
+  "es": "...d5: un esquema tipo Grünfeld. c3, Ae2 (o Ad3) y Cbd2: sólido."
+ },
+ "e3 Bg7 Nf3 d6": {
+  "en": "...d6 before castling. h3 again, then c3, Be2 and O-O.",
+  "es": "...d6 antes de enrocar. Otra vez h3, y después c3, Ae2 y O-O."
+ },
+ "e3 Bg7 Nf3 d6 h3 O-O": {
+  "en": "The same position as the main line: c3, Be2 and O-O.",
+  "es": "La misma posición que en la línea principal: c3, Ae2 y O-O."
+ },
+ "e3 Bg7 Nf3 d6 h3 O-O c3 Nbd7": {
+  "en": "Be2 and O-O. If Black rushes ...e5, remember the trick on the d-file.",
+  "es": "Ae2 y O-O. Si las negras se precipitan con ...e5, recuerda el truco de la columna d."
+ },
+ "e3 Bg7 Nf3 d6 h3 O-O c3 Nbd7 Be2 Re8 O-O e5": {
+  "en": "...e5? dxe5 dxe5 Nxe5! Nxe5 Qxd8 Rxd8 Bxe5: White wins a pawn.",
+  "es": "¿...e5? dxe5 dxe5 ¡Cxe5! Cxe5 Dxd8 Txd8 Axe5: las blancas ganan un peón."
+ },
+ "e3 d6 Nf3 Bg7": {
+  "en": "Transposes to the main line: h3, c3, Be2 and O-O.",
+  "es": "Transpone a la línea principal: h3, c3, Ae2 y O-O."
+ },
+ "e3 d6 Nf3 Bg7 h3 O-O": {
+  "en": "c3, Be2 and O-O: the familiar setup.",
+  "es": "c3, Ae2 y O-O: el esquema conocido."
  }
 }

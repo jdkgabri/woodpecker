@@ -10,5 +10,69 @@
  "d5 c4 dxc4 e3 Nf6 Bxc4 Bg4": {
   "en": "Bxf7+! Kxf7 Ne5+ and Nxg4: White wins a pawn and Black's king has lost castling.",
   "es": "¡Axf7+! Rxf7 Ce5+ y Cxg4: las blancas ganan un peón y el rey negro ha perdido el enroque."
+ },
+ "": {
+  "en": "The Réti: 1.Nf3 keeps every option open. White fianchettoes (g3, Bg2), plays c4 against the centre from the side, and decides later between an English, a Catalan or a double fianchetto.",
+  "es": "La Réti: 1.Cf3 mantiene todas las opciones abiertas. Las blancas hacen el fianchetto (g3, Ag2), juegan c4 contra el centro desde el lado y deciden más tarde entre una Inglesa, una Catalana o un doble fianchetto."
+ },
+ "d5": {
+  "en": "1...d5: c4! hits it from the side, the Réti proper.",
+  "es": "1...d5: ¡c4! lo ataca desde el lado, la Réti propiamente dicha."
+ },
+ "d5 c4 dxc4": {
+  "en": "...dxc4 takes the pawn. e3 and Bxc4 win it back easily; careful with ...Bg4, which allows Bxf7+ tricks.",
+  "es": "...dxc4 toma el peón. e3 y Axc4 lo recuperan fácilmente; cuidado con ...Ag4, que permite trucos con Axf7+."
+ },
+ "d5 c4 dxc4 e3 b5 b3": {
+  "en": "...b5 tries to keep the pawn, but b3! breaks the chain: ...cxb3 Bxb5+, or ...e6 bxc4 bxc4 Bxc4. White gets the pawn back with the better structure.",
+  "es": "...b5 intenta conservar el peón, pero ¡b3! rompe la cadena: ...cxb3 Axb5+, o ...e6 bxc4 bxc4 Axc4. Las blancas recuperan el peón con mejor estructura."
+ },
+ "d5 c4 d4": {
+  "en": "...d4 gains space: a reversed Benoni. g3, Bg2, O-O, d3 and e3 or b4 to undermine d4.",
+  "es": "...d4 gana espacio: una Benoni invertida. g3, Ag2, O-O, d3 y e3 o b4 para socavar d4."
+ },
+ "d5 c4 d4 g3": {
+  "en": "After ...Nc6 Bg2, ...e5 builds a big centre; White answers with d3, O-O, e3 and b4, hitting it from the sides. Equal.",
+  "es": "Tras ...Cc6 Ag2, ...e5 levanta un gran centro; las blancas responden con d3, O-O, e3 y b4, atacándolo por los lados. Igualdad."
+ },
+ "d5 c4 c6": {
+  "en": "...c6: a Slav setup. g3, Bg2, O-O and b3 with Bb2: the double fianchetto.",
+  "es": "...c6: un esquema Eslavo. g3, Ag2, O-O y b3 con Ab2: el doble fianchetto."
+ },
+ "d5 c4 e6": {
+  "en": "...e6: a Queen's Gambit setup. g3 and Bg2, then d4 (a Catalan) or b3 and Bb2.",
+  "es": "...e6: un esquema de Gambito de Dama. g3 y Ag2, y después d4 (una Catalana) o b3 y Ab2."
+ },
+ "Nf6": {
+  "en": "1...Nf6: c4 and g3, flexible.",
+  "es": "1...Cf6: c4 y g3, flexible."
+ },
+ "Nf6 c4 g6": {
+  "en": "...g6: King's Indian setup. g3, Bg2, O-O; then b3 and Bb2 or d4.",
+  "es": "...g6: esquema de India de Rey. g3, Ag2, O-O; después b3 y Ab2 o d4."
+ },
+ "Nf6 c4 g6 g3 Bg7": {
+  "en": "Both bishops on the long diagonals. Bg2 and O-O.",
+  "es": "Los dos alfiles en las grandes diagonales. Ag2 y O-O."
+ },
+ "Nf6 c4 g6 g3 Bg7 Bg2 O-O b3": {
+  "en": "b3 and Bb2: the double fianchetto. If ...Ne4, d4 and Bb2; if ...d5, Bb2 and cxd5 later. Equal.",
+  "es": "b3 y Ab2: el doble fianchetto. Si ...Ce4, d4 y Ab2; si ...d5, Ab2 y más tarde cxd5. Igualdad."
+ },
+ "c5": {
+  "en": "1...c5: c4, a Symmetrical English. g3, Bg2, Nc3 and O-O.",
+  "es": "1...c5: c4, una Inglesa Simétrica. g3, Ag2, Cc3 y O-O."
+ },
+ "c5 c4 Nc6": {
+  "en": "g3 and Bg2; Nc3 and O-O. A slow, symmetrical fight for d5.",
+  "es": "g3 y Ag2; Cc3 y O-O. Una lucha lenta y simétrica por d5."
+ },
+ "Nc6 g3 e5": {
+  "en": "...e5 takes the centre. c4 and Bg2: a reversed Sicilian.",
+  "es": "...e5 toma el centro. c4 y Ag2: una Siciliana invertida."
+ },
+ "Nc6 g3 e5 c4": {
+  "en": "If ...e4, Nh4 (or Nd4): the knight is fine, and d3 attacks the e4-pawn. Equal.",
+  "es": "Si ...e4, Ch4 (o Cd4): el caballo está bien, y d3 ataca el peón de e4. Igualdad."
  }
 }

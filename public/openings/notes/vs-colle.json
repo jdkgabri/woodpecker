@@ -6,5 +6,57 @@
  "": {
   "en": "Against the Colle, ...c5 and ...Nc6 hit d4 before White plays e4; ...Bg4 develops the bishop outside the chain.",
   "es": "Contra el Colle, ...c5 y ...Cc6 atacan d4 antes de que las blancas jueguen e4; ...Ag4 saca el alfil fuera de la cadena."
+ },
+ "c5 c3": {
+  "en": "c3: the classical Colle, supporting d4. Black develops with ...e6, ...Nc6 and ...Bd6, ready to meet e4 with ...cxd4 or ...dxe4.",
+  "es": "c3: el Colle clásico, apoyando d4. Las negras desarrollan con ...e6, ...Cc6 y ...Ad6, listas para responder a e4 con ...cxd4 o ...dxe4."
+ },
+ "c5 c3 e6 Bd3": {
+  "en": "Bd3 aims at h7 and supports e4. Black keeps developing: ...Nc6 and ...Bd6.",
+  "es": "Ad3 apunta a h7 y apoya e4. Las negras siguen desarrollando: ...Cc6 y ...Ad6."
+ },
+ "c5 c3 e6 Bd3 Nc6 Nbd2": {
+  "en": "Nbd2 supports e4. ...Bd6 controls e5 and prepares castling; Black watches for e4 and answers with central trades.",
+  "es": "Cbd2 apoya e4. ...Ad6 controla e5 y prepara el enroque; las negras vigilan e4 y responden con cambios en el centro."
+ },
+ "c5 c3 e6 Bd3 Nc6 Nbd2 Bd6 O-O": {
+  "en": "Black castles too. After Re1 (or dxc5 Bxc5 and e4), ...e5! is the key idea: Black breaks first and frees the c8-bishop.",
+  "es": "Las negras también enrocan. Tras Te1 (o dxc5 Axc5 y e4), ¡...e5! es la idea clave: las negras rompen primero y liberan el alfil de c8."
+ },
+ "c5 c3 e6 Bd3 Nc6 O-O": {
+  "en": "White castles before Nbd2. Same plan: ...Bd6, ...O-O and, when White plays Nbd2 and Re1, ...e5.",
+  "es": "Las blancas enrocan antes de Cbd2. El mismo plan: ...Ad6, ...O-O y, cuando las blancas jueguen Cbd2 y Te1, ...e5."
+ },
+ "c5 c4": {
+  "en": "c4 turns it into a Queen's Gambit with e3. ...e6 is solid: a Semi-Tarrasch or a symmetrical position follows.",
+  "es": "c4 lo convierte en un Gambito de Dama con e3. ...e6 es sólido: sigue una Semi-Tarrasch o una posición simétrica."
+ },
+ "c5 c4 e6 Nc3": {
+  "en": "Nc3 adds pressure on d5. ...Nc6 develops; if cxd5, recapture with ...exd5 or ...Nxd5 and Black is fine.",
+  "es": "Cc3 añade presión sobre d5. ...Cc6 desarrolla; si cxd5, recapturar con ...exd5 o ...Cxd5 y las negras están bien."
+ },
+ "c5 c4 e6 cxd5": {
+  "en": "cxd5 exd5: an isolated-pawn type position may arise after ...cxd4. Black's pieces are active; develop with ...Nc6 and ...Bd6.",
+  "es": "cxd5 exd5: tras ...cxd4 puede surgir una posición de peón aislado. Las piezas negras están activas; desarrollar con ...Cc6 y ...Ad6."
+ },
+ "c5 b3": {
+  "en": "b3: the Colle-Zukertort, aiming Bb2 at the long diagonal and Ne5. ...e6 and ...Nc6 keep pressure on d4.",
+  "es": "b3: el Colle-Zukertort, con el alfil de b2 en la gran diagonal y Ce5. ...e6 y ...Cc6 mantienen la presión sobre d4."
+ },
+ "c5 b3 e6 Bb2": {
+  "en": "Against the Zukertort, ...Nc6, ...Bd6 and ...O-O; then ...b6 and ...Bb7 to counter on the same diagonal. Watch Ne5 and f4 attacking ideas.",
+  "es": "Contra el Zukertort, ...Cc6, ...Ad6 y ...O-O; después ...b6 y ...Ab7 para contrarrestar en la misma diagonal. Cuidado con las ideas de ataque Ce5 y f4."
+ },
+ "c5 dxc5": {
+  "en": "dxc5 gives up the centre for a pawn. ...e6 and ...Bxc5 win it back with good development.",
+  "es": "dxc5 cede el centro a cambio de un peón. ...e6 y ...Axc5 lo recuperan con buen desarrollo."
+ },
+ "c5 dxc5 e6 b4": {
+  "en": "b4 tries to hold the pawn. ...a5! undermines it at once.",
+  "es": "b4 intenta mantener el peón. ¡...a5! lo socava de inmediato."
+ },
+ "c5 dxc5 e6 b4 a5": {
+  "en": "If c3, ...axb4 cxb4 b6 wins the pawn back; if b5, ...Bxc5. Black regains the pawn and is equal.",
+  "es": "Si c3, ...axb4 cxb4 b6 recupera el peón; si b5, ...Axc5. Las negras recuperan el peón e igualan."
  }
 }

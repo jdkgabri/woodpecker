@@ -10,5 +10,105 @@
  "": {
   "en": "Against 4.a3: ...Bxc3+ and play against the doubled c-pawns.",
   "es": "Contra 4.a3: ...Axc3+ y juego contra los peones c doblados."
+ },
+ "Bxc3+ bxc3": {
+  "en": "White has the bishop pair and the centre; Black will attack the doubled c-pawns. ...c5 first, hitting d4.",
+  "es": "Las blancas tienen la pareja de alfiles y el centro; las negras atacarán los peones c doblados. Primero ...c5, golpeando d4."
+ },
+ "Bxc3+ bxc3 c5 Nf3": {
+  "en": "Nf3 develops. Castle, then ...Nc6, ...b6 and ...Ba6 (or ...d6 and ...e5).",
+  "es": "Cf3 desarrolla. Enroque, y después ...Cc6, ...b6 y ...Aa6 (o ...d6 y ...e5)."
+ },
+ "Bxc3+ bxc3 c5 Nf3 O-O Bg5": {
+  "en": "Bg5 pins the knight. ...d6 and ...Nbd7, then ...Qa5 hits the weak c3-pawn.",
+  "es": "Ag5 clava el caballo. ...d6 y ...Cbd7, y después ...Da5 ataca el débil peón de c3."
+ },
+ "Bxc3+ bxc3 c5 Nf3 O-O Bg5 d6 e3": {
+  "en": "...Nbd7 and ...Qa5: the c3-pawn is the target.",
+  "es": "...Cbd7 y ...Da5: el peón de c3 es el objetivo."
+ },
+ "Bxc3+ bxc3 c5 Nf3 O-O Bg5 d6 e3 Nbd7 Bd3 Qa5": {
+  "en": "If O-O, ...Qxc3 takes the pawn; White gets some activity, but Black is fine. Qc2 or Qd2 keeps it.",
+  "es": "Si O-O, ...Dxc3 toma el peón; las blancas obtienen algo de actividad, pero las negras están bien. Dc2 o Dd2 lo conservan."
+ },
+ "Bxc3+ bxc3 c5 Nf3 O-O Bg5 d6 e4 Qa5": {
+  "en": "...Qa5 hits c3; if Bd3?, ...Qxc3+. After e5 Ne4 Bd2, ...dxe5 and ...Nxd2: Black is better.",
+  "es": "...Da5 ataca c3; si ¿Ad3?, ...Dxc3+. Tras e5 Ce4 Ad2, ...dxe5 y ...Cxd2: las negras están mejor."
+ },
+ "Bxc3+ bxc3 c5 Nf3 O-O e3": {
+  "en": "...Nc6, ...b6 and ...Ba6 against c4; ...Na5 adds a third attacker.",
+  "es": "...Cc6, ...b6 y ...Aa6 contra c4; ...Ca5 añade un tercer atacante."
+ },
+ "Bxc3+ bxc3 c5 Nf3 O-O e3 Nc6 Bd3": {
+  "en": "Bd3 does not defend c4. ...b6, ...Ba6 and ...Na5 will pile up on it.",
+  "es": "Ad3 no defiende c4. ...b6, ...Aa6 y ...Ca5 se acumularán sobre él."
+ },
+ "Bxc3+ bxc3 c5 Nf3 O-O e3 Nc6 Be2": {
+  "en": "Be2 is passive: ...Ne4! hits c3 at once. After Bd3 f5 the knight is a monster. Black is better.",
+  "es": "Ae2 es pasiva: ¡...Ce4! ataca c3 de inmediato. Tras Ad3 f5 el caballo es un monstruo. Las negras están mejor."
+ },
+ "Bxc3+ bxc3 c5 Nf3 O-O d5": {
+  "en": "d5 gains space but loosens c4 and c3. ...d6, ...exd5 and ...Qa5: Black is better.",
+  "es": "d5 gana espacio pero debilita c4 y c3. ...d6, ...exd5 y ...Da5: las negras están mejor."
+ },
+ "Bxc3+ bxc3 c5 e3": {
+  "en": "e3 supports d4; Bd3 and Ne2 follow (to keep f3 free). Castle and ...Nc6.",
+  "es": "e3 apoya d4; siguen Ad3 y Ce2 (para dejar libre f3). Enroque y ...Cc6."
+ },
+ "Bxc3+ bxc3 c5 e3 O-O Bd3": {
+  "en": "Bd3 aims at the king. ...Nc6 and ...b6, ...Ba6.",
+  "es": "Ad3 apunta al rey. ...Cc6 y ...b6, ...Aa6."
+ },
+ "Bxc3+ bxc3 c5 e3 O-O Bd3 Nc6 Ne2": {
+  "en": "Ne2 keeps f3 free for f3 and e4. ...b6 and ...Ba6 against c4; if e4, ...Ne8 and ...f5 is a typical defence.",
+  "es": "Ce2 deja libre f3 para f3 y e4. ...b6 y ...Aa6 contra c4; si e4, ...Ce8 y ...f5 es una defensa típica."
+ },
+ "Bxc3+ bxc3 c5 e3 O-O Bd3 Nc6 Ne2 b6 O-O": {
+  "en": "...d6 and ...Ba6; if e4, ...e5 blocks the centre and the c4-pawn stays weak.",
+  "es": "...d6 y ...Aa6; si e4, ...e5 bloquea el centro y el peón de c4 sigue débil."
+ },
+ "Bxc3+ bxc3 c5 e3 O-O Bd3 Nc6 Ne2 b6 O-O d6 e4 e5": {
+  "en": "The centre is blocked. White will play f4; Black answers with ...Ne8 and ...f5 or ...exd4. White slightly better, but Black has targets on c4 and c3.",
+  "es": "El centro está bloqueado. Las blancas jugarán f4; las negras responden con ...Ce8 y ...f5 o ...exd4. Las blancas algo mejor, pero las negras tienen objetivos en c4 y c3."
+ },
+ "Bxc3+ bxc3 c5 e3 O-O Nf3": {
+  "en": "Nf3: ...Nc6, ...b6 and ...Ba6 as usual.",
+  "es": "Cf3: ...Cc6, ...b6 y ...Aa6 como siempre."
+ },
+ "Bxc3+ bxc3 c5 e3 O-O Nf3 Nc6 Bd3": {
+  "en": "...b6, ...Ba6 and ...Na5: three attackers on c4.",
+  "es": "...b6, ...Aa6 y ...Ca5: tres atacantes sobre c4."
+ },
+ "Bxc3+ bxc3 c5 e3 O-O Nf3 Nc6 Be2": {
+  "en": "Be2? allows ...Ne4! hitting c3; after Bd3 f5 Black's knight dominates. Black is better.",
+  "es": "¿Ae2? permite ¡...Ce4! atacando c3; tras Ad3 f5 el caballo negro domina. Las negras están mejor."
+ },
+ "Bxc3+ bxc3 c5 Bg5": {
+  "en": "Bg5 pins. Castle, then ...h6 and ...Nc6.",
+  "es": "Ag5 clava. Enroque, y después ...h6 y ...Cc6."
+ },
+ "Bxc3+ bxc3 c5 Bg5 O-O e4": {
+  "en": "e4 builds the centre. ...h6 asks the bishop first.",
+  "es": "e4 construye el centro. Primero ...h6 pregunta al alfil."
+ },
+ "Bxc3+ bxc3 c5 Bg5 O-O e4 h6 Bh4 Nc6": {
+  "en": "...Nc6 hits d4. If dxc5, ...g5 Bg3 Nxe4 and Black regains the pawn with active play. Equal.",
+  "es": "...Cc6 ataca d4. Si dxc5, ...g5 Ag3 Cxe4 y las negras recuperan el peón con juego activo. Igualdad."
+ },
+ "Bxc3+ bxc3 c5 Bg5 O-O e3": {
+  "en": "...Nc6 and ...d5 or ...b6: the usual play against c4 and c3.",
+  "es": "...Cc6 y ...d5 o ...b6: el juego habitual contra c4 y c3."
+ },
+ "Bxc3+ bxc3 c5 Bg5 O-O e3 Nc6": {
+  "en": "After Bd3, ...cxd4 exd4 d5: White has the bishop pair, Black the better structure. Equal.",
+  "es": "Tras Ad3, ...cxd4 exd4 d5: las blancas tienen la pareja de alfiles y las negras mejor estructura. Igualdad."
+ },
+ "Bxc3+ bxc3 c5 d5": {
+  "en": "d5 gains space. Castle, then ...d6, ...exd5 and ...Qa5 against c3.",
+  "es": "d5 gana espacio. Enroque, y después ...d6, ...exd5 y ...Da5 contra c3."
+ },
+ "Bxc3+ bxc3 c5 d5 O-O Bg5": {
+  "en": "...d6 and ...h6; ...exd5 and ...Nbd7–e5 hits c4. Black is better.",
+  "es": "...d6 y ...h6; ...exd5 y ...Cbd7–e5 atacan c4. Las negras están mejor."
  }
 }

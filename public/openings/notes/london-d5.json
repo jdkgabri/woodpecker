@@ -10,5 +10,57 @@
  "": {
   "en": "The classical London against ...d5: e3, Nf3, c3, Bd3, Nbd2.",
   "es": "La Londres clásica contra ...d5: e3, Cf3, c3, Ad3, Cbd2."
+ },
+ "Nf6": {
+  "en": "2...Nf6: the most common. e3 and the usual pyramid.",
+  "es": "2...Cf6: la más común. e3 y la pirámide habitual."
+ },
+ "Nf6 e3 e6": {
+  "en": "...e6: a solid Queen's Gambit setup. Nf3, Bd3, c3 and Nbd2; against ...Bd6, Bg3 keeps the bishop.",
+  "es": "...e6: un esquema sólido de Gambito de Dama. Cf3, Ad3, c3 y Cbd2; contra ...Ad6, Ag3 conserva el alfil."
+ },
+ "Nf6 e3 Bf5": {
+  "en": "...Bf5 mirrors the London. Nf3 and c4 or Bd3 to trade bishops; watch ...Nh5 against the f4-bishop.",
+  "es": "...Af5 copia la London. Cf3 y c4 o Ad3 para cambiar alfiles; atención a ...Ch5 contra el alfil de f4."
+ },
+ "Nc6": {
+  "en": "...Nc6 plans ...Nb4 (hitting c2) or ...Bf5 and ...e6. e3, Nf3 and c3 calmly cover everything.",
+  "es": "...Cc6 planea ...Cb4 (atacando c2) o ...Af5 y ...e6. e3, Cf3 y c3 lo cubren todo con calma."
+ },
+ "Nc6 e3 Bf5": {
+  "en": "Nf3 next; then Bb5 is a useful pin, or c4 to hit d5.",
+  "es": "Después Cf3; luego Ab5 es una clavada útil, o c4 para atacar d5."
+ },
+ "Nc6 e3 Nf6": {
+  "en": "Nf3, Bd3 and c3 (or c4): the pyramid holds; Ne5 later.",
+  "es": "Cf3, Ad3 y c3 (o c4): la pirámide aguanta; más tarde Ce5."
+ },
+ "e6": {
+  "en": "...e6 keeps everything solid. e3, Nf3, Bd3 and c3.",
+  "es": "...e6 lo mantiene todo sólido. e3, Cf3, Ad3 y c3."
+ },
+ "e6 e3 Bd6": {
+  "en": "...Bd6 offers to trade the London bishop. If ...Bxf4 exf4, White's pawn controls e5 and the e-file opens: that's fine. Bg3 also keeps the bishop.",
+  "es": "...Ad6 ofrece cambiar el alfil de la London. Si ...Axf4 exf4, el peón blanco controla e5 y se abre la columna e: está bien. Ag3 también conserva el alfil."
+ },
+ "e6 e3 Nf6": {
+  "en": "The main setup: Nf3, Bd3, Nbd2, c3, and later Ne5 or a kingside attack.",
+  "es": "El esquema principal: Cf3, Ad3, Cbd2, c3, y más tarde Ce5 o un ataque en el flanco de rey."
+ },
+ "e6 e3 c5": {
+  "en": "...c5 hits d4. c3 holds it; if ...Qb6, Qb3 or Qc1 deals with the attack on b2.",
+  "es": "...c5 golpea d4. c3 lo sostiene; si ...Db6, Db3 o Dc1 resuelven el ataque sobre b2."
+ },
+ "Bf5": {
+  "en": "...Bf5: a symmetrical London. e3, Nf3 and then c4 or Bd3.",
+  "es": "...Af5: una London simétrica. e3, Cf3 y después c4 o Ad3."
+ },
+ "Bf5 e3 e6": {
+  "en": "Nf3 and c4: hitting d5 is the most active plan when Black's bishop has left c8.",
+  "es": "Cf3 y c4: atacar d5 es el plan más activo cuando el alfil negro ha salido de c8."
+ },
+ "Bf5 e3 e6 Nf3 Bd6 c3": {
+  "en": "If ...Bxf4 exf4: White's knight goes to e5 and the e-file is open. Equal.",
+  "es": "Si ...Axf4 exf4: el caballo blanco va a e5 y la columna e queda abierta. Igualdad."
  }
 }
