@@ -58,5 +58,105 @@
  "Nf3 Bg4 Nc3 e6 Ne5": {
   "en": "Ne5 hits the g4-bishop; Qb3 against b7 follows.",
   "es": "Ce5 ataca el alfil de g4; sigue Db3 contra b7."
+ },
+ "Nf3 Nf6": {
+  "en": "Nc3: the main line; against ...dxc4, a4.",
+  "es": "Cc3: la línea principal; contra ...dxc4, a4."
+ },
+ "Nf3 Nf6 Nc3 e6": {
+  "en": "The Semi-Slav: a4 (or e3, Bg5) avoids the sharpest Meran lines.",
+  "es": "La Semieslava: a4 (o e3, Ag5) evita las líneas más agudas de la Merano."
+ },
+ "Nf3 Nf6 Nc3 e6 a4": {
+  "en": "After ...Bb4 e3 O-O Bd3: a solid, equal position.",
+  "es": "Tras ...Ab4 e3 O-O Ad3: una posición sólida e igualada."
+ },
+ "Nf3 Nf6 Nc3 Bf5": {
+  "en": "cxd5! and Qb3 against b7.",
+  "es": "¡cxd5! y Db3 contra b7."
+ },
+ "Nf3 Nf6 Nc3 Bf5 cxd5 cxd5": {
+  "en": "Qb3 hits b7 and d5.",
+  "es": "Db3 ataca b7 y d5."
+ },
+ "Nf3 Nf6 Nc3 Bf5 cxd5 cxd5 Qb3 b6": {
+  "en": "e4! dxe4 Ne5: the centre opens and Bb5+ is coming. White is winning.",
+  "es": "¡e4! dxe4 Ce5: el centro se abre y llega Ab5+. Las blancas van ganando."
+ },
+ "Nf3 Nf6 Nc3 Bf5 cxd5 cxd5 Qb3 Qd7": {
+  "en": "e4! Nxe4 Ne5: the black queen is hit and g4 traps the bishop. White is winning.",
+  "es": "¡e4! Cxe4 Ce5: la dama negra es atacada y g4 atrapa al alfil. Las blancas van ganando."
+ },
+ "Nf3 Nf6 Nc3 Bf5 cxd5 Nxd5 e3": {
+  "en": "After ...e6 Bd3 Bxd3 Qxd3: O-O and e4. Slightly better for White.",
+  "es": "Tras ...e6 Ad3 Axd3 Dxd3: O-O y e4. Algo mejor para las blancas."
+ },
+ "Nf3 Nf6 Nc3 Bg4": {
+  "en": "Ne5! hits the bishop.",
+  "es": "¡Ce5! ataca al alfil."
+ },
+ "Nf3 Nf6 Nc3 Bg4 Ne5 Bh5": {
+  "en": "cxd5 cxd5 Qb3: b7 and d5. White is clearly better.",
+  "es": "cxd5 cxd5 Db3: b7 y d5. Las blancas están claramente mejor."
+ },
+ "Nf3 Nf6 Nc3 Bg4 Ne5 Bf5": {
+  "en": "cxd5 and Qb3 (or e4). White is clearly better.",
+  "es": "cxd5 y Db3 (o e4). Las blancas están claramente mejor."
+ },
+ "Nf3 Nf6 Nc3 Bg4 Ne5 Bf5 cxd5": {
+  "en": "If ...Nxd5, e4! and if ...cxd5, Qb3. White is clearly better.",
+  "es": "Si ...Cxd5, ¡e4! y si ...cxd5, Db3. Las blancas están claramente mejor."
+ },
+ "Nf3 Nf6 Nc3 Bg4 Ne5 e6": {
+  "en": "f3 and g4: the bishop gets trapped. White is winning.",
+  "es": "f3 y g4: el alfil queda atrapado. Las blancas van ganando."
+ },
+ "Nf3 Nf6 Nc3 dxc4": {
+  "en": "a4! stops ...b5.",
+  "es": "¡a4! impide ...b5."
+ },
+ "Nf3 e6": {
+  "en": "Nc3 (or e3): the Semi-Slav setups.",
+  "es": "Cc3 (o e3): los esquemas de la Semieslava."
+ },
+ "Nf3 e6 Nc3 Nf6": {
+  "en": "a4 (or e3, Bg5). Equal.",
+  "es": "a4 (o e3, Ag5). Igualdad."
+ },
+ "Nf3 e6 Nc3 Nf6 a4": {
+  "en": "After ...Bb4 g3 or e3: equal.",
+  "es": "Tras ...Ab4 g3 o e3: igualdad."
+ },
+ "Nf3 e6 Nc3 f5": {
+  "en": "Bf4 and e3: control e5. White is better.",
+  "es": "Af4 y e3: controla e5. Las blancas están mejor."
+ },
+ "Nf3 Bf5": {
+  "en": "Nc3 and Qb3: b7 is weak.",
+  "es": "Cc3 y Db3: b7 está débil."
+ },
+ "Nf3 Bf5 Nc3 e6": {
+  "en": "Qb3! hits b7.",
+  "es": "¡Db3! ataca b7."
+ },
+ "Nf3 Bf5 Nc3 e6 Qb3 Qb6 c5": {
+  "en": "After ...Qxb3 axb3: White's queenside space and the a-file. White is better.",
+  "es": "Tras ...Dxb3 axb3: espacio en el flanco de dama y la columna a para las blancas. Las blancas están mejor."
+ },
+ "Nf3 Bf5 Nc3 e6 Qb3 b6": {
+  "en": "cxd5 exd5 e4!: the centre explodes. White is clearly better.",
+  "es": "cxd5 exd5 ¡e4!: el centro estalla. Las blancas están claramente mejor."
+ },
+ "Nf3 Bf5 Nc3 Nf6 e3 e6 a4": {
+  "en": "...Bb4 and ...O-O: equal.",
+  "es": "...Ab4 y ...O-O: igualdad."
+ },
+ "Nf3 Bg4 Nc3 e6": {
+  "en": "Ne5! hits the bishop; cxd5 and g4 follow. White is clearly better.",
+  "es": "¡Ce5! ataca al alfil; siguen cxd5 y g4. Las blancas están claramente mejor."
+ },
+ "Nf3 Bg4 Nc3 Bxf3 gxf3": {
+  "en": "e4: the bishop pair and the centre. White is better.",
+  "es": "e4: la pareja de alfiles y el centro. Las blancas están mejor."
  }
 }
