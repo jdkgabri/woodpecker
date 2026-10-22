@@ -4,8 +4,8 @@ export default {
   "moves": "e4 e5 f4 exf4 Nf3 g5 d4 g4 Ne5 Qh4+ g3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -53,8 +53,8 @@ export default {
   "moves": "e4 e5 f4 exf4 Nf3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -78,8 +78,8 @@ export default {
   "moves": "e4 e5 f4 d5 exd5 e4 d3 Nf6 dxe4 Nxe4 Nf3 Bc5 Qe2 O-O Qxe4 Re8 Ne5 f6 Nc3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -155,8 +155,8 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Nxd4 Qxd4 d6 Nc3 Nf6 Bc4 Be7 O-O O-O Bd3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -224,8 +224,8 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Bc5 Nxc6 bxc6 Bc4 Nf6 e5 Ne4 Qf3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -289,8 +289,8 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Nd5 c4 Nb6 Nc3 Bb4 Bd3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -362,8 +362,8 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O h3 Na5 Bc2 c5 d4 Qc7 Nbd2 cxd4 cxd4 Nc6 a4",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -471,8 +471,8 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Be7 Re1 O-O c3 d5 d4",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -544,8 +544,8 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O a4 b4 h3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -617,8 +617,8 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Bc5 Nxe5 Nxe5 d4 Bxd4 Qxd4 Nc6 Qc5",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -682,8 +682,8 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Nxd4 Nf6 Nc3 O-O Re1",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -747,8 +747,8 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O Bc2 Nxf2 Rxf2 f6 exf6 Bxf2+ Kxf2 Qxf6 Nf1",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -852,8 +852,8 @@ export default {
   "moves": "e4 e5 Nc3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -869,8 +869,8 @@ export default {
   "moves": "e4 e5 Nc3 Nf6 f4 exf4 e5 Ng8 Nf3 d6 d4 dxe5 Qe2 Nc6 Bxf4 Be7 dxe5",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -934,8 +934,8 @@ export default {
   "moves": "e4 e5 Nc3 Nc6 Bc4 Nf6 Nf3 Bc5 d3 d6 h3 h6 a3 a6 Be3 Bxe3 fxe3 O-O g4",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -995,8 +995,8 @@ export default {
   "moves": "d4 d5 Bf4 Nf6 e3 e6 Nf3 Bd6 c3",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
-    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+    "en": "Takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "Ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
    },
    "2": {
     "en": "Black takes his share of the centre.",
@@ -1032,8 +1032,8 @@ export default {
   "moves": "d4 d5 Bf4 Nf6 e3 e6 Nf3 Bd6 c3 Bxf4 exf4 O-O Bd3",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
-    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+    "en": "Takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "Ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
    },
    "2": {
     "en": "Black takes his share of the centre.",
@@ -1077,8 +1077,8 @@ export default {
   "moves": "d4 Nf6 Bf4 g6 e3 Bg7 Nf3 O-O h3 d6 c3 Nbd7 Be2 Re8 O-O e5 dxe5 dxe5 Nxe5 Nxe5 Qxd8 Rxd8 Bxe5",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
-    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+    "en": "Takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "Ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
    },
    "2": {
     "en": "...Nf6 keeps options open.",
@@ -1142,8 +1142,8 @@ export default {
     "es": "La Apertura Inglesa: las blancas controlan d5 desde el lado y mantienen el centro flexible."
    },
    "2": {
-    "en": "1...e5 takes the centre: a reversed Sicilian, with White a tempo up.",
-    "es": "1...e5 toma el centro: una Siciliana invertida, con un tiempo de más para las blancas."
+    "en": "Black takes the centre: a reversed Sicilian, with White a tempo up.",
+    "es": "Las negras toman el centro: una Siciliana invertida, con un tiempo de más para las blancas."
    },
    "3": {
     "en": "The knight fights for d5.",
@@ -1195,8 +1195,8 @@ export default {
     "es": "La Apertura Inglesa: las blancas controlan d5 desde el lado y mantienen el centro flexible."
    },
    "2": {
-    "en": "1...e5 takes the centre: a reversed Sicilian, with White a tempo up.",
-    "es": "1...e5 toma el centro: una Siciliana invertida, con un tiempo de más para las blancas."
+    "en": "Black takes the centre: a reversed Sicilian, with White a tempo up.",
+    "es": "Las negras toman el centro: una Siciliana invertida, con un tiempo de más para las blancas."
    },
    "3": {
     "en": "The knight fights for d5.",
@@ -1313,8 +1313,8 @@ export default {
   "moves": "e4 c5 d4 cxd4 c3 dxc3 Nxc3 Nc6 Nf3 e6 Bc4 a6 O-O",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "The Sicilian: Black fights for d4 from the side and avoids symmetrical positions.",
@@ -1370,8 +1370,8 @@ export default {
   "moves": "e4 c5 c3 Nc6 d4 cxd4 cxd4 d5 e5 Bf5 Nf3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "The Sicilian: Black fights for d4 from the side and avoids symmetrical positions.",
@@ -1411,8 +1411,8 @@ export default {
   "moves": "e4 c5 c3 d5 exd5 Qxd5 d4 cxd4 Nf3 Nc6 cxd4 Bg4 Be2 e6 Be3 Nf6 Nc3 Bb4 h3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "The Sicilian: Black fights for d4 from the side and avoids symmetrical positions.",
@@ -1480,8 +1480,8 @@ export default {
   "moves": "e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 cxd4 cxd4 Nge7 Na3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "The French: Black prepares ...d5 with a solid pawn chain.",
@@ -1541,8 +1541,8 @@ export default {
   "moves": "e4 c6 d4 d5 e5 Bf5 Nf3 e6 Be2 c5 O-O",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "The Caro-Kann: Black prepares ...d5 with the c-pawn behind it.",
@@ -1590,8 +1590,8 @@ export default {
   "moves": "e4 d5 exd5 Qxd5 Nc3 Qd8 d4 Nf6 Nf3 e6 Bc4 Be7 Bg5",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "The Scandinavian: Black attacks e4 at once.",
@@ -1643,8 +1643,8 @@ export default {
   "moves": "d4 Nf6 c4 e6 g3 d5 Bg2 c6 Nf3 Be7 O-O O-O Qc2 Nbd7 Nbd2 b6 e4 dxe4 Nxe4",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
-    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+    "en": "Takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "Ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
    },
    "2": {
     "en": "Development, controlling e4.",
@@ -1712,8 +1712,8 @@ export default {
   "moves": "d4 d5 Nf3 Nf6 e3 e6 Bd3 c5 c3",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
-    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+    "en": "Takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "Ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
    },
    "2": {
     "en": "Black takes his share of the centre.",
@@ -1749,8 +1749,8 @@ export default {
   "moves": "Nf3 d5 c4 dxc4 e3 b5 b3",
   "notes": {
    "1": {
-    "en": "1.Nf3: a flexible first move. White controls e5 and d4 and waits to see Black's setup.",
-    "es": "1.Cf3: una primera jugada flexible. Las blancas controlan e5 y d4 y esperan a ver el esquema negro."
+    "en": "A flexible first move: White controls e5 and d4 and waits to see Black's setup.",
+    "es": "Una primera jugada flexible: las blancas controlan e5 y d4 y esperan a ver el esquema negro."
    },
    "2": {
     "en": "Black takes the centre.",
@@ -1782,8 +1782,8 @@ export default {
   "moves": "d4 Nf6 Bg5 e6 e3 Be7 Bxf6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
-    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+    "en": "Takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "Ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
    },
    "2": {
     "en": "Development, controlling e4.",
@@ -1815,8 +1815,8 @@ export default {
   "moves": "d4 d5 Nc3 Nf6 Bf4 e6 Nb5",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
-    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+    "en": "Takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "Ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
    },
    "2": {
     "en": "Black takes his share of the centre.",
@@ -1848,8 +1848,8 @@ export default {
   "moves": "Nf3 d5 g3 Nc6 d4 Nf6 Bg2 Bg4 Ne5",
   "notes": {
    "1": {
-    "en": "1.Nf3: a flexible first move. White controls e5 and d4 and waits to see Black's setup.",
-    "es": "1.Cf3: una primera jugada flexible. Las blancas controlan e5 y d4 y esperan a ver el esquema negro."
+    "en": "A flexible first move: White controls e5 and d4 and waits to see Black's setup.",
+    "es": "Una primera jugada flexible: las blancas controlan e5 y d4 y esperan a ver el esquema negro."
    },
    "2": {
     "en": "Black takes the centre.",
@@ -1889,8 +1889,8 @@ export default {
   "moves": "e4 d6 d4 Nf6 Nc3 g6 Be3 Bg7 Qd2 O-O Bh6 Nc6 Bxg7",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "The Pirc: Black lets White build a centre, planning to attack it later.",
@@ -1942,8 +1942,8 @@ export default {
   "moves": "e4 g6 d4 Bg7 Nc3 d6 Be3 Nf6 Qd2 O-O Bh6 Nc6 Bxg7",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "The Modern: Black fianchettoes at once.",
@@ -1995,8 +1995,8 @@ export default {
   "moves": "e4 Nf6 e5 Nd5 d4 d6 Nf3 Bg4 Be2 e6 c4",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "The Alekhine: Black provokes White's pawns forward.",
@@ -2044,8 +2044,8 @@ export default {
   "moves": "e4 e5 Nf3 Nf6 Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 h5 d3 Be6 g3",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -2105,8 +2105,8 @@ export default {
   "moves": "e4 e5 Nf3 d6 d4 exd4 Bc4 Be7 O-O",
   "notes": {
    "1": {
-    "en": "1.e4 takes the centre and opens lines for the queen and the f1-bishop.",
-    "es": "1.e4 ocupa el centro y abre líneas para la dama y el alfil de f1."
+    "en": "Takes the centre and opens lines for the queen and the f1-bishop.",
+    "es": "Ocupa el centro y abre líneas para la dama y el alfil de f1."
    },
    "2": {
     "en": "Black claims an equal share of the centre.",
@@ -2146,8 +2146,8 @@ export default {
   "moves": "d4 f5 g3 Nf6 Bg2 e6 Nf3 Be7 c4 O-O O-O d6 Nc3 Ne4 Qc2",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
-    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+    "en": "Takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "Ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
    },
    "2": {
     "en": "The Dutch: Black controls e4 with the f-pawn.",
@@ -2203,8 +2203,8 @@ export default {
   "moves": "d4 Nf6 c4 c5 d5 b5 cxb5 a6 bxa6 Bxa6 Nc3 d6 e4 Bxf1 Kxf1 g6 Nf3 Bg7 g3 O-O Kg2 Nbd7 a4 Qb6 Ra3",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
-    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+    "en": "Takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "Ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
    },
    "2": {
     "en": "Development.",
@@ -2268,8 +2268,8 @@ export default {
   "moves": "d4 Nf6 c4 e5 dxe5 Ng4 Nf3 Nc6 Bf4 Bb4+ Nbd2 Qe7 e3 Ngxe5 a3",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre; the d4-pawn is protected by the queen from the start.",
-    "es": "1.d4 ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
+    "en": "Takes the centre; the d4-pawn is protected by the queen from the start.",
+    "es": "Ocupa el centro; el peón de d4 está protegido por la dama desde el principio."
    },
    "2": {
     "en": "Development.",
@@ -3657,8 +3657,8 @@ export default {
   "moves": "d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 Nf3 O-O Be2 e5 O-O Nbd7 d5 Nc5",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4 and keeps Black's options open.",
@@ -3718,8 +3718,8 @@ export default {
   "moves": "d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 Nf3 O-O Be2 e5 O-O Nc6 d5 Ne7 Ne1 Ne8 Be3 f5 f3 b6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4 and keeps Black's options open.",
@@ -3803,8 +3803,8 @@ export default {
   "moves": "d4 Nf6 c4 g6 Nc3 Bg7 e4 d6 f3 O-O Be3 c5 d5 a6 Qd2 Nbd7 Bh6 Bxh6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4 and keeps Black's options open.",
@@ -3876,8 +3876,8 @@ export default {
   "moves": "d4 Nf6 c4 g6 Nf3 Bg7 g3 O-O Bg2 d6 O-O Nc6 Nc3 e5 d5 Ne7 e4 Nd7 Bg5 h6 Be3 f5 exf5 Nxf5",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4 and keeps Black's options open.",
@@ -3949,8 +3949,8 @@ export default {
   "moves": "d4 Nf6 c4 g6 Nc3 d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7 Bc4 c5 Ne2 O-O O-O Nc6 Be3 cxd4 cxd4 Bg4 f3 Bd7",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4 and keeps Black's options open.",
@@ -4038,8 +4038,8 @@ export default {
   "moves": "d4 Nf6 c4 g6 Nc3 d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7 Bc4 c5 Ne2 O-O O-O Nc6 Be3 cxd4 cxd4 Bg4 f3 Na5 Bd3 Be6 d5 Bxa1 Qxa1 f6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4 and keeps Black's options open.",
@@ -4151,8 +4151,8 @@ export default {
   "moves": "d4 Nf6 c4 e6 Nc3 Bb4 Qc2 O-O Nf3 c5 e3 d5",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4 and keeps Black's options open.",
@@ -4196,8 +4196,8 @@ export default {
   "moves": "d4 Nf6 c4 e6 Nc3 Bb4 Qc2 O-O Nf3 c5 e3 d5 a3 Bxc3+ bxc3 Nc6 Bd3 b6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4 and keeps Black's options open.",
@@ -4261,8 +4261,8 @@ export default {
   "moves": "d4 Nf6 c4 e6 Nc3 Bb4 a3 Bxc3+ bxc3 c5 Nf3 O-O Bg5 d6 e3 Nbd7 Bd3 Qa5",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4 and keeps Black's options open.",
@@ -4326,8 +4326,8 @@ export default {
   "moves": "d4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 h6 Bh4 b6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...d5: Black takes his share of the centre.",
@@ -4375,8 +4375,8 @@ export default {
   "moves": "d4 d5 c4 c6 Nc3 Nf6 Nf3 dxc4 a4 Bf5 e3 e6 Bxc4 a6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...d5: Black takes his share of the centre.",
@@ -4424,8 +4424,8 @@ export default {
   "moves": "d4 d5 c4 c6 Nf3 Nf6 Nc3 e6 Bg5 Nbd7 e3 dxc4 Bxc4 b5 Bd3 Bd6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...d5: Black takes his share of the centre.",
@@ -4473,8 +4473,8 @@ export default {
   "moves": "d4 d5 c4 dxc4 Nc3 Nf6 e4 e5 d5 b5 Nxb5 Nxe4",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...d5: Black takes his share of the centre.",
@@ -4526,8 +4526,8 @@ export default {
   "moves": "d4 d5 c4 e5 dxe5 d4 Nf3 Nc6 e3 Bg4 Be2 Bb4+ Bd2 dxe3",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...d5: Black takes his share of the centre.",
@@ -4583,12 +4583,12 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Nc3 Nxe4 O-O Bxc3 bxc3 d5",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5: Black takes his share of the centre and frees the f8-bishop and the queen.",
-    "es": "1...e5: las negras toman su parte del centro y liberan el alfil de f8 y la dama."
+    "en": "Black takes his share of the centre and frees the f8-bishop and the queen.",
+    "es": "Las negras toman su parte del centro y liberan el alfil de f8 y la dama."
    },
    "3": {
     "en": "The knight attacks e5.",
@@ -4652,12 +4652,12 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O h3 Bb7",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5: Black takes his share of the centre and frees the f8-bishop and the queen.",
-    "es": "1...e5: las negras toman su parte del centro y liberan el alfil de f8 y la dama."
+    "en": "Black takes his share of the centre and frees the f8-bishop and the queen.",
+    "es": "Las negras toman su parte del centro y liberan el alfil de f8 y la dama."
    },
    "3": {
     "en": "The knight attacks e5.",
@@ -4713,12 +4713,12 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6 b3 g6",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5: Black takes his share of the centre and frees the f8-bishop and the queen.",
-    "es": "1...e5: las negras toman su parte del centro y liberan el alfil de f8 y la dama."
+    "en": "Black takes his share of the centre and frees the f8-bishop and the queen.",
+    "es": "Las negras toman su parte del centro y liberan el alfil de f8 y la dama."
    },
    "3": {
     "en": "The knight attacks e5.",
@@ -4782,12 +4782,12 @@ export default {
   "moves": "e4 e5 Nc3 Nf6 Nf3 Bb4 d3 d5 exd5 Nxd5 Bd2 Nc6 Nxd5 Qxd5",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5: Black takes his share of the centre and frees the f8-bishop and the queen.",
-    "es": "1...e5: las negras toman su parte del centro y liberan el alfil de f8 y la dama."
+    "en": "Black takes his share of the centre and frees the f8-bishop and the queen.",
+    "es": "Las negras toman su parte del centro y liberan el alfil de f8 y la dama."
    },
    "3": {
     "en": "The Vienna: Nc3 prepares f4.",
@@ -4827,12 +4827,12 @@ export default {
   "moves": "e4 e5 f4 exf4 Nf3 Nf6 e5 Nh5 d4 d5",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5: Black takes his share of the centre and frees the f8-bishop and the queen.",
-    "es": "1...e5: las negras toman su parte del centro y liberan el alfil de f8 y la dama."
+    "en": "Black takes his share of the centre and frees the f8-bishop and the queen.",
+    "es": "Las negras toman su parte del centro y liberan el alfil de f8 y la dama."
    },
    "3": {
     "en": "The King's Gambit.",
@@ -4868,12 +4868,12 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 c3 Nf6 d4 Nxe4 d5 Bc5 Be3 Bxe3 fxe3 Ne7",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5: Black takes his share of the centre.",
-    "es": "1...e5: las negras toman su parte del centro."
+    "en": "Black takes his share of the centre.",
+    "es": "Las negras toman su parte del centro."
    },
    "3": {
     "en": "The knight attacks e5.",
@@ -4925,12 +4925,12 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 Nc3 Nf6 Bc4 Bc5 d3 Bb4",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5: Black takes his share of the centre.",
-    "es": "1...e5: las negras toman su parte del centro."
+    "en": "Black takes his share of the centre.",
+    "es": "Las negras toman su parte del centro."
    },
    "3": {
     "en": "The knight attacks e5.",
@@ -4970,12 +4970,12 @@ export default {
   "moves": "e4 e5 d4 exd4 c3 Nc6 cxd4 d5 e5 Bb4+ Nc3 Nge7",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5: Black takes his share of the centre.",
-    "es": "1...e5: las negras toman su parte del centro."
+    "en": "Black takes his share of the centre.",
+    "es": "Las negras toman su parte del centro."
    },
    "3": {
     "en": "2.d4 opens the centre at once.",
@@ -5019,12 +5019,12 @@ export default {
   "moves": "e4 e5 Bc4 Nf6 d3 Bc5 Nf3 Nc6 O-O O-O c3 d5 exd5 Nxd5 Re1 Nf6",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5: Black takes his share of the centre.",
-    "es": "1...e5: las negras toman su parte del centro."
+    "en": "Black takes his share of the centre.",
+    "es": "Las negras toman su parte del centro."
    },
    "3": {
     "en": "The Bishop's Opening: the bishop aims at f7.",
@@ -5072,12 +5072,12 @@ export default {
   "moves": "e4 e5 Nf3 d6 Bc4 Nf6 d3 Be7 O-O O-O h3 Re8",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5: Black takes his share.",
-    "es": "1...e5: las negras toman su parte."
+    "en": "Black takes his share of the centre.",
+    "es": "Las negras toman su parte del centro."
    },
    "3": {
     "en": "The knight attacks e5.",
@@ -5121,8 +5121,8 @@ export default {
   "moves": "e4 d6 d4 Nf6 Nc3 Nbd7 Nf3 e5 dxe5 dxe5 Bc4 Be7 O-O c6",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
     "en": "...d6: the Lion move order, starting like a Pirc.",
@@ -5178,8 +5178,8 @@ export default {
   "moves": "d4 d5 Bf4 c5 e3 Nf6 c3 Nc6 Nf3 e6 Nbd2 Qb6 Qb3 cxd4",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...d5: Black takes his share of the centre.",
@@ -5231,8 +5231,8 @@ export default {
   "moves": "d4 Nf6 Bg5 Ne4 Bf4 e6 f3 Nf6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "Development.",
@@ -5268,8 +5268,8 @@ export default {
   "moves": "d4 d5 Nf3 Nf6 e3 c5 c3 e6 Bd3 Nc6 Nbd2 Bd6 O-O O-O Re1 e5",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...d5: Black takes his share of the centre.",
@@ -5321,8 +5321,8 @@ export default {
   "moves": "d4 d5 Nc3 Nf6 Bf4 Bf5 e3 c6 f3 e6 g4 Bg6 h4 h6 Bd3 Bxd3 Qxd3 a6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...d5: Black takes his share of the centre.",
@@ -5386,8 +5386,8 @@ export default {
   "moves": "d4 d5 e4 dxe4 Nc3 Nf6 f3 Bf5 fxe4 Nxe4 Qf3 Nxc3 bxc3 e6",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...d5: Black takes his share of the centre.",
@@ -5443,8 +5443,8 @@ export default {
   "moves": "e4 d5 exd5 Qxd5 Nc3 Qa5 Nf3 Nf6 d4 c6 Bd2 Bf5",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
     "en": "The Scandinavian: Black attacks e4 at once.",
@@ -5488,8 +5488,8 @@ export default {
   "moves": "e4 Nf6 e5 Nd5 d4 d6 c4 Nb6 exd6 cxd6 Nc3 g6 Nf3 Bg4",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
     "en": "The Alekhine: ...Nf6 provokes e5.",
@@ -5541,12 +5541,12 @@ export default {
   "moves": "e4 e5 Nf3 Nf6 Nxe5 d6 Nf3 Nxe4 Qe2 Qe7 d3 Nf6 Qxe7+ Bxe7 Be2 d5",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
-    "en": "1...e5.",
-    "es": "1...e5."
+    "en": "Black takes his share of the centre.",
+    "es": "Black takes his share of the centre."
    },
    "3": {
     "en": "The knight attacks e5.",
@@ -5602,8 +5602,8 @@ export default {
   "moves": "d4 Nf6 c4 e6 Nf3 b6 Nc3 Bb7 Bg5 Be7 e3 O-O Bd3 d5 O-O Nbd7 Rc1 c5 cxd5 Nxd5",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4.",
@@ -5663,8 +5663,8 @@ export default {
   "moves": "d4 f5 c4 Nf6 Nc3 e6 Bg5 d6 e3 Be7",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "The Dutch: ...f5 controls e4 and prepares kingside play.",
@@ -5700,8 +5700,8 @@ export default {
   "moves": "d4 Nf6 c4 c5 d5 b5 cxb5 a6 bxa6 g6 Nc3 Bxa6 e4 d6 Bxa6 Nxa6 Nf3 Bg7 O-O O-O Re1 Nb4",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4.",
@@ -5765,8 +5765,8 @@ export default {
   "moves": "d4 Nf6 c4 e5 dxe5 Ng4 Nf3 Nc6 Bf4 Bb4+ Nbd2 Qe7 e3 Ngxe5 Nxe5 Nxe5 Be2 Bc5",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4.",
@@ -5826,8 +5826,8 @@ export default {
   "moves": "e4 g6 d4 Bg7 Nf3 d6 Nc3 c6 Be3 a6",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
     "en": "The Modern: Black fianchettoes first.",
@@ -5859,8 +5859,8 @@ export default {
   "moves": "c4 e5 Nc3 Nf6 g3 Nc6 Bg2 g6",
   "notes": {
    "1": {
-    "en": "1.c4: the English.",
-    "es": "1.c4: la Inglesa."
+    "en": "The English Opening.",
+    "es": "La Apertura Inglesa."
    },
    "2": {
     "en": "...e5: a reversed Sicilian.",
@@ -5892,8 +5892,8 @@ export default {
   "moves": "d4 Nf6 c4 e6 Nf3 Bb4+ Bd2 Be7 Nc3 O-O e4 d5 e5 Ne4 Bd3 Nxd2",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4.",
@@ -5949,8 +5949,8 @@ export default {
   "moves": "Nf3 d5 d4 Nf6 Bf4 c6 e3 Bg4 Be2 e6 Nbd2 Bf5",
   "notes": {
    "1": {
-    "en": "1.Nf3: a flexible start.",
-    "es": "1.Cf3: un inicio flexible."
+    "en": "A flexible start.",
+    "es": "Un inicio flexible."
    },
    "2": {
     "en": "...d5 takes the centre.",
@@ -5986,8 +5986,8 @@ export default {
   "moves": "d4 Nf6 c4 c5 d5 e6 Nc3 exd5 cxd5 d6 e4 g6 Nf3 Bg7 Bd3 O-O O-O a6 a4 Bg4 h3 Bxf3 Qxf3 Re8",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...Nf6 controls e4.",
@@ -6051,8 +6051,8 @@ export default {
   "moves": "e4 c5 Nc3 Nc6 f4 e6 Nf3 d5 Bb5 d4 Bxc6+ bxc6 Ne2",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
     "en": "The Sicilian.",
@@ -6108,8 +6108,8 @@ export default {
   "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 d6 O-O",
   "notes": {
    "1": {
-    "en": "1.e4: White takes the centre.",
-    "es": "1.e4: las blancas ocupan el centro."
+    "en": "White takes the centre.",
+    "es": "Las blancas ocupan el centro."
    },
    "2": {
     "en": "Black takes his share.",
@@ -6149,8 +6149,8 @@ export default {
   "moves": "d4 d5 c4 e6 Nc3 Nf6 Nf3 Bb4 Bg5 O-O e3 h6 Bh4",
   "notes": {
    "1": {
-    "en": "1.d4 takes the centre.",
-    "es": "1.d4 ocupa el centro."
+    "en": "Takes the centre.",
+    "es": "Ocupa el centro."
    },
    "2": {
     "en": "...d5.",
