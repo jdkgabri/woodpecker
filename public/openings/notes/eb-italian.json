@@ -26,5 +26,85 @@
  "Bc5 c3 Nf6 d4 exd4 e5 d5 exf6": {
   "en": "exf6? dxc4: Black wins the bishop on c4 and the pawn on f6 will fall too.",
   "es": "¿exf6? dxc4: las negras ganan el alfil de c4 y el peón de f6 también caerá."
+ },
+ "Bc5 c3": {
+  "en": "...Nf6: hit e4 before d4 comes.",
+  "es": "...Cf6: ataca e4 antes de que llegue d4."
+ },
+ "Bc5 c3 Nf6 d4": {
+  "en": "...exd4: then ...Bb4+ or ...d5.",
+  "es": "...exd4: después ...Ab4+ o ...d5."
+ },
+ "Bc5 c3 Nf6 d4 exd4 cxd4": {
+  "en": "...Bb4+: the bishop escapes with check.",
+  "es": "...Ab4+: el alfil escapa con jaque."
+ },
+ "Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Nc3": {
+  "en": "...Nxe4! wins a pawn.",
+  "es": "¡...Cxe4! gana un peón."
+ },
+ "Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Nc3 Nxe4 O-O": {
+  "en": "...Bxc3 and ...d5: Black keeps a solid extra pawn.",
+  "es": "...Axc3 y ...d5: las negras conservan un sólido peón de más."
+ },
+ "Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Nc3 Nxe4 O-O Bxc3 bxc3 d5": {
+  "en": "...O-O and ...Be6: Black is a pawn up. Black is better.",
+  "es": "...O-O y ...Ae6: las negras tienen un peón de más. Las negras están mejor."
+ },
+ "Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Nc3 Nxe4 O-O Bxc3 d5 Bf6": {
+  "en": "The Möller Attack: after Re1 Ne7 Rxe4 d6, Black holds. Slightly better for Black.",
+  "es": "El Ataque Möller: tras Te1 Ce7 Txe4 d6, las negras aguantan. Algo mejor para las negras."
+ },
+ "Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Bd2": {
+  "en": "...Bxd2+ (or ...Nxe4!?): the safe line.",
+  "es": "...Axd2+ (o ¡?...Cxe4): la línea segura."
+ },
+ "Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2": {
+  "en": "...d5! (or ...O-O): hit the centre.",
+  "es": "¡...d5! (u ...O-O): golpea el centro."
+ },
+ "Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O d6": {
+  "en": "...d6 is a bit passive: White's centre gives an edge. ...d5 at move 8 was better.",
+  "es": "...d6 es algo pasiva: el centro blanco da ventaja. ...d5 en la jugada 8 era mejor."
+ },
+ "Bc5 c3 Nf6 d4 exd4 e5 d5 Bb5 Ne4 cxd4 Bb4+": {
+  "en": "After Bd2 Be7 (or ...Bxd2+): equal.",
+  "es": "Tras Ad2 Ae7 (o ...Axd2+): igualdad."
+ },
+ "Bc5 c3 Nf6 d3": {
+  "en": "...d6 (or ...a6, ...O-O): the Giuoco Pianissimo.",
+  "es": "...d6 (o ...a6, ...O-O): el Giuoco Pianissimo."
+ },
+ "Bc5 O-O": {
+  "en": "...Nf6 and ...d6.",
+  "es": "...Cf6 y ...d6."
+ },
+ "Bc5 O-O Nf6 d3": {
+  "en": "...d6 and ...O-O; ...a6 and ...Ba7.",
+  "es": "...d6 y ...O-O; ...a6 y ...Aa7."
+ },
+ "Bc5 O-O Nf6 c3": {
+  "en": "...Nxe4! and if d4, ...d5.",
+  "es": "¡...Cxe4! y si d4, ...d5."
+ },
+ "Bc5 O-O Nf6 c3 Nxe4 d4 exd4 cxd4 d5": {
+  "en": "After dxc5 dxc4: Black is a pawn up. Black is better.",
+  "es": "Tras dxc5 dxc4: las negras tienen un peón de más. Las negras están mejor."
+ },
+ "Bc5 d3": {
+  "en": "...Nf6 and ...d6.",
+  "es": "...Cf6 y ...d6."
+ },
+ "Bc5 d3 Nf6 O-O": {
+  "en": "...d6 (or ...O-O): the slow Italian. Equal.",
+  "es": "...d6 (u ...O-O): la Italiana lenta. Igualdad."
+ },
+ "Bc5 Nc3": {
+  "en": "...Nf6: watch Ng5 and Nd5 ideas.",
+  "es": "...Cf6: atento a las ideas Cg5 y Cd5."
+ },
+ "Bc5 Nc3 Nf6 d3": {
+  "en": "...d6 and ...O-O; ...h6 against Bg5. Equal.",
+  "es": "...d6 y ...O-O; ...h6 contra Ag5. Igualdad."
  }
 }

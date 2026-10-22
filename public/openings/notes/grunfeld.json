@@ -26,5 +26,85 @@
  "d5 Bg5 Bg7 Bxf6 Bxf6": {
   "en": "White gives up the bishop pair to win d5; Black keeps a strong dark-squared bishop.",
   "es": "Las blancas entregan la pareja de alfiles para ganar d5; las negras conservan un fuerte alfil de casillas oscuras."
+ },
+ "d5 cxd5": {
+  "en": "...Nxd5: the knight recaptures.",
+  "es": "...Cxd5: el caballo recaptura."
+ },
+ "d5 cxd5 Nxd5 e4": {
+  "en": "...Nxc3: trade before the knight is kicked.",
+  "es": "...Cxc3: cambia antes de que echen al caballo."
+ },
+ "d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7 Bc4": {
+  "en": "...c5, ...O-O and ...Nc6: pressure on d4.",
+  "es": "...c5, ...O-O y ...Cc6: presión sobre d4."
+ },
+ "d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7 Bc4 c5 Ne2": {
+  "en": "Castle, then ...Nc6 and ...Bg4 or ...Qc7.",
+  "es": "Enroca, y después ...Cc6 y ...Ag4 o ...Dc7."
+ },
+ "d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7 Bc4 c5 Ne2 O-O O-O": {
+  "en": "...Nc6 and ...cxd4: d4 is the target.",
+  "es": "...Cc6 y ...cxd4: d4 es el objetivo."
+ },
+ "d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7 Bc4 c5 Ne2 O-O O-O Nc6 Be3 cxd4 cxd4 Bg4 f3 Bd7": {
+  "en": "...Rc8, ...Na5 or ...a6 and ...b5: queenside play. Slightly better for White.",
+  "es": "...Tc8, ...Ca5 o ...a6 y ...b5: juego en el flanco de dama. Algo mejor para las blancas."
+ },
+ "d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7 Bc4 c5 Ne2 O-O Be3 Nc6 O-O cxd4 cxd4 Bg4 f3 Bd7": {
+  "en": "The same position: ...Rc8 and ...a6, ...b5. Slightly better for White.",
+  "es": "La misma posición: ...Tc8 y ...a6, ...b5. Algo mejor para las blancas."
+ },
+ "d5 cxd5 Nxd5 e4 Nxc3 bxc3 Bg7 Nf3": {
+  "en": "...c5: the Modern Exchange. Then ...O-O, ...Qa5 or ...Bg4.",
+  "es": "...c5: el Cambio Moderno. Después ...O-O, ...Da5 o ...Ag4."
+ },
+ "d5 Nf3": {
+  "en": "...Bg7 and ...O-O.",
+  "es": "...Ag7 y ...O-O."
+ },
+ "d5 Nf3 Bg7 Bg5": {
+  "en": "...c5 (or ...Ne4): hit the centre.",
+  "es": "...c5 (o ...Ce4): golpea el centro."
+ },
+ "d5 Nf3 Bg7 Bg5 c5": {
+  "en": "If dxc5, ...Be6 (or ...Qa5) and Black regains the pawn. Slightly better for White.",
+  "es": "Si dxc5, ...Ae6 (o ...Da5) y las negras recuperan el peón. Algo mejor para las blancas."
+ },
+ "d5 Nf3 Bg7 cxd5": {
+  "en": "...Nxd5: and if e4, ...Nxc3 with the Exchange structure.",
+  "es": "...Cxd5: y si e4, ...Cxc3 con la estructura del Cambio."
+ },
+ "d5 Nf3 Bg7 e3": {
+  "en": "Castle, then ...c5 or ...c6.",
+  "es": "Enroca, y después ...c5 o ...c6."
+ },
+ "d5 Nf3 Bg7 Bf4 c5": {
+  "en": "If dxc5, ...Be6 or ...Qa5. Slightly better for White.",
+  "es": "Si dxc5, ...Ae6 o ...Da5. Algo mejor para las blancas."
+ },
+ "d5 Bg5": {
+  "en": "...Bg7 (or ...Ne4).",
+  "es": "...Ag7 (o ...Ce4)."
+ },
+ "d5 Bg5 Bg7 e3": {
+  "en": "...c5 (or ...O-O): hit d4.",
+  "es": "...c5 (u ...O-O): golpea d4."
+ },
+ "d5 Bg5 Bg7 e3 c5": {
+  "en": "After Bxf6 Bxf6 cxd5 cxd4: ...Qb6 and active play. Equal.",
+  "es": "Tras Axf6 Axf6 cxd5 cxd4: ...Db6 y juego activo. Igualdad."
+ },
+ "d5 Bg5 Bg7 Nf3 c5": {
+  "en": "If dxc5, ...Ne4: the endgame is about equal. Slightly better for White.",
+  "es": "Si dxc5, ...Ce4: el final está casi igualado. Algo mejor para las blancas."
+ },
+ "d5 e3": {
+  "en": "...Bg7 and ...O-O.",
+  "es": "...Ag7 y ...O-O."
+ },
+ "d5 e3 Bg7 Nf3": {
+  "en": "Castle, then ...c5 or ...c6. Equal.",
+  "es": "Enroca, y después ...c5 o ...c6. Igualdad."
  }
 }
