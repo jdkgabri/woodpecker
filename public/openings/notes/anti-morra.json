@@ -30,5 +30,113 @@
  "dxc3 Bc4 cxb2 Bxb2 Nc6 Nf3 d6 Ng5 Qa5+": {
   "en": "Ng5? aims at f7, but Qa5+ checks and attacks the knight on g5.",
   "es": "Cg5? apunta a f7, pero Da5+ da jaque y ataca el caballo de g5."
+ },
+ "dxc3 Nxc3": {
+  "en": "...Nc6: start the safe setup.",
+  "es": "...Cc6: empieza el esquema seguro."
+ },
+ "dxc3 Nxc3 Nc6 Nf3": {
+  "en": "...d6, ...e6, ...Nf6 and ...Be7.",
+  "es": "...d6, ...e6, ...Cf6 y ...Ae7."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4": {
+  "en": "...e6 shuts the c4-bishop out of f7.",
+  "es": "...e6 aparta al alfil de c4 de f7."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O": {
+  "en": "...Nf6, ...Be7 and ...O-O.",
+  "es": "...Cf6, ...Ae7 y ...O-O."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2": {
+  "en": "...Be7: then ...e5 against Rd1.",
+  "es": "...Ae7: después ...e5 contra Td1."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1": {
+  "en": "...e5! closes the d-file.",
+  "es": "¡...e5! cierra la columna d."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1 e5 Bg5": {
+  "en": "Castle; ...Ne8 or ...Be6 next.",
+  "es": "Enroca; después ...Ce8 o ...Ae6."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1 e5 Bg5 O-O": {
+  "en": "After Qd3 Ne8 Bxe7 Qxe7 Nd5 Qd8: Black is a pawn up and solid. Slightly better for Black.",
+  "es": "Tras Dd3 Ce8 Axe7 Dxe7 Cd5 Dd8: las negras tienen un peón de más y están sólidas. Algo mejor para las negras."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1 e5 h3": {
+  "en": "Castle and ...Be6: trade White's best bishop.",
+  "es": "Enroca y ...Ae6: cambia el mejor alfil blanco."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1 e5 h3 O-O Bg5 Be6": {
+  "en": "...Rc8 and ...h6: Black is a pawn up. Slightly better for Black.",
+  "es": "...Tc8 y ...h6: las negras tienen un peón de más. Algo mejor para las negras."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1 e5 h3 O-O Be3 Be6": {
+  "en": "After Bb5: ...Rc8 and ...Qa5. Slightly better for Black.",
+  "es": "Tras Ab5: ...Tc8 y ...Da5. Algo mejor para las negras."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1 e5 Bb5 O-O": {
+  "en": "If Bxc6 bxc6 Nxe5, ...Qc7: the pawn comes back but Black has the bishop pair. Equal.",
+  "es": "Si Axc6 bxc6 Cxe5, ...Dc7: el peón vuelve pero las negras tienen la pareja de alfiles. Igualdad."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Qe2 Be7 Rd1 e5 Be3 O-O": {
+  "en": "...Be6 and ...Rc8. Slightly better for Black.",
+  "es": "...Ae6 y ...Tc8. Algo mejor para las negras."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Bg5": {
+  "en": "...Be7 and castle.",
+  "es": "...Ae7 y enroque."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 Bg5 Be7 Qe2 e5": {
+  "en": "Castle, ...Be6: Black is a pawn up. Slightly better for Black.",
+  "es": "Enroque, ...Ae6: las negras tienen un peón de más. Algo mejor para las negras."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 e5": {
+  "en": "...dxe5 (or ...Nxe5): another pawn. Black is better.",
+  "es": "...dxe5 (o ...Cxe5): otro peón. Las negras están mejor."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bc4 e6 O-O Nf6 e5 dxe5 Qxd8+ Kxd8": {
+  "en": "The king is safe without queens. Black is two pawns up. Black is better.",
+  "es": "Sin damas el rey está seguro. Las negras tienen dos peones de más. Las negras están mejor."
+ },
+ "dxc3 Nxc3 Nc6 Nf3 d6 Bb5 e6": {
+  "en": "...Bd7 and ...Nf6: Black is solid. Equal.",
+  "es": "...Ad7 y ...Cf6: las negras están sólidas. Igualdad."
+ },
+ "dxc3 Nxc3 Nc6 Bc4": {
+  "en": "...d6 and ...e6.",
+  "es": "...d6 y ...e6."
+ },
+ "dxc3 Nxc3 Nc6 Bc4 d6 Nf3": {
+  "en": "...e6: the safe setup.",
+  "es": "...e6: el esquema seguro."
+ },
+ "dxc3 Nxc3 Nc6 Bc4 d6 Nf3 e6 O-O": {
+  "en": "...Nf6 and ...Be7.",
+  "es": "...Cf6 y ...Ae7."
+ },
+ "dxc3 Nxc3 Nc6 Bc4 d6 Nf3 e6 O-O Nf6 Qe2": {
+  "en": "...Be7.",
+  "es": "...Ae7."
+ },
+ "dxc3 Nxc3 Nc6 Bc4 d6 Nf3 e6 O-O Nf6 Qe2 Be7 Rd1": {
+  "en": "...e5! as usual.",
+  "es": "¡...e5! como siempre."
+ },
+ "dxc3 Nxc3 Nc6 Bc4 d6 Nf3 e6 O-O Nf6 Qe2 Be7 Rd1 e5 Bg5 O-O": {
+  "en": "After Qd3 Ne8 Bxe7 Qxe7 Nd5 Qd8: Black is a pawn up. Slightly better for Black.",
+  "es": "Tras Dd3 Ce8 Axe7 Dxe7 Cd5 Dd8: las negras tienen un peón de más. Algo mejor para las negras."
+ },
+ "dxc3 Bc4": {
+  "en": "...cxb2: take the second pawn.",
+  "es": "...cxb2: toma el segundo peón."
+ },
+ "dxc3 Bc4 cxb2 Bxb2 Nc6 Nf3": {
+  "en": "...d6 and ...e6, ...Nf6: the same setup, two pawns up.",
+  "es": "...d6 y ...e6, ...Cf6: el mismo esquema, con dos peones de más."
+ },
+ "dxc3 Bc4 cxb2 Bxb2 Nc6 Nf3 d6 O-O": {
+  "en": "...e6, ...Nf6 and ...Be7. Black is better.",
+  "es": "...e6, ...Cf6 y ...Ae7. Las negras están mejor."
  }
 }

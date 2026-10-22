@@ -34,5 +34,109 @@
  "Nxc6 bxc6 Be3 Bb4 Qd2": {
   "en": "The c3-knight is pinned against the queen on d2: ...Nxe4!",
   "es": "El caballo de c3 está clavado contra la dama de d2: ¡...Cxe4!"
+ },
+ "Ndb5": {
+  "en": "...d6: stop Nd6+.",
+  "es": "...d6: impide Cd6+."
+ },
+ "Ndb5 d6 Bg5": {
+  "en": "...a6: kick the b5-knight.",
+  "es": "...a6: echa al caballo de b5."
+ },
+ "Ndb5 d6 Bg5 a6 Na3": {
+  "en": "...b5! keeps the knight out of c4.",
+  "es": "¡...b5! mantiene al caballo fuera de c4."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5 Nd5": {
+  "en": "...Be7 (the main line) or ...Qa5+.",
+  "es": "...Ae7 (la línea principal) o ...Da5+."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5 Nd5 Be7 Bxf6": {
+  "en": "...Bxf6: the bishop pair.",
+  "es": "...Axf6: la pareja de alfiles."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5 Nd5 Be7 Bxf6 Bxf6 c3": {
+  "en": "...Be6 (or ...O-O and ...Bg5): challenge the d5-knight.",
+  "es": "...Ae6 (o ...O-O y ...Ag5): desafía al caballo de d5."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5 Nd5 Be7 Bxf6 Bxf6 c3 Be6 Nc2": {
+  "en": "...Bg5 and ...O-O; ...Rb8 and ...a5, or ...f5.",
+  "es": "...Ag5 y ...O-O; ...Tb8 y ...a5, o ...f5."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5 Nd5 Be7 Bxf6 Bxf6 c3 Be6 Nc2 Bg5 Nce3 O-O": {
+  "en": "...b4 or ...f5: Black's activity balances the d5 hole. Equal.",
+  "es": "...b4 o ...f5: la actividad negra compensa el agujero de d5. Igualdad."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5 Nd5 Be7 Bxf6 Bxf6 c3 Be6 Nc2 Bg5 a4 O-O": {
+  "en": "If axb5 axb5 Bxb5, ...Rxa1 and ...Ne7: Black has activity, but White is a bit better.",
+  "es": "Si axb5 axb5 Axb5, ...Txa1 y ...Ce7: las negras tienen actividad, pero las blancas están algo mejor."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5 Nd5 Be7 Bxf6 Bxf6 c4 Be6": {
+  "en": "After cxb5 Nd4: Black's pieces are very active. Slightly better for White.",
+  "es": "Tras cxb5 Cd4: las piezas negras están muy activas. Algo mejor para las blancas."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5 Bxf6": {
+  "en": "...gxf6: the structure is damaged but Black gets the bishop pair and ...f5.",
+  "es": "...gxf6: la estructura queda dañada, pero las negras obtienen la pareja de alfiles y ...f5."
+ },
+ "Ndb5 d6 Bg5 a6 Na3 b5 Bxf6 gxf6 Nd5": {
+  "en": "...f5! (the Chelyabinsk): hit e4 at once.",
+  "es": "¡...f5! (la Cheliábinsk): ataca e4 de inmediato."
+ },
+ "Ndb5 d6 Bg5 a6 Bxf6": {
+  "en": "...gxf6, then ...b5 and ...f5.",
+  "es": "...gxf6, y después ...b5 y ...f5."
+ },
+ "Ndb5 d6 Bg5 a6 Bxf6 gxf6 Na3": {
+  "en": "...b5: keep the knight on a3.",
+  "es": "...b5: mantén el caballo en a3."
+ },
+ "Ndb5 d6 Bg5 a6 Bxf6 gxf6 Na3 b5 Nd5": {
+  "en": "...f5: Black's bishops and centre give good play. Equal.",
+  "es": "...f5: los alfiles y el centro negros dan buen juego. Igualdad."
+ },
+ "Ndb5 d6 Nd5": {
+  "en": "...Nxd5: trade.",
+  "es": "...Cxd5: cambia."
+ },
+ "Ndb5 d6 Nd5 Nxd5 exd5": {
+  "en": "...Nb8 (or ...Ne7): the knight regroups; ...a6 kicks the b5-knight.",
+  "es": "...Cb8 (o ...Ce7): el caballo se reagrupa; ...a6 echa al caballo de b5."
+ },
+ "Ndb5 d6 Nd5 Nxd5 exd5 Nb8 c4": {
+  "en": "...a6, then ...Be7, ...O-O and ...f5.",
+  "es": "...a6, y después ...Ae7, ...O-O y ...f5."
+ },
+ "Ndb5 d6 Nd5 Nxd5 exd5 Nb8 c4 a6 Nc3": {
+  "en": "...f5 (or ...Be7): a King's Indian-like structure. Slightly better for White.",
+  "es": "...f5 (o ...Ae7): una estructura tipo India de Rey. Algo mejor para las blancas."
+ },
+ "Ndb5 d6 Nd5 Nxd5 exd5 Nb8 c4 a6 Nc3 f5": {
+  "en": "...Be7, ...O-O and ...Nd7–f6. Slightly better for White.",
+  "es": "...Ae7, ...O-O y ...Cd7–f6. Algo mejor para las blancas."
+ },
+ "Nxc6": {
+  "en": "...bxc6 and ...d5.",
+  "es": "...bxc6 y ...d5."
+ },
+ "Nxc6 bxc6 Bg5": {
+  "en": "...Be7 (or ...h6) and ...d5.",
+  "es": "...Ae7 (o ...h6) y ...d5."
+ },
+ "Nxc6 bxc6 Bc4": {
+  "en": "...Be7 and ...d5: the centre. Equal.",
+  "es": "...Ae7 y ...d5: el centro. Igualdad."
+ },
+ "Nb3": {
+  "en": "...Be7 (or ...Bb4) and ...O-O, ...d5.",
+  "es": "...Ae7 (o ...Ab4) y ...O-O, ...d5."
+ },
+ "Nf3 Bb4 Bd3": {
+  "en": "...d6 (or ...d5): Black is comfortable.",
+  "es": "...d6 (o ...d5): las negras están cómodas."
+ },
+ "Nf3 Bb4 Bd2 Bxc3 Bxc3 Nxe4 Bxe5 Nxe5 Nxe5": {
+  "en": "...Qa5+! and ...Qxe5: Black wins a piece.",
+  "es": "¡...Da5+! y ...Dxe5: las negras ganan una pieza."
  }
 }

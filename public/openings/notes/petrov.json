@@ -30,5 +30,113 @@
  "Bc4 Nxe4": {
   "en": "Bc4 leaves e4 undefended: ...Nxe4 wins a pawn.",
   "es": "Ac4 deja e4 sin defensa: ...Cxe4 gana un peón."
+ },
+ "Nxe5": {
+  "en": "...d6! first, kicking the knight.",
+  "es": "¡Primero ...d6!, echando al caballo."
+ },
+ "Nxe5 d6 Nf3": {
+  "en": "...Nxe4: now it is safe.",
+  "es": "...Cxe4: ahora es seguro."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Qe2": {
+  "en": "...Qe7 blocks the e-file pin.",
+  "es": "...De7 tapa la clavada en la columna e."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Qe2 Qe7 d3": {
+  "en": "...Nf6: the knight retreats; the queens may come off. Equal.",
+  "es": "...Cf6: el caballo se retira; puede que salgan las damas. Igualdad."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Qe2 Qe7 d3 Nf6 Bg5 d5": {
+  "en": "After Nc3 Qxe2+ Bxe2 c6: a quiet, equal endgame.",
+  "es": "Tras Cc3 Dxe2+ Axe2 c6: un final tranquilo e igualado."
+ },
+ "Nxe5 d6 Nf3 Nxe4 d4": {
+  "en": "...Be7 (or ...d5): the classical main line.",
+  "es": "...Ae7 (o ...d5): la línea principal clásica."
+ },
+ "Nxe5 d6 Nf3 Nxe4 d4 Be7 Bd3": {
+  "en": "...d5 supports the e4-knight.",
+  "es": "...d5 apoya al caballo de e4."
+ },
+ "Nxe5 d6 Nf3 Nxe4 d4 Be7 Bd3 d5 O-O": {
+  "en": "...Nc6 (or ...O-O) and ...Bg4: a solid, active setup.",
+  "es": "...Cc6 (o ...O-O) y ...Ag4: un esquema sólido y activo."
+ },
+ "Nxe5 d6 Nf3 Nxe4 d4 Be7 Bd3 d5 O-O Nc6": {
+  "en": "After c4: ...Nb4 or ...Nf6 and ...Be6. Slightly better for White, very solid for Black.",
+  "es": "Tras c4: ...Cb4 o ...Cf6 y ...Ae6. Algo mejor para las blancas, muy sólido para las negras."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Nc3": {
+  "en": "...Nxc3: trade.",
+  "es": "...Cxc3: cambia."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Nc3 Nxc3 dxc3": {
+  "en": "...Be7, ...O-O and ...Nc6 or ...Nd7: careful about White castling long with an attack. Equal.",
+  "es": "...Ae7, ...O-O y ...Cc6 o ...Cd7: cuidado con el enroque largo blanco y su ataque. Igualdad."
+ },
+ "Nxe5 d6 Nxf7 Kxf7 Bc4+": {
+  "en": "...d5! blocks and returns nothing: Black is a piece for two pawns up. Black is better.",
+  "es": "¡...d5! tapa: las negras tienen una pieza por dos peones. Las negras están mejor."
+ },
+ "Nc3": {
+  "en": "...Nc6: the Four Knights.",
+  "es": "...Cc6: los Cuatro Caballos."
+ },
+ "Nc3 Nc6 Bc4": {
+  "en": "...Nxe4! the fork trick.",
+  "es": "¡...Cxe4! el truco de la horquilla."
+ },
+ "Nc3 Nc6 Bc4 Nxe4 Nxe4": {
+  "en": "...d5 forks bishop and knight.",
+  "es": "...d5 ataca alfil y caballo."
+ },
+ "Nc3 Nc6 Bc4 Nxe4 Nxe4 d5 Bxd5": {
+  "en": "...Qxd5: Black has the bishop pair and the centre. Black is better.",
+  "es": "...Dxd5: las negras tienen la pareja de alfiles y el centro. Las negras están mejor."
+ },
+ "Nc3 Nc6 Bc4 Nxe4 Bxf7+": {
+  "en": "...Kxf7 Nxe4 d5: Black has the centre and the bishops. Black is better.",
+  "es": "...Rxf7 Cxe4 d5: las negras tienen el centro y los alfiles. Las negras están mejor."
+ },
+ "Nc3 Nc6 d4": {
+  "en": "...exd4 Nxd4 Nxe4 (or ...Bb4).",
+  "es": "...exd4 Cxd4 Cxe4 (o ...Ab4)."
+ },
+ "Nc3 Nc6 d4 exd4 Nxd4": {
+  "en": "...Nxe4 (or ...Bb4).",
+  "es": "...Cxe4 (o ...Ab4)."
+ },
+ "Nc3 Nc6 d4 exd4 Nxd4 Nxe4": {
+  "en": "After Nxe4 Qe7: the queen hits e4 and d4. Equal.",
+  "es": "Tras Cxe4 De7: la dama ataca e4 y d4. Igualdad."
+ },
+ "Nc3 Nc6 Bb5": {
+  "en": "...Bb4: the symmetrical Four Knights. Equal.",
+  "es": "...Ab4: los Cuatro Caballos simétricos. Igualdad."
+ },
+ "Bc4": {
+  "en": "Bc4? leaves e4 hanging: ...Nxe4.",
+  "es": "¿Ac4? deja e4 colgando: ...Cxe4."
+ },
+ "Bc4 Nxe4 Nxe5": {
+  "en": "...d5! hits the bishop and frees the queen.",
+  "es": "¡...d5! ataca al alfil y libera a la dama."
+ },
+ "Bc4 Nxe4 Nxe5 d5 Bb3": {
+  "en": "...Qg5! hits e5 and g2. Black is clearly better.",
+  "es": "¡...Dg5! ataca e5 y g2. Las negras están claramente mejor."
+ },
+ "Bc4 Nxe4 Nxe5 d5 Bb3 Qg5": {
+  "en": "If Qe2, ...Qxg2 Rf1 Be6: Black is a pawn up and active. Black is better.",
+  "es": "Si De2, ...Dxg2 Tf1 Ae6: las negras tienen un peón de más y están activas. Las negras están mejor."
+ },
+ "Bc4 Nxe4 O-O d5 Bb3 Nc6 Re1": {
+  "en": "...Bc5! and if d4, ...Nxd4: Black wins material.",
+  "es": "¡...Ac5! y si d4, ...Cxd4: las negras ganan material."
+ },
+ "Bc4 Nxe4 d3 Nc5": {
+  "en": "...d5 and ...Bd6: Black keeps the extra pawn. Black is better.",
+  "es": "...d5 y ...Ad6: las negras conservan el peón de más. Las negras están mejor."
  }
 }
