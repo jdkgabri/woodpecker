@@ -30,5 +30,53 @@
  "c6 e3": {
   "en": "...c6 may lead to the Cambridge Springs (...Nbd7 and ...Qa5); the calm e3, Nf3 and Qc2 or cxd5 keep everything under control.",
   "es": "...c6 puede llevar a la Cambridge Springs (...Cbd7 y ...Da5); las tranquilas e3, Cf3 y Dc2 o cxd5 lo mantienen todo bajo control."
+ },
+ "Be7": {
+  "en": "e3, Nf3 and Rc1 or Qc2.",
+  "es": "e3, Cf3 y Tc1 o Dc2."
+ },
+ "Be7 e3 O-O": {
+  "en": "Nf3, then Rc1 and Bd3.",
+  "es": "Cf3, y después Tc1 y Ad3."
+ },
+ "Be7 e3 O-O Nf3 h6": {
+  "en": "Bh4: keep the pin.",
+  "es": "Ah4: mantén la clavada."
+ },
+ "Be7 e3 O-O Nf3 Nbd7": {
+  "en": "Bh4 (or Rc1, Qc2): the Orthodox.",
+  "es": "Ah4 (o Tc1, Dc2): la Ortodoxa."
+ },
+ "Be7 e3 O-O Nf3 Nbd7 Bh4": {
+  "en": "After ...b6 cxd5 Nxd5 Bxe7: Qc2 and Be2. Slightly better for White.",
+  "es": "Tras ...b6 cxd5 Cxd5 Axe7: Dc2 y Ae2. Algo mejor para las blancas."
+ },
+ "Be7 e3 O-O Nf3 b6 Bh4": {
+  "en": "Rc1 and cxd5: pressure on the c-file. Equal.",
+  "es": "Tc1 y cxd5: presión en la columna c. Igualdad."
+ },
+ "Be7 e3 O-O Nf3 c6 Bh4": {
+  "en": "If ...Ne4, Bxe7 Qxe7 and Rc1. Slightly better for White.",
+  "es": "Si ...Ce4, Axe7 Dxe7 y Tc1. Algo mejor para las blancas."
+ },
+ "Be7 e3 h6": {
+  "en": "Bh4: keep the pin.",
+  "es": "Ah4: mantén la clavada."
+ },
+ "Be7 e3 h6 Bh4 O-O": {
+  "en": "Nf3, Rc1 and Bd3: the main line.",
+  "es": "Cf3, Tc1 y Ad3: la línea principal."
+ },
+ "Be7 e3 c6": {
+  "en": "Nf3 and Bd3 or Qc2.",
+  "es": "Cf3 y Ad3 o Dc2."
+ },
+ "Be7 e3 c6 Nf3 O-O Bh4": {
+  "en": "After ...Ne4 Bxe7 Qxe7 Rc1: slightly better for White.",
+  "es": "Tras ...Ce4 Axe7 Dxe7 Tc1: algo mejor para las blancas."
+ },
+ "Bb4": {
+  "en": "e3 (or cxd5): develop calmly.",
+  "es": "e3 (o cxd5): desarrolla con calma."
  }
 }

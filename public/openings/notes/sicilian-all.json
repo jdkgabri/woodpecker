@@ -1,18 +1,114 @@
 {
-  "": { "en": "Your Sicilian repertoire against everything White plays after 1.e4 c5, built around the Najdorf: ...d6, ...cxd4, ...Nf6 and ...a6. (The Alapin 2.c3 and the Morra Gambit have their own trees below.)", "es": "Tu repertorio de la Siciliana contra todo lo que juegan las blancas tras 1.e4 c5, construido alrededor de la Najdorf: ...d6, ...cxd4, ...Cf6 y ...a6. (La Alapin 2.c3 y el Gambito Morra tienen sus propios árboles más abajo.)" },
-  "Nf3 d6 d4 cxd4": { "en": "The Open Sicilian: Black trades a wing pawn for White's centre pawn and gets the half-open c-file.", "es": "La Siciliana abierta: las negras cambian un peón de flanco por el peón central blanco y consiguen la columna c semiabierta." },
-  "Nf3 d6 d4 cxd4 Nxd4 Nf6": { "en": "Attacking e4 forces Nc3 before White can play c4.", "es": "Atacar e4 obliga a Cc3 antes de que las blancas puedan jugar c4." },
-  "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6": { "en": "The Najdorf: ...a6 keeps the knights and bishop out of b5 and prepares ...e5 or ...e6 and ...b5.", "es": "La Najdorf: ...a6 mantiene caballos y alfil fuera de b5 y prepara ...e5 o ...e6 y ...b5." },
-  "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be3 e5": { "en": "...e5 kicks the knight and grabs space; d5 becomes the key square for both sides.", "es": "...e5 echa al caballo y gana espacio; d5 se convierte en la casilla clave para ambos bandos." },
-  "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be3 e5 Nb3 Be6": { "en": "...Be6 fights for d5. Next: ...Be7, ...O-O, ...Nbd7 and ...b5.", "es": "...Ae6 lucha por d5. Después: ...Ae7, ...O-O, ...Cbd7 y ...b5." },
-  "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be3 e5 Nf5 d5": { "en": "Nf5? looks active but ...d5! hits back in the centre with a great game for Black.", "es": "Cf5? parece activa pero ...¡d5! contraataca en el centro con muy buen juego negro." },
-  "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Bg5 Nbd7": { "en": "Against 6.Bg5, ...Nbd7 keeps the knight protected and avoids doubled pawns.", "es": "Contra 6.Ag5, ...Cbd7 mantiene el caballo protegido y evita peones doblados." },
-  "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Bc4 e6": { "en": "Against the Bc4 bishop, ...e6 blunts it; ...b5 and ...Be7 follow.", "es": "Contra el alfil de c4, ...e6 lo neutraliza; siguen ...b5 y ...Ae7." },
-  "Nf3 d6 d4 cxd4 Qxd4": { "en": "Taking with the queen exposes it: ...Nf6 and ...Nc6 will gain time on it.", "es": "Tomar con la dama la expone: ...Cf6 y ...Cc6 ganarán tiempo sobre ella." },
-  "Nf3 d6 Bc4 Nf6 O-O Nxe4": { "en": "White left e4 unprotected: ...Nxe4 wins a pawn.", "es": "Las blancas dejaron e4 sin protección: ...Cxe4 gana un peón." },
-  "Nf3 d6 Bc4 Nf6 Ng5 e6": { "en": "Ng5 aims at f7, but ...e6 closes the diagonal and the knight is misplaced.", "es": "Cg5 apunta a f7, pero ...e6 cierra la diagonal y el caballo queda mal situado." },
-  "Bc4": { "en": "The Bowdler Attack: the bishop on c4 runs into ...d6, ...Nf6 and ...e6.", "es": "El Ataque Bowdler: el alfil de c4 choca con ...d6, ...Cf6 y ...e6." },
-  "Nc3 d6 f4": { "en": "The Grand Prix Attack: White plans an attack on the kingside. Develop with ...Nf6, ...g6 or ...e6, and strike in the centre.", "es": "El Ataque Grand Prix: las blancas planean un ataque en el flanco de rey. Desarrolla con ...Cf6, ...g6 o ...e6, y golpea en el centro." },
-  "d4 cxd4 c3 e5": { "en": "Against the Morra, declining with ...e5 is a simple practical answer: the centre stays closed and White's lead in development matters less. (The Morra tree shows how to accept.)", "es": "Contra el Morra, rehusar con ...e5 es una respuesta práctica sencilla: el centro queda cerrado y el desarrollo blanco importa menos. (El árbol del Morra muestra cómo aceptarlo.)" },
-  "d4 cxd4 Qxd4": { "en": "The queen comes out early; ...Nc6 or ...d6 and ...Nc6 will gain time on it.", "es": "La dama sale pronto; ...Cc6 o ...d6 y ...Cc6 ganarán tiempo sobre ella." }
+ "": {
+  "en": "Your Sicilian repertoire against everything White plays after 1.e4 c5, built around the Najdorf: ...d6, ...cxd4, ...Nf6 and ...a6. (The Alapin 2.c3 and the Morra Gambit have their own trees below.)",
+  "es": "Tu repertorio de la Siciliana contra todo lo que juegan las blancas tras 1.e4 c5, construido alrededor de la Najdorf: ...d6, ...cxd4, ...Cf6 y ...a6. (La Alapin 2.c3 y el Gambito Morra tienen sus propios árboles más abajo.)"
+ },
+ "Nf3 d6 d4 cxd4": {
+  "en": "The Open Sicilian: Black trades a wing pawn for White's centre pawn and gets the half-open c-file.",
+  "es": "La Siciliana abierta: las negras cambian un peón de flanco por el peón central blanco y consiguen la columna c semiabierta."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4 Nf6": {
+  "en": "Attacking e4 forces Nc3 before White can play c4.",
+  "es": "Atacar e4 obliga a Cc3 antes de que las blancas puedan jugar c4."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6": {
+  "en": "The Najdorf: ...a6 keeps the knights and bishop out of b5 and prepares ...e5 or ...e6 and ...b5.",
+  "es": "La Najdorf: ...a6 mantiene caballos y alfil fuera de b5 y prepara ...e5 o ...e6 y ...b5."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be3 e5": {
+  "en": "...e5 kicks the knight and grabs space; d5 becomes the key square for both sides.",
+  "es": "...e5 echa al caballo y gana espacio; d5 se convierte en la casilla clave para ambos bandos."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be3 e5 Nb3 Be6": {
+  "en": "...Be6 fights for d5. Next: ...Be7, ...O-O, ...Nbd7 and ...b5.",
+  "es": "...Ae6 lucha por d5. Después: ...Ae7, ...O-O, ...Cbd7 y ...b5."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be3 e5 Nf5 d5": {
+  "en": "Nf5? looks active but ...d5! hits back in the centre with a great game for Black.",
+  "es": "Cf5? parece activa pero ...¡d5! contraataca en el centro con muy buen juego negro."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Bg5 Nbd7": {
+  "en": "Against 6.Bg5, ...Nbd7 keeps the knight protected and avoids doubled pawns.",
+  "es": "Contra 6.Ag5, ...Cbd7 mantiene el caballo protegido y evita peones doblados."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Bc4 e6": {
+  "en": "Against the Bc4 bishop, ...e6 blunts it; ...b5 and ...Be7 follow.",
+  "es": "Contra el alfil de c4, ...e6 lo neutraliza; siguen ...b5 y ...Ae7."
+ },
+ "Nf3 d6 d4 cxd4 Qxd4": {
+  "en": "Taking with the queen exposes it: ...Nf6 and ...Nc6 will gain time on it.",
+  "es": "Tomar con la dama la expone: ...Cf6 y ...Cc6 ganarán tiempo sobre ella."
+ },
+ "Nf3 d6 Bc4 Nf6 O-O Nxe4": {
+  "en": "White left e4 unprotected: ...Nxe4 wins a pawn.",
+  "es": "Las blancas dejaron e4 sin protección: ...Cxe4 gana un peón."
+ },
+ "Nf3 d6 Bc4 Nf6 Ng5 e6": {
+  "en": "Ng5 aims at f7, but ...e6 closes the diagonal and the knight is misplaced.",
+  "es": "Cg5 apunta a f7, pero ...e6 cierra la diagonal y el caballo queda mal situado."
+ },
+ "Bc4": {
+  "en": "The Bowdler Attack: the bishop on c4 runs into ...d6, ...Nf6 and ...e6.",
+  "es": "El Ataque Bowdler: el alfil de c4 choca con ...d6, ...Cf6 y ...e6."
+ },
+ "Nc3 d6 f4": {
+  "en": "The Grand Prix Attack: White plans an attack on the kingside. Develop with ...Nf6, ...g6 or ...e6, and strike in the centre.",
+  "es": "El Ataque Grand Prix: las blancas planean un ataque en el flanco de rey. Desarrolla con ...Cf6, ...g6 o ...e6, y golpea en el centro."
+ },
+ "d4 cxd4 c3 e5": {
+  "en": "Against the Morra, declining with ...e5 is a simple practical answer: the centre stays closed and White's lead in development matters less. (The Morra tree shows how to accept.)",
+  "es": "Contra el Morra, rehusar con ...e5 es una respuesta práctica sencilla: el centro queda cerrado y el desarrollo blanco importa menos. (El árbol del Morra muestra cómo aceptarlo.)"
+ },
+ "d4 cxd4 Qxd4": {
+  "en": "The queen comes out early; ...Nc6 or ...d6 and ...Nc6 will gain time on it.",
+  "es": "La dama sale pronto; ...Cc6 o ...d6 y ...Cc6 ganarán tiempo sobre ella."
+ },
+ "Nf3": {
+  "en": "...d6: the Najdorf route.",
+  "es": "...d6: el camino de la Najdorf."
+ },
+ "Nf3 d6 d4": {
+  "en": "...cxd4: open the c-file.",
+  "es": "...cxd4: abre la columna c."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4": {
+  "en": "...Nf6 hits e4.",
+  "es": "...Cf6 ataca e4."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3": {
+  "en": "...a6: the Najdorf.",
+  "es": "...a6: la Najdorf."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Bg5": {
+  "en": "...Nbd7 (or ...e6): see the Bg5 line.",
+  "es": "...Cbd7 (o ...e6): ver la línea de Ag5."
+ },
+ "Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6 Be3": {
+  "en": "...e5 and ...Be6: see the English Attack line.",
+  "es": "...e5 y ...Ae6: ver la línea del Ataque Inglés."
+ },
+ "Nf3 d6 Bc4": {
+  "en": "...Nf6 hits e4; ...e6 blunts the bishop.",
+  "es": "...Cf6 ataca e4; ...e6 neutraliza al alfil."
+ },
+ "Nf3 d6 Bc4 Nf6 d3 a6": {
+  "en": "...b5 and ...Bb7, ...e6. Equal.",
+  "es": "...b5 y ...Ab7, ...e6. Igualdad."
+ },
+ "Nf3 d6 Bc4 Nf6 Nc3 a6": {
+  "en": "If d4, ...cxd4 and an Open Sicilian. Equal.",
+  "es": "Si d4, ...cxd4 y una Siciliana Abierta. Igualdad."
+ },
+ "d4 cxd4 c3": {
+  "en": "...e5 (or ...dxc3): see the Morra trees.",
+  "es": "...e5 (o ...dxc3): ver los árboles de la Morra."
+ },
+ "d4 cxd4 c3 e5 cxd4 Nf6": {
+  "en": "If dxe5, ...Bb4+ and ...Nxe4. Equal.",
+  "es": "Si dxe5, ...Ab4+ y ...Cxe4. Igualdad."
+ },
+ "d4 cxd4 Qxd4 d6": {
+  "en": "...Nf6 and ...Nc6 or ...g6. Equal.",
+  "es": "...Cf6 y ...Cc6 o ...g6. Igualdad."
+ }
 }
