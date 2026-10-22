@@ -26,5 +26,81 @@
  "e6 f4 Nc6 Nf3 Nge7 Bc4 Ng6": {
   "en": "f5! hits the g6-knight and the e6-pawn and opens lines against Black's king.",
   "es": "¡f5! ataca el caballo de g6 y el peón de e6 y abre líneas contra el rey negro."
+ },
+ "Nc6": {
+  "en": "f4: the Grand Prix.",
+  "es": "f4: el Grand Prix."
+ },
+ "Nc6 f4 e6": {
+  "en": "Nf3, then Bb5 (to double Black's pawns) or Bc4.",
+  "es": "Cf3, y después Ab5 (para doblar los peones negros) o Ac4."
+ },
+ "Nc6 f4 e6 Nf3 d5": {
+  "en": "Bb5: pin and pressure; e5 or d3 next.",
+  "es": "Ab5: clava y presiona; después e5 o d3."
+ },
+ "Nc6 f4 g6": {
+  "en": "Nf3 and Bc4 or Bb5.",
+  "es": "Cf3 y Ac4 o Ab5."
+ },
+ "Nc6 f4 g6 Nf3 Bg7": {
+  "en": "Bc4 (or Bb5): O-O, d3 and Qe1–h4.",
+  "es": "Ac4 (o Ab5): O-O, d3 y De1–h4."
+ },
+ "Nc6 f4 g6 Nf3 Bg7 Bc4 e6": {
+  "en": "Bb5 (or f5!?): the bishop moves again because ...e6 blunted it. Slightly better for Black objectively.",
+  "es": "Ab5 (o ¡?f5): el alfil vuelve a moverse porque ...e6 lo neutralizó. Objetivamente algo mejor para las negras."
+ },
+ "Nc6 f4 g6 Nf3 Bg7 Bc4 e6 Bb5": {
+  "en": "After ...Nd4 O-O: d3 and Qe1. Black is slightly better, but White has attacking chances.",
+  "es": "Tras ...Cd4 O-O: d3 y De1. Las negras algo mejor, pero las blancas tienen opciones de ataque."
+ },
+ "Nc6 f4 g6 Nf3 Bg7 Bc4 d6 Bb5": {
+  "en": "Bxc6+ and d3, Qe1: White doubles the pawns. Slightly better for Black.",
+  "es": "Axc6+ y d3, De1: las blancas doblan los peones. Algo mejor para las negras."
+ },
+ "Nc6 f4 d6": {
+  "en": "Nf3, then Bc4 or Bb5.",
+  "es": "Cf3, y después Ac4 o Ab5."
+ },
+ "Nc6 f4 d6 Nf3 g6 Bc4 Bg7 Bb5": {
+  "en": "O-O, Bxc6 and d3, Qe1: the usual plan. Slightly better for Black.",
+  "es": "O-O, Axc6 y d3, De1: el plan habitual. Algo mejor para las negras."
+ },
+ "d6": {
+  "en": "f4: the Grand Prix setup.",
+  "es": "f4: el esquema Grand Prix."
+ },
+ "d6 f4 Nc6": {
+  "en": "Nf3, then Bb5 or Bc4.",
+  "es": "Cf3, y después Ab5 o Ac4."
+ },
+ "d6 f4 Nf6": {
+  "en": "Nf3, then e5 ideas or Bb5+.",
+  "es": "Cf3, y después ideas de e5 o Ab5+."
+ },
+ "e6": {
+  "en": "f4: the same setup.",
+  "es": "f4: el mismo esquema."
+ },
+ "e6 f4 d5": {
+  "en": "Nf3: if ...d4, Bb5+ and Ne2.",
+  "es": "Cf3: si ...d4, Ab5+ y Ce2."
+ },
+ "e6 f4 d5 Nf3 d4 Bb5+": {
+  "en": "After ...Nd7 Ne2: Ng3 and d3. Equal.",
+  "es": "Tras ...Cd7 Ce2: Cg3 y d3. Igualdad."
+ },
+ "e6 f4 Nc6": {
+  "en": "Nf3, then Bb5 or Bc4.",
+  "es": "Cf3, y después Ab5 o Ac4."
+ },
+ "e6 f4 a6": {
+  "en": "Nf3, then g3 or d4.",
+  "es": "Cf3, y después g3 o d4."
+ },
+ "g6 f4 Bg7": {
+  "en": "Nf3 and Bc4: if ...e6, e5!",
+  "es": "Cf3 y Ac4: si ...e6, ¡e5!"
  }
 }

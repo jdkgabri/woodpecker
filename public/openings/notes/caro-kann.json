@@ -34,5 +34,81 @@
  "Nf3 d5": {
   "en": "Against the Two Knights setups, the same ...d5 and ...Bf5 or ...Bg4 ideas work.",
   "es": "Contra los esquemas con Cf3, funcionan las mismas ideas: ...d5 y ...Af5 o ...Ag4."
+ },
+ "d4": {
+  "en": "...d5: the Caro-Kann.",
+  "es": "...d5: la Caro-Kann."
+ },
+ "d4 d5 e5": {
+  "en": "...Bf5: the bishop comes out before ...e6.",
+  "es": "...Af5: el alfil sale antes de ...e6."
+ },
+ "d4 d5 e5 Bf5 Nf3": {
+  "en": "...e6, then ...c5 or ...Nd7 and ...Ne7.",
+  "es": "...e6, y después ...c5 o ...Cd7 y ...Ce7."
+ },
+ "d4 d5 e5 Bf5 Bd3": {
+  "en": "...Bxd3: trade the bishops.",
+  "es": "...Axd3: cambia los alfiles."
+ },
+ "d4 d5 exd5": {
+  "en": "...cxd5: the Exchange.",
+  "es": "...cxd5: el Cambio."
+ },
+ "d4 d5 exd5 cxd5 Bd3 e6": {
+  "en": "...Nc6, ...Bd6 and ...Nge7 (or ...Nf6). Slightly better for White.",
+  "es": "...Cc6, ...Ad6 y ...Cge7 (o ...Cf6). Algo mejor para las blancas."
+ },
+ "d4 d5 Nc3": {
+  "en": "...dxe4: then ...Bf5.",
+  "es": "...dxe4: después ...Af5."
+ },
+ "d4 d5 Nc3 dxe4 Nxe4": {
+  "en": "...Bf5: the Classical.",
+  "es": "...Af5: la Clásica."
+ },
+ "d4 d5 Nc3 dxe4 Nxe4 Bf5 Ng3": {
+  "en": "...Bg6, ...Nd7 and ...Ngf6.",
+  "es": "...Ag6, ...Cd7 y ...Cgf6."
+ },
+ "Nf3": {
+  "en": "...d5 (or ...Bg4 ideas later).",
+  "es": "...d5 (o ideas de ...Ag4 más tarde)."
+ },
+ "Nf3 d5 exd5": {
+  "en": "...cxd5, then ...Bf5 or ...Bg4.",
+  "es": "...cxd5, y después ...Af5 o ...Ag4."
+ },
+ "Nf3 d5 exd5 cxd5 d4": {
+  "en": "...Bf5 (or ...Nc6): the Exchange structure.",
+  "es": "...Af5 (o ...Cc6): la estructura del Cambio."
+ },
+ "Nf3 d5 exd5 cxd5 d4 Bf5 Bd3 Bxd3 Qxd3 e6 O-O Nd7": {
+  "en": "...Ngf6, ...Be7 and ...O-O. Slightly better for White.",
+  "es": "...Cgf6, ...Ae7 y ...O-O. Algo mejor para las blancas."
+ },
+ "Nf3 d5 e5": {
+  "en": "...Bf5, ...e6 and ...c5.",
+  "es": "...Af5, ...e6 y ...c5."
+ },
+ "Nf3 d5 e5 Bf5 d4": {
+  "en": "...e6: an Advance Caro-Kann. Equal.",
+  "es": "...e6: una Caro-Kann del Avance. Igualdad."
+ },
+ "Nf3 d5 Nc3 dxe4 Nxe4 Bf5 Ng3 Bg4": {
+  "en": "...Nf6, ...e6 and ...Nbd7. Slightly better for White.",
+  "es": "...Cf6, ...e6 y ...Cbd7. Algo mejor para las blancas."
+ },
+ "Bc4": {
+  "en": "...d5! hits the bishop.",
+  "es": "¡...d5! ataca al alfil."
+ },
+ "Bc4 d5 exd5": {
+  "en": "...cxd5: Black gets the centre.",
+  "es": "...cxd5: las negras se quedan con el centro."
+ },
+ "Bc4 d5 exd5 cxd5 Bb3": {
+  "en": "...Bf5 (or ...Nc6) and ...e6. Black is comfortable.",
+  "es": "...Af5 (o ...Cc6) y ...e6. Las negras están cómodas."
  }
 }
