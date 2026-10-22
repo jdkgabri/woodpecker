@@ -26,5 +26,85 @@
  "": {
   "en": "The Four Knights: White develops calmly. ...Nf6 makes it symmetrical; then ...Bb4 or ...Bc5 and quick castling.",
   "es": "Los Cuatro Caballos: las blancas desarrollan con calma. ...Cf6 lo hace simétrico; después ...Ab4 o ...Ac5 y enroque rápido."
+ },
+ "Nf6 Bc4": {
+  "en": "...Bc5 (or the sharp ...Nxe4 fork trick).",
+  "es": "...Ac5 (o el agudo truco de la horquilla ...Cxe4)."
+ },
+ "Nf6 Bc4 Bc5 d3": {
+  "en": "...d6 and ...O-O is simplest (...Bb4 also possible).",
+  "es": "...d6 y ...O-O es lo más sencillo (...Ab4 también es posible)."
+ },
+ "Nf6 Bc4 Bc5 d3 Bb4": {
+  "en": "...Bb4 spends a second tempo on the bishop: after O-O Bxc3 bxc3 d6, White has the bishop pair. Slightly better for White.",
+  "es": "...Ab4 gasta un segundo tiempo con el alfil: tras O-O Axc3 bxc3 d6, las blancas tienen la pareja de alfiles. Algo mejor para las blancas."
+ },
+ "Nf6 Bc4 Bc5 O-O": {
+  "en": "Castle; ...d6 and ...a6 or ...Be6.",
+  "es": "Enroca; ...d6 y ...a6 o ...Ae6."
+ },
+ "Nf6 Bc4 Bc5 O-O O-O d3": {
+  "en": "...d6, then ...Bg4 or ...Be6. Equal.",
+  "es": "...d6, y después ...Ag4 o ...Ae6. Igualdad."
+ },
+ "Nf6 d4": {
+  "en": "...Bb4 (or ...exd4): pin and hit e4.",
+  "es": "...Ab4 (o ...exd4): clava y ataca e4."
+ },
+ "Nf6 d4 Bb4 dxe5": {
+  "en": "...Nxe4: the knight is strong.",
+  "es": "...Cxe4: el caballo es fuerte."
+ },
+ "Nf6 d4 Bb4 dxe5 Nxe4 Bd2": {
+  "en": "...Bxc3 and ...Nxc3: White's pawns get doubled.",
+  "es": "...Axc3 y ...Cxc3: los peones blancos quedan doblados."
+ },
+ "Nf6 d4 Bb4 dxe5 Nxe4 Bd2 Bxc3": {
+  "en": "After Bxc3 Nxc3 bxc3 Qe7: e5 will fall. Black is better.",
+  "es": "Tras Axc3 Cxc3 bxc3 De7: e5 caerá. Las negras están mejor."
+ },
+ "Nf6 d4 Bb4 d5": {
+  "en": "...Ne7: the knight reroutes to g6.",
+  "es": "...Ce7: el caballo se recoloca hacia g6."
+ },
+ "Nf6 d4 Bb4 d5 Ne7": {
+  "en": "If Qd3 O-O Bg5, ...Bxc3+ and ...Nxe4. Equal.",
+  "es": "Si Dd3 O-O Ag5, ...Axc3+ y ...Cxe4. Igualdad."
+ },
+ "Nf6 d4 Bb4 Bd2": {
+  "en": "...exd4: Black is better.",
+  "es": "...exd4: las negras están mejor."
+ },
+ "Nf6 Bb5": {
+  "en": "The Spanish Four Knights: ...Bb4 (or ...Nd4).",
+  "es": "Los Cuatro Caballos Españoles: ...Ab4 (o ...Cd4)."
+ },
+ "Nf6 Bb5 Bb4 Bxc6": {
+  "en": "...dxc6: open lines for the bishops.",
+  "es": "...dxc6: líneas abiertas para los alfiles."
+ },
+ "Nf6 Bb5 Bb4 Bxc6 dxc6 Nxe5 Bxc3": {
+  "en": "After dxc3 Qxd1+ Kxd1 Nxe4: an equal endgame.",
+  "es": "Tras dxc3 Dxd1+ Rxd1 Cxe4: un final igualado."
+ },
+ "Nf6 Bb5 Bb4 Bxc6 dxc6 d3 Bc5": {
+  "en": "...Nd7 and ...O-O: the bishop pair. Equal.",
+  "es": "...Cd7 y ...O-O: la pareja de alfiles. Igualdad."
+ },
+ "Nf6 Bb5 Bb4 d3": {
+  "en": "Castle and ...d6: symmetrical. Equal.",
+  "es": "Enroca y ...d6: simétrico. Igualdad."
+ },
+ "Nf6 Bb5 Bb4 d3 O-O O-O d6": {
+  "en": "...Ne7 and ...Ng6 or ...Bxc3. Equal.",
+  "es": "...Ce7 y ...Cg6 o ...Axc3. Igualdad."
+ },
+ "Nf6 Bb5 Bb4 O-O": {
+  "en": "Castle; ...d6 and ...Bxc3. Equal.",
+  "es": "Enroca; ...d6 y ...Axc3. Igualdad."
+ },
+ "Nf6 d3 Bb4 Bd2": {
+  "en": "Castle and ...d6 or ...d5. Equal.",
+  "es": "Enroca y ...d6 o ...d5. Igualdad."
  }
 }

@@ -54,5 +54,81 @@
  "Bc4 Nf6 Nc3 e5 Nf3 Be7 d4 Nbd7 Bxf7+": {
   "en": "Bxf7+? Kxf7 Ng5+ Kg8! keeps the extra piece: White's knight raids (Ne6, Nxc7) only lead into Black's counterattack.",
   "es": "Axf7+? Rxf7 Cg5+ ¡Rg8! conserva la pieza de más: las incursiones del caballo blanco (Ce6, Cxc7) solo llevan al contraataque negro."
+ },
+ "d4": {
+  "en": "...Nf6: hit e4.",
+  "es": "...Cf6: ataca e4."
+ },
+ "d4 Nf6 Nc3": {
+  "en": "...Nbd7: the Lion.",
+  "es": "...Cbd7: el León."
+ },
+ "d4 Nf6 Nc3 Nbd7 Nf3": {
+  "en": "...e5: claim the centre.",
+  "es": "...e5: reclama el centro."
+ },
+ "d4 Nf6 Nc3 Nbd7 Nf3 e5 dxe5": {
+  "en": "...dxe5: a balanced structure.",
+  "es": "...dxe5: una estructura equilibrada."
+ },
+ "d4 Nf6 Nc3 Nbd7 f4": {
+  "en": "...e5: hit back at once.",
+  "es": "...e5: contraataca de inmediato."
+ },
+ "d4 Nf6 Nc3 Nbd7 f4 e5 Nf3 h6": {
+  "en": "...h6 is slow: Be3, Qd2 and O-O-O give White a strong position. ...exd4 or ...Be7 were better.",
+  "es": "...h6 es lenta: Ae3, Dd2 y O-O-O dan a las blancas una posición fuerte. ...exd4 o ...Ae7 eran mejores."
+ },
+ "d4 Nf6 Nc3 Nbd7 f4 e5 fxe5 dxe5": {
+  "en": "After dxe5 Nxe5 Qxd8+ Kxd8: an equal endgame.",
+  "es": "Tras dxe5 Cxe5 Dxd8+ Rxd8: un final igualado."
+ },
+ "d4 Nf6 Bd3": {
+  "en": "...Nbd7 and ...e5.",
+  "es": "...Cbd7 y ...e5."
+ },
+ "d4 Nf6 Bd3 Nbd7 Nf3 e5": {
+  "en": "...Be7, ...O-O and ...c6. Slightly better for White.",
+  "es": "...Ae7, ...O-O y ...c6. Algo mejor para las blancas."
+ },
+ "d4 Nf6 Bd3 Nbd7 f4 e5": {
+  "en": "...exd4 or ...c5 and ...Be7. Slightly better for White.",
+  "es": "...exd4 o ...c5 y ...Ae7. Algo mejor para las blancas."
+ },
+ "Nf3": {
+  "en": "...Nf6: hit e4.",
+  "es": "...Cf6: ataca e4."
+ },
+ "Nf3 Nf6 Nc3": {
+  "en": "...Nbd7.",
+  "es": "...Cbd7."
+ },
+ "Nf3 Nf6 Nc3 Nbd7 d4": {
+  "en": "...e5: the Lion structure.",
+  "es": "...e5: la estructura del León."
+ },
+ "Nf3 Nf6 Nc3 Nbd7 d4 e5 dxe5": {
+  "en": "...dxe5: then ...Be7, ...c6 and ...O-O.",
+  "es": "...dxe5: después ...Ae7, ...c6 y ...O-O."
+ },
+ "Nf3 Nf6 Nc3 Nbd7 Bc4": {
+  "en": "...e5 (or ...e6): watch Ng5 against f7.",
+  "es": "...e5 (o ...e6): vigila Cg5 contra f7."
+ },
+ "Nf3 Nf6 Nc3 Nbd7 Bc4 e5": {
+  "en": "If Ng5, ...d5 (or ...Be7): White is slightly better. ...e6 is a safer move order.",
+  "es": "Si Cg5, ...d5 (o ...Ae7): las blancas algo mejor. ...e6 es un orden de jugadas más seguro."
+ },
+ "Nf3 Nf6 d3 Nbd7": {
+  "en": "...e5 or ...g6: flexible. Equal.",
+  "es": "...e5 o ...g6: flexible. Igualdad."
+ },
+ "Nf3 Nf6 Bc4": {
+  "en": "...Nxe4! wins a pawn.",
+  "es": "¡...Cxe4! gana un peón."
+ },
+ "Bc4 Nf6 d3 Nbd7": {
+  "en": "...e5 or ...e6 and ...Be7. Equal.",
+  "es": "...e5 o ...e6 y ...Ae7. Igualdad."
  }
 }
