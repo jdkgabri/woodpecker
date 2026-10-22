@@ -62,5 +62,101 @@
  "d5 exd5 Na5": {
   "en": "...Na5 gives up a pawn for the bishop pair, but after O-O White is comfortably better.",
   "es": "...Ca5 entrega un peón a cambio de la pareja de alfiles, pero tras O-O las blancas están cómodamente mejor."
+ },
+ "Bc5": {
+  "en": "Castle first, then Re1 and c3.",
+  "es": "Enroca primero, y después Te1 y c3."
+ },
+ "Bc5 O-O O-O": {
+  "en": "Re1: the rook supports e4 and watches the e-file.",
+  "es": "Te1: la torre apoya e4 y vigila la columna e."
+ },
+ "Bc5 O-O O-O Re1 d6": {
+  "en": "c3, then a4 or Bb5, h3 and Nbd2–f1–g3: the Pianissimo plan.",
+  "es": "c3, y después a4 o Ab5, h3 y Cbd2–f1–g3: el plan Pianissimo."
+ },
+ "Bc5 O-O O-O Re1 h6": {
+  "en": "c3 and d4 (or a4): gain time on the c5-bishop.",
+  "es": "c3 y d4 (o a4): gana tiempo sobre el alfil de c5."
+ },
+ "Bc5 O-O O-O Re1 h6 c3 d6 a4": {
+  "en": "a4 makes room for the bishop on a2. After ...a5 h3 Be6: equal.",
+  "es": "a4 hace sitio al alfil en a2. Tras ...a5 h3 Ae6: igualdad."
+ },
+ "Bc5 O-O d6": {
+  "en": "Re1 and c3.",
+  "es": "Te1 y c3."
+ },
+ "Bc5 O-O d6 Re1 Bg4": {
+  "en": "c3, then Bb5 or h3: break the pin.",
+  "es": "c3, y después Ab5 o h3: rompe la clavada."
+ },
+ "Bc5 O-O d6 Re1 Bg4 c3 O-O Bb5": {
+  "en": "h3 and Nbd2: White keeps a slight edge. Equal.",
+  "es": "h3 y Cbd2: las blancas mantienen una ligera ventaja. Igualdad."
+ },
+ "Bc5 O-O d6 Re1 O-O c3": {
+  "en": "...Bb6 or ...a6: a slow manoeuvring game. Equal.",
+  "es": "...Ab6 o ...a6: una partida lenta de maniobras. Igualdad."
+ },
+ "Bc5 O-O d6 Re1 h6 c3": {
+  "en": "b4 and a4 gain queenside space. Equal.",
+  "es": "b4 y a4 ganan espacio en el flanco de dama. Igualdad."
+ },
+ "Bc5 O-O h6": {
+  "en": "Re1 and c3.",
+  "es": "Te1 y c3."
+ },
+ "Bc5 O-O h6 Re1 O-O": {
+  "en": "c3 and d4 or a4.",
+  "es": "c3 y d4 o a4."
+ },
+ "Bc5 O-O h6 Re1 O-O c3 d6 a4": {
+  "en": "After ...a5 h3 Be6 Nbd2: equal.",
+  "es": "Tras ...a5 h3 Ae6 Cbd2: igualdad."
+ },
+ "Bc5 O-O h6 Re1 d6": {
+  "en": "c3 and a4.",
+  "es": "c3 y a4."
+ },
+ "h6": {
+  "en": "...h6 stops Bg5 and Ng5. Castle.",
+  "es": "...h6 impide Ag5 y Cg5. Enroca."
+ },
+ "h6 O-O Bc5": {
+  "en": "Re1, c3 and a4: the usual setup.",
+  "es": "Te1, c3 y a4: el esquema habitual."
+ },
+ "h6 O-O Bc5 Re1 O-O c3 d6 a4": {
+  "en": "Equal: a long manoeuvring battle.",
+  "es": "Igualdad: una larga batalla de maniobras."
+ },
+ "h6 O-O d5": {
+  "en": "exd5 Nxd5 and Re1 (or Qe1): e5 is weak. White is better.",
+  "es": "exd5 Cxd5 y Te1 (o De1): e5 está débil. Las blancas están mejor."
+ },
+ "Be7": {
+  "en": "Castle; Re1, c3 and a4.",
+  "es": "Enroca; Te1, c3 y a4."
+ },
+ "Be7 O-O O-O": {
+  "en": "Re1.",
+  "es": "Te1."
+ },
+ "Be7 O-O O-O Re1 d6": {
+  "en": "c3 and Bb5 or a4.",
+  "es": "c3 y Ab5 o a4."
+ },
+ "Be7 O-O O-O Re1 d6 c3 Bg4 Bb5": {
+  "en": "After ...a6 Ba4: Nbd2, h3 and Bc2. Slightly better for White.",
+  "es": "Tras ...a6 Aa4: Cbd2, h3 y Ac2. Algo mejor para las blancas."
+ },
+ "d5": {
+  "en": "exd5: take.",
+  "es": "exd5: toma."
+ },
+ "d5 exd5 Nxd5": {
+  "en": "Castle and Re1: pressure on e5.",
+  "es": "Enroca y Te1: presión sobre e5."
  }
 }

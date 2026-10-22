@@ -50,5 +50,101 @@
  "d6": {
   "en": "...d6 holds e5 but is passive; Nc3 develops and keeps the pressure.",
   "es": "...d6 sostiene e5 pero es pasiva; Cc3 desarrolla y mantiene la presión."
+ },
+ "exd4": {
+  "en": "Nxd4: recapture and centralise.",
+  "es": "Cxd4: recaptura y centraliza."
+ },
+ "exd4 Nxd4 Nxd4": {
+  "en": "Qxd4: the queen is strong in the centre.",
+  "es": "Dxd4: la dama es fuerte en el centro."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 d6": {
+  "en": "Nc3, Bc4 (or Be3) and O-O: White has a free, comfortable game.",
+  "es": "Cc3, Ac4 (o Ae3) y O-O: las blancas tienen un juego libre y cómodo."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 d6 Nc3 Nf6": {
+  "en": "Bc4 (or Bg5) and O-O.",
+  "es": "Ac4 (o Ag5) y O-O."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 d6 Nc3 Nf6 Bc4 Be7 O-O O-O Bd3": {
+  "en": "f4 and a4: more space. Slightly better for White.",
+  "es": "f4 y a4: más espacio. Algo mejor para las blancas."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 Nf6": {
+  "en": "e5! kicks the knight: it has no good square.",
+  "es": "¡e5! echa al caballo: no tiene buena casilla."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 Nf6 e5 Qe7": {
+  "en": "Be3 (or Nc3, Bf4): the knight goes back to g8. White is clearly better.",
+  "es": "Ae3 (o Cc3, Af4): el caballo vuelve a g8. Las blancas están claramente mejor."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 Nf6 e5 Qe7 Be3": {
+  "en": "Nc3 and O-O-O: White is far ahead. Winning edge.",
+  "es": "Cc3 y O-O-O: las blancas van muy por delante. Ventaja decisiva."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 c5": {
+  "en": "Qe3 (or Qe5+): d5 and d6 are weak. White is clearly better.",
+  "es": "De3 (o De5+): d5 y d6 están débiles. Las blancas están claramente mejor."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 c5 Qe5+ Qe7 Qxe7+ Bxe7 Nc3": {
+  "en": "Bc4, Nd5 and Bf4: the d6-square and d-pawn are weak. White is clearly better.",
+  "es": "Ac4, Cd5 y Af4: la casilla d6 y el peón d están débiles. Las blancas están claramente mejor."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 Qf6": {
+  "en": "e5 gains time.",
+  "es": "e5 gana tiempo."
+ },
+ "exd4 Nxd4 Nxd4 Qxd4 Qf6 e5 Qb6 Qxb6 axb6 Nc3": {
+  "en": "Bf4 and O-O-O: a slightly better endgame for White.",
+  "es": "Af4 y O-O-O: un final algo mejor para las blancas."
+ },
+ "exd4 Nxd4 Bc5 Nxc6 bxc6": {
+  "en": "Nc3 (or Bd3) and O-O.",
+  "es": "Cc3 (o Ad3) y O-O."
+ },
+ "exd4 Nxd4 Bc5 Nxc6 bxc6 Nc3 d6 Bd3": {
+  "en": "If ...Qh4, Qe2: castle next. Slightly better for White.",
+  "es": "Si ...Dh4, De2: después enroque. Algo mejor para las blancas."
+ },
+ "exd4 Nxd4 Bc5 Nxc6 Qf6": {
+  "en": "Qf3: cover f2.",
+  "es": "Df3: cubre f2."
+ },
+ "exd4 Nxd4 Bc5 Nxc6 Qf6 Qf3 Qxc6 Nc3": {
+  "en": "After ...Nf6 e5! Qxf3 gxf3: the knight is chased. White is better.",
+  "es": "Tras ...Cf6 ¡e5! Dxf3 gxf3: el caballo es perseguido. Las blancas están mejor."
+ },
+ "exd4 Nxd4 Bc5 Nxc6 Qf6 Qf3 dxc6 Nc3": {
+  "en": "Be3 and O-O-O: slightly better for White.",
+  "es": "Ae3 y O-O-O: algo mejor para las blancas."
+ },
+ "exd4 Nxd4 Nf6": {
+  "en": "Nxc6 and e5: the Mieses.",
+  "es": "Cxc6 y e5: la Mieses."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6": {
+  "en": "e5 kicks the knight.",
+  "es": "e5 echa al caballo."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Nd5": {
+  "en": "Nc3 (or c4): trade or chase the knight.",
+  "es": "Cc3 (o c4): cambia o persigue al caballo."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Nd5 Nc3": {
+  "en": "After ...Nxc3 bxc3: Bd3, O-O and Qf3. Equal-ish.",
+  "es": "Tras ...Cxc3 bxc3: Ad3, O-O y Df3. Más o menos igualdad."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7": {
+  "en": "Qe2: the main line.",
+  "es": "De2: la línea principal."
+ },
+ "exd4 Nxd4 Nf6 Nxc6 bxc6 e5 Qe7 Qe2 Nd5 c4 Ba6 b3": {
+  "en": "If ...g6, f4 and Qf2 or Bb2. Equal and sharp.",
+  "es": "Si ...g6, f4 y Df2 o Ab2. Igualado y agudo."
+ },
+ "exd4 Nxd4 Qf6 Nxc6 Qxc6 Nc3 Bb4 Bd3": {
+  "en": "Castle, Re1 and a4: White develops fast. Slightly better.",
+  "es": "Enroque, Te1 y a4: las blancas desarrollan rápido. Algo mejor."
  }
 }
