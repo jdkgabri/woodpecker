@@ -26,5 +26,89 @@
  "Nc3 Nf6 Nf3 dxc4 e4": {
   "en": "e4 grabs the centre but allows ...b5, holding the c4-pawn.",
   "es": "e4 ocupa el centro pero permite ...b5, sosteniendo el peón de c4."
+ },
+ "Nc3": {
+  "en": "...Nf6: develop and wait for Nf3 before ...dxc4.",
+  "es": "...Cf6: desarrolla y espera a Cf3 antes de ...dxc4."
+ },
+ "Nc3 Nf6 Nf3": {
+  "en": "...dxc4: now it is the right moment.",
+  "es": "...dxc4: ahora es el momento justo."
+ },
+ "Nc3 Nf6 Nf3 dxc4 a4": {
+  "en": "...Bf5: develop the bishop outside the chain.",
+  "es": "...Af5: desarrolla el alfil fuera de la cadena."
+ },
+ "Nc3 Nf6 Nf3 dxc4 a4 Bf5 e3": {
+  "en": "...e6, then ...Bb4 and ...O-O.",
+  "es": "...e6, y después ...Ab4 y ...O-O."
+ },
+ "Nc3 Nf6 Nf3 dxc4 a4 Bf5 e3 e6 Bxc4": {
+  "en": "...Bb4 (the main line) and ...O-O; ...Nbd7 next.",
+  "es": "...Ab4 (la línea principal) y ...O-O; después ...Cbd7."
+ },
+ "Nc3 Nf6 Nf3 dxc4 a4 Bf5 e3 e6 Bxc4 a6": {
+  "en": "Nh4 hits the f5-bishop: ...Bg6 or ...Bg4. White is slightly better; ...Bb4 was more natural.",
+  "es": "Ch4 ataca al alfil de f5: ...Ag6 o ...Ag4. Las blancas algo mejor; ...Ab4 era más natural."
+ },
+ "Nc3 Nf6 Nf3 dxc4 e4 b5 a4 b4": {
+  "en": "After Na2 Nxe4 Bxc4: Black is fine. Equal.",
+  "es": "Tras Ca2 Cxe4 Axc4: las negras están bien. Igualdad."
+ },
+ "Nc3 Nf6 Bg5": {
+  "en": "...dxc4: take and hold with ...b5 if needed.",
+  "es": "...dxc4: toma y sostén con ...b5 si hace falta."
+ },
+ "Nc3 Nf6 Bg5 dxc4 e4 b5": {
+  "en": "...h6 and ...b4: Black keeps the pawn. Black is better.",
+  "es": "...h6 y ...b4: las negras conservan el peón. Las negras están mejor."
+ },
+ "Nc3 Nf6 Bg5 dxc4 e3 b5": {
+  "en": "...Qb6, ...Bb7 and ...e6: the pawn holds. Slightly better for Black.",
+  "es": "...Db6, ...Ab7 y ...e6: el peón aguanta. Algo mejor para las negras."
+ },
+ "Nc3 Nf6 Bg5 dxc4 a4 Bf5": {
+  "en": "...Ne4 trades the g5-bishop. Slightly better for Black.",
+  "es": "...Ce4 cambia el alfil de g5. Algo mejor para las negras."
+ },
+ "Nc3 Nf6 Bg5 dxc4 Bxf6 exf6": {
+  "en": "...Be6, ...Bd6 and ...O-O: the bishop pair and an extra pawn. Black is better.",
+  "es": "...Ae6, ...Ad6 y ...O-O: la pareja de alfiles y un peón de más. Las negras están mejor."
+ },
+ "Nc3 Nf6 e3": {
+  "en": "...Bf5: the bishop comes out first.",
+  "es": "...Af5: primero sale el alfil."
+ },
+ "Nc3 Nf6 e3 Bf5 Nf3 dxc4": {
+  "en": "After Bxc4 e6: ...Nbd7, ...Bd6 and ...O-O. Slightly better for White.",
+  "es": "Tras Axc4 e6: ...Cbd7, ...Ad6 y ...O-O. Algo mejor para las blancas."
+ },
+ "Nc3 Nf6 cxd5": {
+  "en": "...cxd5: the Exchange Slav.",
+  "es": "...cxd5: la Eslava del Cambio."
+ },
+ "Nf3": {
+  "en": "...Nf6, then ...dxc4 after Nc3.",
+  "es": "...Cf6, y después ...dxc4 tras Cc3."
+ },
+ "Nf3 Nf6 Nc3": {
+  "en": "...dxc4.",
+  "es": "...dxc4."
+ },
+ "Nf3 Nf6 Nc3 dxc4 a4": {
+  "en": "...Bf5 and ...e6.",
+  "es": "...Af5 y ...e6."
+ },
+ "Nf3 Nf6 Nc3 dxc4 a4 Bf5 e3 e6 Bxc4 Nbd7": {
+  "en": "...Bb4 and ...O-O: solid. Slightly better for White.",
+  "es": "...Ab4 y ...O-O: sólido. Algo mejor para las blancas."
+ },
+ "cxd5": {
+  "en": "...cxd5: symmetrical and solid.",
+  "es": "...cxd5: simétrico y sólido."
+ },
+ "cxd5 cxd5 Nc3": {
+  "en": "...Nf6 and ...Nc6, ...Bf5. Equal.",
+  "es": "...Cf6 y ...Cc6, ...Af5. Igualdad."
  }
 }

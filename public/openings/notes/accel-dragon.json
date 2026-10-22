@@ -38,5 +38,89 @@
  "Be3 Bg7 Nxc6 bxc6 Nc3 Nf6 Bd3 O-O O-O d6 f4 Ng4 Bd2": {
   "en": "Bd2 opens the g1–a7 diagonal: ...Qb6+ Kh1 Nf2+ wins the exchange.",
   "es": "Ad2 abre la diagonal g1–a7: ...Db6+ Rh1 Cf2+ gana la calidad."
+ },
+ "Nc3": {
+  "en": "...Bg7: the fianchetto first.",
+  "es": "...Ag7: primero el fianchetto."
+ },
+ "Nc3 Bg7 Be3": {
+  "en": "...Nf6: if Bc4, watch the ...Ng4 and ...Qa5 ideas.",
+  "es": "...Cf6: si Ac4, atento a las ideas ...Cg4 y ...Da5."
+ },
+ "Nc3 Bg7 Be3 Nf6 f3": {
+  "en": "Castle, then ...d5 in one move.",
+  "es": "Enroca, y después ...d5 en una sola jugada."
+ },
+ "Nc3 Bg7 Be3 Nf6 f3 O-O Qd2": {
+  "en": "...d5! the point of the Accelerated Dragon.",
+  "es": "¡...d5! la idea de la Dragón Acelerada."
+ },
+ "Nc3 Bg7 Be3 Nf6 Bc4": {
+  "en": "Castle; ...d6 and ...Bd7 or ...Qa5 and ...d5 ideas.",
+  "es": "Enroca; ...d6 y ...Ad7 o ideas de ...Da5 y ...d5."
+ },
+ "Nc3 Bg7 Be3 Nf6 Be2": {
+  "en": "Castle and ...d5! (or ...d6). Equal.",
+  "es": "Enroca y ¡...d5! (o ...d6). Igualdad."
+ },
+ "Nc3 Bg7 Nxc6": {
+  "en": "...bxc6: the b-file opens.",
+  "es": "...bxc6: se abre la columna b."
+ },
+ "Nxc6": {
+  "en": "...bxc6: towards the centre.",
+  "es": "...bxc6: hacia el centro."
+ },
+ "Nxc6 bxc6 Nc3": {
+  "en": "...Bg7, ...Nf6 and ...O-O; ...d5 or ...Rb8.",
+  "es": "...Ag7, ...Cf6 y ...O-O; ...d5 o ...Tb8."
+ },
+ "Nxc6 bxc6 Qd4": {
+  "en": "...Nf6 (hitting nothing yet, but Qxh8 is not a worry: ...f6 covers).",
+  "es": "...Cf6: desarrolla y prepara ...Ag7."
+ },
+ "Nxc6 bxc6 Qd4 Nf6 e5": {
+  "en": "...Nd5: the knight is strong; ...Bg7 next.",
+  "es": "...Cd5: el caballo es fuerte; después ...Ag7."
+ },
+ "Nxc6 bxc6 Qd4 Nf6 e5 Nd5 e6 Nf6 exf7+ Kxf7 Bc4+": {
+  "en": "...d5! blocks and Black's centre is strong; ...e5 and ...Kg7 follow. Black is clearly better.",
+  "es": "¡...d5! tapa y el centro negro es fuerte; siguen ...e5 y ...Rg7. Las negras están claramente mejor."
+ },
+ "Be3": {
+  "en": "...Bg7 (or ...Nf6).",
+  "es": "...Ag7 (o ...Cf6)."
+ },
+ "Be3 Bg7 Nc3": {
+  "en": "...Nf6: back to the main lines.",
+  "es": "...Cf6: de vuelta a las líneas principales."
+ },
+ "Be3 Bg7 c3": {
+  "en": "...Nf6 hits e4: Black is comfortable.",
+  "es": "...Cf6 ataca e4: las negras están cómodas."
+ },
+ "c4 Bg7 Be3": {
+  "en": "The Maróczy Bind: ...Nf6 and ...O-O, then ...d6 and ...Nxd4 with ...Be6 or ...a5.",
+  "es": "El Bloqueo Maróczy: ...Cf6 y ...O-O, y después ...d6 y ...Cxd4 con ...Ae6 o ...a5."
+ },
+ "c4 Bg7 Be3 Nf6 Nc3": {
+  "en": "Castle; ...d6 and the trade on d4 relieve the bind.",
+  "es": "Enroca; ...d6 y el cambio en d4 alivian el bloqueo."
+ },
+ "c4 Bg7 Be3 Nf6 Nc3 O-O Be2": {
+  "en": "...d6, then ...Nxd4 and ...Be6 or ...a5.",
+  "es": "...d6, y después ...Cxd4 y ...Ae6 o ...a5."
+ },
+ "c4 Bg7 Be3 Nf6 Nc3 O-O Be2 d6 O-O": {
+  "en": "...Nxd4 and ...Bd7–c6 or ...a5: trade pieces and hit c4.",
+  "es": "...Cxd4 y ...Ad7–c6 o ...a5: cambia piezas y ataca c4."
+ },
+ "c4 Bg7 Be3 Nf6 Nc3 O-O Be2 d6 O-O Nxd4 Bxd4": {
+  "en": "...a5 (or ...Bd7): stop b4 and plan ...Bc6 and ...Nd7.",
+  "es": "...a5 (o ...Ad7): impide b4 y planea ...Ac6 y ...Cd7."
+ },
+ "c4 Bg7 Be3 Nf6 Nc3 O-O Be2 d6 O-O Nxd4 Bxd4 a5": {
+  "en": "After Qd3 Bd7 b3 Bc6: the dark-squared bishops come off. White has more space; Black is solid.",
+  "es": "Tras Dd3 Ad7 b3 Ac6: salen los alfiles de casillas oscuras. Las blancas tienen más espacio; las negras están sólidas."
  }
 }
