@@ -18,5 +18,117 @@
  "Nxe5 Qe7 Nf3 Qxe4+ Be2 Bc5": {
   "en": "d4! kicks the bishop with tempo.",
   "es": "¡d4! echa al alfil ganando tiempo."
+ },
+ "": {
+  "en": "Against the Petrov, take on e5: Nxe5. Against the solid ...d6 lines, quiet development (Nc3, d4, Bd3) keeps a small edge; against the Stafford Gambit (...Nc6), take the pawn and avoid the traps.",
+  "es": "Contra la Petrov, toma en e5: Cxe5. Contra las sólidas líneas con ...d6, un desarrollo tranquilo (Cc3, d4, Ad3) mantiene una pequeña ventaja; contra el Gambito Stafford (...Cc6), toma el peón y evita las trampas."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6": {
+  "en": "Nc3 (or d3): defend e4 and develop. White is a clean pawn up.",
+  "es": "Cc3 (o d3): defiende e4 y desarrolla. Las blancas tienen un peón limpio de más."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5": {
+  "en": "...Bc5 eyes f2. h3! stops ...Ng4 tricks; then d3, Be3 and Qe2 or Qf3.",
+  "es": "...Ac5 apunta a f2. ¡h3! impide los trucos con ...Cg4; después d3, Ae3 y De2 o Df3."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 h5": {
+  "en": "d3: with h3 and d3, ...Ng4 no longer works (hxg4).",
+  "es": "d3: con h3 y d3, ...Cg4 ya no funciona (hxg4)."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 h5 d3 Be6 g3": {
+  "en": "g3 and Bg2, Qf3 or Be3: White is a pawn up and solid. Clearly better.",
+  "es": "g3 y Ag2, Df3 o Ae3: las blancas tienen un peón de más y están sólidas. Claramente mejor."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 h5 d3 Qd6 Qe2": {
+  "en": "Qe2, Be3 and O-O-O: Black has nothing for the pawn. Clearly better for White.",
+  "es": "De2, Ae3 y O-O-O: las negras no tienen nada por el peón. Claramente mejor para las blancas."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 h5 d3 Qd4 Be3": {
+  "en": "Be3 hits the queen with the c5-bishop behind it: after ...Qb4 a3 Qb6 d4, White wins time and keeps the pawn. White is winning.",
+  "es": "Ae3 ataca a la dama con el alfil de c5 detrás: tras ...Db4 a3 Db6 d4, las blancas ganan tiempo y conservan el peón. Las blancas van ganando."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 Qd4": {
+  "en": "...Qd4 hits f2: Qf3 covers it.",
+  "es": "...Dd4 ataca f2: Df3 lo cubre."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 Qd4 Qf3 O-O": {
+  "en": "d3 and Be3: White develops with tempo. Clearly better.",
+  "es": "d3 y Ae3: las blancas desarrollan ganando tiempos. Claramente mejor."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 Qd4 Qf3 O-O d3": {
+  "en": "Be3 or g4 and Bg2 next; White is a pawn up. Clearly better.",
+  "es": "Después Ae3 o g4 y Ag2; las blancas tienen un peón de más. Claramente mejor."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 Qd4 Qf3 Be6 d3": {
+  "en": "a3 and Be3: trade the active bishop. Clearly better for White.",
+  "es": "a3 y Ae3: cambia el alfil activo. Claramente mejor para las blancas."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 O-O": {
+  "en": "d3, then Be3 and Qe2: safe development.",
+  "es": "d3, y después Ae3 y De2: desarrollo seguro."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 O-O d3": {
+  "en": "g3 and Bg2 or Be2 and O-O: White keeps the extra pawn. Clearly better.",
+  "es": "g3 y Ag2 o Ae2 y O-O: las blancas conservan el peón de más. Claramente mejor."
+ },
+ "Nxe5 Nc6 Nxc6 dxc6 Nc3 Bc5 h3 Be6 d3": {
+  "en": "Qe2, Be3 and g3: solid. Clearly better for White.",
+  "es": "De2, Ae3 y g3: sólido. Claramente mejor para las blancas."
+ },
+ "Nxe5 d6 Nf3 Nxe4": {
+  "en": "Nc3 offers a knight trade: after ...Nxc3 dxc3 White gets quick development.",
+  "es": "Cc3 ofrece un cambio de caballos: tras ...Cxc3 dxc3 las blancas obtienen un desarrollo rápido."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Nc3 Nxc3": {
+  "en": "dxc3: open lines for the bishops; Bd3, Be3, Qd2 and O-O-O.",
+  "es": "dxc3: líneas abiertas para los alfiles; Ad3, Ae3, Dd2 y O-O-O."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Nc3 Nxc3 dxc3 Be7": {
+  "en": "Bd3, O-O (or Be3, Qd2 and O-O-O).",
+  "es": "Ad3, O-O (o Ae3, Dd2 y O-O-O)."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Nc3 Nxc3 dxc3 Be7 Bd3 O-O": {
+  "en": "O-O, Re1 and Bf4: a small edge thanks to the easier development.",
+  "es": "O-O, Te1 y Af4: una pequeña ventaja gracias al desarrollo más fácil."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Nc3 Nxc3 dxc3 Be7 Bd3 O-O O-O": {
+  "en": "After ...Nd7 Be3, Re1 and Qe2: equal, but easier for White.",
+  "es": "Tras ...Cd7 Ae3, Te1 y De2: igualdad, pero más fácil para las blancas."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Nc3 Nxc3 dxc3 Be7 Bd3 Nc6 O-O": {
+  "en": "Re1, h3 and Bf4: equal, with a slightly more active position for White.",
+  "es": "Te1, h3 y Af4: igualdad, con una posición algo más activa para las blancas."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Nc3 Nxc3 dxc3 Bg4 Bd3": {
+  "en": "h3 and O-O; the pin on f3 is harmless. Slightly better for White.",
+  "es": "h3 y O-O; la clavada en f3 es inofensiva. Algo mejor para las blancas."
+ },
+ "Nxe5 d6 Nf3 Nxe4 Nc3 Nxc3 dxc3 Nc6 Bd3": {
+  "en": "Be3, Qe2 and O-O-O: the kings on opposite sides make it lively. Slightly better for White.",
+  "es": "Ae3, De2 y O-O-O: los reyes en flancos opuestos animan la partida. Algo mejor para las blancas."
+ },
+ "Nxe5 Qe7": {
+  "en": "...Qe7: Nf3; if ...Qxe4+, Be2 and Black's queen is exposed.",
+  "es": "...De7: Cf3; si ...Dxe4+, Ae2 y la dama negra queda expuesta."
+ },
+ "Nxe5 Qe7 Nf3 Nxe4": {
+  "en": "Be2 (avoiding the queen trade on e2): O-O, Re1 and d3 or Nc3 against the e4-knight.",
+  "es": "Ae2 (evitando el cambio de damas en e2): O-O, Te1 y d3 o Cc3 contra el caballo de e4."
+ },
+ "Nxe5 Qe7 Nf3 Nxe4 Be2 d5 Nc3": {
+  "en": "Nc3 challenges the knight; O-O, Re1 and d4. Slightly better for White.",
+  "es": "Cc3 desafía al caballo; O-O, Te1 y d4. Algo mejor para las blancas."
+ },
+ "Nxe5 Qe7 Nf3 Qxe4+": {
+  "en": "Be2: O-O and Re1 or Nc3 gain time on the queen.",
+  "es": "Ae2: O-O y Te1 o Cc3 ganan tiempo sobre la dama."
+ },
+ "Nxe5 Nxe4": {
+  "en": "...Nxe4: d4! (or Qe2) and the knight on e4 will be harassed.",
+  "es": "...Cxe4: ¡d4! (o De2) y el caballo de e4 será acosado."
+ },
+ "Nxe5 Nxe4 d4 Qe7": {
+  "en": "Bd3! and the e4-knight must retreat; O-O and Re1 follow. White is clearly better.",
+  "es": "¡Ad3! y el caballo de e4 debe retirarse; siguen O-O y Te1. Las blancas están claramente mejor."
  }
 }

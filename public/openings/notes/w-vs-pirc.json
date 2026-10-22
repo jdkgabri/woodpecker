@@ -18,5 +18,77 @@
  "d4 Nf6 Nc3 e5 Nf3 exd4 Nxd4 Nc6 Be3 Bg4": {
   "en": "f3! kicks the bishop and prepares Qd2 and O-O-O.",
   "es": "¡f3! echa al alfil y prepara Dd2 y O-O-O."
+ },
+ "": {
+  "en": "Against the Pirc, the 150 Attack: Nc3, Be3, Qd2, Bh6 to trade the g7-bishop, O-O-O and h4–h5. Simple and dangerous.",
+  "es": "Contra la Pirc, el Ataque 150: Cc3, Ae3, Dd2, Ah6 para cambiar el alfil de g7, O-O-O y h4–h5. Sencillo y peligroso."
+ },
+ "d4 Nf6 Nc3 g6": {
+  "en": "Be3 and Qd2: Bh6 next.",
+  "es": "Ae3 y Dd2: después Ah6."
+ },
+ "d4 Nf6 Nc3 g6 Be3 Bg7": {
+  "en": "Qd2, then Bh6 or f3 and O-O-O.",
+  "es": "Dd2, y después Ah6 o f3 y O-O-O."
+ },
+ "d4 Nf6 Nc3 g6 Be3 Bg7 Qd2 O-O": {
+  "en": "Bh6: trade the defender of Black's king.",
+  "es": "Ah6: cambia el defensor del rey negro."
+ },
+ "d4 Nf6 Nc3 g6 Be3 Bg7 Qd2 O-O Bh6 Nc6 Bxg7": {
+  "en": "After ...Kxg7, d5! kicks the knight; Nf3, O-O-O and h4: White is better.",
+  "es": "Tras ...Rxg7, ¡d5! echa al caballo; Cf3, O-O-O y h4: las blancas están mejor."
+ },
+ "d4 Nf6 Nc3 g6 Be3 Bg7 Qd2 O-O Bh6 Nbd7 f3": {
+  "en": "f3 supports e4 and prepares g4. If ...c5, Nge2 and h4–h5. White is better.",
+  "es": "f3 apoya e4 y prepara g4. Si ...c5, Cge2 y h4–h5. Las blancas están mejor."
+ },
+ "d4 Nf6 Nc3 g6 Be3 Bg7 Qd2 Ng4": {
+  "en": "...Ng4 hits the bishop: Bg5 keeps it, and f3 kicks the knight later.",
+  "es": "...Cg4 ataca al alfil: Ag5 lo conserva, y más tarde f3 echa al caballo."
+ },
+ "d4 Nf6 Nc3 g6 Be3 Bg7 Qd2 Ng4 Bg5": {
+  "en": "After ...h6 Bh4, f3 and O-O-O: the knight goes back and White gains time. White is better.",
+  "es": "Tras ...h6 Ah4, f3 y O-O-O: el caballo retrocede y las blancas ganan tiempo. Las blancas están mejor."
+ },
+ "d4 Nf6 Nc3 g6 Be3 Bg7 Qd2 c6 Bh6": {
+  "en": "After ...Bxh6 Qxh6, O-O-O and f4: Black's king will have trouble castling short. White is better.",
+  "es": "Tras ...Axh6 Dxh6, O-O-O y f4: el rey negro tendrá problemas para enrocar corto. Las blancas están mejor."
+ },
+ "d4 Nf6 Nc3 g6 Be3 c6 Qd2": {
+  "en": "Against ...b5 and ...Nbd7: a3, Nf3 and Be2 (or f3 and Bh6). White is better.",
+  "es": "Contra ...b5 y ...Cbd7: a3, Cf3 y Ae2 (o f3 y Ah6). Las blancas están mejor."
+ },
+ "d4 Nf6 Nc3 c6": {
+  "en": "...c6: f4 (or Be3, Qd2) takes space.",
+  "es": "...c6: f4 (o Ae3, Dd2) gana espacio."
+ },
+ "d4 Nf6 Nc3 c6 f4 Qa5 Bd3 e5 Nf3": {
+  "en": "After ...exd4 Nxd4, Qf3 and Be3: White is clearly better.",
+  "es": "Tras ...exd4 Cxd4, Df3 y Ae3: las blancas están claramente mejor."
+ },
+ "d4 Nf6 Nc3 Nbd7": {
+  "en": "...Nbd7 prepares ...e5: Be3 and Qd2, with f3 and O-O-O.",
+  "es": "...Cbd7 prepara ...e5: Ae3 y Dd2, con f3 y O-O-O."
+ },
+ "d4 Nf6 Nc3 Nbd7 Be3 e5": {
+  "en": "Qd2 (or Nf3): keep the tension.",
+  "es": "Dd2 (o Cf3): mantén la tensión."
+ },
+ "d4 Nf6 Nc3 Nbd7 Be3 e5 Qd2": {
+  "en": "After ...c6 f3 exd4 Bxd4, Nge2, g4 and O-O-O. Slightly better for White.",
+  "es": "Tras ...c6 f3 exd4 Axd4, Cge2, g4 y O-O-O. Algo mejor para las blancas."
+ },
+ "d4 g6": {
+  "en": "...g6 first: Nc3, Be3 and Qd2 anyway.",
+  "es": "Primero ...g6: Cc3, Ae3 y Dd2 igualmente."
+ },
+ "d4 g6 Nc3 Bg7": {
+  "en": "Be3 and Qd2.",
+  "es": "Ae3 y Dd2."
+ },
+ "d4 g6 Nc3 Bg7 Be3 Nf6": {
+  "en": "Qd2 and the 150 Attack.",
+  "es": "Dd2 y el Ataque 150."
  }
 }

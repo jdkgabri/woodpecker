@@ -22,5 +22,81 @@
  "Nc3": {
   "en": "Against 2.Nc3, ...d6 and ...g6 lead to Pirc-type positions.",
   "es": "Contra 2.Cc3, ...d6 y ...g6 llevan a posiciones tipo Pirc."
+ },
+ "e5": {
+  "en": "e5 kicks the knight: ...Nd5, the centre square.",
+  "es": "e5 echa al caballo: ...Cd5, la casilla central."
+ },
+ "e5 Nd5 d4": {
+  "en": "...d6 attacks e5 at once.",
+  "es": "...d6 ataca e5 de inmediato."
+ },
+ "e5 Nd5 d4 d6 c4": {
+  "en": "c4 kicks the knight again: ...Nb6.",
+  "es": "c4 vuelve a echar al caballo: ...Cb6."
+ },
+ "e5 Nd5 d4 d6 c4 Nb6 exd6": {
+  "en": "The Exchange: ...cxd6 (solid, aiming at d4) or ...exd6 (symmetrical).",
+  "es": "El Cambio: ...cxd6 (sólido, apuntando a d4) o ...exd6 (simétrico)."
+ },
+ "e5 Nd5 d4 d6 Nf3": {
+  "en": "The Modern: ...g6 and ...Bg7, or ...Bg4.",
+  "es": "La Moderna: ...g6 y ...Ag7, o ...Ag4."
+ },
+ "e5 Nd5 d4 d6 f4": {
+  "en": "f4 overprotects e5 but weakens the kingside: ...dxe5 fxe5 c5! hits the centre. Equal.",
+  "es": "f4 sobreprotege e5 pero debilita el flanco de rey: ...dxe5 fxe5 ¡c5! golpea el centro. Igualdad."
+ },
+ "e5 Nd5 c4": {
+  "en": "c4 first: ...Nb6, then ...d6.",
+  "es": "Primero c4: ...Cb6, y después ...d6."
+ },
+ "e5 Nd5 c4 Nb6 d4": {
+  "en": "...d6: hit the pawn chain.",
+  "es": "...d6: ataca la cadena de peones."
+ },
+ "e5 Nd5 c4 Nb6 d4 d6 exd6": {
+  "en": "...cxd6 or ...exd6: both are solid.",
+  "es": "...cxd6 o ...exd6: ambas son sólidas."
+ },
+ "e5 Nd5 c4 Nb6 d4 d6 f4 g6 Nf3 Bg4": {
+  "en": "The Four Pawns: after h3 Bxf3 Qxf3 Nc6 Be3, ...dxe5 and ...e6: White has space, Black targets. White slightly better.",
+  "es": "Los Cuatro Peones: tras h3 Axf3 Dxf3 Cc6 Ae3, ...dxe5 y ...e6: las blancas tienen espacio y las negras objetivos. Las blancas algo mejor."
+ },
+ "Nc3 d6 d4": {
+  "en": "...g6 and ...Bg7: a Pirc.",
+  "es": "...g6 y ...Ag7: una Pirc."
+ },
+ "Nc3 d6 Nf3": {
+  "en": "...g6 and ...Bg7 (or ...Bg4).",
+  "es": "...g6 y ...Ag7 (o ...Ag4)."
+ },
+ "Nc3 d6 Nf3 g6 d4": {
+  "en": "...Nc6 or ...Bg7: a Pirc with an early knight.",
+  "es": "...Cc6 o ...Ag7: una Pirc con el caballo pronto."
+ },
+ "Nc3 d6 Nf3 g6 Bc4 Nc6": {
+  "en": "If d4, ...Bg4 pins and hits d4. Slightly better for White.",
+  "es": "Si d4, ...Ag4 clava y ataca d4. Algo mejor para las blancas."
+ },
+ "Nc3 d6 Bc4": {
+  "en": "Bc4 eyes f7: ...e6 blocks the diagonal.",
+  "es": "Ac4 apunta a f7: ...e6 corta la diagonal."
+ },
+ "Nc3 d6 Bc4 e6 d3 Nc6": {
+  "en": "...Na5 can trade the c4-bishop; ...Be7 and ...O-O. Equal.",
+  "es": "...Ca5 puede cambiar el alfil de c4; ...Ae7 y ...O-O. Igualdad."
+ },
+ "Nc3 d6 f4 Bg4 Nf3 e6": {
+  "en": "After h3 Bxf3 Qxf3 d5: Black hits the centre. Slightly better for White.",
+  "es": "Tras h3 Axf3 Dxf3 d5: las negras golpean el centro. Algo mejor para las blancas."
+ },
+ "d3": {
+  "en": "d3 is passive: ...e5 (or ...d5) takes the centre. Equal.",
+  "es": "d3 es pasiva: ...e5 (o ...d5) toma el centro. Igualdad."
+ },
+ "Nf3": {
+  "en": "Nf3? leaves e4 hanging: ...Nxe4! wins a pawn.",
+  "es": "¿Cf3? deja e4 colgando: ¡...Cxe4! gana un peón."
  }
 }

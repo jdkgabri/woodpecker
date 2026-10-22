@@ -18,5 +18,85 @@
  "": {
   "en": "The Trompowsky: ...Ne4 hits the bishop at once; ...c5 and ...Qb6 against b2 are typical ideas.",
   "es": "El Trompowsky: ...Ce4 ataca el alfil de inmediato; ...c5 y ...Db6 contra b2 son ideas típicas."
+ },
+ "Ne4 Bf4": {
+  "en": "Bf4: ...e6 (or ...c5, ...d5).",
+  "es": "Af4: ...e6 (o ...c5, ...d5)."
+ },
+ "Ne4 Bf4 e6 f3": {
+  "en": "f3 kicks the knight: back to f6. White has spent a move on f3.",
+  "es": "f3 echa al caballo: vuelve a f6. Las blancas han gastado una jugada en f3."
+ },
+ "Ne4 Bf4 e6 f3 Nf6": {
+  "en": "If e4, ...d5! (or ...c5) hits the centre. Equal.",
+  "es": "Si e4, ¡...d5! (o ...c5) golpea el centro. Igualdad."
+ },
+ "Ne4 Bf4 e6 e3": {
+  "en": "...c5 and ...Qb6: pressure on d4 and b2.",
+  "es": "...c5 y ...Db6: presión sobre d4 y b2."
+ },
+ "Ne4 Bf4 e6 e3 c5": {
+  "en": "After Nd2, ...Nxd2 Qxd2 and ...Nc6, ...d5 or ...Qb6. Slightly better for White, but easy for Black.",
+  "es": "Tras Cd2, ...Cxd2 Dxd2 y ...Cc6, ...d5 o ...Db6. Algo mejor para las blancas, pero fácil para las negras."
+ },
+ "Ne4 Bf4 e6 Nd2": {
+  "en": "Nd2 challenges the knight: ...d5 supports it.",
+  "es": "Cd2 desafía al caballo: ...d5 lo apoya."
+ },
+ "Ne4 Bf4 e6 Nd2 d5": {
+  "en": "After e3, ...Bd6 trades the f4-bishop. Equal.",
+  "es": "Tras e3, ...Ad6 cambia el alfil de f4. Igualdad."
+ },
+ "Ne4 Bf4 e6 Nf3 c5": {
+  "en": "...d5 and ...Nc6; trades on d2 simplify. Equal.",
+  "es": "...d5 y ...Cc6; los cambios en d2 simplifican. Igualdad."
+ },
+ "Ne4 Bh4": {
+  "en": "Bh4 keeps the pin idea: ...c5! hits d4.",
+  "es": "Ah4 mantiene la idea de clavada: ¡...c5! golpea d4."
+ },
+ "Ne4 Bh4 c5 f3": {
+  "en": "f3 kicks the knight: ...g5! counterattacks the h4-bishop.",
+  "es": "f3 echa al caballo: ¡...g5! contraataca al alfil de h4."
+ },
+ "Ne4 Bh4 c5 f3 g5": {
+  "en": "After fxe4 gxh4, Black has the bishop pair and pressure on d4 (...Bh6, ...Qb6). Slightly better for Black.",
+  "es": "Tras fxe4 gxh4, las negras tienen la pareja de alfiles y presión sobre d4 (...Ah6, ...Db6). Algo mejor para las negras."
+ },
+ "Ne4 Bh4 c5 e3": {
+  "en": "...d5 supports the knight; ...Qb6 against b2.",
+  "es": "...d5 apoya al caballo; ...Db6 contra b2."
+ },
+ "Ne4 Bh4 c5 e3 d5": {
+  "en": "If Nd2 Qb6 Nxe4 dxe4, ...Qxb2 wins a pawn. Equal (White gets activity).",
+  "es": "Si Cd2 Db6 Cxe4 dxe4, ...Dxb2 gana un peón. Igualdad (las blancas obtienen actividad)."
+ },
+ "Ne4 Bh4 c5 d5 Qb6": {
+  "en": "...Qb6 hits b2: after Qc1 g5 Bg3 Bg7, Black is better.",
+  "es": "...Db6 ataca b2: tras Dc1 g5 Ag3 Ag7, las negras están mejor."
+ },
+ "Ne4 Bh4 c5 c3": {
+  "en": "c3 is slow: ...Qb6 (or ...cxd4 Qxd4 d5) and Black is better.",
+  "es": "c3 es lenta: ...Db6 (o ...cxd4 Dxd4 d5) y las negras están mejor."
+ },
+ "Ne4 Bh4 c5 c3 Qb6": {
+  "en": "After Nd2 d5: pressure on b2 and d4. Black is better.",
+  "es": "Tras Cd2 d5: presión sobre b2 y d4. Las negras están mejor."
+ },
+ "Ne4 h4": {
+  "en": "h4 defends the bishop indirectly (if ...Nxg5 hxg5 opens the h-file). ...c5 hits d4.",
+  "es": "h4 defiende indirectamente al alfil (si ...Cxg5 hxg5 abre la columna h). ...c5 golpea d4."
+ },
+ "Ne4 h4 c5 d5": {
+  "en": "...h6 kicks the bishop.",
+  "es": "...h6 echa al alfil."
+ },
+ "Ne4 h4 c5 d5 h6": {
+  "en": "After Bc1 (or Bf4), ...d6 and ...g6 or ...Qb6. Equal.",
+  "es": "Tras Ac1 (o Af4), ...d6 y ...g6 o ...Db6. Igualdad."
+ },
+ "Ne4 h4 c5 dxc5 d5": {
+  "en": "...Nxc5 next; Black's centre is strong. Slightly better for Black.",
+  "es": "Después ...Cxc5; el centro negro es fuerte. Algo mejor para las negras."
  }
 }

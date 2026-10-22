@@ -18,5 +18,89 @@
  "exd5 c6": {
   "en": "The Scandinavian Gambit: taking with dxc6 is safe and keeps a healthy extra pawn.",
   "es": "El Gambito Escandinavo: tomar con dxc6 es seguro y conserva un peón de más sano."
+ },
+ "exd5 Qxd5": {
+  "en": "Nc3 hits the queen with tempo.",
+  "es": "Cc3 ataca a la dama ganando tiempo."
+ },
+ "exd5 Qxd5 Nc3 Qd8": {
+  "en": "...Qd8: the safest square but passive. d4, Nf3 and Bc4: White has a free hand.",
+  "es": "...Dd8: la casilla más segura pero pasiva. d4, Cf3 y Ac4: las blancas tienen manos libres."
+ },
+ "exd5 Qxd5 Nc3 Qd8 d4 Nf6": {
+  "en": "Nf3, Bc4 and O-O; Ne5 is a useful square.",
+  "es": "Cf3, Ac4 y O-O; e5 es una casilla útil para el caballo."
+ },
+ "exd5 Qxd5 Nc3 Qd8 d4 Nf6 Nf3 Bg4 Bc4": {
+  "en": "If ...e6, h3 Bxf3 Qxf3 c6, then Ne2 or Be3 and O-O: the bishop pair. White is better.",
+  "es": "Si ...e6, h3 Axf3 Dxf3 c6, y después Ce2 o Ae3 y O-O: la pareja de alfiles. Las blancas están mejor."
+ },
+ "exd5 Qxd5 Nc3 Qd8 d4 e6": {
+  "en": "Nf3, Bd3 and O-O: Black is solid but passive. White is better.",
+  "es": "Cf3, Ad3 y O-O: las negras están sólidas pero pasivas. Las blancas están mejor."
+ },
+ "exd5 Qxd5 Nc3 Qd8 d4 Bf5 Qf3": {
+  "en": "Qf3 hits f5 and b7 at once. After ...Qc8 Bc4 Nf6 Bg5, White is clearly better.",
+  "es": "Df3 ataca f5 y b7 a la vez. Tras ...Dc8 Ac4 Cf6 Ag5, las blancas están claramente mejor."
+ },
+ "exd5 Qxd5 Nc3 Qa5": {
+  "en": "...Qa5: the main line. d4, Nf3, Bc4 and Bd2.",
+  "es": "...Da5: la línea principal. d4, Cf3, Ac4 y Ad2."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 c6": {
+  "en": "Nf3 and Bc4, Bd2: watch for Nd5 or Nb5 tricks against the queen.",
+  "es": "Cf3 y Ac4, Ad2: atento a los trucos con Cd5 o Cb5 contra la dama."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 c6 Nf3 Nf6 Bc4 Bg4 Bd2": {
+  "en": "Bd2 unpins; if ...Qf5, Be2 and O-O, Re1: White is better.",
+  "es": "Ad2 deshace la clavada; si ...Df5, Ae2 y O-O, Te1: las blancas están mejor."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 c6 Nf3 Bg4 Bc4": {
+  "en": "After ...e6 h3 Qh5 Be2: White has the bishop pair and a big centre. Better for White.",
+  "es": "Tras ...e6 h3 Dh5 Ae2: las blancas tienen la pareja de alfiles y un gran centro. Mejor para las blancas."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 Nf6": {
+  "en": "Nf3, Bc4 and Bd2; h3 if ...Bg4.",
+  "es": "Cf3, Ac4 y Ad2; h3 si ...Ag4."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 Nf6 Nf3 Bg4": {
+  "en": "h3! asks the bishop; after ...Bh5 g4 Bg6 Ne5 White gains space and time.",
+  "es": "¡h3! pregunta al alfil; tras ...Ah5 g4 Ag6 Ce5 las blancas ganan espacio y tiempo."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 Nf6 Nf3 Bg4 h3 Bh5 g4": {
+  "en": "...Bg6 and Ne5, Bg2, O-O and f4: White is clearly better.",
+  "es": "...Ag6 y Ce5, Ag2, O-O y f4: las blancas están claramente mejor."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 Nc6": {
+  "en": "...Nc6? d5! kicks the knight and after ...Nb8, Nf3, Bd2 and Bc4: White is clearly better.",
+  "es": "¿...Cc6? ¡d5! echa al caballo y tras ...Cb8, Cf3, Ad2 y Ac4: las blancas están claramente mejor."
+ },
+ "exd5 Qxd5 Nc3 Qe5+ Be2 Bg4 d4 Qe6": {
+  "en": "f3! Bf5 g4 Bg6 f4 and f5 traps the bishop. White is winning.",
+  "es": "¡f3! Af5 g4 Ag6 f4 y f5 atrapa al alfil. Las blancas van ganando."
+ },
+ "exd5 Nf6 Nc3 Nxd5": {
+  "en": "d4 and Nf3: a big centre.",
+  "es": "d4 y Cf3: un gran centro."
+ },
+ "exd5 Nf6 Nc3 Nxd5 d4 Nxc3": {
+  "en": "bxc3: the centre is reinforced; Nf3, Bd3 and O-O.",
+  "es": "bxc3: el centro se refuerza; Cf3, Ad3 y O-O."
+ },
+ "exd5 Nf6 Nc3 Nxd5 d4 Nc6 Nf3": {
+  "en": "After ...Bg4 Be2 e6 O-O, White has the better centre. Slightly better for White.",
+  "es": "Tras ...Ag4 Ae2 e6 O-O, las blancas tienen mejor centro. Algo mejor para las blancas."
+ },
+ "exd5 Nf6 Nc3 Nxd5 d4 Bf5 Nf3": {
+  "en": "If ...Nb4, Bb5+ c6 Ba4 and O-O. Slightly better for White.",
+  "es": "Si ...Cb4, Ab5+ c6 Aa4 y O-O. Algo mejor para las blancas."
+ },
+ "exd5 Nf6 Nc3 e6": {
+  "en": "...e6? dxe6 Bxe6: Black is just a pawn down. White is clearly better.",
+  "es": "¿...e6? dxe6 Axe6: las negras simplemente tienen un peón menos. Las blancas están claramente mejor."
+ },
+ "exd5 c6 dxc6 e5": {
+  "en": "cxb7 Bxb7: White is two pawns up; develop with Nf3, Nc3 and Bc4.",
+  "es": "cxb7 Axb7: las blancas tienen dos peones de más; desarrolla con Cf3, Cc3 y Ac4."
  }
 }

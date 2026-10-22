@@ -22,5 +22,77 @@
  "d4 d5 e5 e6": {
   "en": "...e6 before ...Bf5 shuts in Black's bishop: it is a French where Black has lost a tempo with ...c6.",
   "es": "...e6 antes de ...Af5 encierra al alfil negro: es una Francesa en la que las negras han perdido un tiempo con ...c6."
+ },
+ "d4 d5": {
+  "en": "e5: the Advance Variation.",
+  "es": "e5: la Variante del Avance."
+ },
+ "d4 d5 e5 Bf5": {
+  "en": "...Bf5: the bishop comes out before ...e6. Nf3, Be2 and O-O: the Short system.",
+  "es": "...Af5: el alfil sale antes de ...e6. Cf3, Ae2 y O-O: el sistema Short."
+ },
+ "d4 d5 e5 Bf5 Nf3 e6": {
+  "en": "Be2 and O-O, then c3 or Nbd2.",
+  "es": "Ae2 y O-O, y después c3 o Cbd2."
+ },
+ "d4 d5 e5 Bf5 Nf3 e6 Be2 c5": {
+  "en": "Castle: ...cxd4 Nxd4 or ...Nc6 c3/Be3. White keeps e5.",
+  "es": "Enroca: ...cxd4 Cxd4 o ...Cc6 c3/Ae3. Las blancas mantienen e5."
+ },
+ "d4 d5 e5 Bf5 Nf3 e6 Be2 Nd7": {
+  "en": "O-O; then Nbd2–b3 or c3, or a4–a5 for space.",
+  "es": "O-O; después Cbd2–b3 o c3, o a4–a5 para ganar espacio."
+ },
+ "d4 d5 e5 Bf5 Nf3 e6 Be2 Nd7 O-O": {
+  "en": "Against ...a5 a4 f6, Bd3! trades bishops and after ...fxe5 dxe5 the e6-pawn is weak. Slightly better for White.",
+  "es": "Contra ...a5 a4 f6, ¡Ad3! cambia alfiles y tras ...fxe5 dxe5 el peón de e6 queda débil. Algo mejor para las blancas."
+ },
+ "d4 d5 e5 Bf5 Nf3 e6 Be2 Ne7": {
+  "en": "O-O; the knight heads for c6 or g6.",
+  "es": "O-O; el caballo va hacia c6 o g6."
+ },
+ "d4 d5 e5 Bf5 Nf3 e6 Be2 Ne7 O-O": {
+  "en": "If ...c5, c4! opens the position while Black's king is still in the centre. Slightly better for White.",
+  "es": "Si ...c5, ¡c4! abre la posición mientras el rey negro sigue en el centro. Algo mejor para las blancas."
+ },
+ "d4 d5 e5 Bf5 Nf3 e6 Be2 h6 O-O": {
+  "en": "After ...a6 a4 c5 Be3: White keeps the centre and is slightly better.",
+  "es": "Tras ...a6 a4 c5 Ae3: las blancas mantienen el centro y están algo mejor."
+ },
+ "d4 d5 e5 Bf5 Nf3 h6 Be2": {
+  "en": "...e6 and O-O: the same Short-system plans.",
+  "es": "...e6 y O-O: los mismos planes del sistema Short."
+ },
+ "d4 d5 e5 c5": {
+  "en": "...c5 at once: Nf3 and c3 support d4.",
+  "es": "...c5 de inmediato: Cf3 y c3 apoyan d4."
+ },
+ "d4 d5 e5 c5 Nf3 Nc6": {
+  "en": "c3 holds d4.",
+  "es": "c3 sostiene d4."
+ },
+ "d4 d5 e5 c5 Nf3 Nc6 c3 Bg4": {
+  "en": "...Bg4 hits the d4-defender: dxc5! and then b4 or Be2 and Nbd2.",
+  "es": "...Ag4 ataca al defensor de d4: ¡dxc5! y después b4 o Ae2 y Cbd2."
+ },
+ "d4 d5 e5 c5 Nf3 Nc6 c3 Bg4 dxc5": {
+  "en": "If ...a6 Nbd2 Nxe5, Be2 and b4: White holds the c5-pawn. Slightly better for White.",
+  "es": "Si ...a6 Cbd2 Cxe5, Ae2 y b4: las blancas mantienen el peón de c5. Algo mejor para las blancas."
+ },
+ "d4 d5 e5 c5 Nf3 Nc6 c3 cxd4 Be2": {
+  "en": "Be2 offers a pawn: after ...dxc3 Nxc3 White has development for it. cxd4 was the safe choice.",
+  "es": "Ae2 ofrece un peón: tras ...dxc3 Cxc3 las blancas tienen desarrollo a cambio. cxd4 era la opción segura."
+ },
+ "d4 d5 e5 c5 Nf3 Bg4": {
+  "en": "c3 and Be2: unpin and keep d4.",
+  "es": "c3 y Ae2: deshaz la clavada y mantén d4."
+ },
+ "d4 d5 e5 c5 Nf3 Bg4 c3 Nc6 Be2": {
+  "en": "After ...e6, Nbd2 and O-O. Equal.",
+  "es": "Tras ...e6, Cbd2 y O-O. Igualdad."
+ },
+ "d4 d5 e5 c5 Nf3 cxd4 Nxd4": {
+  "en": "After ...Nc6 Nxc6 bxc6, Bd3 and O-O: Black's light-squared bishop is shut in. Slightly better for White.",
+  "es": "Tras ...Cc6 Cxc6 bxc6, Ad3 y O-O: el alfil de casillas blancas negro queda encerrado. Algo mejor para las blancas."
  }
 }
