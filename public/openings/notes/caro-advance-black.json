@@ -26,5 +26,65 @@
  "": {
   "en": "Against the Advance: ...e6, ...c5 and ...Nc6.",
   "es": "Contra el Avance: ...e6, ...c5 y ...Cc6."
+ },
+ "Nf3": {
+  "en": "...e6, then ...c5 or ...Ne7 and ...Nd7.",
+  "es": "...e6, y después ...c5 o ...Ce7 y ...Cd7."
+ },
+ "Nf3 e6 Bd3": {
+  "en": "...Ne7 (or ...Bxd3): trade White's good bishop.",
+  "es": "...Ce7 (o ...Axd3): cambia el alfil bueno de las blancas."
+ },
+ "Nf3 e6 Be2": {
+  "en": "...c5 and ...Nc6: the usual plan.",
+  "es": "...c5 y ...Cc6: el plan habitual."
+ },
+ "Bd3": {
+  "en": "...Bxd3: trade the bishops.",
+  "es": "...Axd3: cambia los alfiles."
+ },
+ "Bd3 Bxd3 Qxd3": {
+  "en": "...e6 and ...c5.",
+  "es": "...e6 y ...c5."
+ },
+ "Bd3 Bxd3 Qxd3 e6 Nf3": {
+  "en": "...c5 (or ...Qa5+).",
+  "es": "...c5 (o ...Da5+)."
+ },
+ "Bd3 Bxd3 Qxd3 e6 Nf3 c5 c3": {
+  "en": "...Nd7 (or ...Nc6) and ...Ne7: Black is comfortable. Equal.",
+  "es": "...Cd7 (o ...Cc6) y ...Ce7: las negras están cómodas. Igualdad."
+ },
+ "Bd3 Bxd3 Qxd3 e6 f4": {
+  "en": "...c5: hit d4.",
+  "es": "...c5: ataca d4."
+ },
+ "Bd3 Bxd3 Qxd3 e6 f4 c5 c3 Ne7": {
+  "en": "...Nec6, ...Nd7 and ...Rc8. Equal.",
+  "es": "...Cec6, ...Cd7 y ...Tc8. Igualdad."
+ },
+ "Bd3 Bxd3 Qxd3 e6 Ne2 c5 c3 Nd7": {
+  "en": "...Ne7 and ...Nc6. Equal.",
+  "es": "...Ce7 y ...Cc6. Igualdad."
+ },
+ "h4": {
+  "en": "...h5 is the most solid reply; ...h6 allows g4 and the e6 sacrifice.",
+  "es": "...h5 es la respuesta más sólida; ...h6 permite g4 y el sacrificio en e6."
+ },
+ "h4 h6 g4": {
+  "en": "...Bh7: the bishop retreats.",
+  "es": "...Ah7: el alfil se retira."
+ },
+ "h4 h6 g4 Bh7 e6 c5": {
+  "en": "...fxe6 was more resilient. Now Nf3 and dxc5: White is clearly better.",
+  "es": "...fxe6 aguantaba mejor. Ahora Cf3 y dxc5: las blancas están claramente mejor."
+ },
+ "h4 h6 g4 Bh7 Bd3": {
+  "en": "...Bxd3 and ...h5! hits the kingside. Equal.",
+  "es": "...Axd3 y ¡...h5! golpea el flanco de rey. Igualdad."
+ },
+ "f4 e6 Nf3": {
+  "en": "...c5 and ...Nc6: pressure on d4. Equal.",
+  "es": "...c5 y ...Cc6: presión sobre d4. Igualdad."
  }
 }

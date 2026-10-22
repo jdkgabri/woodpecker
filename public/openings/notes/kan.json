@@ -34,5 +34,61 @@
  "c4": {
   "en": "The Maróczy setup (c4): Black does not fight it head-on; ...Qc7, ...Nf6 and ...Bb4 or ...Bc5 put pressure on c4 and e4.",
   "es": "El esquema Maróczy (c4): las negras no lo atacan de frente; ...Dc7, ...Cf6 y ...Ab4 o ...Ac5 presionan c4 y e4."
+ },
+ "Nc3": {
+  "en": "...Qc7: control e5 and keep the knights flexible.",
+  "es": "...Dc7: controla e5 y mantén flexibles los caballos."
+ },
+ "Nc3 Qc7 Be3": {
+  "en": "...Nf6 and ...Bb4: pin the c3-knight.",
+  "es": "...Cf6 y ...Ab4: clava el caballo de c3."
+ },
+ "Nc3 Qc7 Be3 Nf6 f3": {
+  "en": "...Bb4, then ...d5 at the right moment.",
+  "es": "...Ab4, y después ...d5 en el momento justo."
+ },
+ "Nc3 Qc7 Be3 Nf6 Bd3": {
+  "en": "...b5 (or ...Bb4): queenside space.",
+  "es": "...b5 (o ...Ab4): espacio en el flanco de dama."
+ },
+ "Nc3 Qc7 Bd3": {
+  "en": "...Nf6 and ...b5 or ...Bc5.",
+  "es": "...Cf6 y ...b5 o ...Ac5."
+ },
+ "Nc3 Qc7 Bd3 Nf6 O-O": {
+  "en": "...b5 and ...Bb7: pressure on e4.",
+  "es": "...b5 y ...Ab7: presión sobre e4."
+ },
+ "Nc3 Qc7 Be2": {
+  "en": "...Nf6 and ...Bc5 or ...Bb4.",
+  "es": "...Cf6 y ...Ac5 o ...Ab4."
+ },
+ "Nc3 Qc7 Be2 Nf6 O-O": {
+  "en": "...Bc5 (or ...b5): develop.",
+  "es": "...Ac5 (o ...b5): desarrolla."
+ },
+ "Nc3 Qc7 Be2 Nf6 O-O Bc5": {
+  "en": "After Nb3 Ba7 Kh1 Nc6 f4: White is better; Black needs ...d6 and ...O-O.",
+  "es": "Tras Cb3 Aa7 Rh1 Cc6 f4: las blancas están mejor; las negras necesitan ...d6 y ...O-O."
+ },
+ "Nc3 Qc7 g3 Nf6 Bg2 Bc5": {
+  "en": "After Nb3 Be7 O-O Nc6: slightly better for White.",
+  "es": "Tras Cb3 Ae7 O-O Cc6: algo mejor para las blancas."
+ },
+ "c4 Qc7 Nc3": {
+  "en": "...Nf6 and ...Bb4: pressure on e4 and c4.",
+  "es": "...Cf6 y ...Ab4: presión sobre e4 y c4."
+ },
+ "c4 Qc7 Nc3 Nf6 Be2 Bc5": {
+  "en": "After Nb3 Bb4 O-O O-O: the Maróczy gives White space. White is better.",
+  "es": "Tras Cb3 Ab4 O-O O-O: el Maróczy da espacio a las blancas. Las blancas están mejor."
+ },
+ "c4 Qc7 Nc3 Nf6 Bd3 Bc5": {
+  "en": "After Nb3 Ba7 O-O Nc6: slightly better for White.",
+  "es": "Tras Cb3 Aa7 O-O Cc6: algo mejor para las blancas."
+ },
+ "Bd3 Qc7 O-O": {
+  "en": "...Nf6 and ...Bc5 or ...b5.",
+  "es": "...Cf6 y ...Ac5 o ...b5."
  }
 }
