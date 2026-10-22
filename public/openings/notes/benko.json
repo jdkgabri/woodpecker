@@ -30,5 +30,101 @@
  "b5 e3 bxc4 Bxc4 Ba6": {
   "en": "...Ba6 trades White's good bishop; the open b-file belongs to Black.",
   "es": "...Aa6 cambia el alfil bueno de las blancas; la columna b abierta pertenece a las negras."
+ },
+ "b5 cxb5": {
+  "en": "...a6: offer the second pawn.",
+  "es": "...a6: ofrece el segundo peón."
+ },
+ "b5 cxb5 a6 bxa6": {
+  "en": "...g6 (or ...Bxa6 at once).",
+  "es": "...g6 (o ...Axa6 de inmediato)."
+ },
+ "b5 cxb5 a6 bxa6 g6 Nc3": {
+  "en": "...Bxa6: now the bishop takes.",
+  "es": "...Axa6: ahora el alfil toma."
+ },
+ "b5 cxb5 a6 bxa6 g6 Nc3 Bxa6 e4": {
+  "en": "...d6: if Bxa6, ...Nxa6; White's king can't castle.",
+  "es": "...d6: si Axa6, ...Cxa6; el rey blanco no puede enrocar."
+ },
+ "b5 cxb5 a6 bxa6 g6 Nc3 Bxa6 e4 d6 Bxa6": {
+  "en": "...Nxa6: the knight heads for c7 or b4. ...Bg7, ...O-O, ...Qa5 and ...Rfb8 follow.",
+  "es": "...Cxa6: el caballo va hacia c7 o b4. Siguen ...Ag7, ...O-O, ...Da5 y ...Tfb8."
+ },
+ "b5 cxb5 a6 bxa6 g6 Nc3 Bxa6 Nf3": {
+  "en": "...d6, ...Bg7 and ...O-O; ...Nbd7 and ...Qa5.",
+  "es": "...d6, ...Ag7 y ...O-O; ...Cbd7 y ...Da5."
+ },
+ "b5 cxb5 a6 Nc3": {
+  "en": "...axb5: the a-file opens anyway.",
+  "es": "...axb5: la columna a se abre igualmente."
+ },
+ "b5 cxb5 a6 Nc3 axb5 Nxb5": {
+  "en": "...g6 (or ...Ba6): develop and use the open files.",
+  "es": "...g6 (o ...Aa6): desarrolla y usa las columnas abiertas."
+ },
+ "b5 cxb5 a6 Nc3 axb5 Nxb5 g6 Nc3": {
+  "en": "...Ba6: trade White's light-squared bishop.",
+  "es": "...Aa6: cambia el alfil de casillas blancas de las blancas."
+ },
+ "b5 cxb5 a6 Nc3 axb5 Nxb5 g6 Nc3 Ba6": {
+  "en": "After e4 Bxf1 Kxf1 d6: Black has the files, White the extra pawn. White slightly better.",
+  "es": "Tras e4 Axf1 Rxf1 d6: las negras tienen las columnas y las blancas el peón de más. Las blancas algo mejor."
+ },
+ "b5 cxb5 a6 b6": {
+  "en": "...g6 (or ...Qxb6): the pawn on b6 will fall.",
+  "es": "...g6 (o ...Dxb6): el peón de b6 caerá."
+ },
+ "b5 cxb5 a6 b6 g6 Nc3": {
+  "en": "...d6 and ...Bg7, then ...Qxb6 or ...Nbd7xb6.",
+  "es": "...d6 y ...Ag7, y después ...Dxb6 o ...Cbd7xb6."
+ },
+ "b5 cxb5 a6 b6 g6 Nc3 d6 e4": {
+  "en": "...Bg7, ...O-O and ...Nbd7xb6. Slightly better for White.",
+  "es": "...Ag7, ...O-O y ...Cbd7xb6. Algo mejor para las blancas."
+ },
+ "b5 cxb5 a6 e3": {
+  "en": "...g6 (or ...axb5).",
+  "es": "...g6 (o ...axb5)."
+ },
+ "b5 cxb5 a6 e3 g6 Nc3": {
+  "en": "...d6, ...Bg7 and ...axb5 or ...Bxa6 later.",
+  "es": "...d6, ...Ag7 y más tarde ...axb5 o ...Axa6."
+ },
+ "b5 b3 g6 Bb2": {
+  "en": "...Bg7 and ...O-O; ...bxc4 when it suits.",
+  "es": "...Ag7 y ...O-O; ...bxc4 cuando convenga."
+ },
+ "b5 b3 g6 Bb2 Bg7 Nd2": {
+  "en": "Castle, then ...a6 or ...bxc4.",
+  "es": "Enroca, y después ...a6 o ...bxc4."
+ },
+ "b5 b3 g6 Bb2 Bg7 Nd2 O-O e4 a6": {
+  "en": "...d6 and ...e6 or ...b4. Equal.",
+  "es": "...d6 y ...e6 o ...b4. Igualdad."
+ },
+ "b5 b3 g6 Nc3 Bg7": {
+  "en": "...Bg7 hits c3: if cxb5, ...a6. Black is better.",
+  "es": "...Ag7 ataca c3: si cxb5, ...a6. Las negras están mejor."
+ },
+ "b5 e3 bxc4 Bxc4": {
+  "en": "...Ba6: trade the active bishop.",
+  "es": "...Aa6: cambia el alfil activo."
+ },
+ "b5 e3 bxc4 Bxc4 Ba6 Bxa6": {
+  "en": "...Qa5+! and ...Qxa6.",
+  "es": "¡...Da5+! y ...Dxa6."
+ },
+ "b5 e3 bxc4 Bxc4 Ba6 Bxa6 Qa5+": {
+  "en": "After b4 Qxa6 bxc5 e6: Black regains the pawn. Equal.",
+  "es": "Tras b4 Dxa6 bxc5 e6: las negras recuperan el peón. Igualdad."
+ },
+ "b5 Nc3": {
+  "en": "...b4! kicks the knight.",
+  "es": "¡...b4! echa al caballo."
+ },
+ "b5 Nc3 b4 Nb1": {
+  "en": "...g6, ...d6 and ...Bg7: the knight lost time. Equal.",
+  "es": "...g6, ...d6 y ...Ag7: el caballo ha perdido tiempo. Igualdad."
  }
 }

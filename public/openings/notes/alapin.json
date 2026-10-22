@@ -38,5 +38,101 @@
  "c3 Nf6 e5 Nd5 d4 cxd4 Nf3 Nc6 cxd4 d6 Bc4 Nb6 Bb3 dxe5 d5": {
   "en": "d5! hits the c6-knight; after ...Na5 Nc3 the position is balanced and sharp.",
   "es": "¡d5! ataca el caballo de c6; tras ...Ca5 Cc3 la posición está equilibrada y es aguda."
+ },
+ "c3 Nc6": {
+  "en": "d4: build the centre.",
+  "es": "d4: construye el centro."
+ },
+ "c3 Nc6 d4 cxd4": {
+  "en": "cxd4: two central pawns.",
+  "es": "cxd4: dos peones centrales."
+ },
+ "c3 Nc6 d4 cxd4 cxd4 d5": {
+  "en": "e5: a French-like space advantage.",
+  "es": "e5: una ventaja de espacio al estilo Francesa."
+ },
+ "c3 Nc6 d4 cxd4 cxd4 d5 e5 Bf5": {
+  "en": "Nf3 and Nc3, Be2, O-O.",
+  "es": "Cf3 y Cc3, Ae2, O-O."
+ },
+ "c3 Nc6 d4 cxd4 cxd4 d5 e5 Bf5 Nf3": {
+  "en": "After ...e6 Nc3: Be2, O-O and Be3. Equal.",
+  "es": "Tras ...e6 Cc3: Ae2, O-O y Ae3. Igualdad."
+ },
+ "c3 Nc6 d4 cxd4 cxd4 d5 e5 e6 Nf3": {
+  "en": "Nc3, Bd3 and O-O: a French Advance with more space. Slightly better for White.",
+  "es": "Cc3, Ad3 y O-O: una Francesa del Avance con más espacio. Algo mejor para las blancas."
+ },
+ "c3 Nc6 d4 cxd4 cxd4 e6": {
+  "en": "Nf3 and Nc3: if ...d5, e5.",
+  "es": "Cf3 y Cc3: si ...d5, e5."
+ },
+ "c3 Nc6 d4 cxd4 cxd4 d6": {
+  "en": "d5! kicks the knight. White is clearly better.",
+  "es": "¡d5! echa al caballo. Las blancas están claramente mejor."
+ },
+ "c3 Nc6 d4 cxd4 cxd4 g6": {
+  "en": "d5! and Qd4 hitting h8. White is clearly better.",
+  "es": "¡d5! y Dd4 atacando h8. Las blancas están claramente mejor."
+ },
+ "c3 d6": {
+  "en": "d4: the big centre.",
+  "es": "d4: el gran centro."
+ },
+ "c3 d6 d4 cxd4": {
+  "en": "cxd4.",
+  "es": "cxd4."
+ },
+ "c3 d6 d4 cxd4 cxd4 Nf6": {
+  "en": "Bd3 (or Nc3): protect e4.",
+  "es": "Ad3 (o Cc3): protege e4."
+ },
+ "c3 d6 d4 cxd4 cxd4 Nf6 Bd3": {
+  "en": "After ...e5 Nf3: O-O, Nc3 and d5. White is better.",
+  "es": "Tras ...e5 Cf3: O-O, Cc3 y d5. Las blancas están mejor."
+ },
+ "c3 d6 d4 cxd4 cxd4 e6 Nf3": {
+  "en": "Nc3, Bd3 and O-O: White is clearly better.",
+  "es": "Cc3, Ad3 y O-O: las blancas están claramente mejor."
+ },
+ "c3 d6 d4 cxd4 cxd4 Nc6 d5": {
+  "en": "The knight is kicked: Nc3 and Nf3. White is clearly better.",
+  "es": "El caballo es expulsado: Cc3 y Cf3. Las blancas están claramente mejor."
+ },
+ "c3 d5": {
+  "en": "e5: a French Advance structure.",
+  "es": "e5: una estructura de Francesa del Avance."
+ },
+ "c3 d5 e5 Nc6": {
+  "en": "d4: hold the chain.",
+  "es": "d4: mantén la cadena."
+ },
+ "c3 d5 e5 Nc6 d4 cxd4 cxd4": {
+  "en": "If ...Bf5, Bd3 trades; Nc3 and Nf3. Equal.",
+  "es": "Si ...Af5, Ad3 cambia; Cc3 y Cf3. Igualdad."
+ },
+ "c3 d5 e5 Nc6 d4 Bf5 Nf3": {
+  "en": "Be2, O-O and Be3. Equal.",
+  "es": "Ae2, O-O y Ae3. Igualdad."
+ },
+ "c3 d5 e5 Bf5 d4": {
+  "en": "Bb5+ or Nf3, Be2. Equal.",
+  "es": "Ab5+ o Cf3, Ae2. Igualdad."
+ },
+ "c3 d5 e5 d4 Nf3": {
+  "en": "Bb5 and cxd4: equal.",
+  "es": "Ab5 y cxd4: igualdad."
+ },
+ "c3 e6 d4 cxd4": {
+  "en": "cxd4: then Nc3 and Nf3.",
+  "es": "cxd4: después Cc3 y Cf3."
+ },
+ "c3 Nf6 e5 Nd5": {
+  "en": "d4 (or Nf3): build the centre.",
+  "es": "d4 (o Cf3): construye el centro."
+ },
+ "c3 Nf6 e5 Nd5 d4 cxd4": {
+  "en": "Nf3 (or cxd4): develop first.",
+  "es": "Cf3 (o cxd4): primero desarrolla."
  }
 }
