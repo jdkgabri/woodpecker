@@ -23,8 +23,16 @@ export function mainLine(tree) {
   return out;
 }
 
+// uci moves of a list of SAN moves played from a position
+export function ucisOf(fen, sans) {
+  const c = new Chess(fen);
+  return sans.map(s => { const m = c.move(s); return m.from + m.to + (m.promotion || ''); });
+}
+
 /**
- * Opens the analysis. payload: { fen, solution: [uci], wrong: [uci], title, ref?: { setId, cycleN, idx } }
+ * Opens the analysis. payload: { fen, solution: [uci], wrong: [uci], title, ref?: { setId, cycleN, idx },
+ *   orientation?: 'white' | 'black' (default: the side to move in fen), ply?: moves of solution already played,
+ *   label?: text before the line (default: the set solution) }
  */
 export function openAnalysis(payload) {
   try { sessionStorage.setItem(KEY, JSON.stringify(payload)); } catch {}
@@ -60,9 +68,9 @@ export function viewAnalysis(app) {
   const start = new Chess(p.fen);
   const hero = start.turn();
   let moves = [...(p.solution || [])]; // current line (uci from the start position)
-  let ply = 0;                           // how many moves of "moves" are applied
+  let ply = Math.min(p.ply || 0, moves.length); // how many moves of "moves" are applied
   let engineOn = true;
-  let orientation = toColor(hero);
+  let orientation = p.orientation || toColor(hero);
   let engine = null;
 
   app.innerHTML = `
@@ -77,7 +85,7 @@ export function viewAnalysis(app) {
         <div class="pv" id="pvs"><p class="muted small">${t('Loading engine…')}</p></div>
         <div class="movelist" id="moves"></div>
         <div class="small">
-          <p><span class="muted">${t('Set solution:')}</span> <a href="#" id="loadSol" class="link">${esc(sanLine(p.fen, p.solution || []).join(' ') || '—')}</a></p>
+          <p><span class="muted">${esc(p.label || t('Set solution:'))}</span> <a href="#" id="loadSol" class="link">${esc(sanLine(p.fen, p.solution || []).join(' ') || '—')}</a></p>
           ${(p.wrong || []).length ? `<p><span class="muted">${t('Your moves:')}</span> ${p.wrong.map((u, i) => `<a href="#" class="link" data-wrong="${i}">${esc(sanLine(p.fen, [u])[0] || u)}</a>`).join(', ')}</p>` : ''}
         </div>
         ${p.notes ? `<p class="small notes">💬 ${esc(p.notes)}</p>` : ''}

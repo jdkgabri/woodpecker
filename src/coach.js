@@ -7,6 +7,7 @@ import { getAuth, authHeaders } from './lichess.js';
 import * as store from './store.js';
 import { sound } from './sound.js';
 import { solvePosition } from './solver.js';
+import { openAnalysis, ucisOf } from './analysis.js';
 import { OPENINGS } from './openings-data.js';
 import { loadTree } from './opening-tree.js';
 import { t, tn, lang, san, locale } from './i18n.js';
@@ -129,6 +130,7 @@ function gameRow(g, color, id, review) {
 // ---------- the review ----------
 export function viewCoachGame(app, id, colorParam, go) {
   let alive = true, engine = null, cg = null, cleanupMoment = () => {};
+  const AT_KEY = 'wp:coach:at:' + id;
   const cleanup = () => { alive = false; cleanupMoment(); cg?.destroy(); engine?.destroy(); };
 
   app.innerHTML = `
@@ -155,7 +157,9 @@ export function viewCoachGame(app, id, colorParam, go) {
       }
       app.querySelector('#cgTitle').textContent = `${review.game.white.name} – ${review.game.black.name}`;
       if (!review.moments.length) return showSummary(review, true);
-      runMoments(review, 0);
+      // coming back from the analysis board: return to the same moment (or the summary)
+      const at = resumeAt();
+      runMoments(review, at == null ? 0 : at < 0 ? review.moments.length : at);
     } catch (e) {
       if (alive) main.innerHTML = `<div class="wrap"><section class="card"><p class="bad-text">${esc(e.message)}</p><a class="btn ghost" href="#/coach">${t('Back')}</a></section></div>`;
     }
@@ -169,11 +173,28 @@ export function viewCoachGame(app, id, colorParam, go) {
     });
   }
 
+  // --- the analysis board, seen from the user's side, at a given move of the game ---
+  // where the user is in this review (moment index, or -1 for the summary), kept for this session
+  function resumeAt() {
+    let v = null;
+    try { v = sessionStorage.getItem(AT_KEY); } catch {}
+    return v == null ? null : +v;
+  }
+  function rememberAt(at) { try { sessionStorage.setItem(AT_KEY, String(at)); } catch {} }
+  function analyseGame(review, ply) {
+    const start = new Chess().fen();
+    openAnalysis({
+      fen: start, solution: ucisOf(start, review.game.moves), ply, orientation: toColor(review.color),
+      label: t('Game:'), title: `${review.game.white.name} – ${review.game.black.name}`,
+    });
+  }
+
   // --- one moment ---
   function runMoments(review, idx) {
     cleanupMoment();
     const mo = review.moments[idx];
     if (!mo) return showSummary(review);
+    rememberAt(idx);
     review.results ||= [];
     const total = review.moments.length;
     app.querySelector('#cgStep').textContent = `${idx + 1}/${total}`;
@@ -227,6 +248,8 @@ export function viewCoachGame(app, id, colorParam, go) {
         : waiting
           ? `${prev}<button class="btn primary" id="coRetry">↺ ${t('Try again')}</button><button class="btn ghost" id="coHint">💡 ${t('Hint')}</button><button class="btn ghost" id="coSol">${t('Show the solution')}</button>`
           : `${prev}<button class="btn ghost" id="coHint">💡 ${t('Hint')}</button><button class="btn ghost" id="coSol">${t('Show the solution')}</button><button class="btn ghost" id="coSkip">${t('Skip')}</button>`;
+      $('#coActions').insertAdjacentHTML('beforeend', `<button class="btn ghost" id="coAnalyse" aria-label="${t('Analyse')}">🔍</button>`);
+      $('#coAnalyse').onclick = () => analyseGame(review, mo.ply);
       if (idx > 0) $('#coPrev').onclick = () => runMoments(review, idx - 1);
       askChips();
       if (solved) {
@@ -498,6 +521,7 @@ export function viewCoachGame(app, id, colorParam, go) {
   function showSummary(review, empty = false) {
     cleanupMoment();
     app.querySelector('#cgStep').textContent = '';
+    rememberAt(-1);
     const res = review.results || [];
     const first = res.filter(r => r === 'first').length, solvedN = res.filter(r => r === 'solved').length;
     const counts = {};
@@ -520,10 +544,12 @@ export function viewCoachGame(app, id, colorParam, go) {
           ${tactical.length ? `<button class="btn primary" id="cgSet">🧩 ${t('Train these positions')}</button>` : ''}
           <button class="btn ghost" id="cgAgain">↺ ${t('Review again')}</button>
         </div>
+        <button class="btn ghost full" id="cgAnalyse">🔍 ${t('Analyse the whole game')}</button>
         <p class="small muted" id="cgSetStatus"></p>
         <a class="btn ghost full" href="https://lichess.org/${id}" target="_blank" rel="noopener">${t('Open the game on Lichess')}</a>
       </div>`;
     main.querySelectorAll('[data-i]').forEach(b => { b.onclick = () => runMoments(review, +b.dataset.i); });
+    main.querySelector('#cgAnalyse').onclick = () => analyseGame(review, 0);
     main.querySelector('#cgAgain').onclick = () => { review.results = []; saveReview(id, review); runMoments(review, 0); };
     const setBtn = main.querySelector('#cgSet');
     if (setBtn) setBtn.onclick = async () => {

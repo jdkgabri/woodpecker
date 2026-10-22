@@ -228,7 +228,7 @@ export function viewOpeningTree(app, id, lineId, mode, go, start) {
     $('#otAnalyse').onclick = () => {
       const c = new Chess();
       const ucis = [...tree.root, ...path.map(n => n.s)].map(s => { const m = c.move(s); return m.from + m.to + (m.promotion || ''); });
-      openAnalysis({ fen: new Chess().fen(), solution: ucis, title: tx(line.name) });
+      openAnalysis({ fen: new Chess().fen(), solution: ucis, ply: ucis.length, orientation: toColor(o.side), label: t('Line:'), title: tx(line.name) });
     };
     keys = e => { if (e.key === 'ArrowRight') next(); if (e.key === 'ArrowLeft') back(path.length - 1); };
   }
@@ -374,7 +374,7 @@ export function viewOpeningTree(app, id, lineId, mode, go, start) {
     $('#otAnalyse').onclick = () => {
       const c = new Chess();
       const ucis = [...tree.root, ...path.map(x => x.s)].map(s => { const m = c.move(s); return m.from + m.to + (m.promotion || ''); });
-      openAnalysis({ fen: new Chess().fen(), solution: ucis, title: tx(line.name) });
+      openAnalysis({ fen: new Chess().fen(), solution: ucis, ply: ucis.length, orientation: toColor(o.side), label: t('Line:'), title: tx(line.name) });
     };
     keys = e => { if (e.key === 'Enter' || e.key === 'ArrowRight') drillStart(); };
   }

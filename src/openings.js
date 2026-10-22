@@ -273,11 +273,16 @@ export function viewOpeningLine(app, id, lineId, mode, go) {
     $('#next').onclick = () => goTo(ply + 1);
     $('#last').onclick = () => goTo(sans.length);
     $('#olMoves').onclick = e => { const b = e.target.closest('[data-ply]'); if (b) goTo(+b.dataset.ply); };
-    $('#olAnalyse').onclick = () => openAnalysis({ fen: new Chess().fen(), solution: ucis, title: tx(line.name) });
+    $('#olAnalyse').onclick = analyseLine;
     keys = e => {
       if (e.key === 'ArrowRight') goTo(ply + 1);
       if (e.key === 'ArrowLeft') goTo(ply - 1);
     };
+  }
+
+  // the analysis board opens at the current move, seen from the side that plays this opening
+  function analyseLine() {
+    openAnalysis({ fen: new Chess().fen(), solution: ucis, ply, orientation: toColor(o.side), label: t('Line:'), title: tx(line.name) });
   }
 
   function moveSound(i) {
@@ -330,8 +335,10 @@ export function viewOpeningLine(app, id, lineId, mode, go) {
     $('#olActions').innerHTML = `
       <button class="btn ghost" id="again">↺ ${t('Again')}</button>
       <a class="btn ghost" href="#/opening/${o.id}/${line.id}">📖 ${t('Study')}</a>
+      <button class="btn ghost" id="olAnalyse" aria-label="${t('Analyse')}">🔍</button>
       ${nextLine ? `<a class="btn success" href="#/drill/${o.id}/${nextLine.id}">${t('Next line')} ›</a>` : `<a class="btn success" href="#/opening/${o.id}">${t('Back to the opening')}</a>`}`;
     $('#again').onclick = start;
+    $('#olAnalyse').onclick = analyseLine;
   }
 
   function start() {

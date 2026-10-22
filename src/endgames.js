@@ -6,6 +6,7 @@ import { Chessground } from 'chessground';
 import { Chess } from 'chess.js';
 import { askPromotion } from './puzzleboard.js';
 import { sound } from './sound.js';
+import { openAnalysis, ucisOf } from './analysis.js';
 import { t, tn, lang, san } from './i18n.js';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -101,6 +102,9 @@ export function viewEndgame(app, n, k0, go) {
     let k = Math.min(+k0 || 0, f.positions.length - 1);
     const main = app.querySelector('#egMain');
 
+    // back from the analysis screen returns to this position
+    const remember = () => history.replaceState(null, '', `#/endgame/${f.n}/${k}`);
+
     function show(mode) {
       clearTimeout(timer);
       keys = null;
@@ -187,7 +191,11 @@ export function viewEndgame(app, n, k0, go) {
       };
       $('#egActions').innerHTML = `
         <button class="btn ghost" id="first">⏮</button><button class="btn ghost" id="prev">◀</button>
-        <button class="btn ghost" id="next">▶</button><button class="btn ghost" id="last">⏭</button>`;
+        <button class="btn ghost" id="next">▶</button><button class="btn ghost" id="last">⏭</button>
+        <button class="btn ghost" id="egAnalyse" aria-label="${t('Analyse')}">🔍</button>`;
+      $('#egAnalyse').onclick = () => remember() || openAnalysis({
+        fen: p.fen, solution: ucisOf(p.fen, p.main), ply, orientation: toColor(p.hero), label: t('Solution:'), title: `${f.n}. ${tx(f.title)}`,
+      });
       $('#first').onclick = () => goTo(0);
       $('#prev').onclick = () => goTo(ply - 1);
       $('#next').onclick = () => goTo(ply + 1);
@@ -214,7 +222,12 @@ export function viewEndgame(app, n, k0, go) {
         movable: { color: !done && c.turn() === hero && !busy ? toColor(hero) : undefined, dests: dests(), events: { after: onMove } },
       });
       $('#egMoves').innerHTML = '';
-      $('#egActions').innerHTML = `<button class="btn ghost" id="egHint">💡 ${t('Hint')}</button><button class="btn ghost" id="egUndo">↶ ${t('Take back')}</button><button class="btn ghost" id="egReset">↺ ${t('Restart')}</button>`;
+      $('#egActions').innerHTML = `<button class="btn ghost" id="egHint">💡 ${t('Hint')}</button><button class="btn ghost" id="egUndo">↶ ${t('Take back')}</button><button class="btn ghost" id="egReset">↺ ${t('Restart')}</button><button class="btn ghost" id="egAnalyse" aria-label="${t('Analyse')}">🔍</button>`;
+      $('#egAnalyse').onclick = () => {
+        remember();
+        const played = c.history({ verbose: true }).map(m => m.from + m.to + (m.promotion || ''));
+        openAnalysis({ fen: p.fen, solution: played, ply: played.length, orientation: toColor(hero), label: t('Your moves:'), title: `${f.n}. ${tx(f.title)}` });
+      };
       $('#egReset').onclick = () => show('practice');
       $('#egUndo').onclick = undo;
       $('#egHint').onclick = hint;
