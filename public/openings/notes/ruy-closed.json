@@ -26,5 +26,85 @@
  "": {
   "en": "The Closed Ruy Lopez: h3 and d4, then the knight goes Nbd2–f1–g3 towards the kingside.",
   "es": "La Española Cerrada: h3 y d4, y luego el caballo va Cbd2–f1–g3 hacia el flanco de rey."
+ },
+ "h3 Na5 Bc2 c5": {
+  "en": "d4: the classical Chigorin centre.",
+  "es": "d4: el centro clásico de la Chigorin."
+ },
+ "h3 Na5 Bc2 c5 d4 Qc7": {
+  "en": "Nbd2, then Nf1–g3 (or d5).",
+  "es": "Cbd2, y después Cf1–g3 (o d5)."
+ },
+ "h3 Na5 Bc2 c5 d4 Qc7 Nbd2 cxd4": {
+  "en": "cxd4: the c-file opens; ...Nc6 hits d4.",
+  "es": "cxd4: se abre la columna c; ...Cc6 ataca d4."
+ },
+ "h3 Na5 Bc2 c5 d4 Qc7 Nbd2 cxd4 cxd4 Nc6 a4": {
+  "en": "a4 hits b5: ...Bd7 or ...Rb8. Slightly better for White.",
+  "es": "a4 ataca b5: ...Ad7 o ...Tb8. Algo mejor para las blancas."
+ },
+ "h3 Na5 Bc2 c5 d4 cxd4": {
+  "en": "cxd4, then Nbd2 or a4.",
+  "es": "cxd4, y después Cbd2 o a4."
+ },
+ "h3 Na5 Bc2 c5 d4 cxd4 cxd4 Nc6 a4": {
+  "en": "After ...Nxd4 Nxd4 exd4 axb5: White regains material with pressure. White is better.",
+  "es": "Tras ...Cxd4 Cxd4 exd4 axb5: las blancas recuperan material con presión. Las blancas están mejor."
+ },
+ "h3 Na5 Bc2 c5 d4 cxd4 cxd4 exd4 Nbd2": {
+  "en": "Nb3 and Nbxd4: the knights take the centre. Slightly better for White.",
+  "es": "Cb3 y Cbxd4: los caballos ocupan el centro. Algo mejor para las blancas."
+ },
+ "h3 Na5 Bc2 c5 d4 Nc6": {
+  "en": "d5! gains space with tempo.",
+  "es": "¡d5! gana espacio con tiempo."
+ },
+ "h3 Na5 Bc2 c5 d4 Nc6 d5 Nb8 a4 Bb7 Qe2": {
+  "en": "Na3 and Be3: Black is cramped. White is clearly better.",
+  "es": "Ca3 y Ae3: las negras están encerradas. Las blancas están claramente mejor."
+ },
+ "h3 Bb7": {
+  "en": "The Zaitsev: d4, then Nbd2 and a4 or Bc2.",
+  "es": "La Zaitsev: d4, y después Cbd2 y a4 o Ac2."
+ },
+ "h3 Bb7 d4 exd4": {
+  "en": "cxd4: a big centre. White is better.",
+  "es": "cxd4: un gran centro. Las blancas están mejor."
+ },
+ "h3 Nb8": {
+  "en": "The Breyer: d4, then Nbd2 and Bc2.",
+  "es": "La Breyer: d4, y después Cbd2 y Ac2."
+ },
+ "h3 Nb8 d4 Nbd7": {
+  "en": "Nbd2: the knight heads for f1–g3.",
+  "es": "Cbd2: el caballo va hacia f1–g3."
+ },
+ "h3 Nb8 d4 Nbd7 Nbd2 Bb7": {
+  "en": "Bc2 and Nf1.",
+  "es": "Ac2 y Cf1."
+ },
+ "h3 Nb8 d4 Nbd7 Nbd2 Bb7 Bc2 Re8": {
+  "en": "a4 (or Nf1): queenside pressure.",
+  "es": "a4 (o Cf1): presión en el flanco de dama."
+ },
+ "h3 Nb8 d4 Nbd7 Nbd2 Bb7 Bc2 Re8 a4 Bf8": {
+  "en": "Bd3 hits b5; Nf1–g3 later. Slightly better for White.",
+  "es": "Ad3 ataca b5; más tarde Cf1–g3. Algo mejor para las blancas."
+ },
+ "h3 Nb8 d4 Nbd7 Nbd2 Bb7 Bc2 Re8 a4 Bf8 Bd3": {
+  "en": "After ...h6 axb5 axb5: a long manoeuvring game. Slightly better for White.",
+  "es": "Tras ...h6 axb5 axb5: una partida larga de maniobras. Algo mejor para las blancas."
+ },
+ "h3 Be6": {
+  "en": "d4: White's centre gives a plus.",
+  "es": "d4: el centro blanco da ventaja."
+ },
+ "h3 Be6 d4 Bxb3": {
+  "en": "axb3: the a-file opens.",
+  "es": "axb3: se abre la columna a."
+ },
+ "h3 Be6 d4 Bxb3 axb3 exd4": {
+  "en": "cxd4: a big centre and the a-file. White is better.",
+  "es": "cxd4: un gran centro y la columna a. Las blancas están mejor."
  }
 }
