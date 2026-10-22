@@ -26,5 +26,97 @@
  "": {
   "en": "Against 2...d5: exd5 Qxd5 and d4, gaining time on the queen.",
   "es": "Contra 2...d5: exd5 Dxd5 y d4, ganando tiempo sobre la dama."
+ },
+ "exd5 Qxd5 d4 cxd4": {
+  "en": "Nf3 (or cxd4): develop first, then take back.",
+  "es": "Cf3 (o cxd4): primero desarrolla, y después recaptura."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Nc6": {
+  "en": "cxd4: then Nc3 gains time on the queen.",
+  "es": "cxd4: después Cc3 gana tiempo sobre la dama."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Nc6 cxd4 Bg4": {
+  "en": "Be2 (or Nc3): unpin and develop.",
+  "es": "Ae2 (o Cc3): deshaz la clavada y desarrolla."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Nc6 cxd4 Bg4 Be2 Bxf3": {
+  "en": "Bxf3: the bishop hits the queen and the c6-knight; if ...Qxd4, Bxc6+! wins.",
+  "es": "Axf3: el alfil ataca a la dama y al caballo de c6; si ...Dxd4, ¡Axc6+! gana."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Nc6 cxd4 Nf6": {
+  "en": "Nc3: the queen must move again. White is clearly better.",
+  "es": "Cc3: la dama tiene que moverse otra vez. Las blancas están claramente mejor."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Bg4": {
+  "en": "Be2: unpin.",
+  "es": "Ae2: deshaz la clavada."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Bg4 Be2 Nc6": {
+  "en": "Be3 (or cxd4): develop and keep the centre.",
+  "es": "Ae3 (o cxd4): desarrolla y mantén el centro."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Bg4 Be2 Nc6 Be3": {
+  "en": "After ...e6 cxd4 Bb4+ Nc3: an isolated-pawn position. Equal.",
+  "es": "Tras ...e6 cxd4 Ab4+ Cc3: una posición de peón aislado. Igualdad."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Bg4 Be2 e5": {
+  "en": "cxd4 and Nc3: White develops with tempo. White is better.",
+  "es": "cxd4 y Cc3: las blancas desarrollan ganando tiempos. Las blancas están mejor."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Nf6": {
+  "en": "cxd4 and Nc3.",
+  "es": "cxd4 y Cc3."
+ },
+ "exd5 Qxd5 d4 cxd4 Nf3 Nf6 cxd4 Nc6": {
+  "en": "Nc3: hit the queen. White is clearly better.",
+  "es": "Cc3: ataca a la dama. Las blancas están claramente mejor."
+ },
+ "exd5 Qxd5 d4 Nf6": {
+  "en": "Nf3, then Be2 or Be3 and Na3.",
+  "es": "Cf3, y después Ae2 o Ae3 y Ca3."
+ },
+ "exd5 Qxd5 d4 Nf6 Nf3 Bg4": {
+  "en": "Be3 (or Be2): protect d4.",
+  "es": "Ae3 (o Ae2): protege d4."
+ },
+ "exd5 Qxd5 d4 Nf6 Nf3 Bg4 Be3 cxd4": {
+  "en": "Qxd4: trade queens into an equal ending, or cxd4.",
+  "es": "Dxd4: cambia damas hacia un final igualado, o cxd4."
+ },
+ "exd5 Qxd5 d4 Nf6 Nf3 Bg4 Be3 cxd4 Qxd4": {
+  "en": "After ...Qxd4 Nxd4: an equal endgame.",
+  "es": "Tras ...Dxd4 Cxd4: un final igualado."
+ },
+ "exd5 Qxd5 d4 Nf6 Nf3 Bg4 Be3 e6 Be2": {
+  "en": "After ...cxd4 cxd4: Nc3 and O-O. Equal.",
+  "es": "Tras ...cxd4 cxd4: Cc3 y O-O. Igualdad."
+ },
+ "exd5 Qxd5 d4 Nf6 Nf3 Bg4 Be3 Bxf3 gxf3": {
+  "en": "The bishop pair and the g-file. Slightly better for White.",
+  "es": "La pareja de alfiles y la columna g. Algo mejor para las blancas."
+ },
+ "exd5 Qxd5 d4 Nf6 Nf3 e6": {
+  "en": "Be3 or Be2, Na3: a calm, slightly better position.",
+  "es": "Ae3 o Ae2, Ca3: una posición tranquila, algo mejor."
+ },
+ "exd5 Qxd5 d4 Nf6 Nf3 Nc6": {
+  "en": "Be3 (or Be2) and dxc5 ideas.",
+  "es": "Ae3 (o Ae2) e ideas de dxc5."
+ },
+ "exd5 Qxd5 d4 Nc6": {
+  "en": "Nf3 and Be2.",
+  "es": "Cf3 y Ae2."
+ },
+ "exd5 Qxd5 d4 Nc6 Nf3 Bg4": {
+  "en": "Be2, then O-O and Be3.",
+  "es": "Ae2, y después O-O y Ae3."
+ },
+ "exd5 Qxd5 d4 Nc6 Nf3 cxd4": {
+  "en": "cxd4: then Nc3 hits the queen.",
+  "es": "cxd4: después Cc3 ataca a la dama."
+ },
+ "exd5 Nf6 d4 cxd4 Bb5+": {
+  "en": "After ...Bd7 Bc4: Qxd4 regains the pawn. White is better.",
+  "es": "Tras ...Ad7 Ac4: Dxd4 recupera el peón. Las blancas están mejor."
  }
 }

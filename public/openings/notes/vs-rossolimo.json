@@ -38,5 +38,93 @@
  "": {
   "en": "The Rossolimo: White threatens Bxc6 and doubled pawns. ...g6 and ...Bg7 is the main answer.",
   "es": "La Rossolimo: las blancas amenazan Axc6 y peones doblados. ...g6 y ...Ag7 es la respuesta principal."
+ },
+ "g6 Bxc6": {
+  "en": "...bxc6: towards the centre.",
+  "es": "...bxc6: hacia el centro."
+ },
+ "g6 Bxc6 bxc6 O-O": {
+  "en": "...Bg7, then ...e5 or ...Qc7 and ...Nf6.",
+  "es": "...Ag7, y después ...e5 o ...Dc7 y ...Cf6."
+ },
+ "g6 Bxc6 bxc6 O-O Bg7 c3": {
+  "en": "...Qc7 (or ...Nf6, ...e5): stop d4 or meet it with ...cxd4.",
+  "es": "...Dc7 (o ...Cf6, ...e5): impide d4 o respóndelo con ...cxd4."
+ },
+ "g6 Bxc6 bxc6 O-O Bg7 c3 Qc7": {
+  "en": "If d4, ...cxd4 cxd4 and ...Nf6: the bishop pair. Slightly better for White.",
+  "es": "Si d4, ...cxd4 cxd4 y ...Cf6: la pareja de alfiles. Algo mejor para las blancas."
+ },
+ "g6 Bxc6 bxc6 O-O Bg7 d3 e5": {
+  "en": "...Ne7, ...d6 and ...O-O: a solid wall. Equal.",
+  "es": "...Ce7, ...d6 y ...O-O: un muro sólido. Igualdad."
+ },
+ "g6 Bxc6 bxc6 O-O Bg7 Re1 e5": {
+  "en": "...Ne7 and ...O-O; if d4, the centre opens for the bishops. Slightly better for White.",
+  "es": "...Ce7 y ...O-O; si d4, el centro se abre para los alfiles. Algo mejor para las blancas."
+ },
+ "g6 Bxc6 bxc6 d4": {
+  "en": "...Bg7 (or ...cxd4): hit the centre.",
+  "es": "...Ag7 (o ...cxd4): golpea el centro."
+ },
+ "g6 Bxc6 bxc6 d4 Bg7 dxc5": {
+  "en": "...Qa5+ regains the pawn.",
+  "es": "...Da5+ recupera el peón."
+ },
+ "g6 Bxc6 bxc6 d4 Bg7 dxc5 Qa5+": {
+  "en": "After Nbd2 Qxc5 O-O: ...Nf6 and ...d6. Slightly better for White.",
+  "es": "Tras Cbd2 Dxc5 O-O: ...Cf6 y ...d6. Algo mejor para las blancas."
+ },
+ "g6 Bxc6 bxc6 d3": {
+  "en": "...Bg7, ...d6 and ...e5 or ...Nh6–f7.",
+  "es": "...Ag7, ...d6 y ...e5 o ...Ch6–f7."
+ },
+ "g6 O-O": {
+  "en": "...Bg7: complete the fianchetto.",
+  "es": "...Ag7: completa el fianchetto."
+ },
+ "g6 O-O Bg7 c3": {
+  "en": "...e5 (or ...Nf6): stop d4.",
+  "es": "...e5 (o ...Cf6): impide d4."
+ },
+ "g6 O-O Bg7 c3 e5 d3": {
+  "en": "...Nge7 and ...O-O, ...d6. Equal.",
+  "es": "...Cge7 y ...O-O, ...d6. Igualdad."
+ },
+ "g6 O-O Bg7 c3 e5 d3 Nge7": {
+  "en": "After Be3 d6: equal.",
+  "es": "Tras Ae3 d6: igualdad."
+ },
+ "g6 O-O Bg7 c3 e5 d4 cxd4": {
+  "en": "After cxd4 Nxd4 Nxd4 exd4: Bf4 and Nd2. Slightly better for White.",
+  "es": "Tras cxd4 Cxd4 Cxd4 exd4: Af4 y Cd2. Algo mejor para las blancas."
+ },
+ "g6 O-O Bg7 c3 e5 Re1": {
+  "en": "...Nge7 (stopping d4 tricks). Black is comfortable.",
+  "es": "...Cge7 (impidiendo trucos con d4). Las negras están cómodas."
+ },
+ "g6 O-O Bg7 c3 e5 Re1 Nge7": {
+  "en": "...O-O and ...d6: equal.",
+  "es": "...O-O y ...d6: igualdad."
+ },
+ "g6 O-O Bg7 c3 e5 Bxc6 dxc6": {
+  "en": "...Qe7, ...Nf6 and ...Be6: the bishop pair. Equal.",
+  "es": "...De7, ...Cf6 y ...Ae6: la pareja de alfiles. Igualdad."
+ },
+ "g6 O-O Bg7 Re1": {
+  "en": "...e5 (or ...Nf6).",
+  "es": "...e5 (o ...Cf6)."
+ },
+ "g6 O-O Bg7 Re1 e5 c3": {
+  "en": "...Nge7: then ...O-O and ...d6.",
+  "es": "...Cge7: después ...O-O y ...d6."
+ },
+ "g6 O-O Bg7 Nc3 e5": {
+  "en": "...Nge7 and ...O-O. Equal.",
+  "es": "...Cge7 y ...O-O. Igualdad."
+ },
+ "g6 c3 Bg7 O-O": {
+  "en": "...e5 (or ...Nf6).",
+  "es": "...e5 (o ...Cf6)."
  }
 }
