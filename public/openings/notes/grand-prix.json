@@ -1,30 +1,30 @@
 {
- "Nc6 Nf3": {
-  "en": "Against ...Nc6, Nf3 first and f4 later; Bc4 or Bb5 and quick castling keep the attacking setup.",
-  "es": "Contra ...Cc6, primero Cf3 y f4 más tarde; Ac4 o Ab5 y enroque rápido mantienen el esquema de ataque."
- },
  "d6 f4": {
   "en": "Against ...d6, f4 at once: the Grand Prix setup with Nf3, Bc4 or Bb5, O-O and Qe1–h4.",
   "es": "Contra ...d6, f4 de inmediato: el esquema Grand Prix con Cf3, Ac4 o Ab5, O-O y De1–h4."
  },
- "Nc6 Nf3 g6 Bc4 e6 d4 cxd4 Nxd4 Bg7": {
-  "en": "Ndb5! and Nd6+: the hole on d6 decides.",
-  "es": "¡Cdb5! y Cd6+: el agujero de d6 decide."
+ "Nc6 f4": {
+  "en": "The Grand Prix setup: f4, Nf3, then Bb5 or Bc4, O-O and the queen to e1–h4 for a kingside attack.",
+  "es": "El esquema Grand Prix: f4, Cf3, después Ab5 o Ac4, O-O y la dama a e1–h4 para atacar en el flanco de rey."
  },
- "Nc6 Nf3 e5 Bc4 d6 O-O Nf6": {
-  "en": "Ng5! attacks f7 twice (knight and bishop).",
-  "es": "¡Cg5! ataca f7 dos veces (caballo y alfil)."
+ "g6 f4 Bg7 Nf3 e6": {
+  "en": "e5! cramps Black: the g7-bishop hits a wall and d6 becomes a hole.",
+  "es": "¡e5! encierra a las negras: el alfil de g7 choca contra un muro y d6 se convierte en un agujero."
  },
- "Nc6 Nf3 g6 Bc4 Bg7 O-O d6 d3 Bg4": {
-  "en": "Bxf7+! Kxf7 Ng5+ and Qxg4: White wins a pawn and the black king is exposed.",
-  "es": "¡Axf7+! Rxf7 Cg5+ y Dxg4: las blancas ganan un peón y el rey negro queda expuesto."
+ "d6 f4 g6 Nf3 Bg7 Bc4 e6": {
+  "en": "...e6 weakens d6: d4! opens the centre while Black is not ready.",
+  "es": "...e6 debilita d6: ¡d4! abre el centro cuando las negras no están preparadas."
  },
- "e6 Nf3 Nc6 d4 cxd4 Nxd4 Bc5 Nxc6 bxc6 Bd3 Nf6": {
-  "en": "e5! kicks the knight; Ne4 and Qg4 follow with an attack.",
-  "es": "¡e5! echa al caballo; siguen Ce4 y Dg4 con ataque."
+ "e6 f4 d5 Nf3 Nc6 Bb5 a6": {
+  "en": "Bxc6+ bxc6: Black's pawns are damaged; e5 or d3 follow with a pleasant game.",
+  "es": "Axc6+ bxc6: los peones negros quedan dañados; siguen e5 o d3 con un juego cómodo."
  },
- "e6 Nf3 Nf6 d4 cxd4 Nxd4 Bb4 e5 Ne4": {
-  "en": "Qg4! hits g7 and the e4-knight.",
-  "es": "¡Dg4! ataca g7 y el caballo de e4."
+ "Nc6 f4 e5": {
+  "en": "Take: fxe5. After ...d6, Bb5 and Nf3 develop with pressure on e5.",
+  "es": "Toma: fxe5. Tras ...d6, Ab5 y Cf3 desarrollan con presión sobre e5."
+ },
+ "e6 f4 Nc6 Nf3 Nge7 Bc4 Ng6": {
+  "en": "f5! hits the g6-knight and the e6-pawn and opens lines against Black's king.",
+  "es": "¡f5! ataca el caballo de g6 y el peón de e6 y abre líneas contra el rey negro."
  }
 }

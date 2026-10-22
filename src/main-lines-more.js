@@ -6046,5 +6046,148 @@ export default {
     "es": "...Te8 ataca e4, y sigue ...Cbd7–e5: las piezas negras luchan por e5."
    }
   }
+ },
+ "grand-prix": {
+  "moves": "e4 c5 Nc3 Nc6 f4 e6 Nf3 d5 Bb5 d4 Bxc6+ bxc6 Ne2",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "The Sicilian.",
+    "es": "La Siciliana."
+   },
+   "3": {
+    "en": "Nc3: the Grand Prix move order, keeping f4 available.",
+    "es": "Cc3: el orden de jugadas del Grand Prix, manteniendo disponible f4."
+   },
+   "4": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "5": {
+    "en": "The Grand Prix Attack: f4 prepares Nf3, a bishop to b5 or c4, O-O and a kingside attack.",
+    "es": "El Ataque Grand Prix: f4 prepara Cf3, un alfil a b5 o c4, O-O y un ataque en el flanco de rey."
+   },
+   "6": {
+    "en": "...e6 prepares ...d5, the most testing reply.",
+    "es": "...e6 prepara ...d5, la respuesta más exigente."
+   },
+   "7": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "8": {
+    "en": "...d5 strikes in the centre.",
+    "es": "...d5 golpea en el centro."
+   },
+   "9": {
+    "en": "Bb5 pins the c6-knight and prepares to double Black's pawns.",
+    "es": "Ab5 clava el caballo de c6 y prepara doblar los peones negros."
+   },
+   "10": {
+    "en": "...d4 kicks the c3-knight.",
+    "es": "...d4 echa al caballo de c3."
+   },
+   "11": {
+    "en": "Bxc6+: White gives the bishop to damage Black's pawns.",
+    "es": "Axc6+: las blancas entregan el alfil para dañar los peones negros."
+   },
+   "12": {
+    "en": "Forced.",
+    "es": "Forzada."
+   },
+   "13": {
+    "en": "Ne2: the knight heads for g3 to support f5. Black has the bishop pair, White the better structure: a balanced fight.",
+    "es": "Ce2: el caballo va hacia g3 para apoyar f5. Las negras tienen la pareja de alfiles y las blancas la mejor estructura: una lucha equilibrada."
+   }
+  }
+ },
+ "italian-all": {
+  "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 d6 O-O",
+  "notes": {
+   "1": {
+    "en": "1.e4: White takes the centre.",
+    "es": "1.e4: las blancas ocupan el centro."
+   },
+   "2": {
+    "en": "Black takes his share.",
+    "es": "Las negras toman su parte."
+   },
+   "3": {
+    "en": "The knight attacks e5.",
+    "es": "El caballo ataca e5."
+   },
+   "4": {
+    "en": "...Nc6 defends.",
+    "es": "...Cc6 defiende."
+   },
+   "5": {
+    "en": "The Italian: the bishop aims at f7.",
+    "es": "La Italiana: el alfil apunta a f7."
+   },
+   "6": {
+    "en": "The Giuoco Piano (...Bc5) is the most common answer; ...Nf6 (the Two Knights) is the other main one. Each has its own line above.",
+    "es": "El Giuoco Piano (...Ac5) es la respuesta más común; ...Cf6 (los Dos Caballos) es la otra principal. Cada una tiene su línea arriba."
+   },
+   "7": {
+    "en": "c3 prepares d4.",
+    "es": "c3 prepara d4."
+   },
+   "9": {
+    "en": "d3: the Pianissimo, a slow build-up.",
+    "es": "d3: la Pianissimo, una construcción lenta."
+   },
+   "11": {
+    "en": "White castles: next a4, h3, Re1 and Nbd2–f1–g3. A long manoeuvring game.",
+    "es": "Las blancas enrocan: siguen a4, h3, Te1 y Cbd2–f1–g3. Una partida larga de maniobras."
+   }
+  }
+ },
+ "qg-all": {
+  "moves": "d4 d5 c4 e6 Nc3 Nf6 Nf3 Bb4 Bg5 O-O e3 h6 Bh4",
+  "notes": {
+   "1": {
+    "en": "1.d4 takes the centre.",
+    "es": "1.d4 ocupa el centro."
+   },
+   "2": {
+    "en": "...d5.",
+    "es": "...d5."
+   },
+   "3": {
+    "en": "The Queen's Gambit: c4 attacks d5 from the side.",
+    "es": "El Gambito de Dama: c4 ataca d5 desde el lado."
+   },
+   "4": {
+    "en": "...e6: the Declined, the most common answer. The Accepted (...dxc4) and the Slav (...c6) have their own lines.",
+    "es": "...e6: el Rehusado, la respuesta más común. El Aceptado (...dxc4) y la Eslava (...c6) tienen sus propias líneas."
+   },
+   "5": {
+    "en": "More pressure on d5.",
+    "es": "Más presión sobre d5."
+   },
+   "7": {
+    "en": "Development.",
+    "es": "Desarrollo."
+   },
+   "8": {
+    "en": "...Bb4: the Ragozin, a Nimzo-Indian-style pin.",
+    "es": "...Ab4: la Ragozin, una clavada al estilo de la Nimzoindia."
+   },
+   "9": {
+    "en": "Bg5 pins the f6-knight in turn.",
+    "es": "Ag5 clava a su vez el caballo de f6."
+   },
+   "11": {
+    "en": "e3 supports d4 and opens the f1-bishop.",
+    "es": "e3 apoya d4 y abre el alfil de f1."
+   },
+   "13": {
+    "en": "Bh4 keeps the pin. White has a small, comfortable edge.",
+    "es": "Ah4 mantiene la clavada. Las blancas tienen una ventaja pequeña y cómoda."
+   }
+  }
  }
 };
