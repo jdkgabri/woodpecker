@@ -26,5 +26,117 @@
  "": {
   "en": "2.d4: take with ...exd4. Against the Danish (3.c3), ...d5 gives back the pawn and frees Black's game.",
   "es": "2.d4: toma con ...exd4. Contra el Danés (3.c3), ...d5 devuelve el peón y libera el juego negro."
+ },
+ "exd4 c3": {
+  "en": "The Danish Gambit: ...Nc6 (or ...d5) develops; give the pawns back when it helps.",
+  "es": "El Gambito Danés: ...Cc6 (o ...d5) desarrolla; devuelve los peones cuando convenga."
+ },
+ "exd4 c3 Nc6 cxd4": {
+  "en": "...d5! hits the centre before White develops.",
+  "es": "¡...d5! golpea el centro antes de que las blancas desarrollen."
+ },
+ "exd4 c3 Nc6 cxd4 d5 e5": {
+  "en": "...Bb4+ and ...Nge7–f5: the French-style plan against d4.",
+  "es": "...Ab4+ y ...Cge7–f5: el plan al estilo Francesa contra d4."
+ },
+ "exd4 c3 Nc6 cxd4 d5 e5 Bb4+ Nc3": {
+  "en": "...Nge7, then ...Nf5 or ...Bf5 and ...O-O.",
+  "es": "...Cge7, y después ...Cf5 o ...Af5 y ...O-O."
+ },
+ "exd4 c3 Nc6 cxd4 d5 e5 Bb4+ Nc3 Nge7": {
+  "en": "After Be2 Ba5 Nf3 Bb6: ...Bg4 and ...Nf5 press d4. Slightly better for White.",
+  "es": "Tras Ae2 Aa5 Cf3 Ab6: ...Ag4 y ...Cf5 presionan d4. Algo mejor para las blancas."
+ },
+ "exd4 c3 Nc6 cxd4 d5 e5 Bb4+ Bd2 Bxd2+": {
+  "en": "After Qxd2 f6 (or ...Nge7): Black attacks the chain. Equal.",
+  "es": "Tras Dxd2 f6 (o ...Cge7): las negras atacan la cadena. Igualdad."
+ },
+ "exd4 c3 Nc6 cxd4 d5 exd5": {
+  "en": "...Bb4+ and ...Qxd5: Black develops easily.",
+  "es": "...Ab4+ y ...Dxd5: las negras desarrollan fácilmente."
+ },
+ "exd4 c3 Nc6 cxd4 d5 exd5 Bb4+": {
+  "en": "After Nc3 Qxd5 Nf3 Bg4: Black's pieces are active. Equal.",
+  "es": "Tras Cc3 Dxd5 Cf3 Ag4: las piezas negras están activas. Igualdad."
+ },
+ "exd4 c3 Nc6 Bc4 Nf6 Nf3 Nxe4": {
+  "en": "If Qb3, ...Qf6 or ...Qe7 and ...Na5: Black is a pawn up. Black is better.",
+  "es": "Si Db3, ...Df6 o ...De7 y ...Ca5: las negras tienen un peón de más. Las negras están mejor."
+ },
+ "exd4 c3 Nc6 Bc4 Nf6 cxd4 Bb4+": {
+  "en": "After Nc3 Nxe4: Black is a pawn up with easy development. Black is better.",
+  "es": "Tras Cc3 Cxe4: las negras tienen un peón de más con un desarrollo fácil. Las negras están mejor."
+ },
+ "exd4 c3 Nc6 Bc4 Nf6 e5": {
+  "en": "...Nxe5! wins a pawn: after Bb3 dxc3, Black is two pawns up.",
+  "es": "¡...Cxe5! gana un peón: tras Ab3 dxc3, las negras tienen dos peones de más."
+ },
+ "exd4 c3 Nc6 Bc4 Nf6 Qb3": {
+  "en": "...Qe7 (or ...d5) defends f7; ...Na5 trades the c4-bishop. Black is clearly better.",
+  "es": "...De7 (o ...d5) defiende f7; ...Ca5 cambia el alfil de c4. Las negras están claramente mejor."
+ },
+ "exd4 c3 Nc6 Nf3": {
+  "en": "...d5! (the same idea).",
+  "es": "¡...d5! (la misma idea)."
+ },
+ "exd4 Qxd4": {
+  "en": "The Centre Game: ...Nc6 gains time on the queen.",
+  "es": "La Partida del Centro: ...Cc6 gana tiempo sobre la dama."
+ },
+ "exd4 Qxd4 Nc6 Qe3": {
+  "en": "...Nf6, ...Bb4 and ...O-O: rapid development.",
+  "es": "...Cf6, ...Ab4 y ...O-O: desarrollo rápido."
+ },
+ "exd4 Qxd4 Nc6 Qe3 Nf6 Nc3": {
+  "en": "...Bb4: pin and pressure e4.",
+  "es": "...Ab4: clava y presiona e4."
+ },
+ "exd4 Qxd4 Nc6 Qe3 Nf6 Nc3 Bb4 Bd2": {
+  "en": "Castle; ...Re8 hits e4.",
+  "es": "Enroca; ...Te8 ataca e4."
+ },
+ "exd4 Qxd4 Nc6 Qe3 Nf6 Nc3 Bb4 Bd2 O-O O-O-O": {
+  "en": "...Re8 and ...d5 or ...Bxc3: Black is comfortable. Equal.",
+  "es": "...Te8 y ...d5 o ...Axc3: las negras están cómodas. Igualdad."
+ },
+ "exd4 Qxd4 Nc6 Qe3 Nf6 e5": {
+  "en": "...Ng4 hits the queen and e5. Black is better.",
+  "es": "...Cg4 ataca a la dama y a e5. Las negras están mejor."
+ },
+ "exd4 Qxd4 Nc6 Qd1": {
+  "en": "...Nf6 and ...Bb4 or ...d5.",
+  "es": "...Cf6 y ...Ab4 o ...d5."
+ },
+ "exd4 Qxd4 Nc6 Qd1 Nf6 Nc3": {
+  "en": "...Bb4: pressure on e4.",
+  "es": "...Ab4: presión sobre e4."
+ },
+ "exd4 Qxd4 Nc6 Qd1 Nf6 Bd3 d5": {
+  "en": "After exd5 Qxd5: ...Bb4+ and ...Bg4 develop with tempo. Black is better.",
+  "es": "Tras exd5 Dxd5: ...Ab4+ y ...Ag4 desarrollan ganando tiempos. Las negras están mejor."
+ },
+ "exd4 Qxd4 Nc6 Qa4": {
+  "en": "...Nf6 and ...Bc5 or ...Bb4. Equal.",
+  "es": "...Cf6 y ...Ac5 o ...Ab4. Igualdad."
+ },
+ "exd4 Nf3": {
+  "en": "...Nc6: a Scotch by transposition.",
+  "es": "...Cc6: una Escocesa por transposición."
+ },
+ "exd4 Nf3 Nc6 Nxd4": {
+  "en": "...Nf6 hits e4.",
+  "es": "...Cf6 ataca e4."
+ },
+ "exd4 Nf3 Nc6 Nxd4 Nf6 Nxc6": {
+  "en": "...bxc6, then ...d5 or ...Bc5.",
+  "es": "...bxc6, y después ...d5 o ...Ac5."
+ },
+ "exd4 Nf3 Nc6 Nxd4 Nf6 Nc3": {
+  "en": "...Bb4: the Scotch Four Knights.",
+  "es": "...Ab4: los Cuatro Caballos Escoceses."
+ },
+ "exd4 Nf3 Nc6 Bc4": {
+  "en": "...Nf6: the Two Knights by transposition; against e5, ...d5!",
+  "es": "...Cf6: los Dos Caballos por transposición; contra e5, ¡...d5!"
  }
 }

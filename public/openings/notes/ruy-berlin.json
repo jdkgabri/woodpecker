@@ -42,5 +42,121 @@
  "": {
   "en": "The Berlin: Black counterattacks e4. After O-O Nxe4 d4 the famous Berlin endgame can arise.",
   "es": "La Berlinesa: las negras contraatacan e4. Tras O-O Cxe4 d4 puede surgir el famoso final berlinés."
+ },
+ "O-O Bc5 Nxe5 Nxe5": {
+  "en": "d4! forks the knight and bishop.",
+  "es": "¡d4! ataca a la vez al caballo y al alfil."
+ },
+ "O-O Bc5 Nxe5 Nxe5 d4 Bxd4": {
+  "en": "Qxd4: the queen is centralised and the knight on e5 will be hit by f4.",
+  "es": "Dxd4: la dama está centralizada y el caballo de e5 será atacado por f4."
+ },
+ "O-O Bc5 Nxe5 Nxe5 d4 Bxd4 Qxd4 Nc6 Qc5": {
+  "en": "Qc5 stops ...d6 ideas and eyes the king: Nc3, Re1 and Bg5. White is clearly better.",
+  "es": "Dc5 dificulta ...d6 y apunta al rey: Cc3, Te1 y Ag5. Las blancas están claramente mejor."
+ },
+ "O-O Bc5 Nxe5 Nxe5 d4 c6 dxe5": {
+  "en": "After ...Nxe4 Bd3: the bishop pair and the centre. White is better.",
+  "es": "Tras ...Cxe4 Ad3: la pareja de alfiles y el centro. Las blancas están mejor."
+ },
+ "O-O Bc5 Nxe5 Nxe5 d4 Bd6 dxe5": {
+  "en": "...Bxe5 f4 and e5: White wins a piece. White is winning.",
+  "es": "...Axe5 f4 y e5: las blancas ganan una pieza. Las blancas van ganando."
+ },
+ "O-O Bc5 Nxe5 Nxe5 d4 Nxe4": {
+  "en": "dxc5: White wins material.",
+  "es": "dxc5: las blancas ganan material."
+ },
+ "O-O Bc5 Nxe5 Nxe5 d4 Nxe4 dxc5": {
+  "en": "After ...a6 Qd5 (or Qd4) Qe7 Qxe4: White is a piece up. Winning.",
+  "es": "Tras ...a6 Dd5 (o Dd4) De7 Dxe4: las blancas tienen una pieza de más. Ganando."
+ },
+ "O-O Nxe4": {
+  "en": "Re1: hit the knight; the Berlin endgame (d4 lines) is avoided.",
+  "es": "Te1: ataca al caballo; se evita el final de la Berlinesa (líneas con d4)."
+ },
+ "O-O Nxe4 Re1 Nd6": {
+  "en": "Ba4 (or Nxe5): keep the pressure.",
+  "es": "Aa4 (o Cxe5): mantén la presión."
+ },
+ "O-O Nxe4 Re1 Nd6 Ba4": {
+  "en": "After ...Be7 Nxe5 Nxe5 Rxe5 O-O: equal; White is a bit more active.",
+  "es": "Tras ...Ae7 Cxe5 Cxe5 Txe5 O-O: igualdad; las blancas algo más activas."
+ },
+ "O-O Nxe4 Re1 Nf6 d4": {
+  "en": "...e4 and Ng5 or Bg5: White has the initiative.",
+  "es": "...e4 y Cg5 o Ag5: las blancas tienen la iniciativa."
+ },
+ "O-O Nxe4 Re1 d5": {
+  "en": "d3! hits the knight. White is clearly better.",
+  "es": "¡d3! ataca al caballo. Las blancas están claramente mejor."
+ },
+ "O-O Nxe4 Re1 d5 d3 Nd6": {
+  "en": "Nxe5: the e-file pin and Bxc6+ win material. White is winning.",
+  "es": "Cxe5: la clavada en la columna e y Axc6+ ganan material. Las blancas van ganando."
+ },
+ "O-O d6": {
+  "en": "Re1 or d4: the e5-pawn is under pressure.",
+  "es": "Te1 o d4: el peón de e5 está bajo presión."
+ },
+ "O-O d6 Re1 Be7": {
+  "en": "d4: open the centre.",
+  "es": "d4: abre el centro."
+ },
+ "O-O d6 Re1 Be7 d4 exd4": {
+  "en": "Nxd4: White has more space.",
+  "es": "Cxd4: las blancas tienen más espacio."
+ },
+ "O-O d6 Re1 Be7 d4 exd4 Nxd4 Bd7": {
+  "en": "Nxc6 (or Bf1, Nc3): slightly better for White.",
+  "es": "Cxc6 (o Af1, Cc3): algo mejor para las blancas."
+ },
+ "O-O d6 Re1 Be7 d4 exd4 Nxd4 Bd7 Nxc6 bxc6 Ba4": {
+  "en": "Nc3 and Bg5: more space. Slightly better for White.",
+  "es": "Cc3 y Ag5: más espacio. Algo mejor para las blancas."
+ },
+ "O-O d6 Re1 Be7 d4 exd4 Nxd4 Bd7 Nxc6 Bxc6 Bxc6+": {
+  "en": "After ...bxc6 Nc3: White's structure is better. Slightly better.",
+  "es": "Tras ...bxc6 Cc3: la estructura blanca es mejor. Algo mejor."
+ },
+ "O-O d6 Re1 Be7 d4 O-O Bxc6": {
+  "en": "...bxc6 dxe5 dxe5 Qxd8 Rxd8 Nxe5: White wins a pawn. Better.",
+  "es": "...bxc6 dxe5 dxe5 Dxd8 Txd8 Cxe5: las blancas ganan un peón. Mejor."
+ },
+ "O-O d6 Re1 Bd7": {
+  "en": "d4: the same plan.",
+  "es": "d4: el mismo plan."
+ },
+ "O-O d6 Re1 Bd7 d4 exd4 Bxc6": {
+  "en": "...Bxc6 Nxd4 and c4, Nc3: a Maroczy-style bind. White is better.",
+  "es": "...Axc6 Cxd4 y c4, Cc3: un bloqueo tipo Maroczy. Las blancas están mejor."
+ },
+ "O-O d6 Re1 Bg4": {
+  "en": "d4 (or h3): hit the centre.",
+  "es": "d4 (o h3): golpea el centro."
+ },
+ "O-O d6 Re1 Bg4 d4": {
+  "en": "c3, Be3 and Nbd2: a strong centre. White is better.",
+  "es": "c3, Ae3 y Cbd2: un centro fuerte. Las blancas están mejor."
+ },
+ "O-O a6": {
+  "en": "...a6? Bxc6 dxc6 Nxe5: White wins a pawn.",
+  "es": "¿...a6? Axc6 dxc6 Cxe5: las blancas ganan un peón."
+ },
+ "O-O a6 Bxc6 dxc6": {
+  "en": "Nxe5: take the pawn.",
+  "es": "Cxe5: toma el peón."
+ },
+ "O-O a6 Bxc6 dxc6 Nxe5 Bd6 Nf3 Bg4": {
+  "en": "e5! forks the bishop and knight. White is winning.",
+  "es": "¡e5! ataca a la vez alfil y caballo. Las blancas van ganando."
+ },
+ "O-O a6 Bxc6 dxc6 Nxe5 Bd6 Nf3 O-O": {
+  "en": "e5! forks: after ...Bxe5 Nxe5 White is a piece up. Winning.",
+  "es": "¡e5! ataque doble: tras ...Axe5 Cxe5 las blancas tienen una pieza de más. Ganando."
+ },
+ "O-O a6 Bxc6 dxc6 Nxe5 Nxe4": {
+  "en": "Re1! hits the knight; after ...Qd5 d3, White wins material.",
+  "es": "¡Te1! ataca al caballo; tras ...Dd5 d3, las blancas ganan material."
  }
 }

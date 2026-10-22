@@ -34,5 +34,121 @@
  "Nc3 exd4 Qxd4 Nc6": {
   "en": "The queen is chased with tempo; Black develops quickly.",
   "es": "La dama es perseguida ganando tiempo; las negras desarrollan rápido."
+ },
+ "dxe5": {
+  "en": "...Ng4: attack e5 at once.",
+  "es": "...Cg4: ataca e5 de inmediato."
+ },
+ "dxe5 Ng4 Nf3": {
+  "en": "...Nc6: a second attacker on e5.",
+  "es": "...Cc6: un segundo atacante sobre e5."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4": {
+  "en": "...Bb4+: develop with check before regaining the pawn.",
+  "es": "...Ab4+: desarrolla con jaque antes de recuperar el peón."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bb4+ Nbd2": {
+  "en": "...Qe7: a third attacker on e5.",
+  "es": "...De7: un tercer atacante sobre e5."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bb4+ Nbd2 Qe7 a3 Ngxe5 axb4": {
+  "en": "...Nd3#! The famous Budapest trap.",
+  "es": "¡...Cd3#! La famosa trampa de la Budapest."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Bf4 Bb4+ Nc3": {
+  "en": "...Qe7 and ...Ngxe5; ...Bxc3+ can double White's pawns.",
+  "es": "...De7 y ...Cgxe5; ...Axc3+ puede doblar los peones blancos."
+ },
+ "dxe5 Ng4 Nf3 Nc6 Nc3": {
+  "en": "...Ngxe5: the pawn comes back.",
+  "es": "...Cgxe5: el peón se recupera."
+ },
+ "dxe5 Ng4 Nf3 Nc6 e3 Bb4+ Bd2 Ngxe5": {
+  "en": "After Bxb4 Nxf3+ and ...Nxb4: material is level but White is a bit better. ...Bxd2+ first was more accurate.",
+  "es": "Tras Axb4 Cxf3+ y ...Cxb4: el material está igualado pero las blancas están algo mejor. Primero ...Axd2+ era más preciso."
+ },
+ "dxe5 Ng4 Bf4": {
+  "en": "...Nc6 and ...Bb4+.",
+  "es": "...Cc6 y ...Ab4+."
+ },
+ "dxe5 Ng4 Bf4 Nc6 Nf3": {
+  "en": "...Bb4+: the usual check.",
+  "es": "...Ab4+: el jaque habitual."
+ },
+ "dxe5 Ng4 Bf4 Nc6 Nf3 Bb4+ Nbd2": {
+  "en": "...Qe7 and the e5-pawn falls.",
+  "es": "...De7 y cae el peón de e5."
+ },
+ "dxe5 Ng4 Bf4 Nc6 Nf3 Bb4+ Nc3": {
+  "en": "...Qe7, ...Ngxe5 and ...Bxc3+.",
+  "es": "...De7, ...Cgxe5 y ...Axc3+."
+ },
+ "dxe5 Ng4 e4 Nxe5 f4 Bb4+": {
+  "en": "After Bd2 Nec6 Bxb4 Nxb4: White has a big centre; Black hits it with ...d6 and ...Qh4+ ideas. White is better.",
+  "es": "Tras Ad2 Cec6 Axb4 Cxb4: las blancas tienen un gran centro; las negras lo atacan con ...d6 e ideas de ...Dh4+. Las blancas están mejor."
+ },
+ "dxe5 Ng4 f4": {
+  "en": "...Bc5! stops White from castling short.",
+  "es": "¡...Ac5! impide que las blancas enroquen corto."
+ },
+ "d5": {
+  "en": "...Bb4+: develop with check.",
+  "es": "...Ab4+: desarrolla con jaque."
+ },
+ "d5 Bb4+ Bd2": {
+  "en": "...Qe7 (or ...Bxd2+): easy development.",
+  "es": "...De7 (o ...Axd2+): desarrollo fácil."
+ },
+ "d5 Bb4+ Bd2 Qe7 a3": {
+  "en": "...Bxd2+: trade and play ...a5, ...Na6–c5.",
+  "es": "...Axd2+: cambia y juega ...a5, ...Ca6–c5."
+ },
+ "d5 Bb4+ Bd2 Qe7 a3 Bxd2+ Nxd2 a5": {
+  "en": "...Na6–c5 and ...d6: a good dark-square setup. Equal.",
+  "es": "...Ca6–c5 y ...d6: un buen esquema en casillas oscuras. Igualdad."
+ },
+ "d5 Bb4+ Bd2 Qe7 Nc3 Bxc3": {
+  "en": "After Bxc3 Ne4: the knight trades White's good bishop. Slightly better for Black.",
+  "es": "Tras Axc3 Ce4: el caballo cambia el alfil bueno de las blancas. Algo mejor para las negras."
+ },
+ "d5 Bb4+ Nc3": {
+  "en": "...Bxc3+! doubles White's pawns.",
+  "es": "¡...Axc3+! dobla los peones blancos."
+ },
+ "d5 Bb4+ Nc3 Bxc3+ bxc3": {
+  "en": "...Qe7 (or ...d6): play against the doubled c-pawns.",
+  "es": "...De7 (o ...d6): juega contra los peones c doblados."
+ },
+ "d5 Bb4+ Nc3 Bxc3+ bxc3 Qe7": {
+  "en": "...d6, ...O-O and ...Nbd7–c5: Black is better.",
+  "es": "...d6, ...O-O y ...Cbd7–c5: las negras están mejor."
+ },
+ "Nc3": {
+  "en": "...exd4! Qxd4 Nc6 gains time.",
+  "es": "¡...exd4! Dxd4 Cc6 gana tiempo."
+ },
+ "Nc3 exd4 Qxd4": {
+  "en": "...Nc6 hits the queen.",
+  "es": "...Cc6 ataca a la dama."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qd1": {
+  "en": "...Bb4: pin and develop.",
+  "es": "...Ab4: clava y desarrolla."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qd1 Bb4 Bd2 Qe7": {
+  "en": "Castle; ...Ne5 and ...b6. Equal.",
+  "es": "Enroca; ...Ce5 y ...b6. Igualdad."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qd1 Bb4 Nf3": {
+  "en": "...Ne4! hits c3: Black is better.",
+  "es": "¡...Ce4! ataca c3: las negras están mejor."
+ },
+ "Nc3 exd4 Qxd4 Nc6 Qd1 Bb4 Nf3 Bxc3+ bxc3 Qe7": {
+  "en": "...Ne4 and ...O-O: White's c-pawns are weak. Black is better.",
+  "es": "...Ce4 y ...O-O: los peones c blancos son débiles. Las negras están mejor."
+ },
+ "e3": {
+  "en": "...exd4 exd4 Bb4+ and ...d5: easy equality.",
+  "es": "...exd4 exd4 Ab4+ y ...d5: igualdad fácil."
  }
 }
