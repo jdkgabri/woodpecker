@@ -26,5 +26,73 @@
  "e4": {
   "en": "2.e4 transposes to the main Black Lion: see the Lion tree against 1.e4.",
   "es": "2.e4 transpone al Black Lion principal: mira el árbol del León contra 1.e4."
+ },
+ "c4": {
+  "en": "...Nf6 and ...Nbd7, ...e5: the Old Indian.",
+  "es": "...Cf6 y ...Cbd7, ...e5: la India Antigua."
+ },
+ "c4 Nf6 Nc3": {
+  "en": "...Nbd7 (or ...e5).",
+  "es": "...Cbd7 (o ...e5)."
+ },
+ "c4 Nf6 Nc3 Nbd7 e4": {
+  "en": "...e5: claim the centre.",
+  "es": "...e5: reclama el centro."
+ },
+ "c4 Nf6 Nc3 Nbd7 e4 e5 d5": {
+  "en": "...c6 (or ...Be7 and ...Nc5).",
+  "es": "...c6 (o ...Ae7 y ...Cc5)."
+ },
+ "c4 Nf6 Nc3 Nbd7 e4 e5 d5 c6 Bd3 Be7": {
+  "en": "...cxd5 and ...Nc5: hit the d3-bishop. Slightly better for White.",
+  "es": "...cxd5 y ...Cc5: ataca al alfil de d3. Algo mejor para las blancas."
+ },
+ "c4 Nf6 Nc3 Nbd7 e4 e5 d5 c6 Nf3 Be7": {
+  "en": "...O-O, ...Nc5 and ...cxd5. White has more space and is better.",
+  "es": "...O-O, ...Cc5 y ...cxd5. Las blancas tienen más espacio y están mejor."
+ },
+ "c4 Nf6 Nc3 Nbd7 e4 e5 d5 c6 f4": {
+  "en": "...Nc5! hits e4: Black is fine.",
+  "es": "¡...Cc5! ataca e4: las negras están bien."
+ },
+ "c4 Nf6 Nc3 Nbd7 Nf3": {
+  "en": "...e5: then ...c6, ...Be7 and ...O-O.",
+  "es": "...e5: después ...c6, ...Ae7 y ...O-O."
+ },
+ "c4 Nf6 Nc3 Nbd7 Bg5 e5": {
+  "en": "...h6 and ...Be7 or ...c6. Equal.",
+  "es": "...h6 y ...Ae7 o ...c6. Igualdad."
+ },
+ "c4 Nf6 Nf3": {
+  "en": "...Nbd7 and ...e5.",
+  "es": "...Cbd7 y ...e5."
+ },
+ "Nf3": {
+  "en": "...Nf6, ...Nbd7 and ...e5.",
+  "es": "...Cf6, ...Cbd7 y ...e5."
+ },
+ "Nf3 Nf6 Bf4 Nbd7 e3 Nh5": {
+  "en": "...Nh5 chases the London bishop: Black gets the bishop pair. Equal.",
+  "es": "...Ch5 persigue al alfil de la London: las negras obtienen la pareja de alfiles. Igualdad."
+ },
+ "Bf4 Nf6 e3": {
+  "en": "...Nbd7, then ...Nh5 or ...e5.",
+  "es": "...Cbd7, y después ...Ch5 o ...e5."
+ },
+ "Bf4 Nf6 e3 Nbd7 Nf3": {
+  "en": "...Nh5! hits the bishop.",
+  "es": "¡...Ch5! ataca al alfil."
+ },
+ "Bf4 Nf6 e3 Nbd7 Nf3 Nh5": {
+  "en": "If Bg5, ...h6 and ...g5 or ...Nhf6. Equal.",
+  "es": "Si Ag5, ...h6 y ...g5 o ...Chf6. Igualdad."
+ },
+ "Bf4 Nf6 Nf3 Nbd7 e3 Nh5": {
+  "en": "After Bg5 h6 Bh4 g5 Bg3: ...Bg7 and ...e5. Equal.",
+  "es": "Tras Ag5 h6 Ah4 g5 Ag3: ...Ag7 y ...e5. Igualdad."
+ },
+ "e4 Nf6 Nc3": {
+  "en": "...Nbd7 and ...e5: the main Black Lion.",
+  "es": "...Cbd7 y ...e5: el León Negro principal."
  }
 }
