@@ -26,5 +26,93 @@
  "d4 c5": {
   "en": "An early ...c5 transposes to a Sicilian or a French depending on White's choice.",
   "es": "Un ...c5 temprano transpone a una Siciliana o a una Francesa según elijan las blancas."
+ },
+ "d4 d5": {
+  "en": "e5: the Advance Variation.",
+  "es": "e5: la Variante del Avance."
+ },
+ "d4 d5 e5 c5": {
+  "en": "c3: support d4.",
+  "es": "c3: apoya d4."
+ },
+ "d4 d5 e5 c5 c3 Nc6": {
+  "en": "Nf3: a second defender of d4.",
+  "es": "Cf3: un segundo defensor de d4."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 cxd4": {
+  "en": "cxd4: keep the chain.",
+  "es": "cxd4: mantén la cadena."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 cxd4 cxd4 Nge7 Na3": {
+  "en": "Na3–c2 protects d4; O-O and Bd3. Slightly better for White.",
+  "es": "Ca3–c2 protege d4; O-O y Ad3. Algo mejor para las blancas."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 cxd4 cxd4 Bb4+": {
+  "en": "Nc3: the check achieves little; O-O and Bd3 follow. White is clearly better.",
+  "es": "Cc3: el jaque no consigue mucho; siguen O-O y Ad3. Las blancas están claramente mejor."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 cxd4 cxd4 Bb4+ Nc3": {
+  "en": "After ...Nge7 O-O, Bd3 and h4 or a3. White is clearly better.",
+  "es": "Tras ...Cge7 O-O, Ad3 y h4 o a3. Las blancas están claramente mejor."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 Bd7": {
+  "en": "a3 and b4: gain queenside space.",
+  "es": "a3 y b4: gana espacio en el flanco de dama."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 Bd7 a3": {
+  "en": "After ...Nh6 (or ...a5): b4 and Bxh6 ideas. Slightly better for White.",
+  "es": "Tras ...Ch6 (o ...a5): b4 e ideas de Axh6. Algo mejor para las blancas."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 Nge7": {
+  "en": "Na3 (heading for c2) holds d4.",
+  "es": "Ca3 (camino de c2) sostiene d4."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 Nge7 Na3": {
+  "en": "After ...cxd4 cxd4 Nf5 Nc2: d4 holds. Slightly better for White.",
+  "es": "Tras ...cxd4 cxd4 Cf5 Cc2: d4 aguanta. Algo mejor para las blancas."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 Be2 Nh6 Bd3": {
+  "en": "Bxh6 ideas and Bc2: equal.",
+  "es": "Ideas de Axh6 y Ac2: igualdad."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Bd7": {
+  "en": "Be2 (or a3): keep everything protected.",
+  "es": "Ae2 (o a3): mantén todo protegido."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Bd7 Be2 Qb6 a3": {
+  "en": "b4 next. Slightly better for White.",
+  "es": "Después b4. Algo mejor para las blancas."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 cxd4": {
+  "en": "cxd4: Nc3, Bd3 and O-O.",
+  "es": "cxd4: Cc3, Ad3 y O-O."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Nge7": {
+  "en": "Bd3 (or Na3): stop ...Nf5 hitting d4 easily.",
+  "es": "Ad3 (o Ca3): dificulta que ...Cf5 ataque d4."
+ },
+ "d4 d5 e5 c5 c3 Nc6 Nf3 Nge7 Bd3 Ng6": {
+  "en": "h4! and h5 chases the knight. White is clearly better.",
+  "es": "¡h4! y h5 persiguen al caballo. Las blancas están claramente mejor."
+ },
+ "d4 d5 e5 c5 c3 Qb6": {
+  "en": "Nf3, then Be2 or a3.",
+  "es": "Cf3, y después Ae2 o a3."
+ },
+ "d4 d5 e5 c5 c3 Qb6 Nf3 Nc6": {
+  "en": "Be2 (Bd3 is the Milner-Barry gambit).",
+  "es": "Ae2 (Ad3 es el gambito Milner-Barry)."
+ },
+ "d4 d5 e5 c5 c3 cxd4": {
+  "en": "cxd4: the chain stays.",
+  "es": "cxd4: la cadena se mantiene."
+ },
+ "d4 b6 c3": {
+  "en": "After ...d5 e5: Nd2 and Ngf3. White is clearly better.",
+  "es": "Tras ...d5 e5: Cd2 y Cgf3. Las blancas están claramente mejor."
+ },
+ "d4 d6 c3": {
+  "en": "Nf3, Bd3 and O-O: a big centre. White is clearly better.",
+  "es": "Cf3, Ad3 y O-O: un gran centro. Las blancas están claramente mejor."
  }
 }

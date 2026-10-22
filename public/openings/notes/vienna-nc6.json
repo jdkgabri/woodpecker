@@ -22,5 +22,89 @@
  "": {
   "en": "Against 2...Nc6: Bc4 or f4.",
   "es": "Contra 2...Cc6: Ac4 o f4."
+ },
+ "Bc4 Nf6": {
+  "en": "Nf3 (or d3): develop; watch the ...Nxe4 fork trick.",
+  "es": "Cf3 (o d3): desarrolla; atento al truco de la horquilla ...Cxe4."
+ },
+ "Bc4 Nf6 Nf3 Bc5": {
+  "en": "d3: a calm Italian-style setup, with Bg5 and Nd5 ideas.",
+  "es": "d3: un esquema tranquilo al estilo Italiana, con ideas de Ag5 y Cd5."
+ },
+ "Bc4 Nf6 Nf3 Bc5 d3 d6": {
+  "en": "h3 (stopping ...Bg4) and O-O, or Na4 to trade the c5-bishop. Equal.",
+  "es": "h3 (impidiendo ...Ag4) y O-O, o Ca4 para cambiar el alfil de c5. Igualdad."
+ },
+ "Bc4 Nf6 Nf3 Bc5 d3 O-O": {
+  "en": "Bg5: pin the knight; Nd5 next.",
+  "es": "Ag5: clava el caballo; después Cd5."
+ },
+ "Bc4 Nf6 Nf3 Bc5 d3 O-O Bg5 d6": {
+  "en": "Nd5! and Nxf6+: Black's kingside is broken. White is better.",
+  "es": "¡Cd5! y Cxf6+: el flanco de rey negro queda roto. Las blancas están mejor."
+ },
+ "Bc4 Nf6 Nf3 Bc5 d3 h6": {
+  "en": "Be3: trade the c5-bishop. Equal.",
+  "es": "Ae3: cambia el alfil de c5. Igualdad."
+ },
+ "Bc4 Nf6 Nf3 Nxe4": {
+  "en": "Nxe4: then ...d5 forks.",
+  "es": "Cxe4: después ...d5 ataca dos piezas."
+ },
+ "Bc4 Nf6 Nf3 Nxe4 Nxe4 d5": {
+  "en": "Bd3 (or Bb5): ...dxe4 Bxe4.",
+  "es": "Ad3 (o Ab5): ...dxe4 Axe4."
+ },
+ "Bc4 Nf6 Nf3 Nxe4 Nxe4 d5 Bd3 dxe4": {
+  "en": "Bxe4: material is level.",
+  "es": "Axe4: el material está igualado."
+ },
+ "Bc4 Nf6 Nf3 Nxe4 Nxe4 d5 Bd3 dxe4 Bxe4 Bd6 d4": {
+  "en": "After ...exd4 (or ...Nxd4): an open, equal position.",
+  "es": "Tras ...exd4 (o ...Cxd4): una posición abierta e igualada."
+ },
+ "Bc4 Nf6 Nf3 Bb4": {
+  "en": "d3 (or O-O): develop; Nd5 can hit the bishop.",
+  "es": "d3 (u O-O): desarrolla; Cd5 puede atacar al alfil."
+ },
+ "Bc4 Nf6 Nf3 h6": {
+  "en": "d4! opens the centre. White is better.",
+  "es": "¡d4! abre el centro. Las blancas están mejor."
+ },
+ "Bc4 Bc5": {
+  "en": "Nf3 and d3 (or Qg4!?).",
+  "es": "Cf3 y d3 (o ¡?Dg4)."
+ },
+ "Bc4 Bc5 Nf3 Nf6": {
+  "en": "d3: the same calm setup.",
+  "es": "d3: el mismo esquema tranquilo."
+ },
+ "Bc4 Bc5 Nf3 Nf6 d3 d6": {
+  "en": "h3 and O-O, or Na4. Equal.",
+  "es": "h3 y O-O, o Ca4. Igualdad."
+ },
+ "Bc4 Bc5 Nf3 Nf6 d3 O-O": {
+  "en": "Bg5 and Nd5.",
+  "es": "Ag5 y Cd5."
+ },
+ "Bc4 Bc5 Nf3 Nf6 d3 h6": {
+  "en": "Be3: trade the bishop. Equal.",
+  "es": "Ae3: cambia el alfil. Igualdad."
+ },
+ "Bc4 Bc5 Nf3 d6": {
+  "en": "d3 and h3.",
+  "es": "d3 y h3."
+ },
+ "Bc4 Bc5 Nf3 d6 d3 Bg4 h3 Bh5 Bg5": {
+  "en": "After ...f6 Be3: d4 ideas. Slightly better for White.",
+  "es": "Tras ...f6 Ae3: ideas de d4. Algo mejor para las blancas."
+ },
+ "Bc4 d6 Nf3 Nf6": {
+  "en": "Ng5! hits f7: after ...d5 exd5, White is better.",
+  "es": "¡Cg5! ataca f7: tras ...d5 exd5, las blancas están mejor."
+ },
+ "Bc4 Bb4 Qh5": {
+  "en": "Qh5 hits f7: after ...Qe7 Nd5, White is better.",
+  "es": "Dh5 ataca f7: tras ...De7 Cd5, las blancas están mejor."
  }
 }
