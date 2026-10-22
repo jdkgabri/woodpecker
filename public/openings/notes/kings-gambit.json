@@ -46,5 +46,81 @@
  "d5": {
   "en": "The Falkbeer-style counter-gambit ...d5. Nf3 keeps things calm; if ...dxe4, Nxe5 regains the pawn with a good game.",
   "es": "El contragambito ...d5 al estilo Falkbeer. Cf3 mantiene la calma; si ...dxe4, Cxe5 recupera el peón con buen juego."
+ },
+ "exf4": {
+  "en": "Nf3: stop ...Qh4+.",
+  "es": "Cf3: impide ...Dh4+."
+ },
+ "exf4 Nf3 g5 d4 g4 Nc3": {
+  "en": "The knight on f3 is given up: after ...gxf3 Qxf3 White has open lines but the engine prefers Black. A practical, risky gambit.",
+  "es": "Se entrega el caballo de f3: tras ...gxf3 Dxf3 las blancas tienen líneas abiertas, pero el motor prefiere a las negras. Un gambito práctico y arriesgado."
+ },
+ "exf4 Nf3 d6": {
+  "en": "Bc4 and d4: development and centre.",
+  "es": "Ac4 y d4: desarrollo y centro."
+ },
+ "exf4 Nf3 d6 Bc4 Bg4": {
+  "en": "d4 (and O-O): if ...Bxf3, Qxf3. White is slightly better.",
+  "es": "d4 (y O-O): si ...Axf3, Dxf3. Las blancas algo mejor."
+ },
+ "exf4 Nf3 Nc6": {
+  "en": "d4: the big centre.",
+  "es": "d4: el gran centro."
+ },
+ "exf4 Nf3 Nc6 d4 d6": {
+  "en": "Bxf4: the pawn is back and White has the ideal centre. White is better.",
+  "es": "Axf4: el peón ha vuelto y las blancas tienen el centro ideal. Las blancas están mejor."
+ },
+ "exf4 Nf3 Be7": {
+  "en": "Bc4 (or Nc3): if ...Bh4+, the king steps to f1.",
+  "es": "Ac4 (o Cc3): si ...Ah4+, el rey va a f1."
+ },
+ "exf4 Nf3 Be7 Bc4 Bh4+": {
+  "en": "Kf1: the king is safe enough; Nxh4 and d4 later.",
+  "es": "Rf1: el rey está bastante seguro; más tarde Cxh4 y d4."
+ },
+ "Nc6": {
+  "en": "Nf3: if ...exf4, d4.",
+  "es": "Cf3: si ...exf4, d4."
+ },
+ "Nc6 Nf3 d6": {
+  "en": "Bc4 (or d4).",
+  "es": "Ac4 (o d4)."
+ },
+ "Nc6 Nf3 d6 Bc4 Bg4 h3 Bxf3 Qxf3": {
+  "en": "The bishop pair and the f-file. Slightly better for White.",
+  "es": "La pareja de alfiles y la columna f. Algo mejor para las blancas."
+ },
+ "Nc6 Nf3 exf4": {
+  "en": "d4: the centre.",
+  "es": "d4: el centro."
+ },
+ "Nc6 Nf3 exf4 d4 d6": {
+  "en": "Bxf4: White is better.",
+  "es": "Axf4: las blancas están mejor."
+ },
+ "d6 d4 exd4": {
+  "en": "Qxd4 (or Nf3): a solid centre.",
+  "es": "Dxd4 (o Cf3): un centro sólido."
+ },
+ "d6 d4 exd4 Qxd4": {
+  "en": "After ...Nc6 Qe3: Nc3, Bc4 and Nf3. Equal.",
+  "es": "Tras ...Cc6 De3: Cc3, Ac4 y Cf3. Igualdad."
+ },
+ "d6 d4 exf4": {
+  "en": "Bxf4: White is better.",
+  "es": "Axf4: las blancas están mejor."
+ },
+ "d6 d4 f6": {
+  "en": "Nf3, Nc3 and Bc4: Black's kingside is weak. White is clearly better.",
+  "es": "Cf3, Cc3 y Ac4: el flanco de rey negro es débil. Las blancas están claramente mejor."
+ },
+ "d5 Nf3 dxe4": {
+  "en": "Nxe5: the pawn comes back.",
+  "es": "Cxe5: el peón vuelve."
+ },
+ "d5 Nf3 dxe4 Nxe5 Nf6": {
+  "en": "Bc4 (or d4): White is better.",
+  "es": "Ac4 (o d4): las blancas están mejor."
  }
 }

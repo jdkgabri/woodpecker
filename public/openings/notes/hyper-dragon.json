@@ -26,5 +26,81 @@
  "": {
   "en": "The Hyperaccelerated Dragon: 2...g6 at once. Black keeps the option of ...Nc6, ...d6 or ...d5 depending on White's setup.",
   "es": "El Dragón Hiperacelerado: 2...g6 de inmediato. Las negras mantienen la opción de ...Cc6, ...d6 o ...d5 según el esquema blanco."
+ },
+ "d4": {
+  "en": "...cxd4: take.",
+  "es": "...cxd4: toma."
+ },
+ "d4 cxd4 Nxd4": {
+  "en": "...Bg7 (or ...Nc6): the Accelerated Dragon.",
+  "es": "...Ag7 (o ...Cc6): la Dragón Acelerada."
+ },
+ "d4 cxd4 Nxd4 Bg7 Nc3": {
+  "en": "...Nc6, then ...Nf6 and ...O-O.",
+  "es": "...Cc6, y después ...Cf6 y ...O-O."
+ },
+ "d4 cxd4 Nxd4 Bg7 Nc3 Nc6 Be3": {
+  "en": "...Nf6 and ...O-O; ...d5 against f3 and Qd2.",
+  "es": "...Cf6 y ...O-O; ...d5 contra f3 y Dd2."
+ },
+ "d4 cxd4 Nxd4 Bg7 Nc3 Nc6 Be3 Nf6 f3": {
+  "en": "Castle, then ...d5 in one move.",
+  "es": "Enroca, y después ...d5 en una sola jugada."
+ },
+ "d4 cxd4 Nxd4 Bg7 Be3": {
+  "en": "...Nc6 (or ...Nf6).",
+  "es": "...Cc6 (o ...Cf6)."
+ },
+ "d4 cxd4 Nxd4 Bg7 Be3 Nc6 Nc3": {
+  "en": "...Nf6: back to the main lines.",
+  "es": "...Cf6: de vuelta a las líneas principales."
+ },
+ "d4 cxd4 Nxd4 Bg7 Be3 Nc6 c3": {
+  "en": "...Nf6 hits e4: Black is comfortable.",
+  "es": "...Cf6 ataca e4: las negras están cómodas."
+ },
+ "d4 cxd4 Nxd4 Bg7 c3": {
+  "en": "...Nc6 (or ...Nf6): Black is fine.",
+  "es": "...Cc6 (o ...Cf6): las negras están bien."
+ },
+ "d4 cxd4 Qxd4": {
+  "en": "...Nf6: hit e4 and gain time on the queen.",
+  "es": "...Cf6: ataca e4 y gana tiempo sobre la dama."
+ },
+ "d4 cxd4 Qxd4 Nf6 e5": {
+  "en": "...Nc6: the queen must move again.",
+  "es": "...Cc6: la dama tiene que moverse otra vez."
+ },
+ "Bc4": {
+  "en": "...Bg7 and ...Nc6; ...e6 blunts the bishop.",
+  "es": "...Ag7 y ...Cc6; ...e6 neutraliza al alfil."
+ },
+ "Bc4 Bg7 c3": {
+  "en": "...d6 (or ...e6, ...Nf6): stop d4.",
+  "es": "...d6 (o ...e6, ...Cf6): impide d4."
+ },
+ "Bc4 Bg7 O-O": {
+  "en": "...Nc6 and ...e6, ...Nge7. Equal.",
+  "es": "...Cc6 y ...e6, ...Cge7. Igualdad."
+ },
+ "c3": {
+  "en": "...Bg7: the Alapin setup without ...Nf6.",
+  "es": "...Ag7: el esquema Alapin sin ...Cf6."
+ },
+ "c3 Bg7 d4": {
+  "en": "...cxd4 and ...d5 or ...Nf6.",
+  "es": "...cxd4 y ...d5 o ...Cf6."
+ },
+ "c3 Bg7 d4 cxd4 cxd4": {
+  "en": "...Nf6 (or ...d5): hit the centre.",
+  "es": "...Cf6 (o ...d5): golpea el centro."
+ },
+ "c3 Bg7 d4 cxd4 cxd4 Nf6 Nc3": {
+  "en": "...d6 (or ...d5), ...O-O and ...Nc6.",
+  "es": "...d6 (o ...d5), ...O-O y ...Cc6."
+ },
+ "c3 Bg7 d4 cxd4 cxd4 Nf6 Nc3 d6 Bc4": {
+  "en": "...O-O and ...Nc6, ...Bg4: White's centre is big. Slightly better for White.",
+  "es": "...O-O y ...Cc6, ...Ag4: el centro blanco es grande. Algo mejor para las blancas."
  }
 }
