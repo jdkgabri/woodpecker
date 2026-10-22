@@ -30,5 +30,105 @@
  "Nf3 dxe4": {
   "en": "Nf3? just gives a pawn: ...dxe4 and the knight has to move.",
   "es": "Cf3? simplemente regala un peón: ...dxe4 y el caballo tiene que moverse."
+ },
+ "exd5": {
+  "en": "...Qxd5: take back at once.",
+  "es": "...Dxd5: recaptura de inmediato."
+ },
+ "exd5 Qxd5 Nc3": {
+  "en": "...Qa5: the queen's safest active square.",
+  "es": "...Da5: la casilla activa más segura para la dama."
+ },
+ "exd5 Qxd5 Nc3 Qa5 Nf3": {
+  "en": "...Nf6, then ...c6 and ...Bf5 or ...Bg4.",
+  "es": "...Cf6, y después ...c6 y ...Af5 o ...Ag4."
+ },
+ "exd5 Qxd5 Nc3 Qa5 Nf3 Nf6 d4": {
+  "en": "...c6: a retreat for the queen and control of d5 and b5.",
+  "es": "...c6: una retirada para la dama y control de d5 y b5."
+ },
+ "exd5 Qxd5 Nc3 Qa5 Nf3 Nf6 d4 c6 Bd2 Bf5": {
+  "en": "...e6, ...Nbd7 and ...Qc7: watch Nd5 and Ne4 tricks. Slightly better for White.",
+  "es": "...e6, ...Cbd7 y ...Dc7: atento a los trucos de Cd5 y Ce4. Algo mejor para las blancas."
+ },
+ "exd5 Qxd5 Nc3 Qa5 Nf3 Nf6 Bc4": {
+  "en": "...c6 and ...Bf5 (or ...Bg4).",
+  "es": "...c6 y ...Af5 (o ...Ag4)."
+ },
+ "exd5 Qxd5 Nc3 Qa5 Nf3 Nf6 Bc4 c6 O-O Bf5": {
+  "en": "...e6, ...Nbd7 and ...O-O-O or ...Be7. Slightly better for White.",
+  "es": "...e6, ...Cbd7 y ...O-O-O o ...Ae7. Algo mejor para las blancas."
+ },
+ "exd5 Qxd5 Nc3 Qa5 Nf3 Nf6 Be2 c6": {
+  "en": "...Bf5, ...e6 and ...Be7. Slightly better for White.",
+  "es": "...Af5, ...e6 y ...Ae7. Algo mejor para las blancas."
+ },
+ "exd5 Qxd5 Nc3 Qa5 Nf3 Nf6 d3 c6": {
+  "en": "...Bg4 or ...Bf5, ...e6. Slightly better for White.",
+  "es": "...Ag4 o ...Af5, ...e6. Algo mejor para las blancas."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4": {
+  "en": "...Nf6, then ...c6 or ...Bg4.",
+  "es": "...Cf6, y después ...c6 o ...Ag4."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 Nf6 Bd2": {
+  "en": "...Bg4 (or ...c6): develop with tempo.",
+  "es": "...Ag4 (o ...c6): desarrolla ganando tiempo."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 Nf6 Bd2 Bg4 Be2 Bxe2": {
+  "en": "After Ncxe2 Qb6: ...e6 and ...c5. Equal-ish.",
+  "es": "Tras Ccxe2 Db6: ...e6 y ...c5. Más o menos igualdad."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 Nf6 Bd2 Bg4 f3 Bd7": {
+  "en": "...c6 and ...e6: White's f3 weakened e3. Slightly better for White.",
+  "es": "...c6 y ...e6: f3 ha debilitado e3. Algo mejor para las blancas."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 Nf6 Nf3": {
+  "en": "...c6 and ...Bf5.",
+  "es": "...c6 y ...Af5."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d4 Nf6 Nf3 c6 Bd2 Bf5": {
+  "en": "If Bc4 e6 Ne4, ...Qd8: solid. Slightly better for White.",
+  "es": "Si Ac4 e6 Ce4, ...Dd8: sólido. Algo mejor para las blancas."
+ },
+ "exd5 Qxd5 Nc3 Qa5 Bc4": {
+  "en": "...Nf6 and ...c6; the bishop on c4 may be hit by ...b5 later.",
+  "es": "...Cf6 y ...c6; más tarde ...b5 puede atacar al alfil de c4."
+ },
+ "exd5 Qxd5 Nc3 Qa5 d3 Nf6 Bd2 Bg4": {
+  "en": "...Nc6 and ...O-O-O: active play. Equal.",
+  "es": "...Cc6 y ...O-O-O: juego activo. Igualdad."
+ },
+ "exd5 Qxd5 Nf3": {
+  "en": "...Bg4: pin the knight.",
+  "es": "...Ag4: clava el caballo."
+ },
+ "exd5 Qxd5 Nf3 Bg4 Be2": {
+  "en": "...Nf6, ...c6 and ...e6.",
+  "es": "...Cf6, ...c6 y ...e6."
+ },
+ "exd5 Qxd5 Nf3 Bg4 Be2 Nf6 O-O c6": {
+  "en": "If d4 and c4, ...e6, ...Qd8 and ...Be7: White has more space. White is better.",
+  "es": "Si d4 y c4, ...e6, ...Dd8 y ...Ae7: las blancas tienen más espacio. Las blancas están mejor."
+ },
+ "e5": {
+  "en": "...Bf5 (or ...c5): a Caro-Kann Advance without ...c6.",
+  "es": "...Af5 (o ...c5): una Caro-Kann del Avance sin ...c6."
+ },
+ "e5 Bf5 d4": {
+  "en": "...e6 and ...c5.",
+  "es": "...e6 y ...c5."
+ },
+ "e5 Bf5 d4 e6 Nf3 Nd7": {
+  "en": "...Ne7 and ...c5. Equal.",
+  "es": "...Ce7 y ...c5. Igualdad."
+ },
+ "Nf3 dxe4 Ng5": {
+  "en": "...Bf5 (or ...Nf6): keep the pawn.",
+  "es": "...Af5 (o ...Cf6): conserva el peón."
+ },
+ "Nf3 dxe4 Ng5 Bf5 Nc3 Nf6 Qe2": {
+  "en": "...Nc6 and ...e6: Black keeps the extra pawn. Black is clearly better.",
+  "es": "...Cc6 y ...e6: las negras conservan el peón de más. Las negras están claramente mejor."
  }
 }

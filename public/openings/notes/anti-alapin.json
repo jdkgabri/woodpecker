@@ -42,5 +42,109 @@
  "Nf6 d4 Nxe4": {
   "en": "d4?! ignores the threat: ...Nxe4 wins a central pawn.",
   "es": "d4?! ignora la amenaza: ...Cxe4 gana un peón central."
+ },
+ "Nf6 e5": {
+  "en": "...Nd5: the knight is safe in the centre.",
+  "es": "...Cd5: el caballo está seguro en el centro."
+ },
+ "Nf6 e5 Nd5 d4": {
+  "en": "...cxd4: trade first.",
+  "es": "...cxd4: primero cambia."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4": {
+  "en": "...Nc6 (or ...d6, ...e6): hit d4 and e5.",
+  "es": "...Cc6 (o ...d6, ...e6): ataca d4 y e5."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nf3": {
+  "en": "...d6: challenge e5.",
+  "es": "...d6: desafía e5."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nf3 d6 Bc4": {
+  "en": "...Nb6 hits the bishop.",
+  "es": "...Cb6 ataca al alfil."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nf3 d6 Bc4 Nb6 Bb5 dxe5": {
+  "en": "After Nxe5 Bd7 Nxd7 Qxd7: the isolated d4-pawn is a target. Equal.",
+  "es": "Tras Cxe5 Ad7 Cxd7 Dxd7: el peón aislado de d4 es un objetivo. Igualdad."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nf3 d6 exd6": {
+  "en": "...Qxd6 (or ...e6): the d4-pawn is isolated; Black is fine.",
+  "es": "...Dxd6 (o ...e6): el peón de d4 queda aislado; las negras están bien."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nf3 d6 Nc3 dxe5 dxe5 Nxc3": {
+  "en": "After Qxd8+ Nxd8 bxc3: White's pawns are weak. Equal.",
+  "es": "Tras Dxd8+ Cxd8 bxc3: los peones blancos son débiles. Igualdad."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nf3 d6 Bb5": {
+  "en": "...Qa5+! wins the b5-bishop or gains time. Black is better.",
+  "es": "¡...Da5+! gana el alfil de b5 o gana tiempo. Las negras están mejor."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nc3": {
+  "en": "...e6 (or ...Nxc3): solid.",
+  "es": "...e6 (o ...Cxc3): sólido."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nc3 e6 Nxd5": {
+  "en": "...exd5: a French-like structure with active pieces.",
+  "es": "...exd5: una estructura tipo Francesa con piezas activas."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nc3 e6 Nxd5 exd5": {
+  "en": "...Bb4+ and ...d6: Black is fine. Equal.",
+  "es": "...Ab4+ y ...d6: las negras están bien. Igualdad."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Nc3 e6 Nf3 d6": {
+  "en": "After Bd3 Nxc3 bxc3 dxe5 dxe5 Qa5: e5 is a target. Slightly better for White, very playable.",
+  "es": "Tras Ad3 Cxc3 bxc3 dxe5 dxe5 Da5: e5 es un objetivo. Algo mejor para las blancas, muy jugable."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Bc4": {
+  "en": "...Nb6: hit the bishop.",
+  "es": "...Cb6: ataca al alfil."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Bc4 Nb6 Bb3": {
+  "en": "...d6: challenge e5.",
+  "es": "...d6: desafía e5."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 cxd4 Nc6 Bc4 Nb6 Bb3 d6": {
+  "en": "Watch the e6!? pawn sacrifice: after ...fxe6 Black's king is a bit loose. Slightly better for White.",
+  "es": "Atento al sacrificio ¡?e6: tras ...fxe6 el rey negro queda algo suelto. Algo mejor para las blancas."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 Nf3": {
+  "en": "...Nc6: develop.",
+  "es": "...Cc6: desarrolla."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 Nf3 Nc6 cxd4": {
+  "en": "...d6 and the usual play.",
+  "es": "...d6 y el juego habitual."
+ },
+ "Nf6 e5 Nd5 d4 cxd4 Bc4 Nb6 Bb3 d6": {
+  "en": "...Nc6 and ...dxe5: equal.",
+  "es": "...Cc6 y ...dxe5: igualdad."
+ },
+ "Nf6 e5 Nd5 Nf3": {
+  "en": "...Nc6 and ...d6.",
+  "es": "...Cc6 y ...d6."
+ },
+ "Nf6 e5 Nd5 Nf3 Nc6 d4": {
+  "en": "...cxd4.",
+  "es": "...cxd4."
+ },
+ "Nf6 e5 Nd5 Nf3 Nc6 d4 cxd4 cxd4": {
+  "en": "...d6: the main line.",
+  "es": "...d6: la línea principal."
+ },
+ "Nf6 e5 Nd5 Bc4 Nb6 Bb3": {
+  "en": "...Nc6 and ...d5 or ...d6.",
+  "es": "...Cc6 y ...d5 o ...d6."
+ },
+ "Nf6 e5 Nd5 Bc4 Nb6 Bb3 Nc6": {
+  "en": "After d4 cxd4 cxd4 d5: a French structure. Equal-ish.",
+  "es": "Tras d4 cxd4 cxd4 d5: una estructura Francesa. Más o menos igualdad."
+ },
+ "Nf6 d3 Nc6 Nf3 d6": {
+  "en": "...e5 or ...g6: Black is comfortable. Equal.",
+  "es": "...e5 o ...g6: las negras están cómodas. Igualdad."
+ },
+ "Nf6 d4": {
+  "en": "...Nxe4: take the pawn. Black is better.",
+  "es": "...Cxe4: toma el peón. Las negras están mejor."
  }
 }
