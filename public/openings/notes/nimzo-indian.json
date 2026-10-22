@@ -38,5 +38,65 @@
  "Bb4 e3 O-O Ne2 c5 a3 Bxc3+": {
   "en": "Against Ne2 (avoiding doubled pawns), take on c3 when a3 asks; ...cxd4 and ...d5 follow.",
   "es": "Contra Ce2 (para evitar peones doblados), toma en c3 cuando a3 lo pregunte; siguen ...cxd4 y ...d5."
+ },
+ "Bb4 Qc2": {
+  "en": "Castle, then ...c5 or ...d5.",
+  "es": "Enroca, y después ...c5 o ...d5."
+ },
+ "Bb4 Qc2 O-O Nf3": {
+  "en": "...c5 (or ...d5): hit the centre.",
+  "es": "...c5 (o ...d5): golpea el centro."
+ },
+ "Bb4 Qc2 O-O a3": {
+  "en": "...Bxc3+ and ...b6 or ...d5.",
+  "es": "...Axc3+ y ...b6 o ...d5."
+ },
+ "Bb4 Qc2 O-O e4 c5": {
+  "en": "...c5 is sharp: after e5 cxd4 a3, White is better. ...d5 is the calmer answer to e4.",
+  "es": "...c5 es agudo: tras e5 cxd4 a3, las blancas están mejor. ...d5 es la respuesta más tranquila a e4."
+ },
+ "Bb4 Qc2 O-O Bg5 c5": {
+  "en": "If dxc5, ...Na6 and ...Nxc5: equal.",
+  "es": "Si dxc5, ...Ca6 y ...Cxc5: igualdad."
+ },
+ "Bb4 Nf3": {
+  "en": "Castle; ...c5, ...d5 or ...b6.",
+  "es": "Enroca; ...c5, ...d5 o ...b6."
+ },
+ "Bb4 Nf3 O-O Bg5": {
+  "en": "...c5 and ...h6: pressure. Equal.",
+  "es": "...c5 y ...h6: presión. Igualdad."
+ },
+ "Bb4 Bd2": {
+  "en": "Castle; ...d5 or ...c5.",
+  "es": "Enroca; ...d5 o ...c5."
+ },
+ "Bb4 Bd2 O-O Nf3": {
+  "en": "...c5 (or ...d5). Equal.",
+  "es": "...c5 (o ...d5). Igualdad."
+ },
+ "Bb4 Bd2 O-O a3": {
+  "en": "...Bxc3 Bxc3 Ne4 (or ...d5): Black is comfortable.",
+  "es": "...Axc3 Axc3 Ce4 (o ...d5): las negras están cómodas."
+ },
+ "Bb4 Bg5 c5 e3": {
+  "en": "...Qa5 (or ...h6): pin the c3-knight.",
+  "es": "...Da5 (o ...h6): clava el caballo de c3."
+ },
+ "Bb4 Bg5 c5 e3 Qa5 Qc2": {
+  "en": "...Ne4! and ...Bxc3+: Black wins material.",
+  "es": "¡...Ce4! y ...Axc3+: las negras ganan material."
+ },
+ "Bb4 Bg5 c5 d5": {
+  "en": "...Bxc3+ and ...d6, ...e5: a Benoni with doubled c-pawns for White.",
+  "es": "...Axc3+ y ...d6, ...e5: una Benoni con peones c doblados para las blancas."
+ },
+ "Bb4 Bg5 c5 d5 Bxc3+": {
+  "en": "After bxc3 d6: ...e5 and ...Nbd7. Slightly better for Black.",
+  "es": "Tras bxc3 d6: ...e5 y ...Cbd7. Algo mejor para las negras."
+ },
+ "Bb4 e3 O-O Bd3": {
+  "en": "...c5 (or ...d5): the main line.",
+  "es": "...c5 (o ...d5): la línea principal."
  }
 }

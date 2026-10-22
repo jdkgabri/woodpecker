@@ -34,5 +34,69 @@
  "e5 Nb3 Be7 Be3 Be6 O-O O-O f4 exf4 Bxf4 Nbd7 Bxd6 Qb6+": {
   "en": "Bxd6?? loses a piece: Qb6+ checks the king and attacks the d6-bishop at the same time.",
   "es": "Axd6?? pierde una pieza: Db6+ da jaque al rey y ataca a la vez el alfil de d6."
+ },
+ "e5 Nb3": {
+  "en": "...Be7, ...O-O and ...Be6.",
+  "es": "...Ae7, ...O-O y ...Ae6."
+ },
+ "e5 Nb3 Be7 O-O": {
+  "en": "Castle; ...Be6 and ...Nbd7 next.",
+  "es": "Enroca; después ...Ae6 y ...Cbd7."
+ },
+ "e5 Nb3 Be7 O-O O-O Be3": {
+  "en": "...Be6: control d5.",
+  "es": "...Ae6: controla d5."
+ },
+ "e5 Nb3 Be7 O-O O-O Be3 Be6 f4 exf4 Bxf4 Nbd7 Bxd6": {
+  "en": "...Qb6+! and ...Qxd6: Black wins a piece.",
+  "es": "¡...Db6+! y ...Dxd6: las negras ganan una pieza."
+ },
+ "e5 Nb3 Be7 O-O O-O f4": {
+  "en": "...Be6 (or ...b5): if f5, ...Bd7 or ...Bc4.",
+  "es": "...Ae6 (o ...b5): si f5, ...Ad7 o ...Ac4."
+ },
+ "e5 Nb3 Be7 O-O O-O f4 Be6 f5": {
+  "en": "...Bd7 (or ...Bc4): then ...b5 and ...Bc6. Equal.",
+  "es": "...Ad7 (o ...Ac4): después ...b5 y ...Ac6. Igualdad."
+ },
+ "e5 Nb3 Be7 O-O O-O Kh1": {
+  "en": "...Be6 (or ...b5): the usual setup. Equal.",
+  "es": "...Ae6 (o ...b5): el esquema habitual. Igualdad."
+ },
+ "e5 Nb3 Be7 Be3": {
+  "en": "...Be6 and ...O-O.",
+  "es": "...Ae6 y ...O-O."
+ },
+ "e5 Nb3 Be7 Be3 Be6 O-O": {
+  "en": "Castle; ...Nbd7 and ...Rc8.",
+  "es": "Enroca; ...Cbd7 y ...Tc8."
+ },
+ "e5 Nb3 Be7 Be3 Be6 O-O O-O f4": {
+  "en": "...exf4 Bxf4 Nc6 (or ...Nbd7): e5 for the knight. Equal.",
+  "es": "...exf4 Axf4 Cc6 (o ...Cbd7): e5 para el caballo. Igualdad."
+ },
+ "e5 Nb3 Be7 Be3 Be6 O-O O-O f4 exf4 Bxf4 Nbd7 Bxd6": {
+  "en": "...Qb6+! and ...Qxd6: Black wins a piece.",
+  "es": "¡...Db6+! y ...Dxd6: las negras ganan una pieza."
+ },
+ "e5 Nb3 Be7 Be3 Be6 Qd2": {
+  "en": "Castle and ...Nbd7: if O-O-O, ...b5 races.",
+  "es": "Enroca y ...Cbd7: si O-O-O, ...b5 inicia la carrera."
+ },
+ "e5 Nf3": {
+  "en": "...Be7 and ...O-O; ...h6 against Bg5.",
+  "es": "...Ae7 y ...O-O; ...h6 contra Ag5."
+ },
+ "e5 Nf3 Be7 O-O": {
+  "en": "Castle; ...Be6 and ...Nbd7.",
+  "es": "Enroca; ...Ae6 y ...Cbd7."
+ },
+ "e5 Nf3 Be7 O-O O-O h3": {
+  "en": "...Be6 (or ...b5). Equal.",
+  "es": "...Ae6 (o ...b5). Igualdad."
+ },
+ "e5 Nf5": {
+  "en": "...d5! and the knight on f5 becomes a target. Black is better.",
+  "es": "¡...d5! y el caballo de f5 se convierte en objetivo. Las negras están mejor."
  }
 }
