@@ -430,5 +430,15 @@
    "The Blackmar-Diemer: take the pawn and develop. White's attack is dangerous only if Black ignores development and king safety.",
    "El Blackmar-Diemer: toma el peón y desarrolla. El ataque blanco solo es peligroso si las negras descuidan el desarrollo y la seguridad del rey."
   ]
+ ],
+ "colle": [
+  [
+   "colle-zukertort",
+   "Colle-Zukertort (b3 and Bb2)",
+   "Colle-Zukertort (b3 y Ab2)",
+   "d4 d5 Nf3 Nf6 e3 e6",
+   "The Colle-Zukertort: e3, Bd3, b3 and Bb2, then Ne5 and f4. Both bishops aim at Black's castled king.",
+   "El Colle-Zukertort: e3, Ad3, b3 y Ab2, y después Ce5 y f4. Los dos alfiles apuntan al rey enrocado negro."
+  ]
  ]
 }
