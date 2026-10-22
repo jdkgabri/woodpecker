@@ -66,5 +66,181 @@
  "Nxe4 Bxf7+": {
   "en": "4...Nxe4? 5.Bxf7+ Ke7 6.d4: the black king is stuck in the centre.",
   "es": "4...Cxe4? 5.Axf7+ Re7 6.d4: el rey negro queda atrapado en el centro."
+ },
+ "d5": {
+  "en": "exd5: take, and if ...Nxd5, the Fried Liver.",
+  "es": "exd5: toma, y si ...Cxd5, el Hígado Frito."
+ },
+ "d5 exd5 Na5 Bb5+ c6": {
+  "en": "dxc6: take the second pawn; ...bxc6 and Be2.",
+  "es": "dxc6: toma el segundo peón; ...bxc6 y Ae2."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6": {
+  "en": "Be2 (or Ba4, Qf3): the bishop retreats and White keeps the extra pawn.",
+  "es": "Ae2 (o Aa4, Df3): el alfil se retira y las blancas conservan el peón de más."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6": {
+  "en": "Nf3: the knight returns; ...e4 kicks it to e5.",
+  "es": "Cf3: el caballo vuelve; ...e4 lo echa a e5."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4": {
+  "en": "Ne5: the knight's best square.",
+  "es": "Ce5: la mejor casilla del caballo."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4 Ne5 Bd6": {
+  "en": "d4 (or f4): support the knight. ...exd3 Nxd3 and White keeps the pawn.",
+  "es": "d4 (o f4): apoya al caballo. ...exd3 Cxd3 y las blancas conservan el peón."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4 Ne5 Bd6 d4 exd3": {
+  "en": "Nxd3: White is a pawn up; Black has activity (...Qc7, ...O-O).",
+  "es": "Cxd3: las blancas tienen un peón de más; las negras tienen actividad (...Dc7, ...O-O)."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4 Ne5 Bd6 d4 exd3 Nxd3 O-O b3": {
+  "en": "After ...c5 Nd2 Bf5 O-O: Black's activity makes up for the pawn. Equal.",
+  "es": "Tras ...c5 Cd2 Af5 O-O: la actividad negra compensa el peón. Igualdad."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4 Ne5 Bc5 O-O": {
+  "en": "After ...O-O, Kh1 and d4 or c3: equal; Black has compensation for the pawn.",
+  "es": "Tras ...O-O, Rh1 y d4 o c3: igualdad; las negras tienen compensación por el peón."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4 Ne5 Qd5": {
+  "en": "d4! and the queen is exposed: after ...exd3 Nxd3 Qxg2 Bf3 the queen gets chased. White is clearly better.",
+  "es": "¡d4! y la dama queda expuesta: tras ...exd3 Cxd3 Dxg2 Af3 la dama es perseguida. Las blancas están claramente mejor."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 e4 Ne5 Qd5 d4": {
+  "en": "Bf4, O-O and c4: White is a pawn up with a great position. Clearly better.",
+  "es": "Af4, O-O y c4: las blancas tienen un peón de más y una gran posición. Claramente mejor."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 h6 Nf3 Bd6": {
+  "en": "...Bd6 is slow (no ...e4): d3, O-O and Nc3. White keeps the pawn and is better.",
+  "es": "...Ad6 es lenta (sin ...e4): d3, O-O y Cc3. Las blancas conservan el peón y están mejor."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 Bc5": {
+  "en": "...Bc5 without ...h6: d3, O-O and Nc3. White is clearly better.",
+  "es": "...Ac5 sin ...h6: d3, O-O y Cc3. Las blancas están claramente mejor."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 Bc5 d3": {
+  "en": "O-O, Nc3 and Nge4: White is a pawn up with no problems.",
+  "es": "O-O, Cc3 y Cge4: las blancas tienen un peón de más sin problemas."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 Be7": {
+  "en": "d3, O-O and Ne4: White is clearly better.",
+  "es": "d3, O-O y Ce4: las blancas están claramente mejor."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 Nd5": {
+  "en": "d3: if ...Nf4, Bxf4 exf4 and Ne4. White is better.",
+  "es": "d3: si ...Cf4, Axf4 exf4 y Ce4. Las blancas están mejor."
+ },
+ "d5 exd5 Na5 Bb5+ c6 dxc6 bxc6 Be2 Nd5 d3": {
+  "en": "After ...Nf4 Bxf4 exf4, O-O and Ne4. White is better.",
+  "es": "Tras ...Cf4 Axf4 exf4, O-O y Ce4. Las blancas están mejor."
+ },
+ "d5 exd5 Na5 Bb5+ Bd7": {
+  "en": "Qe2: hit e5 and keep the pin.",
+  "es": "De2: ataca e5 y mantiene la clavada."
+ },
+ "d5 exd5 Na5 Bb5+ Bd7 Qe2 Bd6 Bxd7+": {
+  "en": "After ...Qxd7 Nc3 c6 dxc6 Nxc6: White is a pawn up. Slightly better.",
+  "es": "Tras ...Dxd7 Cc3 c6 dxc6 Cxc6: las blancas tienen un peón de más. Algo mejor."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7": {
+  "en": "Qf3+: the king must come forward to defend the d5-knight.",
+  "es": "Df3+: el rey tiene que avanzar para defender el caballo de d5."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Ke6": {
+  "en": "Nc3: attack the pinned d5-knight again.",
+  "es": "Cc3: ataca otra vez al caballo clavado de d5."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Ke6 Nc3 Nb4": {
+  "en": "Bb3 (or a3, O-O): keep the bishop on the diagonal; d4 next.",
+  "es": "Ab3 (o a3, O-O): mantén el alfil en la diagonal; después d4."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Ke6 Nc3 Nb4 Bb3 c6 a3 Na6 Nxd5": {
+  "en": "After ...cxd5 d4! the king is exposed: c4 and Qg4+ follow. White is better.",
+  "es": "Tras ...cxd5 ¡d4! el rey está expuesto: siguen c4 y Dg4+. Las blancas están mejor."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Ke6 Nc3 Ne7": {
+  "en": "d4! opens the centre against the king. White is clearly better.",
+  "es": "¡d4! abre el centro contra el rey. Las blancas están claramente mejor."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Ke6 Nc3 Nd4": {
+  "en": "Bxd5+! Kd6 and the king is in the open. White is clearly better.",
+  "es": "¡Axd5+! Rd6 y el rey queda al descubierto. Las blancas están claramente mejor."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Ke8": {
+  "en": "Bxd5: now Qf7# is threatened and c6 hangs. White is winning.",
+  "es": "Axd5: ahora amenaza Df7# y c6 cuelga. Las blancas van ganando."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Ke8 Bxd5 Nd4": {
+  "en": "Qf7#.",
+  "es": "Df7#."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Ke8 Bxd5 Qe7": {
+  "en": "Bxc6+ wins a piece. White is winning.",
+  "es": "Axc6+ gana una pieza. Las blancas van ganando."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Qf6": {
+  "en": "Bxd5+: the knight falls with check.",
+  "es": "Axd5+: el caballo cae con jaque."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Qf6 Bxd5+ Be6": {
+  "en": "Bxc6! bxc6 Qxc6: White is two pawns up. Winning.",
+  "es": "¡Axc6! bxc6 Dxc6: las blancas tienen dos peones de más. Ganando."
+ },
+ "d5 exd5 Nxd5 Nxf7 Kxf7 Qf3+ Kg8": {
+  "en": "Bxd5+ Qxd5 Qxd5+ Be6 Qxe6#.",
+  "es": "Axd5+ Dxd5 Dxd5+ Ae6 Dxe6#."
+ },
+ "d5 exd5 Nd4": {
+  "en": "The Fritz: ...Nd4. c3 kicks the knight.",
+  "es": "La Fritz: ...Cd4. c3 echa al caballo."
+ },
+ "d5 exd5 Nd4 c3 Nf5": {
+  "en": "d3 (or d4): White is a pawn up.",
+  "es": "d3 (o d4): las blancas tienen un peón de más."
+ },
+ "d5 exd5 Nd4 c3 Nf5 d3": {
+  "en": "After ...Nxd5 O-O and Re1: White is better.",
+  "es": "Tras ...Cxd5 O-O y Te1: las blancas están mejor."
+ },
+ "d5 exd5 b5 Bxb5 Qxd5": {
+  "en": "The Ulvestad. Be2 (or Bf1): keep it simple.",
+  "es": "La Ulvestad. Ae2 (o Af1): mantenlo simple."
+ },
+ "d5 exd5 b5 Bxb5 Qxd5 Be2": {
+  "en": "...Bb7 or ...Nd4: Black has activity for the pawn. Equal.",
+  "es": "...Ab7 o ...Cd4: las negras tienen actividad por el peón. Igualdad."
+ },
+ "Bc5 Bxf7+ Ke7": {
+  "en": "Bc4 (or Bd5, Bb3): the bishop retreats and White is a pawn up.",
+  "es": "Ac4 (o Ad5, Ab3): el alfil se retira y las blancas tienen un peón de más."
+ },
+ "Bc5 Bxf7+ Ke7 Bc4 Rf8 Nc3": {
+  "en": "Nf3, O-O and Nd5+: White is clearly better.",
+  "es": "Cf3, O-O y Cd5+: las blancas están claramente mejor."
+ },
+ "Bc5 Bxf7+ Kf8": {
+  "en": "Bb3: the bishop retreats; watch ...Bxf2+ tricks.",
+  "es": "Ab3: el alfil se retira; cuidado con los trucos de ...Axf2+."
+ },
+ "Bc5 Bxf7+ Kf8 Bb3 Bxf2+": {
+  "en": "Kxf2: White is a piece up. Then Rf1 and Kg1.",
+  "es": "Rxf2: las blancas tienen una pieza de más. Después Tf1 y Rg1."
+ },
+ "Bc5 Bxf7+ Kf8 Bb3 h6": {
+  "en": "Nf7! forks queen and rook.",
+  "es": "¡Cf7! ataca dama y torre."
+ },
+ "Nxe4": {
+  "en": "...Nxe4? Bxf7+ Ke7 and the king is stuck.",
+  "es": "¿...Cxe4? Axf7+ Re7 y el rey queda atrapado."
+ },
+ "Nxe4 Bxf7+ Ke7": {
+  "en": "d4! opens the centre.",
+  "es": "¡d4! abre el centro."
+ },
+ "Nxe4 Bxf7+ Ke7 d4": {
+  "en": "After ...h6 Nxe4 Kxf7 d5: White is clearly better.",
+  "es": "Tras ...h6 Cxe4 Rxf7 d5: las blancas están claramente mejor."
  }
 }

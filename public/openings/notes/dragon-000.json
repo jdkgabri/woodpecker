@@ -30,5 +30,189 @@
  "d5 Nxc6 bxc6 exd5 Nxd5 Bd4 e5 Bc5 Be6 Bxf8 Qxf8": {
   "en": "Black is an exchange down but has the bishop pair, a strong centre and attacking chances.",
   "es": "Las negras tienen una calidad menos pero la pareja de alfiles, un centro fuerte y posibilidades de ataque."
+ },
+ "d5 Nxc6": {
+  "en": "...bxc6: the b-file opens towards White's king, and the c6-pawn supports d5.",
+  "es": "...bxc6: la columna b se abre hacia el rey blanco, y el peón de c6 apoya d5."
+ },
+ "d5 Nxc6 bxc6 exd5": {
+  "en": "...Nxd5: the knight is excellent in the centre.",
+  "es": "...Cxd5: el caballo es excelente en el centro."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Nxd5": {
+  "en": "...cxd5: if Qxd5, ...Qc7! and the a8-rook is bait.",
+  "es": "...cxd5: si Dxd5, ¡...Dc7! y la torre de a8 es el cebo."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Nxd5 cxd5 Qxd5 Qc7 Qxa8": {
+  "en": "...Bf5! threatens mate on c2.",
+  "es": "¡...Af5! amenaza mate en c2."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Nxd5 cxd5 Qxd5 Qc7 Qxa8 Bf5 Qxf8+": {
+  "en": "...Kxf8: Black has queen and bishop pair against two rooks, and White's king is exposed. Black is better.",
+  "es": "...Rxf8: las negras tienen dama y pareja de alfiles contra dos torres, y el rey blanco está expuesto. Las negras están mejor."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Nxd5 cxd5 Qxd5 Qc7 Qxa8 Bf5 Qxf8+ Kxf8 Bd3": {
+  "en": "...Qe5! hits e3 and b2: after Kd2 Bxd3 Kxd3 Qxb2, Black is winning.",
+  "es": "¡...De5! ataca e3 y b2: tras Rd2 Axd3 Rxd3 Dxb2, las negras van ganando."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Nxd5 cxd5 Qxd5 Qc7 Qxa8 Bf5 Qxf8+ Kxf8 Bd3 Qe5 Bxf5": {
+  "en": "...Qxe3+ and ...gxf5: Black is winning.",
+  "es": "...Dxe3+ y ...gxf5: las negras van ganando."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Nxd5 cxd5 Qxd5 Qc7 Qc5": {
+  "en": "...Qb7: the b-file and the long diagonal give strong pressure for the pawn.",
+  "es": "...Db7: la columna b y la gran diagonal dan una fuerte presión por el peón."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Bd4": {
+  "en": "...e5! kicks the bishop.",
+  "es": "¡...e5! echa al alfil."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Bd4 e5 Bc5": {
+  "en": "...Be6: keep the pawn and offer the exchange.",
+  "es": "...Ae6: conserva el peón y ofrece la calidad."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Bd4 e5 Bc5 Be6 Ne4": {
+  "en": "...Re8 (the rook steps away); then ...Qc7 and ...Rb8.",
+  "es": "...Te8 (la torre se aparta); después ...Dc7 y ...Tb8."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Bd4 e5 Bc5 Be6 Ne4 Re8 h4 h5": {
+  "en": "After g3 a5 Bc4 a4: both sides attack. White is slightly better.",
+  "es": "Tras g3 a5 Ac4 a4: ambos bandos atacan. Las blancas algo mejor."
+ },
+ "d5 Nxc6 bxc6 exd5 Nxd5 Bd4 e5 Bc5 Be6 Bxf8": {
+  "en": "...Qxf8: for the exchange Black gets dark-square control and an attack. Black is better.",
+  "es": "...Dxf8: a cambio de la calidad, las negras obtienen el control de las casillas oscuras y un ataque. Las negras están mejor."
+ },
+ "d5 Nxc6 bxc6 e5": {
+  "en": "...Ne8: the knight retreats but will come back via c7 or g7; ...f6 hits e5.",
+  "es": "...Ce8: el caballo retrocede pero volverá por c7 o g7; ...f6 ataca e5."
+ },
+ "d5 Nxc6 bxc6 e5 Ne8 f4": {
+  "en": "...f6: open lines against e5.",
+  "es": "...f6: abre líneas contra e5."
+ },
+ "d5 Nxc6 bxc6 e5 Ne8 f4 f6 Bd4 fxe5": {
+  "en": "After Bxe5 Bxe5 fxe5, ...Ng7 and ...Rf5: e5 falls. Slightly better for Black.",
+  "es": "Tras Axe5 Axe5 fxe5, ...Cg7 y ...Tf5: e5 cae. Algo mejor para las negras."
+ },
+ "d5 Nxc6 bxc6 e5 Ne8 f4 f6 exf6 Bxf6": {
+  "en": "After Ne4 Bg7: the centre and the b-file give Black good play. Equal.",
+  "es": "Tras Ce4 Ag7: el centro y la columna b dan a las negras buen juego. Igualdad."
+ },
+ "d5 Nxc6 bxc6 e5 Ne8 Bh6": {
+  "en": "...Bxe5! wins a pawn: the bishop on h6 no longer guards e5.",
+  "es": "¡...Axe5! gana un peón: el alfil de h6 ya no protege e5."
+ },
+ "d5 Nxc6 bxc6 e5 Ne8 Bh6 Bxe5": {
+  "en": "...Qd6 and ...Ng7: Black is a pawn up and solid. Black is better.",
+  "es": "...Dd6 y ...Cg7: las negras tienen un peón de más y están sólidas. Las negras están mejor."
+ },
+ "d5 Nxc6 bxc6 Bh6 Be6 Bxg7 Kxg7": {
+  "en": "After exd5 cxd5: ...Qc7 and ...Rab8 against White's king. Slightly better for White.",
+  "es": "Tras exd5 cxd5: ...Dc7 y ...Tab8 contra el rey blanco. Algo mejor para las blancas."
+ },
+ "d5 exd5": {
+  "en": "...Nxd5: centralise.",
+  "es": "...Cxd5: centraliza."
+ },
+ "d5 exd5 Nxd5 Nxc6": {
+  "en": "...bxc6, the same as the main line.",
+  "es": "...bxc6, lo mismo que en la línea principal."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Nxd5": {
+  "en": "...cxd5, then ...Qc7 if Qxd5.",
+  "es": "...cxd5, y después ...Dc7 si Dxd5."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Nxd5 cxd5 Qxd5": {
+  "en": "...Qc7! offers the a8-rook: Qxa8? Bf5.",
+  "es": "¡...Dc7! ofrece la torre de a8: ¿Dxa8? Af5."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Nxd5 cxd5 Qxd5 Qc7 Qxa8": {
+  "en": "...Bf5! threatens mate on c2.",
+  "es": "¡...Af5! amenaza mate en c2."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Nxd5 cxd5 Qxd5 Qc7 Qxa8 Bf5 Qxf8+": {
+  "en": "...Kxf8: queen and bishops against two rooks. Black is better.",
+  "es": "...Rxf8: dama y alfiles contra dos torres. Las negras están mejor."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Nxd5 cxd5 Qxd5 Qc7 Qxa8 Bf5 Qxf8+ Kxf8 Bd3": {
+  "en": "...Qe5! hits e3 and b2. Black is winning.",
+  "es": "¡...De5! ataca e3 y b2. Las negras van ganando."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Nxd5 cxd5 Qxd5 Qc7 Qxa8 Bf5 Qxf8+ Kxf8 Bd3 Qe5 Bxf5": {
+  "en": "...Qxe3+ and ...gxf5: Black is winning.",
+  "es": "...Dxe3+ y ...gxf5: las negras van ganando."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Bd4": {
+  "en": "...e5! kicks the bishop.",
+  "es": "¡...e5! echa al alfil."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Bd4 e5 Bc5": {
+  "en": "...Be6: keep the pawn and offer the exchange.",
+  "es": "...Ae6: conserva el peón y ofrece la calidad."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Bd4 e5 Bc5 Be6 Ne4": {
+  "en": "...Re8, then ...Qc7 and ...Rb8.",
+  "es": "...Te8, y después ...Dc7 y ...Tb8."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Bd4 e5 Bc5 Be6 Ne4 Re8 h4 h6": {
+  "en": "After h5 g5 g4: White has kingside space. White is better; ...h5 was more solid than ...h6.",
+  "es": "Tras h5 g5 g4: las blancas tienen espacio en el flanco de rey. Las blancas están mejor; ...h5 era más sólida que ...h6."
+ },
+ "d5 exd5 Nxd5 Nxc6 bxc6 Bd4 e5 Bc5 Be6 Bxf8": {
+  "en": "...Qxf8: dark-square compensation and an attack. Black is better.",
+  "es": "...Dxf8: compensación en las casillas oscuras y un ataque. Las negras están mejor."
+ },
+ "d5 exd5 Nxd5 Nxd5": {
+  "en": "...Qxd5! the queen recaptures with tempo against d4.",
+  "es": "¡...Dxd5! la dama recaptura ganando tiempo sobre d4."
+ },
+ "d5 exd5 Nxd5 Nxd5 Qxd5 Nxc6": {
+  "en": "...Qxc6: the c-file and the long diagonal point at White's king.",
+  "es": "...Dxc6: la columna c y la gran diagonal apuntan al rey blanco."
+ },
+ "d5 exd5 Nxd5 Nxd5 Qxd5 Nxc6 Qxc6 Bh6 Be6": {
+  "en": "After Bxg7 Kxg7, ...Rfd8 and ...Rac8: Black is active. Equal.",
+  "es": "Tras Axg7 Rxg7, ...Tfd8 y ...Tac8: las negras están activas. Igualdad."
+ },
+ "d5 exd5 Nxd5 Nxd5 Qxd5 Nxc6 Qxc6 Bd4": {
+  "en": "...Rd8! pins the d4-bishop against the queen, and ...Bxd4 follows. Black is winning.",
+  "es": "¡...Td8! clava el alfil de d4 contra la dama, y sigue ...Axd4. Las negras van ganando."
+ },
+ "d5 exd5 Nxd5 Nxd5 Qxd5 Kb1": {
+  "en": "...Nxd4 Bxd4 Be6: Black is active and better.",
+  "es": "...Cxd4 Axd4 Ae6: las negras están activas y mejor."
+ },
+ "d5 exd5 Nxd5 Nxd5 Qxd5 Kb1 Nxd4 Bxd4 Be6 b3": {
+  "en": "...Rad8! Bxg7 Qxd2 Rxd2 Rxd2 Bxf8 Rd1+: Black wins material.",
+  "es": "¡...Tad8! Axg7 Dxd2 Txd2 Txd2 Axf8 Td1+: las negras ganan material."
+ },
+ "d5 exd5 Nxd5 Nxd5 Qxd5 Nb3": {
+  "en": "...Qe5 (or ...Qc4) and ...a5–a4: Black's attack is very fast. Black is clearly better.",
+  "es": "...De5 (o ...Dc4) y ...a5–a4: el ataque negro es muy rápido. Las negras están claramente mejor."
+ },
+ "d5 Kb1 Nxd4 Bxd4": {
+  "en": "...dxe4: open the centre.",
+  "es": "...dxe4: abre el centro."
+ },
+ "d5 Kb1 Nxd4 Bxd4 dxe4 fxe4 Be6": {
+  "en": "...Rc8 and ...Qa5: active pieces against the e4-pawn. Equal.",
+  "es": "...Tc8 y ...Da5: piezas activas contra el peón de e4. Igualdad."
+ },
+ "d5 Kb1 Nxd4 e5 Nf5 exf6 exf6": {
+  "en": "Black has the bishop pair and play on the e-file. Equal.",
+  "es": "Las negras tienen la pareja de alfiles y juego en la columna e. Igualdad."
+ },
+ "d5 Qe1 e5 Nxc6": {
+  "en": "...bxc6, then ...d4 or ...Be6.",
+  "es": "...bxc6, y después ...d4 o ...Ae6."
+ },
+ "d5 Qe1 e5 Nxc6 bxc6 exd5": {
+  "en": "...Nxd5: the knight is strong and the long diagonal opens.",
+  "es": "...Cxd5: el caballo es fuerte y se abre la gran diagonal."
+ },
+ "d5 Qe1 e5 Nxc6 bxc6 exd5 Nxd5 Bc5": {
+  "en": "...Bh6+! Kb1 Nxc3+ bxc3 Rb8+: Black's attack is decisive.",
+  "es": "¡...Ah6+! Rb1 Cxc3+ bxc3 Tb8+: el ataque negro es decisivo."
  }
 }

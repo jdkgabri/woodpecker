@@ -1,19 +1,226 @@
 {
-  "": { "en": "The classical Giuoco Piano: White strikes in the centre at once with c3 and d4. These are the replies club players choose and the best answer to each.", "es": "El Giuoco Piano clásico: las blancas golpean en el centro de inmediato con c3 y d4. Estas son las respuestas que eligen los jugadores de club y la mejor contestación a cada una." },
-  "exd4 cxd4": { "en": "White has the ideal centre with e4 and d4, and the c5-bishop is attacked.", "es": "Las blancas tienen el centro ideal con e4 y d4, y el alfil de c5 está atacado." },
-  "exd4 cxd4 Bb4+ Bd2": { "en": "The calm answer: White offers to trade the dark-squared bishops and keeps the centre.", "es": "La respuesta tranquila: las blancas ofrecen cambiar los alfiles de casillas negras y mantienen el centro." },
-  "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2": { "en": "The knight recaptures so that e4 stays protected.", "es": "Recaptura el caballo para que e4 siga protegido." },
-  "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5": { "en": "The best way to fight the centre: Black breaks with ...d5 before White can play e5.", "es": "La mejor manera de luchar contra el centro: las negras rompen con ...d5 antes de que las blancas puedan jugar e5." },
-  "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3": { "en": "Qb3 attacks the d5-knight a second time and eyes b7.", "es": "Db3 ataca por segunda vez el caballo de d5 y vigila b7." },
-  "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Nce7": { "en": "The main line: the other knight defends d5. White has an isolated d-pawn but active pieces; Rfe1 and Ne4 or Ne5 come next.", "es": "La línea principal: el otro caballo defiende d5. Las blancas tienen un peón aislado en d4 pero piezas activas; siguen Tfe1 y Ce4 o Ce5." },
-  "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Na5 Qa4+": { "en": "...Na5 hits queen and bishop, but Qa4+ gains time: the check also attacks the knight on a5.", "es": "...Ca5 ataca dama y alfil, pero Da4+ gana tiempo: el jaque también ataca el caballo de a5." },
-  "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O": { "en": "Both sides castle. Without ...d5, White's centre gives a lasting advantage: Re1 and e5 or d5 are the plans.", "es": "Ambos enrocan. Sin ...d5, el centro blanco da una ventaja duradera: los planes son Te1 y e5 o d5." },
-  "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O Re8 d5": { "en": "...Re8 ignores the centre: d5 kicks the knight and White's pawns take over.", "es": "...Te8 ignora el centro: d5 echa al caballo y los peones blancos dominan." },
-  "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d6 Qb3": { "en": "...d6 is too passive. Qb3 hits b7 and keeps an eye on f7.", "es": "...d6 es demasiado pasiva. Db3 ataca b7 y vigila f7." },
-  "exd4 cxd4 Bb4+ Bd2 Nxe4": { "en": "The sharp alternative: Black grabs the e4-pawn and gives back material on b4.", "es": "La alternativa aguda: las negras toman el peón de e4 y devuelven material en b4." },
-  "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3": { "en": "Qb3 attacks the knight on b4: material will be level, and White develops quickly.", "es": "Db3 ataca el caballo de b4: el material quedará igualado y las blancas se desarrollan rápido." },
-  "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 Qe7 O-O O-O Re1": { "en": "Re1 pins the e4-knight against the queen on e7. Black must react precisely.", "es": "Te1 clava el caballo de e4 contra la dama de e7. Las negras deben reaccionar con precisión." },
-  "exd4 cxd4 Bb4+ Bd2 O-O Bxb4 Nxb4 e5": { "en": "Castling first lets White trade and kick the f6-knight with e5, gaining space.", "es": "Enrocar primero permite a las blancas cambiar y echar al caballo de f6 con e5, ganando espacio." },
-  "exd4 cxd4 Bb6": { "en": "...Bb6? is too slow: e5 kicks the f6-knight and White's centre rolls forward.", "es": "...Ab6? es demasiado lenta: e5 echa al caballo de f6 y el centro blanco avanza." },
-  "exd4 cxd4 Bb6 e5 Ng8 d5": { "en": "Black's pieces are pushed back to their starting squares while White grabs even more space.", "es": "Las piezas negras vuelven a sus casillas iniciales mientras las blancas ganan aún más espacio." }
+ "": {
+  "en": "The classical Giuoco Piano: White strikes in the centre at once with c3 and d4. These are the replies club players choose and the best answer to each.",
+  "es": "El Giuoco Piano clásico: las blancas golpean en el centro de inmediato con c3 y d4. Estas son las respuestas que eligen los jugadores de club y la mejor contestación a cada una."
+ },
+ "exd4 cxd4": {
+  "en": "White has the ideal centre with e4 and d4, and the c5-bishop is attacked.",
+  "es": "Las blancas tienen el centro ideal con e4 y d4, y el alfil de c5 está atacado."
+ },
+ "exd4 cxd4 Bb4+ Bd2": {
+  "en": "The calm answer: White offers to trade the dark-squared bishops and keeps the centre.",
+  "es": "La respuesta tranquila: las blancas ofrecen cambiar los alfiles de casillas negras y mantienen el centro."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2": {
+  "en": "The knight recaptures so that e4 stays protected.",
+  "es": "Recaptura el caballo para que e4 siga protegido."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5": {
+  "en": "The best way to fight the centre: Black breaks with ...d5 before White can play e5.",
+  "es": "La mejor manera de luchar contra el centro: las negras rompen con ...d5 antes de que las blancas puedan jugar e5."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3": {
+  "en": "Qb3 attacks the d5-knight a second time and eyes b7.",
+  "es": "Db3 ataca por segunda vez el caballo de d5 y vigila b7."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Nce7": {
+  "en": "The main line: the other knight defends d5. White has an isolated d-pawn but active pieces; Rfe1 and Ne4 or Ne5 come next.",
+  "es": "La línea principal: el otro caballo defiende d5. Las blancas tienen un peón aislado en d4 pero piezas activas; siguen Tfe1 y Ce4 o Ce5."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Na5 Qa4+": {
+  "en": "...Na5 hits queen and bishop, but Qa4+ gains time: the check also attacks the knight on a5.",
+  "es": "...Ca5 ataca dama y alfil, pero Da4+ gana tiempo: el jaque también ataca el caballo de a5."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O": {
+  "en": "Both sides castle. Without ...d5, White's centre gives a lasting advantage: Re1 and e5 or d5 are the plans.",
+  "es": "Ambos enrocan. Sin ...d5, el centro blanco da una ventaja duradera: los planes son Te1 y e5 o d5."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O Re8 d5": {
+  "en": "...Re8 ignores the centre: d5 kicks the knight and White's pawns take over.",
+  "es": "...Te8 ignora el centro: d5 echa al caballo y los peones blancos dominan."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d6 Qb3": {
+  "en": "...d6 is too passive. Qb3 hits b7 and keeps an eye on f7.",
+  "es": "...d6 es demasiado pasiva. Db3 ataca b7 y vigila f7."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4": {
+  "en": "The sharp alternative: Black grabs the e4-pawn and gives back material on b4.",
+  "es": "La alternativa aguda: las negras toman el peón de e4 y devuelven material en b4."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3": {
+  "en": "Qb3 attacks the knight on b4: material will be level, and White develops quickly.",
+  "es": "Db3 ataca el caballo de b4: el material quedará igualado y las blancas se desarrollan rápido."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 Qe7 O-O O-O Re1": {
+  "en": "Re1 pins the e4-knight against the queen on e7. Black must react precisely.",
+  "es": "Te1 clava el caballo de e4 contra la dama de e7. Las negras deben reaccionar con precisión."
+ },
+ "exd4 cxd4 Bb4+ Bd2 O-O Bxb4 Nxb4 e5": {
+  "en": "Castling first lets White trade and kick the f6-knight with e5, gaining space.",
+  "es": "Enrocar primero permite a las blancas cambiar y echar al caballo de f6 con e5, ganando espacio."
+ },
+ "exd4 cxd4 Bb6": {
+  "en": "...Bb6? is too slow: e5 kicks the f6-knight and White's centre rolls forward.",
+  "es": "...Ab6? es demasiado lenta: e5 echa al caballo de f6 y el centro blanco avanza."
+ },
+ "exd4 cxd4 Bb6 e5 Ng8 d5": {
+  "en": "Black's pieces are pushed back to their starting squares while White grabs even more space.",
+  "es": "Las piezas negras vuelven a sus casillas iniciales mientras las blancas ganan aún más espacio."
+ },
+ "exd4": {
+  "en": "cxd4: build the ideal centre.",
+  "es": "cxd4: levanta el centro ideal."
+ },
+ "exd4 cxd4 Bb4+": {
+  "en": "Bd2: offer the trade and keep the centre.",
+  "es": "Ad2: ofrece el cambio y mantén el centro."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+": {
+  "en": "Nbxd2: the knight recaptures and protects e4.",
+  "es": "Cbxd2: el caballo recaptura y protege e4."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O": {
+  "en": "Castle; if Black doesn't play ...d5 soon, e5 or d5 gains space.",
+  "es": "Enroca; si las negras no juegan pronto ...d5, e5 o d5 ganan espacio."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O d6": {
+  "en": "Re1 and then e5 or d5: White's centre gives a clear plus.",
+  "es": "Te1 y después e5 o d5: el centro blanco da una ventaja clara."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O d6 Re1 Bg4": {
+  "en": "h3 asks the bishop.",
+  "es": "h3 pregunta al alfil."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O d6 Re1 Bg4 h3 Bh5": {
+  "en": "e5! opens the centre.",
+  "es": "¡e5! abre el centro."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O d6 Re1 Bg4 h3 Bh5 e5": {
+  "en": "After ...dxe5 dxe5: e5 kicks the knight and White's pieces are active. White is better.",
+  "es": "Tras ...dxe5 dxe5: e5 echa al caballo y las piezas blancas están activas. Las blancas están mejor."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O d5": {
+  "en": "exd5 Nxd5 and Re1 or Qb3: an isolated-pawn position.",
+  "es": "exd5 Cxd5 y Te1 o Db3: una posición de peón aislado."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O d5 exd5 Nxd5": {
+  "en": "Re1 (or Qb3): active pieces for the isolated pawn.",
+  "es": "Te1 (o Db3): piezas activas a cambio del peón aislado."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O d5 exd5 Nxd5 Re1 Bg4 h3 Bh5 g4": {
+  "en": "After ...Bg6 Ne4: active play for White, but the kingside is loosened. Equal.",
+  "es": "Tras ...Ag6 Ce4: juego activo para las blancas, pero el flanco de rey queda debilitado. Igualdad."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 O-O O-O Re8": {
+  "en": "d5! kicks the knight: after ...Na5 Bd3 c5 d6, White's pawns dominate. Clearly better.",
+  "es": "¡d5! echa al caballo: tras ...Ca5 Ad3 c5 d6, los peones blancos dominan. Claramente mejor."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5": {
+  "en": "Qb3: hit d5 twice and eye b7.",
+  "es": "Db3: ataca d5 dos veces y apunta a b7."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Nce7 O-O O-O": {
+  "en": "Rfe1: then Ne4 or Ne5 and Rac1. The isolated pawn is balanced by active pieces.",
+  "es": "Tfe1: después Ce4 o Ce5 y Tac1. El peón aislado se compensa con piezas activas."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Nce7 O-O O-O Rfe1 c6": {
+  "en": "Ne4: the knight eyes c5 and g5.",
+  "es": "Ce4: el caballo apunta a c5 y g5."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Nce7 O-O O-O Rfe1 c6 Ne4": {
+  "en": "After ...Nb6 Bd3 Nbd5: Qa3 and Ne5. Slightly better for White.",
+  "es": "Tras ...Cb6 Ad3 Cbd5: Da3 y Ce5. Algo mejor para las blancas."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Na5": {
+  "en": "Qa4+! gains time with check.",
+  "es": "¡Da4+! gana tiempo con jaque."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Na5 Qa4+ c6 Bxd5": {
+  "en": "After ...Qxd5 O-O O-O Rfe1: White's rook gets to e7. White is better.",
+  "es": "Tras ...Dxd5 O-O O-O Tfe1: la torre blanca llega a e7. Las blancas están mejor."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Na5 Qa4+ Nc6 Qb3": {
+  "en": "Repeating: ...Na5 Qa4+ is a draw. If you want more, Bb5 or O-O.",
+  "es": "Repetición: ...Ca5 Da4+ es tablas. Si quieres más, Ab5 u O-O."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Be6 O-O": {
+  "en": "If ...O-O, Qxb7 Na5 Qb5 Nxc4 Nxc4: equal, but Black has activity for the pawn.",
+  "es": "Si ...O-O, Dxb7 Ca5 Db5 Cxc4 Cxc4: igualdad, pero las negras tienen actividad por el peón."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Qe7+": {
+  "en": "Kf1! The king steps aside and Re1 will hit the queen: White wins material.",
+  "es": "¡Rf1! El rey se aparta y Te1 atacará a la dama: las blancas ganan material."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d6": {
+  "en": "Qb3: b7 and f7.",
+  "es": "Db3: b7 y f7."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d6 Qb3 O-O": {
+  "en": "Bd3 (or O-O): if ...d5, e5 gains space. White is better.",
+  "es": "Ad3 (u O-O): si ...d5, e5 gana espacio. Las blancas están mejor."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d6 Qb3 O-O Bd3": {
+  "en": "After ...d5 e5: a French-like space advantage. White is better.",
+  "es": "Tras ...d5 e5: una ventaja de espacio al estilo Francesa. Las blancas están mejor."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4": {
+  "en": "Qb3: hit b4 and f7.",
+  "es": "Db3: ataca b4 y f7."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 d5": {
+  "en": "Qxb4: take the knight; ...dxc4 recaptures.",
+  "es": "Dxb4: toma el caballo; ...dxc4 recaptura."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 d5 Qxb4 dxc4": {
+  "en": "Castle; Re1 and Nc3 against the e4-knight. Black's knight is strong: about equal.",
+  "es": "Enroca; Te1 y Cc3 contra el caballo de e4. El caballo negro es fuerte: más o menos igualdad."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 d5 Qxb4 dxc4 O-O": {
+  "en": "After ...Qd5, Nc3 and Re1. Equal.",
+  "es": "Tras ...Dd5, Cc3 y Te1. Igualdad."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 Qe7": {
+  "en": "Castle: Re1 will pin the e4-knight.",
+  "es": "Enroca: Te1 clavará el caballo de e4."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 Qe7 O-O O-O": {
+  "en": "Re1: the pin.",
+  "es": "Te1: la clavada."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 Qe7 O-O O-O Re1 d5 Bxd5": {
+  "en": "After ...Nxd5 Qxd5 Nf6: equal.",
+  "es": "Tras ...Cxd5 Dxd5 Cf6: igualdad."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 Qe7 O-O O-O Re1 c6": {
+  "en": "Rxe4! Qxe4 Qxb4: White wins a piece.",
+  "es": "¡Txe4! Dxe4 Dxb4: las blancas ganan una pieza."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 Qe7 O-O d5 Bxd5": {
+  "en": "After ...Nxd5 Qxd5 O-O Re1: equal.",
+  "es": "Tras ...Cxd5 Dxd5 O-O Te1: igualdad."
+ },
+ "exd4 cxd4 Bb4+ Bd2 Nxe4 Bxb4 Nxb4 Qb3 Nc6": {
+  "en": "Bxf7+! Kf8 Bd5: White wins a pawn and Black can't castle. Clearly better.",
+  "es": "¡Axf7+! Rf8 Ad5: las blancas ganan un peón y las negras no pueden enrocar. Claramente mejor."
+ },
+ "exd4 cxd4 Bb4+ Bd2 O-O Bxb4 Nxb4": {
+  "en": "e5! kicks the f6-knight.",
+  "es": "¡e5! echa al caballo de f6."
+ },
+ "exd4 cxd4 Bb6 e5 Ng4": {
+  "en": "Nc3 (or h3): the g4-knight is short of squares. White is winning.",
+  "es": "Cc3 (o h3): el caballo de g4 tiene pocas casillas. Las blancas van ganando."
+ },
+ "exd4 cxd4 Bb6 e5 Ng4 Nc3": {
+  "en": "After ...d6 h3 Nxf2 Kxf2: Black has two pawns for the piece. White is clearly better.",
+  "es": "Tras ...d6 h3 Cxf2 Rxf2: las negras tienen dos peones por la pieza. Las blancas están claramente mejor."
+ },
+ "exd4 cxd4 Bb6 e5 Ne4 Qe2": {
+  "en": "Qe2 hits the e4-knight; after ...Ba5+ Kf1, it has no retreat. White is clearly better.",
+  "es": "De2 ataca al caballo de e4; tras ...Aa5+ Rf1, no tiene retirada. Las blancas están claramente mejor."
+ },
+ "exd4 cxd4 Bb6 e5 Ng8": {
+  "en": "d5! and Black's pieces are back home. White is winning.",
+  "es": "¡d5! y las piezas negras vuelven a casa. Las blancas van ganando."
+ }
 }
