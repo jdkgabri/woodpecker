@@ -114,5 +114,9 @@
  "Nc6 fxe5 Nxe5 d4 Ng6 e5 Qe7": {
   "en": "Qe2 breaks the pin; after ...Ng8 Nf3 d5 Nxd5, White is winning.",
   "es": "De2 deshace la clavada; tras ...Cg8 Cf3 d5 Cxd5, las blancas van ganando."
+ },
+ "d5 fxe5 Nxe4 Nf3 Bg4 Qe2": {
+  "en": "After ...Nxc3 dxc3: Bf4 and O-O-O. Slightly better for White.",
+  "es": "Tras ...Cxc3 dxc3: Af4 y O-O-O. Algo mejor para las blancas."
  }
 }

@@ -34,5 +34,49 @@
  "Nc3 d5": {
   "en": "Against 2.Nc3 (Veresov or Jobava ideas), ...d5 takes the centre first.",
   "es": "Contra 2.Cc3 (ideas Veresov o Jobava), ...d5 ocupa primero el centro."
+ },
+ "c4": {
+  "en": "...g6 and ...Bg7.",
+  "es": "...g6 y ...Ag7."
+ },
+ "c4 g6 Nc3": {
+  "en": "...Bg7, ...d6 and ...O-O.",
+  "es": "...Ag7, ...d6 y ...O-O."
+ },
+ "c4 g6 Nc3 Bg7 e4": {
+  "en": "...d6: the King's Indian.",
+  "es": "...d6: la India de Rey."
+ },
+ "c4 g6 Nc3 Bg7 e4 d6 Nf3": {
+  "en": "Castle, then ...e5.",
+  "es": "Enroca, y después ...e5."
+ },
+ "c4 g6 Nc3 Bg7 e4 d6 f4 O-O Nf3 e5": {
+  "en": "After fxe5 dxe5 d5: ...Nbd7–c5 and ...c6. Slightly better for White.",
+  "es": "Tras fxe5 dxe5 d5: ...Cbd7–c5 y ...c6. Algo mejor para las blancas."
+ },
+ "c4 g6 Nc3 Bg7 Nf3": {
+  "en": "...d6 (or ...O-O) and ...e5.",
+  "es": "...d6 (u ...O-O) y ...e5."
+ },
+ "c4 g6 Nf3": {
+  "en": "...Bg7, ...O-O and ...d6.",
+  "es": "...Ag7, ...O-O y ...d6."
+ },
+ "Nf3": {
+  "en": "...g6 and the usual setup.",
+  "es": "...g6 y el esquema habitual."
+ },
+ "Nf3 g6 c4": {
+  "en": "...Bg7 and ...O-O.",
+  "es": "...Ag7 y ...O-O."
+ },
+ "Bf4": {
+  "en": "...g6, ...Bg7, ...d6 and ...O-O.",
+  "es": "...g6, ...Ag7, ...d6 y ...O-O."
+ },
+ "Bf4 g6 e3": {
+  "en": "...Bg7, then ...d6 and ...Nbd7 with ...e5. Watch the d-file trick before playing ...e5.",
+  "es": "...Ag7, y después ...d6 y ...Cbd7 con ...e5. Cuidado con el truco de la columna d antes de jugar ...e5."
  }
 }

@@ -34,5 +34,45 @@
  "e6": {
   "en": "...e6 often leads to Queen's Gambit or Nimzo-Indian structures; Nc3 and g3 keep it flexible.",
   "es": "...e6 suele llevar a estructuras de Gambito de Dama o Nimzoindia; Cc3 y g3 lo mantienen flexible."
+ },
+ "e5 Nc3 Nf6": {
+  "en": "g3 and Bg2.",
+  "es": "g3 y Ag2."
+ },
+ "e5 Nc3 Nc6": {
+  "en": "g3, Bg2 and d3: the Closed English.",
+  "es": "g3, Ag2 y d3: la Inglesa Cerrada."
+ },
+ "Nf6": {
+  "en": "Nc3 and g3.",
+  "es": "Cc3 y g3."
+ },
+ "Nf6 Nc3 g6": {
+  "en": "g3 and Bg2 (or e4).",
+  "es": "g3 y Ag2 (o e4)."
+ },
+ "Nf6 Nc3 g6 g3 Bg7": {
+  "en": "Bg2 and Nf3, O-O.",
+  "es": "Ag2 y Cf3, O-O."
+ },
+ "Nf6 Nc3 e6": {
+  "en": "Nf3 (or e4): keep it flexible.",
+  "es": "Cf3 (o e4): mantenlo flexible."
+ },
+ "c5 Nc3 Nc6": {
+  "en": "g3 and Bg2.",
+  "es": "g3 y Ag2."
+ },
+ "e6 Nc3 d5": {
+  "en": "cxd5 and Nf3, or d4: a Queen's Gambit.",
+  "es": "cxd5 y Cf3, o d4: un Gambito de Dama."
+ },
+ "e6 Nc3 d5 cxd5 exd5": {
+  "en": "Nf3 (or d4).",
+  "es": "Cf3 (o d4)."
+ },
+ "e6 Nc3 d5 cxd5 exd5 Nf3": {
+  "en": "If ...d4, Qa4+ and Nb5 ideas. Equal.",
+  "es": "Si ...d4, Da4+ e ideas de Cb5. Igualdad."
  }
 }

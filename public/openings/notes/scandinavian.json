@@ -130,5 +130,9 @@
  "Nf3 dxe4 Ng5 Bf5 Nc3 Nf6 Qe2": {
   "en": "...Nc6 and ...e6: Black keeps the extra pawn. Black is clearly better.",
   "es": "...Cc6 y ...e6: las negras conservan el peón de más. Las negras están claramente mejor."
+ },
+ "Nf3": {
+  "en": "Nf3? gives a pawn: ...dxe4 and the knight must move.",
+  "es": "¿Cf3? regala un peón: ...dxe4 y el caballo tiene que moverse."
  }
 }
