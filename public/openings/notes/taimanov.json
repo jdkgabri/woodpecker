@@ -38,5 +38,53 @@
  "": {
   "en": "The Taimanov: ...e6 and ...Nc6 with ...Qc7 and ...a6. Flexible: the king's knight and bishop wait until White commits.",
   "es": "La Taimanov: ...e6 y ...Cc6 con ...Dc7 y ...a6. Flexible: el caballo y el alfil de rey esperan a que las blancas se comprometan."
+ },
+ "Nc3": {
+  "en": "...Qc7, then ...a6 and ...Nf6.",
+  "es": "...Dc7, y después ...a6 y ...Cf6."
+ },
+ "Nc3 Qc7 Be3": {
+  "en": "...a6 and ...Nf6, ...Bb4.",
+  "es": "...a6 y ...Cf6, ...Ab4."
+ },
+ "Nc3 Qc7 Be3 a6 Be2": {
+  "en": "...Nf6 and ...Bb4: pressure on e4.",
+  "es": "...Cf6 y ...Ab4: presión sobre e4."
+ },
+ "Nc3 Qc7 Be3 a6 Qd2": {
+  "en": "...Nf6 and ...Bb4: watch the pin and ...Nxe4.",
+  "es": "...Cf6 y ...Ab4: atento a la clavada y ...Cxe4."
+ },
+ "Nc3 Qc7 Ndb5": {
+  "en": "...Qb8 and ...a6.",
+  "es": "...Db8 y ...a6."
+ },
+ "Nc3 Qc7 Be2": {
+  "en": "...a6 and ...Nf6.",
+  "es": "...a6 y ...Cf6."
+ },
+ "Nxc6": {
+  "en": "...bxc6 and ...d5.",
+  "es": "...bxc6 y ...d5."
+ },
+ "Nxc6 bxc6 Nc3": {
+  "en": "...Be7 (or ...d5) and ...Nf6.",
+  "es": "...Ae7 (o ...d5) y ...Cf6."
+ },
+ "Nxc6 bxc6 Nc3 Be7 Bd3 Qc7": {
+  "en": "If Qg4, ...Nf6 Qxg7 Rg8: active play. Slightly better for White.",
+  "es": "Si Dg4, ...Cf6 Dxg7 Tg8: juego activo. Algo mejor para las blancas."
+ },
+ "Nxc6 bxc6 Bd3": {
+  "en": "...Qc7 (or ...d5) and ...Nf6.",
+  "es": "...Dc7 (o ...d5) y ...Cf6."
+ },
+ "Be3 Nf6 Nc3": {
+  "en": "...Bb4: pin and hit e4.",
+  "es": "...Ab4: clava y ataca e4."
+ },
+ "c4 Nf6 Nc3": {
+  "en": "...Qc7 (or ...Bb4): pressure on e4.",
+  "es": "...Dc7 (o ...Ab4): presión sobre e4."
  }
 }

@@ -38,5 +38,57 @@
  "e5 dxe5 Nc6 Nf3 Qe7": {
   "en": "The Englund trap: after Bf4 Qb4+ Bd2 Qxb2, the natural Bc3? loses to ...Bb4! Qd2 Bxc3 Qxc3 Qc1#. Nc3! keeps everything protected.",
   "es": "La trampa del Englund: tras Af4 Db4+ Ad2 Dxb2, la natural Ac3? pierde por ...¡Ab4! Dd2 Axc3 Dxc3 Dc1#. ¡Cc3! lo mantiene todo protegido."
+ },
+ "d5": {
+  "en": "Bf4: the London.",
+  "es": "Af4: la London."
+ },
+ "d5 Bf4 Nf6": {
+  "en": "e3, Nf3, c3 and Bd3.",
+  "es": "e3, Cf3, c3 y Ad3."
+ },
+ "d5 Bf4 Nc6": {
+  "en": "e3 and Nf3 (or c3): watch ...Nb4.",
+  "es": "e3 y Cf3 (o c3): vigila ...Cb4."
+ },
+ "d5 Bf4 e6": {
+  "en": "e3 and Nf3; against ...Bd6, Bg3 or Bxd6.",
+  "es": "e3 y Cf3; contra ...Ad6, Ag3 o Axd6."
+ },
+ "d5 Bf4 e6 e3 Bd6 Nf3": {
+  "en": "After ...Nf6 Bxd6 Qxd6 c4: the c4 break. Slightly better for White.",
+  "es": "Tras ...Cf6 Axd6 Dxd6 c4: la ruptura c4. Algo mejor para las blancas."
+ },
+ "d5 Bf4 Bf5": {
+  "en": "e3 and c4 (or Nf3, Bd3).",
+  "es": "e3 y c4 (o Cf3, Ad3)."
+ },
+ "Nf6": {
+  "en": "Bf4: the same system.",
+  "es": "Af4: el mismo sistema."
+ },
+ "Nf6 Bf4 g6": {
+  "en": "e3, Nf3, h3 and Be2: solid.",
+  "es": "e3, Cf3, h3 y Ae2: sólido."
+ },
+ "Nf6 Bf4 g6 e3 Bg7": {
+  "en": "Nf3 and c3 (or h3).",
+  "es": "Cf3 y c3 (o h3)."
+ },
+ "Nf6 Bf4 g6 e3 Bg7 Nf3 O-O c3": {
+  "en": "If ...c5, dxc5 (or Be2). Equal.",
+  "es": "Si ...c5, dxc5 (o Ae2). Igualdad."
+ },
+ "Nf6 Bf4 e6": {
+  "en": "e3, Nf3 and c3 or c4.",
+  "es": "e3, Cf3 y c3 o c4."
+ },
+ "Nf6 Bf4 d5": {
+  "en": "e3: the main London.",
+  "es": "e3: la London principal."
+ },
+ "e6 Bf4 d5": {
+  "en": "e3: the usual setup.",
+  "es": "e3: el esquema habitual."
  }
 }
