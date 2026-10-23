@@ -770,4 +770,9 @@ export const ES = {
   '{n} openings with a video on this device': '{n} aperturas con vídeo en este dispositivo',
   '{n} link skipped': '{n} enlace omitido',
   '{n} links skipped': '{n} enlaces omitidos',
+  'Video list': 'Lista de vídeos',
+  'Import a CSV with the title in the first column and the video link in the second. The list appears on the home page, only on this device.': 'Importa un CSV con el título en la primera columna y el enlace del vídeo en la segunda. La lista aparece en la página de inicio, solo en este dispositivo.',
+  'Import CSV': 'Importar CSV',
+  '{n} video on the home page': '{n} vídeo en la página de inicio',
+  '{n} videos on the home page': '{n} vídeos en la página de inicio',
 };

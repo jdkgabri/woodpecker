@@ -12,7 +12,7 @@ import * as sync from './sync.js';
 import { viewAnalysis, openAnalysis, mainLine } from './analysis.js';
 import { habitOn, gamifyOn, levelCard, progressSnapshot, notifyProgress, streakCard, bindStreakCard, celebrate, habitSettings, bindHabitSettings } from './ui-habit.js';
 import { viewStats } from './stats.js';
-import { viewOpenings, viewOpening, viewOpeningLine, localVideos, importLocalVideos, clearLocalVideos } from './openings.js';
+import { viewOpenings, viewOpening, viewOpeningLine, localVideos, importLocalVideos, clearLocalVideos, csvVideos, importCsvVideos, clearCsvVideos, videoPlayer } from './openings.js';
 import { viewOpeningTree } from './opening-tree.js';
 import { viewCoach, viewCoachGame } from './coach.js';
 import { viewEndgames, viewEndgameChapter, viewEndgame } from './endgames.js';
@@ -111,6 +111,14 @@ function viewHome() {
         <a class="card home-tile" href="#/coach"><span class="tile-icon">🎓</span><strong>${t('Game review')}</strong><small class="muted">${t('Review your Lichess games')}</small></a>
         <a class="card home-tile" href="#/stats"><span class="tile-icon">📊</span><strong>${t('Statistics')}</strong><small class="muted">${t('Your progress')}</small></a>
       </nav>
+      ${(() => {
+        const vids = csvVideos();
+        return vids.length ? `
+      <section class="card video-home">
+        <h2>🎬 ${vids.length > 1 ? t('Videos') : t('Video')}</h2>
+        ${vids.map(([title, url], i) => `<details data-video="${i}"><summary>${esc(title || url)}</summary></details>`).join('')}
+      </section>` : '';
+      })()}
       <a class="btn primary full" href="#/new">＋ ${t('New set')}</a>
       ${sets.length ? '' : `
         <section class="card">
@@ -125,6 +133,11 @@ function viewHome() {
       </section>
     </main>`;
   bindStreakCard(app, route);
+  // the player is only created when a video is opened, and removed when it is closed
+  app.querySelectorAll('[data-video]').forEach(d => d.addEventListener('toggle', () => {
+    d.querySelector('.video-frame')?.remove();
+    if (d.open) d.insertAdjacentHTML('beforeend', videoPlayer(csvVideos()[d.dataset.video]?.[1] || ''));
+  }));
   $('#install')?.addEventListener('click', async () => { installEvt.prompt(); await installEvt.userChoice; installEvt = null; route(); });
   app.querySelectorAll('[data-quick]').forEach(b => b.addEventListener('click', () => {
     const l = WP_LEVELS.find(x => x.key === b.dataset.quick);
@@ -959,6 +972,14 @@ function viewSettings() {
           <button class="btn ghost" id="videoClear">${t('Remove')}</button>
         </div>
         <input type="file" id="videoImp" accept=".json,.js,application/json,text/javascript" hidden>
+        <h3>${t('Video list')}</h3>
+        <p class="small muted">${t('Import a CSV with the title in the first column and the video link in the second. The list appears on the home page, only on this device.')}</p>
+        <p class="small" id="csvStatus"></p>
+        <div class="grid2">
+          <label class="btn ghost" for="csvImp">⬆ ${t('Import CSV')}</label>
+          <button class="btn ghost" id="csvClear">${t('Remove')}</button>
+        </div>
+        <input type="file" id="csvImp" accept=".csv,text/csv" hidden>
       </section>
       <section class="card">
         <h2>${t('Your data')}</h2>
@@ -1002,6 +1023,23 @@ function viewSettings() {
     } catch (err) { $('#videoStatus').textContent = t('Error: {e}', { e: err.message }); }
   };
   $('#videoClear').onclick = () => { clearLocalVideos(); videoStatus(); };
+  const csvStatus = () => {
+    const n = csvVideos().length;
+    $('#csvStatus').textContent = n ? tn(n, '{n} video on the home page', '{n} videos on the home page') : t('No links imported.');
+    $('#csvClear').disabled = !n;
+  };
+  csvStatus();
+  $('#csvImp').onchange = async e => {
+    const f = e.target.files[0];
+    e.target.value = '';
+    if (!f) return;
+    try {
+      const r = importCsvVideos(await f.text());
+      csvStatus();
+      if (r.skipped) $('#csvStatus').textContent += ' · ' + tn(r.skipped, '{n} link skipped', '{n} links skipped');
+    } catch (err) { $('#csvStatus').textContent = t('Error: {e}', { e: err.message }); }
+  };
+  $('#csvClear').onclick = () => { clearCsvVideos(); csvStatus(); };
   navigator.storage?.persisted?.().then(p => {
     $('#persist') && ($('#persist').textContent = p ? '✓ ' + t('Persistent storage enabled') : t('The browser could delete the data if space runs low: install the app to protect it and export backups from time to time.'));
   });

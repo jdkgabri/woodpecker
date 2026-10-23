@@ -129,8 +129,43 @@ export function importLocalVideos(text) {
   return { added: Object.keys(all).length, skipped };
 }
 
+// Video list imported from a CSV in Settings (title, url), kept on this device only and shown on the home page.
+const CSV_VIDEO_KEY = 'wp:videolist:v1';
+export const csvVideos = () => { try { return JSON.parse(localStorage.getItem(CSV_VIDEO_KEY) || '[]'); } catch { return []; } };
+export function clearCsvVideos() { try { localStorage.removeItem(CSV_VIDEO_KEY); } catch {} }
+function parseCsv(text) {
+  const sep = (text.split('\n')[0].match(/;/g) || []).length > (text.split('\n')[0].match(/,/g) || []).length ? ';' : ',';
+  const rows = [];
+  let row = [], cell = '', quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (quoted) {
+      if (ch === '"' && text[i + 1] === '"') { cell += '"'; i++; } else if (ch === '"') quoted = false; else cell += ch;
+    } else if (ch === '"') quoted = true;
+    else if (ch === sep) { row.push(cell); cell = ''; }
+    else if (ch === '\n' || ch === '\r') { if (ch === '\r' && text[i + 1] === '\n') i++; row.push(cell); rows.push(row); row = []; cell = ''; }
+    else cell += ch;
+  }
+  if (cell || row.length) { row.push(cell); rows.push(row); }
+  return rows;
+}
+// First column: title. Second column: video url. A header row and rows without a playable url are skipped.
+export function importCsvVideos(text) {
+  const list = [];
+  let skipped = 0;
+  parseCsv(text.replace(/^﻿/, '')).forEach((r, i) => {
+    const title = (r[0] || '').trim(), url = (r[1] || '').trim();
+    if (!title && !url) return;
+    if (videoPlayer(url)) list.push([title, url]);
+    else if (i > 0) skipped++;
+  });
+  if (!list.length) throw new Error(t('No valid video links found in the file.'));
+  try { localStorage.setItem(CSV_VIDEO_KEY, JSON.stringify(list)); } catch {}
+  return { added: list.length, skipped };
+}
+
 // YouTube and Vimeo links play in their embed; anything else goes to a <video> element.
-function videoPlayer(url) {
+export function videoPlayer(url) {
   let u;
   try { u = new URL(url); } catch { return ''; }
   if (!/^https?:$/.test(u.protocol)) return '';
