@@ -733,7 +733,6 @@ export const ES = {
   'Repertoire trees and traps': 'Árboles de repertorio y trampas',
   'The 100 endgames you must know': 'Los 100 finales que hay que saber',
   'Review your Lichess games': 'Revisa tus partidas de Lichess',
-  'Your progress': 'Tu progreso',
   'Try again': 'Reintentar',
   "What is my opponent threatening?": "¿Qué amenaza mi rival?",
   "Which pieces are loose?": "¿Qué piezas están sueltas?",
@@ -773,6 +772,8 @@ export const ES = {
   'Video list': 'Lista de vídeos',
   'Import a CSV with the title in the first column and the video link in the second. The list appears on the home page, only on this device.': 'Importa un CSV con el título en la primera columna y el enlace del vídeo en la segunda. La lista aparece en la página de inicio, solo en este dispositivo.',
   'Import CSV': 'Importar CSV',
+  '{n} video': '{n} vídeo',
+  '{n} videos': '{n} vídeos',
   '{n} video on the home page': '{n} vídeo en la página de inicio',
   '{n} videos on the home page': '{n} vídeos en la página de inicio',
 };

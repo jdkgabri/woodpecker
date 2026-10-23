@@ -443,3 +443,4 @@ cg-board {
 .video-home details:first-of-type { border-top: 0; }
 .video-home summary { cursor: pointer; font-weight: 600; }
 .video-home .video-frame { margin-top: 8px; }
+.home-tiles > :last-child:nth-child(odd) { grid-column: span 2; }

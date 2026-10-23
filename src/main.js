@@ -64,6 +64,7 @@ function route() {
   if (view === 'cycle') return viewCycle(id, +location.hash.split('/')[3]);
   if (view === 'settings') return viewSettings();
   if (view === 'stats') return viewStats(app);
+  if (view === 'videos') return viewVideos();
   if (view === 'openings') return viewOpenings(app);
   if (view === 'opening') {
     const lineId = location.hash.split('/')[3];
@@ -98,6 +99,7 @@ function viewHome() {
       <div class="top-right">
         ${h ? `<span class="badge" title="${t('Day streak')}">🔥 ${h.streak}</span>` : ''}
         ${syncBadge()}
+        <a class="icon-btn" href="#/stats" aria-label="${t('Statistics')}">📊</a>
         <a class="icon-btn" href="#/settings" aria-label="${t('Settings')}">⚙</a>
       </div>
     </header>
@@ -106,19 +108,11 @@ function viewHome() {
       ${streakCard()}
       ${gamifyOn() ? levelCard(false) : ''}
       <nav class="home-tiles">
-        <a class="card home-tile" href="#/openings"><span class="tile-icon">📖</span><strong>${t('Openings')}</strong><small class="muted">${t('Repertoire trees and traps')}</small></a>
         <a class="card home-tile" href="#/endgames"><span class="tile-icon">♔</span><strong>${t('Endgames')}</strong><small class="muted">${t('The 100 endgames you must know')}</small></a>
         <a class="card home-tile" href="#/coach"><span class="tile-icon">🎓</span><strong>${t('Game review')}</strong><small class="muted">${t('Review your Lichess games')}</small></a>
-        <a class="card home-tile" href="#/stats"><span class="tile-icon">📊</span><strong>${t('Statistics')}</strong><small class="muted">${t('Your progress')}</small></a>
+        <a class="card home-tile" href="#/openings"><span class="tile-icon">📖</span><strong>${t('Openings')}</strong><small class="muted">${t('Repertoire trees and traps')}</small></a>
+        ${csvVideos().length ? `<a class="card home-tile" href="#/videos"><span class="tile-icon">🎬</span><strong>${t('Opening videos')}</strong><small class="muted">${tn(csvVideos().length, '{n} video', '{n} videos')}</small></a>` : ''}
       </nav>
-      ${(() => {
-        const vids = csvVideos();
-        return vids.length ? `
-      <section class="card video-home">
-        <h2>🎬 ${vids.length > 1 ? t('Videos') : t('Video')}</h2>
-        ${vids.map(([title, url], i) => `<details data-video="${i}"><summary>${esc(title || url)}</summary></details>`).join('')}
-      </section>` : '';
-      })()}
       <a class="btn primary full" href="#/new">＋ ${t('New set')}</a>
       ${sets.length ? '' : `
         <section class="card">
@@ -133,16 +127,28 @@ function viewHome() {
       </section>
     </main>`;
   bindStreakCard(app, route);
-  // the player is only created when a video is opened, and removed when it is closed
-  app.querySelectorAll('[data-video]').forEach(d => d.addEventListener('toggle', () => {
-    d.querySelector('.video-frame')?.remove();
-    if (d.open) d.insertAdjacentHTML('beforeend', videoPlayer(csvVideos()[d.dataset.video]?.[1] || ''));
-  }));
   $('#install')?.addEventListener('click', async () => { installEvt.prompt(); await installEvt.userChoice; installEvt = null; route(); });
   app.querySelectorAll('[data-quick]').forEach(b => b.addEventListener('click', () => {
     const l = WP_LEVELS.find(x => x.key === b.dataset.quick);
     const set = createWpSet(l.from, l.to, 'seq', wpSetName(l.from, l.to));
     go('#/set/' + set.id);
+  }));
+}
+
+function viewVideos() {
+  const vids = csvVideos();
+  if (!vids.length) return go('#/');
+  app.innerHTML = `
+    <header class="top"><a class="icon-btn" href="#/">‹</a><h1>${t('Opening videos')}</h1><span></span></header>
+    <main class="wrap">
+      <section class="card video-home">
+        ${vids.map(([title, url], i) => `<details data-video="${i}"><summary>${esc(title || url)}</summary></details>`).join('')}
+      </section>
+    </main>`;
+  // the player is only created when a video is opened, and removed when it is closed
+  app.querySelectorAll('[data-video]').forEach(d => d.addEventListener('toggle', () => {
+    d.querySelector('.video-frame')?.remove();
+    if (d.open) d.insertAdjacentHTML('beforeend', videoPlayer(vids[d.dataset.video]?.[1] || ''));
   }));
 }
 
