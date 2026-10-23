@@ -8,6 +8,7 @@ import { openAnalysis } from './analysis.js';
 import { sound } from './sound.js';
 import { t, tn, lang, san } from './i18n.js';
 import { treeMemory } from './opening-tree.js';
+import { OPENING_VIDEOS } from './opening-videos.js';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const tx = obj => (obj ? obj[lang()] ?? obj.en : '');
@@ -78,6 +79,20 @@ export function viewOpenings(app) {
 }
 
 // ---------- opening page ----------
+// YouTube and Vimeo links play in their embed; anything else goes to a <video> element.
+function videoPlayer(url) {
+  let u;
+  try { u = new URL(url); } catch { return ''; }
+  if (!/^https?:$/.test(u.protocol)) return '';
+  const host = u.hostname.replace(/^(www|m)\./, '');
+  const yt = host === 'youtu.be' ? u.pathname.slice(1) : host.endsWith('youtube.com') ? (u.searchParams.get('v') || u.pathname.match(/\/(?:embed|shorts|live)\/([\w-]+)/)?.[1]) : null;
+  const vimeo = host === 'vimeo.com' ? u.pathname.match(/^\/(\d+)/)?.[1] : null;
+  const frame = src => `<div class="video-frame"><iframe src="${esc(src)}" allow="fullscreen; picture-in-picture; encrypted-media" allowfullscreen loading="lazy"></iframe></div>`;
+  if (yt) return frame(`https://www.youtube-nocookie.com/embed/${encodeURIComponent(yt)}`);
+  if (vimeo) return frame(`https://player.vimeo.com/video/${vimeo}`);
+  return `<video class="video-frame" src="${esc(u.href)}" controls preload="metadata" playsinline></video>`;
+}
+
 export function viewOpening(app, id, go) {
   const o = findOpening(id);
   if (!o) return go('#/openings');
@@ -145,10 +160,12 @@ export function viewOpening(app, id, go) {
       <h2 class="section-title">${t('Main lines')}</h2>
       ${o.lines.map(l => lineCard(l, false)).join('')}
       ${o.traps?.length ? `<h2 class="section-title">${t('Traps')}</h2>${o.traps.map(l => lineCard(l, true)).join('')}` : ''}`;
+  const video = OPENING_VIDEOS[o.id] ? videoPlayer(OPENING_VIDEOS[o.id]) : '';
   app.innerHTML = `
     <header class="top"><a class="icon-btn" href="#/openings">‹</a><h1 class="ellipsis">${esc(tx(o.name))}</h1><span></span></header>
     <main class="wrap">
       ${body}
+      ${video ? `<h2 class="section-title">🎬 ${t('Video')}</h2><section class="card">${video}</section>` : ''}
       ${o.puzzles ? `
       <h2 class="section-title">${t('Tactics from this opening')}</h2>
       <section class="card form">
