@@ -12,7 +12,7 @@ import * as sync from './sync.js';
 import { viewAnalysis, openAnalysis, mainLine } from './analysis.js';
 import { habitOn, gamifyOn, levelCard, progressSnapshot, notifyProgress, streakCard, bindStreakCard, celebrate, habitSettings, bindHabitSettings } from './ui-habit.js';
 import { viewStats } from './stats.js';
-import { viewOpenings, viewOpening, viewOpeningLine } from './openings.js';
+import { viewOpenings, viewOpening, viewOpeningLine, localVideos, importLocalVideos, clearLocalVideos } from './openings.js';
 import { viewOpeningTree } from './opening-tree.js';
 import { viewCoach, viewCoachGame } from './coach.js';
 import { viewEndgames, viewEndgameChapter, viewEndgame } from './endgames.js';
@@ -950,6 +950,16 @@ function viewSettings() {
           <button class="btn ghost" id="collClear">${t('Free up space')}</button>
         </div>
       </section>
+      <section class="card" id="videoCard">
+        <h2>🎬 ${t('Opening videos')}</h2>
+        <p class="small muted">${t('Import a file with a video link for each opening (JSON, or the format of opening-videos.js). The links are saved only on this device.')}</p>
+        <p class="small" id="videoStatus"></p>
+        <div class="grid2">
+          <label class="btn ghost" for="videoImp">⬆ ${t('Import links')}</label>
+          <button class="btn ghost" id="videoClear">${t('Remove')}</button>
+        </div>
+        <input type="file" id="videoImp" accept=".json,.js,application/json,text/javascript" hidden>
+      </section>
       <section class="card">
         <h2>${t('Your data')}</h2>
         <p class="muted small">${t('Progress is stored on this device and, if you signed in with Google, also in the cloud. You can export a backup or import it on another device.')}</p>
@@ -975,6 +985,23 @@ function viewSettings() {
   bindHabitSettings(app, route);
   cleanup = sync.onChange(bindSyncCard);
   bindCollection();
+  const videoStatus = () => {
+    const n = Object.keys(localVideos()).length;
+    $('#videoStatus').textContent = n ? tn(n, '{n} opening with a video on this device', '{n} openings with a video on this device') : t('No links imported.');
+    $('#videoClear').disabled = !n;
+  };
+  videoStatus();
+  $('#videoImp').onchange = async e => {
+    const f = e.target.files[0];
+    e.target.value = '';
+    if (!f) return;
+    try {
+      const r = importLocalVideos(await f.text());
+      videoStatus();
+      if (r.skipped) $('#videoStatus').textContent += ' · ' + tn(r.skipped, '{n} link skipped', '{n} links skipped');
+    } catch (err) { $('#videoStatus').textContent = t('Error: {e}', { e: err.message }); }
+  };
+  $('#videoClear').onclick = () => { clearLocalVideos(); videoStatus(); };
   navigator.storage?.persisted?.().then(p => {
     $('#persist') && ($('#persist').textContent = p ? '✓ ' + t('Persistent storage enabled') : t('The browser could delete the data if space runs low: install the app to protect it and export backups from time to time.'));
   });

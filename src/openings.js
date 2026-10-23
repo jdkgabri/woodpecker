@@ -79,6 +79,28 @@ export function viewOpenings(app) {
 }
 
 // ---------- opening page ----------
+// Video links imported in Settings, kept on this device only: { openingId: url }. They win over the bundled ones.
+const LOCAL_VIDEO_KEY = 'wp:video:v1';
+export const localVideos = () => { try { return JSON.parse(localStorage.getItem(LOCAL_VIDEO_KEY) || '{}'); } catch { return {}; } };
+export function clearLocalVideos() { try { localStorage.removeItem(LOCAL_VIDEO_KEY); } catch {} }
+// Accepts JSON or the opening-videos.js format ("id": 'url', with comments). Returns { added, skipped }.
+export function importLocalVideos(text) {
+  let pairs;
+  try { pairs = Object.entries(JSON.parse(text)); } catch {
+    pairs = [...text.matchAll(/["']?([\w-]+)["']?\s*:\s*(["'`])(.*?)\2/g)].map(m => [m[1], m[3]]);
+  }
+  const ids = new Set(OPENINGS.map(o => o.id));
+  const all = {};
+  let skipped = 0;
+  for (const [id, url] of pairs) {
+    if (typeof url !== 'string' || !url.trim()) continue;
+    if (ids.has(id) && videoPlayer(url.trim())) all[id] = url.trim(); else skipped++;
+  }
+  if (!Object.keys(all).length) throw new Error(t('No valid video links found in the file.'));
+  try { localStorage.setItem(LOCAL_VIDEO_KEY, JSON.stringify(all)); } catch {}
+  return { added: Object.keys(all).length, skipped };
+}
+
 // YouTube and Vimeo links play in their embed; anything else goes to a <video> element.
 function videoPlayer(url) {
   let u;
@@ -160,7 +182,8 @@ export function viewOpening(app, id, go) {
       <h2 class="section-title">${t('Main lines')}</h2>
       ${o.lines.map(l => lineCard(l, false)).join('')}
       ${o.traps?.length ? `<h2 class="section-title">${t('Traps')}</h2>${o.traps.map(l => lineCard(l, true)).join('')}` : ''}`;
-  const video = OPENING_VIDEOS[o.id] ? videoPlayer(OPENING_VIDEOS[o.id]) : '';
+  const videoUrl = localVideos()[o.id] || OPENING_VIDEOS[o.id];
+  const video = videoUrl ? videoPlayer(videoUrl) : '';
   app.innerHTML = `
     <header class="top"><a class="icon-btn" href="#/openings">‹</a><h1 class="ellipsis">${esc(tx(o.name))}</h1><span></span></header>
     <main class="wrap">

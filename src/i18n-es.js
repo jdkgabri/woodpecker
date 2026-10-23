@@ -760,4 +760,13 @@ export const ES = {
   "Good move: it is also in your repertoire ({line}). In this branch we practise {m}: play it.": "Buena jugada: también es de tu repertorio ({line}). En esta rama practicamos {m}: juégala.",
   "Good move too! But this branch continues with {m}: play it.": "¡También es buena! Pero esta rama sigue con {m}: juégala.",
   'Video': 'Vídeo',
+  'Opening videos': 'Vídeos de aperturas',
+  'Import a file with a video link for each opening (JSON, or the format of opening-videos.js). The links are saved only on this device.': 'Importa un archivo con un enlace de vídeo para cada apertura (JSON, o el formato de opening-videos.js). Los enlaces se guardan solo en este dispositivo.',
+  'Import links': 'Importar enlaces',
+  'No links imported.': 'No hay enlaces importados.',
+  'No valid video links found in the file.': 'El archivo no tiene enlaces de vídeo válidos.',
+  '{n} opening with a video on this device': '{n} apertura con vídeo en este dispositivo',
+  '{n} openings with a video on this device': '{n} aperturas con vídeo en este dispositivo',
+  '{n} link skipped': '{n} enlace omitido',
+  '{n} links skipped': '{n} enlaces omitidos',
 };
