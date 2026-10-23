@@ -392,7 +392,7 @@ cg-board {
 .row.gap input { flex: 1; min-width: 0; }
 .coach-head { padding: 8px 16px; gap: 8px; }
 .badge.warn { background: #b3741a; color: #fff; }
-.badge.info { background: #3a7bd5; color: #fff; }
+.badge.calm { background: #3a7bd5; color: #fff; }
 .badge.bad { background: var(--bad); color: #fff; }
 .pfb.warn strong { color: #d59020; }
 .coach-extra p { margin: 6px 0; }

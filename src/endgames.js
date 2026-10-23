@@ -123,7 +123,7 @@ export function viewEndgame(app, n, k0, go) {
       app.querySelector('#egCount').textContent = f.positions.length > 1 ? `${k + 1}/${f.positions.length}` : '';
       main.innerHTML = `
         <div class="train">
-          <div class="row coach-head"><span class="badge info">${goalText(p)}</span><span class="small muted">${toMoveText(p.fen)}</span></div>
+          <div class="row coach-head"><span class="badge calm">${goalText(p)}</span><span class="small muted">${toMoveText(p.fen)}</span></div>
           <div class="board-wrap"><div class="board" id="board"></div></div>
           <div class="info">
             <div class="pfb" id="egNote"></div>

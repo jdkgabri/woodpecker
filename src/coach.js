@@ -36,7 +36,7 @@ function saveReview(id, review) {
 const coachUser = () => store.getSettings().coachUser || getAuth()?.username || '';
 
 const KIND_LABEL = { blunder: 'Blunder', mistake: 'Mistake', inaccuracy: 'Inaccuracy', missed: 'Missed chance', strategy: 'Strategy', book: 'Repertoire' };
-const KIND_CLASS = { blunder: 'bad', mistake: 'bad', inaccuracy: 'warn', missed: 'warn', strategy: 'info', book: 'info' };
+const KIND_CLASS = { blunder: 'bad', mistake: 'bad', inaccuracy: 'warn', missed: 'warn', strategy: 'calm', book: 'calm' };
 
 // ---------- Lichess ----------
 async function fetchGame(id) {
