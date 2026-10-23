@@ -1,5 +1,6 @@
 // Video for each opening, shown on its page to everyone. Leave empty for no video.
 // Only add links to videos you are allowed to share: YouTube, Vimeo or a direct video file (https).
+// One video: "id": 'https://…',  Several: "id": [['Title', 'https://…'], ['Title', 'https://…']],
 export const OPENING_VIDEOS = {
   "italian": '', // Italian Game
   "queens-gambit": '', // Queen's Gambit

@@ -79,22 +79,50 @@ export function viewOpenings(app) {
 }
 
 // ---------- opening page ----------
-// Video links imported in Settings, kept on this device only: { openingId: url }. They win over the bundled ones.
+// An opening's video entry: a url, or a list of urls / [title, url] pairs / { title, url }. Returns [[title, url]].
+function videoList(entry) {
+  const items = Array.isArray(entry) ? entry : [entry];
+  return items.map(v => typeof v === 'string' ? ['', v] : Array.isArray(v) ? [String(v[0] ?? ''), v[1]] : [String(v?.title ?? ''), v?.url])
+    .filter(([, url]) => typeof url === 'string' && url.trim()).map(([title, url]) => [title.trim(), url.trim()]);
+}
+
+// Reads JSON or a JS object literal like opening-videos.js: comments, single quotes, bare keys, trailing commas.
+function parseLooseObject(text) {
+  const a = text.indexOf('{'), b = text.lastIndexOf('}');
+  if (a < 0 || b < a) throw new Error(t('No valid video links found in the file.'));
+  const src = text.slice(a, b + 1);
+  let out = '';
+  for (let i = 0; i < src.length;) {
+    const ch = src[i];
+    if (ch === '"' || ch === "'" || ch === '`') {
+      let s = '', j = i + 1;
+      for (; j < src.length && src[j] !== ch; j++) s += src[j] === '\\' ? src[++j] : src[j];
+      out += JSON.stringify(s); i = j + 1;
+    } else if (src.startsWith('//', i)) { const n = src.indexOf('\n', i); i = n < 0 ? src.length : n; }
+    else if (src.startsWith('/*', i)) { const n = src.indexOf('*/', i + 2); i = n < 0 ? src.length : n + 2; }
+    else if (/[A-Za-z_$]/.test(ch)) { const m = src.slice(i).match(/^[\w$-]+/)[0]; out += /^\s*:/.test(src.slice(i + m.length)) ? JSON.stringify(m) : m; i += m.length; }
+    else { out += ch; i++; }
+  }
+  return JSON.parse(out.replace(/,(\s*[}\]])/g, '$1'));
+}
+
+// Video links imported in Settings, kept on this device only: { openingId: [[title, url]] }. They win over the bundled ones.
 const LOCAL_VIDEO_KEY = 'wp:video:v1';
 export const localVideos = () => { try { return JSON.parse(localStorage.getItem(LOCAL_VIDEO_KEY) || '{}'); } catch { return {}; } };
 export function clearLocalVideos() { try { localStorage.removeItem(LOCAL_VIDEO_KEY); } catch {} }
-// Accepts JSON or the opening-videos.js format ("id": 'url', with comments). Returns { added, skipped }.
+// Accepts JSON or the opening-videos.js format. Returns { added, skipped } counted in openings and links.
 export function importLocalVideos(text) {
-  let pairs;
-  try { pairs = Object.entries(JSON.parse(text)); } catch {
-    pairs = [...text.matchAll(/["']?([\w-]+)["']?\s*:\s*(["'`])(.*?)\2/g)].map(m => [m[1], m[3]]);
-  }
+  let data;
+  try { data = parseLooseObject(text); } catch { throw new Error(t('No valid video links found in the file.')); }
   const ids = new Set(OPENINGS.map(o => o.id));
   const all = {};
   let skipped = 0;
-  for (const [id, url] of pairs) {
-    if (typeof url !== 'string' || !url.trim()) continue;
-    if (ids.has(id) && videoPlayer(url.trim())) all[id] = url.trim(); else skipped++;
+  for (const [id, entry] of Object.entries(data || {})) {
+    const list = videoList(entry);
+    if (!ids.has(id)) { skipped += list.length; continue; }
+    const ok = list.filter(([, url]) => videoPlayer(url));
+    skipped += list.length - ok.length;
+    if (ok.length) all[id] = ok;
   }
   if (!Object.keys(all).length) throw new Error(t('No valid video links found in the file.'));
   try { localStorage.setItem(LOCAL_VIDEO_KEY, JSON.stringify(all)); } catch {}
@@ -182,13 +210,13 @@ export function viewOpening(app, id, go) {
       <h2 class="section-title">${t('Main lines')}</h2>
       ${o.lines.map(l => lineCard(l, false)).join('')}
       ${o.traps?.length ? `<h2 class="section-title">${t('Traps')}</h2>${o.traps.map(l => lineCard(l, true)).join('')}` : ''}`;
-  const videoUrl = localVideos()[o.id] || OPENING_VIDEOS[o.id];
-  const video = videoUrl ? videoPlayer(videoUrl) : '';
+  const videos = videoList(localVideos()[o.id] || OPENING_VIDEOS[o.id]).map(([title, url]) => [title, videoPlayer(url)]).filter(([, html]) => html);
+  const video = videos.map(([title, html]) => `${title ? `<h3>${esc(title)}</h3>` : ''}${html}`).join('');
   app.innerHTML = `
     <header class="top"><a class="icon-btn" href="#/openings">‹</a><h1 class="ellipsis">${esc(tx(o.name))}</h1><span></span></header>
     <main class="wrap">
       ${body}
-      ${video ? `<h2 class="section-title">🎬 ${t('Video')}</h2><section class="card">${video}</section>` : ''}
+      ${video ? `<h2 class="section-title">🎬 ${videos.length > 1 ? t('Videos') : t('Video')}</h2><section class="card video-list">${video}</section>` : ''}
       ${o.puzzles ? `
       <h2 class="section-title">${t('Tactics from this opening')}</h2>
       <section class="card form">
