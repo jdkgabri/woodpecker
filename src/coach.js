@@ -431,11 +431,16 @@ export function viewCoachGame(app, id, colorParam, go) {
       try { mv = c.move({ from: orig, to: dest, promotion: promo || undefined }); } catch { reset(); return; }
       sound(mv.captured ? 'capture' : 'move');
       tries++;
-      if (mo.good.includes(uci)) return finish(true, false, null, true);
       if (uci === mo.played) {
+        // a strategy moment: the game move was not a mistake, but there was a better plan
+        if (mo.kind === 'strategy') {
+          note(`<strong>${t('That is what you played in the game.')}</strong><em>${t('It is not a mistake, but there is a better plan here. Try to find it.')}</em>`, 'warn');
+          return wrongTry(c, null);
+        }
         note(`<strong>${t('That is what you played in the game.')}</strong><em>${esc(mo.refute.text)}</em>`, 'bad');
         return wrongTry(c, mo.refute.uci);
       }
+      if (mo.good.includes(uci)) return finish(true, false, uci === mo.best.uci ? null : uci, true);
       if (mo.lesson === 'book') {
         note(`<strong>${t('That is not the move from your tree.')}</strong><em>${t('Try again or look at the solution.')}</em>`, 'warn');
         return wrongTry(c, null);
@@ -486,8 +491,11 @@ export function viewCoachGame(app, id, colorParam, go) {
       }
       const head = correct ? (alt ? t('Good move! The engine slightly prefers {m}.', { m: san(mo.best.san) }) : t('Excellent!')) : t('The best move was {m}.', { m: san(mo.best.san) });
       const lesson = LESSONS[mo.lesson];
-      note(`<strong>${esc(head)}</strong><em>${esc(mo.best.text)}</em>`, correct ? 'ok' : 'failed');
+      // a good alternative: explain the user's move, and the engine's choice below
+      const altText = alt ? `${san(new Chess(mo.fen).move({ from: alt.slice(0, 2), to: alt.slice(2, 4), promotion: alt[4] }).san)} ${describeMove(mo.fen, alt)}. ${quietReason(mo.fen, alt)}` : '';
+      note(`<strong>${esc(head)}</strong><em>${esc(alt ? altText : mo.best.text)}</em>`, correct ? 'ok' : 'failed');
       const extra = [];
+      if (alt) extra.push(`<p><b>${t("The engine's choice")}:</b> ${esc(mo.best.text)}</p>`);
       if (mo.played && mo.lesson !== 'book') extra.push(`<p><b>${t('In the game')}:</b> ${esc(t('you played {m}.', { m: san(mo.playedSan) }))} ${esc(mo.refute.text)}</p>`);
       for (const d of mo.damage || []) extra.push(`<p>⚠️ ${esc(d)}</p>`);
       if (mo.book) extra.push(`<p>📖 <a href="${mo.book.href}">${t('Review this line in your {o} tree', { o: esc(mo.book.opening) })}</a></p>`);
@@ -667,8 +675,8 @@ async function deepMoment(engine, fens, moves, p0, color) {
       const legal = afterBest.moves({ verbose: true }).some(m => m.from + m.to + (m.promotion || '') === refute.uci);
       if (rb?.pv?.[0] && rb.pv[0] !== refute.uci) {
         prevents = legal
-          ? t('Your move allowed {m}; after {b}, that idea no longer works so well.', { m: san(refute.san), b: san(bestSan) })
-          : t('Your move allowed {m}; after {b}, it is not even possible.', { m: san(refute.san), b: san(bestSan) });
+          ? t('{p} allowed {m}; after {b}, that idea no longer works so well.', { p: san(playedSan), m: san(refute.san), b: san(bestSan) })
+          : t('{p} allowed {m}; after {b}, it is not even possible.', { p: san(playedSan), m: san(refute.san), b: san(bestSan) });
       }
     }
     // a big swing without material: an attack or a strong initiative
