@@ -776,4 +776,9 @@ export const ES = {
   '{n} videos': '{n} vídeos',
   '{n} video on the home page': '{n} vídeo en la página de inicio',
   '{n} videos on the home page': '{n} vídeos en la página de inicio',
+  'Repeat all': 'Repetir todos',
+  'All the mistakes of this review are solved!': '¡Has resuelto todos los fallos de este repaso!',
+  '{n} of {m} solved': '{n} de {m} resueltos',
+  'this one too': 'este también',
+  'Start the review again from the first puzzle, with none marked as solved?': '¿Empezar el repaso otra vez desde el primer ejercicio, sin ninguno marcado como resuelto?',
 };

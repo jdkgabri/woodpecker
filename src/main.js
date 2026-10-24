@@ -455,7 +455,7 @@ function viewSet(id) {
           <button class="btn primary full" id="start">▶ ${t('Start cycle {n}', { n: set.cycles.length + 1 })}</button>
         `}
         ${failedIdx.length
-          ? `<a class="btn ghost full" href="#/review/${set.id}">${t('Review mistakes from cycle {n} ({k})', { n: last.n, k: failedIdx.length })}</a>`
+          ? `<a class="btn ghost full" href="#/review/${set.id}">${t('Review mistakes from cycle {n} ({k})', { n: last.n, k: failedIdx.length })}${last.review?.ok?.length ? ` · ✓ ${last.review.ok.filter(k => failedIdx.includes(k)).length}` : ''}</a>`
           : `<p class="small muted">🔁 ${last ? t('Mistake review: no mistakes to review in cycle {n}.', { n: last.n }) : t('Mistake review: here you can review the puzzles you miss, without the clock.')}</p>`}
       </section>
       ${!set.cycles.length ? `
@@ -861,12 +861,16 @@ async function viewReview(id) {
   const list = last ? Object.entries(last.results).filter(([, r]) => !r.ok).map(([k]) => +k) : [];
   if (!list.length) return go('#/set/' + id);
   const settings = store.getSettings();
-  let i = 0, cur = null, wrong = [];
+  // review progress lives in the cycle (so it syncs): puzzles solved cleanly and where you left off
+  const rv = last.review = last.review || { ok: [], pos: 0 };
+  rv.ok = rv.ok.filter(k => list.includes(k));
+  let i = Math.min(rv.pos || 0, list.length - 1), cur = null, wrong = [];
   app.innerHTML = `
     <div class="train">
       <header class="top"><a class="icon-btn" href="#/set/${set.id}">‹</a><h1 class="ellipsis">${t('Review · cycle {n}', { n: last.n })}</h1><span class="badge" id="cnt"></span></header>
       <div class="board-wrap"><div class="board" id="board"></div></div>
-      <div class="info"><div class="turn" id="turn"></div><div class="feedback" id="fb"></div></div>
+      <div class="info"><div class="turn" id="turn"></div><div class="feedback" id="fb"></div>
+        <div class="row small review-progress"><span id="rvOk"></span><button class="btn ghost" id="restart" hidden>↺ ${t('Repeat all')}</button></div></div>
       <div class="actions">
         <button class="btn ghost" id="prev">‹ ${t('Previous')}</button>
         <button class="btn ghost" id="sol">${t('Solution')}</button>
@@ -881,21 +885,36 @@ async function viewReview(id) {
     onEvent: (ev, info) => {
       if (ev === 'wrong') { fb('bad', undefined, t('{m} is not the solution. Try something else.', { m: esc(san(info.san)) })); if (!wrong.includes(info.uci)) wrong.push(info.uci); }
       if (ev === 'good' || ev === 'progress') fb('good');
-      if (ev === 'solved') fb(info.ok ? 'ok' : 'failed', info.ok ? undefined : t('Solution shown'), info.ok ? undefined : t('You can retry it with ↺'));
+      if (ev === 'solved') {
+        if (info.ok && !rv.ok.includes(list[i])) { rv.ok.push(list[i]); store.save(); }
+        const all = rv.ok.length === list.length;
+        fb(info.ok ? 'ok' : 'failed', info.ok ? (all ? t('All the mistakes of this review are solved!') : undefined) : t('Solution shown'), info.ok ? undefined : t('You can retry it with ↺'));
+        progress();
+      }
     },
   });
+  function progress() {
+    $('#cnt').textContent = `${i + 1}/${list.length}`;
+    $('#rvOk').textContent = `✓ ${t('{n} of {m} solved', { n: rv.ok.length, m: list.length })}${rv.ok.includes(list[i]) ? ' · ' + t('this one too') : ''}`;
+    $('#restart').hidden = !rv.ok.length;
+  }
   async function show() {
     const p = await resolveItem(set.items[list[i]]);
     cur = p; wrong = [];
     board.load(p);
+    if (rv.pos !== i) { rv.pos = i; store.save(); }
     const white = board.hero === 'w';
-    $('#cnt').textContent = `${i + 1}/${list.length}`;
+    progress();
     $('#turn').innerHTML = `<span class="dot ${white ? 'w' : 'b'}"></span> <b>${esc(p.title)}</b>`;
     fb('play');
   }
   $('#prev').onclick = () => { i = (i - 1 + list.length) % list.length; show(); };
   $('#next').onclick = () => { i = (i + 1) % list.length; show(); };
   $('#retry').onclick = show;
+  $('#restart').onclick = () => {
+    if (!confirm(t('Start the review again from the first puzzle, with none marked as solved?'))) return;
+    rv.ok = []; i = 0; store.save(); show();
+  };
   $('#analyse').onclick = () => cur && openAnalysis({
     fen: cur.fen, solution: mainLine(cur.tree), wrong, title: cur.title, notes: cur.notes,
     ref: { setId: set.id, cycleN: last.n, idx: list[i] },

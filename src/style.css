@@ -444,3 +444,5 @@ cg-board {
 .video-home summary { cursor: pointer; font-weight: 600; }
 .video-home .video-frame { margin-top: 8px; }
 .home-tiles > :last-child:nth-child(odd) { grid-column: span 2; }
+.review-progress { align-items: center; padding-top: 6px; }
+.review-progress .btn { padding: 4px 10px; min-height: 0; }
