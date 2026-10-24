@@ -887,6 +887,7 @@ async function viewReview(id) {
       if (ev === 'good' || ev === 'progress') fb('good');
       if (ev === 'solved') {
         if (info.ok && !rv.ok.includes(list[i])) { rv.ok.push(list[i]); store.save(); }
+        if (store.touchActivity()) celebrate(store.habitState().streak);
         const all = rv.ok.length === list.length;
         fb(info.ok ? 'ok' : 'failed', info.ok ? (all ? t('All the mistakes of this review are solved!') : undefined) : t('Solution shown'), info.ok ? undefined : t('You can retry it with ↺'));
         progress();

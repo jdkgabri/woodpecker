@@ -168,7 +168,7 @@ export function importData(json) {
 }
 
 // ---- Daily activity and habit mode ----
-// A day counts as trained if at least one puzzle from a cycle was finished.
+// A day counts as trained if at least one puzzle from a cycle or a mistake review was finished.
 // Returns true if it is the day's first puzzle.
 export function touchActivity() {
   const day = dayKey(new Date());
