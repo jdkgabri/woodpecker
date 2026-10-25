@@ -446,3 +446,5 @@ cg-board {
 .home-tiles > :last-child:nth-child(odd) { grid-column: span 2; }
 .review-progress { align-items: center; padding-top: 6px; }
 .review-progress .btn { padding: 4px 10px; min-height: 0; }
+.review-progress { flex-wrap: wrap; }
+.review-btns { display: flex; gap: 6px; flex-wrap: wrap; }

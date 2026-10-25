@@ -861,16 +861,22 @@ async function viewReview(id) {
   const list = last ? Object.entries(last.results).filter(([, r]) => !r.ok).map(([k]) => +k) : [];
   if (!list.length) return go('#/set/' + id);
   const settings = store.getSettings();
-  // review progress lives in the cycle (so it syncs): puzzles solved cleanly and where you left off
+  // review progress lives in the cycle (so it syncs): puzzles solved cleanly, puzzles failed again,
+  // the puzzles of the current pass (all of them, or only the ones failed again) and where you left off
   const rv = last.review = last.review || { ok: [], pos: 0 };
   rv.ok = rv.ok.filter(k => list.includes(k));
-  let i = Math.min(rv.pos || 0, list.length - 1), cur = null, wrong = [];
+  rv.bad = (rv.bad || []).filter(k => list.includes(k));
+  if (rv.queue) rv.queue = rv.queue.filter(k => list.includes(k));
+  if (!rv.queue?.length) delete rv.queue;
+  let queue = rv.queue || list;
+  let i = Math.min(rv.pos || 0, queue.length - 1), cur = null, wrong = [], finished = false;
   app.innerHTML = `
     <div class="train">
       <header class="top"><a class="icon-btn" href="#/set/${set.id}">‹</a><h1 class="ellipsis">${t('Review · cycle {n}', { n: last.n })}</h1><span class="badge" id="cnt"></span></header>
       <div class="board-wrap"><div class="board" id="board"></div></div>
       <div class="info"><div class="turn" id="turn"></div><div class="feedback" id="fb"></div>
-        <div class="row small review-progress"><span id="rvOk"></span><button class="btn ghost" id="restart" hidden>↺ ${t('Repeat all')}</button></div></div>
+        <div class="row small review-progress"><span id="rvOk"></span>
+          <span class="review-btns"><button class="btn ghost" id="onlyBad" hidden></button><button class="btn ghost" id="restart" hidden>↺ ${t('Repeat all')}</button></span></div></div>
       <div class="actions">
         <button class="btn ghost" id="prev">‹ ${t('Previous')}</button>
         <button class="btn ghost" id="sol">${t('Solution')}</button>
@@ -886,7 +892,11 @@ async function viewReview(id) {
       if (ev === 'wrong') { fb('bad', undefined, t('{m} is not the solution. Try something else.', { m: esc(san(info.san)) })); if (!wrong.includes(info.uci)) wrong.push(info.uci); }
       if (ev === 'good' || ev === 'progress') fb('good');
       if (ev === 'solved') {
-        if (info.ok && !rv.ok.includes(list[i])) { rv.ok.push(list[i]); store.save(); }
+        finished = true;
+        const k = queue[i];
+        rv.ok = rv.ok.filter(x => x !== k); rv.bad = rv.bad.filter(x => x !== k);
+        (info.ok ? rv.ok : rv.bad).push(k);
+        store.save();
         if (store.touchActivity()) celebrate(store.habitState().streak);
         const all = rv.ok.length === list.length;
         fb(info.ok ? 'ok' : 'failed', info.ok ? (all ? t('All the mistakes of this review are solved!') : undefined) : t('Solution shown'), info.ok ? undefined : t('You can retry it with ↺'));
@@ -895,13 +905,15 @@ async function viewReview(id) {
     },
   });
   function progress() {
-    $('#cnt').textContent = `${i + 1}/${list.length}`;
-    $('#rvOk').textContent = `✓ ${t('{n} of {m} solved', { n: rv.ok.length, m: list.length })}${rv.ok.includes(list[i]) ? ' · ' + t('this one too') : ''}`;
-    $('#restart').hidden = !rv.ok.length;
+    $('#cnt').textContent = `${i + 1}/${queue.length}`;
+    $('#rvOk').textContent = `✓ ${t('{n} of {m} solved', { n: rv.ok.length, m: list.length })}${rv.ok.includes(queue[i]) ? ' · ' + t('this one too') : ''}${rv.queue ? ' · ' + t('only failed or skipped') : ''}`;
+    $('#restart').hidden = !rv.ok.length && !rv.bad.length && !rv.queue;
+    $('#onlyBad').hidden = !rv.bad.length;
+    $('#onlyBad').textContent = '✗ ' + t('Only the failed or skipped ones ({n})', { n: rv.bad.length });
   }
   async function show() {
-    const p = await resolveItem(set.items[list[i]]);
-    cur = p; wrong = [];
+    const p = await resolveItem(set.items[queue[i]]);
+    cur = p; wrong = []; finished = false;
     board.load(p);
     if (rv.pos !== i) { rv.pos = i; store.save(); }
     const white = board.hero === 'w';
@@ -909,16 +921,24 @@ async function viewReview(id) {
     $('#turn').innerHTML = `<span class="dot ${white ? 'w' : 'b'}"></span> <b>${esc(p.title)}</b>`;
     fb('play');
   }
-  $('#prev').onclick = () => { i = (i - 1 + list.length) % list.length; show(); };
-  $('#next').onclick = () => { i = (i + 1) % list.length; show(); };
+  // moving on without finishing the puzzle counts as failing it again (unless it was already solved)
+  const leave = () => {
+    const k = queue[i];
+    if (!finished && !rv.ok.includes(k) && !rv.bad.includes(k)) { rv.bad.push(k); store.save(); }
+  };
+  $('#prev').onclick = () => { leave(); i = (i - 1 + queue.length) % queue.length; show(); };
+  $('#next').onclick = () => { leave(); i = (i + 1) % queue.length; show(); };
   $('#retry').onclick = show;
   $('#restart').onclick = () => {
     if (!confirm(t('Start the review again from the first puzzle, with none marked as solved?'))) return;
-    rv.ok = []; i = 0; store.save(); show();
+    rv.ok = []; rv.bad = []; delete rv.queue; queue = list; i = 0; store.save(); show();
+  };
+  $('#onlyBad').onclick = () => {
+    rv.queue = list.filter(k => rv.bad.includes(k)); queue = rv.queue; i = 0; store.save(); show();
   };
   $('#analyse').onclick = () => cur && openAnalysis({
     fen: cur.fen, solution: mainLine(cur.tree), wrong, title: cur.title, notes: cur.notes,
-    ref: { setId: set.id, cycleN: last.n, idx: list[i] },
+    ref: { setId: set.id, cycleN: last.n, idx: queue[i] },
   });
   $('#sol').onclick = () => board.showSolution();
   cleanup = () => board.destroy();
