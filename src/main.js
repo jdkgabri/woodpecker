@@ -585,6 +585,7 @@ async function viewTrain(id) {
   let running = false, runStart = 0;
   let curMs = cycle.curMs || 0;        // time spent on the current puzzle
   let puzzle = null, solved = false, advanceTimer = null, tickTimer = null;
+  let shownPos = -1; // cycle position of the puzzle on the board
   let wrongMoves = [];
   let lastMs = 0; // time of the puzzle just finished, shown until the next one loads
   // last finished puzzle, so it can be analysed after moving on
@@ -644,6 +645,7 @@ async function viewTrain(id) {
     clearTimeout(advanceTimer);
     if (cycle.pos >= set.items.length) return finishCycle();
     const idx = cycle.order[cycle.pos];
+    shownPos = cycle.pos;
     puzzle = await resolveItem(set.items[idx]);
     solved = false;
     runStart = now(); // the new puzzle's clock starts now, not when the previous one ended
@@ -754,6 +756,18 @@ async function viewTrain(id) {
       </section></main>`;
   }
 
+  // Progress made on another device arrived (it is merged into this cycle): if it went further,
+  // jump to the puzzle where it stopped instead of repeating puzzles already done
+  const offMerge = store.onRemoteMerge(ids => {
+    if (!ids.includes(set.id)) return;
+    if (solved || cycle.pos === shownPos) { updHeader(); return; }
+    commit();
+    curMs = cycle.curMs || 0;
+    loadCurrent().then(() => {
+      if (!cycle.finishedAt) feedback('play', t('Progress updated from another device'), t('You continue at puzzle {n}.', { n: cycle.pos + 1 }));
+    }).catch(() => {});
+  });
+
   // Auto-pause when leaving the app or locking the phone
   const onVis = () => {
     if (document.hidden && settings.autoPause) pause(t('Paused automatically'));
@@ -779,6 +793,7 @@ async function viewTrain(id) {
   cleanup = () => {
     commit();
     store.setLocked(null);
+    offMerge();
     sync.flush().catch(() => {});
     running = false;
     clearInterval(tickTimer);

@@ -15,7 +15,8 @@ const DEFAULT_SETTINGS = {
 let data = load();
 const snapshots = new Map(); // id -> set JSON without updatedAt, to detect changes
 const saveListeners = new Set();
-let lockedSetId = null;      // set being trained: not overwritten from the cloud
+const mergeListeners = new Set();
+let lockedSetId = null;      // set being trained: not deleted from the cloud while open
 
 function load() {
   let d = { sets: [] };
@@ -31,9 +32,13 @@ function load() {
   return d;
 }
 
+// Canonical JSON (sorted keys): a merged set must compare equal to the same data with keys in another order
+const canon = v => Array.isArray(v) ? `[${v.map(canon).join(',')}]`
+  : v && typeof v === 'object' ? `{${Object.keys(v).filter(k => v[k] !== undefined).sort().map(k => JSON.stringify(k) + ':' + canon(v[k])).join(',')}}`
+  : JSON.stringify(v ?? null);
 const contentOf = set => {
   const { updatedAt, ...rest } = set;
-  return JSON.stringify(rest);
+  return canon(rest);
 };
 for (const s of data.sets) snapshots.set(s.id, contentOf(s));
 
@@ -53,6 +58,59 @@ export function save() {
 }
 
 export const onSave = f => { saveListeners.add(f); return () => saveListeners.delete(f); };
+// Called with the ids of local sets that received progress from another device
+export const onRemoteMerge = f => { mergeListeners.add(f); return () => mergeListeners.delete(f); };
+
+// Replaces an object's contents keeping its identity (views hold references to sets and cycles)
+function replaceInPlace(target, src) {
+  for (const k of Object.keys(target)) if (!(k in src)) delete target[k];
+  Object.assign(target, src);
+}
+
+// Merges a cycle from another device into the local one. Progress is never lost: results are
+// combined and the furthest position wins. For a puzzle done on both, the newer device wins
+// (it may carry a manual correction).
+function mergeCycleInto(lc, rc, remoteNewer) {
+  if ((lc.order || []).join() !== (rc.order || []).join()) {
+    // both devices started this cycle on their own: keep the one that went further
+    const rDone = Object.keys(rc.results || {}).length, lDone = Object.keys(lc.results || {}).length;
+    if (rDone > lDone || (rDone === lDone && remoteNewer)) replaceInPlace(lc, rc);
+    return;
+  }
+  const ahead = rc.pos > lc.pos || (rc.pos === lc.pos && remoteNewer) ? rc : lc;
+  const [older, newer] = remoteNewer ? [lc, rc] : [rc, lc];
+  const merged = {
+    ...ahead,
+    pos: Math.max(lc.pos, rc.pos),
+    elapsedMs: Math.max(lc.elapsedMs || 0, rc.elapsedMs || 0),
+    results: { ...older.results, ...newer.results },
+    finishedAt: ahead.finishedAt || lc.finishedAt || rc.finishedAt || null,
+  };
+  if (older.review || newer.review) {
+    // review marks: the newer device's view, plus anything solved on either
+    const rv = { ...(older.review || {}), ...(newer.review || {}) };
+    rv.ok = [...new Set([...(older.review?.ok || []), ...(newer.review?.ok || [])])];
+    rv.bad = (rv.bad || []).filter(k => !rv.ok.includes(k));
+    merged.review = rv;
+  }
+  if (merged.finishedAt) { delete merged.curMs; delete merged.curFailed; }
+  replaceInPlace(lc, merged);
+}
+
+function mergeSetInto(local, remote) {
+  const remoteNewer = remote.updatedAt > local.updatedAt;
+  const cycles = new Map(local.cycles.map(c => [c.n, c]));
+  for (const rc of remote.cycles || []) {
+    const lc = cycles.get(rc.n);
+    if (lc) mergeCycleInto(lc, rc, remoteNewer); else cycles.set(rc.n, rc);
+  }
+  if (remoteNewer) {
+    const { cycles: _c, updatedAt: _u, ...rest } = remote;
+    Object.assign(local, rest); // name, items, options
+  }
+  local.cycles = [...cycles.values()].sort((a, b) => a.n - b.n);
+  local.updatedAt = Math.max(local.updatedAt, remote.updatedAt);
+}
 export const setLocked = id => { lockedSetId = id; };
 export const rawData = () => data;
 
@@ -68,25 +126,37 @@ export function applyRemote({ sets = [], deleted = {}, days = [], frozen = [], h
       changed = true;
     }
   }
+  const merged = [];
+  let pushBack = false;
   for (const remote of sets) {
-    if (remote.id === lockedSetId) continue;
     if (data.deleted[remote.id] && data.deleted[remote.id] >= remote.updatedAt) continue;
-    const i = data.sets.findIndex(s => s.id === remote.id);
-    if (i === -1) data.sets.push(remote);
-    else if (remote.updatedAt > data.sets[i].updatedAt) data.sets[i] = remote;
-    else continue;
-    snapshots.set(remote.id, contentOf(remote));
-    changed = true;
+    const local = getSet(remote.id);
+    if (!local) {
+      data.sets.push(remote);
+      snapshots.set(remote.id, contentOf(remote));
+      changed = true;
+      continue;
+    }
+    // merge instead of replacing, also for the set being trained: neither device loses progress
+    const before = contentOf(local);
+    mergeSetInto(local, remote);
+    const after = contentOf(local), remoteContent = contentOf(remote);
+    // if the merge kept something the cloud lacks, leave the snapshot at the cloud version so save() sends it back
+    snapshots.set(remote.id, after === remoteContent ? after : remoteContent);
+    if (after !== remoteContent) pushBack = true;
+    if (after !== before) { changed = true; merged.push(remote.id); }
   }
   const allDays = new Set([...data.days, ...days]);
   if (allDays.size !== data.days.length) { data.days = [...allDays].sort(); changed = true; }
   const allFrozen = new Set([...data.frozen, ...frozen]);
   if (allFrozen.size !== data.frozen.length) { data.frozen = [...allFrozen].sort(); changed = true; }
   if (habit && (habit.updatedAt || 0) > (data.habit.updatedAt || 0)) { data.habit = habit; changed = true; }
-  if (changed) {
+  if (changed || pushBack) {
     data.sets.sort((a, b) => b.createdAt - a.createdAt);
-    try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { console.error(e); }
+    if (pushBack) save();
+    else try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) { console.error(e); }
   }
+  if (merged.length) mergeListeners.forEach(f => f(merged));
   return changed;
 }
 
