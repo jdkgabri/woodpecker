@@ -428,7 +428,9 @@ function buildItems(course, scope, mode, only) {
   const picked = weighted(cards, cards.map(c => needOf(mem[c.key], c.mark)), SESSION[mode] || SESSION.random);
   return picked.map(c => {
     if (c.kind !== 'line') return { path: [c.game.root.k[0], ...mainFrom(c.game.root.k[0])], start: 0, card: c.key };
-    const ref = c.refs[Math.floor(Math.random() * c.refs.length)];
+    // a position shared by several chapters continues with a line of the chapter being practised
+    const refs = scope === 'all' ? c.refs : c.refs.filter(r => r.game.ch.id === scope);
+    const ref = refs[Math.floor(Math.random() * refs.length)];
     const before = pathTo(ref.node);
     const kid = ref.node.k[Math.floor(Math.random() * ref.node.k.length)];
     const after = [kid, ...mainFrom(kid)];
@@ -629,7 +631,8 @@ export function viewCourseDrill(app, id, scope, mode, only) {
       app.querySelector('#cdAgain').onclick = e => { e.preventDefault(); window.dispatchEvent(new HashChangeEvent('hashchange')); };
     }
     // dev only: lets the end-to-end tests read the expected move
-    if (import.meta.env.DEV) window.__courseDrill = { expected: () => (item && i < item.path.length && chess.turn() === course.side ? item.path[i].u : null), state: () => ({ done, left: queue.length, xp }) };
+    if (import.meta.env.DEV) window.__courseDrill = { expected: () => (item && i < item.path.length && chess.turn() === course.side ? item.path[i].u : null), state: () => ({ done, left: queue.length, xp }),
+      chapter: () => { let n = item?.path.at(-1); while (n?.parent) n = n.parent; return course.chapters.find(ch => KINDS.some(k => (ch[k] || []).some(g => g.root === n)))?.id; } };
     const onResize = () => cg.redrawAll();
     window.addEventListener('resize', onResize);
     cleanup = () => { alive = false; clearTimeout(timer); window.removeEventListener('resize', onResize); cg.destroy(); };
