@@ -71,6 +71,8 @@ export function viewOpenings(app) {
     <header class="top"><a class="icon-btn" href="#/">‹</a><h1>${t('Openings')}</h1><span></span></header>
     <main class="wrap">
       <p class="small muted">${t('Ideas, plans and main lines explained move by move, with drills and tactics from each opening.')}</p>
+      <a class="card set-card course-entry" href="#/courses"><div class="row"><strong>🎓 ${t('Opening courses')}</strong><span class="muted">›</span></div>
+        <p class="small muted">${t('Complete courses with videos, annotated studies and practice with spaced repetition.')}</p></a>
       ${section(t('With White'), o => o.side === 'w' && first(o) === 'e4', '1.e4')}
       ${section(t('With White'), o => o.side === 'w' && first(o) !== 'e4', t('1.d4 and others'))}
       ${section(t('With Black'), o => o.side === 'b' && first(o) === 'e4', t('against 1.e4'))}

@@ -12,6 +12,7 @@ import * as sync from './sync.js';
 import { viewAnalysis, openAnalysis, mainLine } from './analysis.js';
 import { habitOn, gamifyOn, levelCard, progressSnapshot, notifyProgress, streakCard, bindStreakCard, celebrate, habitSettings, bindHabitSettings } from './ui-habit.js';
 import { viewStats } from './stats.js';
+import { viewCourses, viewCourse, viewChapter, viewCourseStudy, viewCourseDrill } from './courses.js';
 import { viewOpenings, viewOpening, viewOpeningLine, localVideos, importLocalVideos, clearLocalVideos, csvVideos, importCsvVideos, clearCsvVideos, videoPlayer } from './openings.js';
 import { viewOpeningTree } from './opening-tree.js';
 import { viewCoach, viewCoachGame } from './coach.js';
@@ -66,6 +67,10 @@ function route() {
   if (view === 'stats') return viewStats(app);
   if (view === 'videos') return viewVideos();
   if (view === 'openings') return viewOpenings(app);
+  if (view === 'courses') return viewCourses(app);
+  if (view === 'course') { const ch = location.hash.split('/')[3]; return ch ? viewChapter(app, id, ch) : viewCourse(app, id); }
+  if (view === 'cstudy') { const [, , , ch, kind, gi] = location.hash.split('/'); cleanup = viewCourseStudy(app, id, ch, kind, gi); return; }
+  if (view === 'cdrill') { const [, , , scope, mode, only] = location.hash.split('/'); cleanup = viewCourseDrill(app, id, scope, mode, only); return; }
   if (view === 'opening') {
     const lineId = location.hash.split('/')[3];
     if (lineId) { cleanup = viewOpeningLine(app, id, lineId, 'study', go); return; }

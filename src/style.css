@@ -448,3 +448,13 @@ cg-board {
 .review-progress .btn { padding: 4px 10px; min-height: 0; }
 .review-progress { flex-wrap: wrap; }
 .review-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+
+/* opening courses */
+.course-games { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.course-games .branch { display: block; text-decoration: none; color: var(--fg); }
+.course-moves { max-height: 220px; overflow-y: auto; align-items: baseline; }
+.course-moves .var { color: var(--muted); font-size: .9em; }
+.course-moves .mv.mark:not(.on) { color: var(--accent); }
+.course-progress { padding: 0 16px 8px; }
+.course-progress .bar.big { margin: 2px 0 0; }
+@media (min-width: 900px) { .train > .course-progress { grid-column: 2; grid-row: 2; padding: 8px 0 0; } }
