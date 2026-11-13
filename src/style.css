@@ -458,3 +458,5 @@ cg-board {
 .course-progress { padding: 0 16px 8px; }
 .course-progress .bar.big { margin: 2px 0 0; }
 @media (min-width: 900px) { .train > .course-progress { grid-column: 2; grid-row: 2; padding: 8px 0 0; } }
+.course-mark { color: #d59020; font-weight: 600; }
+.course-mark-link { margin-top: 8px; }

@@ -64,8 +64,10 @@ function prepare(course) {
         const fen = fenAfter(node);
         if (kids.length && new Chess(fen).turn() === course.side) {
           const key = 'l:' + fenKey(fen);
-          const card = course.cards.get(key) || { key, kind: 'line', moves: new Set(), refs: [], chapters: new Set() };
+          const card = course.cards.get(key) || { key, kind: 'line', fen, moves: new Set(), refs: [], chapters: new Set() };
           kids.forEach(k => card.moves.add(k.u));
+          // the teacher marks the move that leads to an important move (_J) or a trick (_T)
+          if (node.t) card.mark = 'tricks'; else if (node.j && !card.mark) card.mark = 'important';
           card.refs.push({ game: g, node });
           card.chapters.add(ch.id);
           course.cards.set(key, card);
@@ -76,6 +78,10 @@ function prepare(course) {
       visit(g.root);
     });
   }
+  // marked positions that are also an exercise: answering one counts for the other too
+  const exAt = new Map();
+  for (const c of course.cards.values()) if (EXERCISES.includes(c.kind) && !exAt.has(fenKey(c.game.fen))) exAt.set(fenKey(c.game.fen), c.key);
+  for (const c of course.cards.values()) if (c.mark) c.ex = exAt.get(fenKey(c.fen));
   return course;
 }
 const afterFen = node => { const c = new Chess(node.fen); c.move(node.s); return c.fen(); };
@@ -142,10 +148,11 @@ function progressOf(id, keys) {
   return { total: keys.size ?? keys.length, seen, mastered, due, weak };
 }
 // How much a card needs practice: failed and due ones most, new ones next, known ones little
-function needOf(c) {
-  if (!c) return 2;
+function needOf(c, marked) {
+  const boost = marked ? 2 : 1;   // important moves and tricks come up more often
+  if (!c) return 2 * boost;
   const due = c.d <= Date.now();
-  return (c.f && c.b < MASTERED ? 3 : 1) * (due ? 2 : 0.25) / 2 ** c.b;
+  return boost * (c.f && c.b < MASTERED ? 3 : 1) * (due ? 2 : 0.25) / 2 ** c.b;
 }
 function weighted(list, w, n) {
   const pool = list.map((x, i) => ({ x, w: Math.max(1e-6, w[i]) })), out = [];
@@ -329,9 +336,12 @@ export function viewCourseStudy(app, id, chId, kind, gi) {
         movable: { color: (cur.k || []).length ? toColor(c.turn()) : undefined, dests: d },
       });
       cg.setAutoShapes(shapesOf(cur));
-      const tag = [cur.j ? `❗ ${t('Important move')}` : '', cur.t ? `🪤 ${t('Trick')}` : ''].filter(Boolean).join(' · ');
+      const markCard = (cur.j || cur.t) && cur.k?.length ? course.cards.get('l:' + fenKey(fen)) : null;
+      const tag = markCard ? `${cur.t ? `🪤 ${t('Trick')}` : `❗ ${t('Important move')}`}: ${t('think what you would play before going on.')}` : '';
+      const exLink = markCard?.ex ? (([, exCh, exKind, exGi]) => `<a class="btn ghost" href="#/cdrill/${id}/${exCh}/${exKind}/${exKind}.${exGi}">${exKind === 'tricks' ? '🪤' : '❗'} ${t('Practise this position')}</a>`)(markCard.ex.split(':')) : '';
       $('#csNote').className = 'pfb';
-      $('#csNote').innerHTML = `<div class="pfb-text"><strong>${cur.parent ? esc(label(cur)) : esc(game.title || kindName(kind))}</strong>${tag ? `<span class="small">${tag}</span>` : ''}<em class="note-text">${cur.c ? esc(cur.c) : !cur.parent ? esc(t('Play through the moves with ▶ or by moving the pieces.')) : ''}</em></div>`;
+      $('#csNote').className = 'pfb' + (tag ? ' warn' : '');
+      $('#csNote').innerHTML = `<div class="pfb-text"><strong>${cur.parent ? esc(label(cur)) : esc(game.title || kindName(kind))}</strong>${tag ? `<span class="small course-mark">${tag}</span>` : ''}<em class="note-text">${cur.c ? esc(cur.c) : !cur.parent ? esc(t('Play through the moves with ▶ or by moving the pieces.')) : ''}</em>${exLink ? `<div class="course-mark-link">${exLink}</div>` : ''}</div>`;
       const kids = cur.k || [];
       $('#csBranches').innerHTML = kids.length > 1
         ? `<p class="small muted">${c.turn() === course.side ? t('Your move:') : t('If they play…')}</p><div class="chips">${kids.map((k, i) => `<button class="chip" data-k="${i}">${esc(label(k))}</button>`).join('')}</div>`
@@ -347,7 +357,7 @@ export function viewCourseStudy(app, id, chId, kind, gi) {
         ids.set(++n, k);
         const fen = k.fen, black = fen.split(' ')[1] === 'b';
         const txt = i === 0 || !black ? label(k) : san(k.s) + (k.n || '');
-        let out = `<button class="mv ${k === cur ? 'on' : ''} ${k.j || k.t ? 'mark' : ''}" data-n="${n}">${esc(txt)}</button>`;
+        let out = `<button class="mv ${k === cur ? 'on' : ''} ${k.parent.j || k.parent.t ? 'mark' : ''}" data-n="${n}">${esc(txt)}</button>`;
         const alts = (k.parent.k || []).slice(1);
         if (k === k.parent.k[0] && alts.length) out += alts.map(a => ` <span class="var">(${line([a, ...mainFrom(a)])})</span>`).join('');
         return out;
@@ -404,7 +414,7 @@ function buildItems(course, scope, mode, only) {
   }
   if (mode === 'line') {
     const lines = chapters.flatMap(ch => ['study', 'train'].flatMap(k => (ch[k] || []).flatMap(leavesOf)));
-    const need = path => Math.max(...path.filter(n => n.parent && new Chess(n.fen).turn() === course.side).map(n => needOf(mem['l:' + fenKey(n.fen)])), 0.01);
+    const need = path => Math.max(...path.filter(n => n.parent && new Chess(n.fen).turn() === course.side).map(n => { const k = 'l:' + fenKey(n.fen); return needOf(mem[k], course.cards.get(k)?.mark); }), 0.01);
     return weighted(lines, lines.map(need), SESSION.line).map(path => ({ path, start: 0 }));
   }
   // random positions / daily review / mistakes: line cards, played from the position
@@ -415,7 +425,7 @@ function buildItems(course, scope, mode, only) {
     const fresh = cards.filter(c => !mem[c.key] && c.kind === 'line').sort((a, b) => depth(a) - depth(b)).slice(0, Math.max(3, SESSION.due - due.length));
     cards = [...due, ...fresh];
   }
-  const picked = weighted(cards, cards.map(c => needOf(mem[c.key])), SESSION[mode] || SESSION.random);
+  const picked = weighted(cards, cards.map(c => needOf(mem[c.key], c.mark)), SESSION[mode] || SESSION.random);
   return picked.map(c => {
     if (c.kind !== 'line') return { path: [c.game.root.k[0], ...mainFrom(c.game.root.k[0])], start: 0, card: c.key };
     const ref = c.refs[Math.floor(Math.random() * c.refs.length)];
@@ -460,7 +470,12 @@ export function viewCourseDrill(app, id, scope, mode, only) {
     let done = 0, clean = 0, xp = 0, combo = 0, item = null, i = 0, chess = null, misses = 0, itemMisses = 0, timer = null, alive = true;
     let counted = false;
     const graded = new Set();   // each card is graded once per session: its first answer counts
-    const gradeOnce = (key, ok) => { if (!graded.has(key)) { graded.add(key); grade(id, key, ok); } };
+    const gradeOnce = (key, ok) => {
+      if (graded.has(key)) return;
+      graded.add(key); grade(id, key, ok);
+      const ex = course.cards.get(key)?.ex;   // a marked position counts for its exercise too
+      if (ex && !graded.has(ex)) { graded.add(ex); grade(id, ex, ok); }
+    };
 
     function note(state, title, sub = '') {
       $('#cdNote').className = 'pfb ' + state;
@@ -515,6 +530,9 @@ export function viewCourseDrill(app, id, scope, mode, only) {
       }
       misses = 0;
       setBoard(item.path[i - 1]);
+      const mark = course.cards.get('l:' + fenKey(chess.fen()))?.mark;
+      if (mark && !item.card) note('warn', mark === 'tricks' ? `🪤 ${t('Trick')}` : `❗ ${t('Important move')}`,
+        esc((i === item.start && i ? t('Position after {m}', { m: label(item.path[i - 1]) }) + ' · ' : '') + t('Think carefully before you move.')));
     }
     function accepted() { return (item.path[i].parent.k || []).map(k => k.u); }
     function userMove(o, d) {

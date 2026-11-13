@@ -832,4 +832,7 @@ export const ES = {
   "Complete courses with videos, annotated studies and practice with spaced repetition.": "Cursos completos con vídeos, estudios comentados y práctica con repetición espaciada.",
   'Study|noun': 'Estudio',
   'Extended lines': 'Líneas ampliadas',
+  'think what you would play before going on.': 'piensa qué jugarías antes de avanzar.',
+  'Practise this position': 'Practicar esta posición',
+  'Think carefully before you move.': 'Piénsalo bien antes de mover.',
 };
