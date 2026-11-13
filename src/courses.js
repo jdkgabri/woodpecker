@@ -454,8 +454,11 @@ export function viewCourseDrill(app, id, scope, mode, only) {
     }
     app.innerHTML = `
       <div class="train">
-        ${header(back, title, '<span id="cdXp"></span>')}
-        <div class="course-progress"><div class="bar big"><span id="cdBar" style="width:0%"></span></div></div>
+        ${header(back, title)}
+        <div class="course-progress">
+          <div class="row small muted"><span id="cdCount"></span><span id="cdXp"></span></div>
+          <div class="bar big"><span id="cdBar" style="width:0%"></span></div>
+        </div>
         <div class="board-wrap"><div class="board" id="board"></div></div>
         <div class="info"><div class="pfb" id="cdNote"></div></div>
         <div class="actions" id="cdActions"></div>
@@ -477,6 +480,13 @@ export function viewCourseDrill(app, id, scope, mode, only) {
       if (ex && !graded.has(ex)) { graded.add(ex); grade(id, ex, ok); }
     };
 
+    // session progress: "3/12" (missed items added at the end make the session longer) and the bar
+    // starting: called before taking the next item from the queue, so it counts as the current one
+    function progress(starting) {
+      const all = done + queue.length;
+      if (all) $('#cdCount').textContent = t('{n} of {m}', { n: Math.min(done + (starting ? 1 : 0), all), m: all });
+      $('#cdBar').style.width = `${Math.round(100 * done / Math.max(1, all))}%`;
+    }
     function note(state, title, sub = '') {
       $('#cdNote').className = 'pfb ' + state;
       $('#cdNote').innerHTML = `<div class="pfb-text"><strong>${title}</strong><em class="note-text">${sub}</em></div>`;
@@ -495,7 +505,7 @@ export function viewCourseDrill(app, id, scope, mode, only) {
     };
     function next() {
       clearTimeout(timer);
-      $('#cdBar').style.width = `${Math.round(100 * done / (done + queue.length))}%`;
+      progress(true);
       if (!queue.length) return finish();
       item = queue.shift();
       i = item.start; itemMisses = 0; misses = 0; item.graded = false;
@@ -595,12 +605,12 @@ export function viewCourseDrill(app, id, scope, mode, only) {
         combo++;
         const gain = 10 + Math.min(combo - 1, 4) * 2;
         xp += gain; addXp(id, gain);
-        $('#cdXp').textContent = `⭐ +${xp}`;
+        $('#cdXp').textContent = `⭐ ${xp}`;
         note('ok', combo > 2 ? t('Perfect! {n} in a row', { n: combo }) : t('Perfect!'), esc(item.path.at(-1).c || ''));
       }
       $('#cdActions').innerHTML = `<button class="btn success full" id="cdNext">${t('Continue')} ›</button>`;
       $('#cdNext').onclick = next;
-      $('#cdBar').style.width = `${Math.round(100 * done / (done + queue.length))}%`;
+      progress(false);
       if (!itemMisses && !item.path.at(-1).c) timer = setTimeout(() => { if (alive) next(); }, 900);
     }
     function finish() {

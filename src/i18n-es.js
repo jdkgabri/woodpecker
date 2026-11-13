@@ -835,4 +835,5 @@ export const ES = {
   'think what you would play before going on.': 'piensa qué jugarías antes de avanzar.',
   'Practise this position': 'Practicar esta posición',
   'Think carefully before you move.': 'Piénsalo bien antes de mover.',
+  '{n} of {m}': '{n} de {m}',
 };
