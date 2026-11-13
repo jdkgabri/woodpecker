@@ -836,4 +836,8 @@ export const ES = {
   'Practise this position': 'Practicar esta posición',
   'Think carefully before you move.': 'Piénsalo bien antes de mover.',
   '{n} of {m}': '{n} de {m}',
+  'From move {a}': 'Desde la jugada {a}',
+  'Moves {a}–{b}': 'Jugadas {a}–{b}',
+  'Level {n}': 'Nivel {n}',
+  'Random positions by level: the deeper into the line, the harder to remember.': 'Posiciones aleatorias por niveles: cuanto más avanzada la línea, más difícil de recordar.',
 };

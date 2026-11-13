@@ -164,6 +164,25 @@ function weighted(list, w, n) {
   return out;
 }
 
+// ---------- levels ----------
+// Random positions by depth: the further into a line, the harder it is to remember.
+// Ranges by move number, so that each level holds a fair share of a typical course.
+const LEVELS = [[1, 10], [11, 14], [15, 19], [20, Infinity]];
+const moveOf = c => +(c.fen?.split(' ')[5] || 1);
+const inLevel = (c, lv) => c.kind === 'line' && moveOf(c) >= LEVELS[lv][0] && moveOf(c) <= LEVELS[lv][1];
+const levelName = lv => (LEVELS[lv][1] === Infinity ? t('From move {a}', { a: LEVELS[lv][0] }) : t('Moves {a}–{b}', { a: LEVELS[lv][0], b: LEVELS[lv][1] }));
+// Level chips with how many positions of each are mastered
+function levelsBlock(course, scope) {
+  const cards = [...course.cards.values()].filter(c => c.kind === 'line' && (scope === 'all' || c.chapters.has(scope)));
+  const chips = LEVELS.map((_, lv) => {
+    const keys = new Set(cards.filter(c => inLevel(c, lv)).map(c => c.key));
+    if (!keys.size) return '';
+    const p = progressOf(course.id, keys);
+    return `<a class="chip level-chip" href="#/cdrill/${course.id}/${scope}/random/lv${lv + 1}"><b>${t('Level {n}', { n: lv + 1 })}</b> <small>${levelName(lv)}</small> <small class="muted">${p.mastered}/${p.total}</small></a>`;
+  }).join('');
+  return `<p class="small muted">🎯 ${t('Random positions by level: the deeper into the line, the harder to remember.')}</p><div class="chips level-chips">${chips}</div>`;
+}
+
 // ---------- shared bits ----------
 const BRUSH = { G: 'green', R: 'red', Y: 'yellow', B: 'blue' };
 function shapesOf(node) {
@@ -238,6 +257,7 @@ export async function viewCourse(app, id) {
             <a class="btn ghost" href="#/cdrill/${id}/all/tricks">🪤 ${t('Tricks')} <small class="muted">${xKeys('tricks').size}</small></a>
           </div>
           ${p.weak ? `<a class="btn ghost full" href="#/cdrill/${id}/all/mistakes">✗ ${t('My mistakes ({n})', { n: p.weak })}</a>` : ''}
+          ${levelsBlock(course, 'all')}
           <p class="small muted">${t('Course practice mixes every chapter.')}</p>
         </section>
         <h2 class="section-title">${t('Chapters')}</h2>
@@ -282,6 +302,7 @@ export async function viewChapter(app, id, chId) {
             ${ch.tricks?.length ? `<a class="btn ghost" href="#/cdrill/${id}/${ch.id}/tricks">🪤 ${t('Tricks')}</a>` : ''}
           </div>
           ${p.weak ? `<a class="btn ghost full" href="#/cdrill/${id}/${ch.id}/mistakes">✗ ${t('My mistakes ({n})', { n: p.weak })}</a>` : ''}
+          ${lines ? levelsBlock(course, ch.id) : ''}
         </section>` : ''}
         ${KINDS.map(gameList).join('')}
       </main>`;
@@ -394,7 +415,7 @@ export function viewCourseStudy(app, id, chId, kind, gi) {
 const SESSION = { line: 5, random: 12, due: 15, mistakes: 12, important: 10, tricks: 10 };
 const MAX_OWN_MOVES = 4;   // in random positions, how many of your moves to play from the position
 
-function buildItems(course, scope, mode, only) {
+function buildItems(course, scope, mode, only, level) {
   const id = course.id;
   const mem = memOf(id).cards;
   const inScope = c => scope === 'all' || c.chapters.has(scope);
@@ -419,6 +440,7 @@ function buildItems(course, scope, mode, only) {
   }
   // random positions / daily review / mistakes: line cards, played from the position
   let cards = [...course.cards.values()].filter(c => inScope(c) && (mode !== 'random' || c.kind === 'line'));
+  if (level) cards = cards.filter(c => inLevel(c, level - 1));
   if (mode === 'mistakes') cards = cards.filter(c => mem[c.key]?.w);
   if (mode === 'due') {
     const due = cards.filter(c => mem[c.key] && mem[c.key].d <= Date.now());
@@ -447,9 +469,12 @@ export function viewCourseDrill(app, id, scope, mode, only) {
   guard(app, async () => {
     const course = await loadCourse(id);
     if (gone) return;
-    const items = buildItems(course, scope, mode, only);
+    // "lvN" picks random positions of a level; anything else is a single study or exercise
+    const level = /^lv[1-9]$/.test(only || '') && LEVELS[+only.slice(2) - 1] ? +only.slice(2) : 0;
+    const items = buildItems(course, scope, mode, level ? undefined : only, level);
     const back = scope === 'all' ? `#/course/${id}` : `#/course/${id}/${scope}`;
-    const title = { line: t('Move by move'), random: t('Random positions'), due: t('Daily review'), mistakes: t('My mistakes'), important: t('Important moves'), tricks: t('Tricks') }[mode] || t('Practise');
+    const title = ({ line: t('Move by move'), random: t('Random positions'), due: t('Daily review'), mistakes: t('My mistakes'), important: t('Important moves'), tricks: t('Tricks') }[mode] || t('Practise'))
+      + (level ? ` · ${t('Level {n}', { n: level })}` : '');
     if (!items.length) {
       app.innerHTML = `${header(back, title)}<main class="wrap"><section class="card"><p>${mode === 'mistakes' ? t('No mistakes to review. Well done!') : t('Nothing to practise here yet.')}</p><a class="btn primary full" href="${back}">${t('Back')}</a></section></main>`;
       return;
@@ -632,6 +657,7 @@ export function viewCourseDrill(app, id, scope, mode, only) {
     }
     // dev only: lets the end-to-end tests read the expected move
     if (import.meta.env.DEV) window.__courseDrill = { expected: () => (item && i < item.path.length && chess.turn() === course.side ? item.path[i].u : null), state: () => ({ done, left: queue.length, xp }),
+      startMove: () => (item ? +item.path[item.start].fen.split(' ')[5] : null),
       chapter: () => { let n = item?.path.at(-1); while (n?.parent) n = n.parent; return course.chapters.find(ch => KINDS.some(k => (ch[k] || []).some(g => g.root === n)))?.id; } };
     const onResize = () => cg.redrawAll();
     window.addEventListener('resize', onResize);
