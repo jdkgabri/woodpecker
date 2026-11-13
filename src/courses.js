@@ -9,11 +9,12 @@ import * as store from './store.js';
 import { celebrate } from './ui-habit.js';
 import { videoPlayer } from './openings.js';
 import { COURSE_VIDEOS } from './course-videos.js';
+import * as sync from './sync.js';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const toColor = c => (c === 'w' ? 'white' : 'black');
 const fenKey = f => f.split(' ').slice(0, 4).join(' ');
-const KINDS = ['study', 'train', 'important', 'tricks'];
+const KINDS = ['study', 'train', 'extra', 'important', 'tricks'];
 const EXERCISES = ['important', 'tricks'];
 
 // ---------- data ----------
@@ -174,8 +175,11 @@ function dests(chess) {
   for (const m of chess.moves({ verbose: true })) { if (!d.has(m.from)) d.set(m.from, []); d.get(m.from).push(m.to); }
   return d;
 }
+// A chapter's video: a link, or "storage:<path>" for a private file in Firebase Storage (only for the
+// accounts the Storage rules allow, so it is shown only once the address comes back)
 const videoOf = (course, ch) => COURSE_VIDEOS[`${course.id}/${ch.id}`] || ch.video || '';
-const kindName = k => ({ study: t('Study|noun'), train: t('Training lines'), important: t('Important moves'), tricks: t('Tricks') }[k]);
+const hasVideo = v => !!v && (!v.startsWith('storage:') || !!sync.state.user);
+const kindName = k => ({ study: t('Study|noun'), train: t('Training lines'), extra: t('Extended lines'), important: t('Important moves'), tricks: t('Tricks') }[k]);
 const header = (back, title, right = '') => `<header class="top"><a class="icon-btn" href="${back}">‹</a><h1 class="ellipsis">${esc(title)}</h1><span class="small muted">${right}</span></header>`;
 const progressBar = p => `<div class="bar"><i style="width:${p.total ? Math.round(100 * p.mastered / p.total) : 0}%"></i></div>`;
 async function guard(app, fn) {
@@ -233,7 +237,7 @@ export async function viewCourse(app, id) {
         ${course.chapters.map(ch => {
           const cp = progressOf(id, ch.cards);
           return `<a class="card set-card" href="#/course/${id}/${ch.id}">
-            <div class="row"><strong>${ch.id}. ${esc(ch.name)}</strong>${videoOf(course, ch) ? '<span>🎬</span>' : ''}</div>
+            <div class="row"><strong>${ch.id}. ${esc(ch.name)}</strong>${hasVideo(videoOf(course, ch)) ? '<span>🎬</span>' : ''}</div>
             <p class="small muted">${KINDS.filter(k => ch[k]?.length).map(k => `${kindName(k)} ${ch[k].length}`).join(' · ')}</p>
             ${cp.total ? progressBar(cp) + `<div class="row small muted"><span>${t('{n} of {m} positions mastered', { n: cp.mastered, m: cp.total })}</span>${cp.due ? `<span>🔁 ${cp.due}</span>` : ''}</div>` : ''}
           </a>`;
@@ -258,7 +262,7 @@ export async function viewChapter(app, id, chId) {
       </details>` : '';
     app.innerHTML = `${header('#/course/' + id, `${ch.id}. ${ch.name}`)}
       <main class="wrap">
-        ${video ? `<section class="card">${videoPlayer(video) || ''}</section>` : ''}
+        ${!video ? '' : video.startsWith('storage:') ? (sync.state.configured ? '<section class="card" id="chVideo"><p class="small muted">🎬 …</p></section>' : '') : `<section class="card">${videoPlayer(video) || ''}</section>`}
         ${p.total ? `<section class="card">
           ${progressBar(p)}
           <p class="small">${t('{n} of {m} positions mastered', { n: p.mastered, m: p.total })}${p.due ? ' · ' + tn(p.due, '{n} to review', '{n} to review') : ''}</p>
@@ -274,6 +278,11 @@ export async function viewChapter(app, id, chId) {
         </section>` : ''}
         ${KINDS.map(gameList).join('')}
       </main>`;
+    if (video.startsWith('storage:') && sync.state.configured) {
+      const url = await sync.storageUrl(video.slice(8));
+      const box = app.querySelector('#chVideo');
+      if (box) { if (url) box.innerHTML = videoPlayer(url); else box.remove(); }
+    }
   });
 }
 

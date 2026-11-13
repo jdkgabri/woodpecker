@@ -1,0 +1,13 @@
+rules_version = '2';
+// Course videos are personal: only the owner's account can read them. Uploads are done from the
+// command line with project credentials, never from the app.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /courses/{path=**} {
+      allow read: if request.auth != null && request.auth.uid == 'HVCLXy57NDgXPkbrQSVZuAPBunA3';
+    }
+    match /{path=**} {
+      allow read, write: if false;
+    }
+  }
+}

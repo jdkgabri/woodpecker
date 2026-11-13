@@ -43,8 +43,18 @@ async function init() {
     F.connectFirestoreEmulator(db, '127.0.0.1', 8080);
     window.__fb = { auth, A };
   }
-  fb = { auth, db, A, F };
+  fb = { app, auth, db, A, F };
   return fb;
+}
+
+// Download address of a file in Storage, or null if there is no session or the rules do not allow it
+export async function storageUrl(path) {
+  if (!state.configured) return null;
+  const { app, auth } = await init();
+  await auth.authStateReady();   // right after opening the app the session may still be loading
+  if (!auth.currentUser) return null;
+  const S = await import('firebase/storage');
+  try { return await S.getDownloadURL(S.ref(S.getStorage(app), path)); } catch { return null; }
 }
 
 export async function start(onRemoteChange) {

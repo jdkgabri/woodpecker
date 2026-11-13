@@ -831,4 +831,5 @@ export const ES = {
   "{n} to review": "{n} por repasar",
   "Complete courses with videos, annotated studies and practice with spaced repetition.": "Cursos completos con vídeos, estudios comentados y práctica con repetición espaciada.",
   'Study|noun': 'Estudio',
+  'Extended lines': 'Líneas ampliadas',
 };
