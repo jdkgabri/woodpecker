@@ -1,7 +1,7 @@
 // Opening courses: chapters with a video, the teacher's annotated study, line drills and exercises.
 // Every position where you have to move is a card with spaced repetition (kept on this device):
 // missed positions come back sooner, known ones later. Data: public/courses/<id>.json (scripts/build-course.mjs),
-// or a PGN the user imports (one chapter per game, kept on this device).
+// or a PGN the user imports as one of "my studies" (any subject: one chapter per game, kept on this device).
 import { Chessground } from 'chessground';
 import { Chess } from 'chess.js';
 import { t, tn, san } from './i18n.js';
@@ -80,7 +80,8 @@ function chaptersOf(pgn) {
     chapters.push({
       id: String(n),
       name: h.ChapterName || event || players || t('Chapter {n}', { n }),
-      side: /^black$/i.test(h.Orientation || '') ? 'b' : 'w',
+      // lichess' Orientation; otherwise, in a study from a position (an endgame, an exercise), the side to move
+      side: h.Orientation ? (/^black$/i.test(h.Orientation) ? 'b' : 'w') : h.FEN ? g.fen.split(' ')[1] : 'w',
       study: [{ title: h.ChapterName || event || players || t('Chapter {n}', { n }), fen: g.fen, root: g.root }],
     });
   });
@@ -89,14 +90,14 @@ function chaptersOf(pgn) {
 function userCourseData(id) {
   const u = userCourses().find(c => c.id === id);
   if (!u) throw new Error(t('Could not load the courses'));
-  return { id, name: u.name, side: 'w', author: t('Your PGN'), user: true, chapters: chaptersOf(u.pgn).chapters };
+  return { id, name: u.name, side: 'w', author: t('My studies'), user: true, chapters: chaptersOf(u.pgn).chapters };
 }
 // Adds a course from a PGN text; returns { id, chapters, skipped }
 export function importPgnCourse(pgn, fileName = '') {
   const { chapters, skipped, studyName } = chaptersOf(pgn);
   if (!chapters.length) throw new Error(t('No games with moves found in that PGN.'));
   const id = 'u-' + store.uid();
-  const name = studyName || fileName.replace(/\.pgn$/i, '').replace(/[_-]+/g, ' ').trim() || t('My repertoire');
+  const name = studyName || fileName.replace(/\.pgn$/i, '').replace(/[_-]+/g, ' ').trim() || t('My study');
   saveUserCourses([...userCourses(), { id, name, pgn, createdAt: Date.now() }]);
   return { id, chapters: chapters.length, skipped };
 }
@@ -142,6 +143,10 @@ function prepare(course) {
         if (kids.length && new Chess(fen).turn() === ch.side) {
           const key = 'l:' + fenKey(fen);
           const card = course.cards.get(key) || { key, kind: 'line', fen, moves: new Set(), refs: [], chapters: new Set() };
+          // depth for the levels: the move number, or, in your studies that start from a position, the
+          // moves played since that position (an endgame from move 40 is not "level 4" from the start)
+          const depth = course.user ? +fen.split(' ')[5] - +g.fen.split(' ')[5] + 1 : +fen.split(' ')[5];
+          card.depth = Math.min(card.depth ?? Infinity, depth);
           kids.forEach(k => card.moves.add(k.u));
           // the teacher marks the move that leads to an important move (_J) or a trick (_T)
           if (node.t) card.mark = 'tricks'; else if (node.j && !card.mark) card.mark = 'important';
@@ -245,9 +250,11 @@ function weighted(list, w, n) {
 // Random positions by depth: the further into a line, the harder it is to remember.
 // Ranges by move number: up to move 7, 8 to 14, 15 to 20, and from 21 on.
 const LEVELS = [[1, 7], [8, 14], [15, 20], [21, Infinity]];
-const moveOf = c => +(c.fen?.split(' ')[5] || 1);
+const moveOf = c => c.depth ?? +(c.fen?.split(' ')[5] || 1);
 const inLevel = (c, lv) => c.kind === 'line' && moveOf(c) >= LEVELS[lv][0] && moveOf(c) <= LEVELS[lv][1];
 const levelName = lv => (LEVELS[lv][1] === Infinity ? t('From move {a}', { a: LEVELS[lv][0] }) : t('Moves {a}–{b}', { a: LEVELS[lv][0], b: LEVELS[lv][1] }));
+// where a course's pages go back to: the courses, or my studies
+const homeOf = course => (course.user ? '#/studies' : '#/courses');
 // Level chips with how many positions of each are mastered
 function levelsBlock(course, scope) {
   const cards = [...course.cards.values()].filter(c => c.kind === 'line' && (scope === 'all' || c.chapters.has(scope)));
@@ -287,7 +294,7 @@ const header = (back, title, right = '') => `<header class="top"><a class="icon-
 const progressBar = p => `<div class="bar"><i style="width:${p.total ? Math.round(100 * p.mastered / p.total) : 0}%"></i></div>`;
 async function guard(app, fn) {
   try { return await fn(); }
-  catch (e) { app.innerHTML = `${header('#/courses', t('Opening courses'))}<main class="wrap"><p class="bad-text">${esc(e.message)}</p></main>`; }
+  catch (e) { app.innerHTML = `${header('#/', t('Back'))}<main class="wrap"><p class="bad-text">${esc(e.message)}</p></main>`; }
 }
 
 // ---------- list ----------
@@ -310,20 +317,30 @@ export async function viewCourses(app) {
   await guard(app, async () => {
     const list = await loadIndex();
     const cards = await Promise.all(list.map(c => courseCard(c.id)));
-    const mine = await Promise.all(userCourses().map(c => courseCard(c.id).catch(() => '')));
     app.innerHTML = `${header('#/openings', t('Opening courses'))}
       <main class="wrap">
         <p class="small muted">${t('Complete courses by their authors: a video and an annotated study per chapter, and practice that brings back the positions you miss.')}</p>
         ${cards.join('')}
-        <h2 class="section-title">📄 ${t('Your PGNs')}</h2>
+        <a class="card set-card" href="#/studies"><div class="row"><strong>📚 ${t('My studies')}</strong><span class="muted">›</span></div>
+          <p class="small muted">${t('Your own PGNs, practised the same way.')}</p></a>
+      </main>`;
+  });
+}
+
+// ---------- my studies ----------
+export async function viewStudies(app) {
+  await guard(app, async () => {
+    const mine = await Promise.all(userCourses().map(c => courseCard(c.id).catch(() => '')));
+    app.innerHTML = `${header('#/', t('My studies'))}
+      <main class="wrap">
         ${mine.join('')}
         <section class="card form">
-          <p class="small muted">${t('Load a PGN of your repertoire (for example a lichess study) to study and practise it like a course: each game is a chapter. It is kept on this device.')}</p>
+          <p class="small muted">${t('Load any PGN (an opening, endgames, annotated games, exercises… for example a lichess study) to study it and practise it move by move: each game is a chapter. It is kept on this device.')}</p>
           <label class="btn primary full" for="pgnFile">⬆ ${t('Load a PGN file')}</label>
           <input type="file" id="pgnFile" accept=".pgn,application/x-chess-pgn,text/plain" hidden>
           <details><summary class="small">${t('Or paste the PGN text')}</summary>
             <textarea id="pgnText" rows="6" placeholder="1. e4 e5 2. Nf3 Nc6 3. Bc4 …"></textarea>
-            <button class="btn ghost full" id="pgnPaste">${t('Create course')}</button>
+            <button class="btn ghost full" id="pgnPaste">${t('Create study')}</button>
           </details>
           <p class="small" id="pgnStatus"></p>
         </section>
@@ -354,7 +371,7 @@ export async function viewCourse(app, id) {
     const p = progressOf(id, all);
     const xKeys = kind => new Set([...course.cards.values()].filter(c => c.kind === kind).map(c => c.key));
     const xp = memOf(id).xp || 0;
-    app.innerHTML = `${header('#/courses', course.name, xp ? `⭐ ${xp}` : '')}
+    app.innerHTML = `${header(homeOf(course), course.name, xp ? `⭐ ${xp}` : '')}
       <main class="wrap">
         <section class="card">
           <p class="small muted">${esc(course.author)} · ${sidesText(course)}</p>
@@ -369,7 +386,7 @@ export async function viewCourse(app, id) {
           </div>
           ${p.weak ? `<a class="btn ghost full" href="#/cdrill/${id}/all/mistakes">✗ ${t('My mistakes ({n})', { n: p.weak })}</a>` : ''}
           ${levelsBlock(course, 'all')}
-          <p class="small muted">${t('Course practice mixes every chapter.')}</p>
+          <p class="small muted">${t('Practice here mixes every chapter.')}</p>
         </section>
         <h2 class="section-title">${t('Chapters')}</h2>
         ${course.chapters.map(ch => {
@@ -380,12 +397,12 @@ export async function viewCourse(app, id) {
             ${cp.total ? progressBar(cp) + `<div class="row small muted"><span>${t('{n} of {m} positions mastered', { n: cp.mastered, m: cp.total })}</span>${cp.due ? `<span>🔁 ${cp.due}</span>` : ''}</div>` : ''}
           </a>`;
         }).join('')}
-        ${course.user ? `<button class="btn ghost full" id="cDelete">🗑 ${t('Delete this course')}</button>` : ''}
+        ${course.user ? `<button class="btn ghost full" id="cDelete">🗑 ${t('Delete this study')}</button>` : ''}
       </main>`;
     app.querySelector('#cDelete')?.addEventListener('click', () => {
       if (!confirm(t('Delete "{name}" and its progress from this device?', { name: course.name }))) return;
       deleteUserCourse(id);
-      location.hash = '#/courses';
+      location.hash = '#/studies';
     });
   });
 }
@@ -752,7 +769,7 @@ export function viewCourseDrill(app, id, scope, mode, only) {
       setBoard(item.path[i - 1]);
       miss(node);
       misses++; itemMisses++; combo = 0;
-      note('bad', t('Not this one'), esc(t('{m} is not the move of the course. Try again.', { m: san(wrongSan) })));
+      note('bad', t('Not this one'), esc(t('{m} is not the move. Try again.', { m: san(wrongSan) })));
       timer = setTimeout(() => { chess.undo(); setBoard(item.path[i - 1]); if (misses >= 2) hint(false); if (misses >= 3) reveal(); }, 600);
     }
     function hint(byButton) {

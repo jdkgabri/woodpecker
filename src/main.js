@@ -12,7 +12,7 @@ import * as sync from './sync.js';
 import { viewAnalysis, openAnalysis, mainLine } from './analysis.js';
 import { habitOn, gamifyOn, levelCard, progressSnapshot, notifyProgress, streakCard, bindStreakCard, celebrate, habitSettings, bindHabitSettings } from './ui-habit.js';
 import { viewStats } from './stats.js';
-import { viewCourses, viewCourse, viewChapter, viewCourseStudy, viewCourseDrill } from './courses.js';
+import { viewCourses, viewStudies, viewCourse, viewChapter, viewCourseStudy, viewCourseDrill } from './courses.js';
 import { viewOpenings, viewOpening, viewOpeningLine, localVideos, importLocalVideos, clearLocalVideos, csvVideos, importCsvVideos, clearCsvVideos, videoPlayer } from './openings.js';
 import { viewOpeningTree } from './opening-tree.js';
 import { viewCoach, viewCoachGame } from './coach.js';
@@ -68,6 +68,7 @@ function route() {
   if (view === 'videos') return viewVideos();
   if (view === 'openings') return viewOpenings(app);
   if (view === 'courses') return viewCourses(app);
+  if (view === 'studies') return viewStudies(app);
   if (view === 'course') { const ch = location.hash.split('/')[3]; return ch ? viewChapter(app, id, ch) : viewCourse(app, id); }
   if (view === 'cstudy') { const [, , , ch, kind, gi] = location.hash.split('/'); cleanup = viewCourseStudy(app, id, ch, kind, gi); return; }
   if (view === 'cdrill') { const [, , , scope, mode, only] = location.hash.split('/'); cleanup = viewCourseDrill(app, id, scope, mode, only); return; }
@@ -116,6 +117,7 @@ function viewHome() {
         <a class="card home-tile" href="#/endgames"><span class="tile-icon">♔</span><strong>${t('Endgames')}</strong><small class="muted">${t('The 100 endgames you must know')}</small></a>
         <a class="card home-tile" href="#/coach"><span class="tile-icon">🎓</span><strong>${t('Game review')}</strong><small class="muted">${t('Review your Lichess games')}</small></a>
         <a class="card home-tile" href="#/openings"><span class="tile-icon">📖</span><strong>${t('Openings')}</strong><small class="muted">${t('Repertoire trees and traps')}</small></a>
+        <a class="card home-tile" href="#/studies"><span class="tile-icon">📚</span><strong>${t('My studies')}</strong><small class="muted">${t('Your PGNs, to study and practise')}</small></a>
         ${csvVideos().length ? `<a class="card home-tile" href="#/videos"><span class="tile-icon">🎬</span><strong>${t('Opening videos')}</strong><small class="muted">${tn(csvVideos().length, '{n} video', '{n} videos')}</small></a>` : ''}
       </nav>
       <a class="btn primary full" href="#/new">＋ ${t('New set')}</a>
