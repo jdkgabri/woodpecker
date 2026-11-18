@@ -17,6 +17,7 @@ import { viewOpenings, viewOpening, viewOpeningLine, localVideos, importLocalVid
 import { viewOpeningTree } from './opening-tree.js';
 import { viewCoach, viewCoachGame } from './coach.js';
 import { viewEndgames, viewEndgameChapter, viewEndgame } from './endgames.js';
+import { viewStructures, OWNER as STRUCTURES_OWNER } from './structures.js';
 import { t, tn, locale, san, LANGS, langSetting, applyDocumentLang } from './i18n.js';
 
 const app = document.getElementById('app');
@@ -84,6 +85,7 @@ function route() {
     return;
   }
   if (view === 'analysis') { cleanup = viewAnalysis(app); return; }
+  if (view === 'structures') return viewStructures(app);
   if (view === 'endgames') { if (id) viewEndgameChapter(app, id); else viewEndgames(app); return; }
   if (view === 'endgame') { cleanup = viewEndgame(app, id, location.hash.split('/')[3], go); return; }
   if (view === 'coach') {
@@ -115,6 +117,7 @@ function viewHome() {
       ${gamifyOn() ? levelCard(false) : ''}
       <nav class="home-tiles">
         <a class="card home-tile" href="#/endgames"><span class="tile-icon">♔</span><strong>${t('Endgames')}</strong><small class="muted">${t('The 100 endgames you must know')}</small></a>
+        ${sync.state.user?.uid === STRUCTURES_OWNER ? `<a class="card home-tile" href="#/structures"><span class="tile-icon">♟</span><strong>${t('Pawn structures')}</strong><small class="muted">${t('Model games by structure')}</small></a>` : ''}
         <a class="card home-tile" href="#/coach"><span class="tile-icon">🎓</span><strong>${t('Game review')}</strong><small class="muted">${t('Review your Lichess games')}</small></a>
         <a class="card home-tile" href="#/openings"><span class="tile-icon">📖</span><strong>${t('Openings')}</strong><small class="muted">${t('Repertoire trees and traps')}</small></a>
         <a class="card home-tile" href="#/studies"><span class="tile-icon">📚</span><strong>${t('My studies')}</strong><small class="muted">${t('Your PGNs, to study and practise')}</small></a>

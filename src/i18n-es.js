@@ -3,6 +3,21 @@
 // Check that nothing is missing: node scripts/i18n-keys.mjs
 export const ES = {
   'Back': 'Volver',
+  // pawn structures (private library)
+  'Pawn structures': 'Estructuras de peones',
+  'Model games by structure': 'Partidas modelo por estructura',
+  'This section is private: sign in with its owner\'s account.': 'Esta sección es privada: inicia sesión con la cuenta de su propietario.',
+  'This file is only available in its owner\'s account.': 'Este archivo solo está disponible en la cuenta de su propietario.',
+  'Sign in to use this section.': 'Inicia sesión para usar esta sección.',
+  'Model games for each pawn structure: study them move by move with their notes, and practise finding the moves.': 'Partidas modelo de cada estructura de peones: estúdialas jugada a jugada con sus notas y practica encontrando las jugadas.',
+  'No files yet.': 'Todavía no hay archivos.',
+  'Notes': 'Notas',
+  'Load the PGN files (one per structure, the number at the start of the name sets the order). They are kept only in your account; a file with the same name is replaced.': 'Carga los archivos PGN (uno por estructura; el número al principio del nombre marca el orden). Se guardan solo en tu cuenta; un archivo con el mismo nombre se sustituye.',
+  'Load PGN files': 'Cargar archivos PGN',
+  'Uploading…': 'Subiendo…',
+  '"{name}" is too big (max 900 KB per file).': '«{name}» es demasiado grande (máximo 900 KB por archivo).',
+  '{n} game': '{n} partida',
+  '{n} games': '{n} partidas',
   'Settings': 'Ajustes',
   'Statistics': 'Estadísticas',
   'Options': 'Opciones',

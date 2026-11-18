@@ -31,7 +31,13 @@ export async function loadCourse(id) {
   if (cache.has(id)) return cache.get(id);
   let data;
   if (isUser(id)) data = userCourseData(id);
-  else {
+  else if (isLibrary(id)) {
+    const f = await sync.libraryGet(id.slice(2));
+    if (!f) throw new Error(t('This file is only available in its owner\'s account.'));
+    const { chapters, notes, studyName } = chaptersOf(f.pgn);
+    const annotator = (f.pgn.match(/^\[Annotator "([^"]*)"\]/m) || [])[1] || '';
+    data = { id, name: f.name || studyName, side: 'w', author: annotator, library: f.shelf, chapters, notes };
+  } else {
     const r = await fetch(base() + id + '.json');
     if (!r.ok) throw new Error(t('Could not load the courses'));
     data = await r.json();
@@ -55,6 +61,10 @@ function setSide(id, chId, side) {
 // [{ id, name, pgn, createdAt }]; each game of the PGN is a chapter
 const USER_KEY = 'wp:usercourses:v1';
 const isUser = id => id.startsWith('u-');
+// a file of the private library kept in the user's account (sync.js): "l-<file id>"
+const isLibrary = id => id.startsWith('l-');
+export { chaptersOf };
+export const forgetCourse = id => cache.delete(id);
 const userCourses = () => { try { return JSON.parse(localStorage.getItem(USER_KEY) || '[]'); } catch { return []; } };
 function saveUserCourses(list) {
   try { localStorage.setItem(USER_KEY, JSON.stringify(list)); }
@@ -62,12 +72,18 @@ function saveUserCourses(list) {
 }
 // Chapters of a PGN: name from the chapter or event header, colour from lichess' Orientation header
 function chaptersOf(pgn) {
-  const chapters = [];
+  const chapters = [], notes = [];
   let skipped = 0, studyName = '';
   splitGames(pgn).forEach(text => {
     let g;
     try { g = buildTree(text); } catch { skipped++; return; }
-    if (!g.root.k?.length) return;
+    if (!g.root.k?.length) {
+      // a game without moves: an introduction (only text) or a position to look at (an exercise)
+      const h = g.headers;
+      const title = h.ChapterName || (h.Event && h.Event !== '?' ? h.Event : '') || (h.White && h.Black && h.White !== '?' ? `${h.White} – ${h.Black}` : '');
+      if (g.root.c || h.FEN) notes.push({ title, text: g.root.c || '', fen: h.FEN ? g.fen : '' });
+      return;
+    }
     skipped += g.skipped;
     const h = g.headers;
     studyName ||= h.StudyName || '';
@@ -85,7 +101,7 @@ function chaptersOf(pgn) {
       study: [{ title: h.ChapterName || event || players || t('Chapter {n}', { n }), fen: g.fen, root: g.root }],
     });
   });
-  return { chapters, skipped, studyName };
+  return { chapters, notes, skipped, studyName };
 }
 function userCourseData(id) {
   const u = userCourses().find(c => c.id === id);
@@ -254,7 +270,7 @@ const moveOf = c => c.depth ?? +(c.fen?.split(' ')[5] || 1);
 const inLevel = (c, lv) => c.kind === 'line' && moveOf(c) >= LEVELS[lv][0] && moveOf(c) <= LEVELS[lv][1];
 const levelName = lv => (LEVELS[lv][1] === Infinity ? t('From move {a}', { a: LEVELS[lv][0] }) : t('Moves {a}–{b}', { a: LEVELS[lv][0], b: LEVELS[lv][1] }));
 // where a course's pages go back to: the courses, or my studies
-const homeOf = course => (course.user ? '#/studies' : '#/courses');
+const homeOf = course => (course.library ? '#/' + course.library : course.user ? '#/studies' : '#/courses');
 // Level chips with how many positions of each are mastered
 function levelsBlock(course, scope) {
   const cards = [...course.cards.values()].filter(c => c.kind === 'line' && (scope === 'all' || c.chapters.has(scope)));
@@ -373,7 +389,7 @@ export async function viewCourse(app, id) {
     const xp = memOf(id).xp || 0;
     app.innerHTML = `${header(homeOf(course), course.name, xp ? `⭐ ${xp}` : '')}
       <main class="wrap">
-        <section class="card">
+        ${!all.size ? (course.author ? `<p class="small muted">${esc(course.author)}</p>` : '') : `<section class="card">
           <p class="small muted">${esc(course.author)} · ${sidesText(course)}</p>
           ${progressBar(p)}
           <p class="small">${t('{n} of {m} positions mastered', { n: p.mastered, m: p.total })} · ${t('{n} seen', { n: p.seen })}</p>
@@ -387,8 +403,13 @@ export async function viewCourse(app, id) {
           ${p.weak ? `<a class="btn ghost full" href="#/cdrill/${id}/all/mistakes">✗ ${t('My mistakes ({n})', { n: p.weak })}</a>` : ''}
           ${levelsBlock(course, 'all')}
           <p class="small muted">${t('Practice here mixes every chapter.')}</p>
-        </section>
-        <h2 class="section-title">${t('Chapters')}</h2>
+        </section>`}
+        ${(course.notes || []).map((nt, i) => `<details class="card note-card" ${i === 0 && !nt.fen ? 'open' : ''}>
+          <summary><strong>${esc(nt.title || t('Notes'))}</strong></summary>
+          ${nt.fen ? `<div class="mini-board" data-fen="${esc(nt.fen)}"></div><p class="small muted">${nt.fen.split(' ')[1] === 'w' ? t('White to move') : t('Black to move')}</p>` : ''}
+          ${nt.text ? `<p class="small">${esc(nt.text)}</p>` : ''}
+        </details>`).join('')}
+        ${course.chapters.length ? `<h2 class="section-title">${t('Chapters')}</h2>` : ''}
         ${course.chapters.map(ch => {
           const cp = progressOf(id, ch.cards);
           return `<a class="card set-card" href="#/course/${id}/${ch.id}">
@@ -399,6 +420,13 @@ export async function viewCourse(app, id) {
         }).join('')}
         ${course.user ? `<button class="btn ghost full" id="cDelete">🗑 ${t('Delete this study')}</button>` : ''}
       </main>`;
+    // position notes: the board is drawn when the note is opened
+    app.querySelectorAll('.note-card').forEach(d => d.addEventListener('toggle', () => {
+      const el = d.querySelector('.mini-board');
+      if (!d.open || !el || el.dataset.done) return;
+      el.dataset.done = '1';
+      Chessground(el, { fen: el.dataset.fen, viewOnly: true, coordinates: true, orientation: toColor(el.dataset.fen.split(' ')[1]) });
+    }));
     app.querySelector('#cDelete')?.addEventListener('click', () => {
       if (!confirm(t('Delete "{name}" and its progress from this device?', { name: course.name }))) return;
       deleteUserCourse(id);

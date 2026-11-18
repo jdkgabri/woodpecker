@@ -57,6 +57,46 @@ export async function storageUrl(path) {
   try { return await S.getDownloadURL(S.ref(S.getStorage(app), path)); } catch { return null; }
 }
 
+// ---------- private library ----------
+// PGN files kept in the user's own account (users/{uid}/library/{id} -> { shelf, n, name, pgn, updatedAt }),
+// never in the app bundle: only that account can read them (firestore.rules).
+async function libraryCol() {
+  if (!state.configured) return null;
+  const { auth, db, F } = await init();
+  await auth.authStateReady();
+  if (!auth.currentUser) return null;
+  return { F, col: F.collection(db, 'users', auth.currentUser.uid, 'library'), db, uid: auth.currentUser.uid };
+}
+export async function currentUid() {
+  if (!state.configured) return null;
+  const { auth } = await init();
+  await auth.authStateReady();
+  return auth.currentUser?.uid || null;
+}
+// Files of one shelf, without their text: [{ id, n, name, size }]
+export async function libraryList(shelf) {
+  const L = await libraryCol();
+  if (!L) return null;
+  const snap = await L.F.getDocs(L.F.query(L.col, L.F.where('shelf', '==', shelf)));
+  return snap.docs.map(d => ({ id: d.id, n: d.data().n, name: d.data().name, size: d.data().pgn?.length || 0 })).sort((a, b) => a.n - b.n);
+}
+export async function libraryGet(id) {
+  const L = await libraryCol();
+  if (!L) return null;
+  const d = await L.F.getDoc(L.F.doc(L.col, id));
+  return d.exists() ? d.data() : null;
+}
+// files: [{ id, n, name, pgn }]
+export async function libraryPut(shelf, files) {
+  const L = await libraryCol();
+  if (!L) throw new Error(t('Sign in to use this section.'));
+  for (let i = 0; i < files.length; i += 20) {
+    const batch = L.F.writeBatch(L.db);
+    for (const f of files.slice(i, i + 20)) batch.set(L.F.doc(L.col, f.id), { shelf, n: f.n, name: f.name, pgn: f.pgn, updatedAt: Date.now() });
+    await batch.commit();
+  }
+}
+
 export async function start(onRemoteChange) {
   if (!state.configured) return;
   const { auth, A } = await init();
@@ -67,7 +107,7 @@ export async function start(onRemoteChange) {
     remoteVersions = new Map();
     firstSnapshot = false;
     uid = user?.uid || null;
-    state.user = user ? { email: user.email, name: user.displayName, photo: user.photoURL } : null;
+    state.user = user ? { uid: user.uid, email: user.email, name: user.displayName, photo: user.photoURL } : null;
     state.status = user ? 'syncing' : 'off';
     state.error = null;
     emit();

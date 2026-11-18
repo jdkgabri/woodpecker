@@ -50,7 +50,8 @@ export function buildTree(src) {
   let fen = headers.FEN || new Chess().fen();
   try { new Chess(fen); } catch { throw new Error(`Invalid FEN in "${headers.Event || '?'}"`); }
   const root = { k: [] };
-  const tokens = body.replace(/;[^\n]*/g, '').match(/\{[^}]*\}|\(|\)|\$\d+|[^\s(){}]+/g) || [];
+  // a ";" starts a rest-of-line comment only outside {…} (inside, it is just text)
+  const tokens = (body.match(/\{[^}]*\}|;[^\n]*|\(|\)|\$\d+|[^\s(){};]+/g) || []).filter(x => x[0] !== ';');
   let cur = root, prev = null, dead = 0, skipped = 0;   // dead: depth of the line being skipped (0 = none)
   const stack = [];
   const fenOf = new Map([[root, fen]]);
