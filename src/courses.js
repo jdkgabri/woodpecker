@@ -32,11 +32,12 @@ export async function loadCourse(id) {
   let data;
   if (isUser(id)) data = userCourseData(id);
   else if (isLibrary(id)) {
-    const f = await sync.libraryGet(id.slice(2));
+    const [shelf, fileId] = id.slice(2).split('~');
+    const f = await sync.libraryGet(shelf, fileId).catch(() => null);
     if (!f) throw new Error(t('This file is only available in its owner\'s account.'));
     const { chapters, notes, studyName } = chaptersOf(f.pgn);
     const annotator = (f.pgn.match(/^\[Annotator "([^"]*)"\]/m) || [])[1] || '';
-    data = { id, name: f.name || studyName, side: 'w', author: annotator, library: f.shelf, chapters, notes };
+    data = { id, name: f.name || studyName, side: 'w', author: annotator, library: shelf, chapters, notes };
   } else {
     const r = await fetch(base() + id + '.json');
     if (!r.ok) throw new Error(t('Could not load the courses'));
@@ -61,7 +62,7 @@ function setSide(id, chId, side) {
 // [{ id, name, pgn, createdAt }]; each game of the PGN is a chapter
 const USER_KEY = 'wp:usercourses:v1';
 const isUser = id => id.startsWith('u-');
-// a file of the private library kept in the user's account (sync.js): "l-<file id>"
+// a file of the owner's private library (sync.js): "l-<shelf>~<file id>"
 const isLibrary = id => id.startsWith('l-');
 export { chaptersOf };
 export const forgetCourse = id => cache.delete(id);

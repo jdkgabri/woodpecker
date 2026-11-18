@@ -8,3 +8,6 @@ functions/.env
 
 # course source material (videos, original PGNs): never committed
 aperturas con cursos/
+
+# private library PGNs (deployed only with the functions, returned only to the owner): never committed
+functions/private/

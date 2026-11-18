@@ -52,3 +52,27 @@ export const testReminder = onCall({
   if (!req.auth) throw new HttpsError('unauthenticated', 'Sign in required');
   return sendTest({ db: getFirestore(), uid: req.auth.uid, ...senders() });
 });
+
+// ---------- private library ----------
+// PGN files for the owner's private sections (e.g. pawn structures). They live in functions/private/<shelf>/,
+// which is not in git and is only deployed with the function: the files are returned only to the owner.
+const LIBRARY_OWNER = 'HVCLXy57NDgXPkbrQSVZuAPBunA3';
+const LIBRARY_DIR = new URL('./private/', import.meta.url);
+export const library = onCall({ region: 'europe-west1', memory: '256MiB', maxInstances: 2 }, async req => {
+  if (req.auth?.uid !== LIBRARY_OWNER) throw new HttpsError('permission-denied', 'Private section');
+  const { readdir, readFile } = await import('node:fs/promises');
+  const shelf = String(req.data?.shelf || '');
+  if (!/^[a-z0-9-]+$/.test(shelf)) throw new HttpsError('invalid-argument', 'Bad shelf');
+  const dir = new URL(shelf + '/', LIBRARY_DIR);
+  const files = (await readdir(dir).catch(() => [])).filter(f => f.toLowerCase().endsWith('.pgn')).sort();
+  const info = f => {
+    const base = f.replace(/\.pgn$/i, '');
+    const m = base.match(/^(\d+)[\s._-]*(.*)$/);
+    return { id: base.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), n: m ? +m[1] : 999, name: (m ? m[2] : base).replace(/[_-]+/g, ' ').trim() || base, file: f };
+  };
+  const list = files.map(info);
+  if (!req.data?.id) return list.map(({ file, ...rest }) => rest);
+  const f = list.find(x => x.id === req.data.id);
+  if (!f) throw new HttpsError('not-found', 'No such file');
+  return { id: f.id, n: f.n, name: f.name, pgn: await readFile(new URL(f.file, dir), 'utf8') };
+});
