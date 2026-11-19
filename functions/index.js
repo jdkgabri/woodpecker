@@ -55,11 +55,12 @@ export const testReminder = onCall({
 
 // ---------- private library ----------
 // PGN files for the owner's private sections (e.g. pawn structures). They live in functions/private/<shelf>/,
-// which is not in git and is only deployed with the function: the files are returned only to the owner.
-const LIBRARY_OWNER = 'HVCLXy57NDgXPkbrQSVZuAPBunA3';
+// which is not in git and is only deployed with the function: the files are returned only to those accounts.
+// the owner and his partner (tester); keep in step with src/access.js and storage.rules
+const LIBRARY_ACCESS = ['HVCLXy57NDgXPkbrQSVZuAPBunA3', 'zxX9Ku8PwFhbkUnDlp3F1k9xG9g2'];
 const LIBRARY_DIR = new URL('./private/', import.meta.url);
 export const library = onCall({ region: 'europe-west1', memory: '256MiB', maxInstances: 2 }, async req => {
-  if (req.auth?.uid !== LIBRARY_OWNER) throw new HttpsError('permission-denied', 'Private section');
+  if (!LIBRARY_ACCESS.includes(req.auth?.uid)) throw new HttpsError('permission-denied', 'Private section');
   const { readdir, readFile } = await import('node:fs/promises');
   const shelf = String(req.data?.shelf || '');
   if (!/^[a-z0-9-]+$/.test(shelf)) throw new HttpsError('invalid-argument', 'Bad shelf');

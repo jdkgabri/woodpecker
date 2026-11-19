@@ -1,7 +1,7 @@
 // Pawn structures: the owner's private PGN library, read like a lichess study. Each file is a book
 // chapter whose games explain the theory with examples: you step through them freely, with their
 // comments and variations. Only the exercises file is solved (its answers are in the solutions file).
-// The files come from the "library" Cloud Function, which only serves them to the owner's account.
+// The files come from the "library" Cloud Function, which only serves them to the accounts with private access (access.js).
 import { Chessground } from 'chessground';
 import { Chess } from 'chess.js';
 import { t, tn, san } from './i18n.js';
@@ -9,7 +9,7 @@ import * as sync from './sync.js';
 import { sound } from './sound.js';
 import { splitGames, buildTree } from './pgn-tree.js';
 
-export const OWNER = 'HVCLXy57NDgXPkbrQSVZuAPBunA3';
+import { hasPrivateAccess } from './access.js';
 const SHELF = 'structures';
 const SEEN_KEY = 'wp:structures-seen:v1';     // { "<file>/<game>": true } games read to the end
 const SOLVED_KEY = 'wp:structures-solved:v1'; // { "<n>": { ok: true, clean } } exercises solved
@@ -49,7 +49,7 @@ async function loadFile(id) {
 }
 async function ownerOnly(main) {
   const uid = await sync.currentUid().catch(() => null);
-  if (uid === OWNER) return true;
+  if (hasPrivateAccess(uid)) return true;
   main.innerHTML = `<p class="muted">${t('This section is private: sign in with its owner\'s account.')}</p>`;
   return false;
 }
