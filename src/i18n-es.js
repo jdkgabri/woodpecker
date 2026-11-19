@@ -4,6 +4,13 @@
 export const ES = {
   'Back': 'Volver',
   // study time
+  'Lichess games': 'Partidas en Lichess',
+  'Rapid|speed': 'Rápida',
+  'Classical|speed': 'Clásica',
+  'Connect your Lichess account in Settings to add the games you play there.': 'Conecta tu cuenta de Lichess en Ajustes para sumar las partidas que juegas allí.',
+  'Loading your Lichess games…': 'Cargando tus partidas de Lichess…',
+  'Could not load your Lichess games right now.': 'Ahora mismo no se han podido cargar tus partidas de Lichess.',
+  'Your Lichess games count from their start to their last move (correspondence games are left out).': 'Tus partidas de Lichess cuentan desde que empiezan hasta su última jugada (las de correspondencia no cuentan).',
   'Tactics (Woodpecker)': 'Táctica (Woodpecker)',
   'Study time': 'Tiempo de estudio',
   'Today: {t}': 'Hoy: {t}',

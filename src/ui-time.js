@@ -2,7 +2,8 @@
 // chosen day (total, time per section and what was studied in each), with week and month totals.
 import { allDays, dayTotal } from './timelog.js';
 import { dayKey, parseDay, addDays } from './habit.js';
-import { t, locale } from './i18n.js';
+import { t, tn, locale } from './i18n.js';
+import { lichessDays, cachedLichessDays, lichessUser } from './lichess-games.js';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const SECTION = {
@@ -14,10 +15,11 @@ const SECTION = {
   endgames: ['♔', 'Endgames', '#3aa6a0'],
   coach: ['🔎', 'Game review', '#d05c7a'],
   analysis: ['🔍', 'Analysis', '#8a8f98'],
+  lichess: ['♞', 'Lichess games', '#a8a8a8'],
 };
 // written out so that the translation check sees each name
 const NAMES = () => ({ tactics: t('Tactics (Woodpecker)'), openings: t('Openings'), courses: t('Opening courses'), studies: t('My studies'),
-  structures: t('Pawn structures'), endgames: t('Endgames'), coach: t('Game review'), analysis: t('Analysis') });
+  structures: t('Pawn structures'), endgames: t('Endgames'), coach: t('Game review'), analysis: t('Analysis'), lichess: t('Lichess games') });
 const secName = s => NAMES()[s] || s;
 const secIcon = s => SECTION[s]?.[0] || '•';
 const secColor = s => SECTION[s]?.[2] || '#888';
@@ -58,13 +60,38 @@ function stackBar(bySection) {
 let monthOffset = 0;
 let selected = null;
 
+// Lichess games as one more section of each day, with the time per speed as its details
+const SPEED_NAMES = () => ({ ultraBullet: 'UltraBullet', bullet: 'Bullet', blitz: 'Blitz', rapid: t('Rapid|speed'), classical: t('Classical|speed') });
+function withLichess(days, ld) {
+  const out = structuredClone(days);
+  for (const [k, speeds] of Object.entries(ld || {})) {
+    const o = (out[k] ||= { s: {}, d: {} });
+    o.d ||= {};
+    for (const [sp, { sec, n }] of Object.entries(speeds)) {
+      o.s.lichess = (o.s.lichess || 0) + sec;
+      (o.d.lichess ||= {})[`${SPEED_NAMES()[sp] || sp} · ${tn(n, '{n} game', '{n} games')}`] = sec;
+    }
+  }
+  return out;
+}
+
 export function viewStudyTime(app) {
   app.innerHTML = `<header class="top"><a class="icon-btn" href="#/stats">‹</a><h1>${t('Study time')}</h1><span></span></header>
     <main class="wrap" id="tmMain"><p class="muted">${t('Loading…')}</p></main>`;
-  allDays().then(days => render(app.querySelector('#tmMain'), days));
+  const main = app.querySelector('#tmMain');
+  let own = null, ld = cachedLichessDays(), status = lichessUser() ? 'loading' : 'off';
+  const draw = () => { if (own && main.isConnected) render(main, withLichess(own, ld), status, more); };
+  // the games of an older month are fetched when it is shown
+  const more = async fromMs => {
+    if (!lichessUser()) return;
+    status = 'loading'; draw();
+    try { ld = await lichessDays(fromMs); status = 'ok'; } catch { status = 'error'; }
+    draw();
+  };
+  allDays().then(d => { own = d; draw(); if (lichessUser()) more(); });
 }
 
-function render(main, days) {
+function render(main, days, status, more) {
   const today = dayKey(new Date());
   selected ||= today;
   // this week (Monday first) and this month
@@ -87,7 +114,11 @@ function render(main, days) {
     <section class="card" id="tmCal"></section>
     <section class="card" id="tmDay"></section>
     <section class="card" id="tmMonth"></section>
-    <p class="small muted">${t('Time counts while you use the app: it stops after a few minutes without touching the screen (except while a video plays). Home, settings and statistics do not count. Each device adds its time when you are signed in.')}</p>`;
+    <p class="small muted">${t('Time counts while you use the app: it stops after a few minutes without touching the screen (except while a video plays). Home, settings and statistics do not count. Each device adds its time when you are signed in.')}</p>
+    <p class="small muted">${status === 'off' ? t('Connect your Lichess account in Settings to add the games you play there.')
+      : status === 'loading' ? '♞ ' + t('Loading your Lichess games…')
+      : status === 'error' ? '♞ ' + t('Could not load your Lichess games right now.')
+      : '♞ ' + t('Your Lichess games count from their start to their last move (correspondence games are left out).')}</p>`;
 
   const drawCalendar = () => {
     const card = main.querySelector('#tmCal');
@@ -117,7 +148,11 @@ function render(main, days) {
       </div>
       <p class="small">${t('Total this month: {t}', { t: fmtTime(total) })}</p>
       <p class="small muted cal-legend"><span><i class="cal-key lv1"></i> &lt; 15 min</span><span><i class="cal-key lv2"></i> &lt; 30 min</span><span><i class="cal-key lv3"></i> &lt; 1 h</span><span><i class="cal-key lv4"></i> ≥ 1 h</span></p>`;
-    card.querySelector('#tmPrev').onclick = () => { monthOffset--; drawCalendar(); drawMonth(); };
+    card.querySelector('#tmPrev').onclick = () => {
+      monthOffset--; drawCalendar(); drawMonth();
+      const start = new Date(); start.setDate(1); start.setHours(0, 0, 0, 0); start.setMonth(start.getMonth() + monthOffset);
+      more?.(start.getTime());
+    };
     card.querySelector('#tmNext').onclick = () => { if (monthOffset < 0) { monthOffset++; drawCalendar(); drawMonth(); } };
     card.querySelectorAll('[data-day]').forEach(b => b.onclick = () => { selected = b.dataset.day; drawCalendar(); drawDay(); });
   };
