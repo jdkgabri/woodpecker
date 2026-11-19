@@ -3,6 +3,21 @@
 // Check that nothing is missing: node scripts/i18n-keys.mjs
 export const ES = {
   'Back': 'Volver',
+  // study time
+  'Tactics (Woodpecker)': 'Táctica (Woodpecker)',
+  'Study time': 'Tiempo de estudio',
+  'Today: {t}': 'Hoy: {t}',
+  'Calendar of the time you study each day, and in which sections.': 'Calendario del tiempo que estudias cada día y en qué secciones.',
+  '< 1 min': '< 1 min',
+  'No study time recorded.': 'No hay tiempo de estudio registrado.',
+  'Today': 'Hoy',
+  'This week': 'Esta semana',
+  'This month': 'Este mes',
+  'Average per day studied': 'Media por día de estudio',
+  'Time counts while you use the app: it stops after a few minutes without touching the screen (except while a video plays). Home, settings and statistics do not count. Each device adds its time when you are signed in.': 'El tiempo cuenta mientras usas la app: se para tras unos minutos sin tocar la pantalla (salvo si se reproduce un vídeo). El inicio, los ajustes y las estadísticas no cuentan. Cada dispositivo suma su tiempo si has iniciado sesión.',
+  'Total this month: {t}': 'Total del mes: {t}',
+  'What you studied': 'Qué has estudiado',
+  'By section in {m}': 'Por sección en {m}',
   // pawn structures (private library)
   'The theory with model games': 'La teoría con partidas modelo',
   'The theory of each pawn structure explained with model games: go through them move by move with their comments and variations, as in a study.': 'La teoría de cada estructura de peones explicada con partidas modelo: recórrelas jugada a jugada con sus comentarios y variantes, como en un estudio.',

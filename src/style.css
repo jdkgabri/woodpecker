@@ -349,7 +349,7 @@ cg-board {
 .cal-legend { display: flex; align-items: center; gap: 4px 14px; flex-wrap: wrap; }
 .cal-legend span { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 .cal-key { display: inline-block; width: 12px; height: 12px; border-radius: 3px; }
-.cal-key.lv2 { background: #629924; }
+.cal-key.lv2 { background: #4f7a26; }
 .cal-key.frozen { background: #2f6fb3; }
 
 /* readable board coordinates, scaled with the board and placed like Lichess:
@@ -479,3 +479,23 @@ cg-board {
 .st-grid { display: flex; flex-wrap: wrap; gap: 6px; }
 .st-grid .chip { min-width: 2.4rem; text-align: center; text-decoration: none; }
 @media (min-width: 900px) { .st-moves { max-height: calc(100dvh - 260px); } .train > .wrap { grid-column: 2; padding: 0; } }
+/* study time */
+.tm-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.tm-kpi { display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; margin: 0; }
+.tm-kpi strong { font-size: 1.15rem; }
+.cal-day small { display: block; font-size: .6rem; opacity: .85; line-height: 1; }
+.cal-day.sel { outline: 2px solid var(--fg); outline-offset: 1px; }
+.cal-day:disabled { cursor: default; }
+.tm-total { font-size: 1.4rem; font-weight: 600; margin: .2rem 0 .5rem; }
+.tm-stack { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: .6rem; gap: 1px; }
+.tm-row { margin: .45rem 0; }
+.tm-bar { height: 8px; background: var(--bg3); border-radius: 4px; overflow: hidden; margin-top: 3px; }
+.tm-bar i { display: block; height: 100%; border-radius: 4px; }
+.tm-det { margin: .3rem 0; }
+.tm-det ul { list-style: none; padding: 0 0 0 1.2rem; margin: .3rem 0; }
+.tm-det li { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; }
+.tm-det li span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (min-width: 700px) { .tm-summary { grid-template-columns: repeat(4, 1fr); } }
+.cal-key.lv1 { background: #3f5a22; }
+.cal-key.lv3 { background: #629924; }
+.cal-key.lv4 { background: #7cbf2f; }

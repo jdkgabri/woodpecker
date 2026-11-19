@@ -85,6 +85,23 @@ export const libraryList = shelf => callLibrary({ shelf });
 // One file: { id, n, name, pgn }
 export const libraryGet = (shelf, id) => callLibrary({ shelf, id });
 
+// ---------- study time ----------
+// Each device's log of time per day and section (timelog.js): users/{uid}/timelog/{device} -> { json, updatedAt }
+// (stored as text, like the sets, because day keys and section maps are nested)
+export async function timelogPut(device, days) {
+  if (!state.configured || !uid) return;
+  const { db, F } = await init();
+  await F.setDoc(F.doc(db, 'users', uid, 'timelog', device), { json: JSON.stringify(days), updatedAt: Date.now() });
+}
+export async function timelogAll() {
+  if (!state.configured) return null;
+  const { auth, db, F } = await init();
+  await auth.authStateReady();
+  if (!auth.currentUser) return null;
+  const snap = await F.getDocs(F.collection(db, 'users', auth.currentUser.uid, 'timelog'));
+  return snap.docs.map(d => { try { return { device: d.id, days: JSON.parse(d.data().json) }; } catch { return { device: d.id, days: {} }; } });
+}
+
 export async function start(onRemoteChange) {
   if (!state.configured) return;
   const { auth, A } = await init();

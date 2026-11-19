@@ -111,6 +111,8 @@ export function viewStats(app) {
   app.innerHTML = `
     <header class="top"><a class="icon-btn" href="#/">‹</a><h1>${t('Statistics')}</h1><span></span></header>
     <main class="wrap">
+      <a class="card set-card" href="#/time"><div class="row"><strong>⏱ ${t('Study time')}</strong><span class="muted">›</span></div>
+        <p class="small muted">${t('Calendar of the time you study each day, and in which sections.')}</p></a>
       ${gamifyOn() ? levelCard(false) : ''}
       <section class="kpis">
         <div class="kpi"><b>${done}</b><span>${t('puzzles done')}</span></div>

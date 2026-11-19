@@ -17,6 +17,8 @@ import { viewOpenings, viewOpening, viewOpeningLine, localVideos, importLocalVid
 import { viewOpeningTree } from './opening-tree.js';
 import { viewCoach, viewCoachGame } from './coach.js';
 import { viewEndgames, viewEndgameChapter, viewEndgame } from './endgames.js';
+import { startTimelog, todayLocal } from './timelog.js';
+import { viewStudyTime, fmtTime } from './ui-time.js';
 import { viewStructures, viewStructureChapter, viewStructureGame, viewStructureExercise, viewStructureSolution, OWNER as STRUCTURES_OWNER } from './structures.js';
 import { t, tn, locale, san, LANGS, langSetting, applyDocumentLang } from './i18n.js';
 
@@ -66,6 +68,7 @@ function route() {
   if (view === 'cycle') return viewCycle(id, +location.hash.split('/')[3]);
   if (view === 'settings') return viewSettings();
   if (view === 'stats') return viewStats(app);
+  if (view === 'time') return viewStudyTime(app);
   if (view === 'videos') return viewVideos();
   if (view === 'openings') return viewOpenings(app);
   if (view === 'courses') return viewCourses(app);
@@ -123,6 +126,7 @@ function viewHome() {
         ${sync.state.user?.uid === STRUCTURES_OWNER ? `<a class="card home-tile" href="#/structures"><span class="tile-icon">♟</span><strong>${t('Pawn structures')}</strong><small class="muted">${t('The theory with model games')}</small></a>` : ''}
         <a class="card home-tile" href="#/coach"><span class="tile-icon">🎓</span><strong>${t('Game review')}</strong><small class="muted">${t('Review your Lichess games')}</small></a>
         <a class="card home-tile" href="#/openings"><span class="tile-icon">📖</span><strong>${t('Openings')}</strong><small class="muted">${t('Repertoire trees and traps')}</small></a>
+        <a class="card home-tile" href="#/time"><span class="tile-icon">⏱</span><strong>${t('Study time')}</strong><small class="muted">${t('Today: {t}', { t: fmtTime(todayLocal()) })}</small></a>
         <a class="card home-tile" href="#/studies"><span class="tile-icon">📚</span><strong>${t('My studies')}</strong><small class="muted">${t('Your PGNs, to study and practise')}</small></a>
         ${csvVideos().length ? `<a class="card home-tile" href="#/videos"><span class="tile-icon">🎬</span><strong>${t('Opening videos')}</strong><small class="muted">${tn(csvVideos().length, '{n} video', '{n} videos')}</small></a>` : ''}
       </nav>
@@ -1174,6 +1178,7 @@ lichess.handleRedirect()
     route();
     lichess.refreshAccount().catch(() => {});
     sync.start(onRemoteChange).catch(e => console.error(e));
+    startTimelog();
     sync.onChange(() => { if (currentView() === 'home') route(); });
   });
 
