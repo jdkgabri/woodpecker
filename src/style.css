@@ -467,3 +467,15 @@ cg-board {
 .course-side .btn { padding: 6px 12px; }
 #pgnText { width: 100%; font-family: monospace; font-size: .85rem; margin: 8px 0; }
 .mini-board { width: 100%; max-width: 320px; aspect-ratio: 1; margin: .5rem auto; }
+/* pawn structures: study reader */
+.st-moves { max-height: 40vh; overflow-y: auto; line-height: 1.55; padding: .25rem 0; }
+.st-moves .mv { padding: .05rem .3rem; }
+.st-c { color: var(--muted); font-size: .92em; line-height: 1.45; }
+.st-root { margin: 0 0 .5rem; }
+.st-var { margin: .25rem 0 .35rem .6rem; padding-left: .6rem; border-left: 2px solid var(--border, #444); font-size: .93em; }
+.st-var-in { color: var(--muted); }
+.st-result { font-weight: 600; margin-left: .3rem; }
+.st-intro p { margin: .4rem 0; line-height: 1.5; }
+.st-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+.st-grid .chip { min-width: 2.4rem; text-align: center; text-decoration: none; }
+@media (min-width: 900px) { .st-moves { max-height: calc(100dvh - 260px); } .train > .wrap { grid-column: 2; padding: 0; } }
